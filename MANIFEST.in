@@ -1,0 +1,23 @@
+# Manifest for ARGUS package
+
+# Include documentation
+include README.md
+include LICENSE
+include PUBLISHING.md
+
+# Include type hints marker
+include argus/py.typed
+
+# Include test data (but not tests themselves in sdist)
+recursive-exclude tests *
+
+# Exclude development files
+exclude .gitignore
+exclude .pre-commit-config.yaml
+recursive-exclude .github *
+
+# Exclude build artifacts
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude *.egg-info
