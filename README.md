@@ -472,4 +472,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**[Documentation](https://argus-ai.readthedocs.io)** | **[PyPI](https://pypi.org/project/argus-debate-ai/)** | **[GitHub](https://github.com/argus-ai/argus)**
+**[PyPI](https://pypi.org/project/argus-debate-ai/)** | **[GitHub](https://github.com/argus-ai/argus)**
