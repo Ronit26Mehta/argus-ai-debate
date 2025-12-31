@@ -169,11 +169,17 @@ def _register_default_providers() -> None:
     from argus.core.llm.anthropic import AnthropicLLM
     from argus.core.llm.gemini import GeminiLLM
     from argus.core.llm.ollama import OllamaLLM
+    from argus.core.llm.cohere import CohereLLM
+    from argus.core.llm.mistral import MistralLLM
+    from argus.core.llm.groq import GroqLLM
     
     LLMRegistry.register("openai", OpenAILLM)
     LLMRegistry.register("anthropic", AnthropicLLM)
     LLMRegistry.register("gemini", GeminiLLM)
     LLMRegistry.register("ollama", OllamaLLM)
+    LLMRegistry.register("cohere", CohereLLM)
+    LLMRegistry.register("mistral", MistralLLM)
+    LLMRegistry.register("groq", GroqLLM)
 
 
 # Auto-register on import

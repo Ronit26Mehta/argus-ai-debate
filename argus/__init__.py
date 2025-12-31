@@ -26,12 +26,52 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
 # Core configuration
 from argus.core.config import ArgusConfig, get_config
+
+# Tools framework (v1.1.0)
+from argus.tools import (
+    BaseTool,
+    ToolResult,
+    ToolRegistry,
+    ToolExecutor,
+    ResultCache,
+    Guardrail,
+    register_tool,
+    get_tool,
+    list_tools,
+)
+
+# Outputs/Reports (v1.1.0)
+from argus.outputs import (
+    ReportGenerator,
+    DebateReport,
+    ReportConfig,
+    export_json,
+    export_markdown,
+)
+
+# Metrics & Traces (v1.1.0)
+from argus.metrics import (
+    MetricsCollector,
+    Tracer,
+    record_counter,
+    record_gauge,
+    record_histogram,
+    get_tracer,
+)
+
+# Connectors (v1.1.0)
+from argus.knowledge.connectors import (
+    BaseConnector,
+    ConnectorRegistry,
+    WebConnector,
+    register_connector,
+)
 
 # Core data models
 from argus.core.models import (
@@ -122,6 +162,34 @@ __all__ = [
     # Config
     "ArgusConfig",
     "get_config",
+    # Tools (v1.1.0)
+    "BaseTool",
+    "ToolResult",
+    "ToolRegistry",
+    "ToolExecutor",
+    "ResultCache",
+    "Guardrail",
+    "register_tool",
+    "get_tool",
+    "list_tools",
+    # Outputs (v1.1.0)
+    "ReportGenerator",
+    "DebateReport",
+    "ReportConfig",
+    "export_json",
+    "export_markdown",
+    # Metrics (v1.1.0)
+    "MetricsCollector",
+    "Tracer",
+    "record_counter",
+    "record_gauge",
+    "record_histogram",
+    "get_tracer",
+    # Connectors (v1.1.0)
+    "BaseConnector",
+    "ConnectorRegistry",
+    "WebConnector",
+    "register_connector",
     # Models
     "Document",
     "Chunk",
@@ -180,3 +248,4 @@ __all__ = [
     "RDCOrchestrator",
     "DebateResult",
 ]
+

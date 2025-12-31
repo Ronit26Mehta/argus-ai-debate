@@ -27,6 +27,9 @@ from argus.core.llm.openai import OpenAILLM
 from argus.core.llm.anthropic import AnthropicLLM
 from argus.core.llm.gemini import GeminiLLM
 from argus.core.llm.ollama import OllamaLLM
+from argus.core.llm.cohere import CohereLLM
+from argus.core.llm.mistral import MistralLLM
+from argus.core.llm.groq import GroqLLM
 
 __all__ = [
     # Base classes
@@ -45,4 +48,7 @@ __all__ = [
     "AnthropicLLM",
     "GeminiLLM",
     "OllamaLLM",
+    "CohereLLM",
+    "MistralLLM",
+    "GroqLLM",
 ]
