@@ -21,6 +21,7 @@
 - [Quick Start](#quick-start)
 - [LLM Providers](#llm-providers)
 - [External Connectors](#external-connectors)
+- [Visualization & Plotting](#visualization--plotting)
 - [Command Line Interface](#command-line-interface)
 - [Configuration](#configuration)
 - [Architecture](#architecture)
@@ -648,9 +649,191 @@ register_connector(MyAPIConnector())
 
 ---
 
+## Visualization & Plotting
+
+ARGUS provides publication-quality visualization capabilities for debate results, including static plots for research papers and interactive dashboards for exploration.
+
+### Installation
+
+```bash
+# Core plotting dependencies (matplotlib, seaborn)
+pip install argus-debate-ai[plotting]
+
+# Interactive plots (adds Plotly)
+pip install argus-debate-ai[interactive]
+
+# Or install all visualization dependencies
+pip install matplotlib seaborn plotly networkx
+```
+
+### Quick Start
+
+```python
+from argus.outputs import DebatePlotter, PlotConfig
+
+# Configure plot settings
+config = PlotConfig(
+    output_dir="./plots",
+    dpi=300,                # Publication quality
+    format="png",           # png, pdf, svg
+    theme="publication",    # publication, dark, light, minimal
+)
+
+# Generate all plots for a debate result
+plotter = DebatePlotter(config)
+paths = plotter.generate_all_plots(debate_result)
+print(f"Generated {len(paths)} plots")
+```
+
+### Available Plot Types
+
+#### Static Plots (Matplotlib/Seaborn)
+
+| Plot Type | Method | Description |
+|-----------|--------|-------------|
+| **Posterior Evolution** | `plot_posterior_evolution()` | Line chart showing probability changes across rounds |
+| **Evidence Distribution** | `plot_evidence_distribution()` | Donut and bar charts of support vs attack evidence |
+| **Specialist Contributions** | `plot_specialist_contributions()` | Stacked bar chart by specialist and polarity |
+| **Confidence Distribution** | `plot_confidence_distribution()` | Histogram, KDE, and box plot of evidence confidence |
+| **Round Heatmap** | `plot_round_heatmap()` | Evidence count matrix by specialist and round |
+| **CDAG Network** | `plot_cdag_network()` | NetworkX graph visualization with color-coded nodes |
+| **Multi-Stock Comparison** | `plot_multi_stock_comparison()` | 4-panel dashboard comparing multiple debates |
+| **Summary Radar** | `plot_summary_radar()` | Radar chart for multi-metric comparison |
+
+#### Interactive Plots (Plotly)
+
+| Plot Type | Method | Description |
+|-----------|--------|-------------|
+| **Interactive Posterior** | `plot_interactive_posterior()` | Zoomable, hoverable timeline chart |
+| **Interactive Network** | `plot_interactive_network()` | Force-directed graph with tooltips |
+| **Combined Dashboard** | `plot_dashboard()` | Multi-plot HTML dashboard |
+
+### Usage Examples
+
+#### Posterior Evolution Plot
+
+```python
+from argus.outputs import DebatePlotter, PlotConfig
+
+plotter = DebatePlotter(PlotConfig(output_dir="./plots"))
+path = plotter.plot_posterior_evolution(debate_result)
+print(f"Saved to: {path}")
+```
+
+#### CDAG Network Visualization
+
+```python
+# Visualize the conceptual debate graph
+path = plotter.plot_cdag_network(debate_result)
+# Nodes colored by type: Proposition (blue), Evidence Support (green),
+# Evidence Attack (red), Rebuttal (orange)
+```
+
+#### Multi-Stock Comparison Dashboard
+
+```python
+# Compare multiple debate results
+all_results = [aapl_result, msft_result, googl_result, tsla_result]
+path = plotter.plot_multi_stock_comparison(all_results)
+# Creates 4-panel dashboard: posteriors, evidence counts, 
+# verdict distribution, duration comparison
+```
+
+#### Interactive Dashboard
+
+```python
+from argus.outputs import InteractivePlotter
+
+interactive = InteractivePlotter(PlotConfig(output_dir="./plots"))
+path = interactive.plot_dashboard(all_results)
+# Open {path} in browser for interactive exploration
+```
+
+### Plot Configuration
+
+```python
+from argus.outputs import PlotConfig, PlotTheme
+
+config = PlotConfig(
+    output_dir="./plots",           # Output directory
+    dpi=300,                         # Resolution (300 for print)
+    format="png",                    # Export format
+    theme=PlotTheme.PUBLICATION,     # Visual theme
+    interactive=True,                # Enable interactive plots
+    figsize=(12, 8),                 # Default figure size
+    title_fontsize=16,               # Title font size
+    label_fontsize=12,               # Axis label font size
+)
+```
+
+### Themes
+
+| Theme | Description |
+|-------|-------------|
+| `publication` | Professional style for academic papers (default) |
+| `dark` | Dark background with light elements |
+| `light` | Clean, minimal light theme |
+| `minimal` | Reduced chrome, focus on data |
+
+### Color Palettes
+
+ARGUS uses colorblind-friendly palettes:
+
+```python
+from argus.outputs import COLORS, SPECIALIST_COLORS
+
+# Main palette
+COLORS = {
+    "primary": "#2E86AB",      # Blue
+    "secondary": "#A23B72",    # Magenta
+    "success": "#F18F01",      # Orange
+    "danger": "#C73E1D",       # Red
+    "warning": "#FFE66D",      # Yellow
+    "support": "#2E8B57",      # Green
+    "attack": "#DC143C",       # Crimson
+    "neutral": "#708090",      # Slate gray
+}
+
+# Specialist colors
+SPECIALIST_COLORS = {
+    "Bull Analyst": "#2E8B57",
+    "Bear Analyst": "#DC143C",
+    "Technical Analyst": "#4169E1",
+    "SEC Filing Analyst": "#9932CC",
+}
+```
+
+### Integration with SEC Debate Workflow
+
+The plotting module is automatically integrated with the SEC enhanced debate workflow:
+
+```python
+# Run SEC debate with automatic plot generation
+python -m testing.workflows.sec_enhanced_debate
+
+# Generates:
+# - Individual plots for each stock (posterior, evidence, network, etc.)
+# - Comparison plots across all stocks
+# - Interactive dashboard
+# 
+# All saved to: testing/results/plots/
+```
+
+### Export Formats
+
+| Format | Use Case |
+|--------|----------|
+| `png` | Web, presentations (raster, 300 DPI default) |
+| `pdf` | Academic papers, print (vector graphics) |
+| `svg` | Web scalable graphics (vector) |
+| `html` | Interactive plots (Plotly only) |
+
+---
+
 ## Command Line Interface
 
 ARGUS provides a full-featured CLI for common operations:
+
 
 ### Debate Commands
 
@@ -874,7 +1057,7 @@ print(config.llm.openai_api_key)
 | `argus.provenance` | PROV-O ledger, integrity, attestations | `ProvenanceLedger`, `Event`, `Attestation` |
 | `argus.orchestrator` | RDC orchestration engine | `RDCOrchestrator` |
 | `argus.tools` | Extensible tool framework | `Tool`, `ToolExecutor`, `ToolRegistry` |
-| `argus.outputs` | Report generation | `ReportGenerator`, `ReportConfig` |
+| `argus.outputs` | Report generation and visualization | `ReportGenerator`, `DebatePlotter`, `InteractivePlotter` |
 | `argus.metrics` | Observability and tracing | `MetricsCollector`, `Tracer` |
 
 ---
