@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+LR_00001,The defendant had a right to self-defense,legal,undecided,0.565,easy,Case precedents,3
+LR_00002,Intellectual property protection stifles innovation,legal,undecided,0.716,medium,Economic analysis,3
+LR_00003,The contract was validly formed,legal,supported,0.695,hard,Contract law,2
+LR_00004,The search violates the Fourth Amendment,legal,undecided,0.646,expert,Constitutional law,3
+LR_00005,The employer is liable for workplace harassment,legal,supported,0.552,easy,Title VII,4
+LR_00006,The patent claim is obvious,legal,undecided,0.732,medium,Prior art search,1
+LR_00007,The testimony is admissible under hearsay rules,legal,rejected,0.921,hard,Evidence rules,3
+LR_00008,The merger will harm competition,legal,undecided,0.87,expert,Antitrust analysis,3
+LR_00009,The defendant meets the insanity defense criteria,legal,undecided,0.685,easy,Psychiatric evaluation,4
+LR_00010,The non-compete clause is enforceable,legal,rejected,0.863,medium,State law precedents,2
+LR_00011,The defendant had a right to self-defense (context 1),legal,undecided,0.861,expert,Case precedents,2
+LR_00012,Intellectual property protection stifles innovation (context 1),legal,undecided,0.608,easy,Economic analysis,2
+LR_00013,The contract was validly formed (context 1),legal,supported,0.79,medium,Contract law,4
+LR_00014,The search violates the Fourth Amendment (context 1),legal,undecided,0.635,hard,Constitutional law,2
+LR_00015,The employer is liable for workplace harassment (context 1),legal,supported,0.779,expert,Title VII,3
+LR_00016,The patent claim is obvious (context 1),legal,undecided,0.608,easy,Prior art search,3
+LR_00017,The testimony is admissible under hearsay rules (context 1),legal,rejected,0.913,medium,Evidence rules,1
+LR_00018,The merger will harm competition (context 1),legal,undecided,0.664,hard,Antitrust analysis,3
+LR_00019,The defendant meets the insanity defense criteria (context 1),legal,undecided,0.943,expert,Psychiatric evaluation,3
+LR_00020,The non-compete clause is enforceable (context 1),legal,rejected,0.605,easy,State law precedents,3
+LR_00021,The defendant had a right to self-defense (context 2),legal,undecided,0.748,hard,Case precedents,2
+LR_00022,Intellectual property protection stifles innovation (context 2),legal,undecided,0.798,expert,Economic analysis,1
+LR_00023,The contract was validly formed (context 2),legal,supported,0.57,easy,Contract law,3
+LR_00024,The search violates the Fourth Amendment (context 2),legal,undecided,0.846,medium,Constitutional law,4
+LR_00025,The employer is liable for workplace harassment (context 2),legal,supported,0.594,hard,Title VII,4
+LR_00026,The patent claim is obvious (context 2),legal,undecided,0.561,expert,Prior art search,2
+LR_00027,The testimony is admissible under hearsay rules (context 2),legal,rejected,0.674,easy,Evidence rules,3
+LR_00028,The merger will harm competition (context 2),legal,undecided,0.612,medium,Antitrust analysis,2
+LR_00029,The defendant meets the insanity defense criteria (context 2),legal,undecided,0.732,hard,Psychiatric evaluation,4
+LR_00030,The non-compete clause is enforceable (context 2),legal,rejected,0.874,expert,State law precedents,1
+LR_00031,The defendant had a right to self-defense (context 3),legal,undecided,0.846,medium,Case precedents,3
+LR_00032,Intellectual property protection stifles innovation (context 3),legal,undecided,0.949,hard,Economic analysis,1
+LR_00033,The contract was validly formed (context 3),legal,supported,0.758,expert,Contract law,3
+LR_00034,The search violates the Fourth Amendment (context 3),legal,undecided,0.942,easy,Constitutional law,4
+LR_00035,The employer is liable for workplace harassment (context 3),legal,supported,0.763,medium,Title VII,1
+LR_00036,The patent claim is obvious (context 3),legal,undecided,0.819,hard,Prior art search,3
+LR_00037,The testimony is admissible under hearsay rules (context 3),legal,rejected,0.691,expert,Evidence rules,3
+LR_00038,The merger will harm competition (context 3),legal,undecided,0.804,easy,Antitrust analysis,1
+LR_00039,The defendant meets the insanity defense criteria (context 3),legal,undecided,0.825,medium,Psychiatric evaluation,3
+LR_00040,The non-compete clause is enforceable (context 3),legal,rejected,0.805,hard,State law precedents,1
+LR_00041,The defendant had a right to self-defense (context 4),legal,undecided,0.921,easy,Case precedents,3
+LR_00042,Intellectual property protection stifles innovation (context 4),legal,undecided,0.59,medium,Economic analysis,1
+LR_00043,The contract was validly formed (context 4),legal,supported,0.769,hard,Contract law,4
+LR_00044,The search violates the Fourth Amendment (context 4),legal,undecided,0.793,expert,Constitutional law,4
+LR_00045,The employer is liable for workplace harassment (context 4),legal,supported,0.802,easy,Title VII,2
+LR_00046,The patent claim is obvious (context 4),legal,undecided,0.604,medium,Prior art search,2
+LR_00047,The testimony is admissible under hearsay rules (context 4),legal,rejected,0.769,hard,Evidence rules,4
+LR_00048,The merger will harm competition (context 4),legal,undecided,0.872,expert,Antitrust analysis,2
+LR_00049,The defendant meets the insanity defense criteria (context 4),legal,undecided,0.789,easy,Psychiatric evaluation,4
+LR_00050,The non-compete clause is enforceable (context 4),legal,rejected,0.761,medium,State law precedents,4
+LR_00051,The defendant had a right to self-defense (context 5),legal,undecided,0.649,expert,Case precedents,4
+LR_00052,Intellectual property protection stifles innovation (context 5),legal,undecided,0.758,easy,Economic analysis,1
+LR_00053,The contract was validly formed (context 5),legal,supported,0.651,medium,Contract law,3
+LR_00054,The search violates the Fourth Amendment (context 5),legal,undecided,0.798,hard,Constitutional law,4
+LR_00055,The employer is liable for workplace harassment (context 5),legal,supported,0.689,expert,Title VII,2
+LR_00056,The patent claim is obvious (context 5),legal,undecided,0.559,easy,Prior art search,3
+LR_00057,The testimony is admissible under hearsay rules (context 5),legal,rejected,0.7,medium,Evidence rules,2
+LR_00058,The merger will harm competition (context 5),legal,undecided,0.613,hard,Antitrust analysis,1
+LR_00059,The defendant meets the insanity defense criteria (context 5),legal,undecided,0.901,expert,Psychiatric evaluation,2
+LR_00060,The non-compete clause is enforceable (context 5),legal,rejected,0.627,easy,State law precedents,2
+LR_00061,The defendant had a right to self-defense (context 6),legal,undecided,0.801,hard,Case precedents,1
+LR_00062,Intellectual property protection stifles innovation (context 6),legal,undecided,0.555,expert,Economic analysis,3
+LR_00063,The contract was validly formed (context 6),legal,supported,0.681,easy,Contract law,3
+LR_00064,The search violates the Fourth Amendment (context 6),legal,undecided,0.573,medium,Constitutional law,1
+LR_00065,The employer is liable for workplace harassment (context 6),legal,supported,0.89,hard,Title VII,3
+LR_00066,The patent claim is obvious (context 6),legal,undecided,0.816,expert,Prior art search,2
+LR_00067,The testimony is admissible under hearsay rules (context 6),legal,rejected,0.906,easy,Evidence rules,1
+LR_00068,The merger will harm competition (context 6),legal,undecided,0.927,medium,Antitrust analysis,2
+LR_00069,The defendant meets the insanity defense criteria (context 6),legal,undecided,0.728,hard,Psychiatric evaluation,2
+LR_00070,The non-compete clause is enforceable (context 6),legal,rejected,0.578,expert,State law precedents,2
+LR_00071,The defendant had a right to self-defense (context 7),legal,undecided,0.914,medium,Case precedents,2
+LR_00072,Intellectual property protection stifles innovation (context 7),legal,undecided,0.83,hard,Economic analysis,4
+LR_00073,The contract was validly formed (context 7),legal,supported,0.684,expert,Contract law,2
+LR_00074,The search violates the Fourth Amendment (context 7),legal,undecided,0.695,easy,Constitutional law,2
+LR_00075,The employer is liable for workplace harassment (context 7),legal,supported,0.643,medium,Title VII,2
+LR_00076,The patent claim is obvious (context 7),legal,undecided,0.692,hard,Prior art search,1
+LR_00077,The testimony is admissible under hearsay rules (context 7),legal,rejected,0.709,expert,Evidence rules,1
+LR_00078,The merger will harm competition (context 7),legal,undecided,0.738,easy,Antitrust analysis,3
+LR_00079,The defendant meets the insanity defense criteria (context 7),legal,undecided,0.871,medium,Psychiatric evaluation,2
+LR_00080,The non-compete clause is enforceable (context 7),legal,rejected,0.828,hard,State law precedents,3
+LR_00081,The defendant had a right to self-defense (context 8),legal,undecided,0.634,easy,Case precedents,1
+LR_00082,Intellectual property protection stifles innovation (context 8),legal,undecided,0.676,medium,Economic analysis,2
+LR_00083,The contract was validly formed (context 8),legal,supported,0.823,hard,Contract law,4
+LR_00084,The search violates the Fourth Amendment (context 8),legal,undecided,0.673,expert,Constitutional law,1
+LR_00085,The employer is liable for workplace harassment (context 8),legal,supported,0.657,easy,Title VII,3
+LR_00086,The patent claim is obvious (context 8),legal,undecided,0.771,medium,Prior art search,1
+LR_00087,The testimony is admissible under hearsay rules (context 8),legal,rejected,0.553,hard,Evidence rules,1
+LR_00088,The merger will harm competition (context 8),legal,undecided,0.628,expert,Antitrust analysis,4
+LR_00089,The defendant meets the insanity defense criteria (context 8),legal,undecided,0.778,easy,Psychiatric evaluation,3
+LR_00090,The non-compete clause is enforceable (context 8),legal,rejected,0.738,medium,State law precedents,2
+LR_00091,The defendant had a right to self-defense (context 9),legal,undecided,0.874,expert,Case precedents,3
+LR_00092,Intellectual property protection stifles innovation (context 9),legal,undecided,0.693,easy,Economic analysis,2
+LR_00093,The contract was validly formed (context 9),legal,supported,0.603,medium,Contract law,2
+LR_00094,The search violates the Fourth Amendment (context 9),legal,undecided,0.573,hard,Constitutional law,2
+LR_00095,The employer is liable for workplace harassment (context 9),legal,supported,0.65,expert,Title VII,1
+LR_00096,The patent claim is obvious (context 9),legal,undecided,0.791,easy,Prior art search,4
+LR_00097,The testimony is admissible under hearsay rules (context 9),legal,rejected,0.634,medium,Evidence rules,2
+LR_00098,The merger will harm competition (context 9),legal,undecided,0.864,hard,Antitrust analysis,3
+LR_00099,The defendant meets the insanity defense criteria (context 9),legal,undecided,0.916,expert,Psychiatric evaluation,3
+LR_00100,The non-compete clause is enforceable (context 9),legal,rejected,0.882,easy,State law precedents,1
+LR_00101,The defendant had a right to self-defense (context 10),legal,undecided,0.863,hard,Case precedents,2
+LR_00102,Intellectual property protection stifles innovation (context 10),legal,undecided,0.605,expert,Economic analysis,3
+LR_00103,The contract was validly formed (context 10),legal,supported,0.628,easy,Contract law,2
+LR_00104,The search violates the Fourth Amendment (context 10),legal,undecided,0.77,medium,Constitutional law,1
+LR_00105,The employer is liable for workplace harassment (context 10),legal,supported,0.718,hard,Title VII,2
+LR_00106,The patent claim is obvious (context 10),legal,undecided,0.767,expert,Prior art search,2
+LR_00107,The testimony is admissible under hearsay rules (context 10),legal,rejected,0.907,easy,Evidence rules,3
+LR_00108,The merger will harm competition (context 10),legal,undecided,0.681,medium,Antitrust analysis,3
+LR_00109,The defendant meets the insanity defense criteria (context 10),legal,undecided,0.916,hard,Psychiatric evaluation,2
+LR_00110,The non-compete clause is enforceable (context 10),legal,rejected,0.659,expert,State law precedents,3
+LR_00111,The defendant had a right to self-defense (context 11),legal,undecided,0.815,medium,Case precedents,1
+LR_00112,Intellectual property protection stifles innovation (context 11),legal,undecided,0.75,hard,Economic analysis,1
+LR_00113,The contract was validly formed (context 11),legal,supported,0.93,expert,Contract law,3
+LR_00114,The search violates the Fourth Amendment (context 11),legal,undecided,0.745,easy,Constitutional law,3
+LR_00115,The employer is liable for workplace harassment (context 11),legal,supported,0.795,medium,Title VII,3
+LR_00116,The patent claim is obvious (context 11),legal,undecided,0.605,hard,Prior art search,1
+LR_00117,The testimony is admissible under hearsay rules (context 11),legal,rejected,0.929,expert,Evidence rules,2
+LR_00118,The merger will harm competition (context 11),legal,undecided,0.758,easy,Antitrust analysis,1
+LR_00119,The defendant meets the insanity defense criteria (context 11),legal,undecided,0.609,medium,Psychiatric evaluation,3
+LR_00120,The non-compete clause is enforceable (context 11),legal,rejected,0.58,hard,State law precedents,1
+LR_00121,The defendant had a right to self-defense (context 12),legal,undecided,0.613,easy,Case precedents,3
+LR_00122,Intellectual property protection stifles innovation (context 12),legal,undecided,0.65,medium,Economic analysis,4
+LR_00123,The contract was validly formed (context 12),legal,supported,0.9,hard,Contract law,1
+LR_00124,The search violates the Fourth Amendment (context 12),legal,undecided,0.879,expert,Constitutional law,1
+LR_00125,The employer is liable for workplace harassment (context 12),legal,supported,0.722,easy,Title VII,4
+LR_00126,The patent claim is obvious (context 12),legal,undecided,0.725,medium,Prior art search,3
+LR_00127,The testimony is admissible under hearsay rules (context 12),legal,rejected,0.779,hard,Evidence rules,3
+LR_00128,The merger will harm competition (context 12),legal,undecided,0.627,expert,Antitrust analysis,1
+LR_00129,The defendant meets the insanity defense criteria (context 12),legal,undecided,0.593,easy,Psychiatric evaluation,1
+LR_00130,The non-compete clause is enforceable (context 12),legal,rejected,0.736,medium,State law precedents,3
+LR_00131,The defendant had a right to self-defense (context 13),legal,undecided,0.921,expert,Case precedents,4
+LR_00132,Intellectual property protection stifles innovation (context 13),legal,undecided,0.767,easy,Economic analysis,1
+LR_00133,The contract was validly formed (context 13),legal,supported,0.863,medium,Contract law,4
+LR_00134,The search violates the Fourth Amendment (context 13),legal,undecided,0.774,hard,Constitutional law,2
+LR_00135,The employer is liable for workplace harassment (context 13),legal,supported,0.75,expert,Title VII,4
+LR_00136,The patent claim is obvious (context 13),legal,undecided,0.819,easy,Prior art search,4
+LR_00137,The testimony is admissible under hearsay rules (context 13),legal,rejected,0.864,medium,Evidence rules,3
+LR_00138,The merger will harm competition (context 13),legal,undecided,0.888,hard,Antitrust analysis,3
+LR_00139,The defendant meets the insanity defense criteria (context 13),legal,undecided,0.74,expert,Psychiatric evaluation,2
+LR_00140,The non-compete clause is enforceable (context 13),legal,rejected,0.684,easy,State law precedents,1
+LR_00141,The defendant had a right to self-defense (context 14),legal,undecided,0.88,hard,Case precedents,1
+LR_00142,Intellectual property protection stifles innovation (context 14),legal,undecided,0.605,expert,Economic analysis,3
+LR_00143,The contract was validly formed (context 14),legal,supported,0.947,easy,Contract law,3
+LR_00144,The search violates the Fourth Amendment (context 14),legal,undecided,0.577,medium,Constitutional law,2
+LR_00145,The employer is liable for workplace harassment (context 14),legal,supported,0.596,hard,Title VII,2
+LR_00146,The patent claim is obvious (context 14),legal,undecided,0.85,expert,Prior art search,2
+LR_00147,The testimony is admissible under hearsay rules (context 14),legal,rejected,0.79,easy,Evidence rules,4
+LR_00148,The merger will harm competition (context 14),legal,undecided,0.793,medium,Antitrust analysis,1
+LR_00149,The defendant meets the insanity defense criteria (context 14),legal,undecided,0.617,hard,Psychiatric evaluation,2
+LR_00150,The non-compete clause is enforceable (context 14),legal,rejected,0.934,expert,State law precedents,4
+LR_00151,The defendant had a right to self-defense (context 15),legal,undecided,0.92,medium,Case precedents,1
+LR_00152,Intellectual property protection stifles innovation (context 15),legal,undecided,0.821,hard,Economic analysis,4
+LR_00153,The contract was validly formed (context 15),legal,supported,0.78,expert,Contract law,3
+LR_00154,The search violates the Fourth Amendment (context 15),legal,undecided,0.72,easy,Constitutional law,4
+LR_00155,The employer is liable for workplace harassment (context 15),legal,supported,0.61,medium,Title VII,3
+LR_00156,The patent claim is obvious (context 15),legal,undecided,0.659,hard,Prior art search,4
+LR_00157,The testimony is admissible under hearsay rules (context 15),legal,rejected,0.878,expert,Evidence rules,3
+LR_00158,The merger will harm competition (context 15),legal,undecided,0.946,easy,Antitrust analysis,2
+LR_00159,The defendant meets the insanity defense criteria (context 15),legal,undecided,0.64,medium,Psychiatric evaluation,2
+LR_00160,The non-compete clause is enforceable (context 15),legal,rejected,0.699,hard,State law precedents,2
+LR_00161,The defendant had a right to self-defense (context 16),legal,undecided,0.929,easy,Case precedents,2
+LR_00162,Intellectual property protection stifles innovation (context 16),legal,undecided,0.903,medium,Economic analysis,1
+LR_00163,The contract was validly formed (context 16),legal,supported,0.789,hard,Contract law,4
+LR_00164,The search violates the Fourth Amendment (context 16),legal,undecided,0.591,expert,Constitutional law,4
+LR_00165,The employer is liable for workplace harassment (context 16),legal,supported,0.747,easy,Title VII,4
+LR_00166,The patent claim is obvious (context 16),legal,undecided,0.844,medium,Prior art search,3
+LR_00167,The testimony is admissible under hearsay rules (context 16),legal,rejected,0.793,hard,Evidence rules,3
+LR_00168,The merger will harm competition (context 16),legal,undecided,0.808,expert,Antitrust analysis,4
+LR_00169,The defendant meets the insanity defense criteria (context 16),legal,undecided,0.638,easy,Psychiatric evaluation,4
+LR_00170,The non-compete clause is enforceable (context 16),legal,rejected,0.583,medium,State law precedents,2
+LR_00171,The defendant had a right to self-defense (context 17),legal,undecided,0.87,expert,Case precedents,3
+LR_00172,Intellectual property protection stifles innovation (context 17),legal,undecided,0.77,easy,Economic analysis,2
+LR_00173,The contract was validly formed (context 17),legal,supported,0.75,medium,Contract law,2
+LR_00174,The search violates the Fourth Amendment (context 17),legal,undecided,0.81,hard,Constitutional law,4
+LR_00175,The employer is liable for workplace harassment (context 17),legal,supported,0.804,expert,Title VII,4
+LR_00176,The patent claim is obvious (context 17),legal,undecided,0.797,easy,Prior art search,2
+LR_00177,The testimony is admissible under hearsay rules (context 17),legal,rejected,0.741,medium,Evidence rules,4
+LR_00178,The merger will harm competition (context 17),legal,undecided,0.64,hard,Antitrust analysis,4
+LR_00179,The defendant meets the insanity defense criteria (context 17),legal,undecided,0.872,expert,Psychiatric evaluation,1
+LR_00180,The non-compete clause is enforceable (context 17),legal,rejected,0.616,easy,State law precedents,4
+LR_00181,The defendant had a right to self-defense (context 18),legal,undecided,0.864,hard,Case precedents,2
+LR_00182,Intellectual property protection stifles innovation (context 18),legal,undecided,0.715,expert,Economic analysis,4
+LR_00183,The contract was validly formed (context 18),legal,supported,0.689,easy,Contract law,4
+LR_00184,The search violates the Fourth Amendment (context 18),legal,undecided,0.746,medium,Constitutional law,2
+LR_00185,The employer is liable for workplace harassment (context 18),legal,supported,0.84,hard,Title VII,4
+LR_00186,The patent claim is obvious (context 18),legal,undecided,0.706,expert,Prior art search,2
+LR_00187,The testimony is admissible under hearsay rules (context 18),legal,rejected,0.922,easy,Evidence rules,3
+LR_00188,The merger will harm competition (context 18),legal,undecided,0.839,medium,Antitrust analysis,3
+LR_00189,The defendant meets the insanity defense criteria (context 18),legal,undecided,0.589,hard,Psychiatric evaluation,3
+LR_00190,The non-compete clause is enforceable (context 18),legal,rejected,0.779,expert,State law precedents,3
+LR_00191,The defendant had a right to self-defense (context 19),legal,undecided,0.579,medium,Case precedents,3
+LR_00192,Intellectual property protection stifles innovation (context 19),legal,undecided,0.679,hard,Economic analysis,4
+LR_00193,The contract was validly formed (context 19),legal,supported,0.556,expert,Contract law,1
+LR_00194,The search violates the Fourth Amendment (context 19),legal,undecided,0.792,easy,Constitutional law,3
+LR_00195,The employer is liable for workplace harassment (context 19),legal,supported,0.661,medium,Title VII,4
+LR_00196,The patent claim is obvious (context 19),legal,undecided,0.676,hard,Prior art search,4
+LR_00197,The testimony is admissible under hearsay rules (context 19),legal,rejected,0.593,expert,Evidence rules,3
+LR_00198,The merger will harm competition (context 19),legal,undecided,0.771,easy,Antitrust analysis,1
+LR_00199,The defendant meets the insanity defense criteria (context 19),legal,undecided,0.949,medium,Psychiatric evaluation,2
+LR_00200,The non-compete clause is enforceable (context 19),legal,rejected,0.717,hard,State law precedents,2
+LR_00201,The defendant had a right to self-defense (context 20),legal,undecided,0.81,easy,Case precedents,4
+LR_00202,Intellectual property protection stifles innovation (context 20),legal,undecided,0.646,medium,Economic analysis,1
+LR_00203,The contract was validly formed (context 20),legal,supported,0.553,hard,Contract law,1
+LR_00204,The search violates the Fourth Amendment (context 20),legal,undecided,0.823,expert,Constitutional law,2
+LR_00205,The employer is liable for workplace harassment (context 20),legal,supported,0.598,easy,Title VII,3
+LR_00206,The patent claim is obvious (context 20),legal,undecided,0.902,medium,Prior art search,4
+LR_00207,The testimony is admissible under hearsay rules (context 20),legal,rejected,0.771,hard,Evidence rules,1
+LR_00208,The merger will harm competition (context 20),legal,undecided,0.9,expert,Antitrust analysis,1
+LR_00209,The defendant meets the insanity defense criteria (context 20),legal,undecided,0.721,easy,Psychiatric evaluation,4
+LR_00210,The non-compete clause is enforceable (context 20),legal,rejected,0.583,medium,State law precedents,2
+LR_00211,The defendant had a right to self-defense (context 21),legal,undecided,0.805,expert,Case precedents,4
+LR_00212,Intellectual property protection stifles innovation (context 21),legal,undecided,0.823,easy,Economic analysis,4
+LR_00213,The contract was validly formed (context 21),legal,supported,0.689,medium,Contract law,2
+LR_00214,The search violates the Fourth Amendment (context 21),legal,undecided,0.617,hard,Constitutional law,3
+LR_00215,The employer is liable for workplace harassment (context 21),legal,supported,0.939,expert,Title VII,2
+LR_00216,The patent claim is obvious (context 21),legal,undecided,0.585,easy,Prior art search,1
+LR_00217,The testimony is admissible under hearsay rules (context 21),legal,rejected,0.825,medium,Evidence rules,1
+LR_00218,The merger will harm competition (context 21),legal,undecided,0.612,hard,Antitrust analysis,1
+LR_00219,The defendant meets the insanity defense criteria (context 21),legal,undecided,0.848,expert,Psychiatric evaluation,1
+LR_00220,The non-compete clause is enforceable (context 21),legal,rejected,0.707,easy,State law precedents,1
+LR_00221,The defendant had a right to self-defense (context 22),legal,undecided,0.822,hard,Case precedents,2
+LR_00222,Intellectual property protection stifles innovation (context 22),legal,undecided,0.684,expert,Economic analysis,2
+LR_00223,The contract was validly formed (context 22),legal,supported,0.587,easy,Contract law,2
+LR_00224,The search violates the Fourth Amendment (context 22),legal,undecided,0.785,medium,Constitutional law,4
+LR_00225,The employer is liable for workplace harassment (context 22),legal,supported,0.775,hard,Title VII,2
+LR_00226,The patent claim is obvious (context 22),legal,undecided,0.919,expert,Prior art search,2
+LR_00227,The testimony is admissible under hearsay rules (context 22),legal,rejected,0.82,easy,Evidence rules,4
+LR_00228,The merger will harm competition (context 22),legal,undecided,0.845,medium,Antitrust analysis,2
+LR_00229,The defendant meets the insanity defense criteria (context 22),legal,undecided,0.799,hard,Psychiatric evaluation,3
+LR_00230,The non-compete clause is enforceable (context 22),legal,rejected,0.859,expert,State law precedents,2
+LR_00231,The defendant had a right to self-defense (context 23),legal,undecided,0.751,medium,Case precedents,3
+LR_00232,Intellectual property protection stifles innovation (context 23),legal,undecided,0.75,hard,Economic analysis,2
+LR_00233,The contract was validly formed (context 23),legal,supported,0.677,expert,Contract law,2
+LR_00234,The search violates the Fourth Amendment (context 23),legal,undecided,0.672,easy,Constitutional law,1
+LR_00235,The employer is liable for workplace harassment (context 23),legal,supported,0.634,medium,Title VII,3
+LR_00236,The patent claim is obvious (context 23),legal,undecided,0.608,hard,Prior art search,2
+LR_00237,The testimony is admissible under hearsay rules (context 23),legal,rejected,0.642,expert,Evidence rules,3
+LR_00238,The merger will harm competition (context 23),legal,undecided,0.735,easy,Antitrust analysis,1
+LR_00239,The defendant meets the insanity defense criteria (context 23),legal,undecided,0.919,medium,Psychiatric evaluation,2
+LR_00240,The non-compete clause is enforceable (context 23),legal,rejected,0.692,hard,State law precedents,1
+LR_00241,The defendant had a right to self-defense (context 24),legal,undecided,0.683,easy,Case precedents,2
+LR_00242,Intellectual property protection stifles innovation (context 24),legal,undecided,0.708,medium,Economic analysis,4
+LR_00243,The contract was validly formed (context 24),legal,supported,0.931,hard,Contract law,4
+LR_00244,The search violates the Fourth Amendment (context 24),legal,undecided,0.891,expert,Constitutional law,2
+LR_00245,The employer is liable for workplace harassment (context 24),legal,supported,0.865,easy,Title VII,2
+LR_00246,The patent claim is obvious (context 24),legal,undecided,0.692,medium,Prior art search,4
+LR_00247,The testimony is admissible under hearsay rules (context 24),legal,rejected,0.752,hard,Evidence rules,3
+LR_00248,The merger will harm competition (context 24),legal,undecided,0.592,expert,Antitrust analysis,2
+LR_00249,The defendant meets the insanity defense criteria (context 24),legal,undecided,0.576,easy,Psychiatric evaluation,1
+LR_00250,The non-compete clause is enforceable (context 24),legal,rejected,0.641,medium,State law precedents,1
+LR_00251,The defendant had a right to self-defense (context 25),legal,undecided,0.883,expert,Case precedents,2
+LR_00252,Intellectual property protection stifles innovation (context 25),legal,undecided,0.769,easy,Economic analysis,1
+LR_00253,The contract was validly formed (context 25),legal,supported,0.944,medium,Contract law,2
+LR_00254,The search violates the Fourth Amendment (context 25),legal,undecided,0.886,hard,Constitutional law,3
+LR_00255,The employer is liable for workplace harassment (context 25),legal,supported,0.623,expert,Title VII,4
+LR_00256,The patent claim is obvious (context 25),legal,undecided,0.639,easy,Prior art search,4
+LR_00257,The testimony is admissible under hearsay rules (context 25),legal,rejected,0.651,medium,Evidence rules,3
+LR_00258,The merger will harm competition (context 25),legal,undecided,0.809,hard,Antitrust analysis,1
+LR_00259,The defendant meets the insanity defense criteria (context 25),legal,undecided,0.558,expert,Psychiatric evaluation,4
+LR_00260,The non-compete clause is enforceable (context 25),legal,rejected,0.574,easy,State law precedents,4
+LR_00261,The defendant had a right to self-defense (context 26),legal,undecided,0.676,hard,Case precedents,4
+LR_00262,Intellectual property protection stifles innovation (context 26),legal,undecided,0.927,expert,Economic analysis,1
+LR_00263,The contract was validly formed (context 26),legal,supported,0.947,easy,Contract law,1
+LR_00264,The search violates the Fourth Amendment (context 26),legal,undecided,0.782,medium,Constitutional law,1
+LR_00265,The employer is liable for workplace harassment (context 26),legal,supported,0.616,hard,Title VII,3
+LR_00266,The patent claim is obvious (context 26),legal,undecided,0.886,expert,Prior art search,3
+LR_00267,The testimony is admissible under hearsay rules (context 26),legal,rejected,0.794,easy,Evidence rules,2
+LR_00268,The merger will harm competition (context 26),legal,undecided,0.663,medium,Antitrust analysis,3
+LR_00269,The defendant meets the insanity defense criteria (context 26),legal,undecided,0.686,hard,Psychiatric evaluation,3
+LR_00270,The non-compete clause is enforceable (context 26),legal,rejected,0.89,expert,State law precedents,4
+LR_00271,The defendant had a right to self-defense (context 27),legal,undecided,0.875,medium,Case precedents,1
+LR_00272,Intellectual property protection stifles innovation (context 27),legal,undecided,0.55,hard,Economic analysis,4
+LR_00273,The contract was validly formed (context 27),legal,supported,0.846,expert,Contract law,3
+LR_00274,The search violates the Fourth Amendment (context 27),legal,undecided,0.827,easy,Constitutional law,4
+LR_00275,The employer is liable for workplace harassment (context 27),legal,supported,0.828,medium,Title VII,3
+LR_00276,The patent claim is obvious (context 27),legal,undecided,0.817,hard,Prior art search,3
+LR_00277,The testimony is admissible under hearsay rules (context 27),legal,rejected,0.876,expert,Evidence rules,3
+LR_00278,The merger will harm competition (context 27),legal,undecided,0.844,easy,Antitrust analysis,2
+LR_00279,The defendant meets the insanity defense criteria (context 27),legal,undecided,0.616,medium,Psychiatric evaluation,1
+LR_00280,The non-compete clause is enforceable (context 27),legal,rejected,0.708,hard,State law precedents,2
+LR_00281,The defendant had a right to self-defense (context 28),legal,undecided,0.754,easy,Case precedents,2
+LR_00282,Intellectual property protection stifles innovation (context 28),legal,undecided,0.773,medium,Economic analysis,3
+LR_00283,The contract was validly formed (context 28),legal,supported,0.909,hard,Contract law,3
+LR_00284,The search violates the Fourth Amendment (context 28),legal,undecided,0.654,expert,Constitutional law,1
+LR_00285,The employer is liable for workplace harassment (context 28),legal,supported,0.886,easy,Title VII,3
+LR_00286,The patent claim is obvious (context 28),legal,undecided,0.889,medium,Prior art search,3
+LR_00287,The testimony is admissible under hearsay rules (context 28),legal,rejected,0.849,hard,Evidence rules,1
+LR_00288,The merger will harm competition (context 28),legal,undecided,0.792,expert,Antitrust analysis,1
+LR_00289,The defendant meets the insanity defense criteria (context 28),legal,undecided,0.722,easy,Psychiatric evaluation,4
+LR_00290,The non-compete clause is enforceable (context 28),legal,rejected,0.793,medium,State law precedents,4
+LR_00291,The defendant had a right to self-defense (context 29),legal,undecided,0.736,expert,Case precedents,4
+LR_00292,Intellectual property protection stifles innovation (context 29),legal,undecided,0.898,easy,Economic analysis,1
+LR_00293,The contract was validly formed (context 29),legal,supported,0.736,medium,Contract law,1
+LR_00294,The search violates the Fourth Amendment (context 29),legal,undecided,0.644,hard,Constitutional law,1
+LR_00295,The employer is liable for workplace harassment (context 29),legal,supported,0.79,expert,Title VII,4
+LR_00296,The patent claim is obvious (context 29),legal,undecided,0.88,easy,Prior art search,3
+LR_00297,The testimony is admissible under hearsay rules (context 29),legal,rejected,0.56,medium,Evidence rules,1
+LR_00298,The merger will harm competition (context 29),legal,undecided,0.938,hard,Antitrust analysis,1
+LR_00299,The defendant meets the insanity defense criteria (context 29),legal,undecided,0.839,expert,Psychiatric evaluation,3
+LR_00300,The non-compete clause is enforceable (context 29),legal,rejected,0.723,easy,State law precedents,3
+LR_00301,The defendant had a right to self-defense (context 30),legal,undecided,0.675,hard,Case precedents,2
+LR_00302,Intellectual property protection stifles innovation (context 30),legal,undecided,0.912,expert,Economic analysis,2
+LR_00303,The contract was validly formed (context 30),legal,supported,0.691,easy,Contract law,2
+LR_00304,The search violates the Fourth Amendment (context 30),legal,undecided,0.804,medium,Constitutional law,3
+LR_00305,The employer is liable for workplace harassment (context 30),legal,supported,0.719,hard,Title VII,1
+LR_00306,The patent claim is obvious (context 30),legal,undecided,0.816,expert,Prior art search,2
+LR_00307,The testimony is admissible under hearsay rules (context 30),legal,rejected,0.605,easy,Evidence rules,4
+LR_00308,The merger will harm competition (context 30),legal,undecided,0.909,medium,Antitrust analysis,1
+LR_00309,The defendant meets the insanity defense criteria (context 30),legal,undecided,0.702,hard,Psychiatric evaluation,1
+LR_00310,The non-compete clause is enforceable (context 30),legal,rejected,0.592,expert,State law precedents,4
+LR_00311,The defendant had a right to self-defense (context 31),legal,undecided,0.769,medium,Case precedents,3
+LR_00312,Intellectual property protection stifles innovation (context 31),legal,undecided,0.874,hard,Economic analysis,1
+LR_00313,The contract was validly formed (context 31),legal,supported,0.798,expert,Contract law,3
+LR_00314,The search violates the Fourth Amendment (context 31),legal,undecided,0.607,easy,Constitutional law,4
+LR_00315,The employer is liable for workplace harassment (context 31),legal,supported,0.906,medium,Title VII,1
+LR_00316,The patent claim is obvious (context 31),legal,undecided,0.577,hard,Prior art search,1
+LR_00317,The testimony is admissible under hearsay rules (context 31),legal,rejected,0.867,expert,Evidence rules,4
+LR_00318,The merger will harm competition (context 31),legal,undecided,0.691,easy,Antitrust analysis,3
+LR_00319,The defendant meets the insanity defense criteria (context 31),legal,undecided,0.849,medium,Psychiatric evaluation,3
+LR_00320,The non-compete clause is enforceable (context 31),legal,rejected,0.904,hard,State law precedents,3
+LR_00321,The defendant had a right to self-defense (context 32),legal,undecided,0.899,easy,Case precedents,1
+LR_00322,Intellectual property protection stifles innovation (context 32),legal,undecided,0.665,medium,Economic analysis,1
+LR_00323,The contract was validly formed (context 32),legal,supported,0.826,hard,Contract law,3
+LR_00324,The search violates the Fourth Amendment (context 32),legal,undecided,0.672,expert,Constitutional law,2
+LR_00325,The employer is liable for workplace harassment (context 32),legal,supported,0.815,easy,Title VII,2
+LR_00326,The patent claim is obvious (context 32),legal,undecided,0.639,medium,Prior art search,1
+LR_00327,The testimony is admissible under hearsay rules (context 32),legal,rejected,0.82,hard,Evidence rules,2
+LR_00328,The merger will harm competition (context 32),legal,undecided,0.797,expert,Antitrust analysis,4
+LR_00329,The defendant meets the insanity defense criteria (context 32),legal,undecided,0.625,easy,Psychiatric evaluation,2
+LR_00330,The non-compete clause is enforceable (context 32),legal,rejected,0.69,medium,State law precedents,3
+LR_00331,The defendant had a right to self-defense (context 33),legal,undecided,0.944,expert,Case precedents,1
+LR_00332,Intellectual property protection stifles innovation (context 33),legal,undecided,0.692,easy,Economic analysis,3
+LR_00333,The contract was validly formed (context 33),legal,supported,0.673,medium,Contract law,3
+LR_00334,The search violates the Fourth Amendment (context 33),legal,undecided,0.64,hard,Constitutional law,1
+LR_00335,The employer is liable for workplace harassment (context 33),legal,supported,0.837,expert,Title VII,4
+LR_00336,The patent claim is obvious (context 33),legal,undecided,0.758,easy,Prior art search,2
+LR_00337,The testimony is admissible under hearsay rules (context 33),legal,rejected,0.571,medium,Evidence rules,1
+LR_00338,The merger will harm competition (context 33),legal,undecided,0.751,hard,Antitrust analysis,2
+LR_00339,The defendant meets the insanity defense criteria (context 33),legal,undecided,0.618,expert,Psychiatric evaluation,2
+LR_00340,The non-compete clause is enforceable (context 33),legal,rejected,0.593,easy,State law precedents,2
+LR_00341,The defendant had a right to self-defense (context 34),legal,undecided,0.835,hard,Case precedents,2
+LR_00342,Intellectual property protection stifles innovation (context 34),legal,undecided,0.946,expert,Economic analysis,3
+LR_00343,The contract was validly formed (context 34),legal,supported,0.728,easy,Contract law,1
+LR_00344,The search violates the Fourth Amendment (context 34),legal,undecided,0.897,medium,Constitutional law,2
+LR_00345,The employer is liable for workplace harassment (context 34),legal,supported,0.685,hard,Title VII,4
+LR_00346,The patent claim is obvious (context 34),legal,undecided,0.703,expert,Prior art search,2
+LR_00347,The testimony is admissible under hearsay rules (context 34),legal,rejected,0.86,easy,Evidence rules,2
+LR_00348,The merger will harm competition (context 34),legal,undecided,0.894,medium,Antitrust analysis,3
+LR_00349,The defendant meets the insanity defense criteria (context 34),legal,undecided,0.931,hard,Psychiatric evaluation,1
+LR_00350,The non-compete clause is enforceable (context 34),legal,rejected,0.71,expert,State law precedents,3
+LR_00351,The defendant had a right to self-defense (context 35),legal,undecided,0.832,medium,Case precedents,4
+LR_00352,Intellectual property protection stifles innovation (context 35),legal,undecided,0.693,hard,Economic analysis,4
+LR_00353,The contract was validly formed (context 35),legal,supported,0.728,expert,Contract law,4
+LR_00354,The search violates the Fourth Amendment (context 35),legal,undecided,0.917,easy,Constitutional law,3
+LR_00355,The employer is liable for workplace harassment (context 35),legal,supported,0.891,medium,Title VII,2
+LR_00356,The patent claim is obvious (context 35),legal,undecided,0.834,hard,Prior art search,2
+LR_00357,The testimony is admissible under hearsay rules (context 35),legal,rejected,0.811,expert,Evidence rules,2
+LR_00358,The merger will harm competition (context 35),legal,undecided,0.89,easy,Antitrust analysis,4
+LR_00359,The defendant meets the insanity defense criteria (context 35),legal,undecided,0.873,medium,Psychiatric evaluation,1
+LR_00360,The non-compete clause is enforceable (context 35),legal,rejected,0.696,hard,State law precedents,4
+LR_00361,The defendant had a right to self-defense (context 36),legal,undecided,0.852,easy,Case precedents,4
+LR_00362,Intellectual property protection stifles innovation (context 36),legal,undecided,0.82,medium,Economic analysis,4
+LR_00363,The contract was validly formed (context 36),legal,supported,0.824,hard,Contract law,1
+LR_00364,The search violates the Fourth Amendment (context 36),legal,undecided,0.837,expert,Constitutional law,1
+LR_00365,The employer is liable for workplace harassment (context 36),legal,supported,0.657,easy,Title VII,3
+LR_00366,The patent claim is obvious (context 36),legal,undecided,0.686,medium,Prior art search,1
+LR_00367,The testimony is admissible under hearsay rules (context 36),legal,rejected,0.865,hard,Evidence rules,3
+LR_00368,The merger will harm competition (context 36),legal,undecided,0.572,expert,Antitrust analysis,4
+LR_00369,The defendant meets the insanity defense criteria (context 36),legal,undecided,0.557,easy,Psychiatric evaluation,4
+LR_00370,The non-compete clause is enforceable (context 36),legal,rejected,0.729,medium,State law precedents,4
+LR_00371,The defendant had a right to self-defense (context 37),legal,undecided,0.761,expert,Case precedents,1
+LR_00372,Intellectual property protection stifles innovation (context 37),legal,undecided,0.742,easy,Economic analysis,1
+LR_00373,The contract was validly formed (context 37),legal,supported,0.949,medium,Contract law,1
+LR_00374,The search violates the Fourth Amendment (context 37),legal,undecided,0.854,hard,Constitutional law,2
+LR_00375,The employer is liable for workplace harassment (context 37),legal,supported,0.872,expert,Title VII,3
+LR_00376,The patent claim is obvious (context 37),legal,undecided,0.799,easy,Prior art search,3
+LR_00377,The testimony is admissible under hearsay rules (context 37),legal,rejected,0.92,medium,Evidence rules,1
+LR_00378,The merger will harm competition (context 37),legal,undecided,0.761,hard,Antitrust analysis,2
+LR_00379,The defendant meets the insanity defense criteria (context 37),legal,undecided,0.676,expert,Psychiatric evaluation,4
+LR_00380,The non-compete clause is enforceable (context 37),legal,rejected,0.812,easy,State law precedents,3
+LR_00381,The defendant had a right to self-defense (context 38),legal,undecided,0.62,hard,Case precedents,3
+LR_00382,Intellectual property protection stifles innovation (context 38),legal,undecided,0.605,expert,Economic analysis,2
+LR_00383,The contract was validly formed (context 38),legal,supported,0.68,easy,Contract law,3
+LR_00384,The search violates the Fourth Amendment (context 38),legal,undecided,0.692,medium,Constitutional law,4
+LR_00385,The employer is liable for workplace harassment (context 38),legal,supported,0.607,hard,Title VII,2
+LR_00386,The patent claim is obvious (context 38),legal,undecided,0.584,expert,Prior art search,2
+LR_00387,The testimony is admissible under hearsay rules (context 38),legal,rejected,0.895,easy,Evidence rules,4
+LR_00388,The merger will harm competition (context 38),legal,undecided,0.853,medium,Antitrust analysis,4
+LR_00389,The defendant meets the insanity defense criteria (context 38),legal,undecided,0.582,hard,Psychiatric evaluation,3
+LR_00390,The non-compete clause is enforceable (context 38),legal,rejected,0.938,expert,State law precedents,1
+LR_00391,The defendant had a right to self-defense (context 39),legal,undecided,0.839,medium,Case precedents,2
+LR_00392,Intellectual property protection stifles innovation (context 39),legal,undecided,0.631,hard,Economic analysis,2
+LR_00393,The contract was validly formed (context 39),legal,supported,0.789,expert,Contract law,1
+LR_00394,The search violates the Fourth Amendment (context 39),legal,undecided,0.675,easy,Constitutional law,4
+LR_00395,The employer is liable for workplace harassment (context 39),legal,supported,0.759,medium,Title VII,4
+LR_00396,The patent claim is obvious (context 39),legal,undecided,0.767,hard,Prior art search,2
+LR_00397,The testimony is admissible under hearsay rules (context 39),legal,rejected,0.839,expert,Evidence rules,4
+LR_00398,The merger will harm competition (context 39),legal,undecided,0.88,easy,Antitrust analysis,1
+LR_00399,The defendant meets the insanity defense criteria (context 39),legal,undecided,0.857,medium,Psychiatric evaluation,4
+LR_00400,The non-compete clause is enforceable (context 39),legal,rejected,0.891,hard,State law precedents,3
+LR_00401,The defendant had a right to self-defense (context 40),legal,undecided,0.793,easy,Case precedents,4
+LR_00402,Intellectual property protection stifles innovation (context 40),legal,undecided,0.568,medium,Economic analysis,4
+LR_00403,The contract was validly formed (context 40),legal,supported,0.942,hard,Contract law,3
+LR_00404,The search violates the Fourth Amendment (context 40),legal,undecided,0.943,expert,Constitutional law,4
+LR_00405,The employer is liable for workplace harassment (context 40),legal,supported,0.782,easy,Title VII,2
+LR_00406,The patent claim is obvious (context 40),legal,undecided,0.865,medium,Prior art search,1
+LR_00407,The testimony is admissible under hearsay rules (context 40),legal,rejected,0.7,hard,Evidence rules,4
+LR_00408,The merger will harm competition (context 40),legal,undecided,0.894,expert,Antitrust analysis,3
+LR_00409,The defendant meets the insanity defense criteria (context 40),legal,undecided,0.77,easy,Psychiatric evaluation,3
+LR_00410,The non-compete clause is enforceable (context 40),legal,rejected,0.555,medium,State law precedents,2
+LR_00411,The defendant had a right to self-defense (context 41),legal,undecided,0.579,expert,Case precedents,3
+LR_00412,Intellectual property protection stifles innovation (context 41),legal,undecided,0.615,easy,Economic analysis,4
+LR_00413,The contract was validly formed (context 41),legal,supported,0.804,medium,Contract law,1
+LR_00414,The search violates the Fourth Amendment (context 41),legal,undecided,0.945,hard,Constitutional law,3
+LR_00415,The employer is liable for workplace harassment (context 41),legal,supported,0.754,expert,Title VII,1
+LR_00416,The patent claim is obvious (context 41),legal,undecided,0.565,easy,Prior art search,3
+LR_00417,The testimony is admissible under hearsay rules (context 41),legal,rejected,0.568,medium,Evidence rules,4
+LR_00418,The merger will harm competition (context 41),legal,undecided,0.887,hard,Antitrust analysis,3
+LR_00419,The defendant meets the insanity defense criteria (context 41),legal,undecided,0.656,expert,Psychiatric evaluation,3
+LR_00420,The non-compete clause is enforceable (context 41),legal,rejected,0.898,easy,State law precedents,1
+LR_00421,The defendant had a right to self-defense (context 42),legal,undecided,0.767,hard,Case precedents,3
+LR_00422,Intellectual property protection stifles innovation (context 42),legal,undecided,0.783,expert,Economic analysis,2
+LR_00423,The contract was validly formed (context 42),legal,supported,0.935,easy,Contract law,1
+LR_00424,The search violates the Fourth Amendment (context 42),legal,undecided,0.74,medium,Constitutional law,1
+LR_00425,The employer is liable for workplace harassment (context 42),legal,supported,0.81,hard,Title VII,4
+LR_00426,The patent claim is obvious (context 42),legal,undecided,0.813,expert,Prior art search,2
+LR_00427,The testimony is admissible under hearsay rules (context 42),legal,rejected,0.675,easy,Evidence rules,4
+LR_00428,The merger will harm competition (context 42),legal,undecided,0.837,medium,Antitrust analysis,3
+LR_00429,The defendant meets the insanity defense criteria (context 42),legal,undecided,0.779,hard,Psychiatric evaluation,2
+LR_00430,The non-compete clause is enforceable (context 42),legal,rejected,0.836,expert,State law precedents,3
+LR_00431,The defendant had a right to self-defense (context 43),legal,undecided,0.878,medium,Case precedents,1
+LR_00432,Intellectual property protection stifles innovation (context 43),legal,undecided,0.832,hard,Economic analysis,3
+LR_00433,The contract was validly formed (context 43),legal,supported,0.706,expert,Contract law,1
+LR_00434,The search violates the Fourth Amendment (context 43),legal,undecided,0.917,easy,Constitutional law,2
+LR_00435,The employer is liable for workplace harassment (context 43),legal,supported,0.663,medium,Title VII,4
+LR_00436,The patent claim is obvious (context 43),legal,undecided,0.744,hard,Prior art search,1
+LR_00437,The testimony is admissible under hearsay rules (context 43),legal,rejected,0.893,expert,Evidence rules,3
+LR_00438,The merger will harm competition (context 43),legal,undecided,0.857,easy,Antitrust analysis,4
+LR_00439,The defendant meets the insanity defense criteria (context 43),legal,undecided,0.762,medium,Psychiatric evaluation,3
+LR_00440,The non-compete clause is enforceable (context 43),legal,rejected,0.782,hard,State law precedents,3
+LR_00441,The defendant had a right to self-defense (context 44),legal,undecided,0.648,easy,Case precedents,2
+LR_00442,Intellectual property protection stifles innovation (context 44),legal,undecided,0.945,medium,Economic analysis,4
+LR_00443,The contract was validly formed (context 44),legal,supported,0.791,hard,Contract law,3
+LR_00444,The search violates the Fourth Amendment (context 44),legal,undecided,0.899,expert,Constitutional law,4
+LR_00445,The employer is liable for workplace harassment (context 44),legal,supported,0.793,easy,Title VII,2
+LR_00446,The patent claim is obvious (context 44),legal,undecided,0.719,medium,Prior art search,3
+LR_00447,The testimony is admissible under hearsay rules (context 44),legal,rejected,0.84,hard,Evidence rules,1
+LR_00448,The merger will harm competition (context 44),legal,undecided,0.732,expert,Antitrust analysis,2
+LR_00449,The defendant meets the insanity defense criteria (context 44),legal,undecided,0.859,easy,Psychiatric evaluation,1
+LR_00450,The non-compete clause is enforceable (context 44),legal,rejected,0.55,medium,State law precedents,4
+LR_00451,The defendant had a right to self-defense (context 45),legal,undecided,0.608,expert,Case precedents,2
+LR_00452,Intellectual property protection stifles innovation (context 45),legal,undecided,0.841,easy,Economic analysis,1
+LR_00453,The contract was validly formed (context 45),legal,supported,0.742,medium,Contract law,1
+LR_00454,The search violates the Fourth Amendment (context 45),legal,undecided,0.778,hard,Constitutional law,1
+LR_00455,The employer is liable for workplace harassment (context 45),legal,supported,0.591,expert,Title VII,3
+LR_00456,The patent claim is obvious (context 45),legal,undecided,0.911,easy,Prior art search,2
+LR_00457,The testimony is admissible under hearsay rules (context 45),legal,rejected,0.562,medium,Evidence rules,1
+LR_00458,The merger will harm competition (context 45),legal,undecided,0.822,hard,Antitrust analysis,3
+LR_00459,The defendant meets the insanity defense criteria (context 45),legal,undecided,0.584,expert,Psychiatric evaluation,2
+LR_00460,The non-compete clause is enforceable (context 45),legal,rejected,0.831,easy,State law precedents,2
+LR_00461,The defendant had a right to self-defense (context 46),legal,undecided,0.734,hard,Case precedents,1
+LR_00462,Intellectual property protection stifles innovation (context 46),legal,undecided,0.679,expert,Economic analysis,1
+LR_00463,The contract was validly formed (context 46),legal,supported,0.661,easy,Contract law,2
+LR_00464,The search violates the Fourth Amendment (context 46),legal,undecided,0.554,medium,Constitutional law,1
+LR_00465,The employer is liable for workplace harassment (context 46),legal,supported,0.737,hard,Title VII,4
+LR_00466,The patent claim is obvious (context 46),legal,undecided,0.82,expert,Prior art search,4
+LR_00467,The testimony is admissible under hearsay rules (context 46),legal,rejected,0.688,easy,Evidence rules,4
+LR_00468,The merger will harm competition (context 46),legal,undecided,0.684,medium,Antitrust analysis,4
+LR_00469,The defendant meets the insanity defense criteria (context 46),legal,undecided,0.564,hard,Psychiatric evaluation,2
+LR_00470,The non-compete clause is enforceable (context 46),legal,rejected,0.574,expert,State law precedents,2
+LR_00471,The defendant had a right to self-defense (context 47),legal,undecided,0.69,medium,Case precedents,3
+LR_00472,Intellectual property protection stifles innovation (context 47),legal,undecided,0.705,hard,Economic analysis,3
+LR_00473,The contract was validly formed (context 47),legal,supported,0.611,expert,Contract law,2
+LR_00474,The search violates the Fourth Amendment (context 47),legal,undecided,0.57,easy,Constitutional law,2
+LR_00475,The employer is liable for workplace harassment (context 47),legal,supported,0.645,medium,Title VII,4
+LR_00476,The patent claim is obvious (context 47),legal,undecided,0.909,hard,Prior art search,2
+LR_00477,The testimony is admissible under hearsay rules (context 47),legal,rejected,0.846,expert,Evidence rules,1
+LR_00478,The merger will harm competition (context 47),legal,undecided,0.603,easy,Antitrust analysis,2
+LR_00479,The defendant meets the insanity defense criteria (context 47),legal,undecided,0.64,medium,Psychiatric evaluation,3
+LR_00480,The non-compete clause is enforceable (context 47),legal,rejected,0.738,hard,State law precedents,1
+LR_00481,The defendant had a right to self-defense (context 48),legal,undecided,0.918,easy,Case precedents,3
+LR_00482,Intellectual property protection stifles innovation (context 48),legal,undecided,0.948,medium,Economic analysis,3
+LR_00483,The contract was validly formed (context 48),legal,supported,0.9,hard,Contract law,2
+LR_00484,The search violates the Fourth Amendment (context 48),legal,undecided,0.688,expert,Constitutional law,2
+LR_00485,The employer is liable for workplace harassment (context 48),legal,supported,0.776,easy,Title VII,4
+LR_00486,The patent claim is obvious (context 48),legal,undecided,0.909,medium,Prior art search,4
+LR_00487,The testimony is admissible under hearsay rules (context 48),legal,rejected,0.647,hard,Evidence rules,1
+LR_00488,The merger will harm competition (context 48),legal,undecided,0.717,expert,Antitrust analysis,4
+LR_00489,The defendant meets the insanity defense criteria (context 48),legal,undecided,0.809,easy,Psychiatric evaluation,1
+LR_00490,The non-compete clause is enforceable (context 48),legal,rejected,0.566,medium,State law precedents,2
+LR_00491,The defendant had a right to self-defense (context 49),legal,undecided,0.61,expert,Case precedents,4
+LR_00492,Intellectual property protection stifles innovation (context 49),legal,undecided,0.68,easy,Economic analysis,4
+LR_00493,The contract was validly formed (context 49),legal,supported,0.928,medium,Contract law,1
+LR_00494,The search violates the Fourth Amendment (context 49),legal,undecided,0.683,hard,Constitutional law,1
+LR_00495,The employer is liable for workplace harassment (context 49),legal,supported,0.653,expert,Title VII,1
+LR_00496,The patent claim is obvious (context 49),legal,undecided,0.916,easy,Prior art search,1
+LR_00497,The testimony is admissible under hearsay rules (context 49),legal,rejected,0.773,medium,Evidence rules,3
+LR_00498,The merger will harm competition (context 49),legal,undecided,0.657,hard,Antitrust analysis,3
+LR_00499,The defendant meets the insanity defense criteria (context 49),legal,undecided,0.694,expert,Psychiatric evaluation,1
+LR_00500,The non-compete clause is enforceable (context 49),legal,rejected,0.807,easy,State law precedents,2
+LR_00501,The defendant had a right to self-defense (context 50),legal,undecided,0.928,hard,Case precedents,3
+LR_00502,Intellectual property protection stifles innovation (context 50),legal,undecided,0.556,expert,Economic analysis,1
+LR_00503,The contract was validly formed (context 50),legal,supported,0.805,easy,Contract law,4
+LR_00504,The search violates the Fourth Amendment (context 50),legal,undecided,0.568,medium,Constitutional law,2
+LR_00505,The employer is liable for workplace harassment (context 50),legal,supported,0.578,hard,Title VII,1
+LR_00506,The patent claim is obvious (context 50),legal,undecided,0.92,expert,Prior art search,2
+LR_00507,The testimony is admissible under hearsay rules (context 50),legal,rejected,0.702,easy,Evidence rules,1
+LR_00508,The merger will harm competition (context 50),legal,undecided,0.901,medium,Antitrust analysis,1
+LR_00509,The defendant meets the insanity defense criteria (context 50),legal,undecided,0.652,hard,Psychiatric evaluation,4
+LR_00510,The non-compete clause is enforceable (context 50),legal,rejected,0.685,expert,State law precedents,4
+LR_00511,The defendant had a right to self-defense (context 51),legal,undecided,0.816,medium,Case precedents,4
+LR_00512,Intellectual property protection stifles innovation (context 51),legal,undecided,0.684,hard,Economic analysis,2
+LR_00513,The contract was validly formed (context 51),legal,supported,0.779,expert,Contract law,3
+LR_00514,The search violates the Fourth Amendment (context 51),legal,undecided,0.872,easy,Constitutional law,1
+LR_00515,The employer is liable for workplace harassment (context 51),legal,supported,0.73,medium,Title VII,1
+LR_00516,The patent claim is obvious (context 51),legal,undecided,0.687,hard,Prior art search,2
+LR_00517,The testimony is admissible under hearsay rules (context 51),legal,rejected,0.754,expert,Evidence rules,2
+LR_00518,The merger will harm competition (context 51),legal,undecided,0.732,easy,Antitrust analysis,2
+LR_00519,The defendant meets the insanity defense criteria (context 51),legal,undecided,0.601,medium,Psychiatric evaluation,4
+LR_00520,The non-compete clause is enforceable (context 51),legal,rejected,0.841,hard,State law precedents,4
+LR_00521,The defendant had a right to self-defense (context 52),legal,undecided,0.838,easy,Case precedents,1
+LR_00522,Intellectual property protection stifles innovation (context 52),legal,undecided,0.619,medium,Economic analysis,3
+LR_00523,The contract was validly formed (context 52),legal,supported,0.597,hard,Contract law,1
+LR_00524,The search violates the Fourth Amendment (context 52),legal,undecided,0.605,expert,Constitutional law,3
+LR_00525,The employer is liable for workplace harassment (context 52),legal,supported,0.772,easy,Title VII,4
+LR_00526,The patent claim is obvious (context 52),legal,undecided,0.638,medium,Prior art search,2
+LR_00527,The testimony is admissible under hearsay rules (context 52),legal,rejected,0.574,hard,Evidence rules,3
+LR_00528,The merger will harm competition (context 52),legal,undecided,0.84,expert,Antitrust analysis,4
+LR_00529,The defendant meets the insanity defense criteria (context 52),legal,undecided,0.708,easy,Psychiatric evaluation,2
+LR_00530,The non-compete clause is enforceable (context 52),legal,rejected,0.792,medium,State law precedents,3
+LR_00531,The defendant had a right to self-defense (context 53),legal,undecided,0.862,expert,Case precedents,4
+LR_00532,Intellectual property protection stifles innovation (context 53),legal,undecided,0.892,easy,Economic analysis,1
+LR_00533,The contract was validly formed (context 53),legal,supported,0.868,medium,Contract law,1
+LR_00534,The search violates the Fourth Amendment (context 53),legal,undecided,0.823,hard,Constitutional law,1
+LR_00535,The employer is liable for workplace harassment (context 53),legal,supported,0.582,expert,Title VII,4
+LR_00536,The patent claim is obvious (context 53),legal,undecided,0.903,easy,Prior art search,3
+LR_00537,The testimony is admissible under hearsay rules (context 53),legal,rejected,0.944,medium,Evidence rules,2
+LR_00538,The merger will harm competition (context 53),legal,undecided,0.864,hard,Antitrust analysis,3
+LR_00539,The defendant meets the insanity defense criteria (context 53),legal,undecided,0.607,expert,Psychiatric evaluation,3
+LR_00540,The non-compete clause is enforceable (context 53),legal,rejected,0.945,easy,State law precedents,1
+LR_00541,The defendant had a right to self-defense (context 54),legal,undecided,0.665,hard,Case precedents,4
+LR_00542,Intellectual property protection stifles innovation (context 54),legal,undecided,0.821,expert,Economic analysis,3
+LR_00543,The contract was validly formed (context 54),legal,supported,0.924,easy,Contract law,3
+LR_00544,The search violates the Fourth Amendment (context 54),legal,undecided,0.816,medium,Constitutional law,1
+LR_00545,The employer is liable for workplace harassment (context 54),legal,supported,0.73,hard,Title VII,2
+LR_00546,The patent claim is obvious (context 54),legal,undecided,0.815,expert,Prior art search,2
+LR_00547,The testimony is admissible under hearsay rules (context 54),legal,rejected,0.608,easy,Evidence rules,4
+LR_00548,The merger will harm competition (context 54),legal,undecided,0.842,medium,Antitrust analysis,1
+LR_00549,The defendant meets the insanity defense criteria (context 54),legal,undecided,0.894,hard,Psychiatric evaluation,1
+LR_00550,The non-compete clause is enforceable (context 54),legal,rejected,0.925,expert,State law precedents,1
+LR_00551,The defendant had a right to self-defense (context 55),legal,undecided,0.759,medium,Case precedents,1
+LR_00552,Intellectual property protection stifles innovation (context 55),legal,undecided,0.813,hard,Economic analysis,4
+LR_00553,The contract was validly formed (context 55),legal,supported,0.898,expert,Contract law,1
+LR_00554,The search violates the Fourth Amendment (context 55),legal,undecided,0.786,easy,Constitutional law,1
+LR_00555,The employer is liable for workplace harassment (context 55),legal,supported,0.762,medium,Title VII,2
+LR_00556,The patent claim is obvious (context 55),legal,undecided,0.932,hard,Prior art search,3
+LR_00557,The testimony is admissible under hearsay rules (context 55),legal,rejected,0.712,expert,Evidence rules,3
+LR_00558,The merger will harm competition (context 55),legal,undecided,0.573,easy,Antitrust analysis,1
+LR_00559,The defendant meets the insanity defense criteria (context 55),legal,undecided,0.916,medium,Psychiatric evaluation,4
+LR_00560,The non-compete clause is enforceable (context 55),legal,rejected,0.887,hard,State law precedents,4
+LR_00561,The defendant had a right to self-defense (context 56),legal,undecided,0.928,easy,Case precedents,3
+LR_00562,Intellectual property protection stifles innovation (context 56),legal,undecided,0.688,medium,Economic analysis,2
+LR_00563,The contract was validly formed (context 56),legal,supported,0.607,hard,Contract law,4
+LR_00564,The search violates the Fourth Amendment (context 56),legal,undecided,0.744,expert,Constitutional law,3
+LR_00565,The employer is liable for workplace harassment (context 56),legal,supported,0.609,easy,Title VII,3
+LR_00566,The patent claim is obvious (context 56),legal,undecided,0.792,medium,Prior art search,2
+LR_00567,The testimony is admissible under hearsay rules (context 56),legal,rejected,0.665,hard,Evidence rules,3
+LR_00568,The merger will harm competition (context 56),legal,undecided,0.823,expert,Antitrust analysis,4
+LR_00569,The defendant meets the insanity defense criteria (context 56),legal,undecided,0.882,easy,Psychiatric evaluation,1
+LR_00570,The non-compete clause is enforceable (context 56),legal,rejected,0.942,medium,State law precedents,2
+LR_00571,The defendant had a right to self-defense (context 57),legal,undecided,0.58,expert,Case precedents,2
+LR_00572,Intellectual property protection stifles innovation (context 57),legal,undecided,0.603,easy,Economic analysis,4
+LR_00573,The contract was validly formed (context 57),legal,supported,0.853,medium,Contract law,3
+LR_00574,The search violates the Fourth Amendment (context 57),legal,undecided,0.767,hard,Constitutional law,1
+LR_00575,The employer is liable for workplace harassment (context 57),legal,supported,0.878,expert,Title VII,2
+LR_00576,The patent claim is obvious (context 57),legal,undecided,0.884,easy,Prior art search,1
+LR_00577,The testimony is admissible under hearsay rules (context 57),legal,rejected,0.596,medium,Evidence rules,2
+LR_00578,The merger will harm competition (context 57),legal,undecided,0.817,hard,Antitrust analysis,4
+LR_00579,The defendant meets the insanity defense criteria (context 57),legal,undecided,0.84,expert,Psychiatric evaluation,3
+LR_00580,The non-compete clause is enforceable (context 57),legal,rejected,0.59,easy,State law precedents,2
+LR_00581,The defendant had a right to self-defense (context 58),legal,undecided,0.73,hard,Case precedents,3
+LR_00582,Intellectual property protection stifles innovation (context 58),legal,undecided,0.637,expert,Economic analysis,1
+LR_00583,The contract was validly formed (context 58),legal,supported,0.892,easy,Contract law,1
+LR_00584,The search violates the Fourth Amendment (context 58),legal,undecided,0.867,medium,Constitutional law,4
+LR_00585,The employer is liable for workplace harassment (context 58),legal,supported,0.934,hard,Title VII,3
+LR_00586,The patent claim is obvious (context 58),legal,undecided,0.829,expert,Prior art search,3
+LR_00587,The testimony is admissible under hearsay rules (context 58),legal,rejected,0.661,easy,Evidence rules,3
+LR_00588,The merger will harm competition (context 58),legal,undecided,0.69,medium,Antitrust analysis,3
+LR_00589,The defendant meets the insanity defense criteria (context 58),legal,undecided,0.7,hard,Psychiatric evaluation,2
+LR_00590,The non-compete clause is enforceable (context 58),legal,rejected,0.713,expert,State law precedents,1
+LR_00591,The defendant had a right to self-defense (context 59),legal,undecided,0.754,medium,Case precedents,3
+LR_00592,Intellectual property protection stifles innovation (context 59),legal,undecided,0.639,hard,Economic analysis,3
+LR_00593,The contract was validly formed (context 59),legal,supported,0.767,expert,Contract law,4
+LR_00594,The search violates the Fourth Amendment (context 59),legal,undecided,0.923,easy,Constitutional law,3
+LR_00595,The employer is liable for workplace harassment (context 59),legal,supported,0.784,medium,Title VII,1
+LR_00596,The patent claim is obvious (context 59),legal,undecided,0.667,hard,Prior art search,3
+LR_00597,The testimony is admissible under hearsay rules (context 59),legal,rejected,0.639,expert,Evidence rules,4
+LR_00598,The merger will harm competition (context 59),legal,undecided,0.597,easy,Antitrust analysis,3
+LR_00599,The defendant meets the insanity defense criteria (context 59),legal,undecided,0.935,medium,Psychiatric evaluation,4
+LR_00600,The non-compete clause is enforceable (context 59),legal,rejected,0.64,hard,State law precedents,3
+LR_00601,The defendant had a right to self-defense (context 60),legal,undecided,0.932,easy,Case precedents,3
+LR_00602,Intellectual property protection stifles innovation (context 60),legal,undecided,0.81,medium,Economic analysis,3
+LR_00603,The contract was validly formed (context 60),legal,supported,0.676,hard,Contract law,1
+LR_00604,The search violates the Fourth Amendment (context 60),legal,undecided,0.822,expert,Constitutional law,4
+LR_00605,The employer is liable for workplace harassment (context 60),legal,supported,0.573,easy,Title VII,1
+LR_00606,The patent claim is obvious (context 60),legal,undecided,0.768,medium,Prior art search,2
+LR_00607,The testimony is admissible under hearsay rules (context 60),legal,rejected,0.721,hard,Evidence rules,2
+LR_00608,The merger will harm competition (context 60),legal,undecided,0.559,expert,Antitrust analysis,4
+LR_00609,The defendant meets the insanity defense criteria (context 60),legal,undecided,0.773,easy,Psychiatric evaluation,1
+LR_00610,The non-compete clause is enforceable (context 60),legal,rejected,0.681,medium,State law precedents,4
+LR_00611,The defendant had a right to self-defense (context 61),legal,undecided,0.931,expert,Case precedents,2
+LR_00612,Intellectual property protection stifles innovation (context 61),legal,undecided,0.756,easy,Economic analysis,3
+LR_00613,The contract was validly formed (context 61),legal,supported,0.925,medium,Contract law,3
+LR_00614,The search violates the Fourth Amendment (context 61),legal,undecided,0.636,hard,Constitutional law,2
+LR_00615,The employer is liable for workplace harassment (context 61),legal,supported,0.877,expert,Title VII,3
+LR_00616,The patent claim is obvious (context 61),legal,undecided,0.939,easy,Prior art search,4
+LR_00617,The testimony is admissible under hearsay rules (context 61),legal,rejected,0.609,medium,Evidence rules,3
+LR_00618,The merger will harm competition (context 61),legal,undecided,0.907,hard,Antitrust analysis,2
+LR_00619,The defendant meets the insanity defense criteria (context 61),legal,undecided,0.871,expert,Psychiatric evaluation,2
+LR_00620,The non-compete clause is enforceable (context 61),legal,rejected,0.859,easy,State law precedents,1
+LR_00621,The defendant had a right to self-defense (context 62),legal,undecided,0.939,hard,Case precedents,4
+LR_00622,Intellectual property protection stifles innovation (context 62),legal,undecided,0.647,expert,Economic analysis,4
+LR_00623,The contract was validly formed (context 62),legal,supported,0.795,easy,Contract law,4
+LR_00624,The search violates the Fourth Amendment (context 62),legal,undecided,0.562,medium,Constitutional law,4
+LR_00625,The employer is liable for workplace harassment (context 62),legal,supported,0.6,hard,Title VII,2
+LR_00626,The patent claim is obvious (context 62),legal,undecided,0.625,expert,Prior art search,4
+LR_00627,The testimony is admissible under hearsay rules (context 62),legal,rejected,0.606,easy,Evidence rules,2
+LR_00628,The merger will harm competition (context 62),legal,undecided,0.856,medium,Antitrust analysis,4
+LR_00629,The defendant meets the insanity defense criteria (context 62),legal,undecided,0.769,hard,Psychiatric evaluation,2
+LR_00630,The non-compete clause is enforceable (context 62),legal,rejected,0.895,expert,State law precedents,3
+LR_00631,The defendant had a right to self-defense (context 63),legal,undecided,0.795,medium,Case precedents,3
+LR_00632,Intellectual property protection stifles innovation (context 63),legal,undecided,0.921,hard,Economic analysis,1
+LR_00633,The contract was validly formed (context 63),legal,supported,0.64,expert,Contract law,2
+LR_00634,The search violates the Fourth Amendment (context 63),legal,undecided,0.822,easy,Constitutional law,3
+LR_00635,The employer is liable for workplace harassment (context 63),legal,supported,0.795,medium,Title VII,3
+LR_00636,The patent claim is obvious (context 63),legal,undecided,0.654,hard,Prior art search,4
+LR_00637,The testimony is admissible under hearsay rules (context 63),legal,rejected,0.707,expert,Evidence rules,2
+LR_00638,The merger will harm competition (context 63),legal,undecided,0.581,easy,Antitrust analysis,1
+LR_00639,The defendant meets the insanity defense criteria (context 63),legal,undecided,0.932,medium,Psychiatric evaluation,3
+LR_00640,The non-compete clause is enforceable (context 63),legal,rejected,0.695,hard,State law precedents,2
+LR_00641,The defendant had a right to self-defense (context 64),legal,undecided,0.791,easy,Case precedents,4
+LR_00642,Intellectual property protection stifles innovation (context 64),legal,undecided,0.76,medium,Economic analysis,2
+LR_00643,The contract was validly formed (context 64),legal,supported,0.755,hard,Contract law,4
+LR_00644,The search violates the Fourth Amendment (context 64),legal,undecided,0.742,expert,Constitutional law,1
+LR_00645,The employer is liable for workplace harassment (context 64),legal,supported,0.689,easy,Title VII,1
+LR_00646,The patent claim is obvious (context 64),legal,undecided,0.684,medium,Prior art search,1
+LR_00647,The testimony is admissible under hearsay rules (context 64),legal,rejected,0.91,hard,Evidence rules,2
+LR_00648,The merger will harm competition (context 64),legal,undecided,0.885,expert,Antitrust analysis,4
+LR_00649,The defendant meets the insanity defense criteria (context 64),legal,undecided,0.76,easy,Psychiatric evaluation,1
+LR_00650,The non-compete clause is enforceable (context 64),legal,rejected,0.651,medium,State law precedents,2
+LR_00651,The defendant had a right to self-defense (context 65),legal,undecided,0.942,expert,Case precedents,4
+LR_00652,Intellectual property protection stifles innovation (context 65),legal,undecided,0.609,easy,Economic analysis,2
+LR_00653,The contract was validly formed (context 65),legal,supported,0.791,medium,Contract law,1
+LR_00654,The search violates the Fourth Amendment (context 65),legal,undecided,0.686,hard,Constitutional law,4
+LR_00655,The employer is liable for workplace harassment (context 65),legal,supported,0.864,expert,Title VII,1
+LR_00656,The patent claim is obvious (context 65),legal,undecided,0.749,easy,Prior art search,1
+LR_00657,The testimony is admissible under hearsay rules (context 65),legal,rejected,0.787,medium,Evidence rules,2
+LR_00658,The merger will harm competition (context 65),legal,undecided,0.783,hard,Antitrust analysis,2
+LR_00659,The defendant meets the insanity defense criteria (context 65),legal,undecided,0.681,expert,Psychiatric evaluation,2
+LR_00660,The non-compete clause is enforceable (context 65),legal,rejected,0.738,easy,State law precedents,3
+LR_00661,The defendant had a right to self-defense (context 66),legal,undecided,0.905,hard,Case precedents,1
+LR_00662,Intellectual property protection stifles innovation (context 66),legal,undecided,0.927,expert,Economic analysis,3
+LR_00663,The contract was validly formed (context 66),legal,supported,0.616,easy,Contract law,3
+LR_00664,The search violates the Fourth Amendment (context 66),legal,undecided,0.766,medium,Constitutional law,4
+LR_00665,The employer is liable for workplace harassment (context 66),legal,supported,0.617,hard,Title VII,2
+LR_00666,The patent claim is obvious (context 66),legal,undecided,0.725,expert,Prior art search,2
+LR_00667,The testimony is admissible under hearsay rules (context 66),legal,rejected,0.661,easy,Evidence rules,2
+LR_00668,The merger will harm competition (context 66),legal,undecided,0.624,medium,Antitrust analysis,1
+LR_00669,The defendant meets the insanity defense criteria (context 66),legal,undecided,0.772,hard,Psychiatric evaluation,3
+LR_00670,The non-compete clause is enforceable (context 66),legal,rejected,0.717,expert,State law precedents,3
+LR_00671,The defendant had a right to self-defense (context 67),legal,undecided,0.803,medium,Case precedents,3
+LR_00672,Intellectual property protection stifles innovation (context 67),legal,undecided,0.95,hard,Economic analysis,4
+LR_00673,The contract was validly formed (context 67),legal,supported,0.94,expert,Contract law,3
+LR_00674,The search violates the Fourth Amendment (context 67),legal,undecided,0.861,easy,Constitutional law,3
+LR_00675,The employer is liable for workplace harassment (context 67),legal,supported,0.644,medium,Title VII,2
+LR_00676,The patent claim is obvious (context 67),legal,undecided,0.787,hard,Prior art search,4
+LR_00677,The testimony is admissible under hearsay rules (context 67),legal,rejected,0.849,expert,Evidence rules,4
+LR_00678,The merger will harm competition (context 67),legal,undecided,0.584,easy,Antitrust analysis,4
+LR_00679,The defendant meets the insanity defense criteria (context 67),legal,undecided,0.832,medium,Psychiatric evaluation,2
+LR_00680,The non-compete clause is enforceable (context 67),legal,rejected,0.853,hard,State law precedents,4
+LR_00681,The defendant had a right to self-defense (context 68),legal,undecided,0.581,easy,Case precedents,4
+LR_00682,Intellectual property protection stifles innovation (context 68),legal,undecided,0.553,medium,Economic analysis,3
+LR_00683,The contract was validly formed (context 68),legal,supported,0.817,hard,Contract law,2
+LR_00684,The search violates the Fourth Amendment (context 68),legal,undecided,0.834,expert,Constitutional law,1
+LR_00685,The employer is liable for workplace harassment (context 68),legal,supported,0.688,easy,Title VII,3
+LR_00686,The patent claim is obvious (context 68),legal,undecided,0.914,medium,Prior art search,3
+LR_00687,The testimony is admissible under hearsay rules (context 68),legal,rejected,0.913,hard,Evidence rules,3
+LR_00688,The merger will harm competition (context 68),legal,undecided,0.626,expert,Antitrust analysis,2
+LR_00689,The defendant meets the insanity defense criteria (context 68),legal,undecided,0.907,easy,Psychiatric evaluation,4
+LR_00690,The non-compete clause is enforceable (context 68),legal,rejected,0.888,medium,State law precedents,3
+LR_00691,The defendant had a right to self-defense (context 69),legal,undecided,0.629,expert,Case precedents,4
+LR_00692,Intellectual property protection stifles innovation (context 69),legal,undecided,0.854,easy,Economic analysis,3
+LR_00693,The contract was validly formed (context 69),legal,supported,0.758,medium,Contract law,2
+LR_00694,The search violates the Fourth Amendment (context 69),legal,undecided,0.812,hard,Constitutional law,3
+LR_00695,The employer is liable for workplace harassment (context 69),legal,supported,0.625,expert,Title VII,1
+LR_00696,The patent claim is obvious (context 69),legal,undecided,0.554,easy,Prior art search,2
+LR_00697,The testimony is admissible under hearsay rules (context 69),legal,rejected,0.929,medium,Evidence rules,4
+LR_00698,The merger will harm competition (context 69),legal,undecided,0.923,hard,Antitrust analysis,2
+LR_00699,The defendant meets the insanity defense criteria (context 69),legal,undecided,0.779,expert,Psychiatric evaluation,3
+LR_00700,The non-compete clause is enforceable (context 69),legal,rejected,0.695,easy,State law precedents,4
+LR_00701,The defendant had a right to self-defense (context 70),legal,undecided,0.589,hard,Case precedents,2
+LR_00702,Intellectual property protection stifles innovation (context 70),legal,undecided,0.662,expert,Economic analysis,3
+LR_00703,The contract was validly formed (context 70),legal,supported,0.81,easy,Contract law,2
+LR_00704,The search violates the Fourth Amendment (context 70),legal,undecided,0.837,medium,Constitutional law,2
+LR_00705,The employer is liable for workplace harassment (context 70),legal,supported,0.733,hard,Title VII,1
+LR_00706,The patent claim is obvious (context 70),legal,undecided,0.783,expert,Prior art search,3
+LR_00707,The testimony is admissible under hearsay rules (context 70),legal,rejected,0.944,easy,Evidence rules,4
+LR_00708,The merger will harm competition (context 70),legal,undecided,0.76,medium,Antitrust analysis,3
+LR_00709,The defendant meets the insanity defense criteria (context 70),legal,undecided,0.826,hard,Psychiatric evaluation,2
+LR_00710,The non-compete clause is enforceable (context 70),legal,rejected,0.688,expert,State law precedents,4
+LR_00711,The defendant had a right to self-defense (context 71),legal,undecided,0.947,medium,Case precedents,1
+LR_00712,Intellectual property protection stifles innovation (context 71),legal,undecided,0.883,hard,Economic analysis,3
+LR_00713,The contract was validly formed (context 71),legal,supported,0.694,expert,Contract law,2
+LR_00714,The search violates the Fourth Amendment (context 71),legal,undecided,0.833,easy,Constitutional law,3
+LR_00715,The employer is liable for workplace harassment (context 71),legal,supported,0.783,medium,Title VII,1
+LR_00716,The patent claim is obvious (context 71),legal,undecided,0.569,hard,Prior art search,1
+LR_00717,The testimony is admissible under hearsay rules (context 71),legal,rejected,0.931,expert,Evidence rules,4
+LR_00718,The merger will harm competition (context 71),legal,undecided,0.829,easy,Antitrust analysis,3
+LR_00719,The defendant meets the insanity defense criteria (context 71),legal,undecided,0.908,medium,Psychiatric evaluation,3
+LR_00720,The non-compete clause is enforceable (context 71),legal,rejected,0.909,hard,State law precedents,1
+LR_00721,The defendant had a right to self-defense (context 72),legal,undecided,0.6,easy,Case precedents,3
+LR_00722,Intellectual property protection stifles innovation (context 72),legal,undecided,0.823,medium,Economic analysis,4
+LR_00723,The contract was validly formed (context 72),legal,supported,0.918,hard,Contract law,1
+LR_00724,The search violates the Fourth Amendment (context 72),legal,undecided,0.685,expert,Constitutional law,4
+LR_00725,The employer is liable for workplace harassment (context 72),legal,supported,0.622,easy,Title VII,4
+LR_00726,The patent claim is obvious (context 72),legal,undecided,0.552,medium,Prior art search,1
+LR_00727,The testimony is admissible under hearsay rules (context 72),legal,rejected,0.823,hard,Evidence rules,2
+LR_00728,The merger will harm competition (context 72),legal,undecided,0.864,expert,Antitrust analysis,3
+LR_00729,The defendant meets the insanity defense criteria (context 72),legal,undecided,0.652,easy,Psychiatric evaluation,2
+LR_00730,The non-compete clause is enforceable (context 72),legal,rejected,0.746,medium,State law precedents,1
+LR_00731,The defendant had a right to self-defense (context 73),legal,undecided,0.687,expert,Case precedents,1
+LR_00732,Intellectual property protection stifles innovation (context 73),legal,undecided,0.577,easy,Economic analysis,4
+LR_00733,The contract was validly formed (context 73),legal,supported,0.787,medium,Contract law,1
+LR_00734,The search violates the Fourth Amendment (context 73),legal,undecided,0.705,hard,Constitutional law,3
+LR_00735,The employer is liable for workplace harassment (context 73),legal,supported,0.747,expert,Title VII,1
+LR_00736,The patent claim is obvious (context 73),legal,undecided,0.91,easy,Prior art search,2
+LR_00737,The testimony is admissible under hearsay rules (context 73),legal,rejected,0.679,medium,Evidence rules,2
+LR_00738,The merger will harm competition (context 73),legal,undecided,0.792,hard,Antitrust analysis,3
+LR_00739,The defendant meets the insanity defense criteria (context 73),legal,undecided,0.838,expert,Psychiatric evaluation,2
+LR_00740,The non-compete clause is enforceable (context 73),legal,rejected,0.587,easy,State law precedents,3
+LR_00741,The defendant had a right to self-defense (context 74),legal,undecided,0.874,hard,Case precedents,2
+LR_00742,Intellectual property protection stifles innovation (context 74),legal,undecided,0.764,expert,Economic analysis,1
+LR_00743,The contract was validly formed (context 74),legal,supported,0.92,easy,Contract law,3
+LR_00744,The search violates the Fourth Amendment (context 74),legal,undecided,0.605,medium,Constitutional law,2
+LR_00745,The employer is liable for workplace harassment (context 74),legal,supported,0.895,hard,Title VII,1
+LR_00746,The patent claim is obvious (context 74),legal,undecided,0.615,expert,Prior art search,3
+LR_00747,The testimony is admissible under hearsay rules (context 74),legal,rejected,0.8,easy,Evidence rules,2
+LR_00748,The merger will harm competition (context 74),legal,undecided,0.818,medium,Antitrust analysis,3
+LR_00749,The defendant meets the insanity defense criteria (context 74),legal,undecided,0.638,hard,Psychiatric evaluation,4
+LR_00750,The non-compete clause is enforceable (context 74),legal,rejected,0.868,expert,State law precedents,3
+LR_00751,The defendant had a right to self-defense (context 75),legal,undecided,0.748,medium,Case precedents,1
+LR_00752,Intellectual property protection stifles innovation (context 75),legal,undecided,0.866,hard,Economic analysis,2
+LR_00753,The contract was validly formed (context 75),legal,supported,0.605,expert,Contract law,1
+LR_00754,The search violates the Fourth Amendment (context 75),legal,undecided,0.818,easy,Constitutional law,3
+LR_00755,The employer is liable for workplace harassment (context 75),legal,supported,0.764,medium,Title VII,1
+LR_00756,The patent claim is obvious (context 75),legal,undecided,0.585,hard,Prior art search,3
+LR_00757,The testimony is admissible under hearsay rules (context 75),legal,rejected,0.614,expert,Evidence rules,3
+LR_00758,The merger will harm competition (context 75),legal,undecided,0.565,easy,Antitrust analysis,3
+LR_00759,The defendant meets the insanity defense criteria (context 75),legal,undecided,0.887,medium,Psychiatric evaluation,3
+LR_00760,The non-compete clause is enforceable (context 75),legal,rejected,0.892,hard,State law precedents,4
+LR_00761,The defendant had a right to self-defense (context 76),legal,undecided,0.665,easy,Case precedents,2
+LR_00762,Intellectual property protection stifles innovation (context 76),legal,undecided,0.59,medium,Economic analysis,3
+LR_00763,The contract was validly formed (context 76),legal,supported,0.901,hard,Contract law,2
+LR_00764,The search violates the Fourth Amendment (context 76),legal,undecided,0.803,expert,Constitutional law,4
+LR_00765,The employer is liable for workplace harassment (context 76),legal,supported,0.676,easy,Title VII,4
+LR_00766,The patent claim is obvious (context 76),legal,undecided,0.823,medium,Prior art search,3
+LR_00767,The testimony is admissible under hearsay rules (context 76),legal,rejected,0.85,hard,Evidence rules,3
+LR_00768,The merger will harm competition (context 76),legal,undecided,0.775,expert,Antitrust analysis,2
+LR_00769,The defendant meets the insanity defense criteria (context 76),legal,undecided,0.608,easy,Psychiatric evaluation,2
+LR_00770,The non-compete clause is enforceable (context 76),legal,rejected,0.686,medium,State law precedents,2
+LR_00771,The defendant had a right to self-defense (context 77),legal,undecided,0.729,expert,Case precedents,2
+LR_00772,Intellectual property protection stifles innovation (context 77),legal,undecided,0.899,easy,Economic analysis,1
+LR_00773,The contract was validly formed (context 77),legal,supported,0.668,medium,Contract law,1
+LR_00774,The search violates the Fourth Amendment (context 77),legal,undecided,0.781,hard,Constitutional law,1
+LR_00775,The employer is liable for workplace harassment (context 77),legal,supported,0.707,expert,Title VII,4
+LR_00776,The patent claim is obvious (context 77),legal,undecided,0.908,easy,Prior art search,3
+LR_00777,The testimony is admissible under hearsay rules (context 77),legal,rejected,0.7,medium,Evidence rules,2
+LR_00778,The merger will harm competition (context 77),legal,undecided,0.79,hard,Antitrust analysis,3
+LR_00779,The defendant meets the insanity defense criteria (context 77),legal,undecided,0.819,expert,Psychiatric evaluation,4
+LR_00780,The non-compete clause is enforceable (context 77),legal,rejected,0.705,easy,State law precedents,1
+LR_00781,The defendant had a right to self-defense (context 78),legal,undecided,0.842,hard,Case precedents,2
+LR_00782,Intellectual property protection stifles innovation (context 78),legal,undecided,0.889,expert,Economic analysis,2
+LR_00783,The contract was validly formed (context 78),legal,supported,0.635,easy,Contract law,4
+LR_00784,The search violates the Fourth Amendment (context 78),legal,undecided,0.768,medium,Constitutional law,3
+LR_00785,The employer is liable for workplace harassment (context 78),legal,supported,0.579,hard,Title VII,1
+LR_00786,The patent claim is obvious (context 78),legal,undecided,0.587,expert,Prior art search,2
+LR_00787,The testimony is admissible under hearsay rules (context 78),legal,rejected,0.766,easy,Evidence rules,4
+LR_00788,The merger will harm competition (context 78),legal,undecided,0.771,medium,Antitrust analysis,1
+LR_00789,The defendant meets the insanity defense criteria (context 78),legal,undecided,0.81,hard,Psychiatric evaluation,4
+LR_00790,The non-compete clause is enforceable (context 78),legal,rejected,0.588,expert,State law precedents,2
+LR_00791,The defendant had a right to self-defense (context 79),legal,undecided,0.874,medium,Case precedents,3
+LR_00792,Intellectual property protection stifles innovation (context 79),legal,undecided,0.556,hard,Economic analysis,4
+LR_00793,The contract was validly formed (context 79),legal,supported,0.842,expert,Contract law,1
+LR_00794,The search violates the Fourth Amendment (context 79),legal,undecided,0.699,easy,Constitutional law,2
+LR_00795,The employer is liable for workplace harassment (context 79),legal,supported,0.782,medium,Title VII,4
+LR_00796,The patent claim is obvious (context 79),legal,undecided,0.907,hard,Prior art search,4
+LR_00797,The testimony is admissible under hearsay rules (context 79),legal,rejected,0.889,expert,Evidence rules,1
+LR_00798,The merger will harm competition (context 79),legal,undecided,0.783,easy,Antitrust analysis,3
+LR_00799,The defendant meets the insanity defense criteria (context 79),legal,undecided,0.862,medium,Psychiatric evaluation,2
+LR_00800,The non-compete clause is enforceable (context 79),legal,rejected,0.624,hard,State law precedents,2
+LR_00801,The defendant had a right to self-defense (context 80),legal,undecided,0.724,easy,Case precedents,2
+LR_00802,Intellectual property protection stifles innovation (context 80),legal,undecided,0.668,medium,Economic analysis,3
+LR_00803,The contract was validly formed (context 80),legal,supported,0.71,hard,Contract law,4
+LR_00804,The search violates the Fourth Amendment (context 80),legal,undecided,0.809,expert,Constitutional law,2
+LR_00805,The employer is liable for workplace harassment (context 80),legal,supported,0.69,easy,Title VII,2
+LR_00806,The patent claim is obvious (context 80),legal,undecided,0.849,medium,Prior art search,4
+LR_00807,The testimony is admissible under hearsay rules (context 80),legal,rejected,0.562,hard,Evidence rules,1
+LR_00808,The merger will harm competition (context 80),legal,undecided,0.849,expert,Antitrust analysis,1
+LR_00809,The defendant meets the insanity defense criteria (context 80),legal,undecided,0.718,easy,Psychiatric evaluation,1
+LR_00810,The non-compete clause is enforceable (context 80),legal,rejected,0.751,medium,State law precedents,3
+LR_00811,The defendant had a right to self-defense (context 81),legal,undecided,0.941,expert,Case precedents,2
+LR_00812,Intellectual property protection stifles innovation (context 81),legal,undecided,0.621,easy,Economic analysis,4
+LR_00813,The contract was validly formed (context 81),legal,supported,0.76,medium,Contract law,2
+LR_00814,The search violates the Fourth Amendment (context 81),legal,undecided,0.734,hard,Constitutional law,4
+LR_00815,The employer is liable for workplace harassment (context 81),legal,supported,0.741,expert,Title VII,1
+LR_00816,The patent claim is obvious (context 81),legal,undecided,0.699,easy,Prior art search,4
+LR_00817,The testimony is admissible under hearsay rules (context 81),legal,rejected,0.56,medium,Evidence rules,2
+LR_00818,The merger will harm competition (context 81),legal,undecided,0.602,hard,Antitrust analysis,3
+LR_00819,The defendant meets the insanity defense criteria (context 81),legal,undecided,0.831,expert,Psychiatric evaluation,3
+LR_00820,The non-compete clause is enforceable (context 81),legal,rejected,0.845,easy,State law precedents,2
+LR_00821,The defendant had a right to self-defense (context 82),legal,undecided,0.926,hard,Case precedents,2
+LR_00822,Intellectual property protection stifles innovation (context 82),legal,undecided,0.764,expert,Economic analysis,1
+LR_00823,The contract was validly formed (context 82),legal,supported,0.709,easy,Contract law,4
+LR_00824,The search violates the Fourth Amendment (context 82),legal,undecided,0.583,medium,Constitutional law,4
+LR_00825,The employer is liable for workplace harassment (context 82),legal,supported,0.93,hard,Title VII,4
+LR_00826,The patent claim is obvious (context 82),legal,undecided,0.945,expert,Prior art search,2
+LR_00827,The testimony is admissible under hearsay rules (context 82),legal,rejected,0.933,easy,Evidence rules,3
+LR_00828,The merger will harm competition (context 82),legal,undecided,0.635,medium,Antitrust analysis,4
+LR_00829,The defendant meets the insanity defense criteria (context 82),legal,undecided,0.729,hard,Psychiatric evaluation,3
+LR_00830,The non-compete clause is enforceable (context 82),legal,rejected,0.845,expert,State law precedents,3
+LR_00831,The defendant had a right to self-defense (context 83),legal,undecided,0.603,medium,Case precedents,2
+LR_00832,Intellectual property protection stifles innovation (context 83),legal,undecided,0.61,hard,Economic analysis,3
+LR_00833,The contract was validly formed (context 83),legal,supported,0.944,expert,Contract law,2
+LR_00834,The search violates the Fourth Amendment (context 83),legal,undecided,0.782,easy,Constitutional law,1
+LR_00835,The employer is liable for workplace harassment (context 83),legal,supported,0.624,medium,Title VII,4
+LR_00836,The patent claim is obvious (context 83),legal,undecided,0.673,hard,Prior art search,3
+LR_00837,The testimony is admissible under hearsay rules (context 83),legal,rejected,0.887,expert,Evidence rules,4
+LR_00838,The merger will harm competition (context 83),legal,undecided,0.656,easy,Antitrust analysis,3
+LR_00839,The defendant meets the insanity defense criteria (context 83),legal,undecided,0.727,medium,Psychiatric evaluation,3
+LR_00840,The non-compete clause is enforceable (context 83),legal,rejected,0.922,hard,State law precedents,4
+LR_00841,The defendant had a right to self-defense (context 84),legal,undecided,0.677,easy,Case precedents,4
+LR_00842,Intellectual property protection stifles innovation (context 84),legal,undecided,0.943,medium,Economic analysis,2
+LR_00843,The contract was validly formed (context 84),legal,supported,0.749,hard,Contract law,2
+LR_00844,The search violates the Fourth Amendment (context 84),legal,undecided,0.552,expert,Constitutional law,1
+LR_00845,The employer is liable for workplace harassment (context 84),legal,supported,0.749,easy,Title VII,2
+LR_00846,The patent claim is obvious (context 84),legal,undecided,0.584,medium,Prior art search,4
+LR_00847,The testimony is admissible under hearsay rules (context 84),legal,rejected,0.656,hard,Evidence rules,4
+LR_00848,The merger will harm competition (context 84),legal,undecided,0.592,expert,Antitrust analysis,3
+LR_00849,The defendant meets the insanity defense criteria (context 84),legal,undecided,0.931,easy,Psychiatric evaluation,3
+LR_00850,The non-compete clause is enforceable (context 84),legal,rejected,0.728,medium,State law precedents,2
+LR_00851,The defendant had a right to self-defense (context 85),legal,undecided,0.798,expert,Case precedents,2
+LR_00852,Intellectual property protection stifles innovation (context 85),legal,undecided,0.886,easy,Economic analysis,2
+LR_00853,The contract was validly formed (context 85),legal,supported,0.698,medium,Contract law,1
+LR_00854,The search violates the Fourth Amendment (context 85),legal,undecided,0.757,hard,Constitutional law,4
+LR_00855,The employer is liable for workplace harassment (context 85),legal,supported,0.724,expert,Title VII,2
+LR_00856,The patent claim is obvious (context 85),legal,undecided,0.735,easy,Prior art search,1
+LR_00857,The testimony is admissible under hearsay rules (context 85),legal,rejected,0.766,medium,Evidence rules,1
+LR_00858,The merger will harm competition (context 85),legal,undecided,0.6,hard,Antitrust analysis,2
+LR_00859,The defendant meets the insanity defense criteria (context 85),legal,undecided,0.832,expert,Psychiatric evaluation,2
+LR_00860,The non-compete clause is enforceable (context 85),legal,rejected,0.656,easy,State law precedents,4
+LR_00861,The defendant had a right to self-defense (context 86),legal,undecided,0.641,hard,Case precedents,3
+LR_00862,Intellectual property protection stifles innovation (context 86),legal,undecided,0.687,expert,Economic analysis,3
+LR_00863,The contract was validly formed (context 86),legal,supported,0.742,easy,Contract law,3
+LR_00864,The search violates the Fourth Amendment (context 86),legal,undecided,0.945,medium,Constitutional law,2
+LR_00865,The employer is liable for workplace harassment (context 86),legal,supported,0.85,hard,Title VII,4
+LR_00866,The patent claim is obvious (context 86),legal,undecided,0.792,expert,Prior art search,4
+LR_00867,The testimony is admissible under hearsay rules (context 86),legal,rejected,0.851,easy,Evidence rules,2
+LR_00868,The merger will harm competition (context 86),legal,undecided,0.779,medium,Antitrust analysis,3
+LR_00869,The defendant meets the insanity defense criteria (context 86),legal,undecided,0.596,hard,Psychiatric evaluation,2
+LR_00870,The non-compete clause is enforceable (context 86),legal,rejected,0.773,expert,State law precedents,3
+LR_00871,The defendant had a right to self-defense (context 87),legal,undecided,0.745,medium,Case precedents,4
+LR_00872,Intellectual property protection stifles innovation (context 87),legal,undecided,0.653,hard,Economic analysis,2
+LR_00873,The contract was validly formed (context 87),legal,supported,0.714,expert,Contract law,4
+LR_00874,The search violates the Fourth Amendment (context 87),legal,undecided,0.748,easy,Constitutional law,3
+LR_00875,The employer is liable for workplace harassment (context 87),legal,supported,0.858,medium,Title VII,2
+LR_00876,The patent claim is obvious (context 87),legal,undecided,0.688,hard,Prior art search,4
+LR_00877,The testimony is admissible under hearsay rules (context 87),legal,rejected,0.924,expert,Evidence rules,1
+LR_00878,The merger will harm competition (context 87),legal,undecided,0.836,easy,Antitrust analysis,2
+LR_00879,The defendant meets the insanity defense criteria (context 87),legal,undecided,0.704,medium,Psychiatric evaluation,4
+LR_00880,The non-compete clause is enforceable (context 87),legal,rejected,0.879,hard,State law precedents,4
+LR_00881,The defendant had a right to self-defense (context 88),legal,undecided,0.652,easy,Case precedents,4
+LR_00882,Intellectual property protection stifles innovation (context 88),legal,undecided,0.919,medium,Economic analysis,3
+LR_00883,The contract was validly formed (context 88),legal,supported,0.699,hard,Contract law,1
+LR_00884,The search violates the Fourth Amendment (context 88),legal,undecided,0.715,expert,Constitutional law,3
+LR_00885,The employer is liable for workplace harassment (context 88),legal,supported,0.686,easy,Title VII,1
+LR_00886,The patent claim is obvious (context 88),legal,undecided,0.718,medium,Prior art search,3
+LR_00887,The testimony is admissible under hearsay rules (context 88),legal,rejected,0.87,hard,Evidence rules,2
+LR_00888,The merger will harm competition (context 88),legal,undecided,0.791,expert,Antitrust analysis,2
+LR_00889,The defendant meets the insanity defense criteria (context 88),legal,undecided,0.901,easy,Psychiatric evaluation,2
+LR_00890,The non-compete clause is enforceable (context 88),legal,rejected,0.748,medium,State law precedents,1
+LR_00891,The defendant had a right to self-defense (context 89),legal,undecided,0.823,expert,Case precedents,2
+LR_00892,Intellectual property protection stifles innovation (context 89),legal,undecided,0.941,easy,Economic analysis,3
+LR_00893,The contract was validly formed (context 89),legal,supported,0.557,medium,Contract law,3
+LR_00894,The search violates the Fourth Amendment (context 89),legal,undecided,0.861,hard,Constitutional law,3
+LR_00895,The employer is liable for workplace harassment (context 89),legal,supported,0.571,expert,Title VII,3
+LR_00896,The patent claim is obvious (context 89),legal,undecided,0.83,easy,Prior art search,1
+LR_00897,The testimony is admissible under hearsay rules (context 89),legal,rejected,0.911,medium,Evidence rules,4
+LR_00898,The merger will harm competition (context 89),legal,undecided,0.568,hard,Antitrust analysis,4
+LR_00899,The defendant meets the insanity defense criteria (context 89),legal,undecided,0.703,expert,Psychiatric evaluation,3
+LR_00900,The non-compete clause is enforceable (context 89),legal,rejected,0.593,easy,State law precedents,2
+LR_00901,The defendant had a right to self-defense (context 90),legal,undecided,0.929,hard,Case precedents,2
+LR_00902,Intellectual property protection stifles innovation (context 90),legal,undecided,0.598,expert,Economic analysis,4
+LR_00903,The contract was validly formed (context 90),legal,supported,0.692,easy,Contract law,4
+LR_00904,The search violates the Fourth Amendment (context 90),legal,undecided,0.828,medium,Constitutional law,3
+LR_00905,The employer is liable for workplace harassment (context 90),legal,supported,0.672,hard,Title VII,2
+LR_00906,The patent claim is obvious (context 90),legal,undecided,0.612,expert,Prior art search,3
+LR_00907,The testimony is admissible under hearsay rules (context 90),legal,rejected,0.56,easy,Evidence rules,3
+LR_00908,The merger will harm competition (context 90),legal,undecided,0.556,medium,Antitrust analysis,1
+LR_00909,The defendant meets the insanity defense criteria (context 90),legal,undecided,0.91,hard,Psychiatric evaluation,2
+LR_00910,The non-compete clause is enforceable (context 90),legal,rejected,0.813,expert,State law precedents,1
+LR_00911,The defendant had a right to self-defense (context 91),legal,undecided,0.757,medium,Case precedents,1
+LR_00912,Intellectual property protection stifles innovation (context 91),legal,undecided,0.746,hard,Economic analysis,2
+LR_00913,The contract was validly formed (context 91),legal,supported,0.937,expert,Contract law,4
+LR_00914,The search violates the Fourth Amendment (context 91),legal,undecided,0.668,easy,Constitutional law,2
+LR_00915,The employer is liable for workplace harassment (context 91),legal,supported,0.566,medium,Title VII,3
+LR_00916,The patent claim is obvious (context 91),legal,undecided,0.709,hard,Prior art search,3
+LR_00917,The testimony is admissible under hearsay rules (context 91),legal,rejected,0.593,expert,Evidence rules,4
+LR_00918,The merger will harm competition (context 91),legal,undecided,0.555,easy,Antitrust analysis,3
+LR_00919,The defendant meets the insanity defense criteria (context 91),legal,undecided,0.837,medium,Psychiatric evaluation,4
+LR_00920,The non-compete clause is enforceable (context 91),legal,rejected,0.722,hard,State law precedents,2
+LR_00921,The defendant had a right to self-defense (context 92),legal,undecided,0.601,easy,Case precedents,1
+LR_00922,Intellectual property protection stifles innovation (context 92),legal,undecided,0.877,medium,Economic analysis,3
+LR_00923,The contract was validly formed (context 92),legal,supported,0.935,hard,Contract law,2
+LR_00924,The search violates the Fourth Amendment (context 92),legal,undecided,0.636,expert,Constitutional law,3
+LR_00925,The employer is liable for workplace harassment (context 92),legal,supported,0.568,easy,Title VII,3
+LR_00926,The patent claim is obvious (context 92),legal,undecided,0.743,medium,Prior art search,4
+LR_00927,The testimony is admissible under hearsay rules (context 92),legal,rejected,0.723,hard,Evidence rules,4
+LR_00928,The merger will harm competition (context 92),legal,undecided,0.671,expert,Antitrust analysis,2
+LR_00929,The defendant meets the insanity defense criteria (context 92),legal,undecided,0.636,easy,Psychiatric evaluation,4
+LR_00930,The non-compete clause is enforceable (context 92),legal,rejected,0.749,medium,State law precedents,2
+LR_00931,The defendant had a right to self-defense (context 93),legal,undecided,0.835,expert,Case precedents,4
+LR_00932,Intellectual property protection stifles innovation (context 93),legal,undecided,0.628,easy,Economic analysis,3
+LR_00933,The contract was validly formed (context 93),legal,supported,0.837,medium,Contract law,1
+LR_00934,The search violates the Fourth Amendment (context 93),legal,undecided,0.62,hard,Constitutional law,4
+LR_00935,The employer is liable for workplace harassment (context 93),legal,supported,0.662,expert,Title VII,4
+LR_00936,The patent claim is obvious (context 93),legal,undecided,0.607,easy,Prior art search,3
+LR_00937,The testimony is admissible under hearsay rules (context 93),legal,rejected,0.917,medium,Evidence rules,4
+LR_00938,The merger will harm competition (context 93),legal,undecided,0.891,hard,Antitrust analysis,2
+LR_00939,The defendant meets the insanity defense criteria (context 93),legal,undecided,0.818,expert,Psychiatric evaluation,4
+LR_00940,The non-compete clause is enforceable (context 93),legal,rejected,0.838,easy,State law precedents,3
+LR_00941,The defendant had a right to self-defense (context 94),legal,undecided,0.552,hard,Case precedents,1
+LR_00942,Intellectual property protection stifles innovation (context 94),legal,undecided,0.776,expert,Economic analysis,4
+LR_00943,The contract was validly formed (context 94),legal,supported,0.73,easy,Contract law,1
+LR_00944,The search violates the Fourth Amendment (context 94),legal,undecided,0.652,medium,Constitutional law,2
+LR_00945,The employer is liable for workplace harassment (context 94),legal,supported,0.558,hard,Title VII,4
+LR_00946,The patent claim is obvious (context 94),legal,undecided,0.559,expert,Prior art search,2
+LR_00947,The testimony is admissible under hearsay rules (context 94),legal,rejected,0.944,easy,Evidence rules,3
+LR_00948,The merger will harm competition (context 94),legal,undecided,0.817,medium,Antitrust analysis,1
+LR_00949,The defendant meets the insanity defense criteria (context 94),legal,undecided,0.899,hard,Psychiatric evaluation,1
+LR_00950,The non-compete clause is enforceable (context 94),legal,rejected,0.873,expert,State law precedents,2
+LR_00951,The defendant had a right to self-defense (context 95),legal,undecided,0.845,medium,Case precedents,1
+LR_00952,Intellectual property protection stifles innovation (context 95),legal,undecided,0.591,hard,Economic analysis,1
+LR_00953,The contract was validly formed (context 95),legal,supported,0.934,expert,Contract law,1
+LR_00954,The search violates the Fourth Amendment (context 95),legal,undecided,0.582,easy,Constitutional law,2
+LR_00955,The employer is liable for workplace harassment (context 95),legal,supported,0.684,medium,Title VII,2
+LR_00956,The patent claim is obvious (context 95),legal,undecided,0.616,hard,Prior art search,2
+LR_00957,The testimony is admissible under hearsay rules (context 95),legal,rejected,0.618,expert,Evidence rules,1
+LR_00958,The merger will harm competition (context 95),legal,undecided,0.728,easy,Antitrust analysis,2
+LR_00959,The defendant meets the insanity defense criteria (context 95),legal,undecided,0.695,medium,Psychiatric evaluation,4
+LR_00960,The non-compete clause is enforceable (context 95),legal,rejected,0.564,hard,State law precedents,2
+LR_00961,The defendant had a right to self-defense (context 96),legal,undecided,0.761,easy,Case precedents,1
+LR_00962,Intellectual property protection stifles innovation (context 96),legal,undecided,0.803,medium,Economic analysis,2
+LR_00963,The contract was validly formed (context 96),legal,supported,0.594,hard,Contract law,4
+LR_00964,The search violates the Fourth Amendment (context 96),legal,undecided,0.922,expert,Constitutional law,2
+LR_00965,The employer is liable for workplace harassment (context 96),legal,supported,0.741,easy,Title VII,3
+LR_00966,The patent claim is obvious (context 96),legal,undecided,0.878,medium,Prior art search,1
+LR_00967,The testimony is admissible under hearsay rules (context 96),legal,rejected,0.885,hard,Evidence rules,3
+LR_00968,The merger will harm competition (context 96),legal,undecided,0.946,expert,Antitrust analysis,1
+LR_00969,The defendant meets the insanity defense criteria (context 96),legal,undecided,0.723,easy,Psychiatric evaluation,1
+LR_00970,The non-compete clause is enforceable (context 96),legal,rejected,0.873,medium,State law precedents,1
+LR_00971,The defendant had a right to self-defense (context 97),legal,undecided,0.566,expert,Case precedents,2
+LR_00972,Intellectual property protection stifles innovation (context 97),legal,undecided,0.948,easy,Economic analysis,1
+LR_00973,The contract was validly formed (context 97),legal,supported,0.574,medium,Contract law,4
+LR_00974,The search violates the Fourth Amendment (context 97),legal,undecided,0.645,hard,Constitutional law,1
+LR_00975,The employer is liable for workplace harassment (context 97),legal,supported,0.765,expert,Title VII,2
+LR_00976,The patent claim is obvious (context 97),legal,undecided,0.607,easy,Prior art search,2
+LR_00977,The testimony is admissible under hearsay rules (context 97),legal,rejected,0.808,medium,Evidence rules,1
+LR_00978,The merger will harm competition (context 97),legal,undecided,0.568,hard,Antitrust analysis,3
+LR_00979,The defendant meets the insanity defense criteria (context 97),legal,undecided,0.591,expert,Psychiatric evaluation,1
+LR_00980,The non-compete clause is enforceable (context 97),legal,rejected,0.867,easy,State law precedents,4
+LR_00981,The defendant had a right to self-defense (context 98),legal,undecided,0.763,hard,Case precedents,3
+LR_00982,Intellectual property protection stifles innovation (context 98),legal,undecided,0.918,expert,Economic analysis,4
+LR_00983,The contract was validly formed (context 98),legal,supported,0.743,easy,Contract law,1
+LR_00984,The search violates the Fourth Amendment (context 98),legal,undecided,0.896,medium,Constitutional law,4
+LR_00985,The employer is liable for workplace harassment (context 98),legal,supported,0.594,hard,Title VII,3
+LR_00986,The patent claim is obvious (context 98),legal,undecided,0.81,expert,Prior art search,1
+LR_00987,The testimony is admissible under hearsay rules (context 98),legal,rejected,0.699,easy,Evidence rules,3
+LR_00988,The merger will harm competition (context 98),legal,undecided,0.657,medium,Antitrust analysis,1
+LR_00989,The defendant meets the insanity defense criteria (context 98),legal,undecided,0.686,hard,Psychiatric evaluation,4
+LR_00990,The non-compete clause is enforceable (context 98),legal,rejected,0.768,expert,State law precedents,4
+LR_00991,The defendant had a right to self-defense (context 99),legal,undecided,0.651,medium,Case precedents,4
+LR_00992,Intellectual property protection stifles innovation (context 99),legal,undecided,0.658,hard,Economic analysis,1
+LR_00993,The contract was validly formed (context 99),legal,supported,0.56,expert,Contract law,1
+LR_00994,The search violates the Fourth Amendment (context 99),legal,undecided,0.806,easy,Constitutional law,2
+LR_00995,The employer is liable for workplace harassment (context 99),legal,supported,0.92,medium,Title VII,2
+LR_00996,The patent claim is obvious (context 99),legal,undecided,0.858,hard,Prior art search,2
+LR_00997,The testimony is admissible under hearsay rules (context 99),legal,rejected,0.941,expert,Evidence rules,1
+LR_00998,The merger will harm competition (context 99),legal,undecided,0.933,easy,Antitrust analysis,4
+LR_00999,The defendant meets the insanity defense criteria (context 99),legal,undecided,0.826,medium,Psychiatric evaluation,4
+LR_01000,The non-compete clause is enforceable (context 99),legal,rejected,0.709,hard,State law precedents,4
+LR_01001,The defendant had a right to self-defense (context 100),legal,undecided,0.8,easy,Case precedents,4
+LR_01002,Intellectual property protection stifles innovation (context 100),legal,undecided,0.767,medium,Economic analysis,1
+LR_01003,The contract was validly formed (context 100),legal,supported,0.881,hard,Contract law,4
+LR_01004,The search violates the Fourth Amendment (context 100),legal,undecided,0.685,expert,Constitutional law,3
+LR_01005,The employer is liable for workplace harassment (context 100),legal,supported,0.796,easy,Title VII,1
+LR_01006,The patent claim is obvious (context 100),legal,undecided,0.623,medium,Prior art search,3
+LR_01007,The testimony is admissible under hearsay rules (context 100),legal,rejected,0.892,hard,Evidence rules,1
+LR_01008,The merger will harm competition (context 100),legal,undecided,0.67,expert,Antitrust analysis,3
+LR_01009,The defendant meets the insanity defense criteria (context 100),legal,undecided,0.771,easy,Psychiatric evaluation,3
+LR_01010,The non-compete clause is enforceable (context 100),legal,rejected,0.82,medium,State law precedents,3
+LR_01011,The defendant had a right to self-defense (context 101),legal,undecided,0.784,expert,Case precedents,4
+LR_01012,Intellectual property protection stifles innovation (context 101),legal,undecided,0.899,easy,Economic analysis,1
+LR_01013,The contract was validly formed (context 101),legal,supported,0.734,medium,Contract law,2
+LR_01014,The search violates the Fourth Amendment (context 101),legal,undecided,0.633,hard,Constitutional law,1
+LR_01015,The employer is liable for workplace harassment (context 101),legal,supported,0.923,expert,Title VII,4
+LR_01016,The patent claim is obvious (context 101),legal,undecided,0.681,easy,Prior art search,2
+LR_01017,The testimony is admissible under hearsay rules (context 101),legal,rejected,0.875,medium,Evidence rules,3
+LR_01018,The merger will harm competition (context 101),legal,undecided,0.882,hard,Antitrust analysis,1
+LR_01019,The defendant meets the insanity defense criteria (context 101),legal,undecided,0.914,expert,Psychiatric evaluation,4
+LR_01020,The non-compete clause is enforceable (context 101),legal,rejected,0.738,easy,State law precedents,2
+LR_01021,The defendant had a right to self-defense (context 102),legal,undecided,0.813,hard,Case precedents,3
+LR_01022,Intellectual property protection stifles innovation (context 102),legal,undecided,0.657,expert,Economic analysis,2
+LR_01023,The contract was validly formed (context 102),legal,supported,0.765,easy,Contract law,3
+LR_01024,The search violates the Fourth Amendment (context 102),legal,undecided,0.695,medium,Constitutional law,1
+LR_01025,The employer is liable for workplace harassment (context 102),legal,supported,0.941,hard,Title VII,3
+LR_01026,The patent claim is obvious (context 102),legal,undecided,0.656,expert,Prior art search,3
+LR_01027,The testimony is admissible under hearsay rules (context 102),legal,rejected,0.631,easy,Evidence rules,2
+LR_01028,The merger will harm competition (context 102),legal,undecided,0.845,medium,Antitrust analysis,4
+LR_01029,The defendant meets the insanity defense criteria (context 102),legal,undecided,0.936,hard,Psychiatric evaluation,4
+LR_01030,The non-compete clause is enforceable (context 102),legal,rejected,0.856,expert,State law precedents,3
+LR_01031,The defendant had a right to self-defense (context 103),legal,undecided,0.654,medium,Case precedents,3
+LR_01032,Intellectual property protection stifles innovation (context 103),legal,undecided,0.849,hard,Economic analysis,1
+LR_01033,The contract was validly formed (context 103),legal,supported,0.633,expert,Contract law,2
+LR_01034,The search violates the Fourth Amendment (context 103),legal,undecided,0.791,easy,Constitutional law,1
+LR_01035,The employer is liable for workplace harassment (context 103),legal,supported,0.611,medium,Title VII,3
+LR_01036,The patent claim is obvious (context 103),legal,undecided,0.947,hard,Prior art search,4
+LR_01037,The testimony is admissible under hearsay rules (context 103),legal,rejected,0.772,expert,Evidence rules,1
+LR_01038,The merger will harm competition (context 103),legal,undecided,0.787,easy,Antitrust analysis,3
+LR_01039,The defendant meets the insanity defense criteria (context 103),legal,undecided,0.923,medium,Psychiatric evaluation,4
+LR_01040,The non-compete clause is enforceable (context 103),legal,rejected,0.591,hard,State law precedents,3
+LR_01041,The defendant had a right to self-defense (context 104),legal,undecided,0.823,easy,Case precedents,1
+LR_01042,Intellectual property protection stifles innovation (context 104),legal,undecided,0.833,medium,Economic analysis,2
+LR_01043,The contract was validly formed (context 104),legal,supported,0.879,hard,Contract law,3
+LR_01044,The search violates the Fourth Amendment (context 104),legal,undecided,0.634,expert,Constitutional law,1
+LR_01045,The employer is liable for workplace harassment (context 104),legal,supported,0.844,easy,Title VII,3
+LR_01046,The patent claim is obvious (context 104),legal,undecided,0.939,medium,Prior art search,2
+LR_01047,The testimony is admissible under hearsay rules (context 104),legal,rejected,0.741,hard,Evidence rules,4
+LR_01048,The merger will harm competition (context 104),legal,undecided,0.663,expert,Antitrust analysis,1
+LR_01049,The defendant meets the insanity defense criteria (context 104),legal,undecided,0.949,easy,Psychiatric evaluation,3
+LR_01050,The non-compete clause is enforceable (context 104),legal,rejected,0.937,medium,State law precedents,2

@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+FA_00001,Apple stock will outperform the market in 2024,finance,undecided,0.556,easy,Market analysis,1
+FA_00002,Bitcoin is a reliable store of value,finance,undecided,0.664,medium,Volatility data,4
+FA_00003,Index funds outperform actively managed funds,finance,supported,0.792,hard,Historical returns,1
+FA_00004,Real estate always appreciates,finance,rejected,0.609,expert,2008 crash data,2
+FA_00005,Higher interest rates decrease stock prices,finance,supported,0.614,easy,Economic models,1
+FA_00006,Diversification reduces portfolio risk,finance,supported,0.752,medium,Modern Portfolio Theory,4
+FA_00007,Technical analysis predicts stock movements,finance,undecided,0.654,hard,Backtesting results,4
+FA_00008,Gold is a hedge against inflation,finance,supported,0.865,expert,Historical correlation,1
+FA_00009,Tesla is overvalued,finance,undecided,0.889,easy,P/E comparisons,1
+FA_00010,Cryptocurrency will replace fiat currency,finance,rejected,0.899,medium,Adoption rates,3
+FA_00011,Apple stock will outperform the market in 2024 (context 1),finance,undecided,0.623,expert,Market analysis,4
+FA_00012,Bitcoin is a reliable store of value (context 1),finance,undecided,0.67,easy,Volatility data,4
+FA_00013,Index funds outperform actively managed funds (context 1),finance,supported,0.597,medium,Historical returns,1
+FA_00014,Real estate always appreciates (context 1),finance,rejected,0.552,hard,2008 crash data,4
+FA_00015,Higher interest rates decrease stock prices (context 1),finance,supported,0.768,expert,Economic models,1
+FA_00016,Diversification reduces portfolio risk (context 1),finance,supported,0.857,easy,Modern Portfolio Theory,3
+FA_00017,Technical analysis predicts stock movements (context 1),finance,undecided,0.793,medium,Backtesting results,1
+FA_00018,Gold is a hedge against inflation (context 1),finance,supported,0.751,hard,Historical correlation,2
+FA_00019,Tesla is overvalued (context 1),finance,undecided,0.854,expert,P/E comparisons,1
+FA_00020,Cryptocurrency will replace fiat currency (context 1),finance,rejected,0.859,easy,Adoption rates,3
+FA_00021,Apple stock will outperform the market in 2024 (context 2),finance,undecided,0.887,hard,Market analysis,1
+FA_00022,Bitcoin is a reliable store of value (context 2),finance,undecided,0.626,expert,Volatility data,3
+FA_00023,Index funds outperform actively managed funds (context 2),finance,supported,0.873,easy,Historical returns,2
+FA_00024,Real estate always appreciates (context 2),finance,rejected,0.809,medium,2008 crash data,1
+FA_00025,Higher interest rates decrease stock prices (context 2),finance,supported,0.575,hard,Economic models,1
+FA_00026,Diversification reduces portfolio risk (context 2),finance,supported,0.554,expert,Modern Portfolio Theory,1
+FA_00027,Technical analysis predicts stock movements (context 2),finance,undecided,0.697,easy,Backtesting results,1
+FA_00028,Gold is a hedge against inflation (context 2),finance,supported,0.581,medium,Historical correlation,3
+FA_00029,Tesla is overvalued (context 2),finance,undecided,0.877,hard,P/E comparisons,1
+FA_00030,Cryptocurrency will replace fiat currency (context 2),finance,rejected,0.617,expert,Adoption rates,3
+FA_00031,Apple stock will outperform the market in 2024 (context 3),finance,undecided,0.815,medium,Market analysis,3
+FA_00032,Bitcoin is a reliable store of value (context 3),finance,undecided,0.795,hard,Volatility data,4
+FA_00033,Index funds outperform actively managed funds (context 3),finance,supported,0.57,expert,Historical returns,3
+FA_00034,Real estate always appreciates (context 3),finance,rejected,0.896,easy,2008 crash data,1
+FA_00035,Higher interest rates decrease stock prices (context 3),finance,supported,0.86,medium,Economic models,2
+FA_00036,Diversification reduces portfolio risk (context 3),finance,supported,0.861,hard,Modern Portfolio Theory,4
+FA_00037,Technical analysis predicts stock movements (context 3),finance,undecided,0.625,expert,Backtesting results,4
+FA_00038,Gold is a hedge against inflation (context 3),finance,supported,0.742,easy,Historical correlation,1
+FA_00039,Tesla is overvalued (context 3),finance,undecided,0.596,medium,P/E comparisons,4
+FA_00040,Cryptocurrency will replace fiat currency (context 3),finance,rejected,0.769,hard,Adoption rates,4
+FA_00041,Apple stock will outperform the market in 2024 (context 4),finance,undecided,0.764,easy,Market analysis,2
+FA_00042,Bitcoin is a reliable store of value (context 4),finance,undecided,0.775,medium,Volatility data,4
+FA_00043,Index funds outperform actively managed funds (context 4),finance,supported,0.945,hard,Historical returns,2
+FA_00044,Real estate always appreciates (context 4),finance,rejected,0.83,expert,2008 crash data,2
+FA_00045,Higher interest rates decrease stock prices (context 4),finance,supported,0.643,easy,Economic models,3
+FA_00046,Diversification reduces portfolio risk (context 4),finance,supported,0.938,medium,Modern Portfolio Theory,4
+FA_00047,Technical analysis predicts stock movements (context 4),finance,undecided,0.88,hard,Backtesting results,1
+FA_00048,Gold is a hedge against inflation (context 4),finance,supported,0.855,expert,Historical correlation,2
+FA_00049,Tesla is overvalued (context 4),finance,undecided,0.659,easy,P/E comparisons,3
+FA_00050,Cryptocurrency will replace fiat currency (context 4),finance,rejected,0.6,medium,Adoption rates,1
+FA_00051,Apple stock will outperform the market in 2024 (context 5),finance,undecided,0.812,expert,Market analysis,2
+FA_00052,Bitcoin is a reliable store of value (context 5),finance,undecided,0.825,easy,Volatility data,3
+FA_00053,Index funds outperform actively managed funds (context 5),finance,supported,0.62,medium,Historical returns,3
+FA_00054,Real estate always appreciates (context 5),finance,rejected,0.663,hard,2008 crash data,2
+FA_00055,Higher interest rates decrease stock prices (context 5),finance,supported,0.848,expert,Economic models,2
+FA_00056,Diversification reduces portfolio risk (context 5),finance,supported,0.626,easy,Modern Portfolio Theory,2
+FA_00057,Technical analysis predicts stock movements (context 5),finance,undecided,0.911,medium,Backtesting results,1
+FA_00058,Gold is a hedge against inflation (context 5),finance,supported,0.874,hard,Historical correlation,3
+FA_00059,Tesla is overvalued (context 5),finance,undecided,0.669,expert,P/E comparisons,3
+FA_00060,Cryptocurrency will replace fiat currency (context 5),finance,rejected,0.869,easy,Adoption rates,3
+FA_00061,Apple stock will outperform the market in 2024 (context 6),finance,undecided,0.799,hard,Market analysis,4
+FA_00062,Bitcoin is a reliable store of value (context 6),finance,undecided,0.664,expert,Volatility data,4
+FA_00063,Index funds outperform actively managed funds (context 6),finance,supported,0.761,easy,Historical returns,1
+FA_00064,Real estate always appreciates (context 6),finance,rejected,0.927,medium,2008 crash data,3
+FA_00065,Higher interest rates decrease stock prices (context 6),finance,supported,0.674,hard,Economic models,1
+FA_00066,Diversification reduces portfolio risk (context 6),finance,supported,0.821,expert,Modern Portfolio Theory,1
+FA_00067,Technical analysis predicts stock movements (context 6),finance,undecided,0.805,easy,Backtesting results,1
+FA_00068,Gold is a hedge against inflation (context 6),finance,supported,0.78,medium,Historical correlation,1
+FA_00069,Tesla is overvalued (context 6),finance,undecided,0.607,hard,P/E comparisons,1
+FA_00070,Cryptocurrency will replace fiat currency (context 6),finance,rejected,0.731,expert,Adoption rates,2
+FA_00071,Apple stock will outperform the market in 2024 (context 7),finance,undecided,0.643,medium,Market analysis,2
+FA_00072,Bitcoin is a reliable store of value (context 7),finance,undecided,0.736,hard,Volatility data,3
+FA_00073,Index funds outperform actively managed funds (context 7),finance,supported,0.811,expert,Historical returns,1
+FA_00074,Real estate always appreciates (context 7),finance,rejected,0.837,easy,2008 crash data,3
+FA_00075,Higher interest rates decrease stock prices (context 7),finance,supported,0.632,medium,Economic models,3
+FA_00076,Diversification reduces portfolio risk (context 7),finance,supported,0.625,hard,Modern Portfolio Theory,1
+FA_00077,Technical analysis predicts stock movements (context 7),finance,undecided,0.66,expert,Backtesting results,4
+FA_00078,Gold is a hedge against inflation (context 7),finance,supported,0.796,easy,Historical correlation,3
+FA_00079,Tesla is overvalued (context 7),finance,undecided,0.898,medium,P/E comparisons,2
+FA_00080,Cryptocurrency will replace fiat currency (context 7),finance,rejected,0.921,hard,Adoption rates,3
+FA_00081,Apple stock will outperform the market in 2024 (context 8),finance,undecided,0.625,easy,Market analysis,3
+FA_00082,Bitcoin is a reliable store of value (context 8),finance,undecided,0.592,medium,Volatility data,4
+FA_00083,Index funds outperform actively managed funds (context 8),finance,supported,0.815,hard,Historical returns,2
+FA_00084,Real estate always appreciates (context 8),finance,rejected,0.836,expert,2008 crash data,4
+FA_00085,Higher interest rates decrease stock prices (context 8),finance,supported,0.681,easy,Economic models,1
+FA_00086,Diversification reduces portfolio risk (context 8),finance,supported,0.767,medium,Modern Portfolio Theory,3
+FA_00087,Technical analysis predicts stock movements (context 8),finance,undecided,0.877,hard,Backtesting results,3
+FA_00088,Gold is a hedge against inflation (context 8),finance,supported,0.868,expert,Historical correlation,3
+FA_00089,Tesla is overvalued (context 8),finance,undecided,0.907,easy,P/E comparisons,2
+FA_00090,Cryptocurrency will replace fiat currency (context 8),finance,rejected,0.836,medium,Adoption rates,3
+FA_00091,Apple stock will outperform the market in 2024 (context 9),finance,undecided,0.623,expert,Market analysis,1
+FA_00092,Bitcoin is a reliable store of value (context 9),finance,undecided,0.921,easy,Volatility data,3
+FA_00093,Index funds outperform actively managed funds (context 9),finance,supported,0.559,medium,Historical returns,3
+FA_00094,Real estate always appreciates (context 9),finance,rejected,0.753,hard,2008 crash data,1
+FA_00095,Higher interest rates decrease stock prices (context 9),finance,supported,0.665,expert,Economic models,4
+FA_00096,Diversification reduces portfolio risk (context 9),finance,supported,0.943,easy,Modern Portfolio Theory,1
+FA_00097,Technical analysis predicts stock movements (context 9),finance,undecided,0.848,medium,Backtesting results,1
+FA_00098,Gold is a hedge against inflation (context 9),finance,supported,0.858,hard,Historical correlation,2
+FA_00099,Tesla is overvalued (context 9),finance,undecided,0.769,expert,P/E comparisons,4
+FA_00100,Cryptocurrency will replace fiat currency (context 9),finance,rejected,0.779,easy,Adoption rates,4
+FA_00101,Apple stock will outperform the market in 2024 (context 10),finance,undecided,0.798,hard,Market analysis,3
+FA_00102,Bitcoin is a reliable store of value (context 10),finance,undecided,0.681,expert,Volatility data,4
+FA_00103,Index funds outperform actively managed funds (context 10),finance,supported,0.801,easy,Historical returns,4
+FA_00104,Real estate always appreciates (context 10),finance,rejected,0.767,medium,2008 crash data,3
+FA_00105,Higher interest rates decrease stock prices (context 10),finance,supported,0.643,hard,Economic models,4
+FA_00106,Diversification reduces portfolio risk (context 10),finance,supported,0.688,expert,Modern Portfolio Theory,2
+FA_00107,Technical analysis predicts stock movements (context 10),finance,undecided,0.853,easy,Backtesting results,1
+FA_00108,Gold is a hedge against inflation (context 10),finance,supported,0.885,medium,Historical correlation,4
+FA_00109,Tesla is overvalued (context 10),finance,undecided,0.884,hard,P/E comparisons,1
+FA_00110,Cryptocurrency will replace fiat currency (context 10),finance,rejected,0.906,expert,Adoption rates,4
+FA_00111,Apple stock will outperform the market in 2024 (context 11),finance,undecided,0.785,medium,Market analysis,3
+FA_00112,Bitcoin is a reliable store of value (context 11),finance,undecided,0.583,hard,Volatility data,2
+FA_00113,Index funds outperform actively managed funds (context 11),finance,supported,0.557,expert,Historical returns,1
+FA_00114,Real estate always appreciates (context 11),finance,rejected,0.942,easy,2008 crash data,1
+FA_00115,Higher interest rates decrease stock prices (context 11),finance,supported,0.71,medium,Economic models,2
+FA_00116,Diversification reduces portfolio risk (context 11),finance,supported,0.697,hard,Modern Portfolio Theory,1
+FA_00117,Technical analysis predicts stock movements (context 11),finance,undecided,0.908,expert,Backtesting results,2
+FA_00118,Gold is a hedge against inflation (context 11),finance,supported,0.659,easy,Historical correlation,4
+FA_00119,Tesla is overvalued (context 11),finance,undecided,0.73,medium,P/E comparisons,4
+FA_00120,Cryptocurrency will replace fiat currency (context 11),finance,rejected,0.603,hard,Adoption rates,2
+FA_00121,Apple stock will outperform the market in 2024 (context 12),finance,undecided,0.725,easy,Market analysis,1
+FA_00122,Bitcoin is a reliable store of value (context 12),finance,undecided,0.752,medium,Volatility data,1
+FA_00123,Index funds outperform actively managed funds (context 12),finance,supported,0.733,hard,Historical returns,2
+FA_00124,Real estate always appreciates (context 12),finance,rejected,0.821,expert,2008 crash data,2
+FA_00125,Higher interest rates decrease stock prices (context 12),finance,supported,0.558,easy,Economic models,3
+FA_00126,Diversification reduces portfolio risk (context 12),finance,supported,0.873,medium,Modern Portfolio Theory,3
+FA_00127,Technical analysis predicts stock movements (context 12),finance,undecided,0.902,hard,Backtesting results,1
+FA_00128,Gold is a hedge against inflation (context 12),finance,supported,0.911,expert,Historical correlation,1
+FA_00129,Tesla is overvalued (context 12),finance,undecided,0.947,easy,P/E comparisons,2
+FA_00130,Cryptocurrency will replace fiat currency (context 12),finance,rejected,0.813,medium,Adoption rates,4
+FA_00131,Apple stock will outperform the market in 2024 (context 13),finance,undecided,0.592,expert,Market analysis,2
+FA_00132,Bitcoin is a reliable store of value (context 13),finance,undecided,0.915,easy,Volatility data,4
+FA_00133,Index funds outperform actively managed funds (context 13),finance,supported,0.605,medium,Historical returns,4
+FA_00134,Real estate always appreciates (context 13),finance,rejected,0.764,hard,2008 crash data,4
+FA_00135,Higher interest rates decrease stock prices (context 13),finance,supported,0.658,expert,Economic models,1
+FA_00136,Diversification reduces portfolio risk (context 13),finance,supported,0.634,easy,Modern Portfolio Theory,1
+FA_00137,Technical analysis predicts stock movements (context 13),finance,undecided,0.617,medium,Backtesting results,4
+FA_00138,Gold is a hedge against inflation (context 13),finance,supported,0.903,hard,Historical correlation,3
+FA_00139,Tesla is overvalued (context 13),finance,undecided,0.778,expert,P/E comparisons,4
+FA_00140,Cryptocurrency will replace fiat currency (context 13),finance,rejected,0.939,easy,Adoption rates,1
+FA_00141,Apple stock will outperform the market in 2024 (context 14),finance,undecided,0.71,hard,Market analysis,2
+FA_00142,Bitcoin is a reliable store of value (context 14),finance,undecided,0.753,expert,Volatility data,1
+FA_00143,Index funds outperform actively managed funds (context 14),finance,supported,0.639,easy,Historical returns,2
+FA_00144,Real estate always appreciates (context 14),finance,rejected,0.675,medium,2008 crash data,1
+FA_00145,Higher interest rates decrease stock prices (context 14),finance,supported,0.901,hard,Economic models,3
+FA_00146,Diversification reduces portfolio risk (context 14),finance,supported,0.674,expert,Modern Portfolio Theory,4
+FA_00147,Technical analysis predicts stock movements (context 14),finance,undecided,0.581,easy,Backtesting results,1
+FA_00148,Gold is a hedge against inflation (context 14),finance,supported,0.665,medium,Historical correlation,3
+FA_00149,Tesla is overvalued (context 14),finance,undecided,0.577,hard,P/E comparisons,2
+FA_00150,Cryptocurrency will replace fiat currency (context 14),finance,rejected,0.915,expert,Adoption rates,2
+FA_00151,Apple stock will outperform the market in 2024 (context 15),finance,undecided,0.882,medium,Market analysis,2
+FA_00152,Bitcoin is a reliable store of value (context 15),finance,undecided,0.675,hard,Volatility data,2
+FA_00153,Index funds outperform actively managed funds (context 15),finance,supported,0.743,expert,Historical returns,4
+FA_00154,Real estate always appreciates (context 15),finance,rejected,0.786,easy,2008 crash data,2
+FA_00155,Higher interest rates decrease stock prices (context 15),finance,supported,0.624,medium,Economic models,2
+FA_00156,Diversification reduces portfolio risk (context 15),finance,supported,0.859,hard,Modern Portfolio Theory,3
+FA_00157,Technical analysis predicts stock movements (context 15),finance,undecided,0.695,expert,Backtesting results,1
+FA_00158,Gold is a hedge against inflation (context 15),finance,supported,0.821,easy,Historical correlation,4
+FA_00159,Tesla is overvalued (context 15),finance,undecided,0.785,medium,P/E comparisons,3
+FA_00160,Cryptocurrency will replace fiat currency (context 15),finance,rejected,0.555,hard,Adoption rates,3
+FA_00161,Apple stock will outperform the market in 2024 (context 16),finance,undecided,0.68,easy,Market analysis,4
+FA_00162,Bitcoin is a reliable store of value (context 16),finance,undecided,0.615,medium,Volatility data,2
+FA_00163,Index funds outperform actively managed funds (context 16),finance,supported,0.915,hard,Historical returns,3
+FA_00164,Real estate always appreciates (context 16),finance,rejected,0.721,expert,2008 crash data,2
+FA_00165,Higher interest rates decrease stock prices (context 16),finance,supported,0.731,easy,Economic models,4
+FA_00166,Diversification reduces portfolio risk (context 16),finance,supported,0.697,medium,Modern Portfolio Theory,1
+FA_00167,Technical analysis predicts stock movements (context 16),finance,undecided,0.799,hard,Backtesting results,3
+FA_00168,Gold is a hedge against inflation (context 16),finance,supported,0.601,expert,Historical correlation,3
+FA_00169,Tesla is overvalued (context 16),finance,undecided,0.786,easy,P/E comparisons,4
+FA_00170,Cryptocurrency will replace fiat currency (context 16),finance,rejected,0.868,medium,Adoption rates,2
+FA_00171,Apple stock will outperform the market in 2024 (context 17),finance,undecided,0.557,expert,Market analysis,2
+FA_00172,Bitcoin is a reliable store of value (context 17),finance,undecided,0.631,easy,Volatility data,3
+FA_00173,Index funds outperform actively managed funds (context 17),finance,supported,0.85,medium,Historical returns,1
+FA_00174,Real estate always appreciates (context 17),finance,rejected,0.692,hard,2008 crash data,3
+FA_00175,Higher interest rates decrease stock prices (context 17),finance,supported,0.738,expert,Economic models,3
+FA_00176,Diversification reduces portfolio risk (context 17),finance,supported,0.848,easy,Modern Portfolio Theory,3
+FA_00177,Technical analysis predicts stock movements (context 17),finance,undecided,0.783,medium,Backtesting results,2
+FA_00178,Gold is a hedge against inflation (context 17),finance,supported,0.827,hard,Historical correlation,4
+FA_00179,Tesla is overvalued (context 17),finance,undecided,0.886,expert,P/E comparisons,4
+FA_00180,Cryptocurrency will replace fiat currency (context 17),finance,rejected,0.939,easy,Adoption rates,4
+FA_00181,Apple stock will outperform the market in 2024 (context 18),finance,undecided,0.663,hard,Market analysis,3
+FA_00182,Bitcoin is a reliable store of value (context 18),finance,undecided,0.711,expert,Volatility data,4
+FA_00183,Index funds outperform actively managed funds (context 18),finance,supported,0.849,easy,Historical returns,3
+FA_00184,Real estate always appreciates (context 18),finance,rejected,0.812,medium,2008 crash data,2
+FA_00185,Higher interest rates decrease stock prices (context 18),finance,supported,0.689,hard,Economic models,2
+FA_00186,Diversification reduces portfolio risk (context 18),finance,supported,0.908,expert,Modern Portfolio Theory,1
+FA_00187,Technical analysis predicts stock movements (context 18),finance,undecided,0.666,easy,Backtesting results,1
+FA_00188,Gold is a hedge against inflation (context 18),finance,supported,0.707,medium,Historical correlation,2
+FA_00189,Tesla is overvalued (context 18),finance,undecided,0.891,hard,P/E comparisons,1
+FA_00190,Cryptocurrency will replace fiat currency (context 18),finance,rejected,0.931,expert,Adoption rates,4
+FA_00191,Apple stock will outperform the market in 2024 (context 19),finance,undecided,0.832,medium,Market analysis,3
+FA_00192,Bitcoin is a reliable store of value (context 19),finance,undecided,0.717,hard,Volatility data,3
+FA_00193,Index funds outperform actively managed funds (context 19),finance,supported,0.717,expert,Historical returns,4
+FA_00194,Real estate always appreciates (context 19),finance,rejected,0.942,easy,2008 crash data,2
+FA_00195,Higher interest rates decrease stock prices (context 19),finance,supported,0.691,medium,Economic models,2
+FA_00196,Diversification reduces portfolio risk (context 19),finance,supported,0.768,hard,Modern Portfolio Theory,4
+FA_00197,Technical analysis predicts stock movements (context 19),finance,undecided,0.83,expert,Backtesting results,3
+FA_00198,Gold is a hedge against inflation (context 19),finance,supported,0.654,easy,Historical correlation,3
+FA_00199,Tesla is overvalued (context 19),finance,undecided,0.902,medium,P/E comparisons,3
+FA_00200,Cryptocurrency will replace fiat currency (context 19),finance,rejected,0.936,hard,Adoption rates,3
+FA_00201,Apple stock will outperform the market in 2024 (context 20),finance,undecided,0.838,easy,Market analysis,1
+FA_00202,Bitcoin is a reliable store of value (context 20),finance,undecided,0.781,medium,Volatility data,1
+FA_00203,Index funds outperform actively managed funds (context 20),finance,supported,0.568,hard,Historical returns,2
+FA_00204,Real estate always appreciates (context 20),finance,rejected,0.769,expert,2008 crash data,1
+FA_00205,Higher interest rates decrease stock prices (context 20),finance,supported,0.95,easy,Economic models,3
+FA_00206,Diversification reduces portfolio risk (context 20),finance,supported,0.841,medium,Modern Portfolio Theory,1
+FA_00207,Technical analysis predicts stock movements (context 20),finance,undecided,0.866,hard,Backtesting results,1
+FA_00208,Gold is a hedge against inflation (context 20),finance,supported,0.757,expert,Historical correlation,3
+FA_00209,Tesla is overvalued (context 20),finance,undecided,0.666,easy,P/E comparisons,1
+FA_00210,Cryptocurrency will replace fiat currency (context 20),finance,rejected,0.606,medium,Adoption rates,1
+FA_00211,Apple stock will outperform the market in 2024 (context 21),finance,undecided,0.746,expert,Market analysis,2
+FA_00212,Bitcoin is a reliable store of value (context 21),finance,undecided,0.654,easy,Volatility data,1
+FA_00213,Index funds outperform actively managed funds (context 21),finance,supported,0.888,medium,Historical returns,4
+FA_00214,Real estate always appreciates (context 21),finance,rejected,0.822,hard,2008 crash data,1
+FA_00215,Higher interest rates decrease stock prices (context 21),finance,supported,0.932,expert,Economic models,3
+FA_00216,Diversification reduces portfolio risk (context 21),finance,supported,0.712,easy,Modern Portfolio Theory,4
+FA_00217,Technical analysis predicts stock movements (context 21),finance,undecided,0.816,medium,Backtesting results,4
+FA_00218,Gold is a hedge against inflation (context 21),finance,supported,0.72,hard,Historical correlation,4
+FA_00219,Tesla is overvalued (context 21),finance,undecided,0.843,expert,P/E comparisons,1
+FA_00220,Cryptocurrency will replace fiat currency (context 21),finance,rejected,0.83,easy,Adoption rates,3
+FA_00221,Apple stock will outperform the market in 2024 (context 22),finance,undecided,0.938,hard,Market analysis,4
+FA_00222,Bitcoin is a reliable store of value (context 22),finance,undecided,0.923,expert,Volatility data,3
+FA_00223,Index funds outperform actively managed funds (context 22),finance,supported,0.947,easy,Historical returns,1
+FA_00224,Real estate always appreciates (context 22),finance,rejected,0.761,medium,2008 crash data,1
+FA_00225,Higher interest rates decrease stock prices (context 22),finance,supported,0.668,hard,Economic models,1
+FA_00226,Diversification reduces portfolio risk (context 22),finance,supported,0.893,expert,Modern Portfolio Theory,1
+FA_00227,Technical analysis predicts stock movements (context 22),finance,undecided,0.553,easy,Backtesting results,3
+FA_00228,Gold is a hedge against inflation (context 22),finance,supported,0.808,medium,Historical correlation,2
+FA_00229,Tesla is overvalued (context 22),finance,undecided,0.777,hard,P/E comparisons,3
+FA_00230,Cryptocurrency will replace fiat currency (context 22),finance,rejected,0.567,expert,Adoption rates,2
+FA_00231,Apple stock will outperform the market in 2024 (context 23),finance,undecided,0.892,medium,Market analysis,2
+FA_00232,Bitcoin is a reliable store of value (context 23),finance,undecided,0.833,hard,Volatility data,4
+FA_00233,Index funds outperform actively managed funds (context 23),finance,supported,0.784,expert,Historical returns,4
+FA_00234,Real estate always appreciates (context 23),finance,rejected,0.842,easy,2008 crash data,2
+FA_00235,Higher interest rates decrease stock prices (context 23),finance,supported,0.87,medium,Economic models,3
+FA_00236,Diversification reduces portfolio risk (context 23),finance,supported,0.57,hard,Modern Portfolio Theory,1
+FA_00237,Technical analysis predicts stock movements (context 23),finance,undecided,0.612,expert,Backtesting results,2
+FA_00238,Gold is a hedge against inflation (context 23),finance,supported,0.634,easy,Historical correlation,2
+FA_00239,Tesla is overvalued (context 23),finance,undecided,0.761,medium,P/E comparisons,2
+FA_00240,Cryptocurrency will replace fiat currency (context 23),finance,rejected,0.569,hard,Adoption rates,3
+FA_00241,Apple stock will outperform the market in 2024 (context 24),finance,undecided,0.87,easy,Market analysis,4
+FA_00242,Bitcoin is a reliable store of value (context 24),finance,undecided,0.766,medium,Volatility data,3
+FA_00243,Index funds outperform actively managed funds (context 24),finance,supported,0.688,hard,Historical returns,1
+FA_00244,Real estate always appreciates (context 24),finance,rejected,0.723,expert,2008 crash data,2
+FA_00245,Higher interest rates decrease stock prices (context 24),finance,supported,0.601,easy,Economic models,4
+FA_00246,Diversification reduces portfolio risk (context 24),finance,supported,0.601,medium,Modern Portfolio Theory,3
+FA_00247,Technical analysis predicts stock movements (context 24),finance,undecided,0.655,hard,Backtesting results,1
+FA_00248,Gold is a hedge against inflation (context 24),finance,supported,0.884,expert,Historical correlation,2
+FA_00249,Tesla is overvalued (context 24),finance,undecided,0.895,easy,P/E comparisons,3
+FA_00250,Cryptocurrency will replace fiat currency (context 24),finance,rejected,0.601,medium,Adoption rates,1
+FA_00251,Apple stock will outperform the market in 2024 (context 25),finance,undecided,0.594,expert,Market analysis,2
+FA_00252,Bitcoin is a reliable store of value (context 25),finance,undecided,0.597,easy,Volatility data,4
+FA_00253,Index funds outperform actively managed funds (context 25),finance,supported,0.931,medium,Historical returns,2
+FA_00254,Real estate always appreciates (context 25),finance,rejected,0.635,hard,2008 crash data,1
+FA_00255,Higher interest rates decrease stock prices (context 25),finance,supported,0.678,expert,Economic models,4
+FA_00256,Diversification reduces portfolio risk (context 25),finance,supported,0.58,easy,Modern Portfolio Theory,2
+FA_00257,Technical analysis predicts stock movements (context 25),finance,undecided,0.746,medium,Backtesting results,1
+FA_00258,Gold is a hedge against inflation (context 25),finance,supported,0.597,hard,Historical correlation,4
+FA_00259,Tesla is overvalued (context 25),finance,undecided,0.793,expert,P/E comparisons,4
+FA_00260,Cryptocurrency will replace fiat currency (context 25),finance,rejected,0.726,easy,Adoption rates,2
+FA_00261,Apple stock will outperform the market in 2024 (context 26),finance,undecided,0.893,hard,Market analysis,3
+FA_00262,Bitcoin is a reliable store of value (context 26),finance,undecided,0.874,expert,Volatility data,1
+FA_00263,Index funds outperform actively managed funds (context 26),finance,supported,0.694,easy,Historical returns,3
+FA_00264,Real estate always appreciates (context 26),finance,rejected,0.859,medium,2008 crash data,2
+FA_00265,Higher interest rates decrease stock prices (context 26),finance,supported,0.577,hard,Economic models,3
+FA_00266,Diversification reduces portfolio risk (context 26),finance,supported,0.941,expert,Modern Portfolio Theory,1
+FA_00267,Technical analysis predicts stock movements (context 26),finance,undecided,0.667,easy,Backtesting results,3
+FA_00268,Gold is a hedge against inflation (context 26),finance,supported,0.731,medium,Historical correlation,3
+FA_00269,Tesla is overvalued (context 26),finance,undecided,0.794,hard,P/E comparisons,2
+FA_00270,Cryptocurrency will replace fiat currency (context 26),finance,rejected,0.93,expert,Adoption rates,4
+FA_00271,Apple stock will outperform the market in 2024 (context 27),finance,undecided,0.771,medium,Market analysis,4
+FA_00272,Bitcoin is a reliable store of value (context 27),finance,undecided,0.892,hard,Volatility data,3
+FA_00273,Index funds outperform actively managed funds (context 27),finance,supported,0.553,expert,Historical returns,4
+FA_00274,Real estate always appreciates (context 27),finance,rejected,0.923,easy,2008 crash data,2
+FA_00275,Higher interest rates decrease stock prices (context 27),finance,supported,0.575,medium,Economic models,1
+FA_00276,Diversification reduces portfolio risk (context 27),finance,supported,0.831,hard,Modern Portfolio Theory,3
+FA_00277,Technical analysis predicts stock movements (context 27),finance,undecided,0.572,expert,Backtesting results,1
+FA_00278,Gold is a hedge against inflation (context 27),finance,supported,0.839,easy,Historical correlation,3
+FA_00279,Tesla is overvalued (context 27),finance,undecided,0.771,medium,P/E comparisons,3
+FA_00280,Cryptocurrency will replace fiat currency (context 27),finance,rejected,0.916,hard,Adoption rates,1
+FA_00281,Apple stock will outperform the market in 2024 (context 28),finance,undecided,0.72,easy,Market analysis,2
+FA_00282,Bitcoin is a reliable store of value (context 28),finance,undecided,0.684,medium,Volatility data,3
+FA_00283,Index funds outperform actively managed funds (context 28),finance,supported,0.72,hard,Historical returns,3
+FA_00284,Real estate always appreciates (context 28),finance,rejected,0.92,expert,2008 crash data,2
+FA_00285,Higher interest rates decrease stock prices (context 28),finance,supported,0.701,easy,Economic models,3
+FA_00286,Diversification reduces portfolio risk (context 28),finance,supported,0.807,medium,Modern Portfolio Theory,1
+FA_00287,Technical analysis predicts stock movements (context 28),finance,undecided,0.638,hard,Backtesting results,4
+FA_00288,Gold is a hedge against inflation (context 28),finance,supported,0.603,expert,Historical correlation,4
+FA_00289,Tesla is overvalued (context 28),finance,undecided,0.585,easy,P/E comparisons,3
+FA_00290,Cryptocurrency will replace fiat currency (context 28),finance,rejected,0.804,medium,Adoption rates,3
+FA_00291,Apple stock will outperform the market in 2024 (context 29),finance,undecided,0.643,expert,Market analysis,4
+FA_00292,Bitcoin is a reliable store of value (context 29),finance,undecided,0.886,easy,Volatility data,1
+FA_00293,Index funds outperform actively managed funds (context 29),finance,supported,0.699,medium,Historical returns,4
+FA_00294,Real estate always appreciates (context 29),finance,rejected,0.633,hard,2008 crash data,3
+FA_00295,Higher interest rates decrease stock prices (context 29),finance,supported,0.647,expert,Economic models,4
+FA_00296,Diversification reduces portfolio risk (context 29),finance,supported,0.594,easy,Modern Portfolio Theory,1
+FA_00297,Technical analysis predicts stock movements (context 29),finance,undecided,0.949,medium,Backtesting results,3
+FA_00298,Gold is a hedge against inflation (context 29),finance,supported,0.666,hard,Historical correlation,1
+FA_00299,Tesla is overvalued (context 29),finance,undecided,0.937,expert,P/E comparisons,2
+FA_00300,Cryptocurrency will replace fiat currency (context 29),finance,rejected,0.614,easy,Adoption rates,1
+FA_00301,Apple stock will outperform the market in 2024 (context 30),finance,undecided,0.741,hard,Market analysis,1
+FA_00302,Bitcoin is a reliable store of value (context 30),finance,undecided,0.847,expert,Volatility data,1
+FA_00303,Index funds outperform actively managed funds (context 30),finance,supported,0.612,easy,Historical returns,1
+FA_00304,Real estate always appreciates (context 30),finance,rejected,0.668,medium,2008 crash data,2
+FA_00305,Higher interest rates decrease stock prices (context 30),finance,supported,0.738,hard,Economic models,2
+FA_00306,Diversification reduces portfolio risk (context 30),finance,supported,0.659,expert,Modern Portfolio Theory,3
+FA_00307,Technical analysis predicts stock movements (context 30),finance,undecided,0.607,easy,Backtesting results,2
+FA_00308,Gold is a hedge against inflation (context 30),finance,supported,0.671,medium,Historical correlation,4
+FA_00309,Tesla is overvalued (context 30),finance,undecided,0.845,hard,P/E comparisons,3
+FA_00310,Cryptocurrency will replace fiat currency (context 30),finance,rejected,0.622,expert,Adoption rates,1
+FA_00311,Apple stock will outperform the market in 2024 (context 31),finance,undecided,0.891,medium,Market analysis,3
+FA_00312,Bitcoin is a reliable store of value (context 31),finance,undecided,0.812,hard,Volatility data,1
+FA_00313,Index funds outperform actively managed funds (context 31),finance,supported,0.75,expert,Historical returns,4
+FA_00314,Real estate always appreciates (context 31),finance,rejected,0.604,easy,2008 crash data,3
+FA_00315,Higher interest rates decrease stock prices (context 31),finance,supported,0.904,medium,Economic models,3
+FA_00316,Diversification reduces portfolio risk (context 31),finance,supported,0.793,hard,Modern Portfolio Theory,3
+FA_00317,Technical analysis predicts stock movements (context 31),finance,undecided,0.908,expert,Backtesting results,3
+FA_00318,Gold is a hedge against inflation (context 31),finance,supported,0.678,easy,Historical correlation,2
+FA_00319,Tesla is overvalued (context 31),finance,undecided,0.584,medium,P/E comparisons,2
+FA_00320,Cryptocurrency will replace fiat currency (context 31),finance,rejected,0.702,hard,Adoption rates,1
+FA_00321,Apple stock will outperform the market in 2024 (context 32),finance,undecided,0.682,easy,Market analysis,2
+FA_00322,Bitcoin is a reliable store of value (context 32),finance,undecided,0.732,medium,Volatility data,2
+FA_00323,Index funds outperform actively managed funds (context 32),finance,supported,0.594,hard,Historical returns,4
+FA_00324,Real estate always appreciates (context 32),finance,rejected,0.928,expert,2008 crash data,3
+FA_00325,Higher interest rates decrease stock prices (context 32),finance,supported,0.886,easy,Economic models,4
+FA_00326,Diversification reduces portfolio risk (context 32),finance,supported,0.606,medium,Modern Portfolio Theory,2
+FA_00327,Technical analysis predicts stock movements (context 32),finance,undecided,0.934,hard,Backtesting results,3
+FA_00328,Gold is a hedge against inflation (context 32),finance,supported,0.889,expert,Historical correlation,4
+FA_00329,Tesla is overvalued (context 32),finance,undecided,0.834,easy,P/E comparisons,1
+FA_00330,Cryptocurrency will replace fiat currency (context 32),finance,rejected,0.551,medium,Adoption rates,3
+FA_00331,Apple stock will outperform the market in 2024 (context 33),finance,undecided,0.636,expert,Market analysis,4
+FA_00332,Bitcoin is a reliable store of value (context 33),finance,undecided,0.586,easy,Volatility data,3
+FA_00333,Index funds outperform actively managed funds (context 33),finance,supported,0.639,medium,Historical returns,2
+FA_00334,Real estate always appreciates (context 33),finance,rejected,0.803,hard,2008 crash data,2
+FA_00335,Higher interest rates decrease stock prices (context 33),finance,supported,0.856,expert,Economic models,2
+FA_00336,Diversification reduces portfolio risk (context 33),finance,supported,0.797,easy,Modern Portfolio Theory,4
+FA_00337,Technical analysis predicts stock movements (context 33),finance,undecided,0.793,medium,Backtesting results,3
+FA_00338,Gold is a hedge against inflation (context 33),finance,supported,0.641,hard,Historical correlation,1
+FA_00339,Tesla is overvalued (context 33),finance,undecided,0.865,expert,P/E comparisons,1
+FA_00340,Cryptocurrency will replace fiat currency (context 33),finance,rejected,0.564,easy,Adoption rates,2
+FA_00341,Apple stock will outperform the market in 2024 (context 34),finance,undecided,0.776,hard,Market analysis,3
+FA_00342,Bitcoin is a reliable store of value (context 34),finance,undecided,0.74,expert,Volatility data,3
+FA_00343,Index funds outperform actively managed funds (context 34),finance,supported,0.913,easy,Historical returns,3
+FA_00344,Real estate always appreciates (context 34),finance,rejected,0.603,medium,2008 crash data,3
+FA_00345,Higher interest rates decrease stock prices (context 34),finance,supported,0.672,hard,Economic models,3
+FA_00346,Diversification reduces portfolio risk (context 34),finance,supported,0.895,expert,Modern Portfolio Theory,2
+FA_00347,Technical analysis predicts stock movements (context 34),finance,undecided,0.731,easy,Backtesting results,3
+FA_00348,Gold is a hedge against inflation (context 34),finance,supported,0.804,medium,Historical correlation,1
+FA_00349,Tesla is overvalued (context 34),finance,undecided,0.591,hard,P/E comparisons,2
+FA_00350,Cryptocurrency will replace fiat currency (context 34),finance,rejected,0.925,expert,Adoption rates,1
+FA_00351,Apple stock will outperform the market in 2024 (context 35),finance,undecided,0.725,medium,Market analysis,3
+FA_00352,Bitcoin is a reliable store of value (context 35),finance,undecided,0.693,hard,Volatility data,2
+FA_00353,Index funds outperform actively managed funds (context 35),finance,supported,0.609,expert,Historical returns,4
+FA_00354,Real estate always appreciates (context 35),finance,rejected,0.81,easy,2008 crash data,3
+FA_00355,Higher interest rates decrease stock prices (context 35),finance,supported,0.76,medium,Economic models,1
+FA_00356,Diversification reduces portfolio risk (context 35),finance,supported,0.716,hard,Modern Portfolio Theory,1
+FA_00357,Technical analysis predicts stock movements (context 35),finance,undecided,0.794,expert,Backtesting results,4
+FA_00358,Gold is a hedge against inflation (context 35),finance,supported,0.865,easy,Historical correlation,4
+FA_00359,Tesla is overvalued (context 35),finance,undecided,0.6,medium,P/E comparisons,1
+FA_00360,Cryptocurrency will replace fiat currency (context 35),finance,rejected,0.936,hard,Adoption rates,1
+FA_00361,Apple stock will outperform the market in 2024 (context 36),finance,undecided,0.586,easy,Market analysis,3
+FA_00362,Bitcoin is a reliable store of value (context 36),finance,undecided,0.783,medium,Volatility data,3
+FA_00363,Index funds outperform actively managed funds (context 36),finance,supported,0.66,hard,Historical returns,2
+FA_00364,Real estate always appreciates (context 36),finance,rejected,0.638,expert,2008 crash data,1
+FA_00365,Higher interest rates decrease stock prices (context 36),finance,supported,0.786,easy,Economic models,4
+FA_00366,Diversification reduces portfolio risk (context 36),finance,supported,0.878,medium,Modern Portfolio Theory,2
+FA_00367,Technical analysis predicts stock movements (context 36),finance,undecided,0.815,hard,Backtesting results,1
+FA_00368,Gold is a hedge against inflation (context 36),finance,supported,0.726,expert,Historical correlation,3
+FA_00369,Tesla is overvalued (context 36),finance,undecided,0.853,easy,P/E comparisons,4
+FA_00370,Cryptocurrency will replace fiat currency (context 36),finance,rejected,0.938,medium,Adoption rates,2
+FA_00371,Apple stock will outperform the market in 2024 (context 37),finance,undecided,0.798,expert,Market analysis,2
+FA_00372,Bitcoin is a reliable store of value (context 37),finance,undecided,0.732,easy,Volatility data,2
+FA_00373,Index funds outperform actively managed funds (context 37),finance,supported,0.805,medium,Historical returns,2
+FA_00374,Real estate always appreciates (context 37),finance,rejected,0.816,hard,2008 crash data,4
+FA_00375,Higher interest rates decrease stock prices (context 37),finance,supported,0.803,expert,Economic models,1
+FA_00376,Diversification reduces portfolio risk (context 37),finance,supported,0.685,easy,Modern Portfolio Theory,1
+FA_00377,Technical analysis predicts stock movements (context 37),finance,undecided,0.808,medium,Backtesting results,4
+FA_00378,Gold is a hedge against inflation (context 37),finance,supported,0.768,hard,Historical correlation,3
+FA_00379,Tesla is overvalued (context 37),finance,undecided,0.603,expert,P/E comparisons,1
+FA_00380,Cryptocurrency will replace fiat currency (context 37),finance,rejected,0.829,easy,Adoption rates,2
+FA_00381,Apple stock will outperform the market in 2024 (context 38),finance,undecided,0.594,hard,Market analysis,1
+FA_00382,Bitcoin is a reliable store of value (context 38),finance,undecided,0.592,expert,Volatility data,3
+FA_00383,Index funds outperform actively managed funds (context 38),finance,supported,0.869,easy,Historical returns,2
+FA_00384,Real estate always appreciates (context 38),finance,rejected,0.564,medium,2008 crash data,3
+FA_00385,Higher interest rates decrease stock prices (context 38),finance,supported,0.642,hard,Economic models,4
+FA_00386,Diversification reduces portfolio risk (context 38),finance,supported,0.693,expert,Modern Portfolio Theory,1
+FA_00387,Technical analysis predicts stock movements (context 38),finance,undecided,0.926,easy,Backtesting results,1
+FA_00388,Gold is a hedge against inflation (context 38),finance,supported,0.893,medium,Historical correlation,2
+FA_00389,Tesla is overvalued (context 38),finance,undecided,0.771,hard,P/E comparisons,2
+FA_00390,Cryptocurrency will replace fiat currency (context 38),finance,rejected,0.865,expert,Adoption rates,2
+FA_00391,Apple stock will outperform the market in 2024 (context 39),finance,undecided,0.814,medium,Market analysis,1
+FA_00392,Bitcoin is a reliable store of value (context 39),finance,undecided,0.768,hard,Volatility data,3
+FA_00393,Index funds outperform actively managed funds (context 39),finance,supported,0.795,expert,Historical returns,4
+FA_00394,Real estate always appreciates (context 39),finance,rejected,0.751,easy,2008 crash data,3
+FA_00395,Higher interest rates decrease stock prices (context 39),finance,supported,0.943,medium,Economic models,1
+FA_00396,Diversification reduces portfolio risk (context 39),finance,supported,0.558,hard,Modern Portfolio Theory,2
+FA_00397,Technical analysis predicts stock movements (context 39),finance,undecided,0.76,expert,Backtesting results,2
+FA_00398,Gold is a hedge against inflation (context 39),finance,supported,0.774,easy,Historical correlation,3
+FA_00399,Tesla is overvalued (context 39),finance,undecided,0.885,medium,P/E comparisons,4
+FA_00400,Cryptocurrency will replace fiat currency (context 39),finance,rejected,0.859,hard,Adoption rates,3
+FA_00401,Apple stock will outperform the market in 2024 (context 40),finance,undecided,0.573,easy,Market analysis,1
+FA_00402,Bitcoin is a reliable store of value (context 40),finance,undecided,0.63,medium,Volatility data,1
+FA_00403,Index funds outperform actively managed funds (context 40),finance,supported,0.867,hard,Historical returns,1
+FA_00404,Real estate always appreciates (context 40),finance,rejected,0.716,expert,2008 crash data,2
+FA_00405,Higher interest rates decrease stock prices (context 40),finance,supported,0.75,easy,Economic models,2
+FA_00406,Diversification reduces portfolio risk (context 40),finance,supported,0.63,medium,Modern Portfolio Theory,1
+FA_00407,Technical analysis predicts stock movements (context 40),finance,undecided,0.611,hard,Backtesting results,1
+FA_00408,Gold is a hedge against inflation (context 40),finance,supported,0.584,expert,Historical correlation,2
+FA_00409,Tesla is overvalued (context 40),finance,undecided,0.947,easy,P/E comparisons,1
+FA_00410,Cryptocurrency will replace fiat currency (context 40),finance,rejected,0.944,medium,Adoption rates,4
+FA_00411,Apple stock will outperform the market in 2024 (context 41),finance,undecided,0.841,expert,Market analysis,4
+FA_00412,Bitcoin is a reliable store of value (context 41),finance,undecided,0.56,easy,Volatility data,2
+FA_00413,Index funds outperform actively managed funds (context 41),finance,supported,0.763,medium,Historical returns,3
+FA_00414,Real estate always appreciates (context 41),finance,rejected,0.609,hard,2008 crash data,3
+FA_00415,Higher interest rates decrease stock prices (context 41),finance,supported,0.759,expert,Economic models,4
+FA_00416,Diversification reduces portfolio risk (context 41),finance,supported,0.771,easy,Modern Portfolio Theory,3
+FA_00417,Technical analysis predicts stock movements (context 41),finance,undecided,0.848,medium,Backtesting results,2
+FA_00418,Gold is a hedge against inflation (context 41),finance,supported,0.702,hard,Historical correlation,2
+FA_00419,Tesla is overvalued (context 41),finance,undecided,0.909,expert,P/E comparisons,4
+FA_00420,Cryptocurrency will replace fiat currency (context 41),finance,rejected,0.731,easy,Adoption rates,4
+FA_00421,Apple stock will outperform the market in 2024 (context 42),finance,undecided,0.784,hard,Market analysis,2
+FA_00422,Bitcoin is a reliable store of value (context 42),finance,undecided,0.944,expert,Volatility data,2
+FA_00423,Index funds outperform actively managed funds (context 42),finance,supported,0.892,easy,Historical returns,2
+FA_00424,Real estate always appreciates (context 42),finance,rejected,0.741,medium,2008 crash data,2
+FA_00425,Higher interest rates decrease stock prices (context 42),finance,supported,0.908,hard,Economic models,1
+FA_00426,Diversification reduces portfolio risk (context 42),finance,supported,0.824,expert,Modern Portfolio Theory,4
+FA_00427,Technical analysis predicts stock movements (context 42),finance,undecided,0.698,easy,Backtesting results,2
+FA_00428,Gold is a hedge against inflation (context 42),finance,supported,0.757,medium,Historical correlation,1
+FA_00429,Tesla is overvalued (context 42),finance,undecided,0.93,hard,P/E comparisons,1
+FA_00430,Cryptocurrency will replace fiat currency (context 42),finance,rejected,0.867,expert,Adoption rates,3
+FA_00431,Apple stock will outperform the market in 2024 (context 43),finance,undecided,0.72,medium,Market analysis,2
+FA_00432,Bitcoin is a reliable store of value (context 43),finance,undecided,0.733,hard,Volatility data,1
+FA_00433,Index funds outperform actively managed funds (context 43),finance,supported,0.78,expert,Historical returns,3
+FA_00434,Real estate always appreciates (context 43),finance,rejected,0.672,easy,2008 crash data,2
+FA_00435,Higher interest rates decrease stock prices (context 43),finance,supported,0.734,medium,Economic models,4
+FA_00436,Diversification reduces portfolio risk (context 43),finance,supported,0.812,hard,Modern Portfolio Theory,3
+FA_00437,Technical analysis predicts stock movements (context 43),finance,undecided,0.639,expert,Backtesting results,2
+FA_00438,Gold is a hedge against inflation (context 43),finance,supported,0.591,easy,Historical correlation,2
+FA_00439,Tesla is overvalued (context 43),finance,undecided,0.912,medium,P/E comparisons,3
+FA_00440,Cryptocurrency will replace fiat currency (context 43),finance,rejected,0.766,hard,Adoption rates,4
+FA_00441,Apple stock will outperform the market in 2024 (context 44),finance,undecided,0.606,easy,Market analysis,2
+FA_00442,Bitcoin is a reliable store of value (context 44),finance,undecided,0.901,medium,Volatility data,3
+FA_00443,Index funds outperform actively managed funds (context 44),finance,supported,0.914,hard,Historical returns,2
+FA_00444,Real estate always appreciates (context 44),finance,rejected,0.864,expert,2008 crash data,4
+FA_00445,Higher interest rates decrease stock prices (context 44),finance,supported,0.856,easy,Economic models,3
+FA_00446,Diversification reduces portfolio risk (context 44),finance,supported,0.914,medium,Modern Portfolio Theory,1
+FA_00447,Technical analysis predicts stock movements (context 44),finance,undecided,0.884,hard,Backtesting results,2
+FA_00448,Gold is a hedge against inflation (context 44),finance,supported,0.933,expert,Historical correlation,3
+FA_00449,Tesla is overvalued (context 44),finance,undecided,0.665,easy,P/E comparisons,4
+FA_00450,Cryptocurrency will replace fiat currency (context 44),finance,rejected,0.732,medium,Adoption rates,3
+FA_00451,Apple stock will outperform the market in 2024 (context 45),finance,undecided,0.611,expert,Market analysis,1
+FA_00452,Bitcoin is a reliable store of value (context 45),finance,undecided,0.834,easy,Volatility data,3
+FA_00453,Index funds outperform actively managed funds (context 45),finance,supported,0.785,medium,Historical returns,1
+FA_00454,Real estate always appreciates (context 45),finance,rejected,0.856,hard,2008 crash data,1
+FA_00455,Higher interest rates decrease stock prices (context 45),finance,supported,0.555,expert,Economic models,4
+FA_00456,Diversification reduces portfolio risk (context 45),finance,supported,0.901,easy,Modern Portfolio Theory,1
+FA_00457,Technical analysis predicts stock movements (context 45),finance,undecided,0.724,medium,Backtesting results,3
+FA_00458,Gold is a hedge against inflation (context 45),finance,supported,0.688,hard,Historical correlation,3
+FA_00459,Tesla is overvalued (context 45),finance,undecided,0.799,expert,P/E comparisons,3
+FA_00460,Cryptocurrency will replace fiat currency (context 45),finance,rejected,0.764,easy,Adoption rates,1
+FA_00461,Apple stock will outperform the market in 2024 (context 46),finance,undecided,0.621,hard,Market analysis,2
+FA_00462,Bitcoin is a reliable store of value (context 46),finance,undecided,0.794,expert,Volatility data,4
+FA_00463,Index funds outperform actively managed funds (context 46),finance,supported,0.899,easy,Historical returns,4
+FA_00464,Real estate always appreciates (context 46),finance,rejected,0.578,medium,2008 crash data,4
+FA_00465,Higher interest rates decrease stock prices (context 46),finance,supported,0.646,hard,Economic models,3
+FA_00466,Diversification reduces portfolio risk (context 46),finance,supported,0.775,expert,Modern Portfolio Theory,3
+FA_00467,Technical analysis predicts stock movements (context 46),finance,undecided,0.664,easy,Backtesting results,3
+FA_00468,Gold is a hedge against inflation (context 46),finance,supported,0.718,medium,Historical correlation,3
+FA_00469,Tesla is overvalued (context 46),finance,undecided,0.689,hard,P/E comparisons,3
+FA_00470,Cryptocurrency will replace fiat currency (context 46),finance,rejected,0.631,expert,Adoption rates,1
+FA_00471,Apple stock will outperform the market in 2024 (context 47),finance,undecided,0.827,medium,Market analysis,4
+FA_00472,Bitcoin is a reliable store of value (context 47),finance,undecided,0.841,hard,Volatility data,2
+FA_00473,Index funds outperform actively managed funds (context 47),finance,supported,0.769,expert,Historical returns,3
+FA_00474,Real estate always appreciates (context 47),finance,rejected,0.877,easy,2008 crash data,1
+FA_00475,Higher interest rates decrease stock prices (context 47),finance,supported,0.931,medium,Economic models,2
+FA_00476,Diversification reduces portfolio risk (context 47),finance,supported,0.838,hard,Modern Portfolio Theory,1
+FA_00477,Technical analysis predicts stock movements (context 47),finance,undecided,0.742,expert,Backtesting results,4
+FA_00478,Gold is a hedge against inflation (context 47),finance,supported,0.715,easy,Historical correlation,1
+FA_00479,Tesla is overvalued (context 47),finance,undecided,0.874,medium,P/E comparisons,3
+FA_00480,Cryptocurrency will replace fiat currency (context 47),finance,rejected,0.713,hard,Adoption rates,3
+FA_00481,Apple stock will outperform the market in 2024 (context 48),finance,undecided,0.807,easy,Market analysis,4
+FA_00482,Bitcoin is a reliable store of value (context 48),finance,undecided,0.932,medium,Volatility data,4
+FA_00483,Index funds outperform actively managed funds (context 48),finance,supported,0.795,hard,Historical returns,4
+FA_00484,Real estate always appreciates (context 48),finance,rejected,0.591,expert,2008 crash data,4
+FA_00485,Higher interest rates decrease stock prices (context 48),finance,supported,0.944,easy,Economic models,2
+FA_00486,Diversification reduces portfolio risk (context 48),finance,supported,0.612,medium,Modern Portfolio Theory,2
+FA_00487,Technical analysis predicts stock movements (context 48),finance,undecided,0.934,hard,Backtesting results,4
+FA_00488,Gold is a hedge against inflation (context 48),finance,supported,0.761,expert,Historical correlation,2
+FA_00489,Tesla is overvalued (context 48),finance,undecided,0.934,easy,P/E comparisons,3
+FA_00490,Cryptocurrency will replace fiat currency (context 48),finance,rejected,0.567,medium,Adoption rates,2
+FA_00491,Apple stock will outperform the market in 2024 (context 49),finance,undecided,0.746,expert,Market analysis,4
+FA_00492,Bitcoin is a reliable store of value (context 49),finance,undecided,0.704,easy,Volatility data,1
+FA_00493,Index funds outperform actively managed funds (context 49),finance,supported,0.685,medium,Historical returns,1
+FA_00494,Real estate always appreciates (context 49),finance,rejected,0.829,hard,2008 crash data,3
+FA_00495,Higher interest rates decrease stock prices (context 49),finance,supported,0.815,expert,Economic models,4
+FA_00496,Diversification reduces portfolio risk (context 49),finance,supported,0.74,easy,Modern Portfolio Theory,3
+FA_00497,Technical analysis predicts stock movements (context 49),finance,undecided,0.658,medium,Backtesting results,3
+FA_00498,Gold is a hedge against inflation (context 49),finance,supported,0.796,hard,Historical correlation,4
+FA_00499,Tesla is overvalued (context 49),finance,undecided,0.74,expert,P/E comparisons,1
+FA_00500,Cryptocurrency will replace fiat currency (context 49),finance,rejected,0.896,easy,Adoption rates,3
+FA_00501,Apple stock will outperform the market in 2024 (context 50),finance,undecided,0.604,hard,Market analysis,1
+FA_00502,Bitcoin is a reliable store of value (context 50),finance,undecided,0.812,expert,Volatility data,3
+FA_00503,Index funds outperform actively managed funds (context 50),finance,supported,0.636,easy,Historical returns,3
+FA_00504,Real estate always appreciates (context 50),finance,rejected,0.948,medium,2008 crash data,2
+FA_00505,Higher interest rates decrease stock prices (context 50),finance,supported,0.8,hard,Economic models,4
+FA_00506,Diversification reduces portfolio risk (context 50),finance,supported,0.617,expert,Modern Portfolio Theory,1
+FA_00507,Technical analysis predicts stock movements (context 50),finance,undecided,0.649,easy,Backtesting results,2
+FA_00508,Gold is a hedge against inflation (context 50),finance,supported,0.926,medium,Historical correlation,1
+FA_00509,Tesla is overvalued (context 50),finance,undecided,0.854,hard,P/E comparisons,4
+FA_00510,Cryptocurrency will replace fiat currency (context 50),finance,rejected,0.828,expert,Adoption rates,2
+FA_00511,Apple stock will outperform the market in 2024 (context 51),finance,undecided,0.669,medium,Market analysis,1
+FA_00512,Bitcoin is a reliable store of value (context 51),finance,undecided,0.835,hard,Volatility data,4
+FA_00513,Index funds outperform actively managed funds (context 51),finance,supported,0.695,expert,Historical returns,3
+FA_00514,Real estate always appreciates (context 51),finance,rejected,0.92,easy,2008 crash data,3
+FA_00515,Higher interest rates decrease stock prices (context 51),finance,supported,0.836,medium,Economic models,3
+FA_00516,Diversification reduces portfolio risk (context 51),finance,supported,0.663,hard,Modern Portfolio Theory,2
+FA_00517,Technical analysis predicts stock movements (context 51),finance,undecided,0.903,expert,Backtesting results,2
+FA_00518,Gold is a hedge against inflation (context 51),finance,supported,0.885,easy,Historical correlation,3
+FA_00519,Tesla is overvalued (context 51),finance,undecided,0.95,medium,P/E comparisons,4
+FA_00520,Cryptocurrency will replace fiat currency (context 51),finance,rejected,0.794,hard,Adoption rates,4
+FA_00521,Apple stock will outperform the market in 2024 (context 52),finance,undecided,0.639,easy,Market analysis,3
+FA_00522,Bitcoin is a reliable store of value (context 52),finance,undecided,0.624,medium,Volatility data,3
+FA_00523,Index funds outperform actively managed funds (context 52),finance,supported,0.583,hard,Historical returns,1
+FA_00524,Real estate always appreciates (context 52),finance,rejected,0.57,expert,2008 crash data,2
+FA_00525,Higher interest rates decrease stock prices (context 52),finance,supported,0.87,easy,Economic models,1
+FA_00526,Diversification reduces portfolio risk (context 52),finance,supported,0.862,medium,Modern Portfolio Theory,3
+FA_00527,Technical analysis predicts stock movements (context 52),finance,undecided,0.766,hard,Backtesting results,2
+FA_00528,Gold is a hedge against inflation (context 52),finance,supported,0.916,expert,Historical correlation,4
+FA_00529,Tesla is overvalued (context 52),finance,undecided,0.85,easy,P/E comparisons,4
+FA_00530,Cryptocurrency will replace fiat currency (context 52),finance,rejected,0.884,medium,Adoption rates,3
+FA_00531,Apple stock will outperform the market in 2024 (context 53),finance,undecided,0.818,expert,Market analysis,1
+FA_00532,Bitcoin is a reliable store of value (context 53),finance,undecided,0.741,easy,Volatility data,4
+FA_00533,Index funds outperform actively managed funds (context 53),finance,supported,0.839,medium,Historical returns,4
+FA_00534,Real estate always appreciates (context 53),finance,rejected,0.733,hard,2008 crash data,2
+FA_00535,Higher interest rates decrease stock prices (context 53),finance,supported,0.697,expert,Economic models,1
+FA_00536,Diversification reduces portfolio risk (context 53),finance,supported,0.6,easy,Modern Portfolio Theory,2
+FA_00537,Technical analysis predicts stock movements (context 53),finance,undecided,0.626,medium,Backtesting results,2
+FA_00538,Gold is a hedge against inflation (context 53),finance,supported,0.871,hard,Historical correlation,3
+FA_00539,Tesla is overvalued (context 53),finance,undecided,0.622,expert,P/E comparisons,3
+FA_00540,Cryptocurrency will replace fiat currency (context 53),finance,rejected,0.568,easy,Adoption rates,1
+FA_00541,Apple stock will outperform the market in 2024 (context 54),finance,undecided,0.867,hard,Market analysis,4
+FA_00542,Bitcoin is a reliable store of value (context 54),finance,undecided,0.69,expert,Volatility data,1
+FA_00543,Index funds outperform actively managed funds (context 54),finance,supported,0.833,easy,Historical returns,2
+FA_00544,Real estate always appreciates (context 54),finance,rejected,0.571,medium,2008 crash data,2
+FA_00545,Higher interest rates decrease stock prices (context 54),finance,supported,0.703,hard,Economic models,3
+FA_00546,Diversification reduces portfolio risk (context 54),finance,supported,0.746,expert,Modern Portfolio Theory,4
+FA_00547,Technical analysis predicts stock movements (context 54),finance,undecided,0.776,easy,Backtesting results,2
+FA_00548,Gold is a hedge against inflation (context 54),finance,supported,0.792,medium,Historical correlation,4
+FA_00549,Tesla is overvalued (context 54),finance,undecided,0.584,hard,P/E comparisons,2
+FA_00550,Cryptocurrency will replace fiat currency (context 54),finance,rejected,0.767,expert,Adoption rates,4
+FA_00551,Apple stock will outperform the market in 2024 (context 55),finance,undecided,0.555,medium,Market analysis,4
+FA_00552,Bitcoin is a reliable store of value (context 55),finance,undecided,0.868,hard,Volatility data,1
+FA_00553,Index funds outperform actively managed funds (context 55),finance,supported,0.932,expert,Historical returns,1
+FA_00554,Real estate always appreciates (context 55),finance,rejected,0.694,easy,2008 crash data,2
+FA_00555,Higher interest rates decrease stock prices (context 55),finance,supported,0.751,medium,Economic models,4
+FA_00556,Diversification reduces portfolio risk (context 55),finance,supported,0.869,hard,Modern Portfolio Theory,2
+FA_00557,Technical analysis predicts stock movements (context 55),finance,undecided,0.904,expert,Backtesting results,2
+FA_00558,Gold is a hedge against inflation (context 55),finance,supported,0.644,easy,Historical correlation,4
+FA_00559,Tesla is overvalued (context 55),finance,undecided,0.893,medium,P/E comparisons,2
+FA_00560,Cryptocurrency will replace fiat currency (context 55),finance,rejected,0.777,hard,Adoption rates,3
+FA_00561,Apple stock will outperform the market in 2024 (context 56),finance,undecided,0.666,easy,Market analysis,2
+FA_00562,Bitcoin is a reliable store of value (context 56),finance,undecided,0.949,medium,Volatility data,1
+FA_00563,Index funds outperform actively managed funds (context 56),finance,supported,0.862,hard,Historical returns,4
+FA_00564,Real estate always appreciates (context 56),finance,rejected,0.608,expert,2008 crash data,2
+FA_00565,Higher interest rates decrease stock prices (context 56),finance,supported,0.916,easy,Economic models,2
+FA_00566,Diversification reduces portfolio risk (context 56),finance,supported,0.862,medium,Modern Portfolio Theory,4
+FA_00567,Technical analysis predicts stock movements (context 56),finance,undecided,0.601,hard,Backtesting results,1
+FA_00568,Gold is a hedge against inflation (context 56),finance,supported,0.895,expert,Historical correlation,2
+FA_00569,Tesla is overvalued (context 56),finance,undecided,0.883,easy,P/E comparisons,4
+FA_00570,Cryptocurrency will replace fiat currency (context 56),finance,rejected,0.652,medium,Adoption rates,1
+FA_00571,Apple stock will outperform the market in 2024 (context 57),finance,undecided,0.616,expert,Market analysis,3
+FA_00572,Bitcoin is a reliable store of value (context 57),finance,undecided,0.665,easy,Volatility data,3
+FA_00573,Index funds outperform actively managed funds (context 57),finance,supported,0.914,medium,Historical returns,2
+FA_00574,Real estate always appreciates (context 57),finance,rejected,0.76,hard,2008 crash data,4
+FA_00575,Higher interest rates decrease stock prices (context 57),finance,supported,0.607,expert,Economic models,4
+FA_00576,Diversification reduces portfolio risk (context 57),finance,supported,0.917,easy,Modern Portfolio Theory,3
+FA_00577,Technical analysis predicts stock movements (context 57),finance,undecided,0.842,medium,Backtesting results,3
+FA_00578,Gold is a hedge against inflation (context 57),finance,supported,0.594,hard,Historical correlation,3
+FA_00579,Tesla is overvalued (context 57),finance,undecided,0.846,expert,P/E comparisons,4
+FA_00580,Cryptocurrency will replace fiat currency (context 57),finance,rejected,0.823,easy,Adoption rates,2
+FA_00581,Apple stock will outperform the market in 2024 (context 58),finance,undecided,0.855,hard,Market analysis,2
+FA_00582,Bitcoin is a reliable store of value (context 58),finance,undecided,0.916,expert,Volatility data,1
+FA_00583,Index funds outperform actively managed funds (context 58),finance,supported,0.851,easy,Historical returns,4
+FA_00584,Real estate always appreciates (context 58),finance,rejected,0.637,medium,2008 crash data,3
+FA_00585,Higher interest rates decrease stock prices (context 58),finance,supported,0.907,hard,Economic models,2
+FA_00586,Diversification reduces portfolio risk (context 58),finance,supported,0.622,expert,Modern Portfolio Theory,4
+FA_00587,Technical analysis predicts stock movements (context 58),finance,undecided,0.738,easy,Backtesting results,3
+FA_00588,Gold is a hedge against inflation (context 58),finance,supported,0.698,medium,Historical correlation,1
+FA_00589,Tesla is overvalued (context 58),finance,undecided,0.949,hard,P/E comparisons,2
+FA_00590,Cryptocurrency will replace fiat currency (context 58),finance,rejected,0.902,expert,Adoption rates,3
+FA_00591,Apple stock will outperform the market in 2024 (context 59),finance,undecided,0.686,medium,Market analysis,3
+FA_00592,Bitcoin is a reliable store of value (context 59),finance,undecided,0.56,hard,Volatility data,4
+FA_00593,Index funds outperform actively managed funds (context 59),finance,supported,0.57,expert,Historical returns,2
+FA_00594,Real estate always appreciates (context 59),finance,rejected,0.922,easy,2008 crash data,4
+FA_00595,Higher interest rates decrease stock prices (context 59),finance,supported,0.874,medium,Economic models,1
+FA_00596,Diversification reduces portfolio risk (context 59),finance,supported,0.679,hard,Modern Portfolio Theory,3
+FA_00597,Technical analysis predicts stock movements (context 59),finance,undecided,0.716,expert,Backtesting results,4
+FA_00598,Gold is a hedge against inflation (context 59),finance,supported,0.591,easy,Historical correlation,2
+FA_00599,Tesla is overvalued (context 59),finance,undecided,0.822,medium,P/E comparisons,3
+FA_00600,Cryptocurrency will replace fiat currency (context 59),finance,rejected,0.767,hard,Adoption rates,3
+FA_00601,Apple stock will outperform the market in 2024 (context 60),finance,undecided,0.772,easy,Market analysis,4
+FA_00602,Bitcoin is a reliable store of value (context 60),finance,undecided,0.651,medium,Volatility data,1
+FA_00603,Index funds outperform actively managed funds (context 60),finance,supported,0.667,hard,Historical returns,3
+FA_00604,Real estate always appreciates (context 60),finance,rejected,0.93,expert,2008 crash data,1
+FA_00605,Higher interest rates decrease stock prices (context 60),finance,supported,0.769,easy,Economic models,3
+FA_00606,Diversification reduces portfolio risk (context 60),finance,supported,0.612,medium,Modern Portfolio Theory,4
+FA_00607,Technical analysis predicts stock movements (context 60),finance,undecided,0.644,hard,Backtesting results,1
+FA_00608,Gold is a hedge against inflation (context 60),finance,supported,0.675,expert,Historical correlation,2
+FA_00609,Tesla is overvalued (context 60),finance,undecided,0.87,easy,P/E comparisons,1
+FA_00610,Cryptocurrency will replace fiat currency (context 60),finance,rejected,0.614,medium,Adoption rates,3
+FA_00611,Apple stock will outperform the market in 2024 (context 61),finance,undecided,0.825,expert,Market analysis,4
+FA_00612,Bitcoin is a reliable store of value (context 61),finance,undecided,0.913,easy,Volatility data,2
+FA_00613,Index funds outperform actively managed funds (context 61),finance,supported,0.917,medium,Historical returns,2
+FA_00614,Real estate always appreciates (context 61),finance,rejected,0.816,hard,2008 crash data,2
+FA_00615,Higher interest rates decrease stock prices (context 61),finance,supported,0.752,expert,Economic models,4
+FA_00616,Diversification reduces portfolio risk (context 61),finance,supported,0.758,easy,Modern Portfolio Theory,1
+FA_00617,Technical analysis predicts stock movements (context 61),finance,undecided,0.8,medium,Backtesting results,3
+FA_00618,Gold is a hedge against inflation (context 61),finance,supported,0.944,hard,Historical correlation,3
+FA_00619,Tesla is overvalued (context 61),finance,undecided,0.847,expert,P/E comparisons,2
+FA_00620,Cryptocurrency will replace fiat currency (context 61),finance,rejected,0.876,easy,Adoption rates,2
+FA_00621,Apple stock will outperform the market in 2024 (context 62),finance,undecided,0.573,hard,Market analysis,4
+FA_00622,Bitcoin is a reliable store of value (context 62),finance,undecided,0.632,expert,Volatility data,2
+FA_00623,Index funds outperform actively managed funds (context 62),finance,supported,0.666,easy,Historical returns,4
+FA_00624,Real estate always appreciates (context 62),finance,rejected,0.616,medium,2008 crash data,3
+FA_00625,Higher interest rates decrease stock prices (context 62),finance,supported,0.897,hard,Economic models,2
+FA_00626,Diversification reduces portfolio risk (context 62),finance,supported,0.639,expert,Modern Portfolio Theory,3
+FA_00627,Technical analysis predicts stock movements (context 62),finance,undecided,0.902,easy,Backtesting results,2
+FA_00628,Gold is a hedge against inflation (context 62),finance,supported,0.878,medium,Historical correlation,3
+FA_00629,Tesla is overvalued (context 62),finance,undecided,0.61,hard,P/E comparisons,3
+FA_00630,Cryptocurrency will replace fiat currency (context 62),finance,rejected,0.674,expert,Adoption rates,1
+FA_00631,Apple stock will outperform the market in 2024 (context 63),finance,undecided,0.848,medium,Market analysis,3
+FA_00632,Bitcoin is a reliable store of value (context 63),finance,undecided,0.751,hard,Volatility data,4
+FA_00633,Index funds outperform actively managed funds (context 63),finance,supported,0.793,expert,Historical returns,2
+FA_00634,Real estate always appreciates (context 63),finance,rejected,0.675,easy,2008 crash data,4
+FA_00635,Higher interest rates decrease stock prices (context 63),finance,supported,0.856,medium,Economic models,3
+FA_00636,Diversification reduces portfolio risk (context 63),finance,supported,0.781,hard,Modern Portfolio Theory,2
+FA_00637,Technical analysis predicts stock movements (context 63),finance,undecided,0.935,expert,Backtesting results,2
+FA_00638,Gold is a hedge against inflation (context 63),finance,supported,0.635,easy,Historical correlation,1
+FA_00639,Tesla is overvalued (context 63),finance,undecided,0.743,medium,P/E comparisons,3
+FA_00640,Cryptocurrency will replace fiat currency (context 63),finance,rejected,0.736,hard,Adoption rates,2
+FA_00641,Apple stock will outperform the market in 2024 (context 64),finance,undecided,0.597,easy,Market analysis,4
+FA_00642,Bitcoin is a reliable store of value (context 64),finance,undecided,0.946,medium,Volatility data,3
+FA_00643,Index funds outperform actively managed funds (context 64),finance,supported,0.835,hard,Historical returns,3
+FA_00644,Real estate always appreciates (context 64),finance,rejected,0.699,expert,2008 crash data,1
+FA_00645,Higher interest rates decrease stock prices (context 64),finance,supported,0.723,easy,Economic models,3
+FA_00646,Diversification reduces portfolio risk (context 64),finance,supported,0.931,medium,Modern Portfolio Theory,2
+FA_00647,Technical analysis predicts stock movements (context 64),finance,undecided,0.631,hard,Backtesting results,3
+FA_00648,Gold is a hedge against inflation (context 64),finance,supported,0.936,expert,Historical correlation,2
+FA_00649,Tesla is overvalued (context 64),finance,undecided,0.553,easy,P/E comparisons,1
+FA_00650,Cryptocurrency will replace fiat currency (context 64),finance,rejected,0.656,medium,Adoption rates,1
+FA_00651,Apple stock will outperform the market in 2024 (context 65),finance,undecided,0.919,expert,Market analysis,3
+FA_00652,Bitcoin is a reliable store of value (context 65),finance,undecided,0.773,easy,Volatility data,2
+FA_00653,Index funds outperform actively managed funds (context 65),finance,supported,0.899,medium,Historical returns,3
+FA_00654,Real estate always appreciates (context 65),finance,rejected,0.663,hard,2008 crash data,3
+FA_00655,Higher interest rates decrease stock prices (context 65),finance,supported,0.744,expert,Economic models,3
+FA_00656,Diversification reduces portfolio risk (context 65),finance,supported,0.796,easy,Modern Portfolio Theory,2
+FA_00657,Technical analysis predicts stock movements (context 65),finance,undecided,0.677,medium,Backtesting results,3
+FA_00658,Gold is a hedge against inflation (context 65),finance,supported,0.86,hard,Historical correlation,3
+FA_00659,Tesla is overvalued (context 65),finance,undecided,0.881,expert,P/E comparisons,4
+FA_00660,Cryptocurrency will replace fiat currency (context 65),finance,rejected,0.864,easy,Adoption rates,4
+FA_00661,Apple stock will outperform the market in 2024 (context 66),finance,undecided,0.943,hard,Market analysis,1
+FA_00662,Bitcoin is a reliable store of value (context 66),finance,undecided,0.687,expert,Volatility data,4
+FA_00663,Index funds outperform actively managed funds (context 66),finance,supported,0.614,easy,Historical returns,3
+FA_00664,Real estate always appreciates (context 66),finance,rejected,0.68,medium,2008 crash data,3
+FA_00665,Higher interest rates decrease stock prices (context 66),finance,supported,0.633,hard,Economic models,2
+FA_00666,Diversification reduces portfolio risk (context 66),finance,supported,0.585,expert,Modern Portfolio Theory,1
+FA_00667,Technical analysis predicts stock movements (context 66),finance,undecided,0.857,easy,Backtesting results,1
+FA_00668,Gold is a hedge against inflation (context 66),finance,supported,0.687,medium,Historical correlation,2
+FA_00669,Tesla is overvalued (context 66),finance,undecided,0.798,hard,P/E comparisons,2
+FA_00670,Cryptocurrency will replace fiat currency (context 66),finance,rejected,0.907,expert,Adoption rates,1
+FA_00671,Apple stock will outperform the market in 2024 (context 67),finance,undecided,0.661,medium,Market analysis,4
+FA_00672,Bitcoin is a reliable store of value (context 67),finance,undecided,0.838,hard,Volatility data,1
+FA_00673,Index funds outperform actively managed funds (context 67),finance,supported,0.944,expert,Historical returns,4
+FA_00674,Real estate always appreciates (context 67),finance,rejected,0.931,easy,2008 crash data,2
+FA_00675,Higher interest rates decrease stock prices (context 67),finance,supported,0.711,medium,Economic models,1
+FA_00676,Diversification reduces portfolio risk (context 67),finance,supported,0.585,hard,Modern Portfolio Theory,2
+FA_00677,Technical analysis predicts stock movements (context 67),finance,undecided,0.867,expert,Backtesting results,1
+FA_00678,Gold is a hedge against inflation (context 67),finance,supported,0.623,easy,Historical correlation,1
+FA_00679,Tesla is overvalued (context 67),finance,undecided,0.895,medium,P/E comparisons,1
+FA_00680,Cryptocurrency will replace fiat currency (context 67),finance,rejected,0.637,hard,Adoption rates,4
+FA_00681,Apple stock will outperform the market in 2024 (context 68),finance,undecided,0.708,easy,Market analysis,1
+FA_00682,Bitcoin is a reliable store of value (context 68),finance,undecided,0.843,medium,Volatility data,4
+FA_00683,Index funds outperform actively managed funds (context 68),finance,supported,0.872,hard,Historical returns,1
+FA_00684,Real estate always appreciates (context 68),finance,rejected,0.631,expert,2008 crash data,4
+FA_00685,Higher interest rates decrease stock prices (context 68),finance,supported,0.551,easy,Economic models,1
+FA_00686,Diversification reduces portfolio risk (context 68),finance,supported,0.672,medium,Modern Portfolio Theory,4
+FA_00687,Technical analysis predicts stock movements (context 68),finance,undecided,0.881,hard,Backtesting results,2
+FA_00688,Gold is a hedge against inflation (context 68),finance,supported,0.699,expert,Historical correlation,2
+FA_00689,Tesla is overvalued (context 68),finance,undecided,0.579,easy,P/E comparisons,3
+FA_00690,Cryptocurrency will replace fiat currency (context 68),finance,rejected,0.665,medium,Adoption rates,3
+FA_00691,Apple stock will outperform the market in 2024 (context 69),finance,undecided,0.808,expert,Market analysis,4
+FA_00692,Bitcoin is a reliable store of value (context 69),finance,undecided,0.8,easy,Volatility data,2
+FA_00693,Index funds outperform actively managed funds (context 69),finance,supported,0.88,medium,Historical returns,1
+FA_00694,Real estate always appreciates (context 69),finance,rejected,0.63,hard,2008 crash data,4
+FA_00695,Higher interest rates decrease stock prices (context 69),finance,supported,0.675,expert,Economic models,4
+FA_00696,Diversification reduces portfolio risk (context 69),finance,supported,0.572,easy,Modern Portfolio Theory,2
+FA_00697,Technical analysis predicts stock movements (context 69),finance,undecided,0.751,medium,Backtesting results,2
+FA_00698,Gold is a hedge against inflation (context 69),finance,supported,0.594,hard,Historical correlation,3
+FA_00699,Tesla is overvalued (context 69),finance,undecided,0.906,expert,P/E comparisons,3
+FA_00700,Cryptocurrency will replace fiat currency (context 69),finance,rejected,0.733,easy,Adoption rates,1
+FA_00701,Apple stock will outperform the market in 2024 (context 70),finance,undecided,0.824,hard,Market analysis,1
+FA_00702,Bitcoin is a reliable store of value (context 70),finance,undecided,0.863,expert,Volatility data,1
+FA_00703,Index funds outperform actively managed funds (context 70),finance,supported,0.607,easy,Historical returns,1
+FA_00704,Real estate always appreciates (context 70),finance,rejected,0.945,medium,2008 crash data,3
+FA_00705,Higher interest rates decrease stock prices (context 70),finance,supported,0.693,hard,Economic models,1
+FA_00706,Diversification reduces portfolio risk (context 70),finance,supported,0.93,expert,Modern Portfolio Theory,1
+FA_00707,Technical analysis predicts stock movements (context 70),finance,undecided,0.852,easy,Backtesting results,2
+FA_00708,Gold is a hedge against inflation (context 70),finance,supported,0.786,medium,Historical correlation,1
+FA_00709,Tesla is overvalued (context 70),finance,undecided,0.935,hard,P/E comparisons,3
+FA_00710,Cryptocurrency will replace fiat currency (context 70),finance,rejected,0.853,expert,Adoption rates,4
+FA_00711,Apple stock will outperform the market in 2024 (context 71),finance,undecided,0.681,medium,Market analysis,1
+FA_00712,Bitcoin is a reliable store of value (context 71),finance,undecided,0.771,hard,Volatility data,4
+FA_00713,Index funds outperform actively managed funds (context 71),finance,supported,0.573,expert,Historical returns,2
+FA_00714,Real estate always appreciates (context 71),finance,rejected,0.941,easy,2008 crash data,1
+FA_00715,Higher interest rates decrease stock prices (context 71),finance,supported,0.709,medium,Economic models,3
+FA_00716,Diversification reduces portfolio risk (context 71),finance,supported,0.766,hard,Modern Portfolio Theory,2
+FA_00717,Technical analysis predicts stock movements (context 71),finance,undecided,0.909,expert,Backtesting results,2
+FA_00718,Gold is a hedge against inflation (context 71),finance,supported,0.601,easy,Historical correlation,3
+FA_00719,Tesla is overvalued (context 71),finance,undecided,0.788,medium,P/E comparisons,1
+FA_00720,Cryptocurrency will replace fiat currency (context 71),finance,rejected,0.777,hard,Adoption rates,4
+FA_00721,Apple stock will outperform the market in 2024 (context 72),finance,undecided,0.689,easy,Market analysis,4
+FA_00722,Bitcoin is a reliable store of value (context 72),finance,undecided,0.576,medium,Volatility data,1
+FA_00723,Index funds outperform actively managed funds (context 72),finance,supported,0.716,hard,Historical returns,4
+FA_00724,Real estate always appreciates (context 72),finance,rejected,0.575,expert,2008 crash data,3
+FA_00725,Higher interest rates decrease stock prices (context 72),finance,supported,0.599,easy,Economic models,1
+FA_00726,Diversification reduces portfolio risk (context 72),finance,supported,0.677,medium,Modern Portfolio Theory,3
+FA_00727,Technical analysis predicts stock movements (context 72),finance,undecided,0.88,hard,Backtesting results,2
+FA_00728,Gold is a hedge against inflation (context 72),finance,supported,0.723,expert,Historical correlation,1
+FA_00729,Tesla is overvalued (context 72),finance,undecided,0.878,easy,P/E comparisons,4
+FA_00730,Cryptocurrency will replace fiat currency (context 72),finance,rejected,0.656,medium,Adoption rates,3
+FA_00731,Apple stock will outperform the market in 2024 (context 73),finance,undecided,0.862,expert,Market analysis,2
+FA_00732,Bitcoin is a reliable store of value (context 73),finance,undecided,0.895,easy,Volatility data,4
+FA_00733,Index funds outperform actively managed funds (context 73),finance,supported,0.681,medium,Historical returns,4
+FA_00734,Real estate always appreciates (context 73),finance,rejected,0.949,hard,2008 crash data,2
+FA_00735,Higher interest rates decrease stock prices (context 73),finance,supported,0.937,expert,Economic models,4
+FA_00736,Diversification reduces portfolio risk (context 73),finance,supported,0.645,easy,Modern Portfolio Theory,2
+FA_00737,Technical analysis predicts stock movements (context 73),finance,undecided,0.751,medium,Backtesting results,1
+FA_00738,Gold is a hedge against inflation (context 73),finance,supported,0.78,hard,Historical correlation,2
+FA_00739,Tesla is overvalued (context 73),finance,undecided,0.903,expert,P/E comparisons,2
+FA_00740,Cryptocurrency will replace fiat currency (context 73),finance,rejected,0.842,easy,Adoption rates,1
+FA_00741,Apple stock will outperform the market in 2024 (context 74),finance,undecided,0.704,hard,Market analysis,1
+FA_00742,Bitcoin is a reliable store of value (context 74),finance,undecided,0.77,expert,Volatility data,4
+FA_00743,Index funds outperform actively managed funds (context 74),finance,supported,0.683,easy,Historical returns,3
+FA_00744,Real estate always appreciates (context 74),finance,rejected,0.569,medium,2008 crash data,4
+FA_00745,Higher interest rates decrease stock prices (context 74),finance,supported,0.553,hard,Economic models,4
+FA_00746,Diversification reduces portfolio risk (context 74),finance,supported,0.743,expert,Modern Portfolio Theory,3
+FA_00747,Technical analysis predicts stock movements (context 74),finance,undecided,0.701,easy,Backtesting results,3
+FA_00748,Gold is a hedge against inflation (context 74),finance,supported,0.585,medium,Historical correlation,1
+FA_00749,Tesla is overvalued (context 74),finance,undecided,0.785,hard,P/E comparisons,1
+FA_00750,Cryptocurrency will replace fiat currency (context 74),finance,rejected,0.674,expert,Adoption rates,1
+FA_00751,Apple stock will outperform the market in 2024 (context 75),finance,undecided,0.822,medium,Market analysis,1
+FA_00752,Bitcoin is a reliable store of value (context 75),finance,undecided,0.787,hard,Volatility data,2
+FA_00753,Index funds outperform actively managed funds (context 75),finance,supported,0.849,expert,Historical returns,4
+FA_00754,Real estate always appreciates (context 75),finance,rejected,0.821,easy,2008 crash data,2
+FA_00755,Higher interest rates decrease stock prices (context 75),finance,supported,0.698,medium,Economic models,4
+FA_00756,Diversification reduces portfolio risk (context 75),finance,supported,0.617,hard,Modern Portfolio Theory,1
+FA_00757,Technical analysis predicts stock movements (context 75),finance,undecided,0.878,expert,Backtesting results,1
+FA_00758,Gold is a hedge against inflation (context 75),finance,supported,0.87,easy,Historical correlation,4
+FA_00759,Tesla is overvalued (context 75),finance,undecided,0.919,medium,P/E comparisons,3
+FA_00760,Cryptocurrency will replace fiat currency (context 75),finance,rejected,0.618,hard,Adoption rates,4
+FA_00761,Apple stock will outperform the market in 2024 (context 76),finance,undecided,0.823,easy,Market analysis,2
+FA_00762,Bitcoin is a reliable store of value (context 76),finance,undecided,0.88,medium,Volatility data,2
+FA_00763,Index funds outperform actively managed funds (context 76),finance,supported,0.567,hard,Historical returns,1
+FA_00764,Real estate always appreciates (context 76),finance,rejected,0.598,expert,2008 crash data,4
+FA_00765,Higher interest rates decrease stock prices (context 76),finance,supported,0.74,easy,Economic models,2
+FA_00766,Diversification reduces portfolio risk (context 76),finance,supported,0.85,medium,Modern Portfolio Theory,4
+FA_00767,Technical analysis predicts stock movements (context 76),finance,undecided,0.648,hard,Backtesting results,2
+FA_00768,Gold is a hedge against inflation (context 76),finance,supported,0.825,expert,Historical correlation,1
+FA_00769,Tesla is overvalued (context 76),finance,undecided,0.621,easy,P/E comparisons,3
+FA_00770,Cryptocurrency will replace fiat currency (context 76),finance,rejected,0.903,medium,Adoption rates,2
+FA_00771,Apple stock will outperform the market in 2024 (context 77),finance,undecided,0.899,expert,Market analysis,4
+FA_00772,Bitcoin is a reliable store of value (context 77),finance,undecided,0.621,easy,Volatility data,2
+FA_00773,Index funds outperform actively managed funds (context 77),finance,supported,0.569,medium,Historical returns,3
+FA_00774,Real estate always appreciates (context 77),finance,rejected,0.841,hard,2008 crash data,1
+FA_00775,Higher interest rates decrease stock prices (context 77),finance,supported,0.834,expert,Economic models,2
+FA_00776,Diversification reduces portfolio risk (context 77),finance,supported,0.821,easy,Modern Portfolio Theory,4
+FA_00777,Technical analysis predicts stock movements (context 77),finance,undecided,0.732,medium,Backtesting results,1
+FA_00778,Gold is a hedge against inflation (context 77),finance,supported,0.943,hard,Historical correlation,2
+FA_00779,Tesla is overvalued (context 77),finance,undecided,0.873,expert,P/E comparisons,1
+FA_00780,Cryptocurrency will replace fiat currency (context 77),finance,rejected,0.825,easy,Adoption rates,1
+FA_00781,Apple stock will outperform the market in 2024 (context 78),finance,undecided,0.57,hard,Market analysis,1
+FA_00782,Bitcoin is a reliable store of value (context 78),finance,undecided,0.817,expert,Volatility data,1
+FA_00783,Index funds outperform actively managed funds (context 78),finance,supported,0.788,easy,Historical returns,3
+FA_00784,Real estate always appreciates (context 78),finance,rejected,0.893,medium,2008 crash data,4
+FA_00785,Higher interest rates decrease stock prices (context 78),finance,supported,0.771,hard,Economic models,3
+FA_00786,Diversification reduces portfolio risk (context 78),finance,supported,0.908,expert,Modern Portfolio Theory,2
+FA_00787,Technical analysis predicts stock movements (context 78),finance,undecided,0.577,easy,Backtesting results,3
+FA_00788,Gold is a hedge against inflation (context 78),finance,supported,0.604,medium,Historical correlation,2
+FA_00789,Tesla is overvalued (context 78),finance,undecided,0.66,hard,P/E comparisons,3
+FA_00790,Cryptocurrency will replace fiat currency (context 78),finance,rejected,0.668,expert,Adoption rates,4
+FA_00791,Apple stock will outperform the market in 2024 (context 79),finance,undecided,0.617,medium,Market analysis,3
+FA_00792,Bitcoin is a reliable store of value (context 79),finance,undecided,0.631,hard,Volatility data,2
+FA_00793,Index funds outperform actively managed funds (context 79),finance,supported,0.714,expert,Historical returns,2
+FA_00794,Real estate always appreciates (context 79),finance,rejected,0.73,easy,2008 crash data,4
+FA_00795,Higher interest rates decrease stock prices (context 79),finance,supported,0.948,medium,Economic models,3
+FA_00796,Diversification reduces portfolio risk (context 79),finance,supported,0.664,hard,Modern Portfolio Theory,4
+FA_00797,Technical analysis predicts stock movements (context 79),finance,undecided,0.734,expert,Backtesting results,4
+FA_00798,Gold is a hedge against inflation (context 79),finance,supported,0.774,easy,Historical correlation,1
+FA_00799,Tesla is overvalued (context 79),finance,undecided,0.653,medium,P/E comparisons,1
+FA_00800,Cryptocurrency will replace fiat currency (context 79),finance,rejected,0.703,hard,Adoption rates,4
+FA_00801,Apple stock will outperform the market in 2024 (context 80),finance,undecided,0.623,easy,Market analysis,1
+FA_00802,Bitcoin is a reliable store of value (context 80),finance,undecided,0.775,medium,Volatility data,1
+FA_00803,Index funds outperform actively managed funds (context 80),finance,supported,0.766,hard,Historical returns,2
+FA_00804,Real estate always appreciates (context 80),finance,rejected,0.559,expert,2008 crash data,2
+FA_00805,Higher interest rates decrease stock prices (context 80),finance,supported,0.865,easy,Economic models,1
+FA_00806,Diversification reduces portfolio risk (context 80),finance,supported,0.677,medium,Modern Portfolio Theory,4
+FA_00807,Technical analysis predicts stock movements (context 80),finance,undecided,0.614,hard,Backtesting results,4
+FA_00808,Gold is a hedge against inflation (context 80),finance,supported,0.923,expert,Historical correlation,4
+FA_00809,Tesla is overvalued (context 80),finance,undecided,0.757,easy,P/E comparisons,2
+FA_00810,Cryptocurrency will replace fiat currency (context 80),finance,rejected,0.703,medium,Adoption rates,1
+FA_00811,Apple stock will outperform the market in 2024 (context 81),finance,undecided,0.598,expert,Market analysis,2
+FA_00812,Bitcoin is a reliable store of value (context 81),finance,undecided,0.762,easy,Volatility data,4
+FA_00813,Index funds outperform actively managed funds (context 81),finance,supported,0.662,medium,Historical returns,3
+FA_00814,Real estate always appreciates (context 81),finance,rejected,0.718,hard,2008 crash data,4
+FA_00815,Higher interest rates decrease stock prices (context 81),finance,supported,0.624,expert,Economic models,1
+FA_00816,Diversification reduces portfolio risk (context 81),finance,supported,0.735,easy,Modern Portfolio Theory,1
+FA_00817,Technical analysis predicts stock movements (context 81),finance,undecided,0.71,medium,Backtesting results,4
+FA_00818,Gold is a hedge against inflation (context 81),finance,supported,0.852,hard,Historical correlation,2
+FA_00819,Tesla is overvalued (context 81),finance,undecided,0.602,expert,P/E comparisons,1
+FA_00820,Cryptocurrency will replace fiat currency (context 81),finance,rejected,0.787,easy,Adoption rates,2
+FA_00821,Apple stock will outperform the market in 2024 (context 82),finance,undecided,0.626,hard,Market analysis,2
+FA_00822,Bitcoin is a reliable store of value (context 82),finance,undecided,0.768,expert,Volatility data,1
+FA_00823,Index funds outperform actively managed funds (context 82),finance,supported,0.861,easy,Historical returns,1
+FA_00824,Real estate always appreciates (context 82),finance,rejected,0.867,medium,2008 crash data,2
+FA_00825,Higher interest rates decrease stock prices (context 82),finance,supported,0.801,hard,Economic models,3
+FA_00826,Diversification reduces portfolio risk (context 82),finance,supported,0.774,expert,Modern Portfolio Theory,3
+FA_00827,Technical analysis predicts stock movements (context 82),finance,undecided,0.599,easy,Backtesting results,2
+FA_00828,Gold is a hedge against inflation (context 82),finance,supported,0.949,medium,Historical correlation,4
+FA_00829,Tesla is overvalued (context 82),finance,undecided,0.634,hard,P/E comparisons,3
+FA_00830,Cryptocurrency will replace fiat currency (context 82),finance,rejected,0.836,expert,Adoption rates,2
+FA_00831,Apple stock will outperform the market in 2024 (context 83),finance,undecided,0.567,medium,Market analysis,4
+FA_00832,Bitcoin is a reliable store of value (context 83),finance,undecided,0.751,hard,Volatility data,1
+FA_00833,Index funds outperform actively managed funds (context 83),finance,supported,0.939,expert,Historical returns,1
+FA_00834,Real estate always appreciates (context 83),finance,rejected,0.744,easy,2008 crash data,3
+FA_00835,Higher interest rates decrease stock prices (context 83),finance,supported,0.781,medium,Economic models,2
+FA_00836,Diversification reduces portfolio risk (context 83),finance,supported,0.746,hard,Modern Portfolio Theory,2
+FA_00837,Technical analysis predicts stock movements (context 83),finance,undecided,0.866,expert,Backtesting results,3
+FA_00838,Gold is a hedge against inflation (context 83),finance,supported,0.75,easy,Historical correlation,2
+FA_00839,Tesla is overvalued (context 83),finance,undecided,0.579,medium,P/E comparisons,1
+FA_00840,Cryptocurrency will replace fiat currency (context 83),finance,rejected,0.731,hard,Adoption rates,3
+FA_00841,Apple stock will outperform the market in 2024 (context 84),finance,undecided,0.691,easy,Market analysis,3
+FA_00842,Bitcoin is a reliable store of value (context 84),finance,undecided,0.576,medium,Volatility data,1
+FA_00843,Index funds outperform actively managed funds (context 84),finance,supported,0.588,hard,Historical returns,4
+FA_00844,Real estate always appreciates (context 84),finance,rejected,0.752,expert,2008 crash data,1
+FA_00845,Higher interest rates decrease stock prices (context 84),finance,supported,0.87,easy,Economic models,3
+FA_00846,Diversification reduces portfolio risk (context 84),finance,supported,0.568,medium,Modern Portfolio Theory,4
+FA_00847,Technical analysis predicts stock movements (context 84),finance,undecided,0.689,hard,Backtesting results,1
+FA_00848,Gold is a hedge against inflation (context 84),finance,supported,0.907,expert,Historical correlation,1
+FA_00849,Tesla is overvalued (context 84),finance,undecided,0.853,easy,P/E comparisons,3
+FA_00850,Cryptocurrency will replace fiat currency (context 84),finance,rejected,0.819,medium,Adoption rates,4
+FA_00851,Apple stock will outperform the market in 2024 (context 85),finance,undecided,0.556,expert,Market analysis,4
+FA_00852,Bitcoin is a reliable store of value (context 85),finance,undecided,0.642,easy,Volatility data,4
+FA_00853,Index funds outperform actively managed funds (context 85),finance,supported,0.649,medium,Historical returns,1
+FA_00854,Real estate always appreciates (context 85),finance,rejected,0.665,hard,2008 crash data,1
+FA_00855,Higher interest rates decrease stock prices (context 85),finance,supported,0.915,expert,Economic models,4
+FA_00856,Diversification reduces portfolio risk (context 85),finance,supported,0.603,easy,Modern Portfolio Theory,4
+FA_00857,Technical analysis predicts stock movements (context 85),finance,undecided,0.593,medium,Backtesting results,3
+FA_00858,Gold is a hedge against inflation (context 85),finance,supported,0.559,hard,Historical correlation,4
+FA_00859,Tesla is overvalued (context 85),finance,undecided,0.676,expert,P/E comparisons,4
+FA_00860,Cryptocurrency will replace fiat currency (context 85),finance,rejected,0.928,easy,Adoption rates,1
+FA_00861,Apple stock will outperform the market in 2024 (context 86),finance,undecided,0.739,hard,Market analysis,1
+FA_00862,Bitcoin is a reliable store of value (context 86),finance,undecided,0.86,expert,Volatility data,3
+FA_00863,Index funds outperform actively managed funds (context 86),finance,supported,0.887,easy,Historical returns,4
+FA_00864,Real estate always appreciates (context 86),finance,rejected,0.781,medium,2008 crash data,3
+FA_00865,Higher interest rates decrease stock prices (context 86),finance,supported,0.841,hard,Economic models,4
+FA_00866,Diversification reduces portfolio risk (context 86),finance,supported,0.587,expert,Modern Portfolio Theory,3
+FA_00867,Technical analysis predicts stock movements (context 86),finance,undecided,0.661,easy,Backtesting results,1
+FA_00868,Gold is a hedge against inflation (context 86),finance,supported,0.723,medium,Historical correlation,2
+FA_00869,Tesla is overvalued (context 86),finance,undecided,0.626,hard,P/E comparisons,4
+FA_00870,Cryptocurrency will replace fiat currency (context 86),finance,rejected,0.623,expert,Adoption rates,4
+FA_00871,Apple stock will outperform the market in 2024 (context 87),finance,undecided,0.593,medium,Market analysis,1
+FA_00872,Bitcoin is a reliable store of value (context 87),finance,undecided,0.796,hard,Volatility data,4
+FA_00873,Index funds outperform actively managed funds (context 87),finance,supported,0.817,expert,Historical returns,1
+FA_00874,Real estate always appreciates (context 87),finance,rejected,0.647,easy,2008 crash data,1
+FA_00875,Higher interest rates decrease stock prices (context 87),finance,supported,0.614,medium,Economic models,1
+FA_00876,Diversification reduces portfolio risk (context 87),finance,supported,0.785,hard,Modern Portfolio Theory,2
+FA_00877,Technical analysis predicts stock movements (context 87),finance,undecided,0.891,expert,Backtesting results,3
+FA_00878,Gold is a hedge against inflation (context 87),finance,supported,0.558,easy,Historical correlation,2
+FA_00879,Tesla is overvalued (context 87),finance,undecided,0.932,medium,P/E comparisons,1
+FA_00880,Cryptocurrency will replace fiat currency (context 87),finance,rejected,0.73,hard,Adoption rates,1
+FA_00881,Apple stock will outperform the market in 2024 (context 88),finance,undecided,0.648,easy,Market analysis,2
+FA_00882,Bitcoin is a reliable store of value (context 88),finance,undecided,0.674,medium,Volatility data,4
+FA_00883,Index funds outperform actively managed funds (context 88),finance,supported,0.87,hard,Historical returns,1
+FA_00884,Real estate always appreciates (context 88),finance,rejected,0.849,expert,2008 crash data,1
+FA_00885,Higher interest rates decrease stock prices (context 88),finance,supported,0.821,easy,Economic models,2
+FA_00886,Diversification reduces portfolio risk (context 88),finance,supported,0.567,medium,Modern Portfolio Theory,2
+FA_00887,Technical analysis predicts stock movements (context 88),finance,undecided,0.849,hard,Backtesting results,1
+FA_00888,Gold is a hedge against inflation (context 88),finance,supported,0.847,expert,Historical correlation,1
+FA_00889,Tesla is overvalued (context 88),finance,undecided,0.577,easy,P/E comparisons,2
+FA_00890,Cryptocurrency will replace fiat currency (context 88),finance,rejected,0.808,medium,Adoption rates,3
+FA_00891,Apple stock will outperform the market in 2024 (context 89),finance,undecided,0.648,expert,Market analysis,3
+FA_00892,Bitcoin is a reliable store of value (context 89),finance,undecided,0.561,easy,Volatility data,4
+FA_00893,Index funds outperform actively managed funds (context 89),finance,supported,0.834,medium,Historical returns,2
+FA_00894,Real estate always appreciates (context 89),finance,rejected,0.851,hard,2008 crash data,2
+FA_00895,Higher interest rates decrease stock prices (context 89),finance,supported,0.643,expert,Economic models,1
+FA_00896,Diversification reduces portfolio risk (context 89),finance,supported,0.819,easy,Modern Portfolio Theory,1
+FA_00897,Technical analysis predicts stock movements (context 89),finance,undecided,0.846,medium,Backtesting results,1
+FA_00898,Gold is a hedge against inflation (context 89),finance,supported,0.918,hard,Historical correlation,3
+FA_00899,Tesla is overvalued (context 89),finance,undecided,0.897,expert,P/E comparisons,4
+FA_00900,Cryptocurrency will replace fiat currency (context 89),finance,rejected,0.611,easy,Adoption rates,4
+FA_00901,Apple stock will outperform the market in 2024 (context 90),finance,undecided,0.597,hard,Market analysis,3
+FA_00902,Bitcoin is a reliable store of value (context 90),finance,undecided,0.59,expert,Volatility data,3
+FA_00903,Index funds outperform actively managed funds (context 90),finance,supported,0.68,easy,Historical returns,3
+FA_00904,Real estate always appreciates (context 90),finance,rejected,0.813,medium,2008 crash data,3
+FA_00905,Higher interest rates decrease stock prices (context 90),finance,supported,0.917,hard,Economic models,1
+FA_00906,Diversification reduces portfolio risk (context 90),finance,supported,0.813,expert,Modern Portfolio Theory,3
+FA_00907,Technical analysis predicts stock movements (context 90),finance,undecided,0.736,easy,Backtesting results,2
+FA_00908,Gold is a hedge against inflation (context 90),finance,supported,0.576,medium,Historical correlation,1
+FA_00909,Tesla is overvalued (context 90),finance,undecided,0.81,hard,P/E comparisons,1
+FA_00910,Cryptocurrency will replace fiat currency (context 90),finance,rejected,0.693,expert,Adoption rates,4
+FA_00911,Apple stock will outperform the market in 2024 (context 91),finance,undecided,0.873,medium,Market analysis,2
+FA_00912,Bitcoin is a reliable store of value (context 91),finance,undecided,0.677,hard,Volatility data,4
+FA_00913,Index funds outperform actively managed funds (context 91),finance,supported,0.609,expert,Historical returns,4
+FA_00914,Real estate always appreciates (context 91),finance,rejected,0.811,easy,2008 crash data,1
+FA_00915,Higher interest rates decrease stock prices (context 91),finance,supported,0.718,medium,Economic models,4
+FA_00916,Diversification reduces portfolio risk (context 91),finance,supported,0.578,hard,Modern Portfolio Theory,4
+FA_00917,Technical analysis predicts stock movements (context 91),finance,undecided,0.692,expert,Backtesting results,1
+FA_00918,Gold is a hedge against inflation (context 91),finance,supported,0.848,easy,Historical correlation,3
+FA_00919,Tesla is overvalued (context 91),finance,undecided,0.758,medium,P/E comparisons,2
+FA_00920,Cryptocurrency will replace fiat currency (context 91),finance,rejected,0.643,hard,Adoption rates,4
+FA_00921,Apple stock will outperform the market in 2024 (context 92),finance,undecided,0.604,easy,Market analysis,2
+FA_00922,Bitcoin is a reliable store of value (context 92),finance,undecided,0.895,medium,Volatility data,2
+FA_00923,Index funds outperform actively managed funds (context 92),finance,supported,0.774,hard,Historical returns,4
+FA_00924,Real estate always appreciates (context 92),finance,rejected,0.74,expert,2008 crash data,2
+FA_00925,Higher interest rates decrease stock prices (context 92),finance,supported,0.7,easy,Economic models,4
+FA_00926,Diversification reduces portfolio risk (context 92),finance,supported,0.653,medium,Modern Portfolio Theory,3
+FA_00927,Technical analysis predicts stock movements (context 92),finance,undecided,0.618,hard,Backtesting results,3
+FA_00928,Gold is a hedge against inflation (context 92),finance,supported,0.86,expert,Historical correlation,1
+FA_00929,Tesla is overvalued (context 92),finance,undecided,0.637,easy,P/E comparisons,1
+FA_00930,Cryptocurrency will replace fiat currency (context 92),finance,rejected,0.656,medium,Adoption rates,2
+FA_00931,Apple stock will outperform the market in 2024 (context 93),finance,undecided,0.786,expert,Market analysis,2
+FA_00932,Bitcoin is a reliable store of value (context 93),finance,undecided,0.916,easy,Volatility data,1
+FA_00933,Index funds outperform actively managed funds (context 93),finance,supported,0.664,medium,Historical returns,3
+FA_00934,Real estate always appreciates (context 93),finance,rejected,0.819,hard,2008 crash data,4
+FA_00935,Higher interest rates decrease stock prices (context 93),finance,supported,0.76,expert,Economic models,2
+FA_00936,Diversification reduces portfolio risk (context 93),finance,supported,0.939,easy,Modern Portfolio Theory,2
+FA_00937,Technical analysis predicts stock movements (context 93),finance,undecided,0.788,medium,Backtesting results,3
+FA_00938,Gold is a hedge against inflation (context 93),finance,supported,0.771,hard,Historical correlation,3
+FA_00939,Tesla is overvalued (context 93),finance,undecided,0.747,expert,P/E comparisons,3
+FA_00940,Cryptocurrency will replace fiat currency (context 93),finance,rejected,0.65,easy,Adoption rates,2
+FA_00941,Apple stock will outperform the market in 2024 (context 94),finance,undecided,0.801,hard,Market analysis,4
+FA_00942,Bitcoin is a reliable store of value (context 94),finance,undecided,0.579,expert,Volatility data,4
+FA_00943,Index funds outperform actively managed funds (context 94),finance,supported,0.826,easy,Historical returns,3
+FA_00944,Real estate always appreciates (context 94),finance,rejected,0.669,medium,2008 crash data,4
+FA_00945,Higher interest rates decrease stock prices (context 94),finance,supported,0.601,hard,Economic models,3
+FA_00946,Diversification reduces portfolio risk (context 94),finance,supported,0.878,expert,Modern Portfolio Theory,2
+FA_00947,Technical analysis predicts stock movements (context 94),finance,undecided,0.744,easy,Backtesting results,4
+FA_00948,Gold is a hedge against inflation (context 94),finance,supported,0.649,medium,Historical correlation,3
+FA_00949,Tesla is overvalued (context 94),finance,undecided,0.709,hard,P/E comparisons,3
+FA_00950,Cryptocurrency will replace fiat currency (context 94),finance,rejected,0.665,expert,Adoption rates,1
+FA_00951,Apple stock will outperform the market in 2024 (context 95),finance,undecided,0.645,medium,Market analysis,1
+FA_00952,Bitcoin is a reliable store of value (context 95),finance,undecided,0.8,hard,Volatility data,2
+FA_00953,Index funds outperform actively managed funds (context 95),finance,supported,0.793,expert,Historical returns,2
+FA_00954,Real estate always appreciates (context 95),finance,rejected,0.591,easy,2008 crash data,3
+FA_00955,Higher interest rates decrease stock prices (context 95),finance,supported,0.571,medium,Economic models,1
+FA_00956,Diversification reduces portfolio risk (context 95),finance,supported,0.723,hard,Modern Portfolio Theory,1
+FA_00957,Technical analysis predicts stock movements (context 95),finance,undecided,0.931,expert,Backtesting results,4
+FA_00958,Gold is a hedge against inflation (context 95),finance,supported,0.734,easy,Historical correlation,4
+FA_00959,Tesla is overvalued (context 95),finance,undecided,0.59,medium,P/E comparisons,4
+FA_00960,Cryptocurrency will replace fiat currency (context 95),finance,rejected,0.724,hard,Adoption rates,1
+FA_00961,Apple stock will outperform the market in 2024 (context 96),finance,undecided,0.735,easy,Market analysis,1
+FA_00962,Bitcoin is a reliable store of value (context 96),finance,undecided,0.566,medium,Volatility data,4
+FA_00963,Index funds outperform actively managed funds (context 96),finance,supported,0.615,hard,Historical returns,4
+FA_00964,Real estate always appreciates (context 96),finance,rejected,0.856,expert,2008 crash data,4
+FA_00965,Higher interest rates decrease stock prices (context 96),finance,supported,0.801,easy,Economic models,3
+FA_00966,Diversification reduces portfolio risk (context 96),finance,supported,0.83,medium,Modern Portfolio Theory,1
+FA_00967,Technical analysis predicts stock movements (context 96),finance,undecided,0.683,hard,Backtesting results,4
+FA_00968,Gold is a hedge against inflation (context 96),finance,supported,0.575,expert,Historical correlation,3
+FA_00969,Tesla is overvalued (context 96),finance,undecided,0.813,easy,P/E comparisons,2
+FA_00970,Cryptocurrency will replace fiat currency (context 96),finance,rejected,0.559,medium,Adoption rates,3
+FA_00971,Apple stock will outperform the market in 2024 (context 97),finance,undecided,0.854,expert,Market analysis,4
+FA_00972,Bitcoin is a reliable store of value (context 97),finance,undecided,0.915,easy,Volatility data,4
+FA_00973,Index funds outperform actively managed funds (context 97),finance,supported,0.761,medium,Historical returns,2
+FA_00974,Real estate always appreciates (context 97),finance,rejected,0.735,hard,2008 crash data,3
+FA_00975,Higher interest rates decrease stock prices (context 97),finance,supported,0.646,expert,Economic models,4
+FA_00976,Diversification reduces portfolio risk (context 97),finance,supported,0.616,easy,Modern Portfolio Theory,3
+FA_00977,Technical analysis predicts stock movements (context 97),finance,undecided,0.838,medium,Backtesting results,3
+FA_00978,Gold is a hedge against inflation (context 97),finance,supported,0.593,hard,Historical correlation,4
+FA_00979,Tesla is overvalued (context 97),finance,undecided,0.577,expert,P/E comparisons,1
+FA_00980,Cryptocurrency will replace fiat currency (context 97),finance,rejected,0.735,easy,Adoption rates,2
+FA_00981,Apple stock will outperform the market in 2024 (context 98),finance,undecided,0.612,hard,Market analysis,4
+FA_00982,Bitcoin is a reliable store of value (context 98),finance,undecided,0.563,expert,Volatility data,2
+FA_00983,Index funds outperform actively managed funds (context 98),finance,supported,0.804,easy,Historical returns,4
+FA_00984,Real estate always appreciates (context 98),finance,rejected,0.726,medium,2008 crash data,2
+FA_00985,Higher interest rates decrease stock prices (context 98),finance,supported,0.846,hard,Economic models,1
+FA_00986,Diversification reduces portfolio risk (context 98),finance,supported,0.687,expert,Modern Portfolio Theory,1
+FA_00987,Technical analysis predicts stock movements (context 98),finance,undecided,0.91,easy,Backtesting results,2
+FA_00988,Gold is a hedge against inflation (context 98),finance,supported,0.81,medium,Historical correlation,1
+FA_00989,Tesla is overvalued (context 98),finance,undecided,0.869,hard,P/E comparisons,3
+FA_00990,Cryptocurrency will replace fiat currency (context 98),finance,rejected,0.804,expert,Adoption rates,2
+FA_00991,Apple stock will outperform the market in 2024 (context 99),finance,undecided,0.818,medium,Market analysis,1
+FA_00992,Bitcoin is a reliable store of value (context 99),finance,undecided,0.684,hard,Volatility data,3
+FA_00993,Index funds outperform actively managed funds (context 99),finance,supported,0.876,expert,Historical returns,4
+FA_00994,Real estate always appreciates (context 99),finance,rejected,0.932,easy,2008 crash data,1
+FA_00995,Higher interest rates decrease stock prices (context 99),finance,supported,0.911,medium,Economic models,4
+FA_00996,Diversification reduces portfolio risk (context 99),finance,supported,0.765,hard,Modern Portfolio Theory,1
+FA_00997,Technical analysis predicts stock movements (context 99),finance,undecided,0.708,expert,Backtesting results,1
+FA_00998,Gold is a hedge against inflation (context 99),finance,supported,0.836,easy,Historical correlation,4
+FA_00999,Tesla is overvalued (context 99),finance,undecided,0.602,medium,P/E comparisons,3
+FA_01000,Cryptocurrency will replace fiat currency (context 99),finance,rejected,0.734,hard,Adoption rates,4
+FA_01001,Apple stock will outperform the market in 2024 (context 100),finance,undecided,0.637,easy,Market analysis,3
+FA_01002,Bitcoin is a reliable store of value (context 100),finance,undecided,0.618,medium,Volatility data,4
+FA_01003,Index funds outperform actively managed funds (context 100),finance,supported,0.632,hard,Historical returns,1
+FA_01004,Real estate always appreciates (context 100),finance,rejected,0.73,expert,2008 crash data,1
+FA_01005,Higher interest rates decrease stock prices (context 100),finance,supported,0.681,easy,Economic models,3
+FA_01006,Diversification reduces portfolio risk (context 100),finance,supported,0.879,medium,Modern Portfolio Theory,4
+FA_01007,Technical analysis predicts stock movements (context 100),finance,undecided,0.857,hard,Backtesting results,4
+FA_01008,Gold is a hedge against inflation (context 100),finance,supported,0.869,expert,Historical correlation,1
+FA_01009,Tesla is overvalued (context 100),finance,undecided,0.613,easy,P/E comparisons,4
+FA_01010,Cryptocurrency will replace fiat currency (context 100),finance,rejected,0.636,medium,Adoption rates,1
+FA_01011,Apple stock will outperform the market in 2024 (context 101),finance,undecided,0.761,expert,Market analysis,3
+FA_01012,Bitcoin is a reliable store of value (context 101),finance,undecided,0.681,easy,Volatility data,4
+FA_01013,Index funds outperform actively managed funds (context 101),finance,supported,0.912,medium,Historical returns,4
+FA_01014,Real estate always appreciates (context 101),finance,rejected,0.891,hard,2008 crash data,4
+FA_01015,Higher interest rates decrease stock prices (context 101),finance,supported,0.652,expert,Economic models,4
+FA_01016,Diversification reduces portfolio risk (context 101),finance,supported,0.873,easy,Modern Portfolio Theory,3
+FA_01017,Technical analysis predicts stock movements (context 101),finance,undecided,0.564,medium,Backtesting results,2
+FA_01018,Gold is a hedge against inflation (context 101),finance,supported,0.822,hard,Historical correlation,2
+FA_01019,Tesla is overvalued (context 101),finance,undecided,0.739,expert,P/E comparisons,2
+FA_01020,Cryptocurrency will replace fiat currency (context 101),finance,rejected,0.82,easy,Adoption rates,4
+FA_01021,Apple stock will outperform the market in 2024 (context 102),finance,undecided,0.654,hard,Market analysis,3
+FA_01022,Bitcoin is a reliable store of value (context 102),finance,undecided,0.748,expert,Volatility data,1
+FA_01023,Index funds outperform actively managed funds (context 102),finance,supported,0.651,easy,Historical returns,3
+FA_01024,Real estate always appreciates (context 102),finance,rejected,0.692,medium,2008 crash data,3
+FA_01025,Higher interest rates decrease stock prices (context 102),finance,supported,0.649,hard,Economic models,2
+FA_01026,Diversification reduces portfolio risk (context 102),finance,supported,0.583,expert,Modern Portfolio Theory,4
+FA_01027,Technical analysis predicts stock movements (context 102),finance,undecided,0.692,easy,Backtesting results,3
+FA_01028,Gold is a hedge against inflation (context 102),finance,supported,0.595,medium,Historical correlation,1
+FA_01029,Tesla is overvalued (context 102),finance,undecided,0.602,hard,P/E comparisons,3
+FA_01030,Cryptocurrency will replace fiat currency (context 102),finance,rejected,0.829,expert,Adoption rates,2
+FA_01031,Apple stock will outperform the market in 2024 (context 103),finance,undecided,0.64,medium,Market analysis,4
+FA_01032,Bitcoin is a reliable store of value (context 103),finance,undecided,0.912,hard,Volatility data,2
+FA_01033,Index funds outperform actively managed funds (context 103),finance,supported,0.796,expert,Historical returns,1
+FA_01034,Real estate always appreciates (context 103),finance,rejected,0.827,easy,2008 crash data,4
+FA_01035,Higher interest rates decrease stock prices (context 103),finance,supported,0.586,medium,Economic models,2
+FA_01036,Diversification reduces portfolio risk (context 103),finance,supported,0.771,hard,Modern Portfolio Theory,2
+FA_01037,Technical analysis predicts stock movements (context 103),finance,undecided,0.93,expert,Backtesting results,2
+FA_01038,Gold is a hedge against inflation (context 103),finance,supported,0.932,easy,Historical correlation,1
+FA_01039,Tesla is overvalued (context 103),finance,undecided,0.934,medium,P/E comparisons,2
+FA_01040,Cryptocurrency will replace fiat currency (context 103),finance,rejected,0.677,hard,Adoption rates,4
+FA_01041,Apple stock will outperform the market in 2024 (context 104),finance,undecided,0.559,easy,Market analysis,3
+FA_01042,Bitcoin is a reliable store of value (context 104),finance,undecided,0.587,medium,Volatility data,3
+FA_01043,Index funds outperform actively managed funds (context 104),finance,supported,0.586,hard,Historical returns,4
+FA_01044,Real estate always appreciates (context 104),finance,rejected,0.703,expert,2008 crash data,2
+FA_01045,Higher interest rates decrease stock prices (context 104),finance,supported,0.903,easy,Economic models,3
+FA_01046,Diversification reduces portfolio risk (context 104),finance,supported,0.628,medium,Modern Portfolio Theory,3
+FA_01047,Technical analysis predicts stock movements (context 104),finance,undecided,0.764,hard,Backtesting results,1
+FA_01048,Gold is a hedge against inflation (context 104),finance,supported,0.757,expert,Historical correlation,3
+FA_01049,Tesla is overvalued (context 104),finance,undecided,0.855,easy,P/E comparisons,4
+FA_01050,Cryptocurrency will replace fiat currency (context 104),finance,rejected,0.556,medium,Adoption rates,1

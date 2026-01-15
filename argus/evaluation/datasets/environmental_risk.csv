@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+ER_00001,Global temperatures will rise 2°C by 2050,environment,supported,0.72,easy,Climate models,2
+ER_00002,Plastic pollution is the biggest ocean threat,environment,undecided,0.79,medium,Marine research,1
+ER_00003,Nuclear power is the safest energy source,environment,supported,0.573,hard,Mortality data,1
+ER_00004,Deforestation causes 10% of global emissions,environment,supported,0.888,expert,UNFCCC data,2
+ER_00005,Electric cars will solve air pollution,environment,rejected,0.645,easy,Grid emissions,2
+ER_00006,Coral reefs will disappear by 2050,environment,undecided,0.836,medium,Marine biology,2
+ER_00007,Recycling significantly reduces waste,environment,undecided,0.618,hard,Garbage audits,2
+ER_00008,Organic farming is more sustainable,environment,undecided,0.801,expert,Land use data,3
+ER_00009,Sea levels will rise 1 meter by 2100,environment,undecided,0.7,easy,IPCC projections,3
+ER_00010,Renewable energy can fully replace fossil fuels,environment,undecided,0.713,medium,Grid stability,4
+ER_00011,Global temperatures will rise 2°C by 2050 (context 1),environment,supported,0.595,expert,Climate models,4
+ER_00012,Plastic pollution is the biggest ocean threat (context 1),environment,undecided,0.568,easy,Marine research,1
+ER_00013,Nuclear power is the safest energy source (context 1),environment,supported,0.89,medium,Mortality data,3
+ER_00014,Deforestation causes 10% of global emissions (context 1),environment,supported,0.656,hard,UNFCCC data,2
+ER_00015,Electric cars will solve air pollution (context 1),environment,rejected,0.578,expert,Grid emissions,4
+ER_00016,Coral reefs will disappear by 2050 (context 1),environment,undecided,0.632,easy,Marine biology,2
+ER_00017,Recycling significantly reduces waste (context 1),environment,undecided,0.574,medium,Garbage audits,1
+ER_00018,Organic farming is more sustainable (context 1),environment,undecided,0.789,hard,Land use data,1
+ER_00019,Sea levels will rise 1 meter by 2100 (context 1),environment,undecided,0.88,expert,IPCC projections,3
+ER_00020,Renewable energy can fully replace fossil fuels (context 1),environment,undecided,0.86,easy,Grid stability,1
+ER_00021,Global temperatures will rise 2°C by 2050 (context 2),environment,supported,0.82,hard,Climate models,4
+ER_00022,Plastic pollution is the biggest ocean threat (context 2),environment,undecided,0.656,expert,Marine research,2
+ER_00023,Nuclear power is the safest energy source (context 2),environment,supported,0.885,easy,Mortality data,1
+ER_00024,Deforestation causes 10% of global emissions (context 2),environment,supported,0.807,medium,UNFCCC data,2
+ER_00025,Electric cars will solve air pollution (context 2),environment,rejected,0.946,hard,Grid emissions,4
+ER_00026,Coral reefs will disappear by 2050 (context 2),environment,undecided,0.909,expert,Marine biology,3
+ER_00027,Recycling significantly reduces waste (context 2),environment,undecided,0.58,easy,Garbage audits,1
+ER_00028,Organic farming is more sustainable (context 2),environment,undecided,0.744,medium,Land use data,2
+ER_00029,Sea levels will rise 1 meter by 2100 (context 2),environment,undecided,0.896,hard,IPCC projections,4
+ER_00030,Renewable energy can fully replace fossil fuels (context 2),environment,undecided,0.564,expert,Grid stability,2
+ER_00031,Global temperatures will rise 2°C by 2050 (context 3),environment,supported,0.555,medium,Climate models,4
+ER_00032,Plastic pollution is the biggest ocean threat (context 3),environment,undecided,0.812,hard,Marine research,4
+ER_00033,Nuclear power is the safest energy source (context 3),environment,supported,0.716,expert,Mortality data,4
+ER_00034,Deforestation causes 10% of global emissions (context 3),environment,supported,0.908,easy,UNFCCC data,2
+ER_00035,Electric cars will solve air pollution (context 3),environment,rejected,0.592,medium,Grid emissions,3
+ER_00036,Coral reefs will disappear by 2050 (context 3),environment,undecided,0.72,hard,Marine biology,1
+ER_00037,Recycling significantly reduces waste (context 3),environment,undecided,0.641,expert,Garbage audits,2
+ER_00038,Organic farming is more sustainable (context 3),environment,undecided,0.746,easy,Land use data,3
+ER_00039,Sea levels will rise 1 meter by 2100 (context 3),environment,undecided,0.623,medium,IPCC projections,4
+ER_00040,Renewable energy can fully replace fossil fuels (context 3),environment,undecided,0.843,hard,Grid stability,2
+ER_00041,Global temperatures will rise 2°C by 2050 (context 4),environment,supported,0.808,easy,Climate models,1
+ER_00042,Plastic pollution is the biggest ocean threat (context 4),environment,undecided,0.845,medium,Marine research,4
+ER_00043,Nuclear power is the safest energy source (context 4),environment,supported,0.59,hard,Mortality data,1
+ER_00044,Deforestation causes 10% of global emissions (context 4),environment,supported,0.87,expert,UNFCCC data,4
+ER_00045,Electric cars will solve air pollution (context 4),environment,rejected,0.635,easy,Grid emissions,4
+ER_00046,Coral reefs will disappear by 2050 (context 4),environment,undecided,0.602,medium,Marine biology,3
+ER_00047,Recycling significantly reduces waste (context 4),environment,undecided,0.717,hard,Garbage audits,3
+ER_00048,Organic farming is more sustainable (context 4),environment,undecided,0.84,expert,Land use data,4
+ER_00049,Sea levels will rise 1 meter by 2100 (context 4),environment,undecided,0.689,easy,IPCC projections,2
+ER_00050,Renewable energy can fully replace fossil fuels (context 4),environment,undecided,0.849,medium,Grid stability,2
+ER_00051,Global temperatures will rise 2°C by 2050 (context 5),environment,supported,0.604,expert,Climate models,3
+ER_00052,Plastic pollution is the biggest ocean threat (context 5),environment,undecided,0.564,easy,Marine research,2
+ER_00053,Nuclear power is the safest energy source (context 5),environment,supported,0.857,medium,Mortality data,2
+ER_00054,Deforestation causes 10% of global emissions (context 5),environment,supported,0.568,hard,UNFCCC data,4
+ER_00055,Electric cars will solve air pollution (context 5),environment,rejected,0.667,expert,Grid emissions,2
+ER_00056,Coral reefs will disappear by 2050 (context 5),environment,undecided,0.937,easy,Marine biology,3
+ER_00057,Recycling significantly reduces waste (context 5),environment,undecided,0.757,medium,Garbage audits,1
+ER_00058,Organic farming is more sustainable (context 5),environment,undecided,0.92,hard,Land use data,4
+ER_00059,Sea levels will rise 1 meter by 2100 (context 5),environment,undecided,0.916,expert,IPCC projections,3
+ER_00060,Renewable energy can fully replace fossil fuels (context 5),environment,undecided,0.834,easy,Grid stability,1
+ER_00061,Global temperatures will rise 2°C by 2050 (context 6),environment,supported,0.749,hard,Climate models,1
+ER_00062,Plastic pollution is the biggest ocean threat (context 6),environment,undecided,0.666,expert,Marine research,1
+ER_00063,Nuclear power is the safest energy source (context 6),environment,supported,0.766,easy,Mortality data,4
+ER_00064,Deforestation causes 10% of global emissions (context 6),environment,supported,0.856,medium,UNFCCC data,1
+ER_00065,Electric cars will solve air pollution (context 6),environment,rejected,0.932,hard,Grid emissions,4
+ER_00066,Coral reefs will disappear by 2050 (context 6),environment,undecided,0.877,expert,Marine biology,3
+ER_00067,Recycling significantly reduces waste (context 6),environment,undecided,0.745,easy,Garbage audits,1
+ER_00068,Organic farming is more sustainable (context 6),environment,undecided,0.647,medium,Land use data,1
+ER_00069,Sea levels will rise 1 meter by 2100 (context 6),environment,undecided,0.949,hard,IPCC projections,4
+ER_00070,Renewable energy can fully replace fossil fuels (context 6),environment,undecided,0.791,expert,Grid stability,2
+ER_00071,Global temperatures will rise 2°C by 2050 (context 7),environment,supported,0.949,medium,Climate models,4
+ER_00072,Plastic pollution is the biggest ocean threat (context 7),environment,undecided,0.88,hard,Marine research,3
+ER_00073,Nuclear power is the safest energy source (context 7),environment,supported,0.732,expert,Mortality data,1
+ER_00074,Deforestation causes 10% of global emissions (context 7),environment,supported,0.836,easy,UNFCCC data,4
+ER_00075,Electric cars will solve air pollution (context 7),environment,rejected,0.679,medium,Grid emissions,3
+ER_00076,Coral reefs will disappear by 2050 (context 7),environment,undecided,0.797,hard,Marine biology,1
+ER_00077,Recycling significantly reduces waste (context 7),environment,undecided,0.607,expert,Garbage audits,2
+ER_00078,Organic farming is more sustainable (context 7),environment,undecided,0.617,easy,Land use data,1
+ER_00079,Sea levels will rise 1 meter by 2100 (context 7),environment,undecided,0.812,medium,IPCC projections,2
+ER_00080,Renewable energy can fully replace fossil fuels (context 7),environment,undecided,0.725,hard,Grid stability,1
+ER_00081,Global temperatures will rise 2°C by 2050 (context 8),environment,supported,0.564,easy,Climate models,2
+ER_00082,Plastic pollution is the biggest ocean threat (context 8),environment,undecided,0.598,medium,Marine research,4
+ER_00083,Nuclear power is the safest energy source (context 8),environment,supported,0.748,hard,Mortality data,2
+ER_00084,Deforestation causes 10% of global emissions (context 8),environment,supported,0.868,expert,UNFCCC data,1
+ER_00085,Electric cars will solve air pollution (context 8),environment,rejected,0.722,easy,Grid emissions,4
+ER_00086,Coral reefs will disappear by 2050 (context 8),environment,undecided,0.608,medium,Marine biology,4
+ER_00087,Recycling significantly reduces waste (context 8),environment,undecided,0.936,hard,Garbage audits,1
+ER_00088,Organic farming is more sustainable (context 8),environment,undecided,0.879,expert,Land use data,3
+ER_00089,Sea levels will rise 1 meter by 2100 (context 8),environment,undecided,0.881,easy,IPCC projections,4
+ER_00090,Renewable energy can fully replace fossil fuels (context 8),environment,undecided,0.75,medium,Grid stability,3
+ER_00091,Global temperatures will rise 2°C by 2050 (context 9),environment,supported,0.901,expert,Climate models,2
+ER_00092,Plastic pollution is the biggest ocean threat (context 9),environment,undecided,0.563,easy,Marine research,4
+ER_00093,Nuclear power is the safest energy source (context 9),environment,supported,0.743,medium,Mortality data,1
+ER_00094,Deforestation causes 10% of global emissions (context 9),environment,supported,0.624,hard,UNFCCC data,2
+ER_00095,Electric cars will solve air pollution (context 9),environment,rejected,0.724,expert,Grid emissions,4
+ER_00096,Coral reefs will disappear by 2050 (context 9),environment,undecided,0.769,easy,Marine biology,2
+ER_00097,Recycling significantly reduces waste (context 9),environment,undecided,0.921,medium,Garbage audits,4
+ER_00098,Organic farming is more sustainable (context 9),environment,undecided,0.609,hard,Land use data,4
+ER_00099,Sea levels will rise 1 meter by 2100 (context 9),environment,undecided,0.918,expert,IPCC projections,3
+ER_00100,Renewable energy can fully replace fossil fuels (context 9),environment,undecided,0.878,easy,Grid stability,1
+ER_00101,Global temperatures will rise 2°C by 2050 (context 10),environment,supported,0.567,hard,Climate models,3
+ER_00102,Plastic pollution is the biggest ocean threat (context 10),environment,undecided,0.812,expert,Marine research,2
+ER_00103,Nuclear power is the safest energy source (context 10),environment,supported,0.892,easy,Mortality data,1
+ER_00104,Deforestation causes 10% of global emissions (context 10),environment,supported,0.698,medium,UNFCCC data,2
+ER_00105,Electric cars will solve air pollution (context 10),environment,rejected,0.762,hard,Grid emissions,3
+ER_00106,Coral reefs will disappear by 2050 (context 10),environment,undecided,0.851,expert,Marine biology,4
+ER_00107,Recycling significantly reduces waste (context 10),environment,undecided,0.579,easy,Garbage audits,3
+ER_00108,Organic farming is more sustainable (context 10),environment,undecided,0.862,medium,Land use data,1
+ER_00109,Sea levels will rise 1 meter by 2100 (context 10),environment,undecided,0.679,hard,IPCC projections,3
+ER_00110,Renewable energy can fully replace fossil fuels (context 10),environment,undecided,0.75,expert,Grid stability,1
+ER_00111,Global temperatures will rise 2°C by 2050 (context 11),environment,supported,0.667,medium,Climate models,4
+ER_00112,Plastic pollution is the biggest ocean threat (context 11),environment,undecided,0.696,hard,Marine research,2
+ER_00113,Nuclear power is the safest energy source (context 11),environment,supported,0.643,expert,Mortality data,3
+ER_00114,Deforestation causes 10% of global emissions (context 11),environment,supported,0.935,easy,UNFCCC data,1
+ER_00115,Electric cars will solve air pollution (context 11),environment,rejected,0.593,medium,Grid emissions,4
+ER_00116,Coral reefs will disappear by 2050 (context 11),environment,undecided,0.704,hard,Marine biology,1
+ER_00117,Recycling significantly reduces waste (context 11),environment,undecided,0.866,expert,Garbage audits,3
+ER_00118,Organic farming is more sustainable (context 11),environment,undecided,0.734,easy,Land use data,4
+ER_00119,Sea levels will rise 1 meter by 2100 (context 11),environment,undecided,0.85,medium,IPCC projections,3
+ER_00120,Renewable energy can fully replace fossil fuels (context 11),environment,undecided,0.762,hard,Grid stability,1
+ER_00121,Global temperatures will rise 2°C by 2050 (context 12),environment,supported,0.588,easy,Climate models,2
+ER_00122,Plastic pollution is the biggest ocean threat (context 12),environment,undecided,0.86,medium,Marine research,2
+ER_00123,Nuclear power is the safest energy source (context 12),environment,supported,0.595,hard,Mortality data,3
+ER_00124,Deforestation causes 10% of global emissions (context 12),environment,supported,0.784,expert,UNFCCC data,3
+ER_00125,Electric cars will solve air pollution (context 12),environment,rejected,0.627,easy,Grid emissions,1
+ER_00126,Coral reefs will disappear by 2050 (context 12),environment,undecided,0.929,medium,Marine biology,1
+ER_00127,Recycling significantly reduces waste (context 12),environment,undecided,0.628,hard,Garbage audits,2
+ER_00128,Organic farming is more sustainable (context 12),environment,undecided,0.571,expert,Land use data,2
+ER_00129,Sea levels will rise 1 meter by 2100 (context 12),environment,undecided,0.587,easy,IPCC projections,1
+ER_00130,Renewable energy can fully replace fossil fuels (context 12),environment,undecided,0.657,medium,Grid stability,1
+ER_00131,Global temperatures will rise 2°C by 2050 (context 13),environment,supported,0.563,expert,Climate models,2
+ER_00132,Plastic pollution is the biggest ocean threat (context 13),environment,undecided,0.781,easy,Marine research,2
+ER_00133,Nuclear power is the safest energy source (context 13),environment,supported,0.635,medium,Mortality data,3
+ER_00134,Deforestation causes 10% of global emissions (context 13),environment,supported,0.666,hard,UNFCCC data,3
+ER_00135,Electric cars will solve air pollution (context 13),environment,rejected,0.646,expert,Grid emissions,3
+ER_00136,Coral reefs will disappear by 2050 (context 13),environment,undecided,0.837,easy,Marine biology,4
+ER_00137,Recycling significantly reduces waste (context 13),environment,undecided,0.702,medium,Garbage audits,2
+ER_00138,Organic farming is more sustainable (context 13),environment,undecided,0.943,hard,Land use data,2
+ER_00139,Sea levels will rise 1 meter by 2100 (context 13),environment,undecided,0.58,expert,IPCC projections,4
+ER_00140,Renewable energy can fully replace fossil fuels (context 13),environment,undecided,0.682,easy,Grid stability,4
+ER_00141,Global temperatures will rise 2°C by 2050 (context 14),environment,supported,0.818,hard,Climate models,1
+ER_00142,Plastic pollution is the biggest ocean threat (context 14),environment,undecided,0.901,expert,Marine research,3
+ER_00143,Nuclear power is the safest energy source (context 14),environment,supported,0.741,easy,Mortality data,1
+ER_00144,Deforestation causes 10% of global emissions (context 14),environment,supported,0.946,medium,UNFCCC data,2
+ER_00145,Electric cars will solve air pollution (context 14),environment,rejected,0.683,hard,Grid emissions,3
+ER_00146,Coral reefs will disappear by 2050 (context 14),environment,undecided,0.775,expert,Marine biology,2
+ER_00147,Recycling significantly reduces waste (context 14),environment,undecided,0.858,easy,Garbage audits,2
+ER_00148,Organic farming is more sustainable (context 14),environment,undecided,0.895,medium,Land use data,1
+ER_00149,Sea levels will rise 1 meter by 2100 (context 14),environment,undecided,0.568,hard,IPCC projections,1
+ER_00150,Renewable energy can fully replace fossil fuels (context 14),environment,undecided,0.931,expert,Grid stability,3
+ER_00151,Global temperatures will rise 2°C by 2050 (context 15),environment,supported,0.664,medium,Climate models,4
+ER_00152,Plastic pollution is the biggest ocean threat (context 15),environment,undecided,0.852,hard,Marine research,1
+ER_00153,Nuclear power is the safest energy source (context 15),environment,supported,0.908,expert,Mortality data,3
+ER_00154,Deforestation causes 10% of global emissions (context 15),environment,supported,0.555,easy,UNFCCC data,1
+ER_00155,Electric cars will solve air pollution (context 15),environment,rejected,0.702,medium,Grid emissions,1
+ER_00156,Coral reefs will disappear by 2050 (context 15),environment,undecided,0.84,hard,Marine biology,2
+ER_00157,Recycling significantly reduces waste (context 15),environment,undecided,0.885,expert,Garbage audits,4
+ER_00158,Organic farming is more sustainable (context 15),environment,undecided,0.86,easy,Land use data,4
+ER_00159,Sea levels will rise 1 meter by 2100 (context 15),environment,undecided,0.726,medium,IPCC projections,2
+ER_00160,Renewable energy can fully replace fossil fuels (context 15),environment,undecided,0.788,hard,Grid stability,3
+ER_00161,Global temperatures will rise 2°C by 2050 (context 16),environment,supported,0.859,easy,Climate models,4
+ER_00162,Plastic pollution is the biggest ocean threat (context 16),environment,undecided,0.735,medium,Marine research,4
+ER_00163,Nuclear power is the safest energy source (context 16),environment,supported,0.921,hard,Mortality data,3
+ER_00164,Deforestation causes 10% of global emissions (context 16),environment,supported,0.817,expert,UNFCCC data,4
+ER_00165,Electric cars will solve air pollution (context 16),environment,rejected,0.695,easy,Grid emissions,3
+ER_00166,Coral reefs will disappear by 2050 (context 16),environment,undecided,0.649,medium,Marine biology,4
+ER_00167,Recycling significantly reduces waste (context 16),environment,undecided,0.653,hard,Garbage audits,4
+ER_00168,Organic farming is more sustainable (context 16),environment,undecided,0.888,expert,Land use data,1
+ER_00169,Sea levels will rise 1 meter by 2100 (context 16),environment,undecided,0.605,easy,IPCC projections,2
+ER_00170,Renewable energy can fully replace fossil fuels (context 16),environment,undecided,0.635,medium,Grid stability,4
+ER_00171,Global temperatures will rise 2°C by 2050 (context 17),environment,supported,0.587,expert,Climate models,1
+ER_00172,Plastic pollution is the biggest ocean threat (context 17),environment,undecided,0.714,easy,Marine research,4
+ER_00173,Nuclear power is the safest energy source (context 17),environment,supported,0.81,medium,Mortality data,4
+ER_00174,Deforestation causes 10% of global emissions (context 17),environment,supported,0.553,hard,UNFCCC data,1
+ER_00175,Electric cars will solve air pollution (context 17),environment,rejected,0.698,expert,Grid emissions,3
+ER_00176,Coral reefs will disappear by 2050 (context 17),environment,undecided,0.596,easy,Marine biology,2
+ER_00177,Recycling significantly reduces waste (context 17),environment,undecided,0.618,medium,Garbage audits,3
+ER_00178,Organic farming is more sustainable (context 17),environment,undecided,0.909,hard,Land use data,4
+ER_00179,Sea levels will rise 1 meter by 2100 (context 17),environment,undecided,0.622,expert,IPCC projections,1
+ER_00180,Renewable energy can fully replace fossil fuels (context 17),environment,undecided,0.703,easy,Grid stability,1
+ER_00181,Global temperatures will rise 2°C by 2050 (context 18),environment,supported,0.621,hard,Climate models,2
+ER_00182,Plastic pollution is the biggest ocean threat (context 18),environment,undecided,0.693,expert,Marine research,4
+ER_00183,Nuclear power is the safest energy source (context 18),environment,supported,0.95,easy,Mortality data,3
+ER_00184,Deforestation causes 10% of global emissions (context 18),environment,supported,0.762,medium,UNFCCC data,2
+ER_00185,Electric cars will solve air pollution (context 18),environment,rejected,0.799,hard,Grid emissions,3
+ER_00186,Coral reefs will disappear by 2050 (context 18),environment,undecided,0.556,expert,Marine biology,1
+ER_00187,Recycling significantly reduces waste (context 18),environment,undecided,0.913,easy,Garbage audits,3
+ER_00188,Organic farming is more sustainable (context 18),environment,undecided,0.652,medium,Land use data,1
+ER_00189,Sea levels will rise 1 meter by 2100 (context 18),environment,undecided,0.638,hard,IPCC projections,3
+ER_00190,Renewable energy can fully replace fossil fuels (context 18),environment,undecided,0.88,expert,Grid stability,2
+ER_00191,Global temperatures will rise 2°C by 2050 (context 19),environment,supported,0.781,medium,Climate models,4
+ER_00192,Plastic pollution is the biggest ocean threat (context 19),environment,undecided,0.789,hard,Marine research,4
+ER_00193,Nuclear power is the safest energy source (context 19),environment,supported,0.673,expert,Mortality data,1
+ER_00194,Deforestation causes 10% of global emissions (context 19),environment,supported,0.698,easy,UNFCCC data,1
+ER_00195,Electric cars will solve air pollution (context 19),environment,rejected,0.629,medium,Grid emissions,2
+ER_00196,Coral reefs will disappear by 2050 (context 19),environment,undecided,0.612,hard,Marine biology,4
+ER_00197,Recycling significantly reduces waste (context 19),environment,undecided,0.648,expert,Garbage audits,2
+ER_00198,Organic farming is more sustainable (context 19),environment,undecided,0.821,easy,Land use data,3
+ER_00199,Sea levels will rise 1 meter by 2100 (context 19),environment,undecided,0.705,medium,IPCC projections,1
+ER_00200,Renewable energy can fully replace fossil fuels (context 19),environment,undecided,0.664,hard,Grid stability,4
+ER_00201,Global temperatures will rise 2°C by 2050 (context 20),environment,supported,0.653,easy,Climate models,3
+ER_00202,Plastic pollution is the biggest ocean threat (context 20),environment,undecided,0.584,medium,Marine research,4
+ER_00203,Nuclear power is the safest energy source (context 20),environment,supported,0.597,hard,Mortality data,1
+ER_00204,Deforestation causes 10% of global emissions (context 20),environment,supported,0.861,expert,UNFCCC data,3
+ER_00205,Electric cars will solve air pollution (context 20),environment,rejected,0.852,easy,Grid emissions,1
+ER_00206,Coral reefs will disappear by 2050 (context 20),environment,undecided,0.926,medium,Marine biology,4
+ER_00207,Recycling significantly reduces waste (context 20),environment,undecided,0.6,hard,Garbage audits,1
+ER_00208,Organic farming is more sustainable (context 20),environment,undecided,0.878,expert,Land use data,4
+ER_00209,Sea levels will rise 1 meter by 2100 (context 20),environment,undecided,0.655,easy,IPCC projections,3
+ER_00210,Renewable energy can fully replace fossil fuels (context 20),environment,undecided,0.928,medium,Grid stability,3
+ER_00211,Global temperatures will rise 2°C by 2050 (context 21),environment,supported,0.676,expert,Climate models,1
+ER_00212,Plastic pollution is the biggest ocean threat (context 21),environment,undecided,0.719,easy,Marine research,4
+ER_00213,Nuclear power is the safest energy source (context 21),environment,supported,0.732,medium,Mortality data,4
+ER_00214,Deforestation causes 10% of global emissions (context 21),environment,supported,0.577,hard,UNFCCC data,2
+ER_00215,Electric cars will solve air pollution (context 21),environment,rejected,0.666,expert,Grid emissions,3
+ER_00216,Coral reefs will disappear by 2050 (context 21),environment,undecided,0.656,easy,Marine biology,3
+ER_00217,Recycling significantly reduces waste (context 21),environment,undecided,0.623,medium,Garbage audits,1
+ER_00218,Organic farming is more sustainable (context 21),environment,undecided,0.857,hard,Land use data,4
+ER_00219,Sea levels will rise 1 meter by 2100 (context 21),environment,undecided,0.863,expert,IPCC projections,4
+ER_00220,Renewable energy can fully replace fossil fuels (context 21),environment,undecided,0.805,easy,Grid stability,3
+ER_00221,Global temperatures will rise 2°C by 2050 (context 22),environment,supported,0.841,hard,Climate models,4
+ER_00222,Plastic pollution is the biggest ocean threat (context 22),environment,undecided,0.573,expert,Marine research,2
+ER_00223,Nuclear power is the safest energy source (context 22),environment,supported,0.816,easy,Mortality data,3
+ER_00224,Deforestation causes 10% of global emissions (context 22),environment,supported,0.932,medium,UNFCCC data,2
+ER_00225,Electric cars will solve air pollution (context 22),environment,rejected,0.826,hard,Grid emissions,1
+ER_00226,Coral reefs will disappear by 2050 (context 22),environment,undecided,0.607,expert,Marine biology,1
+ER_00227,Recycling significantly reduces waste (context 22),environment,undecided,0.708,easy,Garbage audits,1
+ER_00228,Organic farming is more sustainable (context 22),environment,undecided,0.754,medium,Land use data,4
+ER_00229,Sea levels will rise 1 meter by 2100 (context 22),environment,undecided,0.694,hard,IPCC projections,4
+ER_00230,Renewable energy can fully replace fossil fuels (context 22),environment,undecided,0.919,expert,Grid stability,3
+ER_00231,Global temperatures will rise 2°C by 2050 (context 23),environment,supported,0.604,medium,Climate models,4
+ER_00232,Plastic pollution is the biggest ocean threat (context 23),environment,undecided,0.899,hard,Marine research,4
+ER_00233,Nuclear power is the safest energy source (context 23),environment,supported,0.75,expert,Mortality data,3
+ER_00234,Deforestation causes 10% of global emissions (context 23),environment,supported,0.938,easy,UNFCCC data,3
+ER_00235,Electric cars will solve air pollution (context 23),environment,rejected,0.635,medium,Grid emissions,4
+ER_00236,Coral reefs will disappear by 2050 (context 23),environment,undecided,0.767,hard,Marine biology,2
+ER_00237,Recycling significantly reduces waste (context 23),environment,undecided,0.698,expert,Garbage audits,3
+ER_00238,Organic farming is more sustainable (context 23),environment,undecided,0.829,easy,Land use data,4
+ER_00239,Sea levels will rise 1 meter by 2100 (context 23),environment,undecided,0.813,medium,IPCC projections,1
+ER_00240,Renewable energy can fully replace fossil fuels (context 23),environment,undecided,0.588,hard,Grid stability,3
+ER_00241,Global temperatures will rise 2°C by 2050 (context 24),environment,supported,0.818,easy,Climate models,4
+ER_00242,Plastic pollution is the biggest ocean threat (context 24),environment,undecided,0.613,medium,Marine research,2
+ER_00243,Nuclear power is the safest energy source (context 24),environment,supported,0.771,hard,Mortality data,1
+ER_00244,Deforestation causes 10% of global emissions (context 24),environment,supported,0.799,expert,UNFCCC data,2
+ER_00245,Electric cars will solve air pollution (context 24),environment,rejected,0.688,easy,Grid emissions,2
+ER_00246,Coral reefs will disappear by 2050 (context 24),environment,undecided,0.615,medium,Marine biology,4
+ER_00247,Recycling significantly reduces waste (context 24),environment,undecided,0.616,hard,Garbage audits,3
+ER_00248,Organic farming is more sustainable (context 24),environment,undecided,0.933,expert,Land use data,4
+ER_00249,Sea levels will rise 1 meter by 2100 (context 24),environment,undecided,0.598,easy,IPCC projections,3
+ER_00250,Renewable energy can fully replace fossil fuels (context 24),environment,undecided,0.893,medium,Grid stability,1
+ER_00251,Global temperatures will rise 2°C by 2050 (context 25),environment,supported,0.868,expert,Climate models,4
+ER_00252,Plastic pollution is the biggest ocean threat (context 25),environment,undecided,0.877,easy,Marine research,1
+ER_00253,Nuclear power is the safest energy source (context 25),environment,supported,0.621,medium,Mortality data,1
+ER_00254,Deforestation causes 10% of global emissions (context 25),environment,supported,0.802,hard,UNFCCC data,3
+ER_00255,Electric cars will solve air pollution (context 25),environment,rejected,0.857,expert,Grid emissions,3
+ER_00256,Coral reefs will disappear by 2050 (context 25),environment,undecided,0.927,easy,Marine biology,3
+ER_00257,Recycling significantly reduces waste (context 25),environment,undecided,0.745,medium,Garbage audits,2
+ER_00258,Organic farming is more sustainable (context 25),environment,undecided,0.829,hard,Land use data,3
+ER_00259,Sea levels will rise 1 meter by 2100 (context 25),environment,undecided,0.878,expert,IPCC projections,2
+ER_00260,Renewable energy can fully replace fossil fuels (context 25),environment,undecided,0.846,easy,Grid stability,1
+ER_00261,Global temperatures will rise 2°C by 2050 (context 26),environment,supported,0.598,hard,Climate models,3
+ER_00262,Plastic pollution is the biggest ocean threat (context 26),environment,undecided,0.882,expert,Marine research,3
+ER_00263,Nuclear power is the safest energy source (context 26),environment,supported,0.673,easy,Mortality data,3
+ER_00264,Deforestation causes 10% of global emissions (context 26),environment,supported,0.789,medium,UNFCCC data,1
+ER_00265,Electric cars will solve air pollution (context 26),environment,rejected,0.693,hard,Grid emissions,1
+ER_00266,Coral reefs will disappear by 2050 (context 26),environment,undecided,0.773,expert,Marine biology,3
+ER_00267,Recycling significantly reduces waste (context 26),environment,undecided,0.865,easy,Garbage audits,3
+ER_00268,Organic farming is more sustainable (context 26),environment,undecided,0.713,medium,Land use data,3
+ER_00269,Sea levels will rise 1 meter by 2100 (context 26),environment,undecided,0.839,hard,IPCC projections,2
+ER_00270,Renewable energy can fully replace fossil fuels (context 26),environment,undecided,0.739,expert,Grid stability,2
+ER_00271,Global temperatures will rise 2°C by 2050 (context 27),environment,supported,0.859,medium,Climate models,1
+ER_00272,Plastic pollution is the biggest ocean threat (context 27),environment,undecided,0.632,hard,Marine research,3
+ER_00273,Nuclear power is the safest energy source (context 27),environment,supported,0.602,expert,Mortality data,2
+ER_00274,Deforestation causes 10% of global emissions (context 27),environment,supported,0.642,easy,UNFCCC data,2
+ER_00275,Electric cars will solve air pollution (context 27),environment,rejected,0.688,medium,Grid emissions,3
+ER_00276,Coral reefs will disappear by 2050 (context 27),environment,undecided,0.727,hard,Marine biology,2
+ER_00277,Recycling significantly reduces waste (context 27),environment,undecided,0.594,expert,Garbage audits,4
+ER_00278,Organic farming is more sustainable (context 27),environment,undecided,0.628,easy,Land use data,4
+ER_00279,Sea levels will rise 1 meter by 2100 (context 27),environment,undecided,0.559,medium,IPCC projections,1
+ER_00280,Renewable energy can fully replace fossil fuels (context 27),environment,undecided,0.691,hard,Grid stability,4
+ER_00281,Global temperatures will rise 2°C by 2050 (context 28),environment,supported,0.619,easy,Climate models,3
+ER_00282,Plastic pollution is the biggest ocean threat (context 28),environment,undecided,0.917,medium,Marine research,1
+ER_00283,Nuclear power is the safest energy source (context 28),environment,supported,0.587,hard,Mortality data,2
+ER_00284,Deforestation causes 10% of global emissions (context 28),environment,supported,0.72,expert,UNFCCC data,2
+ER_00285,Electric cars will solve air pollution (context 28),environment,rejected,0.622,easy,Grid emissions,2
+ER_00286,Coral reefs will disappear by 2050 (context 28),environment,undecided,0.726,medium,Marine biology,4
+ER_00287,Recycling significantly reduces waste (context 28),environment,undecided,0.618,hard,Garbage audits,2
+ER_00288,Organic farming is more sustainable (context 28),environment,undecided,0.847,expert,Land use data,1
+ER_00289,Sea levels will rise 1 meter by 2100 (context 28),environment,undecided,0.846,easy,IPCC projections,3
+ER_00290,Renewable energy can fully replace fossil fuels (context 28),environment,undecided,0.565,medium,Grid stability,1
+ER_00291,Global temperatures will rise 2°C by 2050 (context 29),environment,supported,0.601,expert,Climate models,3
+ER_00292,Plastic pollution is the biggest ocean threat (context 29),environment,undecided,0.949,easy,Marine research,3
+ER_00293,Nuclear power is the safest energy source (context 29),environment,supported,0.873,medium,Mortality data,3
+ER_00294,Deforestation causes 10% of global emissions (context 29),environment,supported,0.789,hard,UNFCCC data,2
+ER_00295,Electric cars will solve air pollution (context 29),environment,rejected,0.731,expert,Grid emissions,2
+ER_00296,Coral reefs will disappear by 2050 (context 29),environment,undecided,0.587,easy,Marine biology,4
+ER_00297,Recycling significantly reduces waste (context 29),environment,undecided,0.704,medium,Garbage audits,3
+ER_00298,Organic farming is more sustainable (context 29),environment,undecided,0.725,hard,Land use data,3
+ER_00299,Sea levels will rise 1 meter by 2100 (context 29),environment,undecided,0.745,expert,IPCC projections,3
+ER_00300,Renewable energy can fully replace fossil fuels (context 29),environment,undecided,0.613,easy,Grid stability,4
+ER_00301,Global temperatures will rise 2°C by 2050 (context 30),environment,supported,0.855,hard,Climate models,1
+ER_00302,Plastic pollution is the biggest ocean threat (context 30),environment,undecided,0.777,expert,Marine research,2
+ER_00303,Nuclear power is the safest energy source (context 30),environment,supported,0.586,easy,Mortality data,1
+ER_00304,Deforestation causes 10% of global emissions (context 30),environment,supported,0.82,medium,UNFCCC data,4
+ER_00305,Electric cars will solve air pollution (context 30),environment,rejected,0.766,hard,Grid emissions,3
+ER_00306,Coral reefs will disappear by 2050 (context 30),environment,undecided,0.849,expert,Marine biology,3
+ER_00307,Recycling significantly reduces waste (context 30),environment,undecided,0.725,easy,Garbage audits,1
+ER_00308,Organic farming is more sustainable (context 30),environment,undecided,0.848,medium,Land use data,1
+ER_00309,Sea levels will rise 1 meter by 2100 (context 30),environment,undecided,0.851,hard,IPCC projections,3
+ER_00310,Renewable energy can fully replace fossil fuels (context 30),environment,undecided,0.928,expert,Grid stability,2
+ER_00311,Global temperatures will rise 2°C by 2050 (context 31),environment,supported,0.746,medium,Climate models,3
+ER_00312,Plastic pollution is the biggest ocean threat (context 31),environment,undecided,0.796,hard,Marine research,4
+ER_00313,Nuclear power is the safest energy source (context 31),environment,supported,0.744,expert,Mortality data,2
+ER_00314,Deforestation causes 10% of global emissions (context 31),environment,supported,0.896,easy,UNFCCC data,4
+ER_00315,Electric cars will solve air pollution (context 31),environment,rejected,0.891,medium,Grid emissions,4
+ER_00316,Coral reefs will disappear by 2050 (context 31),environment,undecided,0.904,hard,Marine biology,1
+ER_00317,Recycling significantly reduces waste (context 31),environment,undecided,0.556,expert,Garbage audits,2
+ER_00318,Organic farming is more sustainable (context 31),environment,undecided,0.616,easy,Land use data,2
+ER_00319,Sea levels will rise 1 meter by 2100 (context 31),environment,undecided,0.856,medium,IPCC projections,3
+ER_00320,Renewable energy can fully replace fossil fuels (context 31),environment,undecided,0.724,hard,Grid stability,4
+ER_00321,Global temperatures will rise 2°C by 2050 (context 32),environment,supported,0.59,easy,Climate models,4
+ER_00322,Plastic pollution is the biggest ocean threat (context 32),environment,undecided,0.881,medium,Marine research,3
+ER_00323,Nuclear power is the safest energy source (context 32),environment,supported,0.555,hard,Mortality data,3
+ER_00324,Deforestation causes 10% of global emissions (context 32),environment,supported,0.668,expert,UNFCCC data,4
+ER_00325,Electric cars will solve air pollution (context 32),environment,rejected,0.752,easy,Grid emissions,3
+ER_00326,Coral reefs will disappear by 2050 (context 32),environment,undecided,0.821,medium,Marine biology,1
+ER_00327,Recycling significantly reduces waste (context 32),environment,undecided,0.676,hard,Garbage audits,2
+ER_00328,Organic farming is more sustainable (context 32),environment,undecided,0.809,expert,Land use data,4
+ER_00329,Sea levels will rise 1 meter by 2100 (context 32),environment,undecided,0.644,easy,IPCC projections,2
+ER_00330,Renewable energy can fully replace fossil fuels (context 32),environment,undecided,0.561,medium,Grid stability,3
+ER_00331,Global temperatures will rise 2°C by 2050 (context 33),environment,supported,0.562,expert,Climate models,4
+ER_00332,Plastic pollution is the biggest ocean threat (context 33),environment,undecided,0.914,easy,Marine research,1
+ER_00333,Nuclear power is the safest energy source (context 33),environment,supported,0.69,medium,Mortality data,1
+ER_00334,Deforestation causes 10% of global emissions (context 33),environment,supported,0.594,hard,UNFCCC data,1
+ER_00335,Electric cars will solve air pollution (context 33),environment,rejected,0.577,expert,Grid emissions,3
+ER_00336,Coral reefs will disappear by 2050 (context 33),environment,undecided,0.569,easy,Marine biology,3
+ER_00337,Recycling significantly reduces waste (context 33),environment,undecided,0.908,medium,Garbage audits,1
+ER_00338,Organic farming is more sustainable (context 33),environment,undecided,0.898,hard,Land use data,4
+ER_00339,Sea levels will rise 1 meter by 2100 (context 33),environment,undecided,0.66,expert,IPCC projections,4
+ER_00340,Renewable energy can fully replace fossil fuels (context 33),environment,undecided,0.803,easy,Grid stability,2
+ER_00341,Global temperatures will rise 2°C by 2050 (context 34),environment,supported,0.747,hard,Climate models,2
+ER_00342,Plastic pollution is the biggest ocean threat (context 34),environment,undecided,0.629,expert,Marine research,2
+ER_00343,Nuclear power is the safest energy source (context 34),environment,supported,0.69,easy,Mortality data,1
+ER_00344,Deforestation causes 10% of global emissions (context 34),environment,supported,0.867,medium,UNFCCC data,1
+ER_00345,Electric cars will solve air pollution (context 34),environment,rejected,0.858,hard,Grid emissions,3
+ER_00346,Coral reefs will disappear by 2050 (context 34),environment,undecided,0.846,expert,Marine biology,2
+ER_00347,Recycling significantly reduces waste (context 34),environment,undecided,0.654,easy,Garbage audits,1
+ER_00348,Organic farming is more sustainable (context 34),environment,undecided,0.905,medium,Land use data,2
+ER_00349,Sea levels will rise 1 meter by 2100 (context 34),environment,undecided,0.745,hard,IPCC projections,3
+ER_00350,Renewable energy can fully replace fossil fuels (context 34),environment,undecided,0.874,expert,Grid stability,4
+ER_00351,Global temperatures will rise 2°C by 2050 (context 35),environment,supported,0.769,medium,Climate models,1
+ER_00352,Plastic pollution is the biggest ocean threat (context 35),environment,undecided,0.599,hard,Marine research,1
+ER_00353,Nuclear power is the safest energy source (context 35),environment,supported,0.873,expert,Mortality data,3
+ER_00354,Deforestation causes 10% of global emissions (context 35),environment,supported,0.797,easy,UNFCCC data,1
+ER_00355,Electric cars will solve air pollution (context 35),environment,rejected,0.697,medium,Grid emissions,3
+ER_00356,Coral reefs will disappear by 2050 (context 35),environment,undecided,0.889,hard,Marine biology,3
+ER_00357,Recycling significantly reduces waste (context 35),environment,undecided,0.614,expert,Garbage audits,2
+ER_00358,Organic farming is more sustainable (context 35),environment,undecided,0.697,easy,Land use data,2
+ER_00359,Sea levels will rise 1 meter by 2100 (context 35),environment,undecided,0.935,medium,IPCC projections,1
+ER_00360,Renewable energy can fully replace fossil fuels (context 35),environment,undecided,0.689,hard,Grid stability,3
+ER_00361,Global temperatures will rise 2°C by 2050 (context 36),environment,supported,0.774,easy,Climate models,4
+ER_00362,Plastic pollution is the biggest ocean threat (context 36),environment,undecided,0.58,medium,Marine research,2
+ER_00363,Nuclear power is the safest energy source (context 36),environment,supported,0.813,hard,Mortality data,4
+ER_00364,Deforestation causes 10% of global emissions (context 36),environment,supported,0.58,expert,UNFCCC data,3
+ER_00365,Electric cars will solve air pollution (context 36),environment,rejected,0.778,easy,Grid emissions,2
+ER_00366,Coral reefs will disappear by 2050 (context 36),environment,undecided,0.647,medium,Marine biology,4
+ER_00367,Recycling significantly reduces waste (context 36),environment,undecided,0.725,hard,Garbage audits,1
+ER_00368,Organic farming is more sustainable (context 36),environment,undecided,0.644,expert,Land use data,1
+ER_00369,Sea levels will rise 1 meter by 2100 (context 36),environment,undecided,0.646,easy,IPCC projections,2
+ER_00370,Renewable energy can fully replace fossil fuels (context 36),environment,undecided,0.713,medium,Grid stability,2
+ER_00371,Global temperatures will rise 2°C by 2050 (context 37),environment,supported,0.813,expert,Climate models,4
+ER_00372,Plastic pollution is the biggest ocean threat (context 37),environment,undecided,0.733,easy,Marine research,1
+ER_00373,Nuclear power is the safest energy source (context 37),environment,supported,0.669,medium,Mortality data,3
+ER_00374,Deforestation causes 10% of global emissions (context 37),environment,supported,0.724,hard,UNFCCC data,1
+ER_00375,Electric cars will solve air pollution (context 37),environment,rejected,0.674,expert,Grid emissions,1
+ER_00376,Coral reefs will disappear by 2050 (context 37),environment,undecided,0.943,easy,Marine biology,1
+ER_00377,Recycling significantly reduces waste (context 37),environment,undecided,0.583,medium,Garbage audits,2
+ER_00378,Organic farming is more sustainable (context 37),environment,undecided,0.859,hard,Land use data,4
+ER_00379,Sea levels will rise 1 meter by 2100 (context 37),environment,undecided,0.66,expert,IPCC projections,3
+ER_00380,Renewable energy can fully replace fossil fuels (context 37),environment,undecided,0.576,easy,Grid stability,1
+ER_00381,Global temperatures will rise 2°C by 2050 (context 38),environment,supported,0.62,hard,Climate models,3
+ER_00382,Plastic pollution is the biggest ocean threat (context 38),environment,undecided,0.851,expert,Marine research,4
+ER_00383,Nuclear power is the safest energy source (context 38),environment,supported,0.604,easy,Mortality data,3
+ER_00384,Deforestation causes 10% of global emissions (context 38),environment,supported,0.609,medium,UNFCCC data,3
+ER_00385,Electric cars will solve air pollution (context 38),environment,rejected,0.722,hard,Grid emissions,3
+ER_00386,Coral reefs will disappear by 2050 (context 38),environment,undecided,0.641,expert,Marine biology,4
+ER_00387,Recycling significantly reduces waste (context 38),environment,undecided,0.715,easy,Garbage audits,3
+ER_00388,Organic farming is more sustainable (context 38),environment,undecided,0.61,medium,Land use data,3
+ER_00389,Sea levels will rise 1 meter by 2100 (context 38),environment,undecided,0.562,hard,IPCC projections,4
+ER_00390,Renewable energy can fully replace fossil fuels (context 38),environment,undecided,0.786,expert,Grid stability,2
+ER_00391,Global temperatures will rise 2°C by 2050 (context 39),environment,supported,0.588,medium,Climate models,4
+ER_00392,Plastic pollution is the biggest ocean threat (context 39),environment,undecided,0.756,hard,Marine research,2
+ER_00393,Nuclear power is the safest energy source (context 39),environment,supported,0.554,expert,Mortality data,3
+ER_00394,Deforestation causes 10% of global emissions (context 39),environment,supported,0.661,easy,UNFCCC data,3
+ER_00395,Electric cars will solve air pollution (context 39),environment,rejected,0.804,medium,Grid emissions,4
+ER_00396,Coral reefs will disappear by 2050 (context 39),environment,undecided,0.589,hard,Marine biology,1
+ER_00397,Recycling significantly reduces waste (context 39),environment,undecided,0.753,expert,Garbage audits,3
+ER_00398,Organic farming is more sustainable (context 39),environment,undecided,0.615,easy,Land use data,4
+ER_00399,Sea levels will rise 1 meter by 2100 (context 39),environment,undecided,0.761,medium,IPCC projections,4
+ER_00400,Renewable energy can fully replace fossil fuels (context 39),environment,undecided,0.783,hard,Grid stability,2
+ER_00401,Global temperatures will rise 2°C by 2050 (context 40),environment,supported,0.582,easy,Climate models,3
+ER_00402,Plastic pollution is the biggest ocean threat (context 40),environment,undecided,0.717,medium,Marine research,1
+ER_00403,Nuclear power is the safest energy source (context 40),environment,supported,0.62,hard,Mortality data,3
+ER_00404,Deforestation causes 10% of global emissions (context 40),environment,supported,0.841,expert,UNFCCC data,3
+ER_00405,Electric cars will solve air pollution (context 40),environment,rejected,0.863,easy,Grid emissions,4
+ER_00406,Coral reefs will disappear by 2050 (context 40),environment,undecided,0.668,medium,Marine biology,2
+ER_00407,Recycling significantly reduces waste (context 40),environment,undecided,0.692,hard,Garbage audits,4
+ER_00408,Organic farming is more sustainable (context 40),environment,undecided,0.693,expert,Land use data,4
+ER_00409,Sea levels will rise 1 meter by 2100 (context 40),environment,undecided,0.806,easy,IPCC projections,2
+ER_00410,Renewable energy can fully replace fossil fuels (context 40),environment,undecided,0.934,medium,Grid stability,1
+ER_00411,Global temperatures will rise 2°C by 2050 (context 41),environment,supported,0.684,expert,Climate models,4
+ER_00412,Plastic pollution is the biggest ocean threat (context 41),environment,undecided,0.648,easy,Marine research,1
+ER_00413,Nuclear power is the safest energy source (context 41),environment,supported,0.621,medium,Mortality data,1
+ER_00414,Deforestation causes 10% of global emissions (context 41),environment,supported,0.644,hard,UNFCCC data,3
+ER_00415,Electric cars will solve air pollution (context 41),environment,rejected,0.941,expert,Grid emissions,3
+ER_00416,Coral reefs will disappear by 2050 (context 41),environment,undecided,0.838,easy,Marine biology,4
+ER_00417,Recycling significantly reduces waste (context 41),environment,undecided,0.588,medium,Garbage audits,4
+ER_00418,Organic farming is more sustainable (context 41),environment,undecided,0.75,hard,Land use data,2
+ER_00419,Sea levels will rise 1 meter by 2100 (context 41),environment,undecided,0.846,expert,IPCC projections,2
+ER_00420,Renewable energy can fully replace fossil fuels (context 41),environment,undecided,0.587,easy,Grid stability,4
+ER_00421,Global temperatures will rise 2°C by 2050 (context 42),environment,supported,0.696,hard,Climate models,1
+ER_00422,Plastic pollution is the biggest ocean threat (context 42),environment,undecided,0.928,expert,Marine research,3
+ER_00423,Nuclear power is the safest energy source (context 42),environment,supported,0.574,easy,Mortality data,3
+ER_00424,Deforestation causes 10% of global emissions (context 42),environment,supported,0.594,medium,UNFCCC data,3
+ER_00425,Electric cars will solve air pollution (context 42),environment,rejected,0.613,hard,Grid emissions,4
+ER_00426,Coral reefs will disappear by 2050 (context 42),environment,undecided,0.895,expert,Marine biology,4
+ER_00427,Recycling significantly reduces waste (context 42),environment,undecided,0.608,easy,Garbage audits,2
+ER_00428,Organic farming is more sustainable (context 42),environment,undecided,0.763,medium,Land use data,4
+ER_00429,Sea levels will rise 1 meter by 2100 (context 42),environment,undecided,0.665,hard,IPCC projections,2
+ER_00430,Renewable energy can fully replace fossil fuels (context 42),environment,undecided,0.645,expert,Grid stability,4
+ER_00431,Global temperatures will rise 2°C by 2050 (context 43),environment,supported,0.949,medium,Climate models,3
+ER_00432,Plastic pollution is the biggest ocean threat (context 43),environment,undecided,0.79,hard,Marine research,1
+ER_00433,Nuclear power is the safest energy source (context 43),environment,supported,0.795,expert,Mortality data,4
+ER_00434,Deforestation causes 10% of global emissions (context 43),environment,supported,0.626,easy,UNFCCC data,4
+ER_00435,Electric cars will solve air pollution (context 43),environment,rejected,0.641,medium,Grid emissions,3
+ER_00436,Coral reefs will disappear by 2050 (context 43),environment,undecided,0.946,hard,Marine biology,4
+ER_00437,Recycling significantly reduces waste (context 43),environment,undecided,0.785,expert,Garbage audits,3
+ER_00438,Organic farming is more sustainable (context 43),environment,undecided,0.717,easy,Land use data,1
+ER_00439,Sea levels will rise 1 meter by 2100 (context 43),environment,undecided,0.706,medium,IPCC projections,2
+ER_00440,Renewable energy can fully replace fossil fuels (context 43),environment,undecided,0.876,hard,Grid stability,1
+ER_00441,Global temperatures will rise 2°C by 2050 (context 44),environment,supported,0.938,easy,Climate models,3
+ER_00442,Plastic pollution is the biggest ocean threat (context 44),environment,undecided,0.758,medium,Marine research,2
+ER_00443,Nuclear power is the safest energy source (context 44),environment,supported,0.643,hard,Mortality data,2
+ER_00444,Deforestation causes 10% of global emissions (context 44),environment,supported,0.69,expert,UNFCCC data,4
+ER_00445,Electric cars will solve air pollution (context 44),environment,rejected,0.751,easy,Grid emissions,2
+ER_00446,Coral reefs will disappear by 2050 (context 44),environment,undecided,0.568,medium,Marine biology,1
+ER_00447,Recycling significantly reduces waste (context 44),environment,undecided,0.938,hard,Garbage audits,1
+ER_00448,Organic farming is more sustainable (context 44),environment,undecided,0.786,expert,Land use data,4
+ER_00449,Sea levels will rise 1 meter by 2100 (context 44),environment,undecided,0.879,easy,IPCC projections,3
+ER_00450,Renewable energy can fully replace fossil fuels (context 44),environment,undecided,0.632,medium,Grid stability,4
+ER_00451,Global temperatures will rise 2°C by 2050 (context 45),environment,supported,0.583,expert,Climate models,4
+ER_00452,Plastic pollution is the biggest ocean threat (context 45),environment,undecided,0.619,easy,Marine research,1
+ER_00453,Nuclear power is the safest energy source (context 45),environment,supported,0.745,medium,Mortality data,1
+ER_00454,Deforestation causes 10% of global emissions (context 45),environment,supported,0.683,hard,UNFCCC data,2
+ER_00455,Electric cars will solve air pollution (context 45),environment,rejected,0.8,expert,Grid emissions,2
+ER_00456,Coral reefs will disappear by 2050 (context 45),environment,undecided,0.593,easy,Marine biology,3
+ER_00457,Recycling significantly reduces waste (context 45),environment,undecided,0.741,medium,Garbage audits,1
+ER_00458,Organic farming is more sustainable (context 45),environment,undecided,0.728,hard,Land use data,3
+ER_00459,Sea levels will rise 1 meter by 2100 (context 45),environment,undecided,0.737,expert,IPCC projections,4
+ER_00460,Renewable energy can fully replace fossil fuels (context 45),environment,undecided,0.921,easy,Grid stability,2
+ER_00461,Global temperatures will rise 2°C by 2050 (context 46),environment,supported,0.586,hard,Climate models,1
+ER_00462,Plastic pollution is the biggest ocean threat (context 46),environment,undecided,0.864,expert,Marine research,4
+ER_00463,Nuclear power is the safest energy source (context 46),environment,supported,0.582,easy,Mortality data,3
+ER_00464,Deforestation causes 10% of global emissions (context 46),environment,supported,0.801,medium,UNFCCC data,4
+ER_00465,Electric cars will solve air pollution (context 46),environment,rejected,0.803,hard,Grid emissions,4
+ER_00466,Coral reefs will disappear by 2050 (context 46),environment,undecided,0.589,expert,Marine biology,4
+ER_00467,Recycling significantly reduces waste (context 46),environment,undecided,0.85,easy,Garbage audits,1
+ER_00468,Organic farming is more sustainable (context 46),environment,undecided,0.711,medium,Land use data,3
+ER_00469,Sea levels will rise 1 meter by 2100 (context 46),environment,undecided,0.927,hard,IPCC projections,2
+ER_00470,Renewable energy can fully replace fossil fuels (context 46),environment,undecided,0.812,expert,Grid stability,1
+ER_00471,Global temperatures will rise 2°C by 2050 (context 47),environment,supported,0.832,medium,Climate models,1
+ER_00472,Plastic pollution is the biggest ocean threat (context 47),environment,undecided,0.82,hard,Marine research,4
+ER_00473,Nuclear power is the safest energy source (context 47),environment,supported,0.887,expert,Mortality data,4
+ER_00474,Deforestation causes 10% of global emissions (context 47),environment,supported,0.943,easy,UNFCCC data,2
+ER_00475,Electric cars will solve air pollution (context 47),environment,rejected,0.874,medium,Grid emissions,4
+ER_00476,Coral reefs will disappear by 2050 (context 47),environment,undecided,0.887,hard,Marine biology,3
+ER_00477,Recycling significantly reduces waste (context 47),environment,undecided,0.905,expert,Garbage audits,2
+ER_00478,Organic farming is more sustainable (context 47),environment,undecided,0.905,easy,Land use data,2
+ER_00479,Sea levels will rise 1 meter by 2100 (context 47),environment,undecided,0.861,medium,IPCC projections,2
+ER_00480,Renewable energy can fully replace fossil fuels (context 47),environment,undecided,0.59,hard,Grid stability,3
+ER_00481,Global temperatures will rise 2°C by 2050 (context 48),environment,supported,0.801,easy,Climate models,3
+ER_00482,Plastic pollution is the biggest ocean threat (context 48),environment,undecided,0.58,medium,Marine research,1
+ER_00483,Nuclear power is the safest energy source (context 48),environment,supported,0.931,hard,Mortality data,1
+ER_00484,Deforestation causes 10% of global emissions (context 48),environment,supported,0.778,expert,UNFCCC data,1
+ER_00485,Electric cars will solve air pollution (context 48),environment,rejected,0.624,easy,Grid emissions,4
+ER_00486,Coral reefs will disappear by 2050 (context 48),environment,undecided,0.92,medium,Marine biology,4
+ER_00487,Recycling significantly reduces waste (context 48),environment,undecided,0.638,hard,Garbage audits,1
+ER_00488,Organic farming is more sustainable (context 48),environment,undecided,0.666,expert,Land use data,2
+ER_00489,Sea levels will rise 1 meter by 2100 (context 48),environment,undecided,0.802,easy,IPCC projections,3
+ER_00490,Renewable energy can fully replace fossil fuels (context 48),environment,undecided,0.866,medium,Grid stability,1
+ER_00491,Global temperatures will rise 2°C by 2050 (context 49),environment,supported,0.571,expert,Climate models,2
+ER_00492,Plastic pollution is the biggest ocean threat (context 49),environment,undecided,0.668,easy,Marine research,4
+ER_00493,Nuclear power is the safest energy source (context 49),environment,supported,0.748,medium,Mortality data,4
+ER_00494,Deforestation causes 10% of global emissions (context 49),environment,supported,0.553,hard,UNFCCC data,3
+ER_00495,Electric cars will solve air pollution (context 49),environment,rejected,0.798,expert,Grid emissions,1
+ER_00496,Coral reefs will disappear by 2050 (context 49),environment,undecided,0.911,easy,Marine biology,1
+ER_00497,Recycling significantly reduces waste (context 49),environment,undecided,0.919,medium,Garbage audits,1
+ER_00498,Organic farming is more sustainable (context 49),environment,undecided,0.668,hard,Land use data,4
+ER_00499,Sea levels will rise 1 meter by 2100 (context 49),environment,undecided,0.676,expert,IPCC projections,1
+ER_00500,Renewable energy can fully replace fossil fuels (context 49),environment,undecided,0.66,easy,Grid stability,3
+ER_00501,Global temperatures will rise 2°C by 2050 (context 50),environment,supported,0.622,hard,Climate models,2
+ER_00502,Plastic pollution is the biggest ocean threat (context 50),environment,undecided,0.941,expert,Marine research,3
+ER_00503,Nuclear power is the safest energy source (context 50),environment,supported,0.618,easy,Mortality data,1
+ER_00504,Deforestation causes 10% of global emissions (context 50),environment,supported,0.932,medium,UNFCCC data,4
+ER_00505,Electric cars will solve air pollution (context 50),environment,rejected,0.893,hard,Grid emissions,1
+ER_00506,Coral reefs will disappear by 2050 (context 50),environment,undecided,0.57,expert,Marine biology,3
+ER_00507,Recycling significantly reduces waste (context 50),environment,undecided,0.898,easy,Garbage audits,2
+ER_00508,Organic farming is more sustainable (context 50),environment,undecided,0.848,medium,Land use data,2
+ER_00509,Sea levels will rise 1 meter by 2100 (context 50),environment,undecided,0.801,hard,IPCC projections,1
+ER_00510,Renewable energy can fully replace fossil fuels (context 50),environment,undecided,0.746,expert,Grid stability,1
+ER_00511,Global temperatures will rise 2°C by 2050 (context 51),environment,supported,0.658,medium,Climate models,3
+ER_00512,Plastic pollution is the biggest ocean threat (context 51),environment,undecided,0.583,hard,Marine research,4
+ER_00513,Nuclear power is the safest energy source (context 51),environment,supported,0.831,expert,Mortality data,4
+ER_00514,Deforestation causes 10% of global emissions (context 51),environment,supported,0.715,easy,UNFCCC data,1
+ER_00515,Electric cars will solve air pollution (context 51),environment,rejected,0.949,medium,Grid emissions,1
+ER_00516,Coral reefs will disappear by 2050 (context 51),environment,undecided,0.594,hard,Marine biology,1
+ER_00517,Recycling significantly reduces waste (context 51),environment,undecided,0.82,expert,Garbage audits,4
+ER_00518,Organic farming is more sustainable (context 51),environment,undecided,0.76,easy,Land use data,1
+ER_00519,Sea levels will rise 1 meter by 2100 (context 51),environment,undecided,0.761,medium,IPCC projections,4
+ER_00520,Renewable energy can fully replace fossil fuels (context 51),environment,undecided,0.898,hard,Grid stability,1
+ER_00521,Global temperatures will rise 2°C by 2050 (context 52),environment,supported,0.649,easy,Climate models,3
+ER_00522,Plastic pollution is the biggest ocean threat (context 52),environment,undecided,0.82,medium,Marine research,1
+ER_00523,Nuclear power is the safest energy source (context 52),environment,supported,0.765,hard,Mortality data,2
+ER_00524,Deforestation causes 10% of global emissions (context 52),environment,supported,0.777,expert,UNFCCC data,4
+ER_00525,Electric cars will solve air pollution (context 52),environment,rejected,0.826,easy,Grid emissions,3
+ER_00526,Coral reefs will disappear by 2050 (context 52),environment,undecided,0.601,medium,Marine biology,3
+ER_00527,Recycling significantly reduces waste (context 52),environment,undecided,0.699,hard,Garbage audits,1
+ER_00528,Organic farming is more sustainable (context 52),environment,undecided,0.694,expert,Land use data,3
+ER_00529,Sea levels will rise 1 meter by 2100 (context 52),environment,undecided,0.761,easy,IPCC projections,4
+ER_00530,Renewable energy can fully replace fossil fuels (context 52),environment,undecided,0.808,medium,Grid stability,3
+ER_00531,Global temperatures will rise 2°C by 2050 (context 53),environment,supported,0.894,expert,Climate models,4
+ER_00532,Plastic pollution is the biggest ocean threat (context 53),environment,undecided,0.8,easy,Marine research,1
+ER_00533,Nuclear power is the safest energy source (context 53),environment,supported,0.708,medium,Mortality data,4
+ER_00534,Deforestation causes 10% of global emissions (context 53),environment,supported,0.705,hard,UNFCCC data,2
+ER_00535,Electric cars will solve air pollution (context 53),environment,rejected,0.721,expert,Grid emissions,3
+ER_00536,Coral reefs will disappear by 2050 (context 53),environment,undecided,0.562,easy,Marine biology,4
+ER_00537,Recycling significantly reduces waste (context 53),environment,undecided,0.794,medium,Garbage audits,3
+ER_00538,Organic farming is more sustainable (context 53),environment,undecided,0.677,hard,Land use data,4
+ER_00539,Sea levels will rise 1 meter by 2100 (context 53),environment,undecided,0.755,expert,IPCC projections,2
+ER_00540,Renewable energy can fully replace fossil fuels (context 53),environment,undecided,0.67,easy,Grid stability,4
+ER_00541,Global temperatures will rise 2°C by 2050 (context 54),environment,supported,0.698,hard,Climate models,4
+ER_00542,Plastic pollution is the biggest ocean threat (context 54),environment,undecided,0.713,expert,Marine research,2
+ER_00543,Nuclear power is the safest energy source (context 54),environment,supported,0.832,easy,Mortality data,3
+ER_00544,Deforestation causes 10% of global emissions (context 54),environment,supported,0.606,medium,UNFCCC data,3
+ER_00545,Electric cars will solve air pollution (context 54),environment,rejected,0.944,hard,Grid emissions,1
+ER_00546,Coral reefs will disappear by 2050 (context 54),environment,undecided,0.736,expert,Marine biology,1
+ER_00547,Recycling significantly reduces waste (context 54),environment,undecided,0.887,easy,Garbage audits,3
+ER_00548,Organic farming is more sustainable (context 54),environment,undecided,0.683,medium,Land use data,2
+ER_00549,Sea levels will rise 1 meter by 2100 (context 54),environment,undecided,0.895,hard,IPCC projections,4
+ER_00550,Renewable energy can fully replace fossil fuels (context 54),environment,undecided,0.914,expert,Grid stability,3
+ER_00551,Global temperatures will rise 2°C by 2050 (context 55),environment,supported,0.591,medium,Climate models,4
+ER_00552,Plastic pollution is the biggest ocean threat (context 55),environment,undecided,0.84,hard,Marine research,4
+ER_00553,Nuclear power is the safest energy source (context 55),environment,supported,0.687,expert,Mortality data,3
+ER_00554,Deforestation causes 10% of global emissions (context 55),environment,supported,0.615,easy,UNFCCC data,2
+ER_00555,Electric cars will solve air pollution (context 55),environment,rejected,0.832,medium,Grid emissions,2
+ER_00556,Coral reefs will disappear by 2050 (context 55),environment,undecided,0.792,hard,Marine biology,2
+ER_00557,Recycling significantly reduces waste (context 55),environment,undecided,0.661,expert,Garbage audits,1
+ER_00558,Organic farming is more sustainable (context 55),environment,undecided,0.922,easy,Land use data,1
+ER_00559,Sea levels will rise 1 meter by 2100 (context 55),environment,undecided,0.653,medium,IPCC projections,2
+ER_00560,Renewable energy can fully replace fossil fuels (context 55),environment,undecided,0.786,hard,Grid stability,4
+ER_00561,Global temperatures will rise 2°C by 2050 (context 56),environment,supported,0.867,easy,Climate models,2
+ER_00562,Plastic pollution is the biggest ocean threat (context 56),environment,undecided,0.56,medium,Marine research,3
+ER_00563,Nuclear power is the safest energy source (context 56),environment,supported,0.711,hard,Mortality data,3
+ER_00564,Deforestation causes 10% of global emissions (context 56),environment,supported,0.798,expert,UNFCCC data,4
+ER_00565,Electric cars will solve air pollution (context 56),environment,rejected,0.917,easy,Grid emissions,3
+ER_00566,Coral reefs will disappear by 2050 (context 56),environment,undecided,0.708,medium,Marine biology,2
+ER_00567,Recycling significantly reduces waste (context 56),environment,undecided,0.837,hard,Garbage audits,4
+ER_00568,Organic farming is more sustainable (context 56),environment,undecided,0.622,expert,Land use data,4
+ER_00569,Sea levels will rise 1 meter by 2100 (context 56),environment,undecided,0.662,easy,IPCC projections,1
+ER_00570,Renewable energy can fully replace fossil fuels (context 56),environment,undecided,0.692,medium,Grid stability,4
+ER_00571,Global temperatures will rise 2°C by 2050 (context 57),environment,supported,0.759,expert,Climate models,3
+ER_00572,Plastic pollution is the biggest ocean threat (context 57),environment,undecided,0.61,easy,Marine research,2
+ER_00573,Nuclear power is the safest energy source (context 57),environment,supported,0.607,medium,Mortality data,4
+ER_00574,Deforestation causes 10% of global emissions (context 57),environment,supported,0.832,hard,UNFCCC data,4
+ER_00575,Electric cars will solve air pollution (context 57),environment,rejected,0.591,expert,Grid emissions,4
+ER_00576,Coral reefs will disappear by 2050 (context 57),environment,undecided,0.885,easy,Marine biology,1
+ER_00577,Recycling significantly reduces waste (context 57),environment,undecided,0.694,medium,Garbage audits,1
+ER_00578,Organic farming is more sustainable (context 57),environment,undecided,0.889,hard,Land use data,1
+ER_00579,Sea levels will rise 1 meter by 2100 (context 57),environment,undecided,0.734,expert,IPCC projections,1
+ER_00580,Renewable energy can fully replace fossil fuels (context 57),environment,undecided,0.646,easy,Grid stability,2
+ER_00581,Global temperatures will rise 2°C by 2050 (context 58),environment,supported,0.593,hard,Climate models,4
+ER_00582,Plastic pollution is the biggest ocean threat (context 58),environment,undecided,0.581,expert,Marine research,2
+ER_00583,Nuclear power is the safest energy source (context 58),environment,supported,0.701,easy,Mortality data,3
+ER_00584,Deforestation causes 10% of global emissions (context 58),environment,supported,0.675,medium,UNFCCC data,4
+ER_00585,Electric cars will solve air pollution (context 58),environment,rejected,0.625,hard,Grid emissions,4
+ER_00586,Coral reefs will disappear by 2050 (context 58),environment,undecided,0.792,expert,Marine biology,4
+ER_00587,Recycling significantly reduces waste (context 58),environment,undecided,0.686,easy,Garbage audits,4
+ER_00588,Organic farming is more sustainable (context 58),environment,undecided,0.678,medium,Land use data,2
+ER_00589,Sea levels will rise 1 meter by 2100 (context 58),environment,undecided,0.723,hard,IPCC projections,3
+ER_00590,Renewable energy can fully replace fossil fuels (context 58),environment,undecided,0.813,expert,Grid stability,3
+ER_00591,Global temperatures will rise 2°C by 2050 (context 59),environment,supported,0.577,medium,Climate models,3
+ER_00592,Plastic pollution is the biggest ocean threat (context 59),environment,undecided,0.868,hard,Marine research,4
+ER_00593,Nuclear power is the safest energy source (context 59),environment,supported,0.844,expert,Mortality data,3
+ER_00594,Deforestation causes 10% of global emissions (context 59),environment,supported,0.752,easy,UNFCCC data,2
+ER_00595,Electric cars will solve air pollution (context 59),environment,rejected,0.946,medium,Grid emissions,4
+ER_00596,Coral reefs will disappear by 2050 (context 59),environment,undecided,0.923,hard,Marine biology,1
+ER_00597,Recycling significantly reduces waste (context 59),environment,undecided,0.74,expert,Garbage audits,1
+ER_00598,Organic farming is more sustainable (context 59),environment,undecided,0.69,easy,Land use data,1
+ER_00599,Sea levels will rise 1 meter by 2100 (context 59),environment,undecided,0.635,medium,IPCC projections,3
+ER_00600,Renewable energy can fully replace fossil fuels (context 59),environment,undecided,0.64,hard,Grid stability,3
+ER_00601,Global temperatures will rise 2°C by 2050 (context 60),environment,supported,0.902,easy,Climate models,3
+ER_00602,Plastic pollution is the biggest ocean threat (context 60),environment,undecided,0.646,medium,Marine research,4
+ER_00603,Nuclear power is the safest energy source (context 60),environment,supported,0.816,hard,Mortality data,2
+ER_00604,Deforestation causes 10% of global emissions (context 60),environment,supported,0.671,expert,UNFCCC data,3
+ER_00605,Electric cars will solve air pollution (context 60),environment,rejected,0.657,easy,Grid emissions,4
+ER_00606,Coral reefs will disappear by 2050 (context 60),environment,undecided,0.757,medium,Marine biology,1
+ER_00607,Recycling significantly reduces waste (context 60),environment,undecided,0.766,hard,Garbage audits,2
+ER_00608,Organic farming is more sustainable (context 60),environment,undecided,0.698,expert,Land use data,1
+ER_00609,Sea levels will rise 1 meter by 2100 (context 60),environment,undecided,0.831,easy,IPCC projections,2
+ER_00610,Renewable energy can fully replace fossil fuels (context 60),environment,undecided,0.605,medium,Grid stability,2
+ER_00611,Global temperatures will rise 2°C by 2050 (context 61),environment,supported,0.936,expert,Climate models,2
+ER_00612,Plastic pollution is the biggest ocean threat (context 61),environment,undecided,0.613,easy,Marine research,1
+ER_00613,Nuclear power is the safest energy source (context 61),environment,supported,0.909,medium,Mortality data,2
+ER_00614,Deforestation causes 10% of global emissions (context 61),environment,supported,0.822,hard,UNFCCC data,2
+ER_00615,Electric cars will solve air pollution (context 61),environment,rejected,0.807,expert,Grid emissions,4
+ER_00616,Coral reefs will disappear by 2050 (context 61),environment,undecided,0.768,easy,Marine biology,4
+ER_00617,Recycling significantly reduces waste (context 61),environment,undecided,0.949,medium,Garbage audits,1
+ER_00618,Organic farming is more sustainable (context 61),environment,undecided,0.723,hard,Land use data,4
+ER_00619,Sea levels will rise 1 meter by 2100 (context 61),environment,undecided,0.846,expert,IPCC projections,4
+ER_00620,Renewable energy can fully replace fossil fuels (context 61),environment,undecided,0.63,easy,Grid stability,2
+ER_00621,Global temperatures will rise 2°C by 2050 (context 62),environment,supported,0.64,hard,Climate models,4
+ER_00622,Plastic pollution is the biggest ocean threat (context 62),environment,undecided,0.704,expert,Marine research,3
+ER_00623,Nuclear power is the safest energy source (context 62),environment,supported,0.755,easy,Mortality data,4
+ER_00624,Deforestation causes 10% of global emissions (context 62),environment,supported,0.662,medium,UNFCCC data,3
+ER_00625,Electric cars will solve air pollution (context 62),environment,rejected,0.592,hard,Grid emissions,2
+ER_00626,Coral reefs will disappear by 2050 (context 62),environment,undecided,0.661,expert,Marine biology,2
+ER_00627,Recycling significantly reduces waste (context 62),environment,undecided,0.823,easy,Garbage audits,2
+ER_00628,Organic farming is more sustainable (context 62),environment,undecided,0.671,medium,Land use data,4
+ER_00629,Sea levels will rise 1 meter by 2100 (context 62),environment,undecided,0.843,hard,IPCC projections,2
+ER_00630,Renewable energy can fully replace fossil fuels (context 62),environment,undecided,0.839,expert,Grid stability,1
+ER_00631,Global temperatures will rise 2°C by 2050 (context 63),environment,supported,0.893,medium,Climate models,2
+ER_00632,Plastic pollution is the biggest ocean threat (context 63),environment,undecided,0.798,hard,Marine research,1
+ER_00633,Nuclear power is the safest energy source (context 63),environment,supported,0.627,expert,Mortality data,4
+ER_00634,Deforestation causes 10% of global emissions (context 63),environment,supported,0.583,easy,UNFCCC data,4
+ER_00635,Electric cars will solve air pollution (context 63),environment,rejected,0.672,medium,Grid emissions,3
+ER_00636,Coral reefs will disappear by 2050 (context 63),environment,undecided,0.906,hard,Marine biology,2
+ER_00637,Recycling significantly reduces waste (context 63),environment,undecided,0.764,expert,Garbage audits,1
+ER_00638,Organic farming is more sustainable (context 63),environment,undecided,0.76,easy,Land use data,1
+ER_00639,Sea levels will rise 1 meter by 2100 (context 63),environment,undecided,0.662,medium,IPCC projections,1
+ER_00640,Renewable energy can fully replace fossil fuels (context 63),environment,undecided,0.603,hard,Grid stability,4
+ER_00641,Global temperatures will rise 2°C by 2050 (context 64),environment,supported,0.569,easy,Climate models,1
+ER_00642,Plastic pollution is the biggest ocean threat (context 64),environment,undecided,0.871,medium,Marine research,2
+ER_00643,Nuclear power is the safest energy source (context 64),environment,supported,0.568,hard,Mortality data,4
+ER_00644,Deforestation causes 10% of global emissions (context 64),environment,supported,0.664,expert,UNFCCC data,1
+ER_00645,Electric cars will solve air pollution (context 64),environment,rejected,0.796,easy,Grid emissions,2
+ER_00646,Coral reefs will disappear by 2050 (context 64),environment,undecided,0.901,medium,Marine biology,3
+ER_00647,Recycling significantly reduces waste (context 64),environment,undecided,0.876,hard,Garbage audits,1
+ER_00648,Organic farming is more sustainable (context 64),environment,undecided,0.847,expert,Land use data,2
+ER_00649,Sea levels will rise 1 meter by 2100 (context 64),environment,undecided,0.712,easy,IPCC projections,4
+ER_00650,Renewable energy can fully replace fossil fuels (context 64),environment,undecided,0.739,medium,Grid stability,3
+ER_00651,Global temperatures will rise 2°C by 2050 (context 65),environment,supported,0.933,expert,Climate models,2
+ER_00652,Plastic pollution is the biggest ocean threat (context 65),environment,undecided,0.72,easy,Marine research,1
+ER_00653,Nuclear power is the safest energy source (context 65),environment,supported,0.817,medium,Mortality data,1
+ER_00654,Deforestation causes 10% of global emissions (context 65),environment,supported,0.728,hard,UNFCCC data,1
+ER_00655,Electric cars will solve air pollution (context 65),environment,rejected,0.794,expert,Grid emissions,2
+ER_00656,Coral reefs will disappear by 2050 (context 65),environment,undecided,0.692,easy,Marine biology,2
+ER_00657,Recycling significantly reduces waste (context 65),environment,undecided,0.91,medium,Garbage audits,1
+ER_00658,Organic farming is more sustainable (context 65),environment,undecided,0.659,hard,Land use data,4
+ER_00659,Sea levels will rise 1 meter by 2100 (context 65),environment,undecided,0.881,expert,IPCC projections,2
+ER_00660,Renewable energy can fully replace fossil fuels (context 65),environment,undecided,0.757,easy,Grid stability,1
+ER_00661,Global temperatures will rise 2°C by 2050 (context 66),environment,supported,0.674,hard,Climate models,1
+ER_00662,Plastic pollution is the biggest ocean threat (context 66),environment,undecided,0.799,expert,Marine research,3
+ER_00663,Nuclear power is the safest energy source (context 66),environment,supported,0.587,easy,Mortality data,2
+ER_00664,Deforestation causes 10% of global emissions (context 66),environment,supported,0.796,medium,UNFCCC data,4
+ER_00665,Electric cars will solve air pollution (context 66),environment,rejected,0.597,hard,Grid emissions,1
+ER_00666,Coral reefs will disappear by 2050 (context 66),environment,undecided,0.915,expert,Marine biology,4
+ER_00667,Recycling significantly reduces waste (context 66),environment,undecided,0.672,easy,Garbage audits,2
+ER_00668,Organic farming is more sustainable (context 66),environment,undecided,0.899,medium,Land use data,3
+ER_00669,Sea levels will rise 1 meter by 2100 (context 66),environment,undecided,0.683,hard,IPCC projections,1
+ER_00670,Renewable energy can fully replace fossil fuels (context 66),environment,undecided,0.881,expert,Grid stability,1
+ER_00671,Global temperatures will rise 2°C by 2050 (context 67),environment,supported,0.938,medium,Climate models,3
+ER_00672,Plastic pollution is the biggest ocean threat (context 67),environment,undecided,0.796,hard,Marine research,1
+ER_00673,Nuclear power is the safest energy source (context 67),environment,supported,0.916,expert,Mortality data,3
+ER_00674,Deforestation causes 10% of global emissions (context 67),environment,supported,0.707,easy,UNFCCC data,4
+ER_00675,Electric cars will solve air pollution (context 67),environment,rejected,0.914,medium,Grid emissions,1
+ER_00676,Coral reefs will disappear by 2050 (context 67),environment,undecided,0.623,hard,Marine biology,3
+ER_00677,Recycling significantly reduces waste (context 67),environment,undecided,0.911,expert,Garbage audits,3
+ER_00678,Organic farming is more sustainable (context 67),environment,undecided,0.922,easy,Land use data,1
+ER_00679,Sea levels will rise 1 meter by 2100 (context 67),environment,undecided,0.884,medium,IPCC projections,3
+ER_00680,Renewable energy can fully replace fossil fuels (context 67),environment,undecided,0.68,hard,Grid stability,1
+ER_00681,Global temperatures will rise 2°C by 2050 (context 68),environment,supported,0.701,easy,Climate models,1
+ER_00682,Plastic pollution is the biggest ocean threat (context 68),environment,undecided,0.865,medium,Marine research,4
+ER_00683,Nuclear power is the safest energy source (context 68),environment,supported,0.57,hard,Mortality data,1
+ER_00684,Deforestation causes 10% of global emissions (context 68),environment,supported,0.574,expert,UNFCCC data,1
+ER_00685,Electric cars will solve air pollution (context 68),environment,rejected,0.633,easy,Grid emissions,2
+ER_00686,Coral reefs will disappear by 2050 (context 68),environment,undecided,0.616,medium,Marine biology,3
+ER_00687,Recycling significantly reduces waste (context 68),environment,undecided,0.852,hard,Garbage audits,4
+ER_00688,Organic farming is more sustainable (context 68),environment,undecided,0.71,expert,Land use data,1
+ER_00689,Sea levels will rise 1 meter by 2100 (context 68),environment,undecided,0.859,easy,IPCC projections,2
+ER_00690,Renewable energy can fully replace fossil fuels (context 68),environment,undecided,0.689,medium,Grid stability,3
+ER_00691,Global temperatures will rise 2°C by 2050 (context 69),environment,supported,0.735,expert,Climate models,3
+ER_00692,Plastic pollution is the biggest ocean threat (context 69),environment,undecided,0.729,easy,Marine research,2
+ER_00693,Nuclear power is the safest energy source (context 69),environment,supported,0.657,medium,Mortality data,1
+ER_00694,Deforestation causes 10% of global emissions (context 69),environment,supported,0.589,hard,UNFCCC data,1
+ER_00695,Electric cars will solve air pollution (context 69),environment,rejected,0.634,expert,Grid emissions,2
+ER_00696,Coral reefs will disappear by 2050 (context 69),environment,undecided,0.835,easy,Marine biology,3
+ER_00697,Recycling significantly reduces waste (context 69),environment,undecided,0.561,medium,Garbage audits,1
+ER_00698,Organic farming is more sustainable (context 69),environment,undecided,0.664,hard,Land use data,1
+ER_00699,Sea levels will rise 1 meter by 2100 (context 69),environment,undecided,0.629,expert,IPCC projections,2
+ER_00700,Renewable energy can fully replace fossil fuels (context 69),environment,undecided,0.884,easy,Grid stability,1
+ER_00701,Global temperatures will rise 2°C by 2050 (context 70),environment,supported,0.811,hard,Climate models,4
+ER_00702,Plastic pollution is the biggest ocean threat (context 70),environment,undecided,0.864,expert,Marine research,1
+ER_00703,Nuclear power is the safest energy source (context 70),environment,supported,0.587,easy,Mortality data,4
+ER_00704,Deforestation causes 10% of global emissions (context 70),environment,supported,0.585,medium,UNFCCC data,3
+ER_00705,Electric cars will solve air pollution (context 70),environment,rejected,0.609,hard,Grid emissions,4
+ER_00706,Coral reefs will disappear by 2050 (context 70),environment,undecided,0.702,expert,Marine biology,4
+ER_00707,Recycling significantly reduces waste (context 70),environment,undecided,0.629,easy,Garbage audits,1
+ER_00708,Organic farming is more sustainable (context 70),environment,undecided,0.898,medium,Land use data,1
+ER_00709,Sea levels will rise 1 meter by 2100 (context 70),environment,undecided,0.651,hard,IPCC projections,4
+ER_00710,Renewable energy can fully replace fossil fuels (context 70),environment,undecided,0.64,expert,Grid stability,2
+ER_00711,Global temperatures will rise 2°C by 2050 (context 71),environment,supported,0.6,medium,Climate models,4
+ER_00712,Plastic pollution is the biggest ocean threat (context 71),environment,undecided,0.921,hard,Marine research,2
+ER_00713,Nuclear power is the safest energy source (context 71),environment,supported,0.591,expert,Mortality data,2
+ER_00714,Deforestation causes 10% of global emissions (context 71),environment,supported,0.855,easy,UNFCCC data,3
+ER_00715,Electric cars will solve air pollution (context 71),environment,rejected,0.552,medium,Grid emissions,1
+ER_00716,Coral reefs will disappear by 2050 (context 71),environment,undecided,0.682,hard,Marine biology,1
+ER_00717,Recycling significantly reduces waste (context 71),environment,undecided,0.898,expert,Garbage audits,2
+ER_00718,Organic farming is more sustainable (context 71),environment,undecided,0.656,easy,Land use data,2
+ER_00719,Sea levels will rise 1 meter by 2100 (context 71),environment,undecided,0.774,medium,IPCC projections,2
+ER_00720,Renewable energy can fully replace fossil fuels (context 71),environment,undecided,0.847,hard,Grid stability,4
+ER_00721,Global temperatures will rise 2°C by 2050 (context 72),environment,supported,0.84,easy,Climate models,2
+ER_00722,Plastic pollution is the biggest ocean threat (context 72),environment,undecided,0.605,medium,Marine research,4
+ER_00723,Nuclear power is the safest energy source (context 72),environment,supported,0.791,hard,Mortality data,1
+ER_00724,Deforestation causes 10% of global emissions (context 72),environment,supported,0.687,expert,UNFCCC data,1
+ER_00725,Electric cars will solve air pollution (context 72),environment,rejected,0.902,easy,Grid emissions,3
+ER_00726,Coral reefs will disappear by 2050 (context 72),environment,undecided,0.864,medium,Marine biology,4
+ER_00727,Recycling significantly reduces waste (context 72),environment,undecided,0.749,hard,Garbage audits,3
+ER_00728,Organic farming is more sustainable (context 72),environment,undecided,0.757,expert,Land use data,3
+ER_00729,Sea levels will rise 1 meter by 2100 (context 72),environment,undecided,0.877,easy,IPCC projections,1
+ER_00730,Renewable energy can fully replace fossil fuels (context 72),environment,undecided,0.913,medium,Grid stability,2
+ER_00731,Global temperatures will rise 2°C by 2050 (context 73),environment,supported,0.618,expert,Climate models,4
+ER_00732,Plastic pollution is the biggest ocean threat (context 73),environment,undecided,0.598,easy,Marine research,2
+ER_00733,Nuclear power is the safest energy source (context 73),environment,supported,0.665,medium,Mortality data,3
+ER_00734,Deforestation causes 10% of global emissions (context 73),environment,supported,0.941,hard,UNFCCC data,3
+ER_00735,Electric cars will solve air pollution (context 73),environment,rejected,0.75,expert,Grid emissions,4
+ER_00736,Coral reefs will disappear by 2050 (context 73),environment,undecided,0.927,easy,Marine biology,2
+ER_00737,Recycling significantly reduces waste (context 73),environment,undecided,0.736,medium,Garbage audits,2
+ER_00738,Organic farming is more sustainable (context 73),environment,undecided,0.719,hard,Land use data,3
+ER_00739,Sea levels will rise 1 meter by 2100 (context 73),environment,undecided,0.597,expert,IPCC projections,3
+ER_00740,Renewable energy can fully replace fossil fuels (context 73),environment,undecided,0.818,easy,Grid stability,2
+ER_00741,Global temperatures will rise 2°C by 2050 (context 74),environment,supported,0.698,hard,Climate models,3
+ER_00742,Plastic pollution is the biggest ocean threat (context 74),environment,undecided,0.91,expert,Marine research,4
+ER_00743,Nuclear power is the safest energy source (context 74),environment,supported,0.773,easy,Mortality data,3
+ER_00744,Deforestation causes 10% of global emissions (context 74),environment,supported,0.9,medium,UNFCCC data,3
+ER_00745,Electric cars will solve air pollution (context 74),environment,rejected,0.894,hard,Grid emissions,3
+ER_00746,Coral reefs will disappear by 2050 (context 74),environment,undecided,0.938,expert,Marine biology,2
+ER_00747,Recycling significantly reduces waste (context 74),environment,undecided,0.753,easy,Garbage audits,1
+ER_00748,Organic farming is more sustainable (context 74),environment,undecided,0.84,medium,Land use data,2
+ER_00749,Sea levels will rise 1 meter by 2100 (context 74),environment,undecided,0.803,hard,IPCC projections,4
+ER_00750,Renewable energy can fully replace fossil fuels (context 74),environment,undecided,0.717,expert,Grid stability,1
+ER_00751,Global temperatures will rise 2°C by 2050 (context 75),environment,supported,0.855,medium,Climate models,1
+ER_00752,Plastic pollution is the biggest ocean threat (context 75),environment,undecided,0.862,hard,Marine research,2
+ER_00753,Nuclear power is the safest energy source (context 75),environment,supported,0.861,expert,Mortality data,2
+ER_00754,Deforestation causes 10% of global emissions (context 75),environment,supported,0.614,easy,UNFCCC data,3
+ER_00755,Electric cars will solve air pollution (context 75),environment,rejected,0.86,medium,Grid emissions,2
+ER_00756,Coral reefs will disappear by 2050 (context 75),environment,undecided,0.784,hard,Marine biology,4
+ER_00757,Recycling significantly reduces waste (context 75),environment,undecided,0.683,expert,Garbage audits,2
+ER_00758,Organic farming is more sustainable (context 75),environment,undecided,0.711,easy,Land use data,4
+ER_00759,Sea levels will rise 1 meter by 2100 (context 75),environment,undecided,0.768,medium,IPCC projections,2
+ER_00760,Renewable energy can fully replace fossil fuels (context 75),environment,undecided,0.722,hard,Grid stability,1
+ER_00761,Global temperatures will rise 2°C by 2050 (context 76),environment,supported,0.6,easy,Climate models,3
+ER_00762,Plastic pollution is the biggest ocean threat (context 76),environment,undecided,0.556,medium,Marine research,1
+ER_00763,Nuclear power is the safest energy source (context 76),environment,supported,0.768,hard,Mortality data,1
+ER_00764,Deforestation causes 10% of global emissions (context 76),environment,supported,0.876,expert,UNFCCC data,4
+ER_00765,Electric cars will solve air pollution (context 76),environment,rejected,0.828,easy,Grid emissions,1
+ER_00766,Coral reefs will disappear by 2050 (context 76),environment,undecided,0.691,medium,Marine biology,1
+ER_00767,Recycling significantly reduces waste (context 76),environment,undecided,0.755,hard,Garbage audits,3
+ER_00768,Organic farming is more sustainable (context 76),environment,undecided,0.568,expert,Land use data,4
+ER_00769,Sea levels will rise 1 meter by 2100 (context 76),environment,undecided,0.917,easy,IPCC projections,3
+ER_00770,Renewable energy can fully replace fossil fuels (context 76),environment,undecided,0.693,medium,Grid stability,2
+ER_00771,Global temperatures will rise 2°C by 2050 (context 77),environment,supported,0.834,expert,Climate models,2
+ER_00772,Plastic pollution is the biggest ocean threat (context 77),environment,undecided,0.777,easy,Marine research,3
+ER_00773,Nuclear power is the safest energy source (context 77),environment,supported,0.651,medium,Mortality data,4
+ER_00774,Deforestation causes 10% of global emissions (context 77),environment,supported,0.735,hard,UNFCCC data,2
+ER_00775,Electric cars will solve air pollution (context 77),environment,rejected,0.595,expert,Grid emissions,4
+ER_00776,Coral reefs will disappear by 2050 (context 77),environment,undecided,0.8,easy,Marine biology,4
+ER_00777,Recycling significantly reduces waste (context 77),environment,undecided,0.729,medium,Garbage audits,3
+ER_00778,Organic farming is more sustainable (context 77),environment,undecided,0.612,hard,Land use data,4
+ER_00779,Sea levels will rise 1 meter by 2100 (context 77),environment,undecided,0.908,expert,IPCC projections,3
+ER_00780,Renewable energy can fully replace fossil fuels (context 77),environment,undecided,0.599,easy,Grid stability,1
+ER_00781,Global temperatures will rise 2°C by 2050 (context 78),environment,supported,0.754,hard,Climate models,4
+ER_00782,Plastic pollution is the biggest ocean threat (context 78),environment,undecided,0.852,expert,Marine research,1
+ER_00783,Nuclear power is the safest energy source (context 78),environment,supported,0.66,easy,Mortality data,1
+ER_00784,Deforestation causes 10% of global emissions (context 78),environment,supported,0.66,medium,UNFCCC data,3
+ER_00785,Electric cars will solve air pollution (context 78),environment,rejected,0.591,hard,Grid emissions,4
+ER_00786,Coral reefs will disappear by 2050 (context 78),environment,undecided,0.875,expert,Marine biology,4
+ER_00787,Recycling significantly reduces waste (context 78),environment,undecided,0.603,easy,Garbage audits,3
+ER_00788,Organic farming is more sustainable (context 78),environment,undecided,0.717,medium,Land use data,2
+ER_00789,Sea levels will rise 1 meter by 2100 (context 78),environment,undecided,0.702,hard,IPCC projections,1
+ER_00790,Renewable energy can fully replace fossil fuels (context 78),environment,undecided,0.688,expert,Grid stability,1
+ER_00791,Global temperatures will rise 2°C by 2050 (context 79),environment,supported,0.57,medium,Climate models,4
+ER_00792,Plastic pollution is the biggest ocean threat (context 79),environment,undecided,0.8,hard,Marine research,1
+ER_00793,Nuclear power is the safest energy source (context 79),environment,supported,0.799,expert,Mortality data,4
+ER_00794,Deforestation causes 10% of global emissions (context 79),environment,supported,0.889,easy,UNFCCC data,3
+ER_00795,Electric cars will solve air pollution (context 79),environment,rejected,0.556,medium,Grid emissions,4
+ER_00796,Coral reefs will disappear by 2050 (context 79),environment,undecided,0.901,hard,Marine biology,2
+ER_00797,Recycling significantly reduces waste (context 79),environment,undecided,0.77,expert,Garbage audits,1
+ER_00798,Organic farming is more sustainable (context 79),environment,undecided,0.708,easy,Land use data,1
+ER_00799,Sea levels will rise 1 meter by 2100 (context 79),environment,undecided,0.626,medium,IPCC projections,4
+ER_00800,Renewable energy can fully replace fossil fuels (context 79),environment,undecided,0.906,hard,Grid stability,3
+ER_00801,Global temperatures will rise 2°C by 2050 (context 80),environment,supported,0.926,easy,Climate models,4
+ER_00802,Plastic pollution is the biggest ocean threat (context 80),environment,undecided,0.889,medium,Marine research,2
+ER_00803,Nuclear power is the safest energy source (context 80),environment,supported,0.824,hard,Mortality data,3
+ER_00804,Deforestation causes 10% of global emissions (context 80),environment,supported,0.797,expert,UNFCCC data,1
+ER_00805,Electric cars will solve air pollution (context 80),environment,rejected,0.74,easy,Grid emissions,3
+ER_00806,Coral reefs will disappear by 2050 (context 80),environment,undecided,0.648,medium,Marine biology,4
+ER_00807,Recycling significantly reduces waste (context 80),environment,undecided,0.694,hard,Garbage audits,4
+ER_00808,Organic farming is more sustainable (context 80),environment,undecided,0.927,expert,Land use data,2
+ER_00809,Sea levels will rise 1 meter by 2100 (context 80),environment,undecided,0.836,easy,IPCC projections,4
+ER_00810,Renewable energy can fully replace fossil fuels (context 80),environment,undecided,0.898,medium,Grid stability,2
+ER_00811,Global temperatures will rise 2°C by 2050 (context 81),environment,supported,0.87,expert,Climate models,4
+ER_00812,Plastic pollution is the biggest ocean threat (context 81),environment,undecided,0.767,easy,Marine research,2
+ER_00813,Nuclear power is the safest energy source (context 81),environment,supported,0.937,medium,Mortality data,4
+ER_00814,Deforestation causes 10% of global emissions (context 81),environment,supported,0.624,hard,UNFCCC data,3
+ER_00815,Electric cars will solve air pollution (context 81),environment,rejected,0.761,expert,Grid emissions,3
+ER_00816,Coral reefs will disappear by 2050 (context 81),environment,undecided,0.837,easy,Marine biology,2
+ER_00817,Recycling significantly reduces waste (context 81),environment,undecided,0.664,medium,Garbage audits,1
+ER_00818,Organic farming is more sustainable (context 81),environment,undecided,0.761,hard,Land use data,3
+ER_00819,Sea levels will rise 1 meter by 2100 (context 81),environment,undecided,0.747,expert,IPCC projections,3
+ER_00820,Renewable energy can fully replace fossil fuels (context 81),environment,undecided,0.591,easy,Grid stability,3
+ER_00821,Global temperatures will rise 2°C by 2050 (context 82),environment,supported,0.693,hard,Climate models,2
+ER_00822,Plastic pollution is the biggest ocean threat (context 82),environment,undecided,0.672,expert,Marine research,2
+ER_00823,Nuclear power is the safest energy source (context 82),environment,supported,0.566,easy,Mortality data,4
+ER_00824,Deforestation causes 10% of global emissions (context 82),environment,supported,0.771,medium,UNFCCC data,2
+ER_00825,Electric cars will solve air pollution (context 82),environment,rejected,0.79,hard,Grid emissions,1
+ER_00826,Coral reefs will disappear by 2050 (context 82),environment,undecided,0.891,expert,Marine biology,2
+ER_00827,Recycling significantly reduces waste (context 82),environment,undecided,0.691,easy,Garbage audits,2
+ER_00828,Organic farming is more sustainable (context 82),environment,undecided,0.824,medium,Land use data,1
+ER_00829,Sea levels will rise 1 meter by 2100 (context 82),environment,undecided,0.606,hard,IPCC projections,1
+ER_00830,Renewable energy can fully replace fossil fuels (context 82),environment,undecided,0.805,expert,Grid stability,1
+ER_00831,Global temperatures will rise 2°C by 2050 (context 83),environment,supported,0.717,medium,Climate models,4
+ER_00832,Plastic pollution is the biggest ocean threat (context 83),environment,undecided,0.922,hard,Marine research,4
+ER_00833,Nuclear power is the safest energy source (context 83),environment,supported,0.662,expert,Mortality data,3
+ER_00834,Deforestation causes 10% of global emissions (context 83),environment,supported,0.755,easy,UNFCCC data,2
+ER_00835,Electric cars will solve air pollution (context 83),environment,rejected,0.927,medium,Grid emissions,4
+ER_00836,Coral reefs will disappear by 2050 (context 83),environment,undecided,0.68,hard,Marine biology,1
+ER_00837,Recycling significantly reduces waste (context 83),environment,undecided,0.583,expert,Garbage audits,1
+ER_00838,Organic farming is more sustainable (context 83),environment,undecided,0.869,easy,Land use data,2
+ER_00839,Sea levels will rise 1 meter by 2100 (context 83),environment,undecided,0.869,medium,IPCC projections,3
+ER_00840,Renewable energy can fully replace fossil fuels (context 83),environment,undecided,0.661,hard,Grid stability,4
+ER_00841,Global temperatures will rise 2°C by 2050 (context 84),environment,supported,0.701,easy,Climate models,4
+ER_00842,Plastic pollution is the biggest ocean threat (context 84),environment,undecided,0.632,medium,Marine research,3
+ER_00843,Nuclear power is the safest energy source (context 84),environment,supported,0.643,hard,Mortality data,2
+ER_00844,Deforestation causes 10% of global emissions (context 84),environment,supported,0.593,expert,UNFCCC data,2
+ER_00845,Electric cars will solve air pollution (context 84),environment,rejected,0.774,easy,Grid emissions,4
+ER_00846,Coral reefs will disappear by 2050 (context 84),environment,undecided,0.828,medium,Marine biology,4
+ER_00847,Recycling significantly reduces waste (context 84),environment,undecided,0.839,hard,Garbage audits,1
+ER_00848,Organic farming is more sustainable (context 84),environment,undecided,0.715,expert,Land use data,4
+ER_00849,Sea levels will rise 1 meter by 2100 (context 84),environment,undecided,0.675,easy,IPCC projections,4
+ER_00850,Renewable energy can fully replace fossil fuels (context 84),environment,undecided,0.824,medium,Grid stability,1
+ER_00851,Global temperatures will rise 2°C by 2050 (context 85),environment,supported,0.616,expert,Climate models,2
+ER_00852,Plastic pollution is the biggest ocean threat (context 85),environment,undecided,0.669,easy,Marine research,1
+ER_00853,Nuclear power is the safest energy source (context 85),environment,supported,0.622,medium,Mortality data,1
+ER_00854,Deforestation causes 10% of global emissions (context 85),environment,supported,0.755,hard,UNFCCC data,4
+ER_00855,Electric cars will solve air pollution (context 85),environment,rejected,0.836,expert,Grid emissions,2
+ER_00856,Coral reefs will disappear by 2050 (context 85),environment,undecided,0.752,easy,Marine biology,1
+ER_00857,Recycling significantly reduces waste (context 85),environment,undecided,0.598,medium,Garbage audits,2
+ER_00858,Organic farming is more sustainable (context 85),environment,undecided,0.928,hard,Land use data,3
+ER_00859,Sea levels will rise 1 meter by 2100 (context 85),environment,undecided,0.736,expert,IPCC projections,4
+ER_00860,Renewable energy can fully replace fossil fuels (context 85),environment,undecided,0.881,easy,Grid stability,2
+ER_00861,Global temperatures will rise 2°C by 2050 (context 86),environment,supported,0.764,hard,Climate models,4
+ER_00862,Plastic pollution is the biggest ocean threat (context 86),environment,undecided,0.921,expert,Marine research,4
+ER_00863,Nuclear power is the safest energy source (context 86),environment,supported,0.801,easy,Mortality data,2
+ER_00864,Deforestation causes 10% of global emissions (context 86),environment,supported,0.703,medium,UNFCCC data,3
+ER_00865,Electric cars will solve air pollution (context 86),environment,rejected,0.738,hard,Grid emissions,3
+ER_00866,Coral reefs will disappear by 2050 (context 86),environment,undecided,0.585,expert,Marine biology,1
+ER_00867,Recycling significantly reduces waste (context 86),environment,undecided,0.825,easy,Garbage audits,4
+ER_00868,Organic farming is more sustainable (context 86),environment,undecided,0.734,medium,Land use data,3
+ER_00869,Sea levels will rise 1 meter by 2100 (context 86),environment,undecided,0.748,hard,IPCC projections,1
+ER_00870,Renewable energy can fully replace fossil fuels (context 86),environment,undecided,0.568,expert,Grid stability,1
+ER_00871,Global temperatures will rise 2°C by 2050 (context 87),environment,supported,0.882,medium,Climate models,4
+ER_00872,Plastic pollution is the biggest ocean threat (context 87),environment,undecided,0.576,hard,Marine research,4
+ER_00873,Nuclear power is the safest energy source (context 87),environment,supported,0.829,expert,Mortality data,2
+ER_00874,Deforestation causes 10% of global emissions (context 87),environment,supported,0.596,easy,UNFCCC data,1
+ER_00875,Electric cars will solve air pollution (context 87),environment,rejected,0.669,medium,Grid emissions,4
+ER_00876,Coral reefs will disappear by 2050 (context 87),environment,undecided,0.946,hard,Marine biology,3
+ER_00877,Recycling significantly reduces waste (context 87),environment,undecided,0.916,expert,Garbage audits,2
+ER_00878,Organic farming is more sustainable (context 87),environment,undecided,0.837,easy,Land use data,2
+ER_00879,Sea levels will rise 1 meter by 2100 (context 87),environment,undecided,0.579,medium,IPCC projections,1
+ER_00880,Renewable energy can fully replace fossil fuels (context 87),environment,undecided,0.665,hard,Grid stability,4
+ER_00881,Global temperatures will rise 2°C by 2050 (context 88),environment,supported,0.812,easy,Climate models,4
+ER_00882,Plastic pollution is the biggest ocean threat (context 88),environment,undecided,0.713,medium,Marine research,2
+ER_00883,Nuclear power is the safest energy source (context 88),environment,supported,0.567,hard,Mortality data,1
+ER_00884,Deforestation causes 10% of global emissions (context 88),environment,supported,0.572,expert,UNFCCC data,1
+ER_00885,Electric cars will solve air pollution (context 88),environment,rejected,0.638,easy,Grid emissions,4
+ER_00886,Coral reefs will disappear by 2050 (context 88),environment,undecided,0.837,medium,Marine biology,2
+ER_00887,Recycling significantly reduces waste (context 88),environment,undecided,0.694,hard,Garbage audits,3
+ER_00888,Organic farming is more sustainable (context 88),environment,undecided,0.637,expert,Land use data,2
+ER_00889,Sea levels will rise 1 meter by 2100 (context 88),environment,undecided,0.588,easy,IPCC projections,3
+ER_00890,Renewable energy can fully replace fossil fuels (context 88),environment,undecided,0.584,medium,Grid stability,3
+ER_00891,Global temperatures will rise 2°C by 2050 (context 89),environment,supported,0.587,expert,Climate models,3
+ER_00892,Plastic pollution is the biggest ocean threat (context 89),environment,undecided,0.628,easy,Marine research,1
+ER_00893,Nuclear power is the safest energy source (context 89),environment,supported,0.748,medium,Mortality data,1
+ER_00894,Deforestation causes 10% of global emissions (context 89),environment,supported,0.713,hard,UNFCCC data,4
+ER_00895,Electric cars will solve air pollution (context 89),environment,rejected,0.668,expert,Grid emissions,2
+ER_00896,Coral reefs will disappear by 2050 (context 89),environment,undecided,0.702,easy,Marine biology,1
+ER_00897,Recycling significantly reduces waste (context 89),environment,undecided,0.58,medium,Garbage audits,2
+ER_00898,Organic farming is more sustainable (context 89),environment,undecided,0.806,hard,Land use data,1
+ER_00899,Sea levels will rise 1 meter by 2100 (context 89),environment,undecided,0.848,expert,IPCC projections,4
+ER_00900,Renewable energy can fully replace fossil fuels (context 89),environment,undecided,0.67,easy,Grid stability,3
+ER_00901,Global temperatures will rise 2°C by 2050 (context 90),environment,supported,0.818,hard,Climate models,1
+ER_00902,Plastic pollution is the biggest ocean threat (context 90),environment,undecided,0.789,expert,Marine research,2
+ER_00903,Nuclear power is the safest energy source (context 90),environment,supported,0.598,easy,Mortality data,3
+ER_00904,Deforestation causes 10% of global emissions (context 90),environment,supported,0.574,medium,UNFCCC data,1
+ER_00905,Electric cars will solve air pollution (context 90),environment,rejected,0.886,hard,Grid emissions,3
+ER_00906,Coral reefs will disappear by 2050 (context 90),environment,undecided,0.688,expert,Marine biology,3
+ER_00907,Recycling significantly reduces waste (context 90),environment,undecided,0.679,easy,Garbage audits,3
+ER_00908,Organic farming is more sustainable (context 90),environment,undecided,0.613,medium,Land use data,3
+ER_00909,Sea levels will rise 1 meter by 2100 (context 90),environment,undecided,0.703,hard,IPCC projections,4
+ER_00910,Renewable energy can fully replace fossil fuels (context 90),environment,undecided,0.624,expert,Grid stability,4
+ER_00911,Global temperatures will rise 2°C by 2050 (context 91),environment,supported,0.639,medium,Climate models,4
+ER_00912,Plastic pollution is the biggest ocean threat (context 91),environment,undecided,0.64,hard,Marine research,3
+ER_00913,Nuclear power is the safest energy source (context 91),environment,supported,0.878,expert,Mortality data,2
+ER_00914,Deforestation causes 10% of global emissions (context 91),environment,supported,0.722,easy,UNFCCC data,1
+ER_00915,Electric cars will solve air pollution (context 91),environment,rejected,0.627,medium,Grid emissions,3
+ER_00916,Coral reefs will disappear by 2050 (context 91),environment,undecided,0.62,hard,Marine biology,3
+ER_00917,Recycling significantly reduces waste (context 91),environment,undecided,0.571,expert,Garbage audits,2
+ER_00918,Organic farming is more sustainable (context 91),environment,undecided,0.908,easy,Land use data,1
+ER_00919,Sea levels will rise 1 meter by 2100 (context 91),environment,undecided,0.673,medium,IPCC projections,4
+ER_00920,Renewable energy can fully replace fossil fuels (context 91),environment,undecided,0.561,hard,Grid stability,1
+ER_00921,Global temperatures will rise 2°C by 2050 (context 92),environment,supported,0.582,easy,Climate models,1
+ER_00922,Plastic pollution is the biggest ocean threat (context 92),environment,undecided,0.703,medium,Marine research,3
+ER_00923,Nuclear power is the safest energy source (context 92),environment,supported,0.911,hard,Mortality data,4
+ER_00924,Deforestation causes 10% of global emissions (context 92),environment,supported,0.669,expert,UNFCCC data,4
+ER_00925,Electric cars will solve air pollution (context 92),environment,rejected,0.664,easy,Grid emissions,3
+ER_00926,Coral reefs will disappear by 2050 (context 92),environment,undecided,0.767,medium,Marine biology,3
+ER_00927,Recycling significantly reduces waste (context 92),environment,undecided,0.59,hard,Garbage audits,3
+ER_00928,Organic farming is more sustainable (context 92),environment,undecided,0.605,expert,Land use data,4
+ER_00929,Sea levels will rise 1 meter by 2100 (context 92),environment,undecided,0.826,easy,IPCC projections,2
+ER_00930,Renewable energy can fully replace fossil fuels (context 92),environment,undecided,0.913,medium,Grid stability,2
+ER_00931,Global temperatures will rise 2°C by 2050 (context 93),environment,supported,0.858,expert,Climate models,4
+ER_00932,Plastic pollution is the biggest ocean threat (context 93),environment,undecided,0.651,easy,Marine research,3
+ER_00933,Nuclear power is the safest energy source (context 93),environment,supported,0.707,medium,Mortality data,1
+ER_00934,Deforestation causes 10% of global emissions (context 93),environment,supported,0.617,hard,UNFCCC data,1
+ER_00935,Electric cars will solve air pollution (context 93),environment,rejected,0.618,expert,Grid emissions,1
+ER_00936,Coral reefs will disappear by 2050 (context 93),environment,undecided,0.695,easy,Marine biology,4
+ER_00937,Recycling significantly reduces waste (context 93),environment,undecided,0.854,medium,Garbage audits,3
+ER_00938,Organic farming is more sustainable (context 93),environment,undecided,0.551,hard,Land use data,4
+ER_00939,Sea levels will rise 1 meter by 2100 (context 93),environment,undecided,0.617,expert,IPCC projections,1
+ER_00940,Renewable energy can fully replace fossil fuels (context 93),environment,undecided,0.658,easy,Grid stability,1
+ER_00941,Global temperatures will rise 2°C by 2050 (context 94),environment,supported,0.628,hard,Climate models,4
+ER_00942,Plastic pollution is the biggest ocean threat (context 94),environment,undecided,0.626,expert,Marine research,2
+ER_00943,Nuclear power is the safest energy source (context 94),environment,supported,0.666,easy,Mortality data,1
+ER_00944,Deforestation causes 10% of global emissions (context 94),environment,supported,0.878,medium,UNFCCC data,4
+ER_00945,Electric cars will solve air pollution (context 94),environment,rejected,0.903,hard,Grid emissions,4
+ER_00946,Coral reefs will disappear by 2050 (context 94),environment,undecided,0.908,expert,Marine biology,4
+ER_00947,Recycling significantly reduces waste (context 94),environment,undecided,0.917,easy,Garbage audits,3
+ER_00948,Organic farming is more sustainable (context 94),environment,undecided,0.585,medium,Land use data,4
+ER_00949,Sea levels will rise 1 meter by 2100 (context 94),environment,undecided,0.927,hard,IPCC projections,3
+ER_00950,Renewable energy can fully replace fossil fuels (context 94),environment,undecided,0.621,expert,Grid stability,2
+ER_00951,Global temperatures will rise 2°C by 2050 (context 95),environment,supported,0.892,medium,Climate models,1
+ER_00952,Plastic pollution is the biggest ocean threat (context 95),environment,undecided,0.84,hard,Marine research,3
+ER_00953,Nuclear power is the safest energy source (context 95),environment,supported,0.583,expert,Mortality data,1
+ER_00954,Deforestation causes 10% of global emissions (context 95),environment,supported,0.839,easy,UNFCCC data,4
+ER_00955,Electric cars will solve air pollution (context 95),environment,rejected,0.695,medium,Grid emissions,2
+ER_00956,Coral reefs will disappear by 2050 (context 95),environment,undecided,0.727,hard,Marine biology,3
+ER_00957,Recycling significantly reduces waste (context 95),environment,undecided,0.856,expert,Garbage audits,2
+ER_00958,Organic farming is more sustainable (context 95),environment,undecided,0.651,easy,Land use data,1
+ER_00959,Sea levels will rise 1 meter by 2100 (context 95),environment,undecided,0.637,medium,IPCC projections,4
+ER_00960,Renewable energy can fully replace fossil fuels (context 95),environment,undecided,0.743,hard,Grid stability,3
+ER_00961,Global temperatures will rise 2°C by 2050 (context 96),environment,supported,0.883,easy,Climate models,3
+ER_00962,Plastic pollution is the biggest ocean threat (context 96),environment,undecided,0.723,medium,Marine research,3
+ER_00963,Nuclear power is the safest energy source (context 96),environment,supported,0.64,hard,Mortality data,1
+ER_00964,Deforestation causes 10% of global emissions (context 96),environment,supported,0.685,expert,UNFCCC data,3
+ER_00965,Electric cars will solve air pollution (context 96),environment,rejected,0.656,easy,Grid emissions,1
+ER_00966,Coral reefs will disappear by 2050 (context 96),environment,undecided,0.63,medium,Marine biology,4
+ER_00967,Recycling significantly reduces waste (context 96),environment,undecided,0.84,hard,Garbage audits,2
+ER_00968,Organic farming is more sustainable (context 96),environment,undecided,0.844,expert,Land use data,4
+ER_00969,Sea levels will rise 1 meter by 2100 (context 96),environment,undecided,0.553,easy,IPCC projections,2
+ER_00970,Renewable energy can fully replace fossil fuels (context 96),environment,undecided,0.923,medium,Grid stability,3
+ER_00971,Global temperatures will rise 2°C by 2050 (context 97),environment,supported,0.576,expert,Climate models,1
+ER_00972,Plastic pollution is the biggest ocean threat (context 97),environment,undecided,0.751,easy,Marine research,4
+ER_00973,Nuclear power is the safest energy source (context 97),environment,supported,0.676,medium,Mortality data,2
+ER_00974,Deforestation causes 10% of global emissions (context 97),environment,supported,0.861,hard,UNFCCC data,1
+ER_00975,Electric cars will solve air pollution (context 97),environment,rejected,0.767,expert,Grid emissions,1
+ER_00976,Coral reefs will disappear by 2050 (context 97),environment,undecided,0.605,easy,Marine biology,1
+ER_00977,Recycling significantly reduces waste (context 97),environment,undecided,0.863,medium,Garbage audits,1
+ER_00978,Organic farming is more sustainable (context 97),environment,undecided,0.821,hard,Land use data,1
+ER_00979,Sea levels will rise 1 meter by 2100 (context 97),environment,undecided,0.658,expert,IPCC projections,2
+ER_00980,Renewable energy can fully replace fossil fuels (context 97),environment,undecided,0.815,easy,Grid stability,1
+ER_00981,Global temperatures will rise 2°C by 2050 (context 98),environment,supported,0.657,hard,Climate models,2
+ER_00982,Plastic pollution is the biggest ocean threat (context 98),environment,undecided,0.853,expert,Marine research,3
+ER_00983,Nuclear power is the safest energy source (context 98),environment,supported,0.685,easy,Mortality data,3
+ER_00984,Deforestation causes 10% of global emissions (context 98),environment,supported,0.853,medium,UNFCCC data,2
+ER_00985,Electric cars will solve air pollution (context 98),environment,rejected,0.742,hard,Grid emissions,1
+ER_00986,Coral reefs will disappear by 2050 (context 98),environment,undecided,0.893,expert,Marine biology,1
+ER_00987,Recycling significantly reduces waste (context 98),environment,undecided,0.801,easy,Garbage audits,4
+ER_00988,Organic farming is more sustainable (context 98),environment,undecided,0.775,medium,Land use data,4
+ER_00989,Sea levels will rise 1 meter by 2100 (context 98),environment,undecided,0.701,hard,IPCC projections,4
+ER_00990,Renewable energy can fully replace fossil fuels (context 98),environment,undecided,0.794,expert,Grid stability,3
+ER_00991,Global temperatures will rise 2°C by 2050 (context 99),environment,supported,0.774,medium,Climate models,2
+ER_00992,Plastic pollution is the biggest ocean threat (context 99),environment,undecided,0.741,hard,Marine research,2
+ER_00993,Nuclear power is the safest energy source (context 99),environment,supported,0.571,expert,Mortality data,4
+ER_00994,Deforestation causes 10% of global emissions (context 99),environment,supported,0.916,easy,UNFCCC data,3
+ER_00995,Electric cars will solve air pollution (context 99),environment,rejected,0.88,medium,Grid emissions,3
+ER_00996,Coral reefs will disappear by 2050 (context 99),environment,undecided,0.7,hard,Marine biology,1
+ER_00997,Recycling significantly reduces waste (context 99),environment,undecided,0.586,expert,Garbage audits,4
+ER_00998,Organic farming is more sustainable (context 99),environment,undecided,0.727,easy,Land use data,4
+ER_00999,Sea levels will rise 1 meter by 2100 (context 99),environment,undecided,0.857,medium,IPCC projections,3
+ER_01000,Renewable energy can fully replace fossil fuels (context 99),environment,undecided,0.71,hard,Grid stability,2
+ER_01001,Global temperatures will rise 2°C by 2050 (context 100),environment,supported,0.566,easy,Climate models,4
+ER_01002,Plastic pollution is the biggest ocean threat (context 100),environment,undecided,0.618,medium,Marine research,3
+ER_01003,Nuclear power is the safest energy source (context 100),environment,supported,0.617,hard,Mortality data,3
+ER_01004,Deforestation causes 10% of global emissions (context 100),environment,supported,0.619,expert,UNFCCC data,1
+ER_01005,Electric cars will solve air pollution (context 100),environment,rejected,0.816,easy,Grid emissions,2
+ER_01006,Coral reefs will disappear by 2050 (context 100),environment,undecided,0.578,medium,Marine biology,2
+ER_01007,Recycling significantly reduces waste (context 100),environment,undecided,0.871,hard,Garbage audits,3
+ER_01008,Organic farming is more sustainable (context 100),environment,undecided,0.674,expert,Land use data,4
+ER_01009,Sea levels will rise 1 meter by 2100 (context 100),environment,undecided,0.9,easy,IPCC projections,1
+ER_01010,Renewable energy can fully replace fossil fuels (context 100),environment,undecided,0.939,medium,Grid stability,4
+ER_01011,Global temperatures will rise 2°C by 2050 (context 101),environment,supported,0.731,expert,Climate models,3
+ER_01012,Plastic pollution is the biggest ocean threat (context 101),environment,undecided,0.92,easy,Marine research,4
+ER_01013,Nuclear power is the safest energy source (context 101),environment,supported,0.556,medium,Mortality data,1
+ER_01014,Deforestation causes 10% of global emissions (context 101),environment,supported,0.598,hard,UNFCCC data,4
+ER_01015,Electric cars will solve air pollution (context 101),environment,rejected,0.771,expert,Grid emissions,3
+ER_01016,Coral reefs will disappear by 2050 (context 101),environment,undecided,0.832,easy,Marine biology,4
+ER_01017,Recycling significantly reduces waste (context 101),environment,undecided,0.823,medium,Garbage audits,1
+ER_01018,Organic farming is more sustainable (context 101),environment,undecided,0.65,hard,Land use data,2
+ER_01019,Sea levels will rise 1 meter by 2100 (context 101),environment,undecided,0.925,expert,IPCC projections,1
+ER_01020,Renewable energy can fully replace fossil fuels (context 101),environment,undecided,0.909,easy,Grid stability,4
+ER_01021,Global temperatures will rise 2°C by 2050 (context 102),environment,supported,0.864,hard,Climate models,1
+ER_01022,Plastic pollution is the biggest ocean threat (context 102),environment,undecided,0.671,expert,Marine research,4
+ER_01023,Nuclear power is the safest energy source (context 102),environment,supported,0.563,easy,Mortality data,3
+ER_01024,Deforestation causes 10% of global emissions (context 102),environment,supported,0.844,medium,UNFCCC data,2
+ER_01025,Electric cars will solve air pollution (context 102),environment,rejected,0.564,hard,Grid emissions,2
+ER_01026,Coral reefs will disappear by 2050 (context 102),environment,undecided,0.744,expert,Marine biology,4
+ER_01027,Recycling significantly reduces waste (context 102),environment,undecided,0.615,easy,Garbage audits,3
+ER_01028,Organic farming is more sustainable (context 102),environment,undecided,0.784,medium,Land use data,1
+ER_01029,Sea levels will rise 1 meter by 2100 (context 102),environment,undecided,0.942,hard,IPCC projections,1
+ER_01030,Renewable energy can fully replace fossil fuels (context 102),environment,undecided,0.608,expert,Grid stability,2
+ER_01031,Global temperatures will rise 2°C by 2050 (context 103),environment,supported,0.876,medium,Climate models,2
+ER_01032,Plastic pollution is the biggest ocean threat (context 103),environment,undecided,0.623,hard,Marine research,1
+ER_01033,Nuclear power is the safest energy source (context 103),environment,supported,0.588,expert,Mortality data,2
+ER_01034,Deforestation causes 10% of global emissions (context 103),environment,supported,0.788,easy,UNFCCC data,3
+ER_01035,Electric cars will solve air pollution (context 103),environment,rejected,0.828,medium,Grid emissions,4
+ER_01036,Coral reefs will disappear by 2050 (context 103),environment,undecided,0.634,hard,Marine biology,2
+ER_01037,Recycling significantly reduces waste (context 103),environment,undecided,0.636,expert,Garbage audits,4
+ER_01038,Organic farming is more sustainable (context 103),environment,undecided,0.702,easy,Land use data,1
+ER_01039,Sea levels will rise 1 meter by 2100 (context 103),environment,undecided,0.613,medium,IPCC projections,4
+ER_01040,Renewable energy can fully replace fossil fuels (context 103),environment,undecided,0.641,hard,Grid stability,4
+ER_01041,Global temperatures will rise 2°C by 2050 (context 104),environment,supported,0.928,easy,Climate models,3
+ER_01042,Plastic pollution is the biggest ocean threat (context 104),environment,undecided,0.932,medium,Marine research,3
+ER_01043,Nuclear power is the safest energy source (context 104),environment,supported,0.696,hard,Mortality data,3
+ER_01044,Deforestation causes 10% of global emissions (context 104),environment,supported,0.918,expert,UNFCCC data,4
+ER_01045,Electric cars will solve air pollution (context 104),environment,rejected,0.619,easy,Grid emissions,4
+ER_01046,Coral reefs will disappear by 2050 (context 104),environment,undecided,0.701,medium,Marine biology,4
+ER_01047,Recycling significantly reduces waste (context 104),environment,undecided,0.608,hard,Garbage audits,2
+ER_01048,Organic farming is more sustainable (context 104),environment,undecided,0.714,expert,Land use data,1
+ER_01049,Sea levels will rise 1 meter by 2100 (context 104),environment,undecided,0.617,easy,IPCC projections,1
+ER_01050,Renewable energy can fully replace fossil fuels (context 104),environment,undecided,0.565,medium,Grid stability,1

@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+SH_00001,Quantum entanglement enables faster-than-light communication,science,rejected,0.652,easy,Physics papers,2
+SH_00002,CRISPR can cure genetic diseases in humans,science,undecided,0.797,medium,Clinical trials,4
+SH_00003,Dark matter accounts for 27% of the universe,science,supported,0.659,hard,Astrophysics data,1
+SH_00004,Vaccines cause autism,science,rejected,0.679,expert,Epidemiological studies,3
+SH_00005,Exercise reduces risk of heart disease,science,supported,0.928,easy,Meta-analyses,3
+SH_00006,GMOs are harmful to human health,science,rejected,0.66,medium,FDA studies,4
+SH_00007,Meditation reduces cortisol levels,science,supported,0.825,hard,Clinical studies,3
+SH_00008,Homeopathy is effective beyond placebo,science,rejected,0.856,expert,Cochrane reviews,4
+SH_00009,Climate change is primarily human-caused,science,supported,0.635,easy,IPCC reports,4
+SH_00010,Cold weather causes the common cold,science,rejected,0.588,medium,Virology research,3
+SH_00011,Quantum entanglement enables faster-than-light communication (context 1),science,rejected,0.899,expert,Physics papers,2
+SH_00012,CRISPR can cure genetic diseases in humans (context 1),science,undecided,0.713,easy,Clinical trials,3
+SH_00013,Dark matter accounts for 27% of the universe (context 1),science,supported,0.765,medium,Astrophysics data,1
+SH_00014,Vaccines cause autism (context 1),science,rejected,0.926,hard,Epidemiological studies,3
+SH_00015,Exercise reduces risk of heart disease (context 1),science,supported,0.619,expert,Meta-analyses,2
+SH_00016,GMOs are harmful to human health (context 1),science,rejected,0.855,easy,FDA studies,2
+SH_00017,Meditation reduces cortisol levels (context 1),science,supported,0.702,medium,Clinical studies,1
+SH_00018,Homeopathy is effective beyond placebo (context 1),science,rejected,0.719,hard,Cochrane reviews,1
+SH_00019,Climate change is primarily human-caused (context 1),science,supported,0.89,expert,IPCC reports,3
+SH_00020,Cold weather causes the common cold (context 1),science,rejected,0.914,easy,Virology research,2
+SH_00021,Quantum entanglement enables faster-than-light communication (context 2),science,rejected,0.595,hard,Physics papers,4
+SH_00022,CRISPR can cure genetic diseases in humans (context 2),science,undecided,0.612,expert,Clinical trials,3
+SH_00023,Dark matter accounts for 27% of the universe (context 2),science,supported,0.752,easy,Astrophysics data,1
+SH_00024,Vaccines cause autism (context 2),science,rejected,0.836,medium,Epidemiological studies,2
+SH_00025,Exercise reduces risk of heart disease (context 2),science,supported,0.713,hard,Meta-analyses,3
+SH_00026,GMOs are harmful to human health (context 2),science,rejected,0.912,expert,FDA studies,1
+SH_00027,Meditation reduces cortisol levels (context 2),science,supported,0.621,easy,Clinical studies,1
+SH_00028,Homeopathy is effective beyond placebo (context 2),science,rejected,0.835,medium,Cochrane reviews,2
+SH_00029,Climate change is primarily human-caused (context 2),science,supported,0.691,hard,IPCC reports,3
+SH_00030,Cold weather causes the common cold (context 2),science,rejected,0.752,expert,Virology research,2
+SH_00031,Quantum entanglement enables faster-than-light communication (context 3),science,rejected,0.805,medium,Physics papers,2
+SH_00032,CRISPR can cure genetic diseases in humans (context 3),science,undecided,0.769,hard,Clinical trials,1
+SH_00033,Dark matter accounts for 27% of the universe (context 3),science,supported,0.775,expert,Astrophysics data,4
+SH_00034,Vaccines cause autism (context 3),science,rejected,0.664,easy,Epidemiological studies,3
+SH_00035,Exercise reduces risk of heart disease (context 3),science,supported,0.57,medium,Meta-analyses,1
+SH_00036,GMOs are harmful to human health (context 3),science,rejected,0.697,hard,FDA studies,4
+SH_00037,Meditation reduces cortisol levels (context 3),science,supported,0.832,expert,Clinical studies,1
+SH_00038,Homeopathy is effective beyond placebo (context 3),science,rejected,0.646,easy,Cochrane reviews,4
+SH_00039,Climate change is primarily human-caused (context 3),science,supported,0.604,medium,IPCC reports,3
+SH_00040,Cold weather causes the common cold (context 3),science,rejected,0.705,hard,Virology research,4
+SH_00041,Quantum entanglement enables faster-than-light communication (context 4),science,rejected,0.585,easy,Physics papers,3
+SH_00042,CRISPR can cure genetic diseases in humans (context 4),science,undecided,0.862,medium,Clinical trials,1
+SH_00043,Dark matter accounts for 27% of the universe (context 4),science,supported,0.588,hard,Astrophysics data,4
+SH_00044,Vaccines cause autism (context 4),science,rejected,0.702,expert,Epidemiological studies,4
+SH_00045,Exercise reduces risk of heart disease (context 4),science,supported,0.907,easy,Meta-analyses,3
+SH_00046,GMOs are harmful to human health (context 4),science,rejected,0.64,medium,FDA studies,2
+SH_00047,Meditation reduces cortisol levels (context 4),science,supported,0.871,hard,Clinical studies,3
+SH_00048,Homeopathy is effective beyond placebo (context 4),science,rejected,0.856,expert,Cochrane reviews,2
+SH_00049,Climate change is primarily human-caused (context 4),science,supported,0.852,easy,IPCC reports,1
+SH_00050,Cold weather causes the common cold (context 4),science,rejected,0.661,medium,Virology research,4
+SH_00051,Quantum entanglement enables faster-than-light communication (context 5),science,rejected,0.557,expert,Physics papers,4
+SH_00052,CRISPR can cure genetic diseases in humans (context 5),science,undecided,0.778,easy,Clinical trials,1
+SH_00053,Dark matter accounts for 27% of the universe (context 5),science,supported,0.755,medium,Astrophysics data,2
+SH_00054,Vaccines cause autism (context 5),science,rejected,0.634,hard,Epidemiological studies,2
+SH_00055,Exercise reduces risk of heart disease (context 5),science,supported,0.95,expert,Meta-analyses,3
+SH_00056,GMOs are harmful to human health (context 5),science,rejected,0.853,easy,FDA studies,4
+SH_00057,Meditation reduces cortisol levels (context 5),science,supported,0.927,medium,Clinical studies,3
+SH_00058,Homeopathy is effective beyond placebo (context 5),science,rejected,0.658,hard,Cochrane reviews,3
+SH_00059,Climate change is primarily human-caused (context 5),science,supported,0.736,expert,IPCC reports,2
+SH_00060,Cold weather causes the common cold (context 5),science,rejected,0.676,easy,Virology research,1
+SH_00061,Quantum entanglement enables faster-than-light communication (context 6),science,rejected,0.798,hard,Physics papers,2
+SH_00062,CRISPR can cure genetic diseases in humans (context 6),science,undecided,0.57,expert,Clinical trials,2
+SH_00063,Dark matter accounts for 27% of the universe (context 6),science,supported,0.65,easy,Astrophysics data,2
+SH_00064,Vaccines cause autism (context 6),science,rejected,0.565,medium,Epidemiological studies,3
+SH_00065,Exercise reduces risk of heart disease (context 6),science,supported,0.749,hard,Meta-analyses,4
+SH_00066,GMOs are harmful to human health (context 6),science,rejected,0.902,expert,FDA studies,2
+SH_00067,Meditation reduces cortisol levels (context 6),science,supported,0.665,easy,Clinical studies,1
+SH_00068,Homeopathy is effective beyond placebo (context 6),science,rejected,0.704,medium,Cochrane reviews,4
+SH_00069,Climate change is primarily human-caused (context 6),science,supported,0.911,hard,IPCC reports,1
+SH_00070,Cold weather causes the common cold (context 6),science,rejected,0.641,expert,Virology research,4
+SH_00071,Quantum entanglement enables faster-than-light communication (context 7),science,rejected,0.821,medium,Physics papers,2
+SH_00072,CRISPR can cure genetic diseases in humans (context 7),science,undecided,0.945,hard,Clinical trials,1
+SH_00073,Dark matter accounts for 27% of the universe (context 7),science,supported,0.817,expert,Astrophysics data,2
+SH_00074,Vaccines cause autism (context 7),science,rejected,0.805,easy,Epidemiological studies,4
+SH_00075,Exercise reduces risk of heart disease (context 7),science,supported,0.797,medium,Meta-analyses,1
+SH_00076,GMOs are harmful to human health (context 7),science,rejected,0.673,hard,FDA studies,2
+SH_00077,Meditation reduces cortisol levels (context 7),science,supported,0.673,expert,Clinical studies,4
+SH_00078,Homeopathy is effective beyond placebo (context 7),science,rejected,0.65,easy,Cochrane reviews,1
+SH_00079,Climate change is primarily human-caused (context 7),science,supported,0.815,medium,IPCC reports,3
+SH_00080,Cold weather causes the common cold (context 7),science,rejected,0.907,hard,Virology research,4
+SH_00081,Quantum entanglement enables faster-than-light communication (context 8),science,rejected,0.858,easy,Physics papers,2
+SH_00082,CRISPR can cure genetic diseases in humans (context 8),science,undecided,0.745,medium,Clinical trials,1
+SH_00083,Dark matter accounts for 27% of the universe (context 8),science,supported,0.81,hard,Astrophysics data,4
+SH_00084,Vaccines cause autism (context 8),science,rejected,0.701,expert,Epidemiological studies,4
+SH_00085,Exercise reduces risk of heart disease (context 8),science,supported,0.724,easy,Meta-analyses,2
+SH_00086,GMOs are harmful to human health (context 8),science,rejected,0.64,medium,FDA studies,1
+SH_00087,Meditation reduces cortisol levels (context 8),science,supported,0.698,hard,Clinical studies,2
+SH_00088,Homeopathy is effective beyond placebo (context 8),science,rejected,0.557,expert,Cochrane reviews,1
+SH_00089,Climate change is primarily human-caused (context 8),science,supported,0.91,easy,IPCC reports,1
+SH_00090,Cold weather causes the common cold (context 8),science,rejected,0.878,medium,Virology research,1
+SH_00091,Quantum entanglement enables faster-than-light communication (context 9),science,rejected,0.679,expert,Physics papers,4
+SH_00092,CRISPR can cure genetic diseases in humans (context 9),science,undecided,0.784,easy,Clinical trials,1
+SH_00093,Dark matter accounts for 27% of the universe (context 9),science,supported,0.857,medium,Astrophysics data,2
+SH_00094,Vaccines cause autism (context 9),science,rejected,0.812,hard,Epidemiological studies,1
+SH_00095,Exercise reduces risk of heart disease (context 9),science,supported,0.857,expert,Meta-analyses,1
+SH_00096,GMOs are harmful to human health (context 9),science,rejected,0.912,easy,FDA studies,2
+SH_00097,Meditation reduces cortisol levels (context 9),science,supported,0.861,medium,Clinical studies,2
+SH_00098,Homeopathy is effective beyond placebo (context 9),science,rejected,0.921,hard,Cochrane reviews,1
+SH_00099,Climate change is primarily human-caused (context 9),science,supported,0.698,expert,IPCC reports,4
+SH_00100,Cold weather causes the common cold (context 9),science,rejected,0.747,easy,Virology research,4
+SH_00101,Quantum entanglement enables faster-than-light communication (context 10),science,rejected,0.787,hard,Physics papers,3
+SH_00102,CRISPR can cure genetic diseases in humans (context 10),science,undecided,0.928,expert,Clinical trials,4
+SH_00103,Dark matter accounts for 27% of the universe (context 10),science,supported,0.834,easy,Astrophysics data,4
+SH_00104,Vaccines cause autism (context 10),science,rejected,0.852,medium,Epidemiological studies,2
+SH_00105,Exercise reduces risk of heart disease (context 10),science,supported,0.623,hard,Meta-analyses,3
+SH_00106,GMOs are harmful to human health (context 10),science,rejected,0.907,expert,FDA studies,2
+SH_00107,Meditation reduces cortisol levels (context 10),science,supported,0.755,easy,Clinical studies,4
+SH_00108,Homeopathy is effective beyond placebo (context 10),science,rejected,0.561,medium,Cochrane reviews,4
+SH_00109,Climate change is primarily human-caused (context 10),science,supported,0.813,hard,IPCC reports,1
+SH_00110,Cold weather causes the common cold (context 10),science,rejected,0.811,expert,Virology research,4
+SH_00111,Quantum entanglement enables faster-than-light communication (context 11),science,rejected,0.711,medium,Physics papers,4
+SH_00112,CRISPR can cure genetic diseases in humans (context 11),science,undecided,0.697,hard,Clinical trials,4
+SH_00113,Dark matter accounts for 27% of the universe (context 11),science,supported,0.835,expert,Astrophysics data,3
+SH_00114,Vaccines cause autism (context 11),science,rejected,0.57,easy,Epidemiological studies,3
+SH_00115,Exercise reduces risk of heart disease (context 11),science,supported,0.833,medium,Meta-analyses,1
+SH_00116,GMOs are harmful to human health (context 11),science,rejected,0.654,hard,FDA studies,3
+SH_00117,Meditation reduces cortisol levels (context 11),science,supported,0.703,expert,Clinical studies,1
+SH_00118,Homeopathy is effective beyond placebo (context 11),science,rejected,0.656,easy,Cochrane reviews,4
+SH_00119,Climate change is primarily human-caused (context 11),science,supported,0.668,medium,IPCC reports,3
+SH_00120,Cold weather causes the common cold (context 11),science,rejected,0.91,hard,Virology research,4
+SH_00121,Quantum entanglement enables faster-than-light communication (context 12),science,rejected,0.652,easy,Physics papers,1
+SH_00122,CRISPR can cure genetic diseases in humans (context 12),science,undecided,0.718,medium,Clinical trials,4
+SH_00123,Dark matter accounts for 27% of the universe (context 12),science,supported,0.71,hard,Astrophysics data,2
+SH_00124,Vaccines cause autism (context 12),science,rejected,0.761,expert,Epidemiological studies,1
+SH_00125,Exercise reduces risk of heart disease (context 12),science,supported,0.877,easy,Meta-analyses,1
+SH_00126,GMOs are harmful to human health (context 12),science,rejected,0.566,medium,FDA studies,3
+SH_00127,Meditation reduces cortisol levels (context 12),science,supported,0.744,hard,Clinical studies,1
+SH_00128,Homeopathy is effective beyond placebo (context 12),science,rejected,0.9,expert,Cochrane reviews,3
+SH_00129,Climate change is primarily human-caused (context 12),science,supported,0.945,easy,IPCC reports,4
+SH_00130,Cold weather causes the common cold (context 12),science,rejected,0.914,medium,Virology research,4
+SH_00131,Quantum entanglement enables faster-than-light communication (context 13),science,rejected,0.678,expert,Physics papers,1
+SH_00132,CRISPR can cure genetic diseases in humans (context 13),science,undecided,0.879,easy,Clinical trials,1
+SH_00133,Dark matter accounts for 27% of the universe (context 13),science,supported,0.923,medium,Astrophysics data,1
+SH_00134,Vaccines cause autism (context 13),science,rejected,0.768,hard,Epidemiological studies,3
+SH_00135,Exercise reduces risk of heart disease (context 13),science,supported,0.924,expert,Meta-analyses,3
+SH_00136,GMOs are harmful to human health (context 13),science,rejected,0.812,easy,FDA studies,4
+SH_00137,Meditation reduces cortisol levels (context 13),science,supported,0.713,medium,Clinical studies,3
+SH_00138,Homeopathy is effective beyond placebo (context 13),science,rejected,0.713,hard,Cochrane reviews,1
+SH_00139,Climate change is primarily human-caused (context 13),science,supported,0.57,expert,IPCC reports,3
+SH_00140,Cold weather causes the common cold (context 13),science,rejected,0.7,easy,Virology research,1
+SH_00141,Quantum entanglement enables faster-than-light communication (context 14),science,rejected,0.651,hard,Physics papers,4
+SH_00142,CRISPR can cure genetic diseases in humans (context 14),science,undecided,0.656,expert,Clinical trials,3
+SH_00143,Dark matter accounts for 27% of the universe (context 14),science,supported,0.809,easy,Astrophysics data,2
+SH_00144,Vaccines cause autism (context 14),science,rejected,0.66,medium,Epidemiological studies,4
+SH_00145,Exercise reduces risk of heart disease (context 14),science,supported,0.767,hard,Meta-analyses,3
+SH_00146,GMOs are harmful to human health (context 14),science,rejected,0.924,expert,FDA studies,3
+SH_00147,Meditation reduces cortisol levels (context 14),science,supported,0.731,easy,Clinical studies,2
+SH_00148,Homeopathy is effective beyond placebo (context 14),science,rejected,0.949,medium,Cochrane reviews,2
+SH_00149,Climate change is primarily human-caused (context 14),science,supported,0.734,hard,IPCC reports,2
+SH_00150,Cold weather causes the common cold (context 14),science,rejected,0.894,expert,Virology research,4
+SH_00151,Quantum entanglement enables faster-than-light communication (context 15),science,rejected,0.91,medium,Physics papers,3
+SH_00152,CRISPR can cure genetic diseases in humans (context 15),science,undecided,0.581,hard,Clinical trials,2
+SH_00153,Dark matter accounts for 27% of the universe (context 15),science,supported,0.681,expert,Astrophysics data,4
+SH_00154,Vaccines cause autism (context 15),science,rejected,0.855,easy,Epidemiological studies,4
+SH_00155,Exercise reduces risk of heart disease (context 15),science,supported,0.717,medium,Meta-analyses,3
+SH_00156,GMOs are harmful to human health (context 15),science,rejected,0.729,hard,FDA studies,3
+SH_00157,Meditation reduces cortisol levels (context 15),science,supported,0.65,expert,Clinical studies,4
+SH_00158,Homeopathy is effective beyond placebo (context 15),science,rejected,0.562,easy,Cochrane reviews,4
+SH_00159,Climate change is primarily human-caused (context 15),science,supported,0.551,medium,IPCC reports,3
+SH_00160,Cold weather causes the common cold (context 15),science,rejected,0.641,hard,Virology research,1
+SH_00161,Quantum entanglement enables faster-than-light communication (context 16),science,rejected,0.814,easy,Physics papers,4
+SH_00162,CRISPR can cure genetic diseases in humans (context 16),science,undecided,0.824,medium,Clinical trials,1
+SH_00163,Dark matter accounts for 27% of the universe (context 16),science,supported,0.694,hard,Astrophysics data,1
+SH_00164,Vaccines cause autism (context 16),science,rejected,0.88,expert,Epidemiological studies,3
+SH_00165,Exercise reduces risk of heart disease (context 16),science,supported,0.836,easy,Meta-analyses,2
+SH_00166,GMOs are harmful to human health (context 16),science,rejected,0.693,medium,FDA studies,4
+SH_00167,Meditation reduces cortisol levels (context 16),science,supported,0.717,hard,Clinical studies,1
+SH_00168,Homeopathy is effective beyond placebo (context 16),science,rejected,0.936,expert,Cochrane reviews,2
+SH_00169,Climate change is primarily human-caused (context 16),science,supported,0.57,easy,IPCC reports,3
+SH_00170,Cold weather causes the common cold (context 16),science,rejected,0.872,medium,Virology research,2
+SH_00171,Quantum entanglement enables faster-than-light communication (context 17),science,rejected,0.586,expert,Physics papers,3
+SH_00172,CRISPR can cure genetic diseases in humans (context 17),science,undecided,0.74,easy,Clinical trials,1
+SH_00173,Dark matter accounts for 27% of the universe (context 17),science,supported,0.719,medium,Astrophysics data,1
+SH_00174,Vaccines cause autism (context 17),science,rejected,0.664,hard,Epidemiological studies,4
+SH_00175,Exercise reduces risk of heart disease (context 17),science,supported,0.766,expert,Meta-analyses,1
+SH_00176,GMOs are harmful to human health (context 17),science,rejected,0.761,easy,FDA studies,2
+SH_00177,Meditation reduces cortisol levels (context 17),science,supported,0.558,medium,Clinical studies,4
+SH_00178,Homeopathy is effective beyond placebo (context 17),science,rejected,0.615,hard,Cochrane reviews,3
+SH_00179,Climate change is primarily human-caused (context 17),science,supported,0.932,expert,IPCC reports,1
+SH_00180,Cold weather causes the common cold (context 17),science,rejected,0.822,easy,Virology research,3
+SH_00181,Quantum entanglement enables faster-than-light communication (context 18),science,rejected,0.87,hard,Physics papers,1
+SH_00182,CRISPR can cure genetic diseases in humans (context 18),science,undecided,0.579,expert,Clinical trials,4
+SH_00183,Dark matter accounts for 27% of the universe (context 18),science,supported,0.685,easy,Astrophysics data,4
+SH_00184,Vaccines cause autism (context 18),science,rejected,0.85,medium,Epidemiological studies,1
+SH_00185,Exercise reduces risk of heart disease (context 18),science,supported,0.902,hard,Meta-analyses,1
+SH_00186,GMOs are harmful to human health (context 18),science,rejected,0.726,expert,FDA studies,3
+SH_00187,Meditation reduces cortisol levels (context 18),science,supported,0.892,easy,Clinical studies,1
+SH_00188,Homeopathy is effective beyond placebo (context 18),science,rejected,0.586,medium,Cochrane reviews,2
+SH_00189,Climate change is primarily human-caused (context 18),science,supported,0.95,hard,IPCC reports,4
+SH_00190,Cold weather causes the common cold (context 18),science,rejected,0.705,expert,Virology research,3
+SH_00191,Quantum entanglement enables faster-than-light communication (context 19),science,rejected,0.785,medium,Physics papers,3
+SH_00192,CRISPR can cure genetic diseases in humans (context 19),science,undecided,0.748,hard,Clinical trials,3
+SH_00193,Dark matter accounts for 27% of the universe (context 19),science,supported,0.678,expert,Astrophysics data,3
+SH_00194,Vaccines cause autism (context 19),science,rejected,0.78,easy,Epidemiological studies,2
+SH_00195,Exercise reduces risk of heart disease (context 19),science,supported,0.686,medium,Meta-analyses,4
+SH_00196,GMOs are harmful to human health (context 19),science,rejected,0.725,hard,FDA studies,4
+SH_00197,Meditation reduces cortisol levels (context 19),science,supported,0.694,expert,Clinical studies,3
+SH_00198,Homeopathy is effective beyond placebo (context 19),science,rejected,0.908,easy,Cochrane reviews,2
+SH_00199,Climate change is primarily human-caused (context 19),science,supported,0.777,medium,IPCC reports,2
+SH_00200,Cold weather causes the common cold (context 19),science,rejected,0.667,hard,Virology research,1
+SH_00201,Quantum entanglement enables faster-than-light communication (context 20),science,rejected,0.8,easy,Physics papers,4
+SH_00202,CRISPR can cure genetic diseases in humans (context 20),science,undecided,0.902,medium,Clinical trials,3
+SH_00203,Dark matter accounts for 27% of the universe (context 20),science,supported,0.934,hard,Astrophysics data,4
+SH_00204,Vaccines cause autism (context 20),science,rejected,0.629,expert,Epidemiological studies,4
+SH_00205,Exercise reduces risk of heart disease (context 20),science,supported,0.634,easy,Meta-analyses,2
+SH_00206,GMOs are harmful to human health (context 20),science,rejected,0.591,medium,FDA studies,2
+SH_00207,Meditation reduces cortisol levels (context 20),science,supported,0.862,hard,Clinical studies,1
+SH_00208,Homeopathy is effective beyond placebo (context 20),science,rejected,0.727,expert,Cochrane reviews,1
+SH_00209,Climate change is primarily human-caused (context 20),science,supported,0.765,easy,IPCC reports,3
+SH_00210,Cold weather causes the common cold (context 20),science,rejected,0.876,medium,Virology research,2
+SH_00211,Quantum entanglement enables faster-than-light communication (context 21),science,rejected,0.634,expert,Physics papers,4
+SH_00212,CRISPR can cure genetic diseases in humans (context 21),science,undecided,0.677,easy,Clinical trials,1
+SH_00213,Dark matter accounts for 27% of the universe (context 21),science,supported,0.773,medium,Astrophysics data,4
+SH_00214,Vaccines cause autism (context 21),science,rejected,0.849,hard,Epidemiological studies,2
+SH_00215,Exercise reduces risk of heart disease (context 21),science,supported,0.687,expert,Meta-analyses,2
+SH_00216,GMOs are harmful to human health (context 21),science,rejected,0.685,easy,FDA studies,4
+SH_00217,Meditation reduces cortisol levels (context 21),science,supported,0.809,medium,Clinical studies,4
+SH_00218,Homeopathy is effective beyond placebo (context 21),science,rejected,0.942,hard,Cochrane reviews,4
+SH_00219,Climate change is primarily human-caused (context 21),science,supported,0.554,expert,IPCC reports,4
+SH_00220,Cold weather causes the common cold (context 21),science,rejected,0.822,easy,Virology research,1
+SH_00221,Quantum entanglement enables faster-than-light communication (context 22),science,rejected,0.904,hard,Physics papers,1
+SH_00222,CRISPR can cure genetic diseases in humans (context 22),science,undecided,0.557,expert,Clinical trials,3
+SH_00223,Dark matter accounts for 27% of the universe (context 22),science,supported,0.943,easy,Astrophysics data,2
+SH_00224,Vaccines cause autism (context 22),science,rejected,0.714,medium,Epidemiological studies,1
+SH_00225,Exercise reduces risk of heart disease (context 22),science,supported,0.763,hard,Meta-analyses,2
+SH_00226,GMOs are harmful to human health (context 22),science,rejected,0.941,expert,FDA studies,1
+SH_00227,Meditation reduces cortisol levels (context 22),science,supported,0.945,easy,Clinical studies,1
+SH_00228,Homeopathy is effective beyond placebo (context 22),science,rejected,0.724,medium,Cochrane reviews,4
+SH_00229,Climate change is primarily human-caused (context 22),science,supported,0.87,hard,IPCC reports,2
+SH_00230,Cold weather causes the common cold (context 22),science,rejected,0.578,expert,Virology research,3
+SH_00231,Quantum entanglement enables faster-than-light communication (context 23),science,rejected,0.58,medium,Physics papers,4
+SH_00232,CRISPR can cure genetic diseases in humans (context 23),science,undecided,0.778,hard,Clinical trials,1
+SH_00233,Dark matter accounts for 27% of the universe (context 23),science,supported,0.695,expert,Astrophysics data,4
+SH_00234,Vaccines cause autism (context 23),science,rejected,0.933,easy,Epidemiological studies,3
+SH_00235,Exercise reduces risk of heart disease (context 23),science,supported,0.856,medium,Meta-analyses,1
+SH_00236,GMOs are harmful to human health (context 23),science,rejected,0.873,hard,FDA studies,3
+SH_00237,Meditation reduces cortisol levels (context 23),science,supported,0.822,expert,Clinical studies,2
+SH_00238,Homeopathy is effective beyond placebo (context 23),science,rejected,0.903,easy,Cochrane reviews,4
+SH_00239,Climate change is primarily human-caused (context 23),science,supported,0.59,medium,IPCC reports,1
+SH_00240,Cold weather causes the common cold (context 23),science,rejected,0.569,hard,Virology research,1
+SH_00241,Quantum entanglement enables faster-than-light communication (context 24),science,rejected,0.863,easy,Physics papers,2
+SH_00242,CRISPR can cure genetic diseases in humans (context 24),science,undecided,0.751,medium,Clinical trials,3
+SH_00243,Dark matter accounts for 27% of the universe (context 24),science,supported,0.651,hard,Astrophysics data,1
+SH_00244,Vaccines cause autism (context 24),science,rejected,0.875,expert,Epidemiological studies,3
+SH_00245,Exercise reduces risk of heart disease (context 24),science,supported,0.922,easy,Meta-analyses,3
+SH_00246,GMOs are harmful to human health (context 24),science,rejected,0.703,medium,FDA studies,1
+SH_00247,Meditation reduces cortisol levels (context 24),science,supported,0.704,hard,Clinical studies,3
+SH_00248,Homeopathy is effective beyond placebo (context 24),science,rejected,0.642,expert,Cochrane reviews,1
+SH_00249,Climate change is primarily human-caused (context 24),science,supported,0.927,easy,IPCC reports,4
+SH_00250,Cold weather causes the common cold (context 24),science,rejected,0.714,medium,Virology research,2
+SH_00251,Quantum entanglement enables faster-than-light communication (context 25),science,rejected,0.739,expert,Physics papers,1
+SH_00252,CRISPR can cure genetic diseases in humans (context 25),science,undecided,0.867,easy,Clinical trials,4
+SH_00253,Dark matter accounts for 27% of the universe (context 25),science,supported,0.595,medium,Astrophysics data,2
+SH_00254,Vaccines cause autism (context 25),science,rejected,0.74,hard,Epidemiological studies,3
+SH_00255,Exercise reduces risk of heart disease (context 25),science,supported,0.865,expert,Meta-analyses,4
+SH_00256,GMOs are harmful to human health (context 25),science,rejected,0.563,easy,FDA studies,3
+SH_00257,Meditation reduces cortisol levels (context 25),science,supported,0.633,medium,Clinical studies,3
+SH_00258,Homeopathy is effective beyond placebo (context 25),science,rejected,0.736,hard,Cochrane reviews,2
+SH_00259,Climate change is primarily human-caused (context 25),science,supported,0.845,expert,IPCC reports,2
+SH_00260,Cold weather causes the common cold (context 25),science,rejected,0.626,easy,Virology research,3
+SH_00261,Quantum entanglement enables faster-than-light communication (context 26),science,rejected,0.943,hard,Physics papers,3
+SH_00262,CRISPR can cure genetic diseases in humans (context 26),science,undecided,0.594,expert,Clinical trials,2
+SH_00263,Dark matter accounts for 27% of the universe (context 26),science,supported,0.604,easy,Astrophysics data,4
+SH_00264,Vaccines cause autism (context 26),science,rejected,0.754,medium,Epidemiological studies,3
+SH_00265,Exercise reduces risk of heart disease (context 26),science,supported,0.742,hard,Meta-analyses,3
+SH_00266,GMOs are harmful to human health (context 26),science,rejected,0.673,expert,FDA studies,2
+SH_00267,Meditation reduces cortisol levels (context 26),science,supported,0.754,easy,Clinical studies,2
+SH_00268,Homeopathy is effective beyond placebo (context 26),science,rejected,0.666,medium,Cochrane reviews,4
+SH_00269,Climate change is primarily human-caused (context 26),science,supported,0.552,hard,IPCC reports,1
+SH_00270,Cold weather causes the common cold (context 26),science,rejected,0.77,expert,Virology research,3
+SH_00271,Quantum entanglement enables faster-than-light communication (context 27),science,rejected,0.567,medium,Physics papers,1
+SH_00272,CRISPR can cure genetic diseases in humans (context 27),science,undecided,0.839,hard,Clinical trials,3
+SH_00273,Dark matter accounts for 27% of the universe (context 27),science,supported,0.588,expert,Astrophysics data,4
+SH_00274,Vaccines cause autism (context 27),science,rejected,0.792,easy,Epidemiological studies,1
+SH_00275,Exercise reduces risk of heart disease (context 27),science,supported,0.944,medium,Meta-analyses,2
+SH_00276,GMOs are harmful to human health (context 27),science,rejected,0.67,hard,FDA studies,1
+SH_00277,Meditation reduces cortisol levels (context 27),science,supported,0.879,expert,Clinical studies,4
+SH_00278,Homeopathy is effective beyond placebo (context 27),science,rejected,0.792,easy,Cochrane reviews,3
+SH_00279,Climate change is primarily human-caused (context 27),science,supported,0.818,medium,IPCC reports,1
+SH_00280,Cold weather causes the common cold (context 27),science,rejected,0.632,hard,Virology research,4
+SH_00281,Quantum entanglement enables faster-than-light communication (context 28),science,rejected,0.604,easy,Physics papers,3
+SH_00282,CRISPR can cure genetic diseases in humans (context 28),science,undecided,0.833,medium,Clinical trials,4
+SH_00283,Dark matter accounts for 27% of the universe (context 28),science,supported,0.914,hard,Astrophysics data,1
+SH_00284,Vaccines cause autism (context 28),science,rejected,0.94,expert,Epidemiological studies,2
+SH_00285,Exercise reduces risk of heart disease (context 28),science,supported,0.689,easy,Meta-analyses,3
+SH_00286,GMOs are harmful to human health (context 28),science,rejected,0.762,medium,FDA studies,2
+SH_00287,Meditation reduces cortisol levels (context 28),science,supported,0.641,hard,Clinical studies,1
+SH_00288,Homeopathy is effective beyond placebo (context 28),science,rejected,0.856,expert,Cochrane reviews,1
+SH_00289,Climate change is primarily human-caused (context 28),science,supported,0.887,easy,IPCC reports,2
+SH_00290,Cold weather causes the common cold (context 28),science,rejected,0.576,medium,Virology research,4
+SH_00291,Quantum entanglement enables faster-than-light communication (context 29),science,rejected,0.888,expert,Physics papers,1
+SH_00292,CRISPR can cure genetic diseases in humans (context 29),science,undecided,0.95,easy,Clinical trials,1
+SH_00293,Dark matter accounts for 27% of the universe (context 29),science,supported,0.787,medium,Astrophysics data,4
+SH_00294,Vaccines cause autism (context 29),science,rejected,0.713,hard,Epidemiological studies,2
+SH_00295,Exercise reduces risk of heart disease (context 29),science,supported,0.62,expert,Meta-analyses,4
+SH_00296,GMOs are harmful to human health (context 29),science,rejected,0.785,easy,FDA studies,2
+SH_00297,Meditation reduces cortisol levels (context 29),science,supported,0.642,medium,Clinical studies,1
+SH_00298,Homeopathy is effective beyond placebo (context 29),science,rejected,0.778,hard,Cochrane reviews,3
+SH_00299,Climate change is primarily human-caused (context 29),science,supported,0.877,expert,IPCC reports,3
+SH_00300,Cold weather causes the common cold (context 29),science,rejected,0.921,easy,Virology research,2
+SH_00301,Quantum entanglement enables faster-than-light communication (context 30),science,rejected,0.917,hard,Physics papers,1
+SH_00302,CRISPR can cure genetic diseases in humans (context 30),science,undecided,0.807,expert,Clinical trials,3
+SH_00303,Dark matter accounts for 27% of the universe (context 30),science,supported,0.622,easy,Astrophysics data,2
+SH_00304,Vaccines cause autism (context 30),science,rejected,0.604,medium,Epidemiological studies,4
+SH_00305,Exercise reduces risk of heart disease (context 30),science,supported,0.649,hard,Meta-analyses,4
+SH_00306,GMOs are harmful to human health (context 30),science,rejected,0.842,expert,FDA studies,1
+SH_00307,Meditation reduces cortisol levels (context 30),science,supported,0.605,easy,Clinical studies,4
+SH_00308,Homeopathy is effective beyond placebo (context 30),science,rejected,0.926,medium,Cochrane reviews,2
+SH_00309,Climate change is primarily human-caused (context 30),science,supported,0.57,hard,IPCC reports,2
+SH_00310,Cold weather causes the common cold (context 30),science,rejected,0.793,expert,Virology research,2
+SH_00311,Quantum entanglement enables faster-than-light communication (context 31),science,rejected,0.582,medium,Physics papers,3
+SH_00312,CRISPR can cure genetic diseases in humans (context 31),science,undecided,0.752,hard,Clinical trials,3
+SH_00313,Dark matter accounts for 27% of the universe (context 31),science,supported,0.803,expert,Astrophysics data,3
+SH_00314,Vaccines cause autism (context 31),science,rejected,0.887,easy,Epidemiological studies,1
+SH_00315,Exercise reduces risk of heart disease (context 31),science,supported,0.595,medium,Meta-analyses,4
+SH_00316,GMOs are harmful to human health (context 31),science,rejected,0.561,hard,FDA studies,2
+SH_00317,Meditation reduces cortisol levels (context 31),science,supported,0.948,expert,Clinical studies,1
+SH_00318,Homeopathy is effective beyond placebo (context 31),science,rejected,0.616,easy,Cochrane reviews,2
+SH_00319,Climate change is primarily human-caused (context 31),science,supported,0.849,medium,IPCC reports,3
+SH_00320,Cold weather causes the common cold (context 31),science,rejected,0.737,hard,Virology research,4
+SH_00321,Quantum entanglement enables faster-than-light communication (context 32),science,rejected,0.744,easy,Physics papers,1
+SH_00322,CRISPR can cure genetic diseases in humans (context 32),science,undecided,0.598,medium,Clinical trials,3
+SH_00323,Dark matter accounts for 27% of the universe (context 32),science,supported,0.871,hard,Astrophysics data,1
+SH_00324,Vaccines cause autism (context 32),science,rejected,0.642,expert,Epidemiological studies,4
+SH_00325,Exercise reduces risk of heart disease (context 32),science,supported,0.895,easy,Meta-analyses,1
+SH_00326,GMOs are harmful to human health (context 32),science,rejected,0.69,medium,FDA studies,2
+SH_00327,Meditation reduces cortisol levels (context 32),science,supported,0.649,hard,Clinical studies,3
+SH_00328,Homeopathy is effective beyond placebo (context 32),science,rejected,0.635,expert,Cochrane reviews,4
+SH_00329,Climate change is primarily human-caused (context 32),science,supported,0.614,easy,IPCC reports,3
+SH_00330,Cold weather causes the common cold (context 32),science,rejected,0.813,medium,Virology research,1
+SH_00331,Quantum entanglement enables faster-than-light communication (context 33),science,rejected,0.57,expert,Physics papers,1
+SH_00332,CRISPR can cure genetic diseases in humans (context 33),science,undecided,0.66,easy,Clinical trials,1
+SH_00333,Dark matter accounts for 27% of the universe (context 33),science,supported,0.577,medium,Astrophysics data,1
+SH_00334,Vaccines cause autism (context 33),science,rejected,0.579,hard,Epidemiological studies,1
+SH_00335,Exercise reduces risk of heart disease (context 33),science,supported,0.571,expert,Meta-analyses,4
+SH_00336,GMOs are harmful to human health (context 33),science,rejected,0.729,easy,FDA studies,3
+SH_00337,Meditation reduces cortisol levels (context 33),science,supported,0.936,medium,Clinical studies,1
+SH_00338,Homeopathy is effective beyond placebo (context 33),science,rejected,0.772,hard,Cochrane reviews,3
+SH_00339,Climate change is primarily human-caused (context 33),science,supported,0.861,expert,IPCC reports,3
+SH_00340,Cold weather causes the common cold (context 33),science,rejected,0.78,easy,Virology research,3
+SH_00341,Quantum entanglement enables faster-than-light communication (context 34),science,rejected,0.599,hard,Physics papers,4
+SH_00342,CRISPR can cure genetic diseases in humans (context 34),science,undecided,0.896,expert,Clinical trials,4
+SH_00343,Dark matter accounts for 27% of the universe (context 34),science,supported,0.643,easy,Astrophysics data,2
+SH_00344,Vaccines cause autism (context 34),science,rejected,0.77,medium,Epidemiological studies,2
+SH_00345,Exercise reduces risk of heart disease (context 34),science,supported,0.648,hard,Meta-analyses,3
+SH_00346,GMOs are harmful to human health (context 34),science,rejected,0.691,expert,FDA studies,3
+SH_00347,Meditation reduces cortisol levels (context 34),science,supported,0.805,easy,Clinical studies,1
+SH_00348,Homeopathy is effective beyond placebo (context 34),science,rejected,0.875,medium,Cochrane reviews,1
+SH_00349,Climate change is primarily human-caused (context 34),science,supported,0.746,hard,IPCC reports,3
+SH_00350,Cold weather causes the common cold (context 34),science,rejected,0.788,expert,Virology research,4
+SH_00351,Quantum entanglement enables faster-than-light communication (context 35),science,rejected,0.858,medium,Physics papers,3
+SH_00352,CRISPR can cure genetic diseases in humans (context 35),science,undecided,0.914,hard,Clinical trials,1
+SH_00353,Dark matter accounts for 27% of the universe (context 35),science,supported,0.833,expert,Astrophysics data,3
+SH_00354,Vaccines cause autism (context 35),science,rejected,0.916,easy,Epidemiological studies,2
+SH_00355,Exercise reduces risk of heart disease (context 35),science,supported,0.944,medium,Meta-analyses,4
+SH_00356,GMOs are harmful to human health (context 35),science,rejected,0.815,hard,FDA studies,2
+SH_00357,Meditation reduces cortisol levels (context 35),science,supported,0.77,expert,Clinical studies,2
+SH_00358,Homeopathy is effective beyond placebo (context 35),science,rejected,0.768,easy,Cochrane reviews,1
+SH_00359,Climate change is primarily human-caused (context 35),science,supported,0.745,medium,IPCC reports,2
+SH_00360,Cold weather causes the common cold (context 35),science,rejected,0.608,hard,Virology research,2
+SH_00361,Quantum entanglement enables faster-than-light communication (context 36),science,rejected,0.589,easy,Physics papers,3
+SH_00362,CRISPR can cure genetic diseases in humans (context 36),science,undecided,0.847,medium,Clinical trials,1
+SH_00363,Dark matter accounts for 27% of the universe (context 36),science,supported,0.939,hard,Astrophysics data,4
+SH_00364,Vaccines cause autism (context 36),science,rejected,0.782,expert,Epidemiological studies,2
+SH_00365,Exercise reduces risk of heart disease (context 36),science,supported,0.613,easy,Meta-analyses,4
+SH_00366,GMOs are harmful to human health (context 36),science,rejected,0.726,medium,FDA studies,4
+SH_00367,Meditation reduces cortisol levels (context 36),science,supported,0.852,hard,Clinical studies,3
+SH_00368,Homeopathy is effective beyond placebo (context 36),science,rejected,0.556,expert,Cochrane reviews,4
+SH_00369,Climate change is primarily human-caused (context 36),science,supported,0.864,easy,IPCC reports,4
+SH_00370,Cold weather causes the common cold (context 36),science,rejected,0.6,medium,Virology research,3
+SH_00371,Quantum entanglement enables faster-than-light communication (context 37),science,rejected,0.851,expert,Physics papers,3
+SH_00372,CRISPR can cure genetic diseases in humans (context 37),science,undecided,0.752,easy,Clinical trials,3
+SH_00373,Dark matter accounts for 27% of the universe (context 37),science,supported,0.847,medium,Astrophysics data,4
+SH_00374,Vaccines cause autism (context 37),science,rejected,0.753,hard,Epidemiological studies,4
+SH_00375,Exercise reduces risk of heart disease (context 37),science,supported,0.805,expert,Meta-analyses,1
+SH_00376,GMOs are harmful to human health (context 37),science,rejected,0.678,easy,FDA studies,1
+SH_00377,Meditation reduces cortisol levels (context 37),science,supported,0.628,medium,Clinical studies,4
+SH_00378,Homeopathy is effective beyond placebo (context 37),science,rejected,0.821,hard,Cochrane reviews,4
+SH_00379,Climate change is primarily human-caused (context 37),science,supported,0.66,expert,IPCC reports,4
+SH_00380,Cold weather causes the common cold (context 37),science,rejected,0.932,easy,Virology research,4
+SH_00381,Quantum entanglement enables faster-than-light communication (context 38),science,rejected,0.695,hard,Physics papers,1
+SH_00382,CRISPR can cure genetic diseases in humans (context 38),science,undecided,0.664,expert,Clinical trials,3
+SH_00383,Dark matter accounts for 27% of the universe (context 38),science,supported,0.933,easy,Astrophysics data,4
+SH_00384,Vaccines cause autism (context 38),science,rejected,0.931,medium,Epidemiological studies,3
+SH_00385,Exercise reduces risk of heart disease (context 38),science,supported,0.618,hard,Meta-analyses,4
+SH_00386,GMOs are harmful to human health (context 38),science,rejected,0.807,expert,FDA studies,1
+SH_00387,Meditation reduces cortisol levels (context 38),science,supported,0.789,easy,Clinical studies,2
+SH_00388,Homeopathy is effective beyond placebo (context 38),science,rejected,0.924,medium,Cochrane reviews,2
+SH_00389,Climate change is primarily human-caused (context 38),science,supported,0.684,hard,IPCC reports,2
+SH_00390,Cold weather causes the common cold (context 38),science,rejected,0.938,expert,Virology research,2
+SH_00391,Quantum entanglement enables faster-than-light communication (context 39),science,rejected,0.866,medium,Physics papers,1
+SH_00392,CRISPR can cure genetic diseases in humans (context 39),science,undecided,0.8,hard,Clinical trials,3
+SH_00393,Dark matter accounts for 27% of the universe (context 39),science,supported,0.91,expert,Astrophysics data,2
+SH_00394,Vaccines cause autism (context 39),science,rejected,0.659,easy,Epidemiological studies,2
+SH_00395,Exercise reduces risk of heart disease (context 39),science,supported,0.747,medium,Meta-analyses,2
+SH_00396,GMOs are harmful to human health (context 39),science,rejected,0.751,hard,FDA studies,2
+SH_00397,Meditation reduces cortisol levels (context 39),science,supported,0.932,expert,Clinical studies,4
+SH_00398,Homeopathy is effective beyond placebo (context 39),science,rejected,0.639,easy,Cochrane reviews,1
+SH_00399,Climate change is primarily human-caused (context 39),science,supported,0.83,medium,IPCC reports,1
+SH_00400,Cold weather causes the common cold (context 39),science,rejected,0.564,hard,Virology research,4
+SH_00401,Quantum entanglement enables faster-than-light communication (context 40),science,rejected,0.718,easy,Physics papers,3
+SH_00402,CRISPR can cure genetic diseases in humans (context 40),science,undecided,0.653,medium,Clinical trials,4
+SH_00403,Dark matter accounts for 27% of the universe (context 40),science,supported,0.923,hard,Astrophysics data,4
+SH_00404,Vaccines cause autism (context 40),science,rejected,0.843,expert,Epidemiological studies,2
+SH_00405,Exercise reduces risk of heart disease (context 40),science,supported,0.86,easy,Meta-analyses,2
+SH_00406,GMOs are harmful to human health (context 40),science,rejected,0.907,medium,FDA studies,4
+SH_00407,Meditation reduces cortisol levels (context 40),science,supported,0.875,hard,Clinical studies,4
+SH_00408,Homeopathy is effective beyond placebo (context 40),science,rejected,0.851,expert,Cochrane reviews,1
+SH_00409,Climate change is primarily human-caused (context 40),science,supported,0.562,easy,IPCC reports,1
+SH_00410,Cold weather causes the common cold (context 40),science,rejected,0.805,medium,Virology research,2
+SH_00411,Quantum entanglement enables faster-than-light communication (context 41),science,rejected,0.946,expert,Physics papers,3
+SH_00412,CRISPR can cure genetic diseases in humans (context 41),science,undecided,0.715,easy,Clinical trials,2
+SH_00413,Dark matter accounts for 27% of the universe (context 41),science,supported,0.907,medium,Astrophysics data,1
+SH_00414,Vaccines cause autism (context 41),science,rejected,0.863,hard,Epidemiological studies,1
+SH_00415,Exercise reduces risk of heart disease (context 41),science,supported,0.874,expert,Meta-analyses,2
+SH_00416,GMOs are harmful to human health (context 41),science,rejected,0.691,easy,FDA studies,1
+SH_00417,Meditation reduces cortisol levels (context 41),science,supported,0.818,medium,Clinical studies,3
+SH_00418,Homeopathy is effective beyond placebo (context 41),science,rejected,0.844,hard,Cochrane reviews,3
+SH_00419,Climate change is primarily human-caused (context 41),science,supported,0.587,expert,IPCC reports,2
+SH_00420,Cold weather causes the common cold (context 41),science,rejected,0.725,easy,Virology research,3
+SH_00421,Quantum entanglement enables faster-than-light communication (context 42),science,rejected,0.82,hard,Physics papers,1
+SH_00422,CRISPR can cure genetic diseases in humans (context 42),science,undecided,0.741,expert,Clinical trials,4
+SH_00423,Dark matter accounts for 27% of the universe (context 42),science,supported,0.598,easy,Astrophysics data,1
+SH_00424,Vaccines cause autism (context 42),science,rejected,0.551,medium,Epidemiological studies,3
+SH_00425,Exercise reduces risk of heart disease (context 42),science,supported,0.795,hard,Meta-analyses,1
+SH_00426,GMOs are harmful to human health (context 42),science,rejected,0.825,expert,FDA studies,4
+SH_00427,Meditation reduces cortisol levels (context 42),science,supported,0.73,easy,Clinical studies,1
+SH_00428,Homeopathy is effective beyond placebo (context 42),science,rejected,0.916,medium,Cochrane reviews,4
+SH_00429,Climate change is primarily human-caused (context 42),science,supported,0.644,hard,IPCC reports,1
+SH_00430,Cold weather causes the common cold (context 42),science,rejected,0.849,expert,Virology research,4
+SH_00431,Quantum entanglement enables faster-than-light communication (context 43),science,rejected,0.596,medium,Physics papers,3
+SH_00432,CRISPR can cure genetic diseases in humans (context 43),science,undecided,0.564,hard,Clinical trials,3
+SH_00433,Dark matter accounts for 27% of the universe (context 43),science,supported,0.784,expert,Astrophysics data,2
+SH_00434,Vaccines cause autism (context 43),science,rejected,0.772,easy,Epidemiological studies,1
+SH_00435,Exercise reduces risk of heart disease (context 43),science,supported,0.643,medium,Meta-analyses,1
+SH_00436,GMOs are harmful to human health (context 43),science,rejected,0.764,hard,FDA studies,1
+SH_00437,Meditation reduces cortisol levels (context 43),science,supported,0.852,expert,Clinical studies,3
+SH_00438,Homeopathy is effective beyond placebo (context 43),science,rejected,0.602,easy,Cochrane reviews,4
+SH_00439,Climate change is primarily human-caused (context 43),science,supported,0.929,medium,IPCC reports,1
+SH_00440,Cold weather causes the common cold (context 43),science,rejected,0.64,hard,Virology research,3
+SH_00441,Quantum entanglement enables faster-than-light communication (context 44),science,rejected,0.864,easy,Physics papers,1
+SH_00442,CRISPR can cure genetic diseases in humans (context 44),science,undecided,0.718,medium,Clinical trials,2
+SH_00443,Dark matter accounts for 27% of the universe (context 44),science,supported,0.76,hard,Astrophysics data,1
+SH_00444,Vaccines cause autism (context 44),science,rejected,0.616,expert,Epidemiological studies,4
+SH_00445,Exercise reduces risk of heart disease (context 44),science,supported,0.634,easy,Meta-analyses,3
+SH_00446,GMOs are harmful to human health (context 44),science,rejected,0.907,medium,FDA studies,3
+SH_00447,Meditation reduces cortisol levels (context 44),science,supported,0.672,hard,Clinical studies,3
+SH_00448,Homeopathy is effective beyond placebo (context 44),science,rejected,0.723,expert,Cochrane reviews,4
+SH_00449,Climate change is primarily human-caused (context 44),science,supported,0.565,easy,IPCC reports,4
+SH_00450,Cold weather causes the common cold (context 44),science,rejected,0.731,medium,Virology research,1
+SH_00451,Quantum entanglement enables faster-than-light communication (context 45),science,rejected,0.712,expert,Physics papers,4
+SH_00452,CRISPR can cure genetic diseases in humans (context 45),science,undecided,0.836,easy,Clinical trials,1
+SH_00453,Dark matter accounts for 27% of the universe (context 45),science,supported,0.79,medium,Astrophysics data,1
+SH_00454,Vaccines cause autism (context 45),science,rejected,0.744,hard,Epidemiological studies,3
+SH_00455,Exercise reduces risk of heart disease (context 45),science,supported,0.628,expert,Meta-analyses,4
+SH_00456,GMOs are harmful to human health (context 45),science,rejected,0.797,easy,FDA studies,3
+SH_00457,Meditation reduces cortisol levels (context 45),science,supported,0.902,medium,Clinical studies,1
+SH_00458,Homeopathy is effective beyond placebo (context 45),science,rejected,0.611,hard,Cochrane reviews,1
+SH_00459,Climate change is primarily human-caused (context 45),science,supported,0.739,expert,IPCC reports,2
+SH_00460,Cold weather causes the common cold (context 45),science,rejected,0.902,easy,Virology research,2
+SH_00461,Quantum entanglement enables faster-than-light communication (context 46),science,rejected,0.8,hard,Physics papers,4
+SH_00462,CRISPR can cure genetic diseases in humans (context 46),science,undecided,0.737,expert,Clinical trials,2
+SH_00463,Dark matter accounts for 27% of the universe (context 46),science,supported,0.707,easy,Astrophysics data,4
+SH_00464,Vaccines cause autism (context 46),science,rejected,0.867,medium,Epidemiological studies,2
+SH_00465,Exercise reduces risk of heart disease (context 46),science,supported,0.693,hard,Meta-analyses,3
+SH_00466,GMOs are harmful to human health (context 46),science,rejected,0.67,expert,FDA studies,2
+SH_00467,Meditation reduces cortisol levels (context 46),science,supported,0.6,easy,Clinical studies,2
+SH_00468,Homeopathy is effective beyond placebo (context 46),science,rejected,0.55,medium,Cochrane reviews,4
+SH_00469,Climate change is primarily human-caused (context 46),science,supported,0.596,hard,IPCC reports,4
+SH_00470,Cold weather causes the common cold (context 46),science,rejected,0.775,expert,Virology research,1
+SH_00471,Quantum entanglement enables faster-than-light communication (context 47),science,rejected,0.658,medium,Physics papers,3
+SH_00472,CRISPR can cure genetic diseases in humans (context 47),science,undecided,0.563,hard,Clinical trials,4
+SH_00473,Dark matter accounts for 27% of the universe (context 47),science,supported,0.856,expert,Astrophysics data,3
+SH_00474,Vaccines cause autism (context 47),science,rejected,0.745,easy,Epidemiological studies,4
+SH_00475,Exercise reduces risk of heart disease (context 47),science,supported,0.804,medium,Meta-analyses,1
+SH_00476,GMOs are harmful to human health (context 47),science,rejected,0.637,hard,FDA studies,4
+SH_00477,Meditation reduces cortisol levels (context 47),science,supported,0.64,expert,Clinical studies,4
+SH_00478,Homeopathy is effective beyond placebo (context 47),science,rejected,0.604,easy,Cochrane reviews,3
+SH_00479,Climate change is primarily human-caused (context 47),science,supported,0.555,medium,IPCC reports,3
+SH_00480,Cold weather causes the common cold (context 47),science,rejected,0.668,hard,Virology research,1
+SH_00481,Quantum entanglement enables faster-than-light communication (context 48),science,rejected,0.827,easy,Physics papers,1
+SH_00482,CRISPR can cure genetic diseases in humans (context 48),science,undecided,0.743,medium,Clinical trials,3
+SH_00483,Dark matter accounts for 27% of the universe (context 48),science,supported,0.68,hard,Astrophysics data,2
+SH_00484,Vaccines cause autism (context 48),science,rejected,0.772,expert,Epidemiological studies,2
+SH_00485,Exercise reduces risk of heart disease (context 48),science,supported,0.586,easy,Meta-analyses,2
+SH_00486,GMOs are harmful to human health (context 48),science,rejected,0.806,medium,FDA studies,1
+SH_00487,Meditation reduces cortisol levels (context 48),science,supported,0.869,hard,Clinical studies,3
+SH_00488,Homeopathy is effective beyond placebo (context 48),science,rejected,0.635,expert,Cochrane reviews,2
+SH_00489,Climate change is primarily human-caused (context 48),science,supported,0.7,easy,IPCC reports,1
+SH_00490,Cold weather causes the common cold (context 48),science,rejected,0.645,medium,Virology research,4
+SH_00491,Quantum entanglement enables faster-than-light communication (context 49),science,rejected,0.665,expert,Physics papers,1
+SH_00492,CRISPR can cure genetic diseases in humans (context 49),science,undecided,0.873,easy,Clinical trials,4
+SH_00493,Dark matter accounts for 27% of the universe (context 49),science,supported,0.621,medium,Astrophysics data,3
+SH_00494,Vaccines cause autism (context 49),science,rejected,0.68,hard,Epidemiological studies,3
+SH_00495,Exercise reduces risk of heart disease (context 49),science,supported,0.754,expert,Meta-analyses,1
+SH_00496,GMOs are harmful to human health (context 49),science,rejected,0.621,easy,FDA studies,4
+SH_00497,Meditation reduces cortisol levels (context 49),science,supported,0.656,medium,Clinical studies,2
+SH_00498,Homeopathy is effective beyond placebo (context 49),science,rejected,0.867,hard,Cochrane reviews,3
+SH_00499,Climate change is primarily human-caused (context 49),science,supported,0.879,expert,IPCC reports,3
+SH_00500,Cold weather causes the common cold (context 49),science,rejected,0.895,easy,Virology research,1
+SH_00501,Quantum entanglement enables faster-than-light communication (context 50),science,rejected,0.726,hard,Physics papers,1
+SH_00502,CRISPR can cure genetic diseases in humans (context 50),science,undecided,0.802,expert,Clinical trials,4
+SH_00503,Dark matter accounts for 27% of the universe (context 50),science,supported,0.94,easy,Astrophysics data,1
+SH_00504,Vaccines cause autism (context 50),science,rejected,0.912,medium,Epidemiological studies,4
+SH_00505,Exercise reduces risk of heart disease (context 50),science,supported,0.925,hard,Meta-analyses,4
+SH_00506,GMOs are harmful to human health (context 50),science,rejected,0.834,expert,FDA studies,1
+SH_00507,Meditation reduces cortisol levels (context 50),science,supported,0.571,easy,Clinical studies,1
+SH_00508,Homeopathy is effective beyond placebo (context 50),science,rejected,0.861,medium,Cochrane reviews,2
+SH_00509,Climate change is primarily human-caused (context 50),science,supported,0.92,hard,IPCC reports,4
+SH_00510,Cold weather causes the common cold (context 50),science,rejected,0.687,expert,Virology research,4
+SH_00511,Quantum entanglement enables faster-than-light communication (context 51),science,rejected,0.678,medium,Physics papers,1
+SH_00512,CRISPR can cure genetic diseases in humans (context 51),science,undecided,0.718,hard,Clinical trials,1
+SH_00513,Dark matter accounts for 27% of the universe (context 51),science,supported,0.621,expert,Astrophysics data,4
+SH_00514,Vaccines cause autism (context 51),science,rejected,0.589,easy,Epidemiological studies,4
+SH_00515,Exercise reduces risk of heart disease (context 51),science,supported,0.744,medium,Meta-analyses,3
+SH_00516,GMOs are harmful to human health (context 51),science,rejected,0.885,hard,FDA studies,3
+SH_00517,Meditation reduces cortisol levels (context 51),science,supported,0.575,expert,Clinical studies,1
+SH_00518,Homeopathy is effective beyond placebo (context 51),science,rejected,0.876,easy,Cochrane reviews,2
+SH_00519,Climate change is primarily human-caused (context 51),science,supported,0.785,medium,IPCC reports,1
+SH_00520,Cold weather causes the common cold (context 51),science,rejected,0.857,hard,Virology research,4
+SH_00521,Quantum entanglement enables faster-than-light communication (context 52),science,rejected,0.801,easy,Physics papers,2
+SH_00522,CRISPR can cure genetic diseases in humans (context 52),science,undecided,0.662,medium,Clinical trials,1
+SH_00523,Dark matter accounts for 27% of the universe (context 52),science,supported,0.616,hard,Astrophysics data,4
+SH_00524,Vaccines cause autism (context 52),science,rejected,0.58,expert,Epidemiological studies,1
+SH_00525,Exercise reduces risk of heart disease (context 52),science,supported,0.657,easy,Meta-analyses,3
+SH_00526,GMOs are harmful to human health (context 52),science,rejected,0.6,medium,FDA studies,2
+SH_00527,Meditation reduces cortisol levels (context 52),science,supported,0.849,hard,Clinical studies,3
+SH_00528,Homeopathy is effective beyond placebo (context 52),science,rejected,0.904,expert,Cochrane reviews,2
+SH_00529,Climate change is primarily human-caused (context 52),science,supported,0.562,easy,IPCC reports,4
+SH_00530,Cold weather causes the common cold (context 52),science,rejected,0.881,medium,Virology research,3
+SH_00531,Quantum entanglement enables faster-than-light communication (context 53),science,rejected,0.795,expert,Physics papers,3
+SH_00532,CRISPR can cure genetic diseases in humans (context 53),science,undecided,0.872,easy,Clinical trials,4
+SH_00533,Dark matter accounts for 27% of the universe (context 53),science,supported,0.815,medium,Astrophysics data,1
+SH_00534,Vaccines cause autism (context 53),science,rejected,0.76,hard,Epidemiological studies,3
+SH_00535,Exercise reduces risk of heart disease (context 53),science,supported,0.863,expert,Meta-analyses,3
+SH_00536,GMOs are harmful to human health (context 53),science,rejected,0.893,easy,FDA studies,3
+SH_00537,Meditation reduces cortisol levels (context 53),science,supported,0.691,medium,Clinical studies,2
+SH_00538,Homeopathy is effective beyond placebo (context 53),science,rejected,0.68,hard,Cochrane reviews,1
+SH_00539,Climate change is primarily human-caused (context 53),science,supported,0.636,expert,IPCC reports,4
+SH_00540,Cold weather causes the common cold (context 53),science,rejected,0.647,easy,Virology research,1
+SH_00541,Quantum entanglement enables faster-than-light communication (context 54),science,rejected,0.864,hard,Physics papers,2
+SH_00542,CRISPR can cure genetic diseases in humans (context 54),science,undecided,0.756,expert,Clinical trials,3
+SH_00543,Dark matter accounts for 27% of the universe (context 54),science,supported,0.679,easy,Astrophysics data,1
+SH_00544,Vaccines cause autism (context 54),science,rejected,0.833,medium,Epidemiological studies,2
+SH_00545,Exercise reduces risk of heart disease (context 54),science,supported,0.608,hard,Meta-analyses,4
+SH_00546,GMOs are harmful to human health (context 54),science,rejected,0.739,expert,FDA studies,3
+SH_00547,Meditation reduces cortisol levels (context 54),science,supported,0.636,easy,Clinical studies,1
+SH_00548,Homeopathy is effective beyond placebo (context 54),science,rejected,0.665,medium,Cochrane reviews,4
+SH_00549,Climate change is primarily human-caused (context 54),science,supported,0.71,hard,IPCC reports,4
+SH_00550,Cold weather causes the common cold (context 54),science,rejected,0.683,expert,Virology research,2
+SH_00551,Quantum entanglement enables faster-than-light communication (context 55),science,rejected,0.594,medium,Physics papers,1
+SH_00552,CRISPR can cure genetic diseases in humans (context 55),science,undecided,0.824,hard,Clinical trials,3
+SH_00553,Dark matter accounts for 27% of the universe (context 55),science,supported,0.861,expert,Astrophysics data,3
+SH_00554,Vaccines cause autism (context 55),science,rejected,0.929,easy,Epidemiological studies,4
+SH_00555,Exercise reduces risk of heart disease (context 55),science,supported,0.928,medium,Meta-analyses,4
+SH_00556,GMOs are harmful to human health (context 55),science,rejected,0.735,hard,FDA studies,1
+SH_00557,Meditation reduces cortisol levels (context 55),science,supported,0.726,expert,Clinical studies,1
+SH_00558,Homeopathy is effective beyond placebo (context 55),science,rejected,0.871,easy,Cochrane reviews,4
+SH_00559,Climate change is primarily human-caused (context 55),science,supported,0.579,medium,IPCC reports,2
+SH_00560,Cold weather causes the common cold (context 55),science,rejected,0.717,hard,Virology research,3
+SH_00561,Quantum entanglement enables faster-than-light communication (context 56),science,rejected,0.816,easy,Physics papers,2
+SH_00562,CRISPR can cure genetic diseases in humans (context 56),science,undecided,0.57,medium,Clinical trials,3
+SH_00563,Dark matter accounts for 27% of the universe (context 56),science,supported,0.733,hard,Astrophysics data,3
+SH_00564,Vaccines cause autism (context 56),science,rejected,0.574,expert,Epidemiological studies,1
+SH_00565,Exercise reduces risk of heart disease (context 56),science,supported,0.875,easy,Meta-analyses,3
+SH_00566,GMOs are harmful to human health (context 56),science,rejected,0.562,medium,FDA studies,2
+SH_00567,Meditation reduces cortisol levels (context 56),science,supported,0.595,hard,Clinical studies,1
+SH_00568,Homeopathy is effective beyond placebo (context 56),science,rejected,0.779,expert,Cochrane reviews,2
+SH_00569,Climate change is primarily human-caused (context 56),science,supported,0.863,easy,IPCC reports,2
+SH_00570,Cold weather causes the common cold (context 56),science,rejected,0.945,medium,Virology research,1
+SH_00571,Quantum entanglement enables faster-than-light communication (context 57),science,rejected,0.551,expert,Physics papers,4
+SH_00572,CRISPR can cure genetic diseases in humans (context 57),science,undecided,0.782,easy,Clinical trials,3
+SH_00573,Dark matter accounts for 27% of the universe (context 57),science,supported,0.806,medium,Astrophysics data,2
+SH_00574,Vaccines cause autism (context 57),science,rejected,0.786,hard,Epidemiological studies,1
+SH_00575,Exercise reduces risk of heart disease (context 57),science,supported,0.646,expert,Meta-analyses,4
+SH_00576,GMOs are harmful to human health (context 57),science,rejected,0.757,easy,FDA studies,1
+SH_00577,Meditation reduces cortisol levels (context 57),science,supported,0.918,medium,Clinical studies,3
+SH_00578,Homeopathy is effective beyond placebo (context 57),science,rejected,0.646,hard,Cochrane reviews,2
+SH_00579,Climate change is primarily human-caused (context 57),science,supported,0.689,expert,IPCC reports,4
+SH_00580,Cold weather causes the common cold (context 57),science,rejected,0.648,easy,Virology research,3
+SH_00581,Quantum entanglement enables faster-than-light communication (context 58),science,rejected,0.891,hard,Physics papers,2
+SH_00582,CRISPR can cure genetic diseases in humans (context 58),science,undecided,0.745,expert,Clinical trials,1
+SH_00583,Dark matter accounts for 27% of the universe (context 58),science,supported,0.622,easy,Astrophysics data,3
+SH_00584,Vaccines cause autism (context 58),science,rejected,0.631,medium,Epidemiological studies,3
+SH_00585,Exercise reduces risk of heart disease (context 58),science,supported,0.909,hard,Meta-analyses,3
+SH_00586,GMOs are harmful to human health (context 58),science,rejected,0.56,expert,FDA studies,3
+SH_00587,Meditation reduces cortisol levels (context 58),science,supported,0.79,easy,Clinical studies,4
+SH_00588,Homeopathy is effective beyond placebo (context 58),science,rejected,0.703,medium,Cochrane reviews,3
+SH_00589,Climate change is primarily human-caused (context 58),science,supported,0.86,hard,IPCC reports,1
+SH_00590,Cold weather causes the common cold (context 58),science,rejected,0.893,expert,Virology research,4
+SH_00591,Quantum entanglement enables faster-than-light communication (context 59),science,rejected,0.654,medium,Physics papers,1
+SH_00592,CRISPR can cure genetic diseases in humans (context 59),science,undecided,0.758,hard,Clinical trials,2
+SH_00593,Dark matter accounts for 27% of the universe (context 59),science,supported,0.559,expert,Astrophysics data,2
+SH_00594,Vaccines cause autism (context 59),science,rejected,0.824,easy,Epidemiological studies,2
+SH_00595,Exercise reduces risk of heart disease (context 59),science,supported,0.782,medium,Meta-analyses,2
+SH_00596,GMOs are harmful to human health (context 59),science,rejected,0.643,hard,FDA studies,3
+SH_00597,Meditation reduces cortisol levels (context 59),science,supported,0.883,expert,Clinical studies,2
+SH_00598,Homeopathy is effective beyond placebo (context 59),science,rejected,0.624,easy,Cochrane reviews,3
+SH_00599,Climate change is primarily human-caused (context 59),science,supported,0.763,medium,IPCC reports,2
+SH_00600,Cold weather causes the common cold (context 59),science,rejected,0.674,hard,Virology research,3
+SH_00601,Quantum entanglement enables faster-than-light communication (context 60),science,rejected,0.617,easy,Physics papers,1
+SH_00602,CRISPR can cure genetic diseases in humans (context 60),science,undecided,0.572,medium,Clinical trials,1
+SH_00603,Dark matter accounts for 27% of the universe (context 60),science,supported,0.734,hard,Astrophysics data,1
+SH_00604,Vaccines cause autism (context 60),science,rejected,0.816,expert,Epidemiological studies,4
+SH_00605,Exercise reduces risk of heart disease (context 60),science,supported,0.61,easy,Meta-analyses,3
+SH_00606,GMOs are harmful to human health (context 60),science,rejected,0.563,medium,FDA studies,4
+SH_00607,Meditation reduces cortisol levels (context 60),science,supported,0.926,hard,Clinical studies,3
+SH_00608,Homeopathy is effective beyond placebo (context 60),science,rejected,0.653,expert,Cochrane reviews,2
+SH_00609,Climate change is primarily human-caused (context 60),science,supported,0.695,easy,IPCC reports,2
+SH_00610,Cold weather causes the common cold (context 60),science,rejected,0.668,medium,Virology research,4
+SH_00611,Quantum entanglement enables faster-than-light communication (context 61),science,rejected,0.688,expert,Physics papers,1
+SH_00612,CRISPR can cure genetic diseases in humans (context 61),science,undecided,0.922,easy,Clinical trials,4
+SH_00613,Dark matter accounts for 27% of the universe (context 61),science,supported,0.729,medium,Astrophysics data,1
+SH_00614,Vaccines cause autism (context 61),science,rejected,0.618,hard,Epidemiological studies,2
+SH_00615,Exercise reduces risk of heart disease (context 61),science,supported,0.561,expert,Meta-analyses,3
+SH_00616,GMOs are harmful to human health (context 61),science,rejected,0.707,easy,FDA studies,1
+SH_00617,Meditation reduces cortisol levels (context 61),science,supported,0.733,medium,Clinical studies,3
+SH_00618,Homeopathy is effective beyond placebo (context 61),science,rejected,0.675,hard,Cochrane reviews,4
+SH_00619,Climate change is primarily human-caused (context 61),science,supported,0.91,expert,IPCC reports,3
+SH_00620,Cold weather causes the common cold (context 61),science,rejected,0.749,easy,Virology research,2
+SH_00621,Quantum entanglement enables faster-than-light communication (context 62),science,rejected,0.66,hard,Physics papers,3
+SH_00622,CRISPR can cure genetic diseases in humans (context 62),science,undecided,0.876,expert,Clinical trials,2
+SH_00623,Dark matter accounts for 27% of the universe (context 62),science,supported,0.828,easy,Astrophysics data,3
+SH_00624,Vaccines cause autism (context 62),science,rejected,0.73,medium,Epidemiological studies,3
+SH_00625,Exercise reduces risk of heart disease (context 62),science,supported,0.71,hard,Meta-analyses,3
+SH_00626,GMOs are harmful to human health (context 62),science,rejected,0.776,expert,FDA studies,4
+SH_00627,Meditation reduces cortisol levels (context 62),science,supported,0.723,easy,Clinical studies,2
+SH_00628,Homeopathy is effective beyond placebo (context 62),science,rejected,0.662,medium,Cochrane reviews,1
+SH_00629,Climate change is primarily human-caused (context 62),science,supported,0.584,hard,IPCC reports,1
+SH_00630,Cold weather causes the common cold (context 62),science,rejected,0.6,expert,Virology research,2
+SH_00631,Quantum entanglement enables faster-than-light communication (context 63),science,rejected,0.927,medium,Physics papers,4
+SH_00632,CRISPR can cure genetic diseases in humans (context 63),science,undecided,0.877,hard,Clinical trials,3
+SH_00633,Dark matter accounts for 27% of the universe (context 63),science,supported,0.884,expert,Astrophysics data,1
+SH_00634,Vaccines cause autism (context 63),science,rejected,0.942,easy,Epidemiological studies,2
+SH_00635,Exercise reduces risk of heart disease (context 63),science,supported,0.883,medium,Meta-analyses,2
+SH_00636,GMOs are harmful to human health (context 63),science,rejected,0.708,hard,FDA studies,4
+SH_00637,Meditation reduces cortisol levels (context 63),science,supported,0.586,expert,Clinical studies,2
+SH_00638,Homeopathy is effective beyond placebo (context 63),science,rejected,0.583,easy,Cochrane reviews,2
+SH_00639,Climate change is primarily human-caused (context 63),science,supported,0.93,medium,IPCC reports,4
+SH_00640,Cold weather causes the common cold (context 63),science,rejected,0.62,hard,Virology research,4
+SH_00641,Quantum entanglement enables faster-than-light communication (context 64),science,rejected,0.66,easy,Physics papers,4
+SH_00642,CRISPR can cure genetic diseases in humans (context 64),science,undecided,0.689,medium,Clinical trials,4
+SH_00643,Dark matter accounts for 27% of the universe (context 64),science,supported,0.92,hard,Astrophysics data,1
+SH_00644,Vaccines cause autism (context 64),science,rejected,0.592,expert,Epidemiological studies,2
+SH_00645,Exercise reduces risk of heart disease (context 64),science,supported,0.896,easy,Meta-analyses,2
+SH_00646,GMOs are harmful to human health (context 64),science,rejected,0.79,medium,FDA studies,2
+SH_00647,Meditation reduces cortisol levels (context 64),science,supported,0.853,hard,Clinical studies,2
+SH_00648,Homeopathy is effective beyond placebo (context 64),science,rejected,0.551,expert,Cochrane reviews,1
+SH_00649,Climate change is primarily human-caused (context 64),science,supported,0.565,easy,IPCC reports,2
+SH_00650,Cold weather causes the common cold (context 64),science,rejected,0.76,medium,Virology research,2
+SH_00651,Quantum entanglement enables faster-than-light communication (context 65),science,rejected,0.605,expert,Physics papers,2
+SH_00652,CRISPR can cure genetic diseases in humans (context 65),science,undecided,0.552,easy,Clinical trials,1
+SH_00653,Dark matter accounts for 27% of the universe (context 65),science,supported,0.854,medium,Astrophysics data,2
+SH_00654,Vaccines cause autism (context 65),science,rejected,0.577,hard,Epidemiological studies,4
+SH_00655,Exercise reduces risk of heart disease (context 65),science,supported,0.851,expert,Meta-analyses,3
+SH_00656,GMOs are harmful to human health (context 65),science,rejected,0.908,easy,FDA studies,3
+SH_00657,Meditation reduces cortisol levels (context 65),science,supported,0.69,medium,Clinical studies,1
+SH_00658,Homeopathy is effective beyond placebo (context 65),science,rejected,0.673,hard,Cochrane reviews,3
+SH_00659,Climate change is primarily human-caused (context 65),science,supported,0.948,expert,IPCC reports,3
+SH_00660,Cold weather causes the common cold (context 65),science,rejected,0.923,easy,Virology research,2
+SH_00661,Quantum entanglement enables faster-than-light communication (context 66),science,rejected,0.903,hard,Physics papers,2
+SH_00662,CRISPR can cure genetic diseases in humans (context 66),science,undecided,0.822,expert,Clinical trials,1
+SH_00663,Dark matter accounts for 27% of the universe (context 66),science,supported,0.751,easy,Astrophysics data,4
+SH_00664,Vaccines cause autism (context 66),science,rejected,0.833,medium,Epidemiological studies,3
+SH_00665,Exercise reduces risk of heart disease (context 66),science,supported,0.945,hard,Meta-analyses,4
+SH_00666,GMOs are harmful to human health (context 66),science,rejected,0.915,expert,FDA studies,4
+SH_00667,Meditation reduces cortisol levels (context 66),science,supported,0.9,easy,Clinical studies,4
+SH_00668,Homeopathy is effective beyond placebo (context 66),science,rejected,0.694,medium,Cochrane reviews,2
+SH_00669,Climate change is primarily human-caused (context 66),science,supported,0.89,hard,IPCC reports,2
+SH_00670,Cold weather causes the common cold (context 66),science,rejected,0.711,expert,Virology research,4
+SH_00671,Quantum entanglement enables faster-than-light communication (context 67),science,rejected,0.649,medium,Physics papers,4
+SH_00672,CRISPR can cure genetic diseases in humans (context 67),science,undecided,0.806,hard,Clinical trials,1
+SH_00673,Dark matter accounts for 27% of the universe (context 67),science,supported,0.679,expert,Astrophysics data,3
+SH_00674,Vaccines cause autism (context 67),science,rejected,0.574,easy,Epidemiological studies,3
+SH_00675,Exercise reduces risk of heart disease (context 67),science,supported,0.647,medium,Meta-analyses,2
+SH_00676,GMOs are harmful to human health (context 67),science,rejected,0.87,hard,FDA studies,4
+SH_00677,Meditation reduces cortisol levels (context 67),science,supported,0.796,expert,Clinical studies,4
+SH_00678,Homeopathy is effective beyond placebo (context 67),science,rejected,0.568,easy,Cochrane reviews,2
+SH_00679,Climate change is primarily human-caused (context 67),science,supported,0.789,medium,IPCC reports,1
+SH_00680,Cold weather causes the common cold (context 67),science,rejected,0.82,hard,Virology research,1
+SH_00681,Quantum entanglement enables faster-than-light communication (context 68),science,rejected,0.873,easy,Physics papers,2
+SH_00682,CRISPR can cure genetic diseases in humans (context 68),science,undecided,0.844,medium,Clinical trials,1
+SH_00683,Dark matter accounts for 27% of the universe (context 68),science,supported,0.897,hard,Astrophysics data,4
+SH_00684,Vaccines cause autism (context 68),science,rejected,0.813,expert,Epidemiological studies,4
+SH_00685,Exercise reduces risk of heart disease (context 68),science,supported,0.614,easy,Meta-analyses,1
+SH_00686,GMOs are harmful to human health (context 68),science,rejected,0.665,medium,FDA studies,1
+SH_00687,Meditation reduces cortisol levels (context 68),science,supported,0.613,hard,Clinical studies,4
+SH_00688,Homeopathy is effective beyond placebo (context 68),science,rejected,0.606,expert,Cochrane reviews,2
+SH_00689,Climate change is primarily human-caused (context 68),science,supported,0.813,easy,IPCC reports,3
+SH_00690,Cold weather causes the common cold (context 68),science,rejected,0.582,medium,Virology research,4
+SH_00691,Quantum entanglement enables faster-than-light communication (context 69),science,rejected,0.805,expert,Physics papers,1
+SH_00692,CRISPR can cure genetic diseases in humans (context 69),science,undecided,0.904,easy,Clinical trials,4
+SH_00693,Dark matter accounts for 27% of the universe (context 69),science,supported,0.807,medium,Astrophysics data,4
+SH_00694,Vaccines cause autism (context 69),science,rejected,0.894,hard,Epidemiological studies,1
+SH_00695,Exercise reduces risk of heart disease (context 69),science,supported,0.778,expert,Meta-analyses,2
+SH_00696,GMOs are harmful to human health (context 69),science,rejected,0.929,easy,FDA studies,4
+SH_00697,Meditation reduces cortisol levels (context 69),science,supported,0.705,medium,Clinical studies,3
+SH_00698,Homeopathy is effective beyond placebo (context 69),science,rejected,0.602,hard,Cochrane reviews,4
+SH_00699,Climate change is primarily human-caused (context 69),science,supported,0.924,expert,IPCC reports,3
+SH_00700,Cold weather causes the common cold (context 69),science,rejected,0.658,easy,Virology research,1
+SH_00701,Quantum entanglement enables faster-than-light communication (context 70),science,rejected,0.71,hard,Physics papers,3
+SH_00702,CRISPR can cure genetic diseases in humans (context 70),science,undecided,0.611,expert,Clinical trials,3
+SH_00703,Dark matter accounts for 27% of the universe (context 70),science,supported,0.754,easy,Astrophysics data,3
+SH_00704,Vaccines cause autism (context 70),science,rejected,0.759,medium,Epidemiological studies,2
+SH_00705,Exercise reduces risk of heart disease (context 70),science,supported,0.904,hard,Meta-analyses,3
+SH_00706,GMOs are harmful to human health (context 70),science,rejected,0.919,expert,FDA studies,3
+SH_00707,Meditation reduces cortisol levels (context 70),science,supported,0.919,easy,Clinical studies,4
+SH_00708,Homeopathy is effective beyond placebo (context 70),science,rejected,0.614,medium,Cochrane reviews,2
+SH_00709,Climate change is primarily human-caused (context 70),science,supported,0.571,hard,IPCC reports,2
+SH_00710,Cold weather causes the common cold (context 70),science,rejected,0.664,expert,Virology research,3
+SH_00711,Quantum entanglement enables faster-than-light communication (context 71),science,rejected,0.862,medium,Physics papers,1
+SH_00712,CRISPR can cure genetic diseases in humans (context 71),science,undecided,0.692,hard,Clinical trials,4
+SH_00713,Dark matter accounts for 27% of the universe (context 71),science,supported,0.568,expert,Astrophysics data,3
+SH_00714,Vaccines cause autism (context 71),science,rejected,0.587,easy,Epidemiological studies,2
+SH_00715,Exercise reduces risk of heart disease (context 71),science,supported,0.843,medium,Meta-analyses,1
+SH_00716,GMOs are harmful to human health (context 71),science,rejected,0.713,hard,FDA studies,4
+SH_00717,Meditation reduces cortisol levels (context 71),science,supported,0.739,expert,Clinical studies,1
+SH_00718,Homeopathy is effective beyond placebo (context 71),science,rejected,0.732,easy,Cochrane reviews,3
+SH_00719,Climate change is primarily human-caused (context 71),science,supported,0.601,medium,IPCC reports,4
+SH_00720,Cold weather causes the common cold (context 71),science,rejected,0.766,hard,Virology research,1
+SH_00721,Quantum entanglement enables faster-than-light communication (context 72),science,rejected,0.667,easy,Physics papers,3
+SH_00722,CRISPR can cure genetic diseases in humans (context 72),science,undecided,0.872,medium,Clinical trials,2
+SH_00723,Dark matter accounts for 27% of the universe (context 72),science,supported,0.888,hard,Astrophysics data,4
+SH_00724,Vaccines cause autism (context 72),science,rejected,0.928,expert,Epidemiological studies,4
+SH_00725,Exercise reduces risk of heart disease (context 72),science,supported,0.78,easy,Meta-analyses,3
+SH_00726,GMOs are harmful to human health (context 72),science,rejected,0.801,medium,FDA studies,2
+SH_00727,Meditation reduces cortisol levels (context 72),science,supported,0.684,hard,Clinical studies,4
+SH_00728,Homeopathy is effective beyond placebo (context 72),science,rejected,0.649,expert,Cochrane reviews,3
+SH_00729,Climate change is primarily human-caused (context 72),science,supported,0.939,easy,IPCC reports,2
+SH_00730,Cold weather causes the common cold (context 72),science,rejected,0.649,medium,Virology research,1
+SH_00731,Quantum entanglement enables faster-than-light communication (context 73),science,rejected,0.827,expert,Physics papers,4
+SH_00732,CRISPR can cure genetic diseases in humans (context 73),science,undecided,0.7,easy,Clinical trials,1
+SH_00733,Dark matter accounts for 27% of the universe (context 73),science,supported,0.741,medium,Astrophysics data,3
+SH_00734,Vaccines cause autism (context 73),science,rejected,0.648,hard,Epidemiological studies,4
+SH_00735,Exercise reduces risk of heart disease (context 73),science,supported,0.785,expert,Meta-analyses,3
+SH_00736,GMOs are harmful to human health (context 73),science,rejected,0.717,easy,FDA studies,1
+SH_00737,Meditation reduces cortisol levels (context 73),science,supported,0.935,medium,Clinical studies,4
+SH_00738,Homeopathy is effective beyond placebo (context 73),science,rejected,0.896,hard,Cochrane reviews,2
+SH_00739,Climate change is primarily human-caused (context 73),science,supported,0.638,expert,IPCC reports,3
+SH_00740,Cold weather causes the common cold (context 73),science,rejected,0.862,easy,Virology research,1
+SH_00741,Quantum entanglement enables faster-than-light communication (context 74),science,rejected,0.831,hard,Physics papers,3
+SH_00742,CRISPR can cure genetic diseases in humans (context 74),science,undecided,0.762,expert,Clinical trials,2
+SH_00743,Dark matter accounts for 27% of the universe (context 74),science,supported,0.92,easy,Astrophysics data,3
+SH_00744,Vaccines cause autism (context 74),science,rejected,0.812,medium,Epidemiological studies,4
+SH_00745,Exercise reduces risk of heart disease (context 74),science,supported,0.673,hard,Meta-analyses,3
+SH_00746,GMOs are harmful to human health (context 74),science,rejected,0.812,expert,FDA studies,3
+SH_00747,Meditation reduces cortisol levels (context 74),science,supported,0.898,easy,Clinical studies,2
+SH_00748,Homeopathy is effective beyond placebo (context 74),science,rejected,0.633,medium,Cochrane reviews,1
+SH_00749,Climate change is primarily human-caused (context 74),science,supported,0.594,hard,IPCC reports,3
+SH_00750,Cold weather causes the common cold (context 74),science,rejected,0.889,expert,Virology research,4
+SH_00751,Quantum entanglement enables faster-than-light communication (context 75),science,rejected,0.899,medium,Physics papers,2
+SH_00752,CRISPR can cure genetic diseases in humans (context 75),science,undecided,0.859,hard,Clinical trials,1
+SH_00753,Dark matter accounts for 27% of the universe (context 75),science,supported,0.924,expert,Astrophysics data,1
+SH_00754,Vaccines cause autism (context 75),science,rejected,0.579,easy,Epidemiological studies,4
+SH_00755,Exercise reduces risk of heart disease (context 75),science,supported,0.943,medium,Meta-analyses,2
+SH_00756,GMOs are harmful to human health (context 75),science,rejected,0.698,hard,FDA studies,1
+SH_00757,Meditation reduces cortisol levels (context 75),science,supported,0.723,expert,Clinical studies,4
+SH_00758,Homeopathy is effective beyond placebo (context 75),science,rejected,0.879,easy,Cochrane reviews,3
+SH_00759,Climate change is primarily human-caused (context 75),science,supported,0.728,medium,IPCC reports,1
+SH_00760,Cold weather causes the common cold (context 75),science,rejected,0.605,hard,Virology research,3
+SH_00761,Quantum entanglement enables faster-than-light communication (context 76),science,rejected,0.635,easy,Physics papers,3
+SH_00762,CRISPR can cure genetic diseases in humans (context 76),science,undecided,0.805,medium,Clinical trials,1
+SH_00763,Dark matter accounts for 27% of the universe (context 76),science,supported,0.69,hard,Astrophysics data,1
+SH_00764,Vaccines cause autism (context 76),science,rejected,0.803,expert,Epidemiological studies,2
+SH_00765,Exercise reduces risk of heart disease (context 76),science,supported,0.699,easy,Meta-analyses,2
+SH_00766,GMOs are harmful to human health (context 76),science,rejected,0.875,medium,FDA studies,1
+SH_00767,Meditation reduces cortisol levels (context 76),science,supported,0.809,hard,Clinical studies,2
+SH_00768,Homeopathy is effective beyond placebo (context 76),science,rejected,0.792,expert,Cochrane reviews,4
+SH_00769,Climate change is primarily human-caused (context 76),science,supported,0.837,easy,IPCC reports,3
+SH_00770,Cold weather causes the common cold (context 76),science,rejected,0.833,medium,Virology research,3
+SH_00771,Quantum entanglement enables faster-than-light communication (context 77),science,rejected,0.85,expert,Physics papers,4
+SH_00772,CRISPR can cure genetic diseases in humans (context 77),science,undecided,0.866,easy,Clinical trials,3
+SH_00773,Dark matter accounts for 27% of the universe (context 77),science,supported,0.935,medium,Astrophysics data,3
+SH_00774,Vaccines cause autism (context 77),science,rejected,0.701,hard,Epidemiological studies,4
+SH_00775,Exercise reduces risk of heart disease (context 77),science,supported,0.552,expert,Meta-analyses,4
+SH_00776,GMOs are harmful to human health (context 77),science,rejected,0.726,easy,FDA studies,1
+SH_00777,Meditation reduces cortisol levels (context 77),science,supported,0.788,medium,Clinical studies,1
+SH_00778,Homeopathy is effective beyond placebo (context 77),science,rejected,0.58,hard,Cochrane reviews,3
+SH_00779,Climate change is primarily human-caused (context 77),science,supported,0.555,expert,IPCC reports,3
+SH_00780,Cold weather causes the common cold (context 77),science,rejected,0.719,easy,Virology research,1
+SH_00781,Quantum entanglement enables faster-than-light communication (context 78),science,rejected,0.786,hard,Physics papers,4
+SH_00782,CRISPR can cure genetic diseases in humans (context 78),science,undecided,0.583,expert,Clinical trials,2
+SH_00783,Dark matter accounts for 27% of the universe (context 78),science,supported,0.772,easy,Astrophysics data,4
+SH_00784,Vaccines cause autism (context 78),science,rejected,0.887,medium,Epidemiological studies,2
+SH_00785,Exercise reduces risk of heart disease (context 78),science,supported,0.731,hard,Meta-analyses,3
+SH_00786,GMOs are harmful to human health (context 78),science,rejected,0.694,expert,FDA studies,3
+SH_00787,Meditation reduces cortisol levels (context 78),science,supported,0.56,easy,Clinical studies,1
+SH_00788,Homeopathy is effective beyond placebo (context 78),science,rejected,0.633,medium,Cochrane reviews,4
+SH_00789,Climate change is primarily human-caused (context 78),science,supported,0.837,hard,IPCC reports,4
+SH_00790,Cold weather causes the common cold (context 78),science,rejected,0.922,expert,Virology research,1
+SH_00791,Quantum entanglement enables faster-than-light communication (context 79),science,rejected,0.709,medium,Physics papers,3
+SH_00792,CRISPR can cure genetic diseases in humans (context 79),science,undecided,0.816,hard,Clinical trials,3
+SH_00793,Dark matter accounts for 27% of the universe (context 79),science,supported,0.84,expert,Astrophysics data,3
+SH_00794,Vaccines cause autism (context 79),science,rejected,0.647,easy,Epidemiological studies,3
+SH_00795,Exercise reduces risk of heart disease (context 79),science,supported,0.839,medium,Meta-analyses,1
+SH_00796,GMOs are harmful to human health (context 79),science,rejected,0.793,hard,FDA studies,4
+SH_00797,Meditation reduces cortisol levels (context 79),science,supported,0.591,expert,Clinical studies,1
+SH_00798,Homeopathy is effective beyond placebo (context 79),science,rejected,0.665,easy,Cochrane reviews,3
+SH_00799,Climate change is primarily human-caused (context 79),science,supported,0.834,medium,IPCC reports,2
+SH_00800,Cold weather causes the common cold (context 79),science,rejected,0.893,hard,Virology research,2
+SH_00801,Quantum entanglement enables faster-than-light communication (context 80),science,rejected,0.722,easy,Physics papers,3
+SH_00802,CRISPR can cure genetic diseases in humans (context 80),science,undecided,0.801,medium,Clinical trials,3
+SH_00803,Dark matter accounts for 27% of the universe (context 80),science,supported,0.673,hard,Astrophysics data,1
+SH_00804,Vaccines cause autism (context 80),science,rejected,0.727,expert,Epidemiological studies,3
+SH_00805,Exercise reduces risk of heart disease (context 80),science,supported,0.833,easy,Meta-analyses,4
+SH_00806,GMOs are harmful to human health (context 80),science,rejected,0.862,medium,FDA studies,2
+SH_00807,Meditation reduces cortisol levels (context 80),science,supported,0.73,hard,Clinical studies,2
+SH_00808,Homeopathy is effective beyond placebo (context 80),science,rejected,0.613,expert,Cochrane reviews,2
+SH_00809,Climate change is primarily human-caused (context 80),science,supported,0.855,easy,IPCC reports,2
+SH_00810,Cold weather causes the common cold (context 80),science,rejected,0.772,medium,Virology research,3
+SH_00811,Quantum entanglement enables faster-than-light communication (context 81),science,rejected,0.56,expert,Physics papers,2
+SH_00812,CRISPR can cure genetic diseases in humans (context 81),science,undecided,0.74,easy,Clinical trials,1
+SH_00813,Dark matter accounts for 27% of the universe (context 81),science,supported,0.692,medium,Astrophysics data,3
+SH_00814,Vaccines cause autism (context 81),science,rejected,0.78,hard,Epidemiological studies,3
+SH_00815,Exercise reduces risk of heart disease (context 81),science,supported,0.612,expert,Meta-analyses,4
+SH_00816,GMOs are harmful to human health (context 81),science,rejected,0.699,easy,FDA studies,1
+SH_00817,Meditation reduces cortisol levels (context 81),science,supported,0.706,medium,Clinical studies,4
+SH_00818,Homeopathy is effective beyond placebo (context 81),science,rejected,0.612,hard,Cochrane reviews,3
+SH_00819,Climate change is primarily human-caused (context 81),science,supported,0.911,expert,IPCC reports,4
+SH_00820,Cold weather causes the common cold (context 81),science,rejected,0.906,easy,Virology research,1
+SH_00821,Quantum entanglement enables faster-than-light communication (context 82),science,rejected,0.863,hard,Physics papers,3
+SH_00822,CRISPR can cure genetic diseases in humans (context 82),science,undecided,0.748,expert,Clinical trials,4
+SH_00823,Dark matter accounts for 27% of the universe (context 82),science,supported,0.831,easy,Astrophysics data,1
+SH_00824,Vaccines cause autism (context 82),science,rejected,0.721,medium,Epidemiological studies,3
+SH_00825,Exercise reduces risk of heart disease (context 82),science,supported,0.834,hard,Meta-analyses,3
+SH_00826,GMOs are harmful to human health (context 82),science,rejected,0.66,expert,FDA studies,4
+SH_00827,Meditation reduces cortisol levels (context 82),science,supported,0.839,easy,Clinical studies,2
+SH_00828,Homeopathy is effective beyond placebo (context 82),science,rejected,0.741,medium,Cochrane reviews,3
+SH_00829,Climate change is primarily human-caused (context 82),science,supported,0.936,hard,IPCC reports,1
+SH_00830,Cold weather causes the common cold (context 82),science,rejected,0.76,expert,Virology research,3
+SH_00831,Quantum entanglement enables faster-than-light communication (context 83),science,rejected,0.759,medium,Physics papers,3
+SH_00832,CRISPR can cure genetic diseases in humans (context 83),science,undecided,0.777,hard,Clinical trials,1
+SH_00833,Dark matter accounts for 27% of the universe (context 83),science,supported,0.848,expert,Astrophysics data,3
+SH_00834,Vaccines cause autism (context 83),science,rejected,0.664,easy,Epidemiological studies,3
+SH_00835,Exercise reduces risk of heart disease (context 83),science,supported,0.914,medium,Meta-analyses,2
+SH_00836,GMOs are harmful to human health (context 83),science,rejected,0.76,hard,FDA studies,3
+SH_00837,Meditation reduces cortisol levels (context 83),science,supported,0.755,expert,Clinical studies,4
+SH_00838,Homeopathy is effective beyond placebo (context 83),science,rejected,0.873,easy,Cochrane reviews,1
+SH_00839,Climate change is primarily human-caused (context 83),science,supported,0.92,medium,IPCC reports,4
+SH_00840,Cold weather causes the common cold (context 83),science,rejected,0.717,hard,Virology research,2
+SH_00841,Quantum entanglement enables faster-than-light communication (context 84),science,rejected,0.907,easy,Physics papers,1
+SH_00842,CRISPR can cure genetic diseases in humans (context 84),science,undecided,0.817,medium,Clinical trials,4
+SH_00843,Dark matter accounts for 27% of the universe (context 84),science,supported,0.911,hard,Astrophysics data,2
+SH_00844,Vaccines cause autism (context 84),science,rejected,0.817,expert,Epidemiological studies,3
+SH_00845,Exercise reduces risk of heart disease (context 84),science,supported,0.86,easy,Meta-analyses,3
+SH_00846,GMOs are harmful to human health (context 84),science,rejected,0.693,medium,FDA studies,1
+SH_00847,Meditation reduces cortisol levels (context 84),science,supported,0.701,hard,Clinical studies,1
+SH_00848,Homeopathy is effective beyond placebo (context 84),science,rejected,0.611,expert,Cochrane reviews,3
+SH_00849,Climate change is primarily human-caused (context 84),science,supported,0.833,easy,IPCC reports,4
+SH_00850,Cold weather causes the common cold (context 84),science,rejected,0.874,medium,Virology research,1
+SH_00851,Quantum entanglement enables faster-than-light communication (context 85),science,rejected,0.65,expert,Physics papers,1
+SH_00852,CRISPR can cure genetic diseases in humans (context 85),science,undecided,0.626,easy,Clinical trials,4
+SH_00853,Dark matter accounts for 27% of the universe (context 85),science,supported,0.925,medium,Astrophysics data,1
+SH_00854,Vaccines cause autism (context 85),science,rejected,0.833,hard,Epidemiological studies,4
+SH_00855,Exercise reduces risk of heart disease (context 85),science,supported,0.717,expert,Meta-analyses,1
+SH_00856,GMOs are harmful to human health (context 85),science,rejected,0.843,easy,FDA studies,4
+SH_00857,Meditation reduces cortisol levels (context 85),science,supported,0.826,medium,Clinical studies,1
+SH_00858,Homeopathy is effective beyond placebo (context 85),science,rejected,0.917,hard,Cochrane reviews,3
+SH_00859,Climate change is primarily human-caused (context 85),science,supported,0.622,expert,IPCC reports,2
+SH_00860,Cold weather causes the common cold (context 85),science,rejected,0.582,easy,Virology research,2
+SH_00861,Quantum entanglement enables faster-than-light communication (context 86),science,rejected,0.59,hard,Physics papers,2
+SH_00862,CRISPR can cure genetic diseases in humans (context 86),science,undecided,0.608,expert,Clinical trials,4
+SH_00863,Dark matter accounts for 27% of the universe (context 86),science,supported,0.743,easy,Astrophysics data,1
+SH_00864,Vaccines cause autism (context 86),science,rejected,0.898,medium,Epidemiological studies,3
+SH_00865,Exercise reduces risk of heart disease (context 86),science,supported,0.935,hard,Meta-analyses,3
+SH_00866,GMOs are harmful to human health (context 86),science,rejected,0.692,expert,FDA studies,3
+SH_00867,Meditation reduces cortisol levels (context 86),science,supported,0.948,easy,Clinical studies,1
+SH_00868,Homeopathy is effective beyond placebo (context 86),science,rejected,0.677,medium,Cochrane reviews,4
+SH_00869,Climate change is primarily human-caused (context 86),science,supported,0.634,hard,IPCC reports,1
+SH_00870,Cold weather causes the common cold (context 86),science,rejected,0.664,expert,Virology research,1
+SH_00871,Quantum entanglement enables faster-than-light communication (context 87),science,rejected,0.883,medium,Physics papers,2
+SH_00872,CRISPR can cure genetic diseases in humans (context 87),science,undecided,0.842,hard,Clinical trials,3
+SH_00873,Dark matter accounts for 27% of the universe (context 87),science,supported,0.69,expert,Astrophysics data,4
+SH_00874,Vaccines cause autism (context 87),science,rejected,0.757,easy,Epidemiological studies,2
+SH_00875,Exercise reduces risk of heart disease (context 87),science,supported,0.922,medium,Meta-analyses,1
+SH_00876,GMOs are harmful to human health (context 87),science,rejected,0.621,hard,FDA studies,2
+SH_00877,Meditation reduces cortisol levels (context 87),science,supported,0.8,expert,Clinical studies,1
+SH_00878,Homeopathy is effective beyond placebo (context 87),science,rejected,0.763,easy,Cochrane reviews,1
+SH_00879,Climate change is primarily human-caused (context 87),science,supported,0.868,medium,IPCC reports,1
+SH_00880,Cold weather causes the common cold (context 87),science,rejected,0.81,hard,Virology research,2
+SH_00881,Quantum entanglement enables faster-than-light communication (context 88),science,rejected,0.887,easy,Physics papers,3
+SH_00882,CRISPR can cure genetic diseases in humans (context 88),science,undecided,0.845,medium,Clinical trials,3
+SH_00883,Dark matter accounts for 27% of the universe (context 88),science,supported,0.568,hard,Astrophysics data,4
+SH_00884,Vaccines cause autism (context 88),science,rejected,0.564,expert,Epidemiological studies,4
+SH_00885,Exercise reduces risk of heart disease (context 88),science,supported,0.817,easy,Meta-analyses,3
+SH_00886,GMOs are harmful to human health (context 88),science,rejected,0.622,medium,FDA studies,1
+SH_00887,Meditation reduces cortisol levels (context 88),science,supported,0.945,hard,Clinical studies,2
+SH_00888,Homeopathy is effective beyond placebo (context 88),science,rejected,0.785,expert,Cochrane reviews,3
+SH_00889,Climate change is primarily human-caused (context 88),science,supported,0.81,easy,IPCC reports,1
+SH_00890,Cold weather causes the common cold (context 88),science,rejected,0.809,medium,Virology research,3
+SH_00891,Quantum entanglement enables faster-than-light communication (context 89),science,rejected,0.764,expert,Physics papers,4
+SH_00892,CRISPR can cure genetic diseases in humans (context 89),science,undecided,0.57,easy,Clinical trials,1
+SH_00893,Dark matter accounts for 27% of the universe (context 89),science,supported,0.73,medium,Astrophysics data,4
+SH_00894,Vaccines cause autism (context 89),science,rejected,0.624,hard,Epidemiological studies,1
+SH_00895,Exercise reduces risk of heart disease (context 89),science,supported,0.727,expert,Meta-analyses,3
+SH_00896,GMOs are harmful to human health (context 89),science,rejected,0.694,easy,FDA studies,2
+SH_00897,Meditation reduces cortisol levels (context 89),science,supported,0.783,medium,Clinical studies,4
+SH_00898,Homeopathy is effective beyond placebo (context 89),science,rejected,0.728,hard,Cochrane reviews,3
+SH_00899,Climate change is primarily human-caused (context 89),science,supported,0.706,expert,IPCC reports,1
+SH_00900,Cold weather causes the common cold (context 89),science,rejected,0.666,easy,Virology research,2
+SH_00901,Quantum entanglement enables faster-than-light communication (context 90),science,rejected,0.874,hard,Physics papers,2
+SH_00902,CRISPR can cure genetic diseases in humans (context 90),science,undecided,0.766,expert,Clinical trials,3
+SH_00903,Dark matter accounts for 27% of the universe (context 90),science,supported,0.61,easy,Astrophysics data,2
+SH_00904,Vaccines cause autism (context 90),science,rejected,0.702,medium,Epidemiological studies,3
+SH_00905,Exercise reduces risk of heart disease (context 90),science,supported,0.613,hard,Meta-analyses,2
+SH_00906,GMOs are harmful to human health (context 90),science,rejected,0.883,expert,FDA studies,3
+SH_00907,Meditation reduces cortisol levels (context 90),science,supported,0.686,easy,Clinical studies,2
+SH_00908,Homeopathy is effective beyond placebo (context 90),science,rejected,0.581,medium,Cochrane reviews,2
+SH_00909,Climate change is primarily human-caused (context 90),science,supported,0.591,hard,IPCC reports,4
+SH_00910,Cold weather causes the common cold (context 90),science,rejected,0.867,expert,Virology research,4
+SH_00911,Quantum entanglement enables faster-than-light communication (context 91),science,rejected,0.61,medium,Physics papers,2
+SH_00912,CRISPR can cure genetic diseases in humans (context 91),science,undecided,0.931,hard,Clinical trials,4
+SH_00913,Dark matter accounts for 27% of the universe (context 91),science,supported,0.704,expert,Astrophysics data,1
+SH_00914,Vaccines cause autism (context 91),science,rejected,0.651,easy,Epidemiological studies,1
+SH_00915,Exercise reduces risk of heart disease (context 91),science,supported,0.746,medium,Meta-analyses,4
+SH_00916,GMOs are harmful to human health (context 91),science,rejected,0.749,hard,FDA studies,4
+SH_00917,Meditation reduces cortisol levels (context 91),science,supported,0.561,expert,Clinical studies,1
+SH_00918,Homeopathy is effective beyond placebo (context 91),science,rejected,0.892,easy,Cochrane reviews,1
+SH_00919,Climate change is primarily human-caused (context 91),science,supported,0.651,medium,IPCC reports,1
+SH_00920,Cold weather causes the common cold (context 91),science,rejected,0.74,hard,Virology research,1
+SH_00921,Quantum entanglement enables faster-than-light communication (context 92),science,rejected,0.671,easy,Physics papers,1
+SH_00922,CRISPR can cure genetic diseases in humans (context 92),science,undecided,0.598,medium,Clinical trials,1
+SH_00923,Dark matter accounts for 27% of the universe (context 92),science,supported,0.603,hard,Astrophysics data,4
+SH_00924,Vaccines cause autism (context 92),science,rejected,0.641,expert,Epidemiological studies,1
+SH_00925,Exercise reduces risk of heart disease (context 92),science,supported,0.71,easy,Meta-analyses,3
+SH_00926,GMOs are harmful to human health (context 92),science,rejected,0.829,medium,FDA studies,3
+SH_00927,Meditation reduces cortisol levels (context 92),science,supported,0.617,hard,Clinical studies,1
+SH_00928,Homeopathy is effective beyond placebo (context 92),science,rejected,0.747,expert,Cochrane reviews,2
+SH_00929,Climate change is primarily human-caused (context 92),science,supported,0.685,easy,IPCC reports,4
+SH_00930,Cold weather causes the common cold (context 92),science,rejected,0.643,medium,Virology research,4
+SH_00931,Quantum entanglement enables faster-than-light communication (context 93),science,rejected,0.604,expert,Physics papers,2
+SH_00932,CRISPR can cure genetic diseases in humans (context 93),science,undecided,0.909,easy,Clinical trials,1
+SH_00933,Dark matter accounts for 27% of the universe (context 93),science,supported,0.571,medium,Astrophysics data,2
+SH_00934,Vaccines cause autism (context 93),science,rejected,0.574,hard,Epidemiological studies,4
+SH_00935,Exercise reduces risk of heart disease (context 93),science,supported,0.769,expert,Meta-analyses,4
+SH_00936,GMOs are harmful to human health (context 93),science,rejected,0.679,easy,FDA studies,1
+SH_00937,Meditation reduces cortisol levels (context 93),science,supported,0.799,medium,Clinical studies,3
+SH_00938,Homeopathy is effective beyond placebo (context 93),science,rejected,0.924,hard,Cochrane reviews,2
+SH_00939,Climate change is primarily human-caused (context 93),science,supported,0.822,expert,IPCC reports,3
+SH_00940,Cold weather causes the common cold (context 93),science,rejected,0.899,easy,Virology research,3
+SH_00941,Quantum entanglement enables faster-than-light communication (context 94),science,rejected,0.742,hard,Physics papers,3
+SH_00942,CRISPR can cure genetic diseases in humans (context 94),science,undecided,0.876,expert,Clinical trials,1
+SH_00943,Dark matter accounts for 27% of the universe (context 94),science,supported,0.77,easy,Astrophysics data,4
+SH_00944,Vaccines cause autism (context 94),science,rejected,0.641,medium,Epidemiological studies,3
+SH_00945,Exercise reduces risk of heart disease (context 94),science,supported,0.897,hard,Meta-analyses,3
+SH_00946,GMOs are harmful to human health (context 94),science,rejected,0.8,expert,FDA studies,1
+SH_00947,Meditation reduces cortisol levels (context 94),science,supported,0.684,easy,Clinical studies,2
+SH_00948,Homeopathy is effective beyond placebo (context 94),science,rejected,0.928,medium,Cochrane reviews,1
+SH_00949,Climate change is primarily human-caused (context 94),science,supported,0.604,hard,IPCC reports,1
+SH_00950,Cold weather causes the common cold (context 94),science,rejected,0.565,expert,Virology research,4
+SH_00951,Quantum entanglement enables faster-than-light communication (context 95),science,rejected,0.798,medium,Physics papers,3
+SH_00952,CRISPR can cure genetic diseases in humans (context 95),science,undecided,0.587,hard,Clinical trials,3
+SH_00953,Dark matter accounts for 27% of the universe (context 95),science,supported,0.561,expert,Astrophysics data,2
+SH_00954,Vaccines cause autism (context 95),science,rejected,0.931,easy,Epidemiological studies,3
+SH_00955,Exercise reduces risk of heart disease (context 95),science,supported,0.689,medium,Meta-analyses,4
+SH_00956,GMOs are harmful to human health (context 95),science,rejected,0.649,hard,FDA studies,2
+SH_00957,Meditation reduces cortisol levels (context 95),science,supported,0.932,expert,Clinical studies,1
+SH_00958,Homeopathy is effective beyond placebo (context 95),science,rejected,0.885,easy,Cochrane reviews,4
+SH_00959,Climate change is primarily human-caused (context 95),science,supported,0.789,medium,IPCC reports,1
+SH_00960,Cold weather causes the common cold (context 95),science,rejected,0.793,hard,Virology research,2
+SH_00961,Quantum entanglement enables faster-than-light communication (context 96),science,rejected,0.893,easy,Physics papers,2
+SH_00962,CRISPR can cure genetic diseases in humans (context 96),science,undecided,0.743,medium,Clinical trials,3
+SH_00963,Dark matter accounts for 27% of the universe (context 96),science,supported,0.795,hard,Astrophysics data,3
+SH_00964,Vaccines cause autism (context 96),science,rejected,0.671,expert,Epidemiological studies,4
+SH_00965,Exercise reduces risk of heart disease (context 96),science,supported,0.842,easy,Meta-analyses,3
+SH_00966,GMOs are harmful to human health (context 96),science,rejected,0.582,medium,FDA studies,3
+SH_00967,Meditation reduces cortisol levels (context 96),science,supported,0.852,hard,Clinical studies,2
+SH_00968,Homeopathy is effective beyond placebo (context 96),science,rejected,0.928,expert,Cochrane reviews,2
+SH_00969,Climate change is primarily human-caused (context 96),science,supported,0.894,easy,IPCC reports,4
+SH_00970,Cold weather causes the common cold (context 96),science,rejected,0.71,medium,Virology research,4
+SH_00971,Quantum entanglement enables faster-than-light communication (context 97),science,rejected,0.877,expert,Physics papers,2
+SH_00972,CRISPR can cure genetic diseases in humans (context 97),science,undecided,0.734,easy,Clinical trials,2
+SH_00973,Dark matter accounts for 27% of the universe (context 97),science,supported,0.785,medium,Astrophysics data,1
+SH_00974,Vaccines cause autism (context 97),science,rejected,0.6,hard,Epidemiological studies,3
+SH_00975,Exercise reduces risk of heart disease (context 97),science,supported,0.81,expert,Meta-analyses,4
+SH_00976,GMOs are harmful to human health (context 97),science,rejected,0.655,easy,FDA studies,1
+SH_00977,Meditation reduces cortisol levels (context 97),science,supported,0.92,medium,Clinical studies,1
+SH_00978,Homeopathy is effective beyond placebo (context 97),science,rejected,0.873,hard,Cochrane reviews,2
+SH_00979,Climate change is primarily human-caused (context 97),science,supported,0.584,expert,IPCC reports,2
+SH_00980,Cold weather causes the common cold (context 97),science,rejected,0.882,easy,Virology research,3
+SH_00981,Quantum entanglement enables faster-than-light communication (context 98),science,rejected,0.727,hard,Physics papers,4
+SH_00982,CRISPR can cure genetic diseases in humans (context 98),science,undecided,0.71,expert,Clinical trials,1
+SH_00983,Dark matter accounts for 27% of the universe (context 98),science,supported,0.735,easy,Astrophysics data,3
+SH_00984,Vaccines cause autism (context 98),science,rejected,0.803,medium,Epidemiological studies,2
+SH_00985,Exercise reduces risk of heart disease (context 98),science,supported,0.714,hard,Meta-analyses,1
+SH_00986,GMOs are harmful to human health (context 98),science,rejected,0.775,expert,FDA studies,4
+SH_00987,Meditation reduces cortisol levels (context 98),science,supported,0.915,easy,Clinical studies,4
+SH_00988,Homeopathy is effective beyond placebo (context 98),science,rejected,0.611,medium,Cochrane reviews,4
+SH_00989,Climate change is primarily human-caused (context 98),science,supported,0.819,hard,IPCC reports,2
+SH_00990,Cold weather causes the common cold (context 98),science,rejected,0.784,expert,Virology research,3
+SH_00991,Quantum entanglement enables faster-than-light communication (context 99),science,rejected,0.712,medium,Physics papers,4
+SH_00992,CRISPR can cure genetic diseases in humans (context 99),science,undecided,0.695,hard,Clinical trials,3
+SH_00993,Dark matter accounts for 27% of the universe (context 99),science,supported,0.868,expert,Astrophysics data,1
+SH_00994,Vaccines cause autism (context 99),science,rejected,0.804,easy,Epidemiological studies,4
+SH_00995,Exercise reduces risk of heart disease (context 99),science,supported,0.943,medium,Meta-analyses,4
+SH_00996,GMOs are harmful to human health (context 99),science,rejected,0.883,hard,FDA studies,4
+SH_00997,Meditation reduces cortisol levels (context 99),science,supported,0.813,expert,Clinical studies,1
+SH_00998,Homeopathy is effective beyond placebo (context 99),science,rejected,0.727,easy,Cochrane reviews,2
+SH_00999,Climate change is primarily human-caused (context 99),science,supported,0.816,medium,IPCC reports,4
+SH_01000,Cold weather causes the common cold (context 99),science,rejected,0.67,hard,Virology research,1
+SH_01001,Quantum entanglement enables faster-than-light communication (context 100),science,rejected,0.835,easy,Physics papers,1
+SH_01002,CRISPR can cure genetic diseases in humans (context 100),science,undecided,0.734,medium,Clinical trials,4
+SH_01003,Dark matter accounts for 27% of the universe (context 100),science,supported,0.835,hard,Astrophysics data,1
+SH_01004,Vaccines cause autism (context 100),science,rejected,0.869,expert,Epidemiological studies,2
+SH_01005,Exercise reduces risk of heart disease (context 100),science,supported,0.655,easy,Meta-analyses,2
+SH_01006,GMOs are harmful to human health (context 100),science,rejected,0.929,medium,FDA studies,2
+SH_01007,Meditation reduces cortisol levels (context 100),science,supported,0.853,hard,Clinical studies,2
+SH_01008,Homeopathy is effective beyond placebo (context 100),science,rejected,0.882,expert,Cochrane reviews,3
+SH_01009,Climate change is primarily human-caused (context 100),science,supported,0.724,easy,IPCC reports,2
+SH_01010,Cold weather causes the common cold (context 100),science,rejected,0.729,medium,Virology research,3
+SH_01011,Quantum entanglement enables faster-than-light communication (context 101),science,rejected,0.645,expert,Physics papers,2
+SH_01012,CRISPR can cure genetic diseases in humans (context 101),science,undecided,0.615,easy,Clinical trials,2
+SH_01013,Dark matter accounts for 27% of the universe (context 101),science,supported,0.746,medium,Astrophysics data,3
+SH_01014,Vaccines cause autism (context 101),science,rejected,0.762,hard,Epidemiological studies,4
+SH_01015,Exercise reduces risk of heart disease (context 101),science,supported,0.592,expert,Meta-analyses,2
+SH_01016,GMOs are harmful to human health (context 101),science,rejected,0.783,easy,FDA studies,1
+SH_01017,Meditation reduces cortisol levels (context 101),science,supported,0.905,medium,Clinical studies,2
+SH_01018,Homeopathy is effective beyond placebo (context 101),science,rejected,0.77,hard,Cochrane reviews,3
+SH_01019,Climate change is primarily human-caused (context 101),science,supported,0.595,expert,IPCC reports,3
+SH_01020,Cold weather causes the common cold (context 101),science,rejected,0.839,easy,Virology research,2
+SH_01021,Quantum entanglement enables faster-than-light communication (context 102),science,rejected,0.91,hard,Physics papers,4
+SH_01022,CRISPR can cure genetic diseases in humans (context 102),science,undecided,0.583,expert,Clinical trials,2
+SH_01023,Dark matter accounts for 27% of the universe (context 102),science,supported,0.768,easy,Astrophysics data,1
+SH_01024,Vaccines cause autism (context 102),science,rejected,0.676,medium,Epidemiological studies,3
+SH_01025,Exercise reduces risk of heart disease (context 102),science,supported,0.726,hard,Meta-analyses,2
+SH_01026,GMOs are harmful to human health (context 102),science,rejected,0.823,expert,FDA studies,4
+SH_01027,Meditation reduces cortisol levels (context 102),science,supported,0.847,easy,Clinical studies,4
+SH_01028,Homeopathy is effective beyond placebo (context 102),science,rejected,0.844,medium,Cochrane reviews,2
+SH_01029,Climate change is primarily human-caused (context 102),science,supported,0.844,hard,IPCC reports,3
+SH_01030,Cold weather causes the common cold (context 102),science,rejected,0.81,expert,Virology research,2
+SH_01031,Quantum entanglement enables faster-than-light communication (context 103),science,rejected,0.864,medium,Physics papers,1
+SH_01032,CRISPR can cure genetic diseases in humans (context 103),science,undecided,0.79,hard,Clinical trials,3
+SH_01033,Dark matter accounts for 27% of the universe (context 103),science,supported,0.728,expert,Astrophysics data,2
+SH_01034,Vaccines cause autism (context 103),science,rejected,0.829,easy,Epidemiological studies,1
+SH_01035,Exercise reduces risk of heart disease (context 103),science,supported,0.901,medium,Meta-analyses,1
+SH_01036,GMOs are harmful to human health (context 103),science,rejected,0.622,hard,FDA studies,2
+SH_01037,Meditation reduces cortisol levels (context 103),science,supported,0.941,expert,Clinical studies,2
+SH_01038,Homeopathy is effective beyond placebo (context 103),science,rejected,0.637,easy,Cochrane reviews,4
+SH_01039,Climate change is primarily human-caused (context 103),science,supported,0.844,medium,IPCC reports,2
+SH_01040,Cold weather causes the common cold (context 103),science,rejected,0.867,hard,Virology research,4
+SH_01041,Quantum entanglement enables faster-than-light communication (context 104),science,rejected,0.74,easy,Physics papers,3
+SH_01042,CRISPR can cure genetic diseases in humans (context 104),science,undecided,0.789,medium,Clinical trials,3
+SH_01043,Dark matter accounts for 27% of the universe (context 104),science,supported,0.734,hard,Astrophysics data,3
+SH_01044,Vaccines cause autism (context 104),science,rejected,0.585,expert,Epidemiological studies,1
+SH_01045,Exercise reduces risk of heart disease (context 104),science,supported,0.632,easy,Meta-analyses,1
+SH_01046,GMOs are harmful to human health (context 104),science,rejected,0.674,medium,FDA studies,2
+SH_01047,Meditation reduces cortisol levels (context 104),science,supported,0.756,hard,Clinical studies,4
+SH_01048,Homeopathy is effective beyond placebo (context 104),science,rejected,0.644,expert,Cochrane reviews,3
+SH_01049,Climate change is primarily human-caused (context 104),science,supported,0.676,easy,IPCC reports,1
+SH_01050,Cold weather causes the common cold (context 104),science,rejected,0.663,medium,Virology research,3

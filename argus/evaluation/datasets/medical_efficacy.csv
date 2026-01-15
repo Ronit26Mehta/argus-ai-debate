@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+ME_00001,Aspirin reduces heart attack risk,medical,supported,0.699,easy,RCT evidence,4
+ME_00002,Vitamin D supplements prevent COVID-19,medical,rejected,0.888,medium,Clinical trials,3
+ME_00003,Ivermectin effectively treats COVID-19,medical,rejected,0.578,hard,Meta-analyses,4
+ME_00004,Statins reduce cardiovascular mortality,medical,supported,0.757,expert,Large-scale trials,3
+ME_00005,Antidepressants are effective for mild depression,medical,undecided,0.901,easy,Mixed trial results,4
+ME_00006,Intermittent fasting extends lifespan,medical,undecided,0.666,medium,Animal studies only,3
+ME_00007,Chemotherapy is effective for early-stage cancer,medical,supported,0.786,hard,Survival data,3
+ME_00008,Glucosamine helps joint pain,medical,rejected,0.607,expert,Systematic reviews,2
+ME_00009,Probiotics improve gut health,medical,supported,0.663,easy,Microbiome research,4
+ME_00010,Acupuncture reduces chronic pain,medical,undecided,0.583,medium,Placebo concerns,3
+ME_00011,Aspirin reduces heart attack risk (context 1),medical,supported,0.78,expert,RCT evidence,2
+ME_00012,Vitamin D supplements prevent COVID-19 (context 1),medical,rejected,0.74,easy,Clinical trials,1
+ME_00013,Ivermectin effectively treats COVID-19 (context 1),medical,rejected,0.829,medium,Meta-analyses,1
+ME_00014,Statins reduce cardiovascular mortality (context 1),medical,supported,0.551,hard,Large-scale trials,2
+ME_00015,Antidepressants are effective for mild depression (context 1),medical,undecided,0.765,expert,Mixed trial results,3
+ME_00016,Intermittent fasting extends lifespan (context 1),medical,undecided,0.905,easy,Animal studies only,3
+ME_00017,Chemotherapy is effective for early-stage cancer (context 1),medical,supported,0.831,medium,Survival data,3
+ME_00018,Glucosamine helps joint pain (context 1),medical,rejected,0.727,hard,Systematic reviews,3
+ME_00019,Probiotics improve gut health (context 1),medical,supported,0.581,expert,Microbiome research,3
+ME_00020,Acupuncture reduces chronic pain (context 1),medical,undecided,0.583,easy,Placebo concerns,3
+ME_00021,Aspirin reduces heart attack risk (context 2),medical,supported,0.808,hard,RCT evidence,4
+ME_00022,Vitamin D supplements prevent COVID-19 (context 2),medical,rejected,0.637,expert,Clinical trials,1
+ME_00023,Ivermectin effectively treats COVID-19 (context 2),medical,rejected,0.944,easy,Meta-analyses,3
+ME_00024,Statins reduce cardiovascular mortality (context 2),medical,supported,0.591,medium,Large-scale trials,2
+ME_00025,Antidepressants are effective for mild depression (context 2),medical,undecided,0.586,hard,Mixed trial results,3
+ME_00026,Intermittent fasting extends lifespan (context 2),medical,undecided,0.761,expert,Animal studies only,3
+ME_00027,Chemotherapy is effective for early-stage cancer (context 2),medical,supported,0.553,easy,Survival data,3
+ME_00028,Glucosamine helps joint pain (context 2),medical,rejected,0.623,medium,Systematic reviews,3
+ME_00029,Probiotics improve gut health (context 2),medical,supported,0.662,hard,Microbiome research,1
+ME_00030,Acupuncture reduces chronic pain (context 2),medical,undecided,0.821,expert,Placebo concerns,1
+ME_00031,Aspirin reduces heart attack risk (context 3),medical,supported,0.95,medium,RCT evidence,2
+ME_00032,Vitamin D supplements prevent COVID-19 (context 3),medical,rejected,0.922,hard,Clinical trials,2
+ME_00033,Ivermectin effectively treats COVID-19 (context 3),medical,rejected,0.913,expert,Meta-analyses,4
+ME_00034,Statins reduce cardiovascular mortality (context 3),medical,supported,0.645,easy,Large-scale trials,2
+ME_00035,Antidepressants are effective for mild depression (context 3),medical,undecided,0.774,medium,Mixed trial results,3
+ME_00036,Intermittent fasting extends lifespan (context 3),medical,undecided,0.782,hard,Animal studies only,2
+ME_00037,Chemotherapy is effective for early-stage cancer (context 3),medical,supported,0.712,expert,Survival data,3
+ME_00038,Glucosamine helps joint pain (context 3),medical,rejected,0.801,easy,Systematic reviews,3
+ME_00039,Probiotics improve gut health (context 3),medical,supported,0.725,medium,Microbiome research,1
+ME_00040,Acupuncture reduces chronic pain (context 3),medical,undecided,0.742,hard,Placebo concerns,2
+ME_00041,Aspirin reduces heart attack risk (context 4),medical,supported,0.572,easy,RCT evidence,3
+ME_00042,Vitamin D supplements prevent COVID-19 (context 4),medical,rejected,0.658,medium,Clinical trials,4
+ME_00043,Ivermectin effectively treats COVID-19 (context 4),medical,rejected,0.734,hard,Meta-analyses,4
+ME_00044,Statins reduce cardiovascular mortality (context 4),medical,supported,0.797,expert,Large-scale trials,3
+ME_00045,Antidepressants are effective for mild depression (context 4),medical,undecided,0.645,easy,Mixed trial results,3
+ME_00046,Intermittent fasting extends lifespan (context 4),medical,undecided,0.836,medium,Animal studies only,3
+ME_00047,Chemotherapy is effective for early-stage cancer (context 4),medical,supported,0.755,hard,Survival data,1
+ME_00048,Glucosamine helps joint pain (context 4),medical,rejected,0.855,expert,Systematic reviews,4
+ME_00049,Probiotics improve gut health (context 4),medical,supported,0.708,easy,Microbiome research,1
+ME_00050,Acupuncture reduces chronic pain (context 4),medical,undecided,0.884,medium,Placebo concerns,3
+ME_00051,Aspirin reduces heart attack risk (context 5),medical,supported,0.734,expert,RCT evidence,4
+ME_00052,Vitamin D supplements prevent COVID-19 (context 5),medical,rejected,0.679,easy,Clinical trials,2
+ME_00053,Ivermectin effectively treats COVID-19 (context 5),medical,rejected,0.902,medium,Meta-analyses,4
+ME_00054,Statins reduce cardiovascular mortality (context 5),medical,supported,0.749,hard,Large-scale trials,3
+ME_00055,Antidepressants are effective for mild depression (context 5),medical,undecided,0.883,expert,Mixed trial results,2
+ME_00056,Intermittent fasting extends lifespan (context 5),medical,undecided,0.885,easy,Animal studies only,4
+ME_00057,Chemotherapy is effective for early-stage cancer (context 5),medical,supported,0.785,medium,Survival data,3
+ME_00058,Glucosamine helps joint pain (context 5),medical,rejected,0.794,hard,Systematic reviews,1
+ME_00059,Probiotics improve gut health (context 5),medical,supported,0.612,expert,Microbiome research,4
+ME_00060,Acupuncture reduces chronic pain (context 5),medical,undecided,0.753,easy,Placebo concerns,4
+ME_00061,Aspirin reduces heart attack risk (context 6),medical,supported,0.814,hard,RCT evidence,3
+ME_00062,Vitamin D supplements prevent COVID-19 (context 6),medical,rejected,0.759,expert,Clinical trials,2
+ME_00063,Ivermectin effectively treats COVID-19 (context 6),medical,rejected,0.801,easy,Meta-analyses,4
+ME_00064,Statins reduce cardiovascular mortality (context 6),medical,supported,0.648,medium,Large-scale trials,4
+ME_00065,Antidepressants are effective for mild depression (context 6),medical,undecided,0.641,hard,Mixed trial results,1
+ME_00066,Intermittent fasting extends lifespan (context 6),medical,undecided,0.782,expert,Animal studies only,4
+ME_00067,Chemotherapy is effective for early-stage cancer (context 6),medical,supported,0.897,easy,Survival data,4
+ME_00068,Glucosamine helps joint pain (context 6),medical,rejected,0.624,medium,Systematic reviews,2
+ME_00069,Probiotics improve gut health (context 6),medical,supported,0.757,hard,Microbiome research,3
+ME_00070,Acupuncture reduces chronic pain (context 6),medical,undecided,0.892,expert,Placebo concerns,2
+ME_00071,Aspirin reduces heart attack risk (context 7),medical,supported,0.949,medium,RCT evidence,2
+ME_00072,Vitamin D supplements prevent COVID-19 (context 7),medical,rejected,0.646,hard,Clinical trials,1
+ME_00073,Ivermectin effectively treats COVID-19 (context 7),medical,rejected,0.877,expert,Meta-analyses,1
+ME_00074,Statins reduce cardiovascular mortality (context 7),medical,supported,0.926,easy,Large-scale trials,2
+ME_00075,Antidepressants are effective for mild depression (context 7),medical,undecided,0.83,medium,Mixed trial results,1
+ME_00076,Intermittent fasting extends lifespan (context 7),medical,undecided,0.841,hard,Animal studies only,4
+ME_00077,Chemotherapy is effective for early-stage cancer (context 7),medical,supported,0.862,expert,Survival data,3
+ME_00078,Glucosamine helps joint pain (context 7),medical,rejected,0.75,easy,Systematic reviews,1
+ME_00079,Probiotics improve gut health (context 7),medical,supported,0.781,medium,Microbiome research,1
+ME_00080,Acupuncture reduces chronic pain (context 7),medical,undecided,0.743,hard,Placebo concerns,3
+ME_00081,Aspirin reduces heart attack risk (context 8),medical,supported,0.769,easy,RCT evidence,1
+ME_00082,Vitamin D supplements prevent COVID-19 (context 8),medical,rejected,0.841,medium,Clinical trials,1
+ME_00083,Ivermectin effectively treats COVID-19 (context 8),medical,rejected,0.919,hard,Meta-analyses,3
+ME_00084,Statins reduce cardiovascular mortality (context 8),medical,supported,0.672,expert,Large-scale trials,3
+ME_00085,Antidepressants are effective for mild depression (context 8),medical,undecided,0.723,easy,Mixed trial results,4
+ME_00086,Intermittent fasting extends lifespan (context 8),medical,undecided,0.676,medium,Animal studies only,1
+ME_00087,Chemotherapy is effective for early-stage cancer (context 8),medical,supported,0.611,hard,Survival data,4
+ME_00088,Glucosamine helps joint pain (context 8),medical,rejected,0.619,expert,Systematic reviews,4
+ME_00089,Probiotics improve gut health (context 8),medical,supported,0.803,easy,Microbiome research,4
+ME_00090,Acupuncture reduces chronic pain (context 8),medical,undecided,0.712,medium,Placebo concerns,3
+ME_00091,Aspirin reduces heart attack risk (context 9),medical,supported,0.573,expert,RCT evidence,4
+ME_00092,Vitamin D supplements prevent COVID-19 (context 9),medical,rejected,0.918,easy,Clinical trials,4
+ME_00093,Ivermectin effectively treats COVID-19 (context 9),medical,rejected,0.906,medium,Meta-analyses,2
+ME_00094,Statins reduce cardiovascular mortality (context 9),medical,supported,0.947,hard,Large-scale trials,2
+ME_00095,Antidepressants are effective for mild depression (context 9),medical,undecided,0.917,expert,Mixed trial results,1
+ME_00096,Intermittent fasting extends lifespan (context 9),medical,undecided,0.858,easy,Animal studies only,1
+ME_00097,Chemotherapy is effective for early-stage cancer (context 9),medical,supported,0.717,medium,Survival data,2
+ME_00098,Glucosamine helps joint pain (context 9),medical,rejected,0.742,hard,Systematic reviews,2
+ME_00099,Probiotics improve gut health (context 9),medical,supported,0.815,expert,Microbiome research,3
+ME_00100,Acupuncture reduces chronic pain (context 9),medical,undecided,0.588,easy,Placebo concerns,4
+ME_00101,Aspirin reduces heart attack risk (context 10),medical,supported,0.756,hard,RCT evidence,3
+ME_00102,Vitamin D supplements prevent COVID-19 (context 10),medical,rejected,0.657,expert,Clinical trials,4
+ME_00103,Ivermectin effectively treats COVID-19 (context 10),medical,rejected,0.577,easy,Meta-analyses,2
+ME_00104,Statins reduce cardiovascular mortality (context 10),medical,supported,0.86,medium,Large-scale trials,3
+ME_00105,Antidepressants are effective for mild depression (context 10),medical,undecided,0.8,hard,Mixed trial results,3
+ME_00106,Intermittent fasting extends lifespan (context 10),medical,undecided,0.843,expert,Animal studies only,1
+ME_00107,Chemotherapy is effective for early-stage cancer (context 10),medical,supported,0.81,easy,Survival data,3
+ME_00108,Glucosamine helps joint pain (context 10),medical,rejected,0.646,medium,Systematic reviews,4
+ME_00109,Probiotics improve gut health (context 10),medical,supported,0.597,hard,Microbiome research,3
+ME_00110,Acupuncture reduces chronic pain (context 10),medical,undecided,0.661,expert,Placebo concerns,3
+ME_00111,Aspirin reduces heart attack risk (context 11),medical,supported,0.585,medium,RCT evidence,3
+ME_00112,Vitamin D supplements prevent COVID-19 (context 11),medical,rejected,0.836,hard,Clinical trials,4
+ME_00113,Ivermectin effectively treats COVID-19 (context 11),medical,rejected,0.862,expert,Meta-analyses,4
+ME_00114,Statins reduce cardiovascular mortality (context 11),medical,supported,0.552,easy,Large-scale trials,3
+ME_00115,Antidepressants are effective for mild depression (context 11),medical,undecided,0.819,medium,Mixed trial results,4
+ME_00116,Intermittent fasting extends lifespan (context 11),medical,undecided,0.937,hard,Animal studies only,3
+ME_00117,Chemotherapy is effective for early-stage cancer (context 11),medical,supported,0.828,expert,Survival data,3
+ME_00118,Glucosamine helps joint pain (context 11),medical,rejected,0.576,easy,Systematic reviews,1
+ME_00119,Probiotics improve gut health (context 11),medical,supported,0.62,medium,Microbiome research,3
+ME_00120,Acupuncture reduces chronic pain (context 11),medical,undecided,0.64,hard,Placebo concerns,1
+ME_00121,Aspirin reduces heart attack risk (context 12),medical,supported,0.798,easy,RCT evidence,4
+ME_00122,Vitamin D supplements prevent COVID-19 (context 12),medical,rejected,0.624,medium,Clinical trials,2
+ME_00123,Ivermectin effectively treats COVID-19 (context 12),medical,rejected,0.615,hard,Meta-analyses,4
+ME_00124,Statins reduce cardiovascular mortality (context 12),medical,supported,0.824,expert,Large-scale trials,4
+ME_00125,Antidepressants are effective for mild depression (context 12),medical,undecided,0.704,easy,Mixed trial results,1
+ME_00126,Intermittent fasting extends lifespan (context 12),medical,undecided,0.733,medium,Animal studies only,2
+ME_00127,Chemotherapy is effective for early-stage cancer (context 12),medical,supported,0.897,hard,Survival data,2
+ME_00128,Glucosamine helps joint pain (context 12),medical,rejected,0.606,expert,Systematic reviews,1
+ME_00129,Probiotics improve gut health (context 12),medical,supported,0.6,easy,Microbiome research,2
+ME_00130,Acupuncture reduces chronic pain (context 12),medical,undecided,0.803,medium,Placebo concerns,1
+ME_00131,Aspirin reduces heart attack risk (context 13),medical,supported,0.562,expert,RCT evidence,4
+ME_00132,Vitamin D supplements prevent COVID-19 (context 13),medical,rejected,0.74,easy,Clinical trials,3
+ME_00133,Ivermectin effectively treats COVID-19 (context 13),medical,rejected,0.761,medium,Meta-analyses,3
+ME_00134,Statins reduce cardiovascular mortality (context 13),medical,supported,0.882,hard,Large-scale trials,3
+ME_00135,Antidepressants are effective for mild depression (context 13),medical,undecided,0.552,expert,Mixed trial results,3
+ME_00136,Intermittent fasting extends lifespan (context 13),medical,undecided,0.715,easy,Animal studies only,4
+ME_00137,Chemotherapy is effective for early-stage cancer (context 13),medical,supported,0.93,medium,Survival data,3
+ME_00138,Glucosamine helps joint pain (context 13),medical,rejected,0.77,hard,Systematic reviews,2
+ME_00139,Probiotics improve gut health (context 13),medical,supported,0.869,expert,Microbiome research,3
+ME_00140,Acupuncture reduces chronic pain (context 13),medical,undecided,0.881,easy,Placebo concerns,2
+ME_00141,Aspirin reduces heart attack risk (context 14),medical,supported,0.562,hard,RCT evidence,3
+ME_00142,Vitamin D supplements prevent COVID-19 (context 14),medical,rejected,0.856,expert,Clinical trials,3
+ME_00143,Ivermectin effectively treats COVID-19 (context 14),medical,rejected,0.626,easy,Meta-analyses,2
+ME_00144,Statins reduce cardiovascular mortality (context 14),medical,supported,0.783,medium,Large-scale trials,3
+ME_00145,Antidepressants are effective for mild depression (context 14),medical,undecided,0.629,hard,Mixed trial results,3
+ME_00146,Intermittent fasting extends lifespan (context 14),medical,undecided,0.901,expert,Animal studies only,3
+ME_00147,Chemotherapy is effective for early-stage cancer (context 14),medical,supported,0.557,easy,Survival data,1
+ME_00148,Glucosamine helps joint pain (context 14),medical,rejected,0.676,medium,Systematic reviews,2
+ME_00149,Probiotics improve gut health (context 14),medical,supported,0.639,hard,Microbiome research,2
+ME_00150,Acupuncture reduces chronic pain (context 14),medical,undecided,0.739,expert,Placebo concerns,2
+ME_00151,Aspirin reduces heart attack risk (context 15),medical,supported,0.696,medium,RCT evidence,4
+ME_00152,Vitamin D supplements prevent COVID-19 (context 15),medical,rejected,0.708,hard,Clinical trials,1
+ME_00153,Ivermectin effectively treats COVID-19 (context 15),medical,rejected,0.84,expert,Meta-analyses,4
+ME_00154,Statins reduce cardiovascular mortality (context 15),medical,supported,0.822,easy,Large-scale trials,4
+ME_00155,Antidepressants are effective for mild depression (context 15),medical,undecided,0.688,medium,Mixed trial results,3
+ME_00156,Intermittent fasting extends lifespan (context 15),medical,undecided,0.943,hard,Animal studies only,1
+ME_00157,Chemotherapy is effective for early-stage cancer (context 15),medical,supported,0.894,expert,Survival data,1
+ME_00158,Glucosamine helps joint pain (context 15),medical,rejected,0.695,easy,Systematic reviews,2
+ME_00159,Probiotics improve gut health (context 15),medical,supported,0.832,medium,Microbiome research,4
+ME_00160,Acupuncture reduces chronic pain (context 15),medical,undecided,0.552,hard,Placebo concerns,4
+ME_00161,Aspirin reduces heart attack risk (context 16),medical,supported,0.853,easy,RCT evidence,4
+ME_00162,Vitamin D supplements prevent COVID-19 (context 16),medical,rejected,0.649,medium,Clinical trials,1
+ME_00163,Ivermectin effectively treats COVID-19 (context 16),medical,rejected,0.659,hard,Meta-analyses,4
+ME_00164,Statins reduce cardiovascular mortality (context 16),medical,supported,0.565,expert,Large-scale trials,1
+ME_00165,Antidepressants are effective for mild depression (context 16),medical,undecided,0.711,easy,Mixed trial results,1
+ME_00166,Intermittent fasting extends lifespan (context 16),medical,undecided,0.596,medium,Animal studies only,1
+ME_00167,Chemotherapy is effective for early-stage cancer (context 16),medical,supported,0.685,hard,Survival data,4
+ME_00168,Glucosamine helps joint pain (context 16),medical,rejected,0.777,expert,Systematic reviews,3
+ME_00169,Probiotics improve gut health (context 16),medical,supported,0.931,easy,Microbiome research,4
+ME_00170,Acupuncture reduces chronic pain (context 16),medical,undecided,0.61,medium,Placebo concerns,2
+ME_00171,Aspirin reduces heart attack risk (context 17),medical,supported,0.717,expert,RCT evidence,1
+ME_00172,Vitamin D supplements prevent COVID-19 (context 17),medical,rejected,0.555,easy,Clinical trials,4
+ME_00173,Ivermectin effectively treats COVID-19 (context 17),medical,rejected,0.699,medium,Meta-analyses,3
+ME_00174,Statins reduce cardiovascular mortality (context 17),medical,supported,0.762,hard,Large-scale trials,3
+ME_00175,Antidepressants are effective for mild depression (context 17),medical,undecided,0.644,expert,Mixed trial results,3
+ME_00176,Intermittent fasting extends lifespan (context 17),medical,undecided,0.748,easy,Animal studies only,4
+ME_00177,Chemotherapy is effective for early-stage cancer (context 17),medical,supported,0.78,medium,Survival data,4
+ME_00178,Glucosamine helps joint pain (context 17),medical,rejected,0.552,hard,Systematic reviews,4
+ME_00179,Probiotics improve gut health (context 17),medical,supported,0.79,expert,Microbiome research,2
+ME_00180,Acupuncture reduces chronic pain (context 17),medical,undecided,0.793,easy,Placebo concerns,1
+ME_00181,Aspirin reduces heart attack risk (context 18),medical,supported,0.814,hard,RCT evidence,3
+ME_00182,Vitamin D supplements prevent COVID-19 (context 18),medical,rejected,0.569,expert,Clinical trials,3
+ME_00183,Ivermectin effectively treats COVID-19 (context 18),medical,rejected,0.685,easy,Meta-analyses,3
+ME_00184,Statins reduce cardiovascular mortality (context 18),medical,supported,0.712,medium,Large-scale trials,3
+ME_00185,Antidepressants are effective for mild depression (context 18),medical,undecided,0.802,hard,Mixed trial results,3
+ME_00186,Intermittent fasting extends lifespan (context 18),medical,undecided,0.555,expert,Animal studies only,1
+ME_00187,Chemotherapy is effective for early-stage cancer (context 18),medical,supported,0.785,easy,Survival data,2
+ME_00188,Glucosamine helps joint pain (context 18),medical,rejected,0.637,medium,Systematic reviews,2
+ME_00189,Probiotics improve gut health (context 18),medical,supported,0.632,hard,Microbiome research,2
+ME_00190,Acupuncture reduces chronic pain (context 18),medical,undecided,0.791,expert,Placebo concerns,1
+ME_00191,Aspirin reduces heart attack risk (context 19),medical,supported,0.88,medium,RCT evidence,3
+ME_00192,Vitamin D supplements prevent COVID-19 (context 19),medical,rejected,0.876,hard,Clinical trials,1
+ME_00193,Ivermectin effectively treats COVID-19 (context 19),medical,rejected,0.633,expert,Meta-analyses,4
+ME_00194,Statins reduce cardiovascular mortality (context 19),medical,supported,0.657,easy,Large-scale trials,4
+ME_00195,Antidepressants are effective for mild depression (context 19),medical,undecided,0.91,medium,Mixed trial results,1
+ME_00196,Intermittent fasting extends lifespan (context 19),medical,undecided,0.719,hard,Animal studies only,2
+ME_00197,Chemotherapy is effective for early-stage cancer (context 19),medical,supported,0.892,expert,Survival data,2
+ME_00198,Glucosamine helps joint pain (context 19),medical,rejected,0.837,easy,Systematic reviews,3
+ME_00199,Probiotics improve gut health (context 19),medical,supported,0.772,medium,Microbiome research,3
+ME_00200,Acupuncture reduces chronic pain (context 19),medical,undecided,0.75,hard,Placebo concerns,2
+ME_00201,Aspirin reduces heart attack risk (context 20),medical,supported,0.911,easy,RCT evidence,2
+ME_00202,Vitamin D supplements prevent COVID-19 (context 20),medical,rejected,0.714,medium,Clinical trials,4
+ME_00203,Ivermectin effectively treats COVID-19 (context 20),medical,rejected,0.943,hard,Meta-analyses,3
+ME_00204,Statins reduce cardiovascular mortality (context 20),medical,supported,0.941,expert,Large-scale trials,4
+ME_00205,Antidepressants are effective for mild depression (context 20),medical,undecided,0.839,easy,Mixed trial results,1
+ME_00206,Intermittent fasting extends lifespan (context 20),medical,undecided,0.749,medium,Animal studies only,4
+ME_00207,Chemotherapy is effective for early-stage cancer (context 20),medical,supported,0.564,hard,Survival data,3
+ME_00208,Glucosamine helps joint pain (context 20),medical,rejected,0.564,expert,Systematic reviews,1
+ME_00209,Probiotics improve gut health (context 20),medical,supported,0.772,easy,Microbiome research,3
+ME_00210,Acupuncture reduces chronic pain (context 20),medical,undecided,0.705,medium,Placebo concerns,1
+ME_00211,Aspirin reduces heart attack risk (context 21),medical,supported,0.638,expert,RCT evidence,3
+ME_00212,Vitamin D supplements prevent COVID-19 (context 21),medical,rejected,0.65,easy,Clinical trials,4
+ME_00213,Ivermectin effectively treats COVID-19 (context 21),medical,rejected,0.592,medium,Meta-analyses,1
+ME_00214,Statins reduce cardiovascular mortality (context 21),medical,supported,0.865,hard,Large-scale trials,2
+ME_00215,Antidepressants are effective for mild depression (context 21),medical,undecided,0.724,expert,Mixed trial results,1
+ME_00216,Intermittent fasting extends lifespan (context 21),medical,undecided,0.609,easy,Animal studies only,1
+ME_00217,Chemotherapy is effective for early-stage cancer (context 21),medical,supported,0.778,medium,Survival data,1
+ME_00218,Glucosamine helps joint pain (context 21),medical,rejected,0.905,hard,Systematic reviews,4
+ME_00219,Probiotics improve gut health (context 21),medical,supported,0.559,expert,Microbiome research,1
+ME_00220,Acupuncture reduces chronic pain (context 21),medical,undecided,0.922,easy,Placebo concerns,3
+ME_00221,Aspirin reduces heart attack risk (context 22),medical,supported,0.893,hard,RCT evidence,4
+ME_00222,Vitamin D supplements prevent COVID-19 (context 22),medical,rejected,0.65,expert,Clinical trials,1
+ME_00223,Ivermectin effectively treats COVID-19 (context 22),medical,rejected,0.844,easy,Meta-analyses,4
+ME_00224,Statins reduce cardiovascular mortality (context 22),medical,supported,0.709,medium,Large-scale trials,1
+ME_00225,Antidepressants are effective for mild depression (context 22),medical,undecided,0.551,hard,Mixed trial results,2
+ME_00226,Intermittent fasting extends lifespan (context 22),medical,undecided,0.88,expert,Animal studies only,1
+ME_00227,Chemotherapy is effective for early-stage cancer (context 22),medical,supported,0.635,easy,Survival data,1
+ME_00228,Glucosamine helps joint pain (context 22),medical,rejected,0.944,medium,Systematic reviews,3
+ME_00229,Probiotics improve gut health (context 22),medical,supported,0.753,hard,Microbiome research,4
+ME_00230,Acupuncture reduces chronic pain (context 22),medical,undecided,0.663,expert,Placebo concerns,4
+ME_00231,Aspirin reduces heart attack risk (context 23),medical,supported,0.721,medium,RCT evidence,4
+ME_00232,Vitamin D supplements prevent COVID-19 (context 23),medical,rejected,0.874,hard,Clinical trials,2
+ME_00233,Ivermectin effectively treats COVID-19 (context 23),medical,rejected,0.875,expert,Meta-analyses,1
+ME_00234,Statins reduce cardiovascular mortality (context 23),medical,supported,0.677,easy,Large-scale trials,1
+ME_00235,Antidepressants are effective for mild depression (context 23),medical,undecided,0.636,medium,Mixed trial results,2
+ME_00236,Intermittent fasting extends lifespan (context 23),medical,undecided,0.561,hard,Animal studies only,1
+ME_00237,Chemotherapy is effective for early-stage cancer (context 23),medical,supported,0.621,expert,Survival data,1
+ME_00238,Glucosamine helps joint pain (context 23),medical,rejected,0.758,easy,Systematic reviews,1
+ME_00239,Probiotics improve gut health (context 23),medical,supported,0.803,medium,Microbiome research,4
+ME_00240,Acupuncture reduces chronic pain (context 23),medical,undecided,0.627,hard,Placebo concerns,2
+ME_00241,Aspirin reduces heart attack risk (context 24),medical,supported,0.697,easy,RCT evidence,3
+ME_00242,Vitamin D supplements prevent COVID-19 (context 24),medical,rejected,0.89,medium,Clinical trials,3
+ME_00243,Ivermectin effectively treats COVID-19 (context 24),medical,rejected,0.815,hard,Meta-analyses,2
+ME_00244,Statins reduce cardiovascular mortality (context 24),medical,supported,0.912,expert,Large-scale trials,2
+ME_00245,Antidepressants are effective for mild depression (context 24),medical,undecided,0.797,easy,Mixed trial results,3
+ME_00246,Intermittent fasting extends lifespan (context 24),medical,undecided,0.725,medium,Animal studies only,1
+ME_00247,Chemotherapy is effective for early-stage cancer (context 24),medical,supported,0.664,hard,Survival data,3
+ME_00248,Glucosamine helps joint pain (context 24),medical,rejected,0.781,expert,Systematic reviews,3
+ME_00249,Probiotics improve gut health (context 24),medical,supported,0.736,easy,Microbiome research,4
+ME_00250,Acupuncture reduces chronic pain (context 24),medical,undecided,0.589,medium,Placebo concerns,2
+ME_00251,Aspirin reduces heart attack risk (context 25),medical,supported,0.741,expert,RCT evidence,2
+ME_00252,Vitamin D supplements prevent COVID-19 (context 25),medical,rejected,0.769,easy,Clinical trials,3
+ME_00253,Ivermectin effectively treats COVID-19 (context 25),medical,rejected,0.844,medium,Meta-analyses,1
+ME_00254,Statins reduce cardiovascular mortality (context 25),medical,supported,0.594,hard,Large-scale trials,3
+ME_00255,Antidepressants are effective for mild depression (context 25),medical,undecided,0.919,expert,Mixed trial results,2
+ME_00256,Intermittent fasting extends lifespan (context 25),medical,undecided,0.748,easy,Animal studies only,4
+ME_00257,Chemotherapy is effective for early-stage cancer (context 25),medical,supported,0.874,medium,Survival data,4
+ME_00258,Glucosamine helps joint pain (context 25),medical,rejected,0.554,hard,Systematic reviews,3
+ME_00259,Probiotics improve gut health (context 25),medical,supported,0.901,expert,Microbiome research,2
+ME_00260,Acupuncture reduces chronic pain (context 25),medical,undecided,0.683,easy,Placebo concerns,2
+ME_00261,Aspirin reduces heart attack risk (context 26),medical,supported,0.61,hard,RCT evidence,4
+ME_00262,Vitamin D supplements prevent COVID-19 (context 26),medical,rejected,0.663,expert,Clinical trials,3
+ME_00263,Ivermectin effectively treats COVID-19 (context 26),medical,rejected,0.591,easy,Meta-analyses,3
+ME_00264,Statins reduce cardiovascular mortality (context 26),medical,supported,0.682,medium,Large-scale trials,4
+ME_00265,Antidepressants are effective for mild depression (context 26),medical,undecided,0.579,hard,Mixed trial results,3
+ME_00266,Intermittent fasting extends lifespan (context 26),medical,undecided,0.568,expert,Animal studies only,1
+ME_00267,Chemotherapy is effective for early-stage cancer (context 26),medical,supported,0.936,easy,Survival data,4
+ME_00268,Glucosamine helps joint pain (context 26),medical,rejected,0.69,medium,Systematic reviews,4
+ME_00269,Probiotics improve gut health (context 26),medical,supported,0.77,hard,Microbiome research,1
+ME_00270,Acupuncture reduces chronic pain (context 26),medical,undecided,0.655,expert,Placebo concerns,1
+ME_00271,Aspirin reduces heart attack risk (context 27),medical,supported,0.855,medium,RCT evidence,4
+ME_00272,Vitamin D supplements prevent COVID-19 (context 27),medical,rejected,0.597,hard,Clinical trials,2
+ME_00273,Ivermectin effectively treats COVID-19 (context 27),medical,rejected,0.785,expert,Meta-analyses,2
+ME_00274,Statins reduce cardiovascular mortality (context 27),medical,supported,0.597,easy,Large-scale trials,1
+ME_00275,Antidepressants are effective for mild depression (context 27),medical,undecided,0.712,medium,Mixed trial results,2
+ME_00276,Intermittent fasting extends lifespan (context 27),medical,undecided,0.557,hard,Animal studies only,3
+ME_00277,Chemotherapy is effective for early-stage cancer (context 27),medical,supported,0.561,expert,Survival data,2
+ME_00278,Glucosamine helps joint pain (context 27),medical,rejected,0.672,easy,Systematic reviews,1
+ME_00279,Probiotics improve gut health (context 27),medical,supported,0.797,medium,Microbiome research,4
+ME_00280,Acupuncture reduces chronic pain (context 27),medical,undecided,0.624,hard,Placebo concerns,3
+ME_00281,Aspirin reduces heart attack risk (context 28),medical,supported,0.576,easy,RCT evidence,3
+ME_00282,Vitamin D supplements prevent COVID-19 (context 28),medical,rejected,0.842,medium,Clinical trials,4
+ME_00283,Ivermectin effectively treats COVID-19 (context 28),medical,rejected,0.937,hard,Meta-analyses,4
+ME_00284,Statins reduce cardiovascular mortality (context 28),medical,supported,0.899,expert,Large-scale trials,1
+ME_00285,Antidepressants are effective for mild depression (context 28),medical,undecided,0.602,easy,Mixed trial results,4
+ME_00286,Intermittent fasting extends lifespan (context 28),medical,undecided,0.566,medium,Animal studies only,2
+ME_00287,Chemotherapy is effective for early-stage cancer (context 28),medical,supported,0.607,hard,Survival data,1
+ME_00288,Glucosamine helps joint pain (context 28),medical,rejected,0.899,expert,Systematic reviews,4
+ME_00289,Probiotics improve gut health (context 28),medical,supported,0.719,easy,Microbiome research,4
+ME_00290,Acupuncture reduces chronic pain (context 28),medical,undecided,0.729,medium,Placebo concerns,3
+ME_00291,Aspirin reduces heart attack risk (context 29),medical,supported,0.935,expert,RCT evidence,2
+ME_00292,Vitamin D supplements prevent COVID-19 (context 29),medical,rejected,0.618,easy,Clinical trials,2
+ME_00293,Ivermectin effectively treats COVID-19 (context 29),medical,rejected,0.865,medium,Meta-analyses,4
+ME_00294,Statins reduce cardiovascular mortality (context 29),medical,supported,0.635,hard,Large-scale trials,3
+ME_00295,Antidepressants are effective for mild depression (context 29),medical,undecided,0.731,expert,Mixed trial results,2
+ME_00296,Intermittent fasting extends lifespan (context 29),medical,undecided,0.94,easy,Animal studies only,1
+ME_00297,Chemotherapy is effective for early-stage cancer (context 29),medical,supported,0.636,medium,Survival data,3
+ME_00298,Glucosamine helps joint pain (context 29),medical,rejected,0.584,hard,Systematic reviews,2
+ME_00299,Probiotics improve gut health (context 29),medical,supported,0.559,expert,Microbiome research,4
+ME_00300,Acupuncture reduces chronic pain (context 29),medical,undecided,0.74,easy,Placebo concerns,2
+ME_00301,Aspirin reduces heart attack risk (context 30),medical,supported,0.791,hard,RCT evidence,2
+ME_00302,Vitamin D supplements prevent COVID-19 (context 30),medical,rejected,0.878,expert,Clinical trials,3
+ME_00303,Ivermectin effectively treats COVID-19 (context 30),medical,rejected,0.708,easy,Meta-analyses,2
+ME_00304,Statins reduce cardiovascular mortality (context 30),medical,supported,0.872,medium,Large-scale trials,2
+ME_00305,Antidepressants are effective for mild depression (context 30),medical,undecided,0.627,hard,Mixed trial results,3
+ME_00306,Intermittent fasting extends lifespan (context 30),medical,undecided,0.897,expert,Animal studies only,2
+ME_00307,Chemotherapy is effective for early-stage cancer (context 30),medical,supported,0.804,easy,Survival data,4
+ME_00308,Glucosamine helps joint pain (context 30),medical,rejected,0.68,medium,Systematic reviews,3
+ME_00309,Probiotics improve gut health (context 30),medical,supported,0.663,hard,Microbiome research,1
+ME_00310,Acupuncture reduces chronic pain (context 30),medical,undecided,0.566,expert,Placebo concerns,1
+ME_00311,Aspirin reduces heart attack risk (context 31),medical,supported,0.88,medium,RCT evidence,2
+ME_00312,Vitamin D supplements prevent COVID-19 (context 31),medical,rejected,0.949,hard,Clinical trials,2
+ME_00313,Ivermectin effectively treats COVID-19 (context 31),medical,rejected,0.922,expert,Meta-analyses,2
+ME_00314,Statins reduce cardiovascular mortality (context 31),medical,supported,0.627,easy,Large-scale trials,4
+ME_00315,Antidepressants are effective for mild depression (context 31),medical,undecided,0.637,medium,Mixed trial results,4
+ME_00316,Intermittent fasting extends lifespan (context 31),medical,undecided,0.818,hard,Animal studies only,2
+ME_00317,Chemotherapy is effective for early-stage cancer (context 31),medical,supported,0.658,expert,Survival data,4
+ME_00318,Glucosamine helps joint pain (context 31),medical,rejected,0.814,easy,Systematic reviews,3
+ME_00319,Probiotics improve gut health (context 31),medical,supported,0.568,medium,Microbiome research,3
+ME_00320,Acupuncture reduces chronic pain (context 31),medical,undecided,0.846,hard,Placebo concerns,4
+ME_00321,Aspirin reduces heart attack risk (context 32),medical,supported,0.765,easy,RCT evidence,4
+ME_00322,Vitamin D supplements prevent COVID-19 (context 32),medical,rejected,0.711,medium,Clinical trials,2
+ME_00323,Ivermectin effectively treats COVID-19 (context 32),medical,rejected,0.689,hard,Meta-analyses,2
+ME_00324,Statins reduce cardiovascular mortality (context 32),medical,supported,0.832,expert,Large-scale trials,2
+ME_00325,Antidepressants are effective for mild depression (context 32),medical,undecided,0.597,easy,Mixed trial results,3
+ME_00326,Intermittent fasting extends lifespan (context 32),medical,undecided,0.556,medium,Animal studies only,3
+ME_00327,Chemotherapy is effective for early-stage cancer (context 32),medical,supported,0.82,hard,Survival data,3
+ME_00328,Glucosamine helps joint pain (context 32),medical,rejected,0.591,expert,Systematic reviews,4
+ME_00329,Probiotics improve gut health (context 32),medical,supported,0.764,easy,Microbiome research,4
+ME_00330,Acupuncture reduces chronic pain (context 32),medical,undecided,0.672,medium,Placebo concerns,3
+ME_00331,Aspirin reduces heart attack risk (context 33),medical,supported,0.814,expert,RCT evidence,3
+ME_00332,Vitamin D supplements prevent COVID-19 (context 33),medical,rejected,0.613,easy,Clinical trials,2
+ME_00333,Ivermectin effectively treats COVID-19 (context 33),medical,rejected,0.793,medium,Meta-analyses,2
+ME_00334,Statins reduce cardiovascular mortality (context 33),medical,supported,0.941,hard,Large-scale trials,4
+ME_00335,Antidepressants are effective for mild depression (context 33),medical,undecided,0.883,expert,Mixed trial results,2
+ME_00336,Intermittent fasting extends lifespan (context 33),medical,undecided,0.786,easy,Animal studies only,3
+ME_00337,Chemotherapy is effective for early-stage cancer (context 33),medical,supported,0.701,medium,Survival data,4
+ME_00338,Glucosamine helps joint pain (context 33),medical,rejected,0.669,hard,Systematic reviews,2
+ME_00339,Probiotics improve gut health (context 33),medical,supported,0.639,expert,Microbiome research,2
+ME_00340,Acupuncture reduces chronic pain (context 33),medical,undecided,0.748,easy,Placebo concerns,1
+ME_00341,Aspirin reduces heart attack risk (context 34),medical,supported,0.645,hard,RCT evidence,4
+ME_00342,Vitamin D supplements prevent COVID-19 (context 34),medical,rejected,0.771,expert,Clinical trials,1
+ME_00343,Ivermectin effectively treats COVID-19 (context 34),medical,rejected,0.928,easy,Meta-analyses,2
+ME_00344,Statins reduce cardiovascular mortality (context 34),medical,supported,0.708,medium,Large-scale trials,2
+ME_00345,Antidepressants are effective for mild depression (context 34),medical,undecided,0.855,hard,Mixed trial results,1
+ME_00346,Intermittent fasting extends lifespan (context 34),medical,undecided,0.642,expert,Animal studies only,2
+ME_00347,Chemotherapy is effective for early-stage cancer (context 34),medical,supported,0.849,easy,Survival data,4
+ME_00348,Glucosamine helps joint pain (context 34),medical,rejected,0.671,medium,Systematic reviews,3
+ME_00349,Probiotics improve gut health (context 34),medical,supported,0.704,hard,Microbiome research,1
+ME_00350,Acupuncture reduces chronic pain (context 34),medical,undecided,0.617,expert,Placebo concerns,1
+ME_00351,Aspirin reduces heart attack risk (context 35),medical,supported,0.816,medium,RCT evidence,1
+ME_00352,Vitamin D supplements prevent COVID-19 (context 35),medical,rejected,0.685,hard,Clinical trials,3
+ME_00353,Ivermectin effectively treats COVID-19 (context 35),medical,rejected,0.83,expert,Meta-analyses,1
+ME_00354,Statins reduce cardiovascular mortality (context 35),medical,supported,0.938,easy,Large-scale trials,4
+ME_00355,Antidepressants are effective for mild depression (context 35),medical,undecided,0.711,medium,Mixed trial results,3
+ME_00356,Intermittent fasting extends lifespan (context 35),medical,undecided,0.635,hard,Animal studies only,3
+ME_00357,Chemotherapy is effective for early-stage cancer (context 35),medical,supported,0.684,expert,Survival data,4
+ME_00358,Glucosamine helps joint pain (context 35),medical,rejected,0.893,easy,Systematic reviews,1
+ME_00359,Probiotics improve gut health (context 35),medical,supported,0.817,medium,Microbiome research,1
+ME_00360,Acupuncture reduces chronic pain (context 35),medical,undecided,0.932,hard,Placebo concerns,4
+ME_00361,Aspirin reduces heart attack risk (context 36),medical,supported,0.699,easy,RCT evidence,2
+ME_00362,Vitamin D supplements prevent COVID-19 (context 36),medical,rejected,0.645,medium,Clinical trials,4
+ME_00363,Ivermectin effectively treats COVID-19 (context 36),medical,rejected,0.878,hard,Meta-analyses,4
+ME_00364,Statins reduce cardiovascular mortality (context 36),medical,supported,0.876,expert,Large-scale trials,4
+ME_00365,Antidepressants are effective for mild depression (context 36),medical,undecided,0.892,easy,Mixed trial results,4
+ME_00366,Intermittent fasting extends lifespan (context 36),medical,undecided,0.692,medium,Animal studies only,3
+ME_00367,Chemotherapy is effective for early-stage cancer (context 36),medical,supported,0.599,hard,Survival data,3
+ME_00368,Glucosamine helps joint pain (context 36),medical,rejected,0.722,expert,Systematic reviews,1
+ME_00369,Probiotics improve gut health (context 36),medical,supported,0.93,easy,Microbiome research,1
+ME_00370,Acupuncture reduces chronic pain (context 36),medical,undecided,0.87,medium,Placebo concerns,1
+ME_00371,Aspirin reduces heart attack risk (context 37),medical,supported,0.657,expert,RCT evidence,1
+ME_00372,Vitamin D supplements prevent COVID-19 (context 37),medical,rejected,0.627,easy,Clinical trials,2
+ME_00373,Ivermectin effectively treats COVID-19 (context 37),medical,rejected,0.81,medium,Meta-analyses,3
+ME_00374,Statins reduce cardiovascular mortality (context 37),medical,supported,0.882,hard,Large-scale trials,4
+ME_00375,Antidepressants are effective for mild depression (context 37),medical,undecided,0.603,expert,Mixed trial results,4
+ME_00376,Intermittent fasting extends lifespan (context 37),medical,undecided,0.744,easy,Animal studies only,2
+ME_00377,Chemotherapy is effective for early-stage cancer (context 37),medical,supported,0.634,medium,Survival data,4
+ME_00378,Glucosamine helps joint pain (context 37),medical,rejected,0.885,hard,Systematic reviews,4
+ME_00379,Probiotics improve gut health (context 37),medical,supported,0.937,expert,Microbiome research,2
+ME_00380,Acupuncture reduces chronic pain (context 37),medical,undecided,0.922,easy,Placebo concerns,2
+ME_00381,Aspirin reduces heart attack risk (context 38),medical,supported,0.679,hard,RCT evidence,3
+ME_00382,Vitamin D supplements prevent COVID-19 (context 38),medical,rejected,0.744,expert,Clinical trials,1
+ME_00383,Ivermectin effectively treats COVID-19 (context 38),medical,rejected,0.684,easy,Meta-analyses,2
+ME_00384,Statins reduce cardiovascular mortality (context 38),medical,supported,0.773,medium,Large-scale trials,2
+ME_00385,Antidepressants are effective for mild depression (context 38),medical,undecided,0.701,hard,Mixed trial results,4
+ME_00386,Intermittent fasting extends lifespan (context 38),medical,undecided,0.834,expert,Animal studies only,4
+ME_00387,Chemotherapy is effective for early-stage cancer (context 38),medical,supported,0.837,easy,Survival data,2
+ME_00388,Glucosamine helps joint pain (context 38),medical,rejected,0.681,medium,Systematic reviews,4
+ME_00389,Probiotics improve gut health (context 38),medical,supported,0.689,hard,Microbiome research,4
+ME_00390,Acupuncture reduces chronic pain (context 38),medical,undecided,0.804,expert,Placebo concerns,4
+ME_00391,Aspirin reduces heart attack risk (context 39),medical,supported,0.899,medium,RCT evidence,2
+ME_00392,Vitamin D supplements prevent COVID-19 (context 39),medical,rejected,0.734,hard,Clinical trials,3
+ME_00393,Ivermectin effectively treats COVID-19 (context 39),medical,rejected,0.734,expert,Meta-analyses,3
+ME_00394,Statins reduce cardiovascular mortality (context 39),medical,supported,0.656,easy,Large-scale trials,4
+ME_00395,Antidepressants are effective for mild depression (context 39),medical,undecided,0.644,medium,Mixed trial results,4
+ME_00396,Intermittent fasting extends lifespan (context 39),medical,undecided,0.9,hard,Animal studies only,3
+ME_00397,Chemotherapy is effective for early-stage cancer (context 39),medical,supported,0.753,expert,Survival data,3
+ME_00398,Glucosamine helps joint pain (context 39),medical,rejected,0.765,easy,Systematic reviews,4
+ME_00399,Probiotics improve gut health (context 39),medical,supported,0.755,medium,Microbiome research,3
+ME_00400,Acupuncture reduces chronic pain (context 39),medical,undecided,0.903,hard,Placebo concerns,1
+ME_00401,Aspirin reduces heart attack risk (context 40),medical,supported,0.604,easy,RCT evidence,2
+ME_00402,Vitamin D supplements prevent COVID-19 (context 40),medical,rejected,0.831,medium,Clinical trials,3
+ME_00403,Ivermectin effectively treats COVID-19 (context 40),medical,rejected,0.868,hard,Meta-analyses,3
+ME_00404,Statins reduce cardiovascular mortality (context 40),medical,supported,0.711,expert,Large-scale trials,1
+ME_00405,Antidepressants are effective for mild depression (context 40),medical,undecided,0.59,easy,Mixed trial results,1
+ME_00406,Intermittent fasting extends lifespan (context 40),medical,undecided,0.918,medium,Animal studies only,3
+ME_00407,Chemotherapy is effective for early-stage cancer (context 40),medical,supported,0.686,hard,Survival data,3
+ME_00408,Glucosamine helps joint pain (context 40),medical,rejected,0.914,expert,Systematic reviews,1
+ME_00409,Probiotics improve gut health (context 40),medical,supported,0.917,easy,Microbiome research,2
+ME_00410,Acupuncture reduces chronic pain (context 40),medical,undecided,0.727,medium,Placebo concerns,4
+ME_00411,Aspirin reduces heart attack risk (context 41),medical,supported,0.646,expert,RCT evidence,1
+ME_00412,Vitamin D supplements prevent COVID-19 (context 41),medical,rejected,0.658,easy,Clinical trials,4
+ME_00413,Ivermectin effectively treats COVID-19 (context 41),medical,rejected,0.858,medium,Meta-analyses,1
+ME_00414,Statins reduce cardiovascular mortality (context 41),medical,supported,0.821,hard,Large-scale trials,4
+ME_00415,Antidepressants are effective for mild depression (context 41),medical,undecided,0.564,expert,Mixed trial results,4
+ME_00416,Intermittent fasting extends lifespan (context 41),medical,undecided,0.648,easy,Animal studies only,2
+ME_00417,Chemotherapy is effective for early-stage cancer (context 41),medical,supported,0.944,medium,Survival data,4
+ME_00418,Glucosamine helps joint pain (context 41),medical,rejected,0.613,hard,Systematic reviews,3
+ME_00419,Probiotics improve gut health (context 41),medical,supported,0.95,expert,Microbiome research,4
+ME_00420,Acupuncture reduces chronic pain (context 41),medical,undecided,0.836,easy,Placebo concerns,4
+ME_00421,Aspirin reduces heart attack risk (context 42),medical,supported,0.857,hard,RCT evidence,2
+ME_00422,Vitamin D supplements prevent COVID-19 (context 42),medical,rejected,0.74,expert,Clinical trials,1
+ME_00423,Ivermectin effectively treats COVID-19 (context 42),medical,rejected,0.65,easy,Meta-analyses,2
+ME_00424,Statins reduce cardiovascular mortality (context 42),medical,supported,0.704,medium,Large-scale trials,1
+ME_00425,Antidepressants are effective for mild depression (context 42),medical,undecided,0.679,hard,Mixed trial results,1
+ME_00426,Intermittent fasting extends lifespan (context 42),medical,undecided,0.921,expert,Animal studies only,4
+ME_00427,Chemotherapy is effective for early-stage cancer (context 42),medical,supported,0.76,easy,Survival data,2
+ME_00428,Glucosamine helps joint pain (context 42),medical,rejected,0.636,medium,Systematic reviews,4
+ME_00429,Probiotics improve gut health (context 42),medical,supported,0.891,hard,Microbiome research,4
+ME_00430,Acupuncture reduces chronic pain (context 42),medical,undecided,0.594,expert,Placebo concerns,1
+ME_00431,Aspirin reduces heart attack risk (context 43),medical,supported,0.762,medium,RCT evidence,1
+ME_00432,Vitamin D supplements prevent COVID-19 (context 43),medical,rejected,0.937,hard,Clinical trials,3
+ME_00433,Ivermectin effectively treats COVID-19 (context 43),medical,rejected,0.65,expert,Meta-analyses,3
+ME_00434,Statins reduce cardiovascular mortality (context 43),medical,supported,0.811,easy,Large-scale trials,3
+ME_00435,Antidepressants are effective for mild depression (context 43),medical,undecided,0.734,medium,Mixed trial results,1
+ME_00436,Intermittent fasting extends lifespan (context 43),medical,undecided,0.639,hard,Animal studies only,4
+ME_00437,Chemotherapy is effective for early-stage cancer (context 43),medical,supported,0.588,expert,Survival data,1
+ME_00438,Glucosamine helps joint pain (context 43),medical,rejected,0.681,easy,Systematic reviews,3
+ME_00439,Probiotics improve gut health (context 43),medical,supported,0.571,medium,Microbiome research,3
+ME_00440,Acupuncture reduces chronic pain (context 43),medical,undecided,0.899,hard,Placebo concerns,1
+ME_00441,Aspirin reduces heart attack risk (context 44),medical,supported,0.682,easy,RCT evidence,4
+ME_00442,Vitamin D supplements prevent COVID-19 (context 44),medical,rejected,0.77,medium,Clinical trials,1
+ME_00443,Ivermectin effectively treats COVID-19 (context 44),medical,rejected,0.927,hard,Meta-analyses,4
+ME_00444,Statins reduce cardiovascular mortality (context 44),medical,supported,0.72,expert,Large-scale trials,4
+ME_00445,Antidepressants are effective for mild depression (context 44),medical,undecided,0.723,easy,Mixed trial results,3
+ME_00446,Intermittent fasting extends lifespan (context 44),medical,undecided,0.927,medium,Animal studies only,2
+ME_00447,Chemotherapy is effective for early-stage cancer (context 44),medical,supported,0.837,hard,Survival data,3
+ME_00448,Glucosamine helps joint pain (context 44),medical,rejected,0.861,expert,Systematic reviews,1
+ME_00449,Probiotics improve gut health (context 44),medical,supported,0.83,easy,Microbiome research,2
+ME_00450,Acupuncture reduces chronic pain (context 44),medical,undecided,0.941,medium,Placebo concerns,2
+ME_00451,Aspirin reduces heart attack risk (context 45),medical,supported,0.559,expert,RCT evidence,2
+ME_00452,Vitamin D supplements prevent COVID-19 (context 45),medical,rejected,0.611,easy,Clinical trials,3
+ME_00453,Ivermectin effectively treats COVID-19 (context 45),medical,rejected,0.587,medium,Meta-analyses,2
+ME_00454,Statins reduce cardiovascular mortality (context 45),medical,supported,0.73,hard,Large-scale trials,4
+ME_00455,Antidepressants are effective for mild depression (context 45),medical,undecided,0.732,expert,Mixed trial results,3
+ME_00456,Intermittent fasting extends lifespan (context 45),medical,undecided,0.581,easy,Animal studies only,1
+ME_00457,Chemotherapy is effective for early-stage cancer (context 45),medical,supported,0.769,medium,Survival data,1
+ME_00458,Glucosamine helps joint pain (context 45),medical,rejected,0.831,hard,Systematic reviews,1
+ME_00459,Probiotics improve gut health (context 45),medical,supported,0.831,expert,Microbiome research,1
+ME_00460,Acupuncture reduces chronic pain (context 45),medical,undecided,0.902,easy,Placebo concerns,2
+ME_00461,Aspirin reduces heart attack risk (context 46),medical,supported,0.946,hard,RCT evidence,4
+ME_00462,Vitamin D supplements prevent COVID-19 (context 46),medical,rejected,0.624,expert,Clinical trials,4
+ME_00463,Ivermectin effectively treats COVID-19 (context 46),medical,rejected,0.929,easy,Meta-analyses,1
+ME_00464,Statins reduce cardiovascular mortality (context 46),medical,supported,0.862,medium,Large-scale trials,2
+ME_00465,Antidepressants are effective for mild depression (context 46),medical,undecided,0.606,hard,Mixed trial results,2
+ME_00466,Intermittent fasting extends lifespan (context 46),medical,undecided,0.578,expert,Animal studies only,3
+ME_00467,Chemotherapy is effective for early-stage cancer (context 46),medical,supported,0.62,easy,Survival data,2
+ME_00468,Glucosamine helps joint pain (context 46),medical,rejected,0.74,medium,Systematic reviews,3
+ME_00469,Probiotics improve gut health (context 46),medical,supported,0.86,hard,Microbiome research,2
+ME_00470,Acupuncture reduces chronic pain (context 46),medical,undecided,0.929,expert,Placebo concerns,3
+ME_00471,Aspirin reduces heart attack risk (context 47),medical,supported,0.935,medium,RCT evidence,1
+ME_00472,Vitamin D supplements prevent COVID-19 (context 47),medical,rejected,0.785,hard,Clinical trials,1
+ME_00473,Ivermectin effectively treats COVID-19 (context 47),medical,rejected,0.796,expert,Meta-analyses,2
+ME_00474,Statins reduce cardiovascular mortality (context 47),medical,supported,0.927,easy,Large-scale trials,3
+ME_00475,Antidepressants are effective for mild depression (context 47),medical,undecided,0.61,medium,Mixed trial results,2
+ME_00476,Intermittent fasting extends lifespan (context 47),medical,undecided,0.73,hard,Animal studies only,3
+ME_00477,Chemotherapy is effective for early-stage cancer (context 47),medical,supported,0.638,expert,Survival data,2
+ME_00478,Glucosamine helps joint pain (context 47),medical,rejected,0.727,easy,Systematic reviews,4
+ME_00479,Probiotics improve gut health (context 47),medical,supported,0.814,medium,Microbiome research,4
+ME_00480,Acupuncture reduces chronic pain (context 47),medical,undecided,0.651,hard,Placebo concerns,4
+ME_00481,Aspirin reduces heart attack risk (context 48),medical,supported,0.833,easy,RCT evidence,1
+ME_00482,Vitamin D supplements prevent COVID-19 (context 48),medical,rejected,0.679,medium,Clinical trials,2
+ME_00483,Ivermectin effectively treats COVID-19 (context 48),medical,rejected,0.608,hard,Meta-analyses,3
+ME_00484,Statins reduce cardiovascular mortality (context 48),medical,supported,0.884,expert,Large-scale trials,1
+ME_00485,Antidepressants are effective for mild depression (context 48),medical,undecided,0.632,easy,Mixed trial results,4
+ME_00486,Intermittent fasting extends lifespan (context 48),medical,undecided,0.733,medium,Animal studies only,3
+ME_00487,Chemotherapy is effective for early-stage cancer (context 48),medical,supported,0.561,hard,Survival data,1
+ME_00488,Glucosamine helps joint pain (context 48),medical,rejected,0.923,expert,Systematic reviews,4
+ME_00489,Probiotics improve gut health (context 48),medical,supported,0.834,easy,Microbiome research,3
+ME_00490,Acupuncture reduces chronic pain (context 48),medical,undecided,0.705,medium,Placebo concerns,1
+ME_00491,Aspirin reduces heart attack risk (context 49),medical,supported,0.768,expert,RCT evidence,3
+ME_00492,Vitamin D supplements prevent COVID-19 (context 49),medical,rejected,0.801,easy,Clinical trials,4
+ME_00493,Ivermectin effectively treats COVID-19 (context 49),medical,rejected,0.592,medium,Meta-analyses,2
+ME_00494,Statins reduce cardiovascular mortality (context 49),medical,supported,0.698,hard,Large-scale trials,2
+ME_00495,Antidepressants are effective for mild depression (context 49),medical,undecided,0.645,expert,Mixed trial results,1
+ME_00496,Intermittent fasting extends lifespan (context 49),medical,undecided,0.633,easy,Animal studies only,3
+ME_00497,Chemotherapy is effective for early-stage cancer (context 49),medical,supported,0.732,medium,Survival data,4
+ME_00498,Glucosamine helps joint pain (context 49),medical,rejected,0.874,hard,Systematic reviews,4
+ME_00499,Probiotics improve gut health (context 49),medical,supported,0.7,expert,Microbiome research,1
+ME_00500,Acupuncture reduces chronic pain (context 49),medical,undecided,0.917,easy,Placebo concerns,3
+ME_00501,Aspirin reduces heart attack risk (context 50),medical,supported,0.661,hard,RCT evidence,4
+ME_00502,Vitamin D supplements prevent COVID-19 (context 50),medical,rejected,0.708,expert,Clinical trials,2
+ME_00503,Ivermectin effectively treats COVID-19 (context 50),medical,rejected,0.865,easy,Meta-analyses,1
+ME_00504,Statins reduce cardiovascular mortality (context 50),medical,supported,0.774,medium,Large-scale trials,4
+ME_00505,Antidepressants are effective for mild depression (context 50),medical,undecided,0.663,hard,Mixed trial results,3
+ME_00506,Intermittent fasting extends lifespan (context 50),medical,undecided,0.668,expert,Animal studies only,1
+ME_00507,Chemotherapy is effective for early-stage cancer (context 50),medical,supported,0.849,easy,Survival data,2
+ME_00508,Glucosamine helps joint pain (context 50),medical,rejected,0.593,medium,Systematic reviews,2
+ME_00509,Probiotics improve gut health (context 50),medical,supported,0.866,hard,Microbiome research,4
+ME_00510,Acupuncture reduces chronic pain (context 50),medical,undecided,0.567,expert,Placebo concerns,2
+ME_00511,Aspirin reduces heart attack risk (context 51),medical,supported,0.557,medium,RCT evidence,4
+ME_00512,Vitamin D supplements prevent COVID-19 (context 51),medical,rejected,0.787,hard,Clinical trials,4
+ME_00513,Ivermectin effectively treats COVID-19 (context 51),medical,rejected,0.864,expert,Meta-analyses,3
+ME_00514,Statins reduce cardiovascular mortality (context 51),medical,supported,0.568,easy,Large-scale trials,2
+ME_00515,Antidepressants are effective for mild depression (context 51),medical,undecided,0.774,medium,Mixed trial results,3
+ME_00516,Intermittent fasting extends lifespan (context 51),medical,undecided,0.746,hard,Animal studies only,1
+ME_00517,Chemotherapy is effective for early-stage cancer (context 51),medical,supported,0.743,expert,Survival data,2
+ME_00518,Glucosamine helps joint pain (context 51),medical,rejected,0.646,easy,Systematic reviews,2
+ME_00519,Probiotics improve gut health (context 51),medical,supported,0.887,medium,Microbiome research,1
+ME_00520,Acupuncture reduces chronic pain (context 51),medical,undecided,0.661,hard,Placebo concerns,1
+ME_00521,Aspirin reduces heart attack risk (context 52),medical,supported,0.827,easy,RCT evidence,2
+ME_00522,Vitamin D supplements prevent COVID-19 (context 52),medical,rejected,0.691,medium,Clinical trials,4
+ME_00523,Ivermectin effectively treats COVID-19 (context 52),medical,rejected,0.648,hard,Meta-analyses,4
+ME_00524,Statins reduce cardiovascular mortality (context 52),medical,supported,0.617,expert,Large-scale trials,4
+ME_00525,Antidepressants are effective for mild depression (context 52),medical,undecided,0.835,easy,Mixed trial results,2
+ME_00526,Intermittent fasting extends lifespan (context 52),medical,undecided,0.643,medium,Animal studies only,1
+ME_00527,Chemotherapy is effective for early-stage cancer (context 52),medical,supported,0.594,hard,Survival data,3
+ME_00528,Glucosamine helps joint pain (context 52),medical,rejected,0.695,expert,Systematic reviews,2
+ME_00529,Probiotics improve gut health (context 52),medical,supported,0.74,easy,Microbiome research,4
+ME_00530,Acupuncture reduces chronic pain (context 52),medical,undecided,0.818,medium,Placebo concerns,1
+ME_00531,Aspirin reduces heart attack risk (context 53),medical,supported,0.883,expert,RCT evidence,1
+ME_00532,Vitamin D supplements prevent COVID-19 (context 53),medical,rejected,0.948,easy,Clinical trials,1
+ME_00533,Ivermectin effectively treats COVID-19 (context 53),medical,rejected,0.596,medium,Meta-analyses,2
+ME_00534,Statins reduce cardiovascular mortality (context 53),medical,supported,0.824,hard,Large-scale trials,2
+ME_00535,Antidepressants are effective for mild depression (context 53),medical,undecided,0.765,expert,Mixed trial results,1
+ME_00536,Intermittent fasting extends lifespan (context 53),medical,undecided,0.736,easy,Animal studies only,2
+ME_00537,Chemotherapy is effective for early-stage cancer (context 53),medical,supported,0.556,medium,Survival data,1
+ME_00538,Glucosamine helps joint pain (context 53),medical,rejected,0.796,hard,Systematic reviews,3
+ME_00539,Probiotics improve gut health (context 53),medical,supported,0.87,expert,Microbiome research,1
+ME_00540,Acupuncture reduces chronic pain (context 53),medical,undecided,0.685,easy,Placebo concerns,3
+ME_00541,Aspirin reduces heart attack risk (context 54),medical,supported,0.665,hard,RCT evidence,3
+ME_00542,Vitamin D supplements prevent COVID-19 (context 54),medical,rejected,0.82,expert,Clinical trials,2
+ME_00543,Ivermectin effectively treats COVID-19 (context 54),medical,rejected,0.71,easy,Meta-analyses,1
+ME_00544,Statins reduce cardiovascular mortality (context 54),medical,supported,0.886,medium,Large-scale trials,3
+ME_00545,Antidepressants are effective for mild depression (context 54),medical,undecided,0.808,hard,Mixed trial results,2
+ME_00546,Intermittent fasting extends lifespan (context 54),medical,undecided,0.68,expert,Animal studies only,4
+ME_00547,Chemotherapy is effective for early-stage cancer (context 54),medical,supported,0.614,easy,Survival data,3
+ME_00548,Glucosamine helps joint pain (context 54),medical,rejected,0.746,medium,Systematic reviews,1
+ME_00549,Probiotics improve gut health (context 54),medical,supported,0.861,hard,Microbiome research,4
+ME_00550,Acupuncture reduces chronic pain (context 54),medical,undecided,0.823,expert,Placebo concerns,3
+ME_00551,Aspirin reduces heart attack risk (context 55),medical,supported,0.851,medium,RCT evidence,2
+ME_00552,Vitamin D supplements prevent COVID-19 (context 55),medical,rejected,0.843,hard,Clinical trials,2
+ME_00553,Ivermectin effectively treats COVID-19 (context 55),medical,rejected,0.727,expert,Meta-analyses,2
+ME_00554,Statins reduce cardiovascular mortality (context 55),medical,supported,0.9,easy,Large-scale trials,3
+ME_00555,Antidepressants are effective for mild depression (context 55),medical,undecided,0.822,medium,Mixed trial results,1
+ME_00556,Intermittent fasting extends lifespan (context 55),medical,undecided,0.709,hard,Animal studies only,4
+ME_00557,Chemotherapy is effective for early-stage cancer (context 55),medical,supported,0.578,expert,Survival data,4
+ME_00558,Glucosamine helps joint pain (context 55),medical,rejected,0.901,easy,Systematic reviews,3
+ME_00559,Probiotics improve gut health (context 55),medical,supported,0.856,medium,Microbiome research,2
+ME_00560,Acupuncture reduces chronic pain (context 55),medical,undecided,0.861,hard,Placebo concerns,4
+ME_00561,Aspirin reduces heart attack risk (context 56),medical,supported,0.902,easy,RCT evidence,3
+ME_00562,Vitamin D supplements prevent COVID-19 (context 56),medical,rejected,0.672,medium,Clinical trials,4
+ME_00563,Ivermectin effectively treats COVID-19 (context 56),medical,rejected,0.769,hard,Meta-analyses,4
+ME_00564,Statins reduce cardiovascular mortality (context 56),medical,supported,0.588,expert,Large-scale trials,2
+ME_00565,Antidepressants are effective for mild depression (context 56),medical,undecided,0.939,easy,Mixed trial results,4
+ME_00566,Intermittent fasting extends lifespan (context 56),medical,undecided,0.846,medium,Animal studies only,3
+ME_00567,Chemotherapy is effective for early-stage cancer (context 56),medical,supported,0.708,hard,Survival data,2
+ME_00568,Glucosamine helps joint pain (context 56),medical,rejected,0.809,expert,Systematic reviews,3
+ME_00569,Probiotics improve gut health (context 56),medical,supported,0.653,easy,Microbiome research,2
+ME_00570,Acupuncture reduces chronic pain (context 56),medical,undecided,0.644,medium,Placebo concerns,3
+ME_00571,Aspirin reduces heart attack risk (context 57),medical,supported,0.559,expert,RCT evidence,4
+ME_00572,Vitamin D supplements prevent COVID-19 (context 57),medical,rejected,0.909,easy,Clinical trials,1
+ME_00573,Ivermectin effectively treats COVID-19 (context 57),medical,rejected,0.944,medium,Meta-analyses,1
+ME_00574,Statins reduce cardiovascular mortality (context 57),medical,supported,0.922,hard,Large-scale trials,3
+ME_00575,Antidepressants are effective for mild depression (context 57),medical,undecided,0.886,expert,Mixed trial results,3
+ME_00576,Intermittent fasting extends lifespan (context 57),medical,undecided,0.934,easy,Animal studies only,1
+ME_00577,Chemotherapy is effective for early-stage cancer (context 57),medical,supported,0.827,medium,Survival data,3
+ME_00578,Glucosamine helps joint pain (context 57),medical,rejected,0.925,hard,Systematic reviews,3
+ME_00579,Probiotics improve gut health (context 57),medical,supported,0.899,expert,Microbiome research,3
+ME_00580,Acupuncture reduces chronic pain (context 57),medical,undecided,0.555,easy,Placebo concerns,3
+ME_00581,Aspirin reduces heart attack risk (context 58),medical,supported,0.88,hard,RCT evidence,4
+ME_00582,Vitamin D supplements prevent COVID-19 (context 58),medical,rejected,0.666,expert,Clinical trials,1
+ME_00583,Ivermectin effectively treats COVID-19 (context 58),medical,rejected,0.641,easy,Meta-analyses,1
+ME_00584,Statins reduce cardiovascular mortality (context 58),medical,supported,0.8,medium,Large-scale trials,2
+ME_00585,Antidepressants are effective for mild depression (context 58),medical,undecided,0.949,hard,Mixed trial results,2
+ME_00586,Intermittent fasting extends lifespan (context 58),medical,undecided,0.689,expert,Animal studies only,1
+ME_00587,Chemotherapy is effective for early-stage cancer (context 58),medical,supported,0.667,easy,Survival data,1
+ME_00588,Glucosamine helps joint pain (context 58),medical,rejected,0.59,medium,Systematic reviews,3
+ME_00589,Probiotics improve gut health (context 58),medical,supported,0.738,hard,Microbiome research,3
+ME_00590,Acupuncture reduces chronic pain (context 58),medical,undecided,0.915,expert,Placebo concerns,3
+ME_00591,Aspirin reduces heart attack risk (context 59),medical,supported,0.74,medium,RCT evidence,3
+ME_00592,Vitamin D supplements prevent COVID-19 (context 59),medical,rejected,0.638,hard,Clinical trials,2
+ME_00593,Ivermectin effectively treats COVID-19 (context 59),medical,rejected,0.585,expert,Meta-analyses,3
+ME_00594,Statins reduce cardiovascular mortality (context 59),medical,supported,0.695,easy,Large-scale trials,1
+ME_00595,Antidepressants are effective for mild depression (context 59),medical,undecided,0.866,medium,Mixed trial results,4
+ME_00596,Intermittent fasting extends lifespan (context 59),medical,undecided,0.785,hard,Animal studies only,4
+ME_00597,Chemotherapy is effective for early-stage cancer (context 59),medical,supported,0.828,expert,Survival data,4
+ME_00598,Glucosamine helps joint pain (context 59),medical,rejected,0.748,easy,Systematic reviews,2
+ME_00599,Probiotics improve gut health (context 59),medical,supported,0.676,medium,Microbiome research,2
+ME_00600,Acupuncture reduces chronic pain (context 59),medical,undecided,0.751,hard,Placebo concerns,3
+ME_00601,Aspirin reduces heart attack risk (context 60),medical,supported,0.654,easy,RCT evidence,1
+ME_00602,Vitamin D supplements prevent COVID-19 (context 60),medical,rejected,0.898,medium,Clinical trials,3
+ME_00603,Ivermectin effectively treats COVID-19 (context 60),medical,rejected,0.582,hard,Meta-analyses,2
+ME_00604,Statins reduce cardiovascular mortality (context 60),medical,supported,0.708,expert,Large-scale trials,1
+ME_00605,Antidepressants are effective for mild depression (context 60),medical,undecided,0.794,easy,Mixed trial results,3
+ME_00606,Intermittent fasting extends lifespan (context 60),medical,undecided,0.819,medium,Animal studies only,2
+ME_00607,Chemotherapy is effective for early-stage cancer (context 60),medical,supported,0.796,hard,Survival data,3
+ME_00608,Glucosamine helps joint pain (context 60),medical,rejected,0.556,expert,Systematic reviews,2
+ME_00609,Probiotics improve gut health (context 60),medical,supported,0.584,easy,Microbiome research,3
+ME_00610,Acupuncture reduces chronic pain (context 60),medical,undecided,0.901,medium,Placebo concerns,2
+ME_00611,Aspirin reduces heart attack risk (context 61),medical,supported,0.647,expert,RCT evidence,2
+ME_00612,Vitamin D supplements prevent COVID-19 (context 61),medical,rejected,0.923,easy,Clinical trials,2
+ME_00613,Ivermectin effectively treats COVID-19 (context 61),medical,rejected,0.932,medium,Meta-analyses,3
+ME_00614,Statins reduce cardiovascular mortality (context 61),medical,supported,0.764,hard,Large-scale trials,3
+ME_00615,Antidepressants are effective for mild depression (context 61),medical,undecided,0.742,expert,Mixed trial results,4
+ME_00616,Intermittent fasting extends lifespan (context 61),medical,undecided,0.561,easy,Animal studies only,3
+ME_00617,Chemotherapy is effective for early-stage cancer (context 61),medical,supported,0.647,medium,Survival data,2
+ME_00618,Glucosamine helps joint pain (context 61),medical,rejected,0.798,hard,Systematic reviews,3
+ME_00619,Probiotics improve gut health (context 61),medical,supported,0.64,expert,Microbiome research,1
+ME_00620,Acupuncture reduces chronic pain (context 61),medical,undecided,0.756,easy,Placebo concerns,1
+ME_00621,Aspirin reduces heart attack risk (context 62),medical,supported,0.825,hard,RCT evidence,4
+ME_00622,Vitamin D supplements prevent COVID-19 (context 62),medical,rejected,0.929,expert,Clinical trials,2
+ME_00623,Ivermectin effectively treats COVID-19 (context 62),medical,rejected,0.831,easy,Meta-analyses,3
+ME_00624,Statins reduce cardiovascular mortality (context 62),medical,supported,0.886,medium,Large-scale trials,2
+ME_00625,Antidepressants are effective for mild depression (context 62),medical,undecided,0.921,hard,Mixed trial results,2
+ME_00626,Intermittent fasting extends lifespan (context 62),medical,undecided,0.692,expert,Animal studies only,1
+ME_00627,Chemotherapy is effective for early-stage cancer (context 62),medical,supported,0.945,easy,Survival data,1
+ME_00628,Glucosamine helps joint pain (context 62),medical,rejected,0.634,medium,Systematic reviews,1
+ME_00629,Probiotics improve gut health (context 62),medical,supported,0.88,hard,Microbiome research,4
+ME_00630,Acupuncture reduces chronic pain (context 62),medical,undecided,0.588,expert,Placebo concerns,2
+ME_00631,Aspirin reduces heart attack risk (context 63),medical,supported,0.93,medium,RCT evidence,3
+ME_00632,Vitamin D supplements prevent COVID-19 (context 63),medical,rejected,0.622,hard,Clinical trials,2
+ME_00633,Ivermectin effectively treats COVID-19 (context 63),medical,rejected,0.717,expert,Meta-analyses,1
+ME_00634,Statins reduce cardiovascular mortality (context 63),medical,supported,0.901,easy,Large-scale trials,4
+ME_00635,Antidepressants are effective for mild depression (context 63),medical,undecided,0.93,medium,Mixed trial results,1
+ME_00636,Intermittent fasting extends lifespan (context 63),medical,undecided,0.842,hard,Animal studies only,2
+ME_00637,Chemotherapy is effective for early-stage cancer (context 63),medical,supported,0.921,expert,Survival data,2
+ME_00638,Glucosamine helps joint pain (context 63),medical,rejected,0.616,easy,Systematic reviews,1
+ME_00639,Probiotics improve gut health (context 63),medical,supported,0.652,medium,Microbiome research,1
+ME_00640,Acupuncture reduces chronic pain (context 63),medical,undecided,0.625,hard,Placebo concerns,4
+ME_00641,Aspirin reduces heart attack risk (context 64),medical,supported,0.919,easy,RCT evidence,3
+ME_00642,Vitamin D supplements prevent COVID-19 (context 64),medical,rejected,0.584,medium,Clinical trials,4
+ME_00643,Ivermectin effectively treats COVID-19 (context 64),medical,rejected,0.785,hard,Meta-analyses,3
+ME_00644,Statins reduce cardiovascular mortality (context 64),medical,supported,0.764,expert,Large-scale trials,2
+ME_00645,Antidepressants are effective for mild depression (context 64),medical,undecided,0.741,easy,Mixed trial results,3
+ME_00646,Intermittent fasting extends lifespan (context 64),medical,undecided,0.823,medium,Animal studies only,1
+ME_00647,Chemotherapy is effective for early-stage cancer (context 64),medical,supported,0.793,hard,Survival data,3
+ME_00648,Glucosamine helps joint pain (context 64),medical,rejected,0.664,expert,Systematic reviews,3
+ME_00649,Probiotics improve gut health (context 64),medical,supported,0.71,easy,Microbiome research,4
+ME_00650,Acupuncture reduces chronic pain (context 64),medical,undecided,0.935,medium,Placebo concerns,4
+ME_00651,Aspirin reduces heart attack risk (context 65),medical,supported,0.746,expert,RCT evidence,3
+ME_00652,Vitamin D supplements prevent COVID-19 (context 65),medical,rejected,0.727,easy,Clinical trials,4
+ME_00653,Ivermectin effectively treats COVID-19 (context 65),medical,rejected,0.572,medium,Meta-analyses,2
+ME_00654,Statins reduce cardiovascular mortality (context 65),medical,supported,0.628,hard,Large-scale trials,2
+ME_00655,Antidepressants are effective for mild depression (context 65),medical,undecided,0.677,expert,Mixed trial results,4
+ME_00656,Intermittent fasting extends lifespan (context 65),medical,undecided,0.697,easy,Animal studies only,1
+ME_00657,Chemotherapy is effective for early-stage cancer (context 65),medical,supported,0.879,medium,Survival data,1
+ME_00658,Glucosamine helps joint pain (context 65),medical,rejected,0.679,hard,Systematic reviews,3
+ME_00659,Probiotics improve gut health (context 65),medical,supported,0.934,expert,Microbiome research,3
+ME_00660,Acupuncture reduces chronic pain (context 65),medical,undecided,0.585,easy,Placebo concerns,4
+ME_00661,Aspirin reduces heart attack risk (context 66),medical,supported,0.801,hard,RCT evidence,2
+ME_00662,Vitamin D supplements prevent COVID-19 (context 66),medical,rejected,0.666,expert,Clinical trials,2
+ME_00663,Ivermectin effectively treats COVID-19 (context 66),medical,rejected,0.588,easy,Meta-analyses,1
+ME_00664,Statins reduce cardiovascular mortality (context 66),medical,supported,0.784,medium,Large-scale trials,4
+ME_00665,Antidepressants are effective for mild depression (context 66),medical,undecided,0.602,hard,Mixed trial results,2
+ME_00666,Intermittent fasting extends lifespan (context 66),medical,undecided,0.722,expert,Animal studies only,1
+ME_00667,Chemotherapy is effective for early-stage cancer (context 66),medical,supported,0.875,easy,Survival data,1
+ME_00668,Glucosamine helps joint pain (context 66),medical,rejected,0.762,medium,Systematic reviews,4
+ME_00669,Probiotics improve gut health (context 66),medical,supported,0.678,hard,Microbiome research,1
+ME_00670,Acupuncture reduces chronic pain (context 66),medical,undecided,0.788,expert,Placebo concerns,1
+ME_00671,Aspirin reduces heart attack risk (context 67),medical,supported,0.806,medium,RCT evidence,1
+ME_00672,Vitamin D supplements prevent COVID-19 (context 67),medical,rejected,0.803,hard,Clinical trials,4
+ME_00673,Ivermectin effectively treats COVID-19 (context 67),medical,rejected,0.749,expert,Meta-analyses,1
+ME_00674,Statins reduce cardiovascular mortality (context 67),medical,supported,0.835,easy,Large-scale trials,4
+ME_00675,Antidepressants are effective for mild depression (context 67),medical,undecided,0.899,medium,Mixed trial results,4
+ME_00676,Intermittent fasting extends lifespan (context 67),medical,undecided,0.609,hard,Animal studies only,2
+ME_00677,Chemotherapy is effective for early-stage cancer (context 67),medical,supported,0.916,expert,Survival data,3
+ME_00678,Glucosamine helps joint pain (context 67),medical,rejected,0.579,easy,Systematic reviews,4
+ME_00679,Probiotics improve gut health (context 67),medical,supported,0.756,medium,Microbiome research,3
+ME_00680,Acupuncture reduces chronic pain (context 67),medical,undecided,0.583,hard,Placebo concerns,1
+ME_00681,Aspirin reduces heart attack risk (context 68),medical,supported,0.778,easy,RCT evidence,1
+ME_00682,Vitamin D supplements prevent COVID-19 (context 68),medical,rejected,0.699,medium,Clinical trials,4
+ME_00683,Ivermectin effectively treats COVID-19 (context 68),medical,rejected,0.579,hard,Meta-analyses,4
+ME_00684,Statins reduce cardiovascular mortality (context 68),medical,supported,0.599,expert,Large-scale trials,1
+ME_00685,Antidepressants are effective for mild depression (context 68),medical,undecided,0.729,easy,Mixed trial results,4
+ME_00686,Intermittent fasting extends lifespan (context 68),medical,undecided,0.675,medium,Animal studies only,1
+ME_00687,Chemotherapy is effective for early-stage cancer (context 68),medical,supported,0.761,hard,Survival data,4
+ME_00688,Glucosamine helps joint pain (context 68),medical,rejected,0.663,expert,Systematic reviews,4
+ME_00689,Probiotics improve gut health (context 68),medical,supported,0.864,easy,Microbiome research,4
+ME_00690,Acupuncture reduces chronic pain (context 68),medical,undecided,0.568,medium,Placebo concerns,1
+ME_00691,Aspirin reduces heart attack risk (context 69),medical,supported,0.641,expert,RCT evidence,3
+ME_00692,Vitamin D supplements prevent COVID-19 (context 69),medical,rejected,0.738,easy,Clinical trials,3
+ME_00693,Ivermectin effectively treats COVID-19 (context 69),medical,rejected,0.718,medium,Meta-analyses,2
+ME_00694,Statins reduce cardiovascular mortality (context 69),medical,supported,0.806,hard,Large-scale trials,3
+ME_00695,Antidepressants are effective for mild depression (context 69),medical,undecided,0.559,expert,Mixed trial results,4
+ME_00696,Intermittent fasting extends lifespan (context 69),medical,undecided,0.715,easy,Animal studies only,3
+ME_00697,Chemotherapy is effective for early-stage cancer (context 69),medical,supported,0.632,medium,Survival data,3
+ME_00698,Glucosamine helps joint pain (context 69),medical,rejected,0.668,hard,Systematic reviews,3
+ME_00699,Probiotics improve gut health (context 69),medical,supported,0.704,expert,Microbiome research,4
+ME_00700,Acupuncture reduces chronic pain (context 69),medical,undecided,0.916,easy,Placebo concerns,1
+ME_00701,Aspirin reduces heart attack risk (context 70),medical,supported,0.63,hard,RCT evidence,1
+ME_00702,Vitamin D supplements prevent COVID-19 (context 70),medical,rejected,0.886,expert,Clinical trials,2
+ME_00703,Ivermectin effectively treats COVID-19 (context 70),medical,rejected,0.859,easy,Meta-analyses,4
+ME_00704,Statins reduce cardiovascular mortality (context 70),medical,supported,0.712,medium,Large-scale trials,2
+ME_00705,Antidepressants are effective for mild depression (context 70),medical,undecided,0.906,hard,Mixed trial results,1
+ME_00706,Intermittent fasting extends lifespan (context 70),medical,undecided,0.752,expert,Animal studies only,2
+ME_00707,Chemotherapy is effective for early-stage cancer (context 70),medical,supported,0.841,easy,Survival data,4
+ME_00708,Glucosamine helps joint pain (context 70),medical,rejected,0.913,medium,Systematic reviews,3
+ME_00709,Probiotics improve gut health (context 70),medical,supported,0.646,hard,Microbiome research,3
+ME_00710,Acupuncture reduces chronic pain (context 70),medical,undecided,0.68,expert,Placebo concerns,2
+ME_00711,Aspirin reduces heart attack risk (context 71),medical,supported,0.862,medium,RCT evidence,1
+ME_00712,Vitamin D supplements prevent COVID-19 (context 71),medical,rejected,0.924,hard,Clinical trials,4
+ME_00713,Ivermectin effectively treats COVID-19 (context 71),medical,rejected,0.869,expert,Meta-analyses,4
+ME_00714,Statins reduce cardiovascular mortality (context 71),medical,supported,0.742,easy,Large-scale trials,3
+ME_00715,Antidepressants are effective for mild depression (context 71),medical,undecided,0.923,medium,Mixed trial results,4
+ME_00716,Intermittent fasting extends lifespan (context 71),medical,undecided,0.599,hard,Animal studies only,1
+ME_00717,Chemotherapy is effective for early-stage cancer (context 71),medical,supported,0.849,expert,Survival data,3
+ME_00718,Glucosamine helps joint pain (context 71),medical,rejected,0.751,easy,Systematic reviews,3
+ME_00719,Probiotics improve gut health (context 71),medical,supported,0.673,medium,Microbiome research,2
+ME_00720,Acupuncture reduces chronic pain (context 71),medical,undecided,0.626,hard,Placebo concerns,3
+ME_00721,Aspirin reduces heart attack risk (context 72),medical,supported,0.628,easy,RCT evidence,3
+ME_00722,Vitamin D supplements prevent COVID-19 (context 72),medical,rejected,0.594,medium,Clinical trials,2
+ME_00723,Ivermectin effectively treats COVID-19 (context 72),medical,rejected,0.594,hard,Meta-analyses,2
+ME_00724,Statins reduce cardiovascular mortality (context 72),medical,supported,0.793,expert,Large-scale trials,3
+ME_00725,Antidepressants are effective for mild depression (context 72),medical,undecided,0.613,easy,Mixed trial results,2
+ME_00726,Intermittent fasting extends lifespan (context 72),medical,undecided,0.687,medium,Animal studies only,1
+ME_00727,Chemotherapy is effective for early-stage cancer (context 72),medical,supported,0.698,hard,Survival data,1
+ME_00728,Glucosamine helps joint pain (context 72),medical,rejected,0.62,expert,Systematic reviews,3
+ME_00729,Probiotics improve gut health (context 72),medical,supported,0.873,easy,Microbiome research,3
+ME_00730,Acupuncture reduces chronic pain (context 72),medical,undecided,0.856,medium,Placebo concerns,4
+ME_00731,Aspirin reduces heart attack risk (context 73),medical,supported,0.623,expert,RCT evidence,1
+ME_00732,Vitamin D supplements prevent COVID-19 (context 73),medical,rejected,0.782,easy,Clinical trials,3
+ME_00733,Ivermectin effectively treats COVID-19 (context 73),medical,rejected,0.783,medium,Meta-analyses,3
+ME_00734,Statins reduce cardiovascular mortality (context 73),medical,supported,0.662,hard,Large-scale trials,2
+ME_00735,Antidepressants are effective for mild depression (context 73),medical,undecided,0.573,expert,Mixed trial results,2
+ME_00736,Intermittent fasting extends lifespan (context 73),medical,undecided,0.814,easy,Animal studies only,1
+ME_00737,Chemotherapy is effective for early-stage cancer (context 73),medical,supported,0.632,medium,Survival data,2
+ME_00738,Glucosamine helps joint pain (context 73),medical,rejected,0.793,hard,Systematic reviews,3
+ME_00739,Probiotics improve gut health (context 73),medical,supported,0.737,expert,Microbiome research,3
+ME_00740,Acupuncture reduces chronic pain (context 73),medical,undecided,0.778,easy,Placebo concerns,2
+ME_00741,Aspirin reduces heart attack risk (context 74),medical,supported,0.62,hard,RCT evidence,2
+ME_00742,Vitamin D supplements prevent COVID-19 (context 74),medical,rejected,0.815,expert,Clinical trials,4
+ME_00743,Ivermectin effectively treats COVID-19 (context 74),medical,rejected,0.679,easy,Meta-analyses,1
+ME_00744,Statins reduce cardiovascular mortality (context 74),medical,supported,0.753,medium,Large-scale trials,2
+ME_00745,Antidepressants are effective for mild depression (context 74),medical,undecided,0.786,hard,Mixed trial results,4
+ME_00746,Intermittent fasting extends lifespan (context 74),medical,undecided,0.657,expert,Animal studies only,2
+ME_00747,Chemotherapy is effective for early-stage cancer (context 74),medical,supported,0.661,easy,Survival data,4
+ME_00748,Glucosamine helps joint pain (context 74),medical,rejected,0.902,medium,Systematic reviews,3
+ME_00749,Probiotics improve gut health (context 74),medical,supported,0.906,hard,Microbiome research,3
+ME_00750,Acupuncture reduces chronic pain (context 74),medical,undecided,0.874,expert,Placebo concerns,2
+ME_00751,Aspirin reduces heart attack risk (context 75),medical,supported,0.805,medium,RCT evidence,1
+ME_00752,Vitamin D supplements prevent COVID-19 (context 75),medical,rejected,0.772,hard,Clinical trials,3
+ME_00753,Ivermectin effectively treats COVID-19 (context 75),medical,rejected,0.592,expert,Meta-analyses,1
+ME_00754,Statins reduce cardiovascular mortality (context 75),medical,supported,0.855,easy,Large-scale trials,2
+ME_00755,Antidepressants are effective for mild depression (context 75),medical,undecided,0.738,medium,Mixed trial results,1
+ME_00756,Intermittent fasting extends lifespan (context 75),medical,undecided,0.771,hard,Animal studies only,1
+ME_00757,Chemotherapy is effective for early-stage cancer (context 75),medical,supported,0.903,expert,Survival data,2
+ME_00758,Glucosamine helps joint pain (context 75),medical,rejected,0.641,easy,Systematic reviews,3
+ME_00759,Probiotics improve gut health (context 75),medical,supported,0.725,medium,Microbiome research,4
+ME_00760,Acupuncture reduces chronic pain (context 75),medical,undecided,0.917,hard,Placebo concerns,3
+ME_00761,Aspirin reduces heart attack risk (context 76),medical,supported,0.927,easy,RCT evidence,1
+ME_00762,Vitamin D supplements prevent COVID-19 (context 76),medical,rejected,0.665,medium,Clinical trials,2
+ME_00763,Ivermectin effectively treats COVID-19 (context 76),medical,rejected,0.882,hard,Meta-analyses,3
+ME_00764,Statins reduce cardiovascular mortality (context 76),medical,supported,0.668,expert,Large-scale trials,3
+ME_00765,Antidepressants are effective for mild depression (context 76),medical,undecided,0.828,easy,Mixed trial results,2
+ME_00766,Intermittent fasting extends lifespan (context 76),medical,undecided,0.821,medium,Animal studies only,3
+ME_00767,Chemotherapy is effective for early-stage cancer (context 76),medical,supported,0.583,hard,Survival data,2
+ME_00768,Glucosamine helps joint pain (context 76),medical,rejected,0.618,expert,Systematic reviews,3
+ME_00769,Probiotics improve gut health (context 76),medical,supported,0.636,easy,Microbiome research,1
+ME_00770,Acupuncture reduces chronic pain (context 76),medical,undecided,0.729,medium,Placebo concerns,3
+ME_00771,Aspirin reduces heart attack risk (context 77),medical,supported,0.739,expert,RCT evidence,2
+ME_00772,Vitamin D supplements prevent COVID-19 (context 77),medical,rejected,0.552,easy,Clinical trials,3
+ME_00773,Ivermectin effectively treats COVID-19 (context 77),medical,rejected,0.718,medium,Meta-analyses,3
+ME_00774,Statins reduce cardiovascular mortality (context 77),medical,supported,0.681,hard,Large-scale trials,2
+ME_00775,Antidepressants are effective for mild depression (context 77),medical,undecided,0.754,expert,Mixed trial results,3
+ME_00776,Intermittent fasting extends lifespan (context 77),medical,undecided,0.932,easy,Animal studies only,1
+ME_00777,Chemotherapy is effective for early-stage cancer (context 77),medical,supported,0.57,medium,Survival data,4
+ME_00778,Glucosamine helps joint pain (context 77),medical,rejected,0.93,hard,Systematic reviews,3
+ME_00779,Probiotics improve gut health (context 77),medical,supported,0.628,expert,Microbiome research,4
+ME_00780,Acupuncture reduces chronic pain (context 77),medical,undecided,0.785,easy,Placebo concerns,4
+ME_00781,Aspirin reduces heart attack risk (context 78),medical,supported,0.793,hard,RCT evidence,1
+ME_00782,Vitamin D supplements prevent COVID-19 (context 78),medical,rejected,0.749,expert,Clinical trials,1
+ME_00783,Ivermectin effectively treats COVID-19 (context 78),medical,rejected,0.823,easy,Meta-analyses,1
+ME_00784,Statins reduce cardiovascular mortality (context 78),medical,supported,0.896,medium,Large-scale trials,4
+ME_00785,Antidepressants are effective for mild depression (context 78),medical,undecided,0.679,hard,Mixed trial results,3
+ME_00786,Intermittent fasting extends lifespan (context 78),medical,undecided,0.853,expert,Animal studies only,2
+ME_00787,Chemotherapy is effective for early-stage cancer (context 78),medical,supported,0.873,easy,Survival data,4
+ME_00788,Glucosamine helps joint pain (context 78),medical,rejected,0.63,medium,Systematic reviews,1
+ME_00789,Probiotics improve gut health (context 78),medical,supported,0.933,hard,Microbiome research,1
+ME_00790,Acupuncture reduces chronic pain (context 78),medical,undecided,0.774,expert,Placebo concerns,2
+ME_00791,Aspirin reduces heart attack risk (context 79),medical,supported,0.71,medium,RCT evidence,3
+ME_00792,Vitamin D supplements prevent COVID-19 (context 79),medical,rejected,0.647,hard,Clinical trials,1
+ME_00793,Ivermectin effectively treats COVID-19 (context 79),medical,rejected,0.622,expert,Meta-analyses,2
+ME_00794,Statins reduce cardiovascular mortality (context 79),medical,supported,0.785,easy,Large-scale trials,1
+ME_00795,Antidepressants are effective for mild depression (context 79),medical,undecided,0.596,medium,Mixed trial results,3
+ME_00796,Intermittent fasting extends lifespan (context 79),medical,undecided,0.582,hard,Animal studies only,3
+ME_00797,Chemotherapy is effective for early-stage cancer (context 79),medical,supported,0.823,expert,Survival data,3
+ME_00798,Glucosamine helps joint pain (context 79),medical,rejected,0.65,easy,Systematic reviews,1
+ME_00799,Probiotics improve gut health (context 79),medical,supported,0.835,medium,Microbiome research,3
+ME_00800,Acupuncture reduces chronic pain (context 79),medical,undecided,0.682,hard,Placebo concerns,1
+ME_00801,Aspirin reduces heart attack risk (context 80),medical,supported,0.746,easy,RCT evidence,3
+ME_00802,Vitamin D supplements prevent COVID-19 (context 80),medical,rejected,0.858,medium,Clinical trials,4
+ME_00803,Ivermectin effectively treats COVID-19 (context 80),medical,rejected,0.882,hard,Meta-analyses,1
+ME_00804,Statins reduce cardiovascular mortality (context 80),medical,supported,0.947,expert,Large-scale trials,3
+ME_00805,Antidepressants are effective for mild depression (context 80),medical,undecided,0.944,easy,Mixed trial results,3
+ME_00806,Intermittent fasting extends lifespan (context 80),medical,undecided,0.858,medium,Animal studies only,4
+ME_00807,Chemotherapy is effective for early-stage cancer (context 80),medical,supported,0.861,hard,Survival data,3
+ME_00808,Glucosamine helps joint pain (context 80),medical,rejected,0.808,expert,Systematic reviews,2
+ME_00809,Probiotics improve gut health (context 80),medical,supported,0.675,easy,Microbiome research,4
+ME_00810,Acupuncture reduces chronic pain (context 80),medical,undecided,0.684,medium,Placebo concerns,4
+ME_00811,Aspirin reduces heart attack risk (context 81),medical,supported,0.691,expert,RCT evidence,1
+ME_00812,Vitamin D supplements prevent COVID-19 (context 81),medical,rejected,0.845,easy,Clinical trials,1
+ME_00813,Ivermectin effectively treats COVID-19 (context 81),medical,rejected,0.678,medium,Meta-analyses,4
+ME_00814,Statins reduce cardiovascular mortality (context 81),medical,supported,0.715,hard,Large-scale trials,3
+ME_00815,Antidepressants are effective for mild depression (context 81),medical,undecided,0.654,expert,Mixed trial results,3
+ME_00816,Intermittent fasting extends lifespan (context 81),medical,undecided,0.775,easy,Animal studies only,2
+ME_00817,Chemotherapy is effective for early-stage cancer (context 81),medical,supported,0.756,medium,Survival data,4
+ME_00818,Glucosamine helps joint pain (context 81),medical,rejected,0.806,hard,Systematic reviews,2
+ME_00819,Probiotics improve gut health (context 81),medical,supported,0.571,expert,Microbiome research,4
+ME_00820,Acupuncture reduces chronic pain (context 81),medical,undecided,0.807,easy,Placebo concerns,1
+ME_00821,Aspirin reduces heart attack risk (context 82),medical,supported,0.728,hard,RCT evidence,2
+ME_00822,Vitamin D supplements prevent COVID-19 (context 82),medical,rejected,0.603,expert,Clinical trials,3
+ME_00823,Ivermectin effectively treats COVID-19 (context 82),medical,rejected,0.72,easy,Meta-analyses,4
+ME_00824,Statins reduce cardiovascular mortality (context 82),medical,supported,0.79,medium,Large-scale trials,1
+ME_00825,Antidepressants are effective for mild depression (context 82),medical,undecided,0.668,hard,Mixed trial results,2
+ME_00826,Intermittent fasting extends lifespan (context 82),medical,undecided,0.617,expert,Animal studies only,2
+ME_00827,Chemotherapy is effective for early-stage cancer (context 82),medical,supported,0.751,easy,Survival data,4
+ME_00828,Glucosamine helps joint pain (context 82),medical,rejected,0.801,medium,Systematic reviews,1
+ME_00829,Probiotics improve gut health (context 82),medical,supported,0.852,hard,Microbiome research,2
+ME_00830,Acupuncture reduces chronic pain (context 82),medical,undecided,0.859,expert,Placebo concerns,3
+ME_00831,Aspirin reduces heart attack risk (context 83),medical,supported,0.922,medium,RCT evidence,3
+ME_00832,Vitamin D supplements prevent COVID-19 (context 83),medical,rejected,0.676,hard,Clinical trials,2
+ME_00833,Ivermectin effectively treats COVID-19 (context 83),medical,rejected,0.703,expert,Meta-analyses,3
+ME_00834,Statins reduce cardiovascular mortality (context 83),medical,supported,0.845,easy,Large-scale trials,2
+ME_00835,Antidepressants are effective for mild depression (context 83),medical,undecided,0.619,medium,Mixed trial results,2
+ME_00836,Intermittent fasting extends lifespan (context 83),medical,undecided,0.696,hard,Animal studies only,3
+ME_00837,Chemotherapy is effective for early-stage cancer (context 83),medical,supported,0.596,expert,Survival data,3
+ME_00838,Glucosamine helps joint pain (context 83),medical,rejected,0.865,easy,Systematic reviews,4
+ME_00839,Probiotics improve gut health (context 83),medical,supported,0.895,medium,Microbiome research,2
+ME_00840,Acupuncture reduces chronic pain (context 83),medical,undecided,0.927,hard,Placebo concerns,1
+ME_00841,Aspirin reduces heart attack risk (context 84),medical,supported,0.885,easy,RCT evidence,3
+ME_00842,Vitamin D supplements prevent COVID-19 (context 84),medical,rejected,0.742,medium,Clinical trials,4
+ME_00843,Ivermectin effectively treats COVID-19 (context 84),medical,rejected,0.613,hard,Meta-analyses,4
+ME_00844,Statins reduce cardiovascular mortality (context 84),medical,supported,0.771,expert,Large-scale trials,4
+ME_00845,Antidepressants are effective for mild depression (context 84),medical,undecided,0.725,easy,Mixed trial results,3
+ME_00846,Intermittent fasting extends lifespan (context 84),medical,undecided,0.69,medium,Animal studies only,2
+ME_00847,Chemotherapy is effective for early-stage cancer (context 84),medical,supported,0.58,hard,Survival data,3
+ME_00848,Glucosamine helps joint pain (context 84),medical,rejected,0.572,expert,Systematic reviews,4
+ME_00849,Probiotics improve gut health (context 84),medical,supported,0.918,easy,Microbiome research,2
+ME_00850,Acupuncture reduces chronic pain (context 84),medical,undecided,0.755,medium,Placebo concerns,4
+ME_00851,Aspirin reduces heart attack risk (context 85),medical,supported,0.845,expert,RCT evidence,3
+ME_00852,Vitamin D supplements prevent COVID-19 (context 85),medical,rejected,0.902,easy,Clinical trials,2
+ME_00853,Ivermectin effectively treats COVID-19 (context 85),medical,rejected,0.806,medium,Meta-analyses,3
+ME_00854,Statins reduce cardiovascular mortality (context 85),medical,supported,0.588,hard,Large-scale trials,4
+ME_00855,Antidepressants are effective for mild depression (context 85),medical,undecided,0.862,expert,Mixed trial results,1
+ME_00856,Intermittent fasting extends lifespan (context 85),medical,undecided,0.873,easy,Animal studies only,1
+ME_00857,Chemotherapy is effective for early-stage cancer (context 85),medical,supported,0.844,medium,Survival data,4
+ME_00858,Glucosamine helps joint pain (context 85),medical,rejected,0.888,hard,Systematic reviews,4
+ME_00859,Probiotics improve gut health (context 85),medical,supported,0.594,expert,Microbiome research,4
+ME_00860,Acupuncture reduces chronic pain (context 85),medical,undecided,0.707,easy,Placebo concerns,3
+ME_00861,Aspirin reduces heart attack risk (context 86),medical,supported,0.934,hard,RCT evidence,1
+ME_00862,Vitamin D supplements prevent COVID-19 (context 86),medical,rejected,0.932,expert,Clinical trials,1
+ME_00863,Ivermectin effectively treats COVID-19 (context 86),medical,rejected,0.589,easy,Meta-analyses,1
+ME_00864,Statins reduce cardiovascular mortality (context 86),medical,supported,0.824,medium,Large-scale trials,4
+ME_00865,Antidepressants are effective for mild depression (context 86),medical,undecided,0.676,hard,Mixed trial results,4
+ME_00866,Intermittent fasting extends lifespan (context 86),medical,undecided,0.612,expert,Animal studies only,4
+ME_00867,Chemotherapy is effective for early-stage cancer (context 86),medical,supported,0.92,easy,Survival data,3
+ME_00868,Glucosamine helps joint pain (context 86),medical,rejected,0.67,medium,Systematic reviews,4
+ME_00869,Probiotics improve gut health (context 86),medical,supported,0.573,hard,Microbiome research,3
+ME_00870,Acupuncture reduces chronic pain (context 86),medical,undecided,0.922,expert,Placebo concerns,3
+ME_00871,Aspirin reduces heart attack risk (context 87),medical,supported,0.942,medium,RCT evidence,4
+ME_00872,Vitamin D supplements prevent COVID-19 (context 87),medical,rejected,0.937,hard,Clinical trials,2
+ME_00873,Ivermectin effectively treats COVID-19 (context 87),medical,rejected,0.688,expert,Meta-analyses,3
+ME_00874,Statins reduce cardiovascular mortality (context 87),medical,supported,0.917,easy,Large-scale trials,3
+ME_00875,Antidepressants are effective for mild depression (context 87),medical,undecided,0.905,medium,Mixed trial results,2
+ME_00876,Intermittent fasting extends lifespan (context 87),medical,undecided,0.765,hard,Animal studies only,2
+ME_00877,Chemotherapy is effective for early-stage cancer (context 87),medical,supported,0.906,expert,Survival data,2
+ME_00878,Glucosamine helps joint pain (context 87),medical,rejected,0.587,easy,Systematic reviews,3
+ME_00879,Probiotics improve gut health (context 87),medical,supported,0.875,medium,Microbiome research,1
+ME_00880,Acupuncture reduces chronic pain (context 87),medical,undecided,0.91,hard,Placebo concerns,3
+ME_00881,Aspirin reduces heart attack risk (context 88),medical,supported,0.814,easy,RCT evidence,4
+ME_00882,Vitamin D supplements prevent COVID-19 (context 88),medical,rejected,0.773,medium,Clinical trials,1
+ME_00883,Ivermectin effectively treats COVID-19 (context 88),medical,rejected,0.792,hard,Meta-analyses,2
+ME_00884,Statins reduce cardiovascular mortality (context 88),medical,supported,0.579,expert,Large-scale trials,3
+ME_00885,Antidepressants are effective for mild depression (context 88),medical,undecided,0.628,easy,Mixed trial results,2
+ME_00886,Intermittent fasting extends lifespan (context 88),medical,undecided,0.846,medium,Animal studies only,2
+ME_00887,Chemotherapy is effective for early-stage cancer (context 88),medical,supported,0.649,hard,Survival data,2
+ME_00888,Glucosamine helps joint pain (context 88),medical,rejected,0.858,expert,Systematic reviews,1
+ME_00889,Probiotics improve gut health (context 88),medical,supported,0.722,easy,Microbiome research,3
+ME_00890,Acupuncture reduces chronic pain (context 88),medical,undecided,0.857,medium,Placebo concerns,3
+ME_00891,Aspirin reduces heart attack risk (context 89),medical,supported,0.872,expert,RCT evidence,1
+ME_00892,Vitamin D supplements prevent COVID-19 (context 89),medical,rejected,0.591,easy,Clinical trials,4
+ME_00893,Ivermectin effectively treats COVID-19 (context 89),medical,rejected,0.888,medium,Meta-analyses,1
+ME_00894,Statins reduce cardiovascular mortality (context 89),medical,supported,0.596,hard,Large-scale trials,3
+ME_00895,Antidepressants are effective for mild depression (context 89),medical,undecided,0.636,expert,Mixed trial results,3
+ME_00896,Intermittent fasting extends lifespan (context 89),medical,undecided,0.611,easy,Animal studies only,4
+ME_00897,Chemotherapy is effective for early-stage cancer (context 89),medical,supported,0.694,medium,Survival data,1
+ME_00898,Glucosamine helps joint pain (context 89),medical,rejected,0.605,hard,Systematic reviews,3
+ME_00899,Probiotics improve gut health (context 89),medical,supported,0.734,expert,Microbiome research,4
+ME_00900,Acupuncture reduces chronic pain (context 89),medical,undecided,0.876,easy,Placebo concerns,3
+ME_00901,Aspirin reduces heart attack risk (context 90),medical,supported,0.905,hard,RCT evidence,2
+ME_00902,Vitamin D supplements prevent COVID-19 (context 90),medical,rejected,0.592,expert,Clinical trials,1
+ME_00903,Ivermectin effectively treats COVID-19 (context 90),medical,rejected,0.602,easy,Meta-analyses,3
+ME_00904,Statins reduce cardiovascular mortality (context 90),medical,supported,0.921,medium,Large-scale trials,4
+ME_00905,Antidepressants are effective for mild depression (context 90),medical,undecided,0.911,hard,Mixed trial results,3
+ME_00906,Intermittent fasting extends lifespan (context 90),medical,undecided,0.64,expert,Animal studies only,3
+ME_00907,Chemotherapy is effective for early-stage cancer (context 90),medical,supported,0.947,easy,Survival data,2
+ME_00908,Glucosamine helps joint pain (context 90),medical,rejected,0.824,medium,Systematic reviews,4
+ME_00909,Probiotics improve gut health (context 90),medical,supported,0.758,hard,Microbiome research,1
+ME_00910,Acupuncture reduces chronic pain (context 90),medical,undecided,0.696,expert,Placebo concerns,2
+ME_00911,Aspirin reduces heart attack risk (context 91),medical,supported,0.586,medium,RCT evidence,4
+ME_00912,Vitamin D supplements prevent COVID-19 (context 91),medical,rejected,0.668,hard,Clinical trials,2
+ME_00913,Ivermectin effectively treats COVID-19 (context 91),medical,rejected,0.897,expert,Meta-analyses,4
+ME_00914,Statins reduce cardiovascular mortality (context 91),medical,supported,0.587,easy,Large-scale trials,4
+ME_00915,Antidepressants are effective for mild depression (context 91),medical,undecided,0.947,medium,Mixed trial results,3
+ME_00916,Intermittent fasting extends lifespan (context 91),medical,undecided,0.827,hard,Animal studies only,1
+ME_00917,Chemotherapy is effective for early-stage cancer (context 91),medical,supported,0.667,expert,Survival data,2
+ME_00918,Glucosamine helps joint pain (context 91),medical,rejected,0.618,easy,Systematic reviews,2
+ME_00919,Probiotics improve gut health (context 91),medical,supported,0.877,medium,Microbiome research,3
+ME_00920,Acupuncture reduces chronic pain (context 91),medical,undecided,0.809,hard,Placebo concerns,2
+ME_00921,Aspirin reduces heart attack risk (context 92),medical,supported,0.712,easy,RCT evidence,1
+ME_00922,Vitamin D supplements prevent COVID-19 (context 92),medical,rejected,0.623,medium,Clinical trials,2
+ME_00923,Ivermectin effectively treats COVID-19 (context 92),medical,rejected,0.665,hard,Meta-analyses,3
+ME_00924,Statins reduce cardiovascular mortality (context 92),medical,supported,0.81,expert,Large-scale trials,4
+ME_00925,Antidepressants are effective for mild depression (context 92),medical,undecided,0.77,easy,Mixed trial results,4
+ME_00926,Intermittent fasting extends lifespan (context 92),medical,undecided,0.63,medium,Animal studies only,2
+ME_00927,Chemotherapy is effective for early-stage cancer (context 92),medical,supported,0.873,hard,Survival data,4
+ME_00928,Glucosamine helps joint pain (context 92),medical,rejected,0.796,expert,Systematic reviews,1
+ME_00929,Probiotics improve gut health (context 92),medical,supported,0.922,easy,Microbiome research,1
+ME_00930,Acupuncture reduces chronic pain (context 92),medical,undecided,0.818,medium,Placebo concerns,4
+ME_00931,Aspirin reduces heart attack risk (context 93),medical,supported,0.689,expert,RCT evidence,4
+ME_00932,Vitamin D supplements prevent COVID-19 (context 93),medical,rejected,0.906,easy,Clinical trials,4
+ME_00933,Ivermectin effectively treats COVID-19 (context 93),medical,rejected,0.775,medium,Meta-analyses,4
+ME_00934,Statins reduce cardiovascular mortality (context 93),medical,supported,0.809,hard,Large-scale trials,2
+ME_00935,Antidepressants are effective for mild depression (context 93),medical,undecided,0.895,expert,Mixed trial results,2
+ME_00936,Intermittent fasting extends lifespan (context 93),medical,undecided,0.687,easy,Animal studies only,3
+ME_00937,Chemotherapy is effective for early-stage cancer (context 93),medical,supported,0.894,medium,Survival data,1
+ME_00938,Glucosamine helps joint pain (context 93),medical,rejected,0.695,hard,Systematic reviews,1
+ME_00939,Probiotics improve gut health (context 93),medical,supported,0.826,expert,Microbiome research,4
+ME_00940,Acupuncture reduces chronic pain (context 93),medical,undecided,0.635,easy,Placebo concerns,1
+ME_00941,Aspirin reduces heart attack risk (context 94),medical,supported,0.793,hard,RCT evidence,1
+ME_00942,Vitamin D supplements prevent COVID-19 (context 94),medical,rejected,0.597,expert,Clinical trials,3
+ME_00943,Ivermectin effectively treats COVID-19 (context 94),medical,rejected,0.945,easy,Meta-analyses,4
+ME_00944,Statins reduce cardiovascular mortality (context 94),medical,supported,0.566,medium,Large-scale trials,4
+ME_00945,Antidepressants are effective for mild depression (context 94),medical,undecided,0.94,hard,Mixed trial results,4
+ME_00946,Intermittent fasting extends lifespan (context 94),medical,undecided,0.776,expert,Animal studies only,4
+ME_00947,Chemotherapy is effective for early-stage cancer (context 94),medical,supported,0.899,easy,Survival data,1
+ME_00948,Glucosamine helps joint pain (context 94),medical,rejected,0.675,medium,Systematic reviews,4
+ME_00949,Probiotics improve gut health (context 94),medical,supported,0.799,hard,Microbiome research,1
+ME_00950,Acupuncture reduces chronic pain (context 94),medical,undecided,0.793,expert,Placebo concerns,2
+ME_00951,Aspirin reduces heart attack risk (context 95),medical,supported,0.754,medium,RCT evidence,1
+ME_00952,Vitamin D supplements prevent COVID-19 (context 95),medical,rejected,0.886,hard,Clinical trials,4
+ME_00953,Ivermectin effectively treats COVID-19 (context 95),medical,rejected,0.819,expert,Meta-analyses,4
+ME_00954,Statins reduce cardiovascular mortality (context 95),medical,supported,0.85,easy,Large-scale trials,4
+ME_00955,Antidepressants are effective for mild depression (context 95),medical,undecided,0.778,medium,Mixed trial results,1
+ME_00956,Intermittent fasting extends lifespan (context 95),medical,undecided,0.876,hard,Animal studies only,1
+ME_00957,Chemotherapy is effective for early-stage cancer (context 95),medical,supported,0.63,expert,Survival data,1
+ME_00958,Glucosamine helps joint pain (context 95),medical,rejected,0.871,easy,Systematic reviews,1
+ME_00959,Probiotics improve gut health (context 95),medical,supported,0.834,medium,Microbiome research,4
+ME_00960,Acupuncture reduces chronic pain (context 95),medical,undecided,0.714,hard,Placebo concerns,1
+ME_00961,Aspirin reduces heart attack risk (context 96),medical,supported,0.731,easy,RCT evidence,2
+ME_00962,Vitamin D supplements prevent COVID-19 (context 96),medical,rejected,0.561,medium,Clinical trials,4
+ME_00963,Ivermectin effectively treats COVID-19 (context 96),medical,rejected,0.572,hard,Meta-analyses,4
+ME_00964,Statins reduce cardiovascular mortality (context 96),medical,supported,0.591,expert,Large-scale trials,4
+ME_00965,Antidepressants are effective for mild depression (context 96),medical,undecided,0.642,easy,Mixed trial results,2
+ME_00966,Intermittent fasting extends lifespan (context 96),medical,undecided,0.897,medium,Animal studies only,1
+ME_00967,Chemotherapy is effective for early-stage cancer (context 96),medical,supported,0.561,hard,Survival data,4
+ME_00968,Glucosamine helps joint pain (context 96),medical,rejected,0.866,expert,Systematic reviews,1
+ME_00969,Probiotics improve gut health (context 96),medical,supported,0.94,easy,Microbiome research,1
+ME_00970,Acupuncture reduces chronic pain (context 96),medical,undecided,0.635,medium,Placebo concerns,3
+ME_00971,Aspirin reduces heart attack risk (context 97),medical,supported,0.624,expert,RCT evidence,1
+ME_00972,Vitamin D supplements prevent COVID-19 (context 97),medical,rejected,0.576,easy,Clinical trials,2
+ME_00973,Ivermectin effectively treats COVID-19 (context 97),medical,rejected,0.567,medium,Meta-analyses,4
+ME_00974,Statins reduce cardiovascular mortality (context 97),medical,supported,0.93,hard,Large-scale trials,1
+ME_00975,Antidepressants are effective for mild depression (context 97),medical,undecided,0.824,expert,Mixed trial results,2
+ME_00976,Intermittent fasting extends lifespan (context 97),medical,undecided,0.823,easy,Animal studies only,4
+ME_00977,Chemotherapy is effective for early-stage cancer (context 97),medical,supported,0.853,medium,Survival data,3
+ME_00978,Glucosamine helps joint pain (context 97),medical,rejected,0.733,hard,Systematic reviews,2
+ME_00979,Probiotics improve gut health (context 97),medical,supported,0.937,expert,Microbiome research,4
+ME_00980,Acupuncture reduces chronic pain (context 97),medical,undecided,0.749,easy,Placebo concerns,4
+ME_00981,Aspirin reduces heart attack risk (context 98),medical,supported,0.817,hard,RCT evidence,4
+ME_00982,Vitamin D supplements prevent COVID-19 (context 98),medical,rejected,0.901,expert,Clinical trials,3
+ME_00983,Ivermectin effectively treats COVID-19 (context 98),medical,rejected,0.824,easy,Meta-analyses,4
+ME_00984,Statins reduce cardiovascular mortality (context 98),medical,supported,0.9,medium,Large-scale trials,3
+ME_00985,Antidepressants are effective for mild depression (context 98),medical,undecided,0.76,hard,Mixed trial results,3
+ME_00986,Intermittent fasting extends lifespan (context 98),medical,undecided,0.611,expert,Animal studies only,3
+ME_00987,Chemotherapy is effective for early-stage cancer (context 98),medical,supported,0.894,easy,Survival data,2
+ME_00988,Glucosamine helps joint pain (context 98),medical,rejected,0.747,medium,Systematic reviews,2
+ME_00989,Probiotics improve gut health (context 98),medical,supported,0.825,hard,Microbiome research,2
+ME_00990,Acupuncture reduces chronic pain (context 98),medical,undecided,0.747,expert,Placebo concerns,3
+ME_00991,Aspirin reduces heart attack risk (context 99),medical,supported,0.937,medium,RCT evidence,4
+ME_00992,Vitamin D supplements prevent COVID-19 (context 99),medical,rejected,0.581,hard,Clinical trials,1
+ME_00993,Ivermectin effectively treats COVID-19 (context 99),medical,rejected,0.74,expert,Meta-analyses,3
+ME_00994,Statins reduce cardiovascular mortality (context 99),medical,supported,0.663,easy,Large-scale trials,4
+ME_00995,Antidepressants are effective for mild depression (context 99),medical,undecided,0.828,medium,Mixed trial results,3
+ME_00996,Intermittent fasting extends lifespan (context 99),medical,undecided,0.922,hard,Animal studies only,1
+ME_00997,Chemotherapy is effective for early-stage cancer (context 99),medical,supported,0.699,expert,Survival data,3
+ME_00998,Glucosamine helps joint pain (context 99),medical,rejected,0.839,easy,Systematic reviews,4
+ME_00999,Probiotics improve gut health (context 99),medical,supported,0.939,medium,Microbiome research,2
+ME_01000,Acupuncture reduces chronic pain (context 99),medical,undecided,0.757,hard,Placebo concerns,1
+ME_01001,Aspirin reduces heart attack risk (context 100),medical,supported,0.659,easy,RCT evidence,2
+ME_01002,Vitamin D supplements prevent COVID-19 (context 100),medical,rejected,0.606,medium,Clinical trials,2
+ME_01003,Ivermectin effectively treats COVID-19 (context 100),medical,rejected,0.623,hard,Meta-analyses,3
+ME_01004,Statins reduce cardiovascular mortality (context 100),medical,supported,0.638,expert,Large-scale trials,3
+ME_01005,Antidepressants are effective for mild depression (context 100),medical,undecided,0.617,easy,Mixed trial results,1
+ME_01006,Intermittent fasting extends lifespan (context 100),medical,undecided,0.585,medium,Animal studies only,4
+ME_01007,Chemotherapy is effective for early-stage cancer (context 100),medical,supported,0.75,hard,Survival data,1
+ME_01008,Glucosamine helps joint pain (context 100),medical,rejected,0.731,expert,Systematic reviews,3
+ME_01009,Probiotics improve gut health (context 100),medical,supported,0.94,easy,Microbiome research,2
+ME_01010,Acupuncture reduces chronic pain (context 100),medical,undecided,0.688,medium,Placebo concerns,4
+ME_01011,Aspirin reduces heart attack risk (context 101),medical,supported,0.732,expert,RCT evidence,1
+ME_01012,Vitamin D supplements prevent COVID-19 (context 101),medical,rejected,0.88,easy,Clinical trials,4
+ME_01013,Ivermectin effectively treats COVID-19 (context 101),medical,rejected,0.722,medium,Meta-analyses,1
+ME_01014,Statins reduce cardiovascular mortality (context 101),medical,supported,0.816,hard,Large-scale trials,3
+ME_01015,Antidepressants are effective for mild depression (context 101),medical,undecided,0.897,expert,Mixed trial results,2
+ME_01016,Intermittent fasting extends lifespan (context 101),medical,undecided,0.725,easy,Animal studies only,1
+ME_01017,Chemotherapy is effective for early-stage cancer (context 101),medical,supported,0.866,medium,Survival data,1
+ME_01018,Glucosamine helps joint pain (context 101),medical,rejected,0.579,hard,Systematic reviews,4
+ME_01019,Probiotics improve gut health (context 101),medical,supported,0.68,expert,Microbiome research,2
+ME_01020,Acupuncture reduces chronic pain (context 101),medical,undecided,0.636,easy,Placebo concerns,2
+ME_01021,Aspirin reduces heart attack risk (context 102),medical,supported,0.929,hard,RCT evidence,3
+ME_01022,Vitamin D supplements prevent COVID-19 (context 102),medical,rejected,0.741,expert,Clinical trials,2
+ME_01023,Ivermectin effectively treats COVID-19 (context 102),medical,rejected,0.865,easy,Meta-analyses,4
+ME_01024,Statins reduce cardiovascular mortality (context 102),medical,supported,0.761,medium,Large-scale trials,2
+ME_01025,Antidepressants are effective for mild depression (context 102),medical,undecided,0.84,hard,Mixed trial results,3
+ME_01026,Intermittent fasting extends lifespan (context 102),medical,undecided,0.931,expert,Animal studies only,2
+ME_01027,Chemotherapy is effective for early-stage cancer (context 102),medical,supported,0.808,easy,Survival data,3
+ME_01028,Glucosamine helps joint pain (context 102),medical,rejected,0.929,medium,Systematic reviews,2
+ME_01029,Probiotics improve gut health (context 102),medical,supported,0.68,hard,Microbiome research,4
+ME_01030,Acupuncture reduces chronic pain (context 102),medical,undecided,0.66,expert,Placebo concerns,2
+ME_01031,Aspirin reduces heart attack risk (context 103),medical,supported,0.857,medium,RCT evidence,2
+ME_01032,Vitamin D supplements prevent COVID-19 (context 103),medical,rejected,0.739,hard,Clinical trials,4
+ME_01033,Ivermectin effectively treats COVID-19 (context 103),medical,rejected,0.942,expert,Meta-analyses,4
+ME_01034,Statins reduce cardiovascular mortality (context 103),medical,supported,0.697,easy,Large-scale trials,1
+ME_01035,Antidepressants are effective for mild depression (context 103),medical,undecided,0.629,medium,Mixed trial results,4
+ME_01036,Intermittent fasting extends lifespan (context 103),medical,undecided,0.893,hard,Animal studies only,2
+ME_01037,Chemotherapy is effective for early-stage cancer (context 103),medical,supported,0.555,expert,Survival data,3
+ME_01038,Glucosamine helps joint pain (context 103),medical,rejected,0.578,easy,Systematic reviews,3
+ME_01039,Probiotics improve gut health (context 103),medical,supported,0.553,medium,Microbiome research,3
+ME_01040,Acupuncture reduces chronic pain (context 103),medical,undecided,0.715,hard,Placebo concerns,2
+ME_01041,Aspirin reduces heart attack risk (context 104),medical,supported,0.665,easy,RCT evidence,4
+ME_01042,Vitamin D supplements prevent COVID-19 (context 104),medical,rejected,0.92,medium,Clinical trials,1
+ME_01043,Ivermectin effectively treats COVID-19 (context 104),medical,rejected,0.613,hard,Meta-analyses,4
+ME_01044,Statins reduce cardiovascular mortality (context 104),medical,supported,0.661,expert,Large-scale trials,2
+ME_01045,Antidepressants are effective for mild depression (context 104),medical,undecided,0.777,easy,Mixed trial results,2
+ME_01046,Intermittent fasting extends lifespan (context 104),medical,undecided,0.892,medium,Animal studies only,1
+ME_01047,Chemotherapy is effective for early-stage cancer (context 104),medical,supported,0.885,hard,Survival data,3
+ME_01048,Glucosamine helps joint pain (context 104),medical,rejected,0.782,expert,Systematic reviews,2
+ME_01049,Probiotics improve gut health (context 104),medical,supported,0.562,easy,Microbiome research,2
+ME_01050,Acupuncture reduces chronic pain (context 104),medical,undecided,0.807,medium,Placebo concerns,4

@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+HI_00001,The Roman Empire fell due to lead poisoning,history,rejected,0.731,easy,Archaeological evidence,1
+HI_00002,The American Civil War was primarily about slavery,history,supported,0.696,medium,Primary sources,4
+HI_00003,Columbus discovered America,history,rejected,0.698,hard,Pre-Columbian evidence,2
+HI_00004,The French Revolution improved conditions for peasants,history,undecided,0.761,expert,Social history,1
+HI_00005,The atomic bombs were necessary to end WWII,history,undecided,0.875,easy,Military history,3
+HI_00006,The Renaissance began in Italy,history,supported,0.577,medium,Art history,3
+HI_00007,The Industrial Revolution improved quality of life,history,undecided,0.689,hard,Living standards data,2
+HI_00008,Alexander the Great was undefeated,history,supported,0.609,expert,Battle records,2
+HI_00009,The Great Depression was caused by the 1929 crash,history,undecided,0.863,easy,Economic history,4
+HI_00010,The moon landing was faked,history,rejected,0.607,medium,Scientific evidence,1
+HI_00011,The Roman Empire fell due to lead poisoning (context 1),history,rejected,0.929,expert,Archaeological evidence,3
+HI_00012,The American Civil War was primarily about slavery (context 1),history,supported,0.645,easy,Primary sources,3
+HI_00013,Columbus discovered America (context 1),history,rejected,0.676,medium,Pre-Columbian evidence,3
+HI_00014,The French Revolution improved conditions for peasants (context 1),history,undecided,0.856,hard,Social history,1
+HI_00015,The atomic bombs were necessary to end WWII (context 1),history,undecided,0.873,expert,Military history,4
+HI_00016,The Renaissance began in Italy (context 1),history,supported,0.748,easy,Art history,2
+HI_00017,The Industrial Revolution improved quality of life (context 1),history,undecided,0.658,medium,Living standards data,2
+HI_00018,Alexander the Great was undefeated (context 1),history,supported,0.919,hard,Battle records,3
+HI_00019,The Great Depression was caused by the 1929 crash (context 1),history,undecided,0.83,expert,Economic history,4
+HI_00020,The moon landing was faked (context 1),history,rejected,0.875,easy,Scientific evidence,2
+HI_00021,The Roman Empire fell due to lead poisoning (context 2),history,rejected,0.747,hard,Archaeological evidence,1
+HI_00022,The American Civil War was primarily about slavery (context 2),history,supported,0.579,expert,Primary sources,2
+HI_00023,Columbus discovered America (context 2),history,rejected,0.64,easy,Pre-Columbian evidence,2
+HI_00024,The French Revolution improved conditions for peasants (context 2),history,undecided,0.613,medium,Social history,1
+HI_00025,The atomic bombs were necessary to end WWII (context 2),history,undecided,0.774,hard,Military history,1
+HI_00026,The Renaissance began in Italy (context 2),history,supported,0.863,expert,Art history,3
+HI_00027,The Industrial Revolution improved quality of life (context 2),history,undecided,0.795,easy,Living standards data,1
+HI_00028,Alexander the Great was undefeated (context 2),history,supported,0.665,medium,Battle records,3
+HI_00029,The Great Depression was caused by the 1929 crash (context 2),history,undecided,0.764,hard,Economic history,1
+HI_00030,The moon landing was faked (context 2),history,rejected,0.782,expert,Scientific evidence,3
+HI_00031,The Roman Empire fell due to lead poisoning (context 3),history,rejected,0.658,medium,Archaeological evidence,3
+HI_00032,The American Civil War was primarily about slavery (context 3),history,supported,0.671,hard,Primary sources,2
+HI_00033,Columbus discovered America (context 3),history,rejected,0.719,expert,Pre-Columbian evidence,2
+HI_00034,The French Revolution improved conditions for peasants (context 3),history,undecided,0.596,easy,Social history,1
+HI_00035,The atomic bombs were necessary to end WWII (context 3),history,undecided,0.611,medium,Military history,1
+HI_00036,The Renaissance began in Italy (context 3),history,supported,0.931,hard,Art history,1
+HI_00037,The Industrial Revolution improved quality of life (context 3),history,undecided,0.551,expert,Living standards data,4
+HI_00038,Alexander the Great was undefeated (context 3),history,supported,0.823,easy,Battle records,3
+HI_00039,The Great Depression was caused by the 1929 crash (context 3),history,undecided,0.685,medium,Economic history,2
+HI_00040,The moon landing was faked (context 3),history,rejected,0.579,hard,Scientific evidence,2
+HI_00041,The Roman Empire fell due to lead poisoning (context 4),history,rejected,0.595,easy,Archaeological evidence,3
+HI_00042,The American Civil War was primarily about slavery (context 4),history,supported,0.628,medium,Primary sources,4
+HI_00043,Columbus discovered America (context 4),history,rejected,0.568,hard,Pre-Columbian evidence,3
+HI_00044,The French Revolution improved conditions for peasants (context 4),history,undecided,0.621,expert,Social history,4
+HI_00045,The atomic bombs were necessary to end WWII (context 4),history,undecided,0.681,easy,Military history,1
+HI_00046,The Renaissance began in Italy (context 4),history,supported,0.857,medium,Art history,3
+HI_00047,The Industrial Revolution improved quality of life (context 4),history,undecided,0.762,hard,Living standards data,1
+HI_00048,Alexander the Great was undefeated (context 4),history,supported,0.682,expert,Battle records,1
+HI_00049,The Great Depression was caused by the 1929 crash (context 4),history,undecided,0.74,easy,Economic history,2
+HI_00050,The moon landing was faked (context 4),history,rejected,0.688,medium,Scientific evidence,1
+HI_00051,The Roman Empire fell due to lead poisoning (context 5),history,rejected,0.578,expert,Archaeological evidence,2
+HI_00052,The American Civil War was primarily about slavery (context 5),history,supported,0.67,easy,Primary sources,4
+HI_00053,Columbus discovered America (context 5),history,rejected,0.589,medium,Pre-Columbian evidence,3
+HI_00054,The French Revolution improved conditions for peasants (context 5),history,undecided,0.678,hard,Social history,1
+HI_00055,The atomic bombs were necessary to end WWII (context 5),history,undecided,0.917,expert,Military history,1
+HI_00056,The Renaissance began in Italy (context 5),history,supported,0.728,easy,Art history,4
+HI_00057,The Industrial Revolution improved quality of life (context 5),history,undecided,0.612,medium,Living standards data,2
+HI_00058,Alexander the Great was undefeated (context 5),history,supported,0.732,hard,Battle records,2
+HI_00059,The Great Depression was caused by the 1929 crash (context 5),history,undecided,0.745,expert,Economic history,3
+HI_00060,The moon landing was faked (context 5),history,rejected,0.872,easy,Scientific evidence,3
+HI_00061,The Roman Empire fell due to lead poisoning (context 6),history,rejected,0.891,hard,Archaeological evidence,4
+HI_00062,The American Civil War was primarily about slavery (context 6),history,supported,0.798,expert,Primary sources,3
+HI_00063,Columbus discovered America (context 6),history,rejected,0.801,easy,Pre-Columbian evidence,3
+HI_00064,The French Revolution improved conditions for peasants (context 6),history,undecided,0.721,medium,Social history,2
+HI_00065,The atomic bombs were necessary to end WWII (context 6),history,undecided,0.631,hard,Military history,2
+HI_00066,The Renaissance began in Italy (context 6),history,supported,0.637,expert,Art history,1
+HI_00067,The Industrial Revolution improved quality of life (context 6),history,undecided,0.817,easy,Living standards data,3
+HI_00068,Alexander the Great was undefeated (context 6),history,supported,0.595,medium,Battle records,4
+HI_00069,The Great Depression was caused by the 1929 crash (context 6),history,undecided,0.761,hard,Economic history,2
+HI_00070,The moon landing was faked (context 6),history,rejected,0.915,expert,Scientific evidence,3
+HI_00071,The Roman Empire fell due to lead poisoning (context 7),history,rejected,0.681,medium,Archaeological evidence,2
+HI_00072,The American Civil War was primarily about slavery (context 7),history,supported,0.83,hard,Primary sources,4
+HI_00073,Columbus discovered America (context 7),history,rejected,0.793,expert,Pre-Columbian evidence,4
+HI_00074,The French Revolution improved conditions for peasants (context 7),history,undecided,0.74,easy,Social history,1
+HI_00075,The atomic bombs were necessary to end WWII (context 7),history,undecided,0.857,medium,Military history,2
+HI_00076,The Renaissance began in Italy (context 7),history,supported,0.783,hard,Art history,2
+HI_00077,The Industrial Revolution improved quality of life (context 7),history,undecided,0.797,expert,Living standards data,3
+HI_00078,Alexander the Great was undefeated (context 7),history,supported,0.74,easy,Battle records,3
+HI_00079,The Great Depression was caused by the 1929 crash (context 7),history,undecided,0.563,medium,Economic history,3
+HI_00080,The moon landing was faked (context 7),history,rejected,0.78,hard,Scientific evidence,3
+HI_00081,The Roman Empire fell due to lead poisoning (context 8),history,rejected,0.647,easy,Archaeological evidence,2
+HI_00082,The American Civil War was primarily about slavery (context 8),history,supported,0.941,medium,Primary sources,2
+HI_00083,Columbus discovered America (context 8),history,rejected,0.665,hard,Pre-Columbian evidence,4
+HI_00084,The French Revolution improved conditions for peasants (context 8),history,undecided,0.69,expert,Social history,2
+HI_00085,The atomic bombs were necessary to end WWII (context 8),history,undecided,0.732,easy,Military history,4
+HI_00086,The Renaissance began in Italy (context 8),history,supported,0.801,medium,Art history,4
+HI_00087,The Industrial Revolution improved quality of life (context 8),history,undecided,0.772,hard,Living standards data,1
+HI_00088,Alexander the Great was undefeated (context 8),history,supported,0.786,expert,Battle records,2
+HI_00089,The Great Depression was caused by the 1929 crash (context 8),history,undecided,0.766,easy,Economic history,4
+HI_00090,The moon landing was faked (context 8),history,rejected,0.713,medium,Scientific evidence,2
+HI_00091,The Roman Empire fell due to lead poisoning (context 9),history,rejected,0.784,expert,Archaeological evidence,4
+HI_00092,The American Civil War was primarily about slavery (context 9),history,supported,0.802,easy,Primary sources,1
+HI_00093,Columbus discovered America (context 9),history,rejected,0.717,medium,Pre-Columbian evidence,3
+HI_00094,The French Revolution improved conditions for peasants (context 9),history,undecided,0.926,hard,Social history,1
+HI_00095,The atomic bombs were necessary to end WWII (context 9),history,undecided,0.926,expert,Military history,1
+HI_00096,The Renaissance began in Italy (context 9),history,supported,0.697,easy,Art history,4
+HI_00097,The Industrial Revolution improved quality of life (context 9),history,undecided,0.911,medium,Living standards data,1
+HI_00098,Alexander the Great was undefeated (context 9),history,supported,0.839,hard,Battle records,1
+HI_00099,The Great Depression was caused by the 1929 crash (context 9),history,undecided,0.735,expert,Economic history,2
+HI_00100,The moon landing was faked (context 9),history,rejected,0.69,easy,Scientific evidence,2
+HI_00101,The Roman Empire fell due to lead poisoning (context 10),history,rejected,0.779,hard,Archaeological evidence,2
+HI_00102,The American Civil War was primarily about slavery (context 10),history,supported,0.716,expert,Primary sources,3
+HI_00103,Columbus discovered America (context 10),history,rejected,0.88,easy,Pre-Columbian evidence,1
+HI_00104,The French Revolution improved conditions for peasants (context 10),history,undecided,0.678,medium,Social history,3
+HI_00105,The atomic bombs were necessary to end WWII (context 10),history,undecided,0.923,hard,Military history,3
+HI_00106,The Renaissance began in Italy (context 10),history,supported,0.839,expert,Art history,4
+HI_00107,The Industrial Revolution improved quality of life (context 10),history,undecided,0.921,easy,Living standards data,3
+HI_00108,Alexander the Great was undefeated (context 10),history,supported,0.738,medium,Battle records,1
+HI_00109,The Great Depression was caused by the 1929 crash (context 10),history,undecided,0.704,hard,Economic history,1
+HI_00110,The moon landing was faked (context 10),history,rejected,0.738,expert,Scientific evidence,3
+HI_00111,The Roman Empire fell due to lead poisoning (context 11),history,rejected,0.742,medium,Archaeological evidence,2
+HI_00112,The American Civil War was primarily about slavery (context 11),history,supported,0.599,hard,Primary sources,4
+HI_00113,Columbus discovered America (context 11),history,rejected,0.936,expert,Pre-Columbian evidence,1
+HI_00114,The French Revolution improved conditions for peasants (context 11),history,undecided,0.698,easy,Social history,1
+HI_00115,The atomic bombs were necessary to end WWII (context 11),history,undecided,0.817,medium,Military history,3
+HI_00116,The Renaissance began in Italy (context 11),history,supported,0.843,hard,Art history,4
+HI_00117,The Industrial Revolution improved quality of life (context 11),history,undecided,0.84,expert,Living standards data,1
+HI_00118,Alexander the Great was undefeated (context 11),history,supported,0.831,easy,Battle records,2
+HI_00119,The Great Depression was caused by the 1929 crash (context 11),history,undecided,0.689,medium,Economic history,3
+HI_00120,The moon landing was faked (context 11),history,rejected,0.919,hard,Scientific evidence,3
+HI_00121,The Roman Empire fell due to lead poisoning (context 12),history,rejected,0.827,easy,Archaeological evidence,3
+HI_00122,The American Civil War was primarily about slavery (context 12),history,supported,0.932,medium,Primary sources,4
+HI_00123,Columbus discovered America (context 12),history,rejected,0.66,hard,Pre-Columbian evidence,2
+HI_00124,The French Revolution improved conditions for peasants (context 12),history,undecided,0.947,expert,Social history,1
+HI_00125,The atomic bombs were necessary to end WWII (context 12),history,undecided,0.768,easy,Military history,4
+HI_00126,The Renaissance began in Italy (context 12),history,supported,0.679,medium,Art history,3
+HI_00127,The Industrial Revolution improved quality of life (context 12),history,undecided,0.854,hard,Living standards data,2
+HI_00128,Alexander the Great was undefeated (context 12),history,supported,0.865,expert,Battle records,4
+HI_00129,The Great Depression was caused by the 1929 crash (context 12),history,undecided,0.741,easy,Economic history,4
+HI_00130,The moon landing was faked (context 12),history,rejected,0.929,medium,Scientific evidence,4
+HI_00131,The Roman Empire fell due to lead poisoning (context 13),history,rejected,0.757,expert,Archaeological evidence,2
+HI_00132,The American Civil War was primarily about slavery (context 13),history,supported,0.803,easy,Primary sources,3
+HI_00133,Columbus discovered America (context 13),history,rejected,0.729,medium,Pre-Columbian evidence,1
+HI_00134,The French Revolution improved conditions for peasants (context 13),history,undecided,0.645,hard,Social history,4
+HI_00135,The atomic bombs were necessary to end WWII (context 13),history,undecided,0.771,expert,Military history,1
+HI_00136,The Renaissance began in Italy (context 13),history,supported,0.728,easy,Art history,1
+HI_00137,The Industrial Revolution improved quality of life (context 13),history,undecided,0.809,medium,Living standards data,2
+HI_00138,Alexander the Great was undefeated (context 13),history,supported,0.846,hard,Battle records,2
+HI_00139,The Great Depression was caused by the 1929 crash (context 13),history,undecided,0.725,expert,Economic history,2
+HI_00140,The moon landing was faked (context 13),history,rejected,0.769,easy,Scientific evidence,2
+HI_00141,The Roman Empire fell due to lead poisoning (context 14),history,rejected,0.935,hard,Archaeological evidence,4
+HI_00142,The American Civil War was primarily about slavery (context 14),history,supported,0.854,expert,Primary sources,4
+HI_00143,Columbus discovered America (context 14),history,rejected,0.744,easy,Pre-Columbian evidence,2
+HI_00144,The French Revolution improved conditions for peasants (context 14),history,undecided,0.615,medium,Social history,3
+HI_00145,The atomic bombs were necessary to end WWII (context 14),history,undecided,0.737,hard,Military history,2
+HI_00146,The Renaissance began in Italy (context 14),history,supported,0.56,expert,Art history,3
+HI_00147,The Industrial Revolution improved quality of life (context 14),history,undecided,0.609,easy,Living standards data,3
+HI_00148,Alexander the Great was undefeated (context 14),history,supported,0.626,medium,Battle records,1
+HI_00149,The Great Depression was caused by the 1929 crash (context 14),history,undecided,0.94,hard,Economic history,3
+HI_00150,The moon landing was faked (context 14),history,rejected,0.644,expert,Scientific evidence,3
+HI_00151,The Roman Empire fell due to lead poisoning (context 15),history,rejected,0.651,medium,Archaeological evidence,3
+HI_00152,The American Civil War was primarily about slavery (context 15),history,supported,0.597,hard,Primary sources,3
+HI_00153,Columbus discovered America (context 15),history,rejected,0.874,expert,Pre-Columbian evidence,4
+HI_00154,The French Revolution improved conditions for peasants (context 15),history,undecided,0.713,easy,Social history,2
+HI_00155,The atomic bombs were necessary to end WWII (context 15),history,undecided,0.883,medium,Military history,4
+HI_00156,The Renaissance began in Italy (context 15),history,supported,0.762,hard,Art history,3
+HI_00157,The Industrial Revolution improved quality of life (context 15),history,undecided,0.612,expert,Living standards data,3
+HI_00158,Alexander the Great was undefeated (context 15),history,supported,0.561,easy,Battle records,2
+HI_00159,The Great Depression was caused by the 1929 crash (context 15),history,undecided,0.663,medium,Economic history,1
+HI_00160,The moon landing was faked (context 15),history,rejected,0.904,hard,Scientific evidence,3
+HI_00161,The Roman Empire fell due to lead poisoning (context 16),history,rejected,0.579,easy,Archaeological evidence,1
+HI_00162,The American Civil War was primarily about slavery (context 16),history,supported,0.637,medium,Primary sources,4
+HI_00163,Columbus discovered America (context 16),history,rejected,0.811,hard,Pre-Columbian evidence,1
+HI_00164,The French Revolution improved conditions for peasants (context 16),history,undecided,0.819,expert,Social history,3
+HI_00165,The atomic bombs were necessary to end WWII (context 16),history,undecided,0.862,easy,Military history,4
+HI_00166,The Renaissance began in Italy (context 16),history,supported,0.641,medium,Art history,3
+HI_00167,The Industrial Revolution improved quality of life (context 16),history,undecided,0.769,hard,Living standards data,2
+HI_00168,Alexander the Great was undefeated (context 16),history,supported,0.582,expert,Battle records,3
+HI_00169,The Great Depression was caused by the 1929 crash (context 16),history,undecided,0.721,easy,Economic history,3
+HI_00170,The moon landing was faked (context 16),history,rejected,0.945,medium,Scientific evidence,1
+HI_00171,The Roman Empire fell due to lead poisoning (context 17),history,rejected,0.681,expert,Archaeological evidence,4
+HI_00172,The American Civil War was primarily about slavery (context 17),history,supported,0.762,easy,Primary sources,3
+HI_00173,Columbus discovered America (context 17),history,rejected,0.93,medium,Pre-Columbian evidence,2
+HI_00174,The French Revolution improved conditions for peasants (context 17),history,undecided,0.596,hard,Social history,1
+HI_00175,The atomic bombs were necessary to end WWII (context 17),history,undecided,0.892,expert,Military history,2
+HI_00176,The Renaissance began in Italy (context 17),history,supported,0.593,easy,Art history,1
+HI_00177,The Industrial Revolution improved quality of life (context 17),history,undecided,0.818,medium,Living standards data,2
+HI_00178,Alexander the Great was undefeated (context 17),history,supported,0.811,hard,Battle records,1
+HI_00179,The Great Depression was caused by the 1929 crash (context 17),history,undecided,0.724,expert,Economic history,1
+HI_00180,The moon landing was faked (context 17),history,rejected,0.875,easy,Scientific evidence,3
+HI_00181,The Roman Empire fell due to lead poisoning (context 18),history,rejected,0.57,hard,Archaeological evidence,1
+HI_00182,The American Civil War was primarily about slavery (context 18),history,supported,0.899,expert,Primary sources,2
+HI_00183,Columbus discovered America (context 18),history,rejected,0.849,easy,Pre-Columbian evidence,4
+HI_00184,The French Revolution improved conditions for peasants (context 18),history,undecided,0.863,medium,Social history,1
+HI_00185,The atomic bombs were necessary to end WWII (context 18),history,undecided,0.604,hard,Military history,4
+HI_00186,The Renaissance began in Italy (context 18),history,supported,0.794,expert,Art history,3
+HI_00187,The Industrial Revolution improved quality of life (context 18),history,undecided,0.713,easy,Living standards data,4
+HI_00188,Alexander the Great was undefeated (context 18),history,supported,0.848,medium,Battle records,3
+HI_00189,The Great Depression was caused by the 1929 crash (context 18),history,undecided,0.716,hard,Economic history,3
+HI_00190,The moon landing was faked (context 18),history,rejected,0.647,expert,Scientific evidence,4
+HI_00191,The Roman Empire fell due to lead poisoning (context 19),history,rejected,0.585,medium,Archaeological evidence,4
+HI_00192,The American Civil War was primarily about slavery (context 19),history,supported,0.783,hard,Primary sources,2
+HI_00193,Columbus discovered America (context 19),history,rejected,0.613,expert,Pre-Columbian evidence,4
+HI_00194,The French Revolution improved conditions for peasants (context 19),history,undecided,0.804,easy,Social history,1
+HI_00195,The atomic bombs were necessary to end WWII (context 19),history,undecided,0.745,medium,Military history,3
+HI_00196,The Renaissance began in Italy (context 19),history,supported,0.698,hard,Art history,3
+HI_00197,The Industrial Revolution improved quality of life (context 19),history,undecided,0.795,expert,Living standards data,3
+HI_00198,Alexander the Great was undefeated (context 19),history,supported,0.751,easy,Battle records,1
+HI_00199,The Great Depression was caused by the 1929 crash (context 19),history,undecided,0.739,medium,Economic history,2
+HI_00200,The moon landing was faked (context 19),history,rejected,0.903,hard,Scientific evidence,2
+HI_00201,The Roman Empire fell due to lead poisoning (context 20),history,rejected,0.67,easy,Archaeological evidence,3
+HI_00202,The American Civil War was primarily about slavery (context 20),history,supported,0.833,medium,Primary sources,2
+HI_00203,Columbus discovered America (context 20),history,rejected,0.8,hard,Pre-Columbian evidence,1
+HI_00204,The French Revolution improved conditions for peasants (context 20),history,undecided,0.775,expert,Social history,2
+HI_00205,The atomic bombs were necessary to end WWII (context 20),history,undecided,0.591,easy,Military history,2
+HI_00206,The Renaissance began in Italy (context 20),history,supported,0.716,medium,Art history,3
+HI_00207,The Industrial Revolution improved quality of life (context 20),history,undecided,0.602,hard,Living standards data,2
+HI_00208,Alexander the Great was undefeated (context 20),history,supported,0.594,expert,Battle records,2
+HI_00209,The Great Depression was caused by the 1929 crash (context 20),history,undecided,0.74,easy,Economic history,1
+HI_00210,The moon landing was faked (context 20),history,rejected,0.605,medium,Scientific evidence,1
+HI_00211,The Roman Empire fell due to lead poisoning (context 21),history,rejected,0.634,expert,Archaeological evidence,1
+HI_00212,The American Civil War was primarily about slavery (context 21),history,supported,0.919,easy,Primary sources,2
+HI_00213,Columbus discovered America (context 21),history,rejected,0.837,medium,Pre-Columbian evidence,3
+HI_00214,The French Revolution improved conditions for peasants (context 21),history,undecided,0.893,hard,Social history,2
+HI_00215,The atomic bombs were necessary to end WWII (context 21),history,undecided,0.932,expert,Military history,3
+HI_00216,The Renaissance began in Italy (context 21),history,supported,0.905,easy,Art history,4
+HI_00217,The Industrial Revolution improved quality of life (context 21),history,undecided,0.584,medium,Living standards data,1
+HI_00218,Alexander the Great was undefeated (context 21),history,supported,0.638,hard,Battle records,2
+HI_00219,The Great Depression was caused by the 1929 crash (context 21),history,undecided,0.887,expert,Economic history,1
+HI_00220,The moon landing was faked (context 21),history,rejected,0.666,easy,Scientific evidence,3
+HI_00221,The Roman Empire fell due to lead poisoning (context 22),history,rejected,0.684,hard,Archaeological evidence,1
+HI_00222,The American Civil War was primarily about slavery (context 22),history,supported,0.946,expert,Primary sources,3
+HI_00223,Columbus discovered America (context 22),history,rejected,0.839,easy,Pre-Columbian evidence,2
+HI_00224,The French Revolution improved conditions for peasants (context 22),history,undecided,0.713,medium,Social history,4
+HI_00225,The atomic bombs were necessary to end WWII (context 22),history,undecided,0.611,hard,Military history,4
+HI_00226,The Renaissance began in Italy (context 22),history,supported,0.643,expert,Art history,2
+HI_00227,The Industrial Revolution improved quality of life (context 22),history,undecided,0.81,easy,Living standards data,1
+HI_00228,Alexander the Great was undefeated (context 22),history,supported,0.605,medium,Battle records,3
+HI_00229,The Great Depression was caused by the 1929 crash (context 22),history,undecided,0.684,hard,Economic history,1
+HI_00230,The moon landing was faked (context 22),history,rejected,0.827,expert,Scientific evidence,4
+HI_00231,The Roman Empire fell due to lead poisoning (context 23),history,rejected,0.734,medium,Archaeological evidence,3
+HI_00232,The American Civil War was primarily about slavery (context 23),history,supported,0.567,hard,Primary sources,2
+HI_00233,Columbus discovered America (context 23),history,rejected,0.837,expert,Pre-Columbian evidence,3
+HI_00234,The French Revolution improved conditions for peasants (context 23),history,undecided,0.887,easy,Social history,4
+HI_00235,The atomic bombs were necessary to end WWII (context 23),history,undecided,0.629,medium,Military history,2
+HI_00236,The Renaissance began in Italy (context 23),history,supported,0.628,hard,Art history,3
+HI_00237,The Industrial Revolution improved quality of life (context 23),history,undecided,0.653,expert,Living standards data,4
+HI_00238,Alexander the Great was undefeated (context 23),history,supported,0.863,easy,Battle records,2
+HI_00239,The Great Depression was caused by the 1929 crash (context 23),history,undecided,0.69,medium,Economic history,3
+HI_00240,The moon landing was faked (context 23),history,rejected,0.933,hard,Scientific evidence,2
+HI_00241,The Roman Empire fell due to lead poisoning (context 24),history,rejected,0.867,easy,Archaeological evidence,1
+HI_00242,The American Civil War was primarily about slavery (context 24),history,supported,0.824,medium,Primary sources,3
+HI_00243,Columbus discovered America (context 24),history,rejected,0.771,hard,Pre-Columbian evidence,4
+HI_00244,The French Revolution improved conditions for peasants (context 24),history,undecided,0.554,expert,Social history,3
+HI_00245,The atomic bombs were necessary to end WWII (context 24),history,undecided,0.657,easy,Military history,3
+HI_00246,The Renaissance began in Italy (context 24),history,supported,0.855,medium,Art history,2
+HI_00247,The Industrial Revolution improved quality of life (context 24),history,undecided,0.833,hard,Living standards data,4
+HI_00248,Alexander the Great was undefeated (context 24),history,supported,0.722,expert,Battle records,1
+HI_00249,The Great Depression was caused by the 1929 crash (context 24),history,undecided,0.705,easy,Economic history,1
+HI_00250,The moon landing was faked (context 24),history,rejected,0.575,medium,Scientific evidence,2
+HI_00251,The Roman Empire fell due to lead poisoning (context 25),history,rejected,0.789,expert,Archaeological evidence,3
+HI_00252,The American Civil War was primarily about slavery (context 25),history,supported,0.87,easy,Primary sources,4
+HI_00253,Columbus discovered America (context 25),history,rejected,0.696,medium,Pre-Columbian evidence,4
+HI_00254,The French Revolution improved conditions for peasants (context 25),history,undecided,0.577,hard,Social history,2
+HI_00255,The atomic bombs were necessary to end WWII (context 25),history,undecided,0.629,expert,Military history,3
+HI_00256,The Renaissance began in Italy (context 25),history,supported,0.611,easy,Art history,3
+HI_00257,The Industrial Revolution improved quality of life (context 25),history,undecided,0.659,medium,Living standards data,1
+HI_00258,Alexander the Great was undefeated (context 25),history,supported,0.687,hard,Battle records,4
+HI_00259,The Great Depression was caused by the 1929 crash (context 25),history,undecided,0.945,expert,Economic history,1
+HI_00260,The moon landing was faked (context 25),history,rejected,0.595,easy,Scientific evidence,3
+HI_00261,The Roman Empire fell due to lead poisoning (context 26),history,rejected,0.664,hard,Archaeological evidence,2
+HI_00262,The American Civil War was primarily about slavery (context 26),history,supported,0.909,expert,Primary sources,4
+HI_00263,Columbus discovered America (context 26),history,rejected,0.875,easy,Pre-Columbian evidence,2
+HI_00264,The French Revolution improved conditions for peasants (context 26),history,undecided,0.593,medium,Social history,2
+HI_00265,The atomic bombs were necessary to end WWII (context 26),history,undecided,0.683,hard,Military history,1
+HI_00266,The Renaissance began in Italy (context 26),history,supported,0.844,expert,Art history,4
+HI_00267,The Industrial Revolution improved quality of life (context 26),history,undecided,0.583,easy,Living standards data,3
+HI_00268,Alexander the Great was undefeated (context 26),history,supported,0.869,medium,Battle records,1
+HI_00269,The Great Depression was caused by the 1929 crash (context 26),history,undecided,0.605,hard,Economic history,3
+HI_00270,The moon landing was faked (context 26),history,rejected,0.771,expert,Scientific evidence,3
+HI_00271,The Roman Empire fell due to lead poisoning (context 27),history,rejected,0.63,medium,Archaeological evidence,3
+HI_00272,The American Civil War was primarily about slavery (context 27),history,supported,0.684,hard,Primary sources,1
+HI_00273,Columbus discovered America (context 27),history,rejected,0.866,expert,Pre-Columbian evidence,1
+HI_00274,The French Revolution improved conditions for peasants (context 27),history,undecided,0.669,easy,Social history,2
+HI_00275,The atomic bombs were necessary to end WWII (context 27),history,undecided,0.84,medium,Military history,2
+HI_00276,The Renaissance began in Italy (context 27),history,supported,0.781,hard,Art history,2
+HI_00277,The Industrial Revolution improved quality of life (context 27),history,undecided,0.797,expert,Living standards data,3
+HI_00278,Alexander the Great was undefeated (context 27),history,supported,0.785,easy,Battle records,3
+HI_00279,The Great Depression was caused by the 1929 crash (context 27),history,undecided,0.767,medium,Economic history,4
+HI_00280,The moon landing was faked (context 27),history,rejected,0.805,hard,Scientific evidence,1
+HI_00281,The Roman Empire fell due to lead poisoning (context 28),history,rejected,0.947,easy,Archaeological evidence,3
+HI_00282,The American Civil War was primarily about slavery (context 28),history,supported,0.595,medium,Primary sources,3
+HI_00283,Columbus discovered America (context 28),history,rejected,0.927,hard,Pre-Columbian evidence,4
+HI_00284,The French Revolution improved conditions for peasants (context 28),history,undecided,0.556,expert,Social history,1
+HI_00285,The atomic bombs were necessary to end WWII (context 28),history,undecided,0.886,easy,Military history,3
+HI_00286,The Renaissance began in Italy (context 28),history,supported,0.824,medium,Art history,4
+HI_00287,The Industrial Revolution improved quality of life (context 28),history,undecided,0.946,hard,Living standards data,3
+HI_00288,Alexander the Great was undefeated (context 28),history,supported,0.727,expert,Battle records,2
+HI_00289,The Great Depression was caused by the 1929 crash (context 28),history,undecided,0.692,easy,Economic history,3
+HI_00290,The moon landing was faked (context 28),history,rejected,0.924,medium,Scientific evidence,2
+HI_00291,The Roman Empire fell due to lead poisoning (context 29),history,rejected,0.698,expert,Archaeological evidence,3
+HI_00292,The American Civil War was primarily about slavery (context 29),history,supported,0.895,easy,Primary sources,4
+HI_00293,Columbus discovered America (context 29),history,rejected,0.655,medium,Pre-Columbian evidence,1
+HI_00294,The French Revolution improved conditions for peasants (context 29),history,undecided,0.656,hard,Social history,3
+HI_00295,The atomic bombs were necessary to end WWII (context 29),history,undecided,0.559,expert,Military history,4
+HI_00296,The Renaissance began in Italy (context 29),history,supported,0.809,easy,Art history,2
+HI_00297,The Industrial Revolution improved quality of life (context 29),history,undecided,0.697,medium,Living standards data,1
+HI_00298,Alexander the Great was undefeated (context 29),history,supported,0.896,hard,Battle records,1
+HI_00299,The Great Depression was caused by the 1929 crash (context 29),history,undecided,0.603,expert,Economic history,4
+HI_00300,The moon landing was faked (context 29),history,rejected,0.679,easy,Scientific evidence,4
+HI_00301,The Roman Empire fell due to lead poisoning (context 30),history,rejected,0.877,hard,Archaeological evidence,4
+HI_00302,The American Civil War was primarily about slavery (context 30),history,supported,0.907,expert,Primary sources,4
+HI_00303,Columbus discovered America (context 30),history,rejected,0.751,easy,Pre-Columbian evidence,3
+HI_00304,The French Revolution improved conditions for peasants (context 30),history,undecided,0.858,medium,Social history,2
+HI_00305,The atomic bombs were necessary to end WWII (context 30),history,undecided,0.745,hard,Military history,2
+HI_00306,The Renaissance began in Italy (context 30),history,supported,0.793,expert,Art history,2
+HI_00307,The Industrial Revolution improved quality of life (context 30),history,undecided,0.866,easy,Living standards data,1
+HI_00308,Alexander the Great was undefeated (context 30),history,supported,0.58,medium,Battle records,3
+HI_00309,The Great Depression was caused by the 1929 crash (context 30),history,undecided,0.634,hard,Economic history,4
+HI_00310,The moon landing was faked (context 30),history,rejected,0.895,expert,Scientific evidence,2
+HI_00311,The Roman Empire fell due to lead poisoning (context 31),history,rejected,0.577,medium,Archaeological evidence,4
+HI_00312,The American Civil War was primarily about slavery (context 31),history,supported,0.689,hard,Primary sources,4
+HI_00313,Columbus discovered America (context 31),history,rejected,0.672,expert,Pre-Columbian evidence,4
+HI_00314,The French Revolution improved conditions for peasants (context 31),history,undecided,0.571,easy,Social history,2
+HI_00315,The atomic bombs were necessary to end WWII (context 31),history,undecided,0.753,medium,Military history,3
+HI_00316,The Renaissance began in Italy (context 31),history,supported,0.929,hard,Art history,2
+HI_00317,The Industrial Revolution improved quality of life (context 31),history,undecided,0.648,expert,Living standards data,3
+HI_00318,Alexander the Great was undefeated (context 31),history,supported,0.573,easy,Battle records,1
+HI_00319,The Great Depression was caused by the 1929 crash (context 31),history,undecided,0.673,medium,Economic history,4
+HI_00320,The moon landing was faked (context 31),history,rejected,0.871,hard,Scientific evidence,2
+HI_00321,The Roman Empire fell due to lead poisoning (context 32),history,rejected,0.93,easy,Archaeological evidence,1
+HI_00322,The American Civil War was primarily about slavery (context 32),history,supported,0.776,medium,Primary sources,2
+HI_00323,Columbus discovered America (context 32),history,rejected,0.555,hard,Pre-Columbian evidence,4
+HI_00324,The French Revolution improved conditions for peasants (context 32),history,undecided,0.901,expert,Social history,3
+HI_00325,The atomic bombs were necessary to end WWII (context 32),history,undecided,0.727,easy,Military history,2
+HI_00326,The Renaissance began in Italy (context 32),history,supported,0.863,medium,Art history,1
+HI_00327,The Industrial Revolution improved quality of life (context 32),history,undecided,0.713,hard,Living standards data,2
+HI_00328,Alexander the Great was undefeated (context 32),history,supported,0.65,expert,Battle records,2
+HI_00329,The Great Depression was caused by the 1929 crash (context 32),history,undecided,0.76,easy,Economic history,1
+HI_00330,The moon landing was faked (context 32),history,rejected,0.727,medium,Scientific evidence,1
+HI_00331,The Roman Empire fell due to lead poisoning (context 33),history,rejected,0.563,expert,Archaeological evidence,2
+HI_00332,The American Civil War was primarily about slavery (context 33),history,supported,0.751,easy,Primary sources,4
+HI_00333,Columbus discovered America (context 33),history,rejected,0.676,medium,Pre-Columbian evidence,2
+HI_00334,The French Revolution improved conditions for peasants (context 33),history,undecided,0.819,hard,Social history,3
+HI_00335,The atomic bombs were necessary to end WWII (context 33),history,undecided,0.886,expert,Military history,4
+HI_00336,The Renaissance began in Italy (context 33),history,supported,0.788,easy,Art history,4
+HI_00337,The Industrial Revolution improved quality of life (context 33),history,undecided,0.751,medium,Living standards data,3
+HI_00338,Alexander the Great was undefeated (context 33),history,supported,0.928,hard,Battle records,2
+HI_00339,The Great Depression was caused by the 1929 crash (context 33),history,undecided,0.652,expert,Economic history,2
+HI_00340,The moon landing was faked (context 33),history,rejected,0.573,easy,Scientific evidence,3
+HI_00341,The Roman Empire fell due to lead poisoning (context 34),history,rejected,0.85,hard,Archaeological evidence,3
+HI_00342,The American Civil War was primarily about slavery (context 34),history,supported,0.576,expert,Primary sources,1
+HI_00343,Columbus discovered America (context 34),history,rejected,0.757,easy,Pre-Columbian evidence,2
+HI_00344,The French Revolution improved conditions for peasants (context 34),history,undecided,0.661,medium,Social history,4
+HI_00345,The atomic bombs were necessary to end WWII (context 34),history,undecided,0.571,hard,Military history,2
+HI_00346,The Renaissance began in Italy (context 34),history,supported,0.816,expert,Art history,2
+HI_00347,The Industrial Revolution improved quality of life (context 34),history,undecided,0.581,easy,Living standards data,1
+HI_00348,Alexander the Great was undefeated (context 34),history,supported,0.746,medium,Battle records,1
+HI_00349,The Great Depression was caused by the 1929 crash (context 34),history,undecided,0.941,hard,Economic history,2
+HI_00350,The moon landing was faked (context 34),history,rejected,0.645,expert,Scientific evidence,2
+HI_00351,The Roman Empire fell due to lead poisoning (context 35),history,rejected,0.732,medium,Archaeological evidence,4
+HI_00352,The American Civil War was primarily about slavery (context 35),history,supported,0.763,hard,Primary sources,3
+HI_00353,Columbus discovered America (context 35),history,rejected,0.598,expert,Pre-Columbian evidence,2
+HI_00354,The French Revolution improved conditions for peasants (context 35),history,undecided,0.691,easy,Social history,2
+HI_00355,The atomic bombs were necessary to end WWII (context 35),history,undecided,0.574,medium,Military history,1
+HI_00356,The Renaissance began in Italy (context 35),history,supported,0.75,hard,Art history,4
+HI_00357,The Industrial Revolution improved quality of life (context 35),history,undecided,0.594,expert,Living standards data,3
+HI_00358,Alexander the Great was undefeated (context 35),history,supported,0.608,easy,Battle records,3
+HI_00359,The Great Depression was caused by the 1929 crash (context 35),history,undecided,0.909,medium,Economic history,4
+HI_00360,The moon landing was faked (context 35),history,rejected,0.634,hard,Scientific evidence,1
+HI_00361,The Roman Empire fell due to lead poisoning (context 36),history,rejected,0.659,easy,Archaeological evidence,1
+HI_00362,The American Civil War was primarily about slavery (context 36),history,supported,0.646,medium,Primary sources,4
+HI_00363,Columbus discovered America (context 36),history,rejected,0.826,hard,Pre-Columbian evidence,2
+HI_00364,The French Revolution improved conditions for peasants (context 36),history,undecided,0.754,expert,Social history,1
+HI_00365,The atomic bombs were necessary to end WWII (context 36),history,undecided,0.616,easy,Military history,2
+HI_00366,The Renaissance began in Italy (context 36),history,supported,0.807,medium,Art history,4
+HI_00367,The Industrial Revolution improved quality of life (context 36),history,undecided,0.903,hard,Living standards data,4
+HI_00368,Alexander the Great was undefeated (context 36),history,supported,0.731,expert,Battle records,2
+HI_00369,The Great Depression was caused by the 1929 crash (context 36),history,undecided,0.935,easy,Economic history,1
+HI_00370,The moon landing was faked (context 36),history,rejected,0.785,medium,Scientific evidence,1
+HI_00371,The Roman Empire fell due to lead poisoning (context 37),history,rejected,0.852,expert,Archaeological evidence,2
+HI_00372,The American Civil War was primarily about slavery (context 37),history,supported,0.708,easy,Primary sources,1
+HI_00373,Columbus discovered America (context 37),history,rejected,0.815,medium,Pre-Columbian evidence,4
+HI_00374,The French Revolution improved conditions for peasants (context 37),history,undecided,0.743,hard,Social history,2
+HI_00375,The atomic bombs were necessary to end WWII (context 37),history,undecided,0.673,expert,Military history,1
+HI_00376,The Renaissance began in Italy (context 37),history,supported,0.75,easy,Art history,4
+HI_00377,The Industrial Revolution improved quality of life (context 37),history,undecided,0.924,medium,Living standards data,2
+HI_00378,Alexander the Great was undefeated (context 37),history,supported,0.731,hard,Battle records,1
+HI_00379,The Great Depression was caused by the 1929 crash (context 37),history,undecided,0.744,expert,Economic history,1
+HI_00380,The moon landing was faked (context 37),history,rejected,0.648,easy,Scientific evidence,2
+HI_00381,The Roman Empire fell due to lead poisoning (context 38),history,rejected,0.577,hard,Archaeological evidence,3
+HI_00382,The American Civil War was primarily about slavery (context 38),history,supported,0.949,expert,Primary sources,4
+HI_00383,Columbus discovered America (context 38),history,rejected,0.686,easy,Pre-Columbian evidence,1
+HI_00384,The French Revolution improved conditions for peasants (context 38),history,undecided,0.809,medium,Social history,1
+HI_00385,The atomic bombs were necessary to end WWII (context 38),history,undecided,0.702,hard,Military history,1
+HI_00386,The Renaissance began in Italy (context 38),history,supported,0.742,expert,Art history,2
+HI_00387,The Industrial Revolution improved quality of life (context 38),history,undecided,0.904,easy,Living standards data,1
+HI_00388,Alexander the Great was undefeated (context 38),history,supported,0.681,medium,Battle records,3
+HI_00389,The Great Depression was caused by the 1929 crash (context 38),history,undecided,0.922,hard,Economic history,2
+HI_00390,The moon landing was faked (context 38),history,rejected,0.637,expert,Scientific evidence,2
+HI_00391,The Roman Empire fell due to lead poisoning (context 39),history,rejected,0.702,medium,Archaeological evidence,4
+HI_00392,The American Civil War was primarily about slavery (context 39),history,supported,0.624,hard,Primary sources,3
+HI_00393,Columbus discovered America (context 39),history,rejected,0.789,expert,Pre-Columbian evidence,3
+HI_00394,The French Revolution improved conditions for peasants (context 39),history,undecided,0.917,easy,Social history,1
+HI_00395,The atomic bombs were necessary to end WWII (context 39),history,undecided,0.832,medium,Military history,3
+HI_00396,The Renaissance began in Italy (context 39),history,supported,0.84,hard,Art history,4
+HI_00397,The Industrial Revolution improved quality of life (context 39),history,undecided,0.845,expert,Living standards data,4
+HI_00398,Alexander the Great was undefeated (context 39),history,supported,0.569,easy,Battle records,1
+HI_00399,The Great Depression was caused by the 1929 crash (context 39),history,undecided,0.764,medium,Economic history,4
+HI_00400,The moon landing was faked (context 39),history,rejected,0.719,hard,Scientific evidence,1
+HI_00401,The Roman Empire fell due to lead poisoning (context 40),history,rejected,0.767,easy,Archaeological evidence,4
+HI_00402,The American Civil War was primarily about slavery (context 40),history,supported,0.629,medium,Primary sources,2
+HI_00403,Columbus discovered America (context 40),history,rejected,0.778,hard,Pre-Columbian evidence,4
+HI_00404,The French Revolution improved conditions for peasants (context 40),history,undecided,0.56,expert,Social history,3
+HI_00405,The atomic bombs were necessary to end WWII (context 40),history,undecided,0.733,easy,Military history,3
+HI_00406,The Renaissance began in Italy (context 40),history,supported,0.942,medium,Art history,2
+HI_00407,The Industrial Revolution improved quality of life (context 40),history,undecided,0.747,hard,Living standards data,1
+HI_00408,Alexander the Great was undefeated (context 40),history,supported,0.637,expert,Battle records,4
+HI_00409,The Great Depression was caused by the 1929 crash (context 40),history,undecided,0.785,easy,Economic history,4
+HI_00410,The moon landing was faked (context 40),history,rejected,0.85,medium,Scientific evidence,1
+HI_00411,The Roman Empire fell due to lead poisoning (context 41),history,rejected,0.913,expert,Archaeological evidence,4
+HI_00412,The American Civil War was primarily about slavery (context 41),history,supported,0.611,easy,Primary sources,2
+HI_00413,Columbus discovered America (context 41),history,rejected,0.68,medium,Pre-Columbian evidence,1
+HI_00414,The French Revolution improved conditions for peasants (context 41),history,undecided,0.714,hard,Social history,2
+HI_00415,The atomic bombs were necessary to end WWII (context 41),history,undecided,0.835,expert,Military history,2
+HI_00416,The Renaissance began in Italy (context 41),history,supported,0.931,easy,Art history,3
+HI_00417,The Industrial Revolution improved quality of life (context 41),history,undecided,0.865,medium,Living standards data,4
+HI_00418,Alexander the Great was undefeated (context 41),history,supported,0.846,hard,Battle records,3
+HI_00419,The Great Depression was caused by the 1929 crash (context 41),history,undecided,0.865,expert,Economic history,1
+HI_00420,The moon landing was faked (context 41),history,rejected,0.882,easy,Scientific evidence,4
+HI_00421,The Roman Empire fell due to lead poisoning (context 42),history,rejected,0.827,hard,Archaeological evidence,3
+HI_00422,The American Civil War was primarily about slavery (context 42),history,supported,0.895,expert,Primary sources,4
+HI_00423,Columbus discovered America (context 42),history,rejected,0.669,easy,Pre-Columbian evidence,4
+HI_00424,The French Revolution improved conditions for peasants (context 42),history,undecided,0.579,medium,Social history,1
+HI_00425,The atomic bombs were necessary to end WWII (context 42),history,undecided,0.824,hard,Military history,2
+HI_00426,The Renaissance began in Italy (context 42),history,supported,0.887,expert,Art history,3
+HI_00427,The Industrial Revolution improved quality of life (context 42),history,undecided,0.879,easy,Living standards data,1
+HI_00428,Alexander the Great was undefeated (context 42),history,supported,0.801,medium,Battle records,3
+HI_00429,The Great Depression was caused by the 1929 crash (context 42),history,undecided,0.922,hard,Economic history,4
+HI_00430,The moon landing was faked (context 42),history,rejected,0.639,expert,Scientific evidence,1
+HI_00431,The Roman Empire fell due to lead poisoning (context 43),history,rejected,0.822,medium,Archaeological evidence,2
+HI_00432,The American Civil War was primarily about slavery (context 43),history,supported,0.924,hard,Primary sources,4
+HI_00433,Columbus discovered America (context 43),history,rejected,0.606,expert,Pre-Columbian evidence,2
+HI_00434,The French Revolution improved conditions for peasants (context 43),history,undecided,0.732,easy,Social history,3
+HI_00435,The atomic bombs were necessary to end WWII (context 43),history,undecided,0.719,medium,Military history,1
+HI_00436,The Renaissance began in Italy (context 43),history,supported,0.607,hard,Art history,2
+HI_00437,The Industrial Revolution improved quality of life (context 43),history,undecided,0.74,expert,Living standards data,1
+HI_00438,Alexander the Great was undefeated (context 43),history,supported,0.808,easy,Battle records,2
+HI_00439,The Great Depression was caused by the 1929 crash (context 43),history,undecided,0.629,medium,Economic history,1
+HI_00440,The moon landing was faked (context 43),history,rejected,0.626,hard,Scientific evidence,2
+HI_00441,The Roman Empire fell due to lead poisoning (context 44),history,rejected,0.79,easy,Archaeological evidence,1
+HI_00442,The American Civil War was primarily about slavery (context 44),history,supported,0.654,medium,Primary sources,1
+HI_00443,Columbus discovered America (context 44),history,rejected,0.899,hard,Pre-Columbian evidence,4
+HI_00444,The French Revolution improved conditions for peasants (context 44),history,undecided,0.703,expert,Social history,4
+HI_00445,The atomic bombs were necessary to end WWII (context 44),history,undecided,0.806,easy,Military history,4
+HI_00446,The Renaissance began in Italy (context 44),history,supported,0.601,medium,Art history,2
+HI_00447,The Industrial Revolution improved quality of life (context 44),history,undecided,0.73,hard,Living standards data,3
+HI_00448,Alexander the Great was undefeated (context 44),history,supported,0.838,expert,Battle records,4
+HI_00449,The Great Depression was caused by the 1929 crash (context 44),history,undecided,0.593,easy,Economic history,2
+HI_00450,The moon landing was faked (context 44),history,rejected,0.666,medium,Scientific evidence,3
+HI_00451,The Roman Empire fell due to lead poisoning (context 45),history,rejected,0.916,expert,Archaeological evidence,4
+HI_00452,The American Civil War was primarily about slavery (context 45),history,supported,0.821,easy,Primary sources,1
+HI_00453,Columbus discovered America (context 45),history,rejected,0.756,medium,Pre-Columbian evidence,3
+HI_00454,The French Revolution improved conditions for peasants (context 45),history,undecided,0.821,hard,Social history,1
+HI_00455,The atomic bombs were necessary to end WWII (context 45),history,undecided,0.621,expert,Military history,2
+HI_00456,The Renaissance began in Italy (context 45),history,supported,0.827,easy,Art history,2
+HI_00457,The Industrial Revolution improved quality of life (context 45),history,undecided,0.654,medium,Living standards data,4
+HI_00458,Alexander the Great was undefeated (context 45),history,supported,0.698,hard,Battle records,4
+HI_00459,The Great Depression was caused by the 1929 crash (context 45),history,undecided,0.768,expert,Economic history,3
+HI_00460,The moon landing was faked (context 45),history,rejected,0.766,easy,Scientific evidence,4
+HI_00461,The Roman Empire fell due to lead poisoning (context 46),history,rejected,0.877,hard,Archaeological evidence,3
+HI_00462,The American Civil War was primarily about slavery (context 46),history,supported,0.822,expert,Primary sources,4
+HI_00463,Columbus discovered America (context 46),history,rejected,0.594,easy,Pre-Columbian evidence,4
+HI_00464,The French Revolution improved conditions for peasants (context 46),history,undecided,0.937,medium,Social history,2
+HI_00465,The atomic bombs were necessary to end WWII (context 46),history,undecided,0.844,hard,Military history,2
+HI_00466,The Renaissance began in Italy (context 46),history,supported,0.686,expert,Art history,3
+HI_00467,The Industrial Revolution improved quality of life (context 46),history,undecided,0.66,easy,Living standards data,3
+HI_00468,Alexander the Great was undefeated (context 46),history,supported,0.823,medium,Battle records,3
+HI_00469,The Great Depression was caused by the 1929 crash (context 46),history,undecided,0.906,hard,Economic history,4
+HI_00470,The moon landing was faked (context 46),history,rejected,0.799,expert,Scientific evidence,3
+HI_00471,The Roman Empire fell due to lead poisoning (context 47),history,rejected,0.581,medium,Archaeological evidence,2
+HI_00472,The American Civil War was primarily about slavery (context 47),history,supported,0.883,hard,Primary sources,3
+HI_00473,Columbus discovered America (context 47),history,rejected,0.583,expert,Pre-Columbian evidence,3
+HI_00474,The French Revolution improved conditions for peasants (context 47),history,undecided,0.873,easy,Social history,2
+HI_00475,The atomic bombs were necessary to end WWII (context 47),history,undecided,0.735,medium,Military history,2
+HI_00476,The Renaissance began in Italy (context 47),history,supported,0.792,hard,Art history,1
+HI_00477,The Industrial Revolution improved quality of life (context 47),history,undecided,0.765,expert,Living standards data,3
+HI_00478,Alexander the Great was undefeated (context 47),history,supported,0.927,easy,Battle records,3
+HI_00479,The Great Depression was caused by the 1929 crash (context 47),history,undecided,0.864,medium,Economic history,3
+HI_00480,The moon landing was faked (context 47),history,rejected,0.759,hard,Scientific evidence,3
+HI_00481,The Roman Empire fell due to lead poisoning (context 48),history,rejected,0.886,easy,Archaeological evidence,1
+HI_00482,The American Civil War was primarily about slavery (context 48),history,supported,0.716,medium,Primary sources,3
+HI_00483,Columbus discovered America (context 48),history,rejected,0.697,hard,Pre-Columbian evidence,4
+HI_00484,The French Revolution improved conditions for peasants (context 48),history,undecided,0.77,expert,Social history,1
+HI_00485,The atomic bombs were necessary to end WWII (context 48),history,undecided,0.83,easy,Military history,1
+HI_00486,The Renaissance began in Italy (context 48),history,supported,0.588,medium,Art history,3
+HI_00487,The Industrial Revolution improved quality of life (context 48),history,undecided,0.677,hard,Living standards data,2
+HI_00488,Alexander the Great was undefeated (context 48),history,supported,0.816,expert,Battle records,4
+HI_00489,The Great Depression was caused by the 1929 crash (context 48),history,undecided,0.736,easy,Economic history,3
+HI_00490,The moon landing was faked (context 48),history,rejected,0.762,medium,Scientific evidence,1
+HI_00491,The Roman Empire fell due to lead poisoning (context 49),history,rejected,0.701,expert,Archaeological evidence,4
+HI_00492,The American Civil War was primarily about slavery (context 49),history,supported,0.697,easy,Primary sources,1
+HI_00493,Columbus discovered America (context 49),history,rejected,0.926,medium,Pre-Columbian evidence,1
+HI_00494,The French Revolution improved conditions for peasants (context 49),history,undecided,0.614,hard,Social history,2
+HI_00495,The atomic bombs were necessary to end WWII (context 49),history,undecided,0.738,expert,Military history,2
+HI_00496,The Renaissance began in Italy (context 49),history,supported,0.734,easy,Art history,4
+HI_00497,The Industrial Revolution improved quality of life (context 49),history,undecided,0.716,medium,Living standards data,3
+HI_00498,Alexander the Great was undefeated (context 49),history,supported,0.754,hard,Battle records,3
+HI_00499,The Great Depression was caused by the 1929 crash (context 49),history,undecided,0.645,expert,Economic history,2
+HI_00500,The moon landing was faked (context 49),history,rejected,0.897,easy,Scientific evidence,4
+HI_00501,The Roman Empire fell due to lead poisoning (context 50),history,rejected,0.879,hard,Archaeological evidence,3
+HI_00502,The American Civil War was primarily about slavery (context 50),history,supported,0.779,expert,Primary sources,3
+HI_00503,Columbus discovered America (context 50),history,rejected,0.811,easy,Pre-Columbian evidence,1
+HI_00504,The French Revolution improved conditions for peasants (context 50),history,undecided,0.664,medium,Social history,1
+HI_00505,The atomic bombs were necessary to end WWII (context 50),history,undecided,0.669,hard,Military history,2
+HI_00506,The Renaissance began in Italy (context 50),history,supported,0.844,expert,Art history,2
+HI_00507,The Industrial Revolution improved quality of life (context 50),history,undecided,0.657,easy,Living standards data,3
+HI_00508,Alexander the Great was undefeated (context 50),history,supported,0.674,medium,Battle records,1
+HI_00509,The Great Depression was caused by the 1929 crash (context 50),history,undecided,0.814,hard,Economic history,2
+HI_00510,The moon landing was faked (context 50),history,rejected,0.941,expert,Scientific evidence,2
+HI_00511,The Roman Empire fell due to lead poisoning (context 51),history,rejected,0.655,medium,Archaeological evidence,3
+HI_00512,The American Civil War was primarily about slavery (context 51),history,supported,0.85,hard,Primary sources,3
+HI_00513,Columbus discovered America (context 51),history,rejected,0.79,expert,Pre-Columbian evidence,1
+HI_00514,The French Revolution improved conditions for peasants (context 51),history,undecided,0.619,easy,Social history,3
+HI_00515,The atomic bombs were necessary to end WWII (context 51),history,undecided,0.948,medium,Military history,2
+HI_00516,The Renaissance began in Italy (context 51),history,supported,0.612,hard,Art history,3
+HI_00517,The Industrial Revolution improved quality of life (context 51),history,undecided,0.843,expert,Living standards data,4
+HI_00518,Alexander the Great was undefeated (context 51),history,supported,0.835,easy,Battle records,1
+HI_00519,The Great Depression was caused by the 1929 crash (context 51),history,undecided,0.806,medium,Economic history,1
+HI_00520,The moon landing was faked (context 51),history,rejected,0.775,hard,Scientific evidence,2
+HI_00521,The Roman Empire fell due to lead poisoning (context 52),history,rejected,0.867,easy,Archaeological evidence,4
+HI_00522,The American Civil War was primarily about slavery (context 52),history,supported,0.735,medium,Primary sources,2
+HI_00523,Columbus discovered America (context 52),history,rejected,0.689,hard,Pre-Columbian evidence,3
+HI_00524,The French Revolution improved conditions for peasants (context 52),history,undecided,0.58,expert,Social history,3
+HI_00525,The atomic bombs were necessary to end WWII (context 52),history,undecided,0.917,easy,Military history,2
+HI_00526,The Renaissance began in Italy (context 52),history,supported,0.752,medium,Art history,3
+HI_00527,The Industrial Revolution improved quality of life (context 52),history,undecided,0.9,hard,Living standards data,2
+HI_00528,Alexander the Great was undefeated (context 52),history,supported,0.556,expert,Battle records,1
+HI_00529,The Great Depression was caused by the 1929 crash (context 52),history,undecided,0.557,easy,Economic history,3
+HI_00530,The moon landing was faked (context 52),history,rejected,0.873,medium,Scientific evidence,2
+HI_00531,The Roman Empire fell due to lead poisoning (context 53),history,rejected,0.742,expert,Archaeological evidence,1
+HI_00532,The American Civil War was primarily about slavery (context 53),history,supported,0.646,easy,Primary sources,4
+HI_00533,Columbus discovered America (context 53),history,rejected,0.687,medium,Pre-Columbian evidence,4
+HI_00534,The French Revolution improved conditions for peasants (context 53),history,undecided,0.878,hard,Social history,2
+HI_00535,The atomic bombs were necessary to end WWII (context 53),history,undecided,0.721,expert,Military history,3
+HI_00536,The Renaissance began in Italy (context 53),history,supported,0.622,easy,Art history,2
+HI_00537,The Industrial Revolution improved quality of life (context 53),history,undecided,0.657,medium,Living standards data,3
+HI_00538,Alexander the Great was undefeated (context 53),history,supported,0.612,hard,Battle records,2
+HI_00539,The Great Depression was caused by the 1929 crash (context 53),history,undecided,0.684,expert,Economic history,3
+HI_00540,The moon landing was faked (context 53),history,rejected,0.885,easy,Scientific evidence,3
+HI_00541,The Roman Empire fell due to lead poisoning (context 54),history,rejected,0.57,hard,Archaeological evidence,1
+HI_00542,The American Civil War was primarily about slavery (context 54),history,supported,0.887,expert,Primary sources,3
+HI_00543,Columbus discovered America (context 54),history,rejected,0.934,easy,Pre-Columbian evidence,1
+HI_00544,The French Revolution improved conditions for peasants (context 54),history,undecided,0.803,medium,Social history,4
+HI_00545,The atomic bombs were necessary to end WWII (context 54),history,undecided,0.608,hard,Military history,2
+HI_00546,The Renaissance began in Italy (context 54),history,supported,0.593,expert,Art history,2
+HI_00547,The Industrial Revolution improved quality of life (context 54),history,undecided,0.594,easy,Living standards data,1
+HI_00548,Alexander the Great was undefeated (context 54),history,supported,0.605,medium,Battle records,4
+HI_00549,The Great Depression was caused by the 1929 crash (context 54),history,undecided,0.559,hard,Economic history,4
+HI_00550,The moon landing was faked (context 54),history,rejected,0.852,expert,Scientific evidence,3
+HI_00551,The Roman Empire fell due to lead poisoning (context 55),history,rejected,0.661,medium,Archaeological evidence,1
+HI_00552,The American Civil War was primarily about slavery (context 55),history,supported,0.938,hard,Primary sources,2
+HI_00553,Columbus discovered America (context 55),history,rejected,0.904,expert,Pre-Columbian evidence,2
+HI_00554,The French Revolution improved conditions for peasants (context 55),history,undecided,0.7,easy,Social history,4
+HI_00555,The atomic bombs were necessary to end WWII (context 55),history,undecided,0.899,medium,Military history,4
+HI_00556,The Renaissance began in Italy (context 55),history,supported,0.799,hard,Art history,1
+HI_00557,The Industrial Revolution improved quality of life (context 55),history,undecided,0.821,expert,Living standards data,2
+HI_00558,Alexander the Great was undefeated (context 55),history,supported,0.573,easy,Battle records,1
+HI_00559,The Great Depression was caused by the 1929 crash (context 55),history,undecided,0.766,medium,Economic history,2
+HI_00560,The moon landing was faked (context 55),history,rejected,0.929,hard,Scientific evidence,1
+HI_00561,The Roman Empire fell due to lead poisoning (context 56),history,rejected,0.914,easy,Archaeological evidence,2
+HI_00562,The American Civil War was primarily about slavery (context 56),history,supported,0.696,medium,Primary sources,1
+HI_00563,Columbus discovered America (context 56),history,rejected,0.596,hard,Pre-Columbian evidence,1
+HI_00564,The French Revolution improved conditions for peasants (context 56),history,undecided,0.554,expert,Social history,4
+HI_00565,The atomic bombs were necessary to end WWII (context 56),history,undecided,0.641,easy,Military history,3
+HI_00566,The Renaissance began in Italy (context 56),history,supported,0.789,medium,Art history,2
+HI_00567,The Industrial Revolution improved quality of life (context 56),history,undecided,0.751,hard,Living standards data,2
+HI_00568,Alexander the Great was undefeated (context 56),history,supported,0.677,expert,Battle records,1
+HI_00569,The Great Depression was caused by the 1929 crash (context 56),history,undecided,0.837,easy,Economic history,4
+HI_00570,The moon landing was faked (context 56),history,rejected,0.847,medium,Scientific evidence,4
+HI_00571,The Roman Empire fell due to lead poisoning (context 57),history,rejected,0.688,expert,Archaeological evidence,2
+HI_00572,The American Civil War was primarily about slavery (context 57),history,supported,0.782,easy,Primary sources,4
+HI_00573,Columbus discovered America (context 57),history,rejected,0.916,medium,Pre-Columbian evidence,1
+HI_00574,The French Revolution improved conditions for peasants (context 57),history,undecided,0.579,hard,Social history,1
+HI_00575,The atomic bombs were necessary to end WWII (context 57),history,undecided,0.878,expert,Military history,3
+HI_00576,The Renaissance began in Italy (context 57),history,supported,0.676,easy,Art history,3
+HI_00577,The Industrial Revolution improved quality of life (context 57),history,undecided,0.9,medium,Living standards data,2
+HI_00578,Alexander the Great was undefeated (context 57),history,supported,0.785,hard,Battle records,3
+HI_00579,The Great Depression was caused by the 1929 crash (context 57),history,undecided,0.707,expert,Economic history,2
+HI_00580,The moon landing was faked (context 57),history,rejected,0.675,easy,Scientific evidence,3
+HI_00581,The Roman Empire fell due to lead poisoning (context 58),history,rejected,0.761,hard,Archaeological evidence,4
+HI_00582,The American Civil War was primarily about slavery (context 58),history,supported,0.793,expert,Primary sources,2
+HI_00583,Columbus discovered America (context 58),history,rejected,0.794,easy,Pre-Columbian evidence,3
+HI_00584,The French Revolution improved conditions for peasants (context 58),history,undecided,0.749,medium,Social history,3
+HI_00585,The atomic bombs were necessary to end WWII (context 58),history,undecided,0.918,hard,Military history,3
+HI_00586,The Renaissance began in Italy (context 58),history,supported,0.601,expert,Art history,3
+HI_00587,The Industrial Revolution improved quality of life (context 58),history,undecided,0.669,easy,Living standards data,4
+HI_00588,Alexander the Great was undefeated (context 58),history,supported,0.74,medium,Battle records,3
+HI_00589,The Great Depression was caused by the 1929 crash (context 58),history,undecided,0.861,hard,Economic history,2
+HI_00590,The moon landing was faked (context 58),history,rejected,0.824,expert,Scientific evidence,2
+HI_00591,The Roman Empire fell due to lead poisoning (context 59),history,rejected,0.678,medium,Archaeological evidence,3
+HI_00592,The American Civil War was primarily about slavery (context 59),history,supported,0.646,hard,Primary sources,1
+HI_00593,Columbus discovered America (context 59),history,rejected,0.799,expert,Pre-Columbian evidence,4
+HI_00594,The French Revolution improved conditions for peasants (context 59),history,undecided,0.787,easy,Social history,1
+HI_00595,The atomic bombs were necessary to end WWII (context 59),history,undecided,0.82,medium,Military history,3
+HI_00596,The Renaissance began in Italy (context 59),history,supported,0.839,hard,Art history,4
+HI_00597,The Industrial Revolution improved quality of life (context 59),history,undecided,0.895,expert,Living standards data,2
+HI_00598,Alexander the Great was undefeated (context 59),history,supported,0.894,easy,Battle records,3
+HI_00599,The Great Depression was caused by the 1929 crash (context 59),history,undecided,0.787,medium,Economic history,2
+HI_00600,The moon landing was faked (context 59),history,rejected,0.649,hard,Scientific evidence,1
+HI_00601,The Roman Empire fell due to lead poisoning (context 60),history,rejected,0.797,easy,Archaeological evidence,3
+HI_00602,The American Civil War was primarily about slavery (context 60),history,supported,0.69,medium,Primary sources,4
+HI_00603,Columbus discovered America (context 60),history,rejected,0.715,hard,Pre-Columbian evidence,3
+HI_00604,The French Revolution improved conditions for peasants (context 60),history,undecided,0.785,expert,Social history,4
+HI_00605,The atomic bombs were necessary to end WWII (context 60),history,undecided,0.558,easy,Military history,2
+HI_00606,The Renaissance began in Italy (context 60),history,supported,0.921,medium,Art history,4
+HI_00607,The Industrial Revolution improved quality of life (context 60),history,undecided,0.938,hard,Living standards data,3
+HI_00608,Alexander the Great was undefeated (context 60),history,supported,0.642,expert,Battle records,4
+HI_00609,The Great Depression was caused by the 1929 crash (context 60),history,undecided,0.566,easy,Economic history,2
+HI_00610,The moon landing was faked (context 60),history,rejected,0.83,medium,Scientific evidence,4
+HI_00611,The Roman Empire fell due to lead poisoning (context 61),history,rejected,0.867,expert,Archaeological evidence,4
+HI_00612,The American Civil War was primarily about slavery (context 61),history,supported,0.849,easy,Primary sources,4
+HI_00613,Columbus discovered America (context 61),history,rejected,0.57,medium,Pre-Columbian evidence,3
+HI_00614,The French Revolution improved conditions for peasants (context 61),history,undecided,0.942,hard,Social history,2
+HI_00615,The atomic bombs were necessary to end WWII (context 61),history,undecided,0.91,expert,Military history,2
+HI_00616,The Renaissance began in Italy (context 61),history,supported,0.6,easy,Art history,3
+HI_00617,The Industrial Revolution improved quality of life (context 61),history,undecided,0.714,medium,Living standards data,3
+HI_00618,Alexander the Great was undefeated (context 61),history,supported,0.693,hard,Battle records,1
+HI_00619,The Great Depression was caused by the 1929 crash (context 61),history,undecided,0.58,expert,Economic history,4
+HI_00620,The moon landing was faked (context 61),history,rejected,0.763,easy,Scientific evidence,3
+HI_00621,The Roman Empire fell due to lead poisoning (context 62),history,rejected,0.637,hard,Archaeological evidence,4
+HI_00622,The American Civil War was primarily about slavery (context 62),history,supported,0.848,expert,Primary sources,2
+HI_00623,Columbus discovered America (context 62),history,rejected,0.731,easy,Pre-Columbian evidence,1
+HI_00624,The French Revolution improved conditions for peasants (context 62),history,undecided,0.829,medium,Social history,2
+HI_00625,The atomic bombs were necessary to end WWII (context 62),history,undecided,0.921,hard,Military history,2
+HI_00626,The Renaissance began in Italy (context 62),history,supported,0.82,expert,Art history,2
+HI_00627,The Industrial Revolution improved quality of life (context 62),history,undecided,0.855,easy,Living standards data,4
+HI_00628,Alexander the Great was undefeated (context 62),history,supported,0.765,medium,Battle records,4
+HI_00629,The Great Depression was caused by the 1929 crash (context 62),history,undecided,0.891,hard,Economic history,1
+HI_00630,The moon landing was faked (context 62),history,rejected,0.637,expert,Scientific evidence,4
+HI_00631,The Roman Empire fell due to lead poisoning (context 63),history,rejected,0.858,medium,Archaeological evidence,3
+HI_00632,The American Civil War was primarily about slavery (context 63),history,supported,0.593,hard,Primary sources,2
+HI_00633,Columbus discovered America (context 63),history,rejected,0.757,expert,Pre-Columbian evidence,2
+HI_00634,The French Revolution improved conditions for peasants (context 63),history,undecided,0.646,easy,Social history,1
+HI_00635,The atomic bombs were necessary to end WWII (context 63),history,undecided,0.664,medium,Military history,4
+HI_00636,The Renaissance began in Italy (context 63),history,supported,0.834,hard,Art history,2
+HI_00637,The Industrial Revolution improved quality of life (context 63),history,undecided,0.854,expert,Living standards data,3
+HI_00638,Alexander the Great was undefeated (context 63),history,supported,0.806,easy,Battle records,3
+HI_00639,The Great Depression was caused by the 1929 crash (context 63),history,undecided,0.577,medium,Economic history,1
+HI_00640,The moon landing was faked (context 63),history,rejected,0.641,hard,Scientific evidence,3
+HI_00641,The Roman Empire fell due to lead poisoning (context 64),history,rejected,0.814,easy,Archaeological evidence,2
+HI_00642,The American Civil War was primarily about slavery (context 64),history,supported,0.586,medium,Primary sources,3
+HI_00643,Columbus discovered America (context 64),history,rejected,0.857,hard,Pre-Columbian evidence,3
+HI_00644,The French Revolution improved conditions for peasants (context 64),history,undecided,0.809,expert,Social history,1
+HI_00645,The atomic bombs were necessary to end WWII (context 64),history,undecided,0.58,easy,Military history,1
+HI_00646,The Renaissance began in Italy (context 64),history,supported,0.719,medium,Art history,3
+HI_00647,The Industrial Revolution improved quality of life (context 64),history,undecided,0.853,hard,Living standards data,3
+HI_00648,Alexander the Great was undefeated (context 64),history,supported,0.696,expert,Battle records,4
+HI_00649,The Great Depression was caused by the 1929 crash (context 64),history,undecided,0.578,easy,Economic history,2
+HI_00650,The moon landing was faked (context 64),history,rejected,0.751,medium,Scientific evidence,1
+HI_00651,The Roman Empire fell due to lead poisoning (context 65),history,rejected,0.628,expert,Archaeological evidence,1
+HI_00652,The American Civil War was primarily about slavery (context 65),history,supported,0.773,easy,Primary sources,4
+HI_00653,Columbus discovered America (context 65),history,rejected,0.915,medium,Pre-Columbian evidence,1
+HI_00654,The French Revolution improved conditions for peasants (context 65),history,undecided,0.808,hard,Social history,2
+HI_00655,The atomic bombs were necessary to end WWII (context 65),history,undecided,0.883,expert,Military history,3
+HI_00656,The Renaissance began in Italy (context 65),history,supported,0.593,easy,Art history,4
+HI_00657,The Industrial Revolution improved quality of life (context 65),history,undecided,0.77,medium,Living standards data,4
+HI_00658,Alexander the Great was undefeated (context 65),history,supported,0.683,hard,Battle records,1
+HI_00659,The Great Depression was caused by the 1929 crash (context 65),history,undecided,0.755,expert,Economic history,3
+HI_00660,The moon landing was faked (context 65),history,rejected,0.724,easy,Scientific evidence,3
+HI_00661,The Roman Empire fell due to lead poisoning (context 66),history,rejected,0.605,hard,Archaeological evidence,2
+HI_00662,The American Civil War was primarily about slavery (context 66),history,supported,0.93,expert,Primary sources,2
+HI_00663,Columbus discovered America (context 66),history,rejected,0.82,easy,Pre-Columbian evidence,1
+HI_00664,The French Revolution improved conditions for peasants (context 66),history,undecided,0.67,medium,Social history,4
+HI_00665,The atomic bombs were necessary to end WWII (context 66),history,undecided,0.604,hard,Military history,3
+HI_00666,The Renaissance began in Italy (context 66),history,supported,0.857,expert,Art history,2
+HI_00667,The Industrial Revolution improved quality of life (context 66),history,undecided,0.784,easy,Living standards data,3
+HI_00668,Alexander the Great was undefeated (context 66),history,supported,0.607,medium,Battle records,1
+HI_00669,The Great Depression was caused by the 1929 crash (context 66),history,undecided,0.869,hard,Economic history,1
+HI_00670,The moon landing was faked (context 66),history,rejected,0.701,expert,Scientific evidence,3
+HI_00671,The Roman Empire fell due to lead poisoning (context 67),history,rejected,0.595,medium,Archaeological evidence,2
+HI_00672,The American Civil War was primarily about slavery (context 67),history,supported,0.723,hard,Primary sources,3
+HI_00673,Columbus discovered America (context 67),history,rejected,0.917,expert,Pre-Columbian evidence,1
+HI_00674,The French Revolution improved conditions for peasants (context 67),history,undecided,0.77,easy,Social history,1
+HI_00675,The atomic bombs were necessary to end WWII (context 67),history,undecided,0.581,medium,Military history,3
+HI_00676,The Renaissance began in Italy (context 67),history,supported,0.83,hard,Art history,1
+HI_00677,The Industrial Revolution improved quality of life (context 67),history,undecided,0.678,expert,Living standards data,2
+HI_00678,Alexander the Great was undefeated (context 67),history,supported,0.94,easy,Battle records,3
+HI_00679,The Great Depression was caused by the 1929 crash (context 67),history,undecided,0.741,medium,Economic history,2
+HI_00680,The moon landing was faked (context 67),history,rejected,0.923,hard,Scientific evidence,3
+HI_00681,The Roman Empire fell due to lead poisoning (context 68),history,rejected,0.693,easy,Archaeological evidence,1
+HI_00682,The American Civil War was primarily about slavery (context 68),history,supported,0.752,medium,Primary sources,1
+HI_00683,Columbus discovered America (context 68),history,rejected,0.793,hard,Pre-Columbian evidence,3
+HI_00684,The French Revolution improved conditions for peasants (context 68),history,undecided,0.584,expert,Social history,4
+HI_00685,The atomic bombs were necessary to end WWII (context 68),history,undecided,0.677,easy,Military history,4
+HI_00686,The Renaissance began in Italy (context 68),history,supported,0.562,medium,Art history,4
+HI_00687,The Industrial Revolution improved quality of life (context 68),history,undecided,0.613,hard,Living standards data,3
+HI_00688,Alexander the Great was undefeated (context 68),history,supported,0.869,expert,Battle records,4
+HI_00689,The Great Depression was caused by the 1929 crash (context 68),history,undecided,0.565,easy,Economic history,3
+HI_00690,The moon landing was faked (context 68),history,rejected,0.922,medium,Scientific evidence,3
+HI_00691,The Roman Empire fell due to lead poisoning (context 69),history,rejected,0.805,expert,Archaeological evidence,3
+HI_00692,The American Civil War was primarily about slavery (context 69),history,supported,0.784,easy,Primary sources,1
+HI_00693,Columbus discovered America (context 69),history,rejected,0.716,medium,Pre-Columbian evidence,1
+HI_00694,The French Revolution improved conditions for peasants (context 69),history,undecided,0.616,hard,Social history,3
+HI_00695,The atomic bombs were necessary to end WWII (context 69),history,undecided,0.863,expert,Military history,4
+HI_00696,The Renaissance began in Italy (context 69),history,supported,0.76,easy,Art history,1
+HI_00697,The Industrial Revolution improved quality of life (context 69),history,undecided,0.729,medium,Living standards data,4
+HI_00698,Alexander the Great was undefeated (context 69),history,supported,0.623,hard,Battle records,1
+HI_00699,The Great Depression was caused by the 1929 crash (context 69),history,undecided,0.76,expert,Economic history,3
+HI_00700,The moon landing was faked (context 69),history,rejected,0.58,easy,Scientific evidence,4
+HI_00701,The Roman Empire fell due to lead poisoning (context 70),history,rejected,0.647,hard,Archaeological evidence,3
+HI_00702,The American Civil War was primarily about slavery (context 70),history,supported,0.949,expert,Primary sources,1
+HI_00703,Columbus discovered America (context 70),history,rejected,0.592,easy,Pre-Columbian evidence,1
+HI_00704,The French Revolution improved conditions for peasants (context 70),history,undecided,0.843,medium,Social history,2
+HI_00705,The atomic bombs were necessary to end WWII (context 70),history,undecided,0.818,hard,Military history,4
+HI_00706,The Renaissance began in Italy (context 70),history,supported,0.806,expert,Art history,2
+HI_00707,The Industrial Revolution improved quality of life (context 70),history,undecided,0.734,easy,Living standards data,2
+HI_00708,Alexander the Great was undefeated (context 70),history,supported,0.6,medium,Battle records,2
+HI_00709,The Great Depression was caused by the 1929 crash (context 70),history,undecided,0.558,hard,Economic history,2
+HI_00710,The moon landing was faked (context 70),history,rejected,0.936,expert,Scientific evidence,2
+HI_00711,The Roman Empire fell due to lead poisoning (context 71),history,rejected,0.867,medium,Archaeological evidence,2
+HI_00712,The American Civil War was primarily about slavery (context 71),history,supported,0.728,hard,Primary sources,3
+HI_00713,Columbus discovered America (context 71),history,rejected,0.733,expert,Pre-Columbian evidence,2
+HI_00714,The French Revolution improved conditions for peasants (context 71),history,undecided,0.794,easy,Social history,3
+HI_00715,The atomic bombs were necessary to end WWII (context 71),history,undecided,0.823,medium,Military history,1
+HI_00716,The Renaissance began in Italy (context 71),history,supported,0.751,hard,Art history,1
+HI_00717,The Industrial Revolution improved quality of life (context 71),history,undecided,0.629,expert,Living standards data,4
+HI_00718,Alexander the Great was undefeated (context 71),history,supported,0.656,easy,Battle records,2
+HI_00719,The Great Depression was caused by the 1929 crash (context 71),history,undecided,0.932,medium,Economic history,3
+HI_00720,The moon landing was faked (context 71),history,rejected,0.876,hard,Scientific evidence,4
+HI_00721,The Roman Empire fell due to lead poisoning (context 72),history,rejected,0.597,easy,Archaeological evidence,1
+HI_00722,The American Civil War was primarily about slavery (context 72),history,supported,0.772,medium,Primary sources,4
+HI_00723,Columbus discovered America (context 72),history,rejected,0.553,hard,Pre-Columbian evidence,2
+HI_00724,The French Revolution improved conditions for peasants (context 72),history,undecided,0.687,expert,Social history,2
+HI_00725,The atomic bombs were necessary to end WWII (context 72),history,undecided,0.656,easy,Military history,4
+HI_00726,The Renaissance began in Italy (context 72),history,supported,0.86,medium,Art history,2
+HI_00727,The Industrial Revolution improved quality of life (context 72),history,undecided,0.708,hard,Living standards data,2
+HI_00728,Alexander the Great was undefeated (context 72),history,supported,0.562,expert,Battle records,2
+HI_00729,The Great Depression was caused by the 1929 crash (context 72),history,undecided,0.869,easy,Economic history,1
+HI_00730,The moon landing was faked (context 72),history,rejected,0.904,medium,Scientific evidence,2
+HI_00731,The Roman Empire fell due to lead poisoning (context 73),history,rejected,0.666,expert,Archaeological evidence,3
+HI_00732,The American Civil War was primarily about slavery (context 73),history,supported,0.818,easy,Primary sources,2
+HI_00733,Columbus discovered America (context 73),history,rejected,0.936,medium,Pre-Columbian evidence,1
+HI_00734,The French Revolution improved conditions for peasants (context 73),history,undecided,0.662,hard,Social history,4
+HI_00735,The atomic bombs were necessary to end WWII (context 73),history,undecided,0.88,expert,Military history,1
+HI_00736,The Renaissance began in Italy (context 73),history,supported,0.928,easy,Art history,3
+HI_00737,The Industrial Revolution improved quality of life (context 73),history,undecided,0.894,medium,Living standards data,4
+HI_00738,Alexander the Great was undefeated (context 73),history,supported,0.685,hard,Battle records,1
+HI_00739,The Great Depression was caused by the 1929 crash (context 73),history,undecided,0.815,expert,Economic history,4
+HI_00740,The moon landing was faked (context 73),history,rejected,0.808,easy,Scientific evidence,2
+HI_00741,The Roman Empire fell due to lead poisoning (context 74),history,rejected,0.822,hard,Archaeological evidence,4
+HI_00742,The American Civil War was primarily about slavery (context 74),history,supported,0.787,expert,Primary sources,3
+HI_00743,Columbus discovered America (context 74),history,rejected,0.695,easy,Pre-Columbian evidence,4
+HI_00744,The French Revolution improved conditions for peasants (context 74),history,undecided,0.745,medium,Social history,4
+HI_00745,The atomic bombs were necessary to end WWII (context 74),history,undecided,0.574,hard,Military history,2
+HI_00746,The Renaissance began in Italy (context 74),history,supported,0.938,expert,Art history,2
+HI_00747,The Industrial Revolution improved quality of life (context 74),history,undecided,0.933,easy,Living standards data,3
+HI_00748,Alexander the Great was undefeated (context 74),history,supported,0.589,medium,Battle records,4
+HI_00749,The Great Depression was caused by the 1929 crash (context 74),history,undecided,0.631,hard,Economic history,1
+HI_00750,The moon landing was faked (context 74),history,rejected,0.807,expert,Scientific evidence,4
+HI_00751,The Roman Empire fell due to lead poisoning (context 75),history,rejected,0.586,medium,Archaeological evidence,3
+HI_00752,The American Civil War was primarily about slavery (context 75),history,supported,0.575,hard,Primary sources,2
+HI_00753,Columbus discovered America (context 75),history,rejected,0.637,expert,Pre-Columbian evidence,4
+HI_00754,The French Revolution improved conditions for peasants (context 75),history,undecided,0.826,easy,Social history,4
+HI_00755,The atomic bombs were necessary to end WWII (context 75),history,undecided,0.768,medium,Military history,2
+HI_00756,The Renaissance began in Italy (context 75),history,supported,0.716,hard,Art history,2
+HI_00757,The Industrial Revolution improved quality of life (context 75),history,undecided,0.737,expert,Living standards data,2
+HI_00758,Alexander the Great was undefeated (context 75),history,supported,0.915,easy,Battle records,1
+HI_00759,The Great Depression was caused by the 1929 crash (context 75),history,undecided,0.604,medium,Economic history,1
+HI_00760,The moon landing was faked (context 75),history,rejected,0.853,hard,Scientific evidence,3
+HI_00761,The Roman Empire fell due to lead poisoning (context 76),history,rejected,0.716,easy,Archaeological evidence,2
+HI_00762,The American Civil War was primarily about slavery (context 76),history,supported,0.578,medium,Primary sources,4
+HI_00763,Columbus discovered America (context 76),history,rejected,0.701,hard,Pre-Columbian evidence,1
+HI_00764,The French Revolution improved conditions for peasants (context 76),history,undecided,0.819,expert,Social history,3
+HI_00765,The atomic bombs were necessary to end WWII (context 76),history,undecided,0.672,easy,Military history,2
+HI_00766,The Renaissance began in Italy (context 76),history,supported,0.752,medium,Art history,3
+HI_00767,The Industrial Revolution improved quality of life (context 76),history,undecided,0.936,hard,Living standards data,4
+HI_00768,Alexander the Great was undefeated (context 76),history,supported,0.731,expert,Battle records,2
+HI_00769,The Great Depression was caused by the 1929 crash (context 76),history,undecided,0.639,easy,Economic history,4
+HI_00770,The moon landing was faked (context 76),history,rejected,0.714,medium,Scientific evidence,3
+HI_00771,The Roman Empire fell due to lead poisoning (context 77),history,rejected,0.673,expert,Archaeological evidence,2
+HI_00772,The American Civil War was primarily about slavery (context 77),history,supported,0.819,easy,Primary sources,3
+HI_00773,Columbus discovered America (context 77),history,rejected,0.552,medium,Pre-Columbian evidence,1
+HI_00774,The French Revolution improved conditions for peasants (context 77),history,undecided,0.771,hard,Social history,3
+HI_00775,The atomic bombs were necessary to end WWII (context 77),history,undecided,0.618,expert,Military history,3
+HI_00776,The Renaissance began in Italy (context 77),history,supported,0.835,easy,Art history,2
+HI_00777,The Industrial Revolution improved quality of life (context 77),history,undecided,0.909,medium,Living standards data,4
+HI_00778,Alexander the Great was undefeated (context 77),history,supported,0.838,hard,Battle records,3
+HI_00779,The Great Depression was caused by the 1929 crash (context 77),history,undecided,0.912,expert,Economic history,3
+HI_00780,The moon landing was faked (context 77),history,rejected,0.943,easy,Scientific evidence,1
+HI_00781,The Roman Empire fell due to lead poisoning (context 78),history,rejected,0.879,hard,Archaeological evidence,4
+HI_00782,The American Civil War was primarily about slavery (context 78),history,supported,0.61,expert,Primary sources,2
+HI_00783,Columbus discovered America (context 78),history,rejected,0.73,easy,Pre-Columbian evidence,3
+HI_00784,The French Revolution improved conditions for peasants (context 78),history,undecided,0.817,medium,Social history,3
+HI_00785,The atomic bombs were necessary to end WWII (context 78),history,undecided,0.732,hard,Military history,1
+HI_00786,The Renaissance began in Italy (context 78),history,supported,0.89,expert,Art history,3
+HI_00787,The Industrial Revolution improved quality of life (context 78),history,undecided,0.58,easy,Living standards data,3
+HI_00788,Alexander the Great was undefeated (context 78),history,supported,0.722,medium,Battle records,3
+HI_00789,The Great Depression was caused by the 1929 crash (context 78),history,undecided,0.603,hard,Economic history,1
+HI_00790,The moon landing was faked (context 78),history,rejected,0.79,expert,Scientific evidence,1
+HI_00791,The Roman Empire fell due to lead poisoning (context 79),history,rejected,0.833,medium,Archaeological evidence,1
+HI_00792,The American Civil War was primarily about slavery (context 79),history,supported,0.789,hard,Primary sources,2
+HI_00793,Columbus discovered America (context 79),history,rejected,0.828,expert,Pre-Columbian evidence,1
+HI_00794,The French Revolution improved conditions for peasants (context 79),history,undecided,0.895,easy,Social history,3
+HI_00795,The atomic bombs were necessary to end WWII (context 79),history,undecided,0.865,medium,Military history,3
+HI_00796,The Renaissance began in Italy (context 79),history,supported,0.708,hard,Art history,4
+HI_00797,The Industrial Revolution improved quality of life (context 79),history,undecided,0.696,expert,Living standards data,4
+HI_00798,Alexander the Great was undefeated (context 79),history,supported,0.788,easy,Battle records,4
+HI_00799,The Great Depression was caused by the 1929 crash (context 79),history,undecided,0.868,medium,Economic history,3
+HI_00800,The moon landing was faked (context 79),history,rejected,0.806,hard,Scientific evidence,4
+HI_00801,The Roman Empire fell due to lead poisoning (context 80),history,rejected,0.713,easy,Archaeological evidence,1
+HI_00802,The American Civil War was primarily about slavery (context 80),history,supported,0.876,medium,Primary sources,4
+HI_00803,Columbus discovered America (context 80),history,rejected,0.712,hard,Pre-Columbian evidence,3
+HI_00804,The French Revolution improved conditions for peasants (context 80),history,undecided,0.859,expert,Social history,1
+HI_00805,The atomic bombs were necessary to end WWII (context 80),history,undecided,0.568,easy,Military history,3
+HI_00806,The Renaissance began in Italy (context 80),history,supported,0.601,medium,Art history,4
+HI_00807,The Industrial Revolution improved quality of life (context 80),history,undecided,0.751,hard,Living standards data,4
+HI_00808,Alexander the Great was undefeated (context 80),history,supported,0.714,expert,Battle records,2
+HI_00809,The Great Depression was caused by the 1929 crash (context 80),history,undecided,0.723,easy,Economic history,2
+HI_00810,The moon landing was faked (context 80),history,rejected,0.915,medium,Scientific evidence,2
+HI_00811,The Roman Empire fell due to lead poisoning (context 81),history,rejected,0.81,expert,Archaeological evidence,2
+HI_00812,The American Civil War was primarily about slavery (context 81),history,supported,0.847,easy,Primary sources,4
+HI_00813,Columbus discovered America (context 81),history,rejected,0.719,medium,Pre-Columbian evidence,1
+HI_00814,The French Revolution improved conditions for peasants (context 81),history,undecided,0.854,hard,Social history,2
+HI_00815,The atomic bombs were necessary to end WWII (context 81),history,undecided,0.614,expert,Military history,2
+HI_00816,The Renaissance began in Italy (context 81),history,supported,0.914,easy,Art history,2
+HI_00817,The Industrial Revolution improved quality of life (context 81),history,undecided,0.823,medium,Living standards data,1
+HI_00818,Alexander the Great was undefeated (context 81),history,supported,0.925,hard,Battle records,1
+HI_00819,The Great Depression was caused by the 1929 crash (context 81),history,undecided,0.625,expert,Economic history,4
+HI_00820,The moon landing was faked (context 81),history,rejected,0.827,easy,Scientific evidence,4
+HI_00821,The Roman Empire fell due to lead poisoning (context 82),history,rejected,0.576,hard,Archaeological evidence,1
+HI_00822,The American Civil War was primarily about slavery (context 82),history,supported,0.752,expert,Primary sources,1
+HI_00823,Columbus discovered America (context 82),history,rejected,0.859,easy,Pre-Columbian evidence,1
+HI_00824,The French Revolution improved conditions for peasants (context 82),history,undecided,0.793,medium,Social history,2
+HI_00825,The atomic bombs were necessary to end WWII (context 82),history,undecided,0.801,hard,Military history,4
+HI_00826,The Renaissance began in Italy (context 82),history,supported,0.563,expert,Art history,1
+HI_00827,The Industrial Revolution improved quality of life (context 82),history,undecided,0.812,easy,Living standards data,1
+HI_00828,Alexander the Great was undefeated (context 82),history,supported,0.815,medium,Battle records,2
+HI_00829,The Great Depression was caused by the 1929 crash (context 82),history,undecided,0.637,hard,Economic history,4
+HI_00830,The moon landing was faked (context 82),history,rejected,0.761,expert,Scientific evidence,4
+HI_00831,The Roman Empire fell due to lead poisoning (context 83),history,rejected,0.647,medium,Archaeological evidence,1
+HI_00832,The American Civil War was primarily about slavery (context 83),history,supported,0.752,hard,Primary sources,3
+HI_00833,Columbus discovered America (context 83),history,rejected,0.767,expert,Pre-Columbian evidence,1
+HI_00834,The French Revolution improved conditions for peasants (context 83),history,undecided,0.563,easy,Social history,3
+HI_00835,The atomic bombs were necessary to end WWII (context 83),history,undecided,0.733,medium,Military history,1
+HI_00836,The Renaissance began in Italy (context 83),history,supported,0.614,hard,Art history,1
+HI_00837,The Industrial Revolution improved quality of life (context 83),history,undecided,0.708,expert,Living standards data,2
+HI_00838,Alexander the Great was undefeated (context 83),history,supported,0.757,easy,Battle records,1
+HI_00839,The Great Depression was caused by the 1929 crash (context 83),history,undecided,0.605,medium,Economic history,2
+HI_00840,The moon landing was faked (context 83),history,rejected,0.72,hard,Scientific evidence,1
+HI_00841,The Roman Empire fell due to lead poisoning (context 84),history,rejected,0.91,easy,Archaeological evidence,2
+HI_00842,The American Civil War was primarily about slavery (context 84),history,supported,0.712,medium,Primary sources,1
+HI_00843,Columbus discovered America (context 84),history,rejected,0.566,hard,Pre-Columbian evidence,2
+HI_00844,The French Revolution improved conditions for peasants (context 84),history,undecided,0.708,expert,Social history,1
+HI_00845,The atomic bombs were necessary to end WWII (context 84),history,undecided,0.938,easy,Military history,3
+HI_00846,The Renaissance began in Italy (context 84),history,supported,0.558,medium,Art history,1
+HI_00847,The Industrial Revolution improved quality of life (context 84),history,undecided,0.776,hard,Living standards data,1
+HI_00848,Alexander the Great was undefeated (context 84),history,supported,0.749,expert,Battle records,2
+HI_00849,The Great Depression was caused by the 1929 crash (context 84),history,undecided,0.825,easy,Economic history,1
+HI_00850,The moon landing was faked (context 84),history,rejected,0.587,medium,Scientific evidence,4
+HI_00851,The Roman Empire fell due to lead poisoning (context 85),history,rejected,0.782,expert,Archaeological evidence,3
+HI_00852,The American Civil War was primarily about slavery (context 85),history,supported,0.837,easy,Primary sources,1
+HI_00853,Columbus discovered America (context 85),history,rejected,0.802,medium,Pre-Columbian evidence,2
+HI_00854,The French Revolution improved conditions for peasants (context 85),history,undecided,0.763,hard,Social history,4
+HI_00855,The atomic bombs were necessary to end WWII (context 85),history,undecided,0.59,expert,Military history,3
+HI_00856,The Renaissance began in Italy (context 85),history,supported,0.754,easy,Art history,2
+HI_00857,The Industrial Revolution improved quality of life (context 85),history,undecided,0.889,medium,Living standards data,3
+HI_00858,Alexander the Great was undefeated (context 85),history,supported,0.683,hard,Battle records,3
+HI_00859,The Great Depression was caused by the 1929 crash (context 85),history,undecided,0.654,expert,Economic history,3
+HI_00860,The moon landing was faked (context 85),history,rejected,0.749,easy,Scientific evidence,3
+HI_00861,The Roman Empire fell due to lead poisoning (context 86),history,rejected,0.722,hard,Archaeological evidence,3
+HI_00862,The American Civil War was primarily about slavery (context 86),history,supported,0.904,expert,Primary sources,1
+HI_00863,Columbus discovered America (context 86),history,rejected,0.794,easy,Pre-Columbian evidence,4
+HI_00864,The French Revolution improved conditions for peasants (context 86),history,undecided,0.686,medium,Social history,2
+HI_00865,The atomic bombs were necessary to end WWII (context 86),history,undecided,0.845,hard,Military history,4
+HI_00866,The Renaissance began in Italy (context 86),history,supported,0.72,expert,Art history,1
+HI_00867,The Industrial Revolution improved quality of life (context 86),history,undecided,0.701,easy,Living standards data,2
+HI_00868,Alexander the Great was undefeated (context 86),history,supported,0.766,medium,Battle records,4
+HI_00869,The Great Depression was caused by the 1929 crash (context 86),history,undecided,0.651,hard,Economic history,1
+HI_00870,The moon landing was faked (context 86),history,rejected,0.917,expert,Scientific evidence,4
+HI_00871,The Roman Empire fell due to lead poisoning (context 87),history,rejected,0.948,medium,Archaeological evidence,3
+HI_00872,The American Civil War was primarily about slavery (context 87),history,supported,0.915,hard,Primary sources,2
+HI_00873,Columbus discovered America (context 87),history,rejected,0.738,expert,Pre-Columbian evidence,2
+HI_00874,The French Revolution improved conditions for peasants (context 87),history,undecided,0.936,easy,Social history,4
+HI_00875,The atomic bombs were necessary to end WWII (context 87),history,undecided,0.878,medium,Military history,4
+HI_00876,The Renaissance began in Italy (context 87),history,supported,0.822,hard,Art history,4
+HI_00877,The Industrial Revolution improved quality of life (context 87),history,undecided,0.82,expert,Living standards data,3
+HI_00878,Alexander the Great was undefeated (context 87),history,supported,0.801,easy,Battle records,2
+HI_00879,The Great Depression was caused by the 1929 crash (context 87),history,undecided,0.831,medium,Economic history,1
+HI_00880,The moon landing was faked (context 87),history,rejected,0.564,hard,Scientific evidence,1
+HI_00881,The Roman Empire fell due to lead poisoning (context 88),history,rejected,0.868,easy,Archaeological evidence,1
+HI_00882,The American Civil War was primarily about slavery (context 88),history,supported,0.799,medium,Primary sources,4
+HI_00883,Columbus discovered America (context 88),history,rejected,0.913,hard,Pre-Columbian evidence,2
+HI_00884,The French Revolution improved conditions for peasants (context 88),history,undecided,0.585,expert,Social history,4
+HI_00885,The atomic bombs were necessary to end WWII (context 88),history,undecided,0.918,easy,Military history,3
+HI_00886,The Renaissance began in Italy (context 88),history,supported,0.652,medium,Art history,3
+HI_00887,The Industrial Revolution improved quality of life (context 88),history,undecided,0.949,hard,Living standards data,1
+HI_00888,Alexander the Great was undefeated (context 88),history,supported,0.766,expert,Battle records,3
+HI_00889,The Great Depression was caused by the 1929 crash (context 88),history,undecided,0.807,easy,Economic history,1
+HI_00890,The moon landing was faked (context 88),history,rejected,0.556,medium,Scientific evidence,4
+HI_00891,The Roman Empire fell due to lead poisoning (context 89),history,rejected,0.655,expert,Archaeological evidence,3
+HI_00892,The American Civil War was primarily about slavery (context 89),history,supported,0.659,easy,Primary sources,3
+HI_00893,Columbus discovered America (context 89),history,rejected,0.805,medium,Pre-Columbian evidence,2
+HI_00894,The French Revolution improved conditions for peasants (context 89),history,undecided,0.768,hard,Social history,2
+HI_00895,The atomic bombs were necessary to end WWII (context 89),history,undecided,0.914,expert,Military history,2
+HI_00896,The Renaissance began in Italy (context 89),history,supported,0.927,easy,Art history,2
+HI_00897,The Industrial Revolution improved quality of life (context 89),history,undecided,0.747,medium,Living standards data,2
+HI_00898,Alexander the Great was undefeated (context 89),history,supported,0.764,hard,Battle records,3
+HI_00899,The Great Depression was caused by the 1929 crash (context 89),history,undecided,0.923,expert,Economic history,2
+HI_00900,The moon landing was faked (context 89),history,rejected,0.793,easy,Scientific evidence,3
+HI_00901,The Roman Empire fell due to lead poisoning (context 90),history,rejected,0.734,hard,Archaeological evidence,2
+HI_00902,The American Civil War was primarily about slavery (context 90),history,supported,0.858,expert,Primary sources,4
+HI_00903,Columbus discovered America (context 90),history,rejected,0.877,easy,Pre-Columbian evidence,1
+HI_00904,The French Revolution improved conditions for peasants (context 90),history,undecided,0.582,medium,Social history,2
+HI_00905,The atomic bombs were necessary to end WWII (context 90),history,undecided,0.621,hard,Military history,1
+HI_00906,The Renaissance began in Italy (context 90),history,supported,0.873,expert,Art history,3
+HI_00907,The Industrial Revolution improved quality of life (context 90),history,undecided,0.889,easy,Living standards data,2
+HI_00908,Alexander the Great was undefeated (context 90),history,supported,0.769,medium,Battle records,1
+HI_00909,The Great Depression was caused by the 1929 crash (context 90),history,undecided,0.6,hard,Economic history,3
+HI_00910,The moon landing was faked (context 90),history,rejected,0.818,expert,Scientific evidence,1
+HI_00911,The Roman Empire fell due to lead poisoning (context 91),history,rejected,0.575,medium,Archaeological evidence,2
+HI_00912,The American Civil War was primarily about slavery (context 91),history,supported,0.856,hard,Primary sources,2
+HI_00913,Columbus discovered America (context 91),history,rejected,0.823,expert,Pre-Columbian evidence,3
+HI_00914,The French Revolution improved conditions for peasants (context 91),history,undecided,0.632,easy,Social history,3
+HI_00915,The atomic bombs were necessary to end WWII (context 91),history,undecided,0.73,medium,Military history,1
+HI_00916,The Renaissance began in Italy (context 91),history,supported,0.667,hard,Art history,3
+HI_00917,The Industrial Revolution improved quality of life (context 91),history,undecided,0.61,expert,Living standards data,2
+HI_00918,Alexander the Great was undefeated (context 91),history,supported,0.89,easy,Battle records,2
+HI_00919,The Great Depression was caused by the 1929 crash (context 91),history,undecided,0.633,medium,Economic history,1
+HI_00920,The moon landing was faked (context 91),history,rejected,0.677,hard,Scientific evidence,1
+HI_00921,The Roman Empire fell due to lead poisoning (context 92),history,rejected,0.665,easy,Archaeological evidence,4
+HI_00922,The American Civil War was primarily about slavery (context 92),history,supported,0.668,medium,Primary sources,2
+HI_00923,Columbus discovered America (context 92),history,rejected,0.874,hard,Pre-Columbian evidence,3
+HI_00924,The French Revolution improved conditions for peasants (context 92),history,undecided,0.574,expert,Social history,1
+HI_00925,The atomic bombs were necessary to end WWII (context 92),history,undecided,0.898,easy,Military history,3
+HI_00926,The Renaissance began in Italy (context 92),history,supported,0.771,medium,Art history,4
+HI_00927,The Industrial Revolution improved quality of life (context 92),history,undecided,0.878,hard,Living standards data,3
+HI_00928,Alexander the Great was undefeated (context 92),history,supported,0.765,expert,Battle records,2
+HI_00929,The Great Depression was caused by the 1929 crash (context 92),history,undecided,0.801,easy,Economic history,1
+HI_00930,The moon landing was faked (context 92),history,rejected,0.789,medium,Scientific evidence,3
+HI_00931,The Roman Empire fell due to lead poisoning (context 93),history,rejected,0.634,expert,Archaeological evidence,1
+HI_00932,The American Civil War was primarily about slavery (context 93),history,supported,0.83,easy,Primary sources,3
+HI_00933,Columbus discovered America (context 93),history,rejected,0.944,medium,Pre-Columbian evidence,2
+HI_00934,The French Revolution improved conditions for peasants (context 93),history,undecided,0.576,hard,Social history,2
+HI_00935,The atomic bombs were necessary to end WWII (context 93),history,undecided,0.662,expert,Military history,2
+HI_00936,The Renaissance began in Italy (context 93),history,supported,0.635,easy,Art history,3
+HI_00937,The Industrial Revolution improved quality of life (context 93),history,undecided,0.819,medium,Living standards data,4
+HI_00938,Alexander the Great was undefeated (context 93),history,supported,0.882,hard,Battle records,2
+HI_00939,The Great Depression was caused by the 1929 crash (context 93),history,undecided,0.647,expert,Economic history,4
+HI_00940,The moon landing was faked (context 93),history,rejected,0.879,easy,Scientific evidence,1
+HI_00941,The Roman Empire fell due to lead poisoning (context 94),history,rejected,0.774,hard,Archaeological evidence,2
+HI_00942,The American Civil War was primarily about slavery (context 94),history,supported,0.761,expert,Primary sources,3
+HI_00943,Columbus discovered America (context 94),history,rejected,0.873,easy,Pre-Columbian evidence,1
+HI_00944,The French Revolution improved conditions for peasants (context 94),history,undecided,0.655,medium,Social history,3
+HI_00945,The atomic bombs were necessary to end WWII (context 94),history,undecided,0.943,hard,Military history,1
+HI_00946,The Renaissance began in Italy (context 94),history,supported,0.914,expert,Art history,1
+HI_00947,The Industrial Revolution improved quality of life (context 94),history,undecided,0.936,easy,Living standards data,1
+HI_00948,Alexander the Great was undefeated (context 94),history,supported,0.62,medium,Battle records,2
+HI_00949,The Great Depression was caused by the 1929 crash (context 94),history,undecided,0.743,hard,Economic history,1
+HI_00950,The moon landing was faked (context 94),history,rejected,0.9,expert,Scientific evidence,4
+HI_00951,The Roman Empire fell due to lead poisoning (context 95),history,rejected,0.748,medium,Archaeological evidence,4
+HI_00952,The American Civil War was primarily about slavery (context 95),history,supported,0.811,hard,Primary sources,4
+HI_00953,Columbus discovered America (context 95),history,rejected,0.639,expert,Pre-Columbian evidence,3
+HI_00954,The French Revolution improved conditions for peasants (context 95),history,undecided,0.687,easy,Social history,3
+HI_00955,The atomic bombs were necessary to end WWII (context 95),history,undecided,0.825,medium,Military history,3
+HI_00956,The Renaissance began in Italy (context 95),history,supported,0.638,hard,Art history,4
+HI_00957,The Industrial Revolution improved quality of life (context 95),history,undecided,0.835,expert,Living standards data,1
+HI_00958,Alexander the Great was undefeated (context 95),history,supported,0.878,easy,Battle records,3
+HI_00959,The Great Depression was caused by the 1929 crash (context 95),history,undecided,0.795,medium,Economic history,3
+HI_00960,The moon landing was faked (context 95),history,rejected,0.579,hard,Scientific evidence,4
+HI_00961,The Roman Empire fell due to lead poisoning (context 96),history,rejected,0.641,easy,Archaeological evidence,3
+HI_00962,The American Civil War was primarily about slavery (context 96),history,supported,0.839,medium,Primary sources,4
+HI_00963,Columbus discovered America (context 96),history,rejected,0.563,hard,Pre-Columbian evidence,2
+HI_00964,The French Revolution improved conditions for peasants (context 96),history,undecided,0.647,expert,Social history,4
+HI_00965,The atomic bombs were necessary to end WWII (context 96),history,undecided,0.821,easy,Military history,2
+HI_00966,The Renaissance began in Italy (context 96),history,supported,0.577,medium,Art history,1
+HI_00967,The Industrial Revolution improved quality of life (context 96),history,undecided,0.635,hard,Living standards data,4
+HI_00968,Alexander the Great was undefeated (context 96),history,supported,0.853,expert,Battle records,1
+HI_00969,The Great Depression was caused by the 1929 crash (context 96),history,undecided,0.59,easy,Economic history,1
+HI_00970,The moon landing was faked (context 96),history,rejected,0.735,medium,Scientific evidence,1
+HI_00971,The Roman Empire fell due to lead poisoning (context 97),history,rejected,0.905,expert,Archaeological evidence,2
+HI_00972,The American Civil War was primarily about slavery (context 97),history,supported,0.788,easy,Primary sources,1
+HI_00973,Columbus discovered America (context 97),history,rejected,0.827,medium,Pre-Columbian evidence,1
+HI_00974,The French Revolution improved conditions for peasants (context 97),history,undecided,0.799,hard,Social history,2
+HI_00975,The atomic bombs were necessary to end WWII (context 97),history,undecided,0.622,expert,Military history,3
+HI_00976,The Renaissance began in Italy (context 97),history,supported,0.911,easy,Art history,2
+HI_00977,The Industrial Revolution improved quality of life (context 97),history,undecided,0.863,medium,Living standards data,1
+HI_00978,Alexander the Great was undefeated (context 97),history,supported,0.863,hard,Battle records,3
+HI_00979,The Great Depression was caused by the 1929 crash (context 97),history,undecided,0.655,expert,Economic history,4
+HI_00980,The moon landing was faked (context 97),history,rejected,0.638,easy,Scientific evidence,2
+HI_00981,The Roman Empire fell due to lead poisoning (context 98),history,rejected,0.73,hard,Archaeological evidence,3
+HI_00982,The American Civil War was primarily about slavery (context 98),history,supported,0.837,expert,Primary sources,4
+HI_00983,Columbus discovered America (context 98),history,rejected,0.803,easy,Pre-Columbian evidence,1
+HI_00984,The French Revolution improved conditions for peasants (context 98),history,undecided,0.626,medium,Social history,4
+HI_00985,The atomic bombs were necessary to end WWII (context 98),history,undecided,0.555,hard,Military history,3
+HI_00986,The Renaissance began in Italy (context 98),history,supported,0.76,expert,Art history,3
+HI_00987,The Industrial Revolution improved quality of life (context 98),history,undecided,0.897,easy,Living standards data,3
+HI_00988,Alexander the Great was undefeated (context 98),history,supported,0.949,medium,Battle records,2
+HI_00989,The Great Depression was caused by the 1929 crash (context 98),history,undecided,0.794,hard,Economic history,4
+HI_00990,The moon landing was faked (context 98),history,rejected,0.942,expert,Scientific evidence,4
+HI_00991,The Roman Empire fell due to lead poisoning (context 99),history,rejected,0.716,medium,Archaeological evidence,3
+HI_00992,The American Civil War was primarily about slavery (context 99),history,supported,0.868,hard,Primary sources,4
+HI_00993,Columbus discovered America (context 99),history,rejected,0.726,expert,Pre-Columbian evidence,4
+HI_00994,The French Revolution improved conditions for peasants (context 99),history,undecided,0.65,easy,Social history,3
+HI_00995,The atomic bombs were necessary to end WWII (context 99),history,undecided,0.785,medium,Military history,1
+HI_00996,The Renaissance began in Italy (context 99),history,supported,0.949,hard,Art history,3
+HI_00997,The Industrial Revolution improved quality of life (context 99),history,undecided,0.942,expert,Living standards data,3
+HI_00998,Alexander the Great was undefeated (context 99),history,supported,0.823,easy,Battle records,2
+HI_00999,The Great Depression was caused by the 1929 crash (context 99),history,undecided,0.692,medium,Economic history,1
+HI_01000,The moon landing was faked (context 99),history,rejected,0.933,hard,Scientific evidence,3
+HI_01001,The Roman Empire fell due to lead poisoning (context 100),history,rejected,0.792,easy,Archaeological evidence,1
+HI_01002,The American Civil War was primarily about slavery (context 100),history,supported,0.566,medium,Primary sources,2
+HI_01003,Columbus discovered America (context 100),history,rejected,0.846,hard,Pre-Columbian evidence,1
+HI_01004,The French Revolution improved conditions for peasants (context 100),history,undecided,0.916,expert,Social history,1
+HI_01005,The atomic bombs were necessary to end WWII (context 100),history,undecided,0.767,easy,Military history,1
+HI_01006,The Renaissance began in Italy (context 100),history,supported,0.718,medium,Art history,1
+HI_01007,The Industrial Revolution improved quality of life (context 100),history,undecided,0.619,hard,Living standards data,2
+HI_01008,Alexander the Great was undefeated (context 100),history,supported,0.861,expert,Battle records,3
+HI_01009,The Great Depression was caused by the 1929 crash (context 100),history,undecided,0.557,easy,Economic history,4
+HI_01010,The moon landing was faked (context 100),history,rejected,0.838,medium,Scientific evidence,1
+HI_01011,The Roman Empire fell due to lead poisoning (context 101),history,rejected,0.92,expert,Archaeological evidence,2
+HI_01012,The American Civil War was primarily about slavery (context 101),history,supported,0.675,easy,Primary sources,4
+HI_01013,Columbus discovered America (context 101),history,rejected,0.946,medium,Pre-Columbian evidence,4
+HI_01014,The French Revolution improved conditions for peasants (context 101),history,undecided,0.678,hard,Social history,3
+HI_01015,The atomic bombs were necessary to end WWII (context 101),history,undecided,0.554,expert,Military history,4
+HI_01016,The Renaissance began in Italy (context 101),history,supported,0.789,easy,Art history,4
+HI_01017,The Industrial Revolution improved quality of life (context 101),history,undecided,0.666,medium,Living standards data,3
+HI_01018,Alexander the Great was undefeated (context 101),history,supported,0.739,hard,Battle records,3
+HI_01019,The Great Depression was caused by the 1929 crash (context 101),history,undecided,0.606,expert,Economic history,3
+HI_01020,The moon landing was faked (context 101),history,rejected,0.773,easy,Scientific evidence,2
+HI_01021,The Roman Empire fell due to lead poisoning (context 102),history,rejected,0.698,hard,Archaeological evidence,1
+HI_01022,The American Civil War was primarily about slavery (context 102),history,supported,0.876,expert,Primary sources,1
+HI_01023,Columbus discovered America (context 102),history,rejected,0.681,easy,Pre-Columbian evidence,1
+HI_01024,The French Revolution improved conditions for peasants (context 102),history,undecided,0.724,medium,Social history,2
+HI_01025,The atomic bombs were necessary to end WWII (context 102),history,undecided,0.673,hard,Military history,3
+HI_01026,The Renaissance began in Italy (context 102),history,supported,0.746,expert,Art history,1
+HI_01027,The Industrial Revolution improved quality of life (context 102),history,undecided,0.734,easy,Living standards data,4
+HI_01028,Alexander the Great was undefeated (context 102),history,supported,0.552,medium,Battle records,4
+HI_01029,The Great Depression was caused by the 1929 crash (context 102),history,undecided,0.884,hard,Economic history,1
+HI_01030,The moon landing was faked (context 102),history,rejected,0.862,expert,Scientific evidence,3
+HI_01031,The Roman Empire fell due to lead poisoning (context 103),history,rejected,0.944,medium,Archaeological evidence,4
+HI_01032,The American Civil War was primarily about slavery (context 103),history,supported,0.752,hard,Primary sources,2
+HI_01033,Columbus discovered America (context 103),history,rejected,0.934,expert,Pre-Columbian evidence,2
+HI_01034,The French Revolution improved conditions for peasants (context 103),history,undecided,0.777,easy,Social history,2
+HI_01035,The atomic bombs were necessary to end WWII (context 103),history,undecided,0.639,medium,Military history,2
+HI_01036,The Renaissance began in Italy (context 103),history,supported,0.556,hard,Art history,3
+HI_01037,The Industrial Revolution improved quality of life (context 103),history,undecided,0.572,expert,Living standards data,4
+HI_01038,Alexander the Great was undefeated (context 103),history,supported,0.679,easy,Battle records,1
+HI_01039,The Great Depression was caused by the 1929 crash (context 103),history,undecided,0.553,medium,Economic history,4
+HI_01040,The moon landing was faked (context 103),history,rejected,0.552,hard,Scientific evidence,1
+HI_01041,The Roman Empire fell due to lead poisoning (context 104),history,rejected,0.897,easy,Archaeological evidence,3
+HI_01042,The American Civil War was primarily about slavery (context 104),history,supported,0.807,medium,Primary sources,1
+HI_01043,Columbus discovered America (context 104),history,rejected,0.804,hard,Pre-Columbian evidence,2
+HI_01044,The French Revolution improved conditions for peasants (context 104),history,undecided,0.554,expert,Social history,2
+HI_01045,The atomic bombs were necessary to end WWII (context 104),history,undecided,0.664,easy,Military history,1
+HI_01046,The Renaissance began in Italy (context 104),history,supported,0.607,medium,Art history,3
+HI_01047,The Industrial Revolution improved quality of life (context 104),history,undecided,0.801,hard,Living standards data,4
+HI_01048,Alexander the Great was undefeated (context 104),history,supported,0.722,expert,Battle records,3
+HI_01049,The Great Depression was caused by the 1929 crash (context 104),history,undecided,0.755,easy,Economic history,4
+HI_01050,The moon landing was faked (context 104),history,rejected,0.815,medium,Scientific evidence,3

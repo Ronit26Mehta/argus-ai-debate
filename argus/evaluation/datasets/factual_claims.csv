@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+FC_00001,The Earth is round,general,supported,0.7457245325549323,easy,Scientific consensus; textbook references,3
+FC_00002,Water boils at 100°C at sea level,general,supported,0.8315758170647475,easy,Scientific consensus; textbook references,2
+FC_00003,The Great Wall of China is visible from space,general,rejected,0.6345921849429215,easy,Scientific consensus; textbook references,3
+FC_00004,Humans use only 10% of their brain,general,rejected,0.8280496306951038,easy,Scientific consensus; textbook references,2
+FC_00005,Lightning never strikes the same place twice,general,rejected,0.7744962756902954,easy,Scientific consensus; textbook references,2
+FC_00006,The Sun is a star,general,supported,0.8666920849106641,easy,Scientific consensus; textbook references,1
+FC_00007,Goldfish have a 3-second memory,general,rejected,0.6990400808837511,easy,Scientific consensus; textbook references,3
+FC_00008,Bats are blind,general,rejected,0.8408432579486195,easy,Scientific consensus; textbook references,1
+FC_00009,Mount Everest is the tallest mountain on Earth,general,supported,0.8376374587632023,easy,Scientific consensus; textbook references,2
+FC_00010,The Amazon is the longest river in the world,general,rejected,0.6897128827654179,easy,Scientific consensus; textbook references,3
+FC_00011,The Earth is round - variation 1,general,supported,0.8969134432067642,medium,Scientific consensus; textbook references,2
+FC_00012,Water boils at 100°C at sea level - variation 1,general,supported,0.7804788684698917,medium,Scientific consensus; textbook references,1
+FC_00013,The Great Wall of China is visible from space - variation 1,general,rejected,0.6514329949841776,medium,Scientific consensus; textbook references,2
+FC_00014,Humans use only 10% of their brain - variation 1,general,rejected,0.8122141020794085,medium,Scientific consensus; textbook references,3
+FC_00015,Lightning never strikes the same place twice - variation 1,general,rejected,0.7255910170045549,medium,Scientific consensus; textbook references,2
+FC_00016,The Sun is a star - variation 1,general,supported,0.9118376507678919,medium,Scientific consensus; textbook references,3
+FC_00017,Goldfish have a 3-second memory - variation 1,general,rejected,0.6432855142963632,medium,Scientific consensus; textbook references,3
+FC_00018,Bats are blind - variation 1,general,rejected,0.8077316222416339,medium,Scientific consensus; textbook references,2
+FC_00019,Mount Everest is the tallest mountain on Earth - variation 1,general,supported,0.70794335095554,medium,Scientific consensus; textbook references,3
+FC_00020,The Amazon is the longest river in the world - variation 1,general,rejected,0.7463535919683306,medium,Scientific consensus; textbook references,2
+FC_00021,The Earth is round - variation 2,general,supported,0.6829055695442021,hard,Scientific consensus; textbook references,1
+FC_00022,Water boils at 100°C at sea level - variation 2,general,supported,0.9254598246732857,hard,Scientific consensus; textbook references,1
+FC_00023,The Great Wall of China is visible from space - variation 2,general,rejected,0.7278283203604499,hard,Scientific consensus; textbook references,1
+FC_00024,Humans use only 10% of their brain - variation 2,general,rejected,0.8209607582041285,hard,Scientific consensus; textbook references,3
+FC_00025,Lightning never strikes the same place twice - variation 2,general,rejected,0.6650411298568871,hard,Scientific consensus; textbook references,2
+FC_00026,The Sun is a star - variation 2,general,supported,0.735618182554663,hard,Scientific consensus; textbook references,1
+FC_00027,Goldfish have a 3-second memory - variation 2,general,rejected,0.7474548596809893,hard,Scientific consensus; textbook references,3
+FC_00028,Bats are blind - variation 2,general,rejected,0.8587550285185801,hard,Scientific consensus; textbook references,3
+FC_00029,Mount Everest is the tallest mountain on Earth - variation 2,general,supported,0.7743192412705323,hard,Scientific consensus; textbook references,2
+FC_00030,The Amazon is the longest river in the world - variation 2,general,rejected,0.8355497992842805,hard,Scientific consensus; textbook references,2
+FC_00031,The Earth is round - variation 3,general,supported,0.6565339760445879,expert,Scientific consensus; textbook references,3
+FC_00032,Water boils at 100°C at sea level - variation 3,general,supported,0.6131251820453267,expert,Scientific consensus; textbook references,3
+FC_00033,The Great Wall of China is visible from space - variation 3,general,rejected,0.723329899461427,expert,Scientific consensus; textbook references,2
+FC_00034,Humans use only 10% of their brain - variation 3,general,rejected,0.7084011361477744,expert,Scientific consensus; textbook references,2
+FC_00035,Lightning never strikes the same place twice - variation 3,general,rejected,0.8131895979109971,expert,Scientific consensus; textbook references,2
+FC_00036,The Sun is a star - variation 3,general,supported,0.9335993837973372,expert,Scientific consensus; textbook references,2
+FC_00037,Goldfish have a 3-second memory - variation 3,general,rejected,0.8327492738517828,expert,Scientific consensus; textbook references,1
+FC_00038,Bats are blind - variation 3,general,rejected,0.8440335394377505,expert,Scientific consensus; textbook references,3
+FC_00039,Mount Everest is the tallest mountain on Earth - variation 3,general,supported,0.6241429727899719,expert,Scientific consensus; textbook references,2
+FC_00040,The Amazon is the longest river in the world - variation 3,general,rejected,0.7104061115840112,expert,Scientific consensus; textbook references,2
+FC_00041,The Earth is round - variation 4,general,supported,0.8496571334285515,easy,Scientific consensus; textbook references,2
+FC_00042,Water boils at 100°C at sea level - variation 4,general,supported,0.6160390684795152,easy,Scientific consensus; textbook references,3
+FC_00043,The Great Wall of China is visible from space - variation 4,general,rejected,0.7117192831103032,easy,Scientific consensus; textbook references,3
+FC_00044,Humans use only 10% of their brain - variation 4,general,rejected,0.7293638703201247,easy,Scientific consensus; textbook references,2
+FC_00045,Lightning never strikes the same place twice - variation 4,general,rejected,0.8402602437026949,easy,Scientific consensus; textbook references,2
+FC_00046,The Sun is a star - variation 4,general,supported,0.7495787386737379,easy,Scientific consensus; textbook references,3
+FC_00047,Goldfish have a 3-second memory - variation 4,general,rejected,0.74067685040296,easy,Scientific consensus; textbook references,3
+FC_00048,Bats are blind - variation 4,general,rejected,0.9449372018373062,easy,Scientific consensus; textbook references,1
+FC_00049,Mount Everest is the tallest mountain on Earth - variation 4,general,supported,0.8832228882196442,easy,Scientific consensus; textbook references,1
+FC_00050,The Amazon is the longest river in the world - variation 4,general,rejected,0.909117008363469,easy,Scientific consensus; textbook references,2
+FC_00051,The Earth is round - variation 5,general,supported,0.7551109594472073,medium,Scientific consensus; textbook references,3
+FC_00052,Water boils at 100°C at sea level - variation 5,general,supported,0.7627473289631969,medium,Scientific consensus; textbook references,3
+FC_00053,The Great Wall of China is visible from space - variation 5,general,rejected,0.8290478870234519,medium,Scientific consensus; textbook references,1
+FC_00054,Humans use only 10% of their brain - variation 5,general,rejected,0.7121350042761615,medium,Scientific consensus; textbook references,2
+FC_00055,Lightning never strikes the same place twice - variation 5,general,rejected,0.7463350364508867,medium,Scientific consensus; textbook references,1
+FC_00056,The Sun is a star - variation 5,general,supported,0.6741785548100916,medium,Scientific consensus; textbook references,3
+FC_00057,Goldfish have a 3-second memory - variation 5,general,rejected,0.8314842778343294,medium,Scientific consensus; textbook references,1
+FC_00058,Bats are blind - variation 5,general,rejected,0.8769949758499601,medium,Scientific consensus; textbook references,3
+FC_00059,Mount Everest is the tallest mountain on Earth - variation 5,general,supported,0.7904187201077442,medium,Scientific consensus; textbook references,3
+FC_00060,The Amazon is the longest river in the world - variation 5,general,rejected,0.92014009393882,medium,Scientific consensus; textbook references,1
+FC_00061,The Earth is round - variation 6,general,supported,0.8901116286018416,hard,Scientific consensus; textbook references,1
+FC_00062,Water boils at 100°C at sea level - variation 6,general,supported,0.9105732279145795,hard,Scientific consensus; textbook references,1
+FC_00063,The Great Wall of China is visible from space - variation 6,general,rejected,0.9447587041436161,hard,Scientific consensus; textbook references,2
+FC_00064,Humans use only 10% of their brain - variation 6,general,rejected,0.9372367412301243,hard,Scientific consensus; textbook references,1
+FC_00065,Lightning never strikes the same place twice - variation 6,general,rejected,0.6034229996656706,hard,Scientific consensus; textbook references,1
+FC_00066,The Sun is a star - variation 6,general,supported,0.8356870243547935,hard,Scientific consensus; textbook references,2
+FC_00067,Goldfish have a 3-second memory - variation 6,general,rejected,0.6181402995506268,hard,Scientific consensus; textbook references,2
+FC_00068,Bats are blind - variation 6,general,rejected,0.6342092158314568,hard,Scientific consensus; textbook references,2
+FC_00069,Mount Everest is the tallest mountain on Earth - variation 6,general,supported,0.8463048648346968,hard,Scientific consensus; textbook references,1
+FC_00070,The Amazon is the longest river in the world - variation 6,general,rejected,0.7975275575052084,hard,Scientific consensus; textbook references,3
+FC_00071,The Earth is round - variation 7,general,supported,0.9286408777419668,expert,Scientific consensus; textbook references,3
+FC_00072,Water boils at 100°C at sea level - variation 7,general,supported,0.6386266438973138,expert,Scientific consensus; textbook references,3
+FC_00073,The Great Wall of China is visible from space - variation 7,general,rejected,0.9054764639409737,expert,Scientific consensus; textbook references,2
+FC_00074,Humans use only 10% of their brain - variation 7,general,rejected,0.7645052335664235,expert,Scientific consensus; textbook references,1
+FC_00075,Lightning never strikes the same place twice - variation 7,general,rejected,0.6646307163976358,expert,Scientific consensus; textbook references,3
+FC_00076,The Sun is a star - variation 7,general,supported,0.9188186306949582,expert,Scientific consensus; textbook references,2
+FC_00077,Goldfish have a 3-second memory - variation 7,general,rejected,0.9349220861059647,expert,Scientific consensus; textbook references,3
+FC_00078,Bats are blind - variation 7,general,rejected,0.7574039954773768,expert,Scientific consensus; textbook references,3
+FC_00079,Mount Everest is the tallest mountain on Earth - variation 7,general,supported,0.8583445609147897,expert,Scientific consensus; textbook references,1
+FC_00080,The Amazon is the longest river in the world - variation 7,general,rejected,0.6542909065357085,expert,Scientific consensus; textbook references,1
+FC_00081,The Earth is round - variation 8,general,supported,0.8762825059578218,easy,Scientific consensus; textbook references,2
+FC_00082,Water boils at 100°C at sea level - variation 8,general,supported,0.9075078816675445,easy,Scientific consensus; textbook references,1
+FC_00083,The Great Wall of China is visible from space - variation 8,general,rejected,0.8993981111639819,easy,Scientific consensus; textbook references,2
+FC_00084,Humans use only 10% of their brain - variation 8,general,rejected,0.8220954995407348,easy,Scientific consensus; textbook references,1
+FC_00085,Lightning never strikes the same place twice - variation 8,general,rejected,0.7845676002415003,easy,Scientific consensus; textbook references,1
+FC_00086,The Sun is a star - variation 8,general,supported,0.9086142244145683,easy,Scientific consensus; textbook references,3
+FC_00087,Goldfish have a 3-second memory - variation 8,general,rejected,0.7216535184648307,easy,Scientific consensus; textbook references,2
+FC_00088,Bats are blind - variation 8,general,rejected,0.7283423334928665,easy,Scientific consensus; textbook references,1
+FC_00089,Mount Everest is the tallest mountain on Earth - variation 8,general,supported,0.6365641842532346,easy,Scientific consensus; textbook references,3
+FC_00090,The Amazon is the longest river in the world - variation 8,general,rejected,0.6067365955895966,easy,Scientific consensus; textbook references,1
+FC_00091,The Earth is round - variation 9,general,supported,0.7545848778013009,medium,Scientific consensus; textbook references,3
+FC_00092,Water boils at 100°C at sea level - variation 9,general,supported,0.6074174193264285,medium,Scientific consensus; textbook references,1
+FC_00093,The Great Wall of China is visible from space - variation 9,general,rejected,0.9176895248172092,medium,Scientific consensus; textbook references,2
+FC_00094,Humans use only 10% of their brain - variation 9,general,rejected,0.7203804914939933,medium,Scientific consensus; textbook references,3
+FC_00095,Lightning never strikes the same place twice - variation 9,general,rejected,0.6557941686988655,medium,Scientific consensus; textbook references,3
+FC_00096,The Sun is a star - variation 9,general,supported,0.8043118867387411,medium,Scientific consensus; textbook references,2
+FC_00097,Goldfish have a 3-second memory - variation 9,general,rejected,0.6842546749028646,medium,Scientific consensus; textbook references,2
+FC_00098,Bats are blind - variation 9,general,rejected,0.7757038183789494,medium,Scientific consensus; textbook references,3
+FC_00099,Mount Everest is the tallest mountain on Earth - variation 9,general,supported,0.7206106822529325,medium,Scientific consensus; textbook references,1
+FC_00100,The Amazon is the longest river in the world - variation 9,general,rejected,0.8465104967896412,medium,Scientific consensus; textbook references,3
+FC_00101,The Earth is round - variation 10,general,supported,0.7386499026327598,hard,Scientific consensus; textbook references,3
+FC_00102,Water boils at 100°C at sea level - variation 10,general,supported,0.7654748549619322,hard,Scientific consensus; textbook references,2
+FC_00103,The Great Wall of China is visible from space - variation 10,general,rejected,0.7599942133356964,hard,Scientific consensus; textbook references,2
+FC_00104,Humans use only 10% of their brain - variation 10,general,rejected,0.9244951074553727,hard,Scientific consensus; textbook references,1
+FC_00105,Lightning never strikes the same place twice - variation 10,general,rejected,0.8420909081104063,hard,Scientific consensus; textbook references,2
+FC_00106,The Sun is a star - variation 10,general,supported,0.8869497357692497,hard,Scientific consensus; textbook references,3
+FC_00107,Goldfish have a 3-second memory - variation 10,general,rejected,0.8115788160442998,hard,Scientific consensus; textbook references,2
+FC_00108,Bats are blind - variation 10,general,rejected,0.6058773679488182,hard,Scientific consensus; textbook references,3
+FC_00109,Mount Everest is the tallest mountain on Earth - variation 10,general,supported,0.8033843256983048,hard,Scientific consensus; textbook references,1
+FC_00110,The Amazon is the longest river in the world - variation 10,general,rejected,0.7117968747039363,hard,Scientific consensus; textbook references,2
+FC_00111,The Earth is round - variation 11,general,supported,0.7672081164048603,expert,Scientific consensus; textbook references,1
+FC_00112,Water boils at 100°C at sea level - variation 11,general,supported,0.6811168048916588,expert,Scientific consensus; textbook references,2
+FC_00113,The Great Wall of China is visible from space - variation 11,general,rejected,0.6441205266363811,expert,Scientific consensus; textbook references,3
+FC_00114,Humans use only 10% of their brain - variation 11,general,rejected,0.9087433235250154,expert,Scientific consensus; textbook references,1
+FC_00115,Lightning never strikes the same place twice - variation 11,general,rejected,0.7925551778678054,expert,Scientific consensus; textbook references,3
+FC_00116,The Sun is a star - variation 11,general,supported,0.9112227730491931,expert,Scientific consensus; textbook references,2
+FC_00117,Goldfish have a 3-second memory - variation 11,general,rejected,0.6903436564269111,expert,Scientific consensus; textbook references,1
+FC_00118,Bats are blind - variation 11,general,rejected,0.9344339014978651,expert,Scientific consensus; textbook references,1
+FC_00119,Mount Everest is the tallest mountain on Earth - variation 11,general,supported,0.6828916201234876,expert,Scientific consensus; textbook references,1
+FC_00120,The Amazon is the longest river in the world - variation 11,general,rejected,0.8589979147694071,expert,Scientific consensus; textbook references,3
+FC_00121,The Earth is round - variation 12,general,supported,0.9135925521249307,easy,Scientific consensus; textbook references,3
+FC_00122,Water boils at 100°C at sea level - variation 12,general,supported,0.7057638912624793,easy,Scientific consensus; textbook references,1
+FC_00123,The Great Wall of China is visible from space - variation 12,general,rejected,0.9150559269438567,easy,Scientific consensus; textbook references,3
+FC_00124,Humans use only 10% of their brain - variation 12,general,rejected,0.8529130940770673,easy,Scientific consensus; textbook references,1
+FC_00125,Lightning never strikes the same place twice - variation 12,general,rejected,0.6591625969220882,easy,Scientific consensus; textbook references,2
+FC_00126,The Sun is a star - variation 12,general,supported,0.8683706472788091,easy,Scientific consensus; textbook references,2
+FC_00127,Goldfish have a 3-second memory - variation 12,general,rejected,0.9169637646202388,easy,Scientific consensus; textbook references,2
+FC_00128,Bats are blind - variation 12,general,rejected,0.6285188753652601,easy,Scientific consensus; textbook references,2
+FC_00129,Mount Everest is the tallest mountain on Earth - variation 12,general,supported,0.7702661525308685,easy,Scientific consensus; textbook references,2
+FC_00130,The Amazon is the longest river in the world - variation 12,general,rejected,0.7689146771308215,easy,Scientific consensus; textbook references,3
+FC_00131,The Earth is round - variation 13,general,supported,0.7545273755485815,medium,Scientific consensus; textbook references,2
+FC_00132,Water boils at 100°C at sea level - variation 13,general,supported,0.69679593590305,medium,Scientific consensus; textbook references,3
+FC_00133,The Great Wall of China is visible from space - variation 13,general,rejected,0.8623233073110055,medium,Scientific consensus; textbook references,3
+FC_00134,Humans use only 10% of their brain - variation 13,general,rejected,0.8785655629512306,medium,Scientific consensus; textbook references,1
+FC_00135,Lightning never strikes the same place twice - variation 13,general,rejected,0.9011546270572024,medium,Scientific consensus; textbook references,2
+FC_00136,The Sun is a star - variation 13,general,supported,0.9013875855446822,medium,Scientific consensus; textbook references,1
+FC_00137,Goldfish have a 3-second memory - variation 13,general,rejected,0.6346729925915331,medium,Scientific consensus; textbook references,3
+FC_00138,Bats are blind - variation 13,general,rejected,0.627284397101319,medium,Scientific consensus; textbook references,2
+FC_00139,Mount Everest is the tallest mountain on Earth - variation 13,general,supported,0.7314940908380374,medium,Scientific consensus; textbook references,3
+FC_00140,The Amazon is the longest river in the world - variation 13,general,rejected,0.7844328381980352,medium,Scientific consensus; textbook references,3
+FC_00141,The Earth is round - variation 14,general,supported,0.603687915815029,hard,Scientific consensus; textbook references,1
+FC_00142,Water boils at 100°C at sea level - variation 14,general,supported,0.893347152463666,hard,Scientific consensus; textbook references,3
+FC_00143,The Great Wall of China is visible from space - variation 14,general,rejected,0.9185326037637198,hard,Scientific consensus; textbook references,3
+FC_00144,Humans use only 10% of their brain - variation 14,general,rejected,0.6785388012280686,hard,Scientific consensus; textbook references,2
+FC_00145,Lightning never strikes the same place twice - variation 14,general,rejected,0.9390242213129887,hard,Scientific consensus; textbook references,2
+FC_00146,The Sun is a star - variation 14,general,supported,0.8307742457578433,hard,Scientific consensus; textbook references,1
+FC_00147,Goldfish have a 3-second memory - variation 14,general,rejected,0.944832532182873,hard,Scientific consensus; textbook references,2
+FC_00148,Bats are blind - variation 14,general,rejected,0.8933733930083776,hard,Scientific consensus; textbook references,1
+FC_00149,Mount Everest is the tallest mountain on Earth - variation 14,general,supported,0.815032073432095,hard,Scientific consensus; textbook references,2
+FC_00150,The Amazon is the longest river in the world - variation 14,general,rejected,0.8015401679078868,hard,Scientific consensus; textbook references,1
+FC_00151,The Earth is round - variation 15,general,supported,0.6145242928839092,expert,Scientific consensus; textbook references,1
+FC_00152,Water boils at 100°C at sea level - variation 15,general,supported,0.7798482135468168,expert,Scientific consensus; textbook references,3
+FC_00153,The Great Wall of China is visible from space - variation 15,general,rejected,0.608544833774857,expert,Scientific consensus; textbook references,3
+FC_00154,Humans use only 10% of their brain - variation 15,general,rejected,0.6748978543436076,expert,Scientific consensus; textbook references,1
+FC_00155,Lightning never strikes the same place twice - variation 15,general,rejected,0.9177514219722837,expert,Scientific consensus; textbook references,1
+FC_00156,The Sun is a star - variation 15,general,supported,0.7952889246693079,expert,Scientific consensus; textbook references,2
+FC_00157,Goldfish have a 3-second memory - variation 15,general,rejected,0.7506609927932296,expert,Scientific consensus; textbook references,1
+FC_00158,Bats are blind - variation 15,general,rejected,0.7174820010174688,expert,Scientific consensus; textbook references,3
+FC_00159,Mount Everest is the tallest mountain on Earth - variation 15,general,supported,0.637938753262557,expert,Scientific consensus; textbook references,1
+FC_00160,The Amazon is the longest river in the world - variation 15,general,rejected,0.9089171292087086,expert,Scientific consensus; textbook references,2
+FC_00161,The Earth is round - variation 16,general,supported,0.8705121880969899,easy,Scientific consensus; textbook references,1
+FC_00162,Water boils at 100°C at sea level - variation 16,general,supported,0.8430447361793034,easy,Scientific consensus; textbook references,3
+FC_00163,The Great Wall of China is visible from space - variation 16,general,rejected,0.6328708218150043,easy,Scientific consensus; textbook references,1
+FC_00164,Humans use only 10% of their brain - variation 16,general,rejected,0.884913962063975,easy,Scientific consensus; textbook references,1
+FC_00165,Lightning never strikes the same place twice - variation 16,general,rejected,0.8209020686258982,easy,Scientific consensus; textbook references,3
+FC_00166,The Sun is a star - variation 16,general,supported,0.8472161290202845,easy,Scientific consensus; textbook references,1
+FC_00167,Goldfish have a 3-second memory - variation 16,general,rejected,0.7749559002197868,easy,Scientific consensus; textbook references,2
+FC_00168,Bats are blind - variation 16,general,rejected,0.720174164434086,easy,Scientific consensus; textbook references,1
+FC_00169,Mount Everest is the tallest mountain on Earth - variation 16,general,supported,0.7997587989324533,easy,Scientific consensus; textbook references,2
+FC_00170,The Amazon is the longest river in the world - variation 16,general,rejected,0.917850712291863,easy,Scientific consensus; textbook references,2
+FC_00171,The Earth is round - variation 17,general,supported,0.9274375746878151,medium,Scientific consensus; textbook references,3
+FC_00172,Water boils at 100°C at sea level - variation 17,general,supported,0.7463973179061637,medium,Scientific consensus; textbook references,2
+FC_00173,The Great Wall of China is visible from space - variation 17,general,rejected,0.6687250646661568,medium,Scientific consensus; textbook references,3
+FC_00174,Humans use only 10% of their brain - variation 17,general,rejected,0.8146558223141145,medium,Scientific consensus; textbook references,2
+FC_00175,Lightning never strikes the same place twice - variation 17,general,rejected,0.6149768189485267,medium,Scientific consensus; textbook references,2
+FC_00176,The Sun is a star - variation 17,general,supported,0.7490123428437665,medium,Scientific consensus; textbook references,2
+FC_00177,Goldfish have a 3-second memory - variation 17,general,rejected,0.6065124461967313,medium,Scientific consensus; textbook references,2
+FC_00178,Bats are blind - variation 17,general,rejected,0.7936904641207732,medium,Scientific consensus; textbook references,1
+FC_00179,Mount Everest is the tallest mountain on Earth - variation 17,general,supported,0.6180916810012588,medium,Scientific consensus; textbook references,1
+FC_00180,The Amazon is the longest river in the world - variation 17,general,rejected,0.9133445683994748,medium,Scientific consensus; textbook references,1
+FC_00181,The Earth is round - variation 18,general,supported,0.793817598001171,hard,Scientific consensus; textbook references,3
+FC_00182,Water boils at 100°C at sea level - variation 18,general,supported,0.8240541729011849,hard,Scientific consensus; textbook references,1
+FC_00183,The Great Wall of China is visible from space - variation 18,general,rejected,0.9258690593244961,hard,Scientific consensus; textbook references,2
+FC_00184,Humans use only 10% of their brain - variation 18,general,rejected,0.75460512749065,hard,Scientific consensus; textbook references,3
+FC_00185,Lightning never strikes the same place twice - variation 18,general,rejected,0.6923248158325185,hard,Scientific consensus; textbook references,3
+FC_00186,The Sun is a star - variation 18,general,supported,0.7670707246558662,hard,Scientific consensus; textbook references,1
+FC_00187,Goldfish have a 3-second memory - variation 18,general,rejected,0.811200214696096,hard,Scientific consensus; textbook references,3
+FC_00188,Bats are blind - variation 18,general,rejected,0.922103527418701,hard,Scientific consensus; textbook references,3
+FC_00189,Mount Everest is the tallest mountain on Earth - variation 18,general,supported,0.6879962608894853,hard,Scientific consensus; textbook references,1
+FC_00190,The Amazon is the longest river in the world - variation 18,general,rejected,0.7532248308433174,hard,Scientific consensus; textbook references,3
+FC_00191,The Earth is round - variation 19,general,supported,0.9120981546834612,expert,Scientific consensus; textbook references,1
+FC_00192,Water boils at 100°C at sea level - variation 19,general,supported,0.7165913385138776,expert,Scientific consensus; textbook references,2
+FC_00193,The Great Wall of China is visible from space - variation 19,general,rejected,0.9387836539476755,expert,Scientific consensus; textbook references,2
+FC_00194,Humans use only 10% of their brain - variation 19,general,rejected,0.7351572076415359,expert,Scientific consensus; textbook references,1
+FC_00195,Lightning never strikes the same place twice - variation 19,general,rejected,0.787745826468403,expert,Scientific consensus; textbook references,2
+FC_00196,The Sun is a star - variation 19,general,supported,0.9342533261631071,expert,Scientific consensus; textbook references,3
+FC_00197,Goldfish have a 3-second memory - variation 19,general,rejected,0.7869466449886228,expert,Scientific consensus; textbook references,2
+FC_00198,Bats are blind - variation 19,general,rejected,0.9477932163299498,expert,Scientific consensus; textbook references,1
+FC_00199,Mount Everest is the tallest mountain on Earth - variation 19,general,supported,0.736027533632394,expert,Scientific consensus; textbook references,3
+FC_00200,The Amazon is the longest river in the world - variation 19,general,rejected,0.8105222291670537,expert,Scientific consensus; textbook references,2
+FC_00201,The Earth is round - variation 20,general,supported,0.7253385113825854,easy,Scientific consensus; textbook references,1
+FC_00202,Water boils at 100°C at sea level - variation 20,general,supported,0.8731337165393234,easy,Scientific consensus; textbook references,1
+FC_00203,The Great Wall of China is visible from space - variation 20,general,rejected,0.6347120230114344,easy,Scientific consensus; textbook references,2
+FC_00204,Humans use only 10% of their brain - variation 20,general,rejected,0.6336215427077019,easy,Scientific consensus; textbook references,2
+FC_00205,Lightning never strikes the same place twice - variation 20,general,rejected,0.6629176132066218,easy,Scientific consensus; textbook references,2
+FC_00206,The Sun is a star - variation 20,general,supported,0.8472483766193963,easy,Scientific consensus; textbook references,1
+FC_00207,Goldfish have a 3-second memory - variation 20,general,rejected,0.9202924402406925,easy,Scientific consensus; textbook references,1
+FC_00208,Bats are blind - variation 20,general,rejected,0.8401414945883087,easy,Scientific consensus; textbook references,2
+FC_00209,Mount Everest is the tallest mountain on Earth - variation 20,general,supported,0.7735770136623024,easy,Scientific consensus; textbook references,1
+FC_00210,The Amazon is the longest river in the world - variation 20,general,rejected,0.9464447068172894,easy,Scientific consensus; textbook references,3
+FC_00211,The Earth is round - variation 21,general,supported,0.6036292769383396,medium,Scientific consensus; textbook references,2
+FC_00212,Water boils at 100°C at sea level - variation 21,general,supported,0.8428789772438356,medium,Scientific consensus; textbook references,2
+FC_00213,The Great Wall of China is visible from space - variation 21,general,rejected,0.6294139262281772,medium,Scientific consensus; textbook references,2
+FC_00214,Humans use only 10% of their brain - variation 21,general,rejected,0.7129967226958256,medium,Scientific consensus; textbook references,1
+FC_00215,Lightning never strikes the same place twice - variation 21,general,rejected,0.886922056216755,medium,Scientific consensus; textbook references,2
+FC_00216,The Sun is a star - variation 21,general,supported,0.7404406419841283,medium,Scientific consensus; textbook references,3
+FC_00217,Goldfish have a 3-second memory - variation 21,general,rejected,0.8808938961901636,medium,Scientific consensus; textbook references,3
+FC_00218,Bats are blind - variation 21,general,rejected,0.7864576949590254,medium,Scientific consensus; textbook references,1
+FC_00219,Mount Everest is the tallest mountain on Earth - variation 21,general,supported,0.8640912148221198,medium,Scientific consensus; textbook references,3
+FC_00220,The Amazon is the longest river in the world - variation 21,general,rejected,0.755063472071354,medium,Scientific consensus; textbook references,3
+FC_00221,The Earth is round - variation 22,general,supported,0.9240592845732993,hard,Scientific consensus; textbook references,3
+FC_00222,Water boils at 100°C at sea level - variation 22,general,supported,0.657598045210174,hard,Scientific consensus; textbook references,2
+FC_00223,The Great Wall of China is visible from space - variation 22,general,rejected,0.8495972959395628,hard,Scientific consensus; textbook references,3
+FC_00224,Humans use only 10% of their brain - variation 22,general,rejected,0.6972941338731026,hard,Scientific consensus; textbook references,1
+FC_00225,Lightning never strikes the same place twice - variation 22,general,rejected,0.7541831407969302,hard,Scientific consensus; textbook references,1
+FC_00226,The Sun is a star - variation 22,general,supported,0.7921019502127036,hard,Scientific consensus; textbook references,3
+FC_00227,Goldfish have a 3-second memory - variation 22,general,rejected,0.9110194329013683,hard,Scientific consensus; textbook references,1
+FC_00228,Bats are blind - variation 22,general,rejected,0.6038666337736612,hard,Scientific consensus; textbook references,1
+FC_00229,Mount Everest is the tallest mountain on Earth - variation 22,general,supported,0.8217785411955656,hard,Scientific consensus; textbook references,3
+FC_00230,The Amazon is the longest river in the world - variation 22,general,rejected,0.9073615997354848,hard,Scientific consensus; textbook references,1
+FC_00231,The Earth is round - variation 23,general,supported,0.7653334678888515,expert,Scientific consensus; textbook references,1
+FC_00232,Water boils at 100°C at sea level - variation 23,general,supported,0.7416574169722334,expert,Scientific consensus; textbook references,3
+FC_00233,The Great Wall of China is visible from space - variation 23,general,rejected,0.8069759601769098,expert,Scientific consensus; textbook references,2
+FC_00234,Humans use only 10% of their brain - variation 23,general,rejected,0.8396924349628195,expert,Scientific consensus; textbook references,2
+FC_00235,Lightning never strikes the same place twice - variation 23,general,rejected,0.7490455716160344,expert,Scientific consensus; textbook references,3
+FC_00236,The Sun is a star - variation 23,general,supported,0.9248918085214501,expert,Scientific consensus; textbook references,1
+FC_00237,Goldfish have a 3-second memory - variation 23,general,rejected,0.6340368774657728,expert,Scientific consensus; textbook references,1
+FC_00238,Bats are blind - variation 23,general,rejected,0.9065526624660385,expert,Scientific consensus; textbook references,1
+FC_00239,Mount Everest is the tallest mountain on Earth - variation 23,general,supported,0.7816701738004175,expert,Scientific consensus; textbook references,1
+FC_00240,The Amazon is the longest river in the world - variation 23,general,rejected,0.6760403951018235,expert,Scientific consensus; textbook references,1
+FC_00241,The Earth is round - variation 24,general,supported,0.7673886766464344,easy,Scientific consensus; textbook references,2
+FC_00242,Water boils at 100°C at sea level - variation 24,general,supported,0.6542864861672517,easy,Scientific consensus; textbook references,3
+FC_00243,The Great Wall of China is visible from space - variation 24,general,rejected,0.7872809930058959,easy,Scientific consensus; textbook references,1
+FC_00244,Humans use only 10% of their brain - variation 24,general,rejected,0.7066465182216252,easy,Scientific consensus; textbook references,1
+FC_00245,Lightning never strikes the same place twice - variation 24,general,rejected,0.6058715119110198,easy,Scientific consensus; textbook references,3
+FC_00246,The Sun is a star - variation 24,general,supported,0.6302966990381759,easy,Scientific consensus; textbook references,3
+FC_00247,Goldfish have a 3-second memory - variation 24,general,rejected,0.7624500639769005,easy,Scientific consensus; textbook references,1
+FC_00248,Bats are blind - variation 24,general,rejected,0.6264825069876513,easy,Scientific consensus; textbook references,3
+FC_00249,Mount Everest is the tallest mountain on Earth - variation 24,general,supported,0.7416405992675362,easy,Scientific consensus; textbook references,2
+FC_00250,The Amazon is the longest river in the world - variation 24,general,rejected,0.6025128602913604,easy,Scientific consensus; textbook references,1
+FC_00251,The Earth is round - variation 25,general,supported,0.718322244939307,medium,Scientific consensus; textbook references,1
+FC_00252,Water boils at 100°C at sea level - variation 25,general,supported,0.6047131071621921,medium,Scientific consensus; textbook references,3
+FC_00253,The Great Wall of China is visible from space - variation 25,general,rejected,0.803773632825299,medium,Scientific consensus; textbook references,1
+FC_00254,Humans use only 10% of their brain - variation 25,general,rejected,0.6698804445349023,medium,Scientific consensus; textbook references,1
+FC_00255,Lightning never strikes the same place twice - variation 25,general,rejected,0.8966206766867595,medium,Scientific consensus; textbook references,3
+FC_00256,The Sun is a star - variation 25,general,supported,0.7337159684366958,medium,Scientific consensus; textbook references,2
+FC_00257,Goldfish have a 3-second memory - variation 25,general,rejected,0.7553582977230924,medium,Scientific consensus; textbook references,2
+FC_00258,Bats are blind - variation 25,general,rejected,0.6815760048340322,medium,Scientific consensus; textbook references,1
+FC_00259,Mount Everest is the tallest mountain on Earth - variation 25,general,supported,0.6293546005099774,medium,Scientific consensus; textbook references,1
+FC_00260,The Amazon is the longest river in the world - variation 25,general,rejected,0.6715110446458117,medium,Scientific consensus; textbook references,1
+FC_00261,The Earth is round - variation 26,general,supported,0.8672978171294701,hard,Scientific consensus; textbook references,3
+FC_00262,Water boils at 100°C at sea level - variation 26,general,supported,0.694792995001228,hard,Scientific consensus; textbook references,2
+FC_00263,The Great Wall of China is visible from space - variation 26,general,rejected,0.688852727033935,hard,Scientific consensus; textbook references,1
+FC_00264,Humans use only 10% of their brain - variation 26,general,rejected,0.930184558098472,hard,Scientific consensus; textbook references,3
+FC_00265,Lightning never strikes the same place twice - variation 26,general,rejected,0.9383991474656346,hard,Scientific consensus; textbook references,3
+FC_00266,The Sun is a star - variation 26,general,supported,0.6528330901898309,hard,Scientific consensus; textbook references,3
+FC_00267,Goldfish have a 3-second memory - variation 26,general,rejected,0.869495384930294,hard,Scientific consensus; textbook references,1
+FC_00268,Bats are blind - variation 26,general,rejected,0.727309109082277,hard,Scientific consensus; textbook references,1
+FC_00269,Mount Everest is the tallest mountain on Earth - variation 26,general,supported,0.7540464845226944,hard,Scientific consensus; textbook references,3
+FC_00270,The Amazon is the longest river in the world - variation 26,general,rejected,0.8686732626706647,hard,Scientific consensus; textbook references,3
+FC_00271,The Earth is round - variation 27,general,supported,0.7631708795777039,expert,Scientific consensus; textbook references,3
+FC_00272,Water boils at 100°C at sea level - variation 27,general,supported,0.9021009295753462,expert,Scientific consensus; textbook references,1
+FC_00273,The Great Wall of China is visible from space - variation 27,general,rejected,0.8251910327739391,expert,Scientific consensus; textbook references,2
+FC_00274,Humans use only 10% of their brain - variation 27,general,rejected,0.9397030968877595,expert,Scientific consensus; textbook references,1
+FC_00275,Lightning never strikes the same place twice - variation 27,general,rejected,0.7843348420421625,expert,Scientific consensus; textbook references,1
+FC_00276,The Sun is a star - variation 27,general,supported,0.6694296670552083,expert,Scientific consensus; textbook references,1
+FC_00277,Goldfish have a 3-second memory - variation 27,general,rejected,0.6700738264604561,expert,Scientific consensus; textbook references,3
+FC_00278,Bats are blind - variation 27,general,rejected,0.6208424776249212,expert,Scientific consensus; textbook references,3
+FC_00279,Mount Everest is the tallest mountain on Earth - variation 27,general,supported,0.9422869141724749,expert,Scientific consensus; textbook references,1
+FC_00280,The Amazon is the longest river in the world - variation 27,general,rejected,0.8732313181961227,expert,Scientific consensus; textbook references,2
+FC_00281,The Earth is round - variation 28,general,supported,0.7788336546377111,easy,Scientific consensus; textbook references,3
+FC_00282,Water boils at 100°C at sea level - variation 28,general,supported,0.8763652656829475,easy,Scientific consensus; textbook references,2
+FC_00283,The Great Wall of China is visible from space - variation 28,general,rejected,0.9079846568436283,easy,Scientific consensus; textbook references,2
+FC_00284,Humans use only 10% of their brain - variation 28,general,rejected,0.7855295852651791,easy,Scientific consensus; textbook references,3
+FC_00285,Lightning never strikes the same place twice - variation 28,general,rejected,0.7640244470289801,easy,Scientific consensus; textbook references,2
+FC_00286,The Sun is a star - variation 28,general,supported,0.8867160086198254,easy,Scientific consensus; textbook references,1
+FC_00287,Goldfish have a 3-second memory - variation 28,general,rejected,0.7054743978868303,easy,Scientific consensus; textbook references,2
+FC_00288,Bats are blind - variation 28,general,rejected,0.6200853528067182,easy,Scientific consensus; textbook references,3
+FC_00289,Mount Everest is the tallest mountain on Earth - variation 28,general,supported,0.8022946553097821,easy,Scientific consensus; textbook references,3
+FC_00290,The Amazon is the longest river in the world - variation 28,general,rejected,0.7943438612160012,easy,Scientific consensus; textbook references,3
+FC_00291,The Earth is round - variation 29,general,supported,0.9009786651295256,medium,Scientific consensus; textbook references,1
+FC_00292,Water boils at 100°C at sea level - variation 29,general,supported,0.6744673344208657,medium,Scientific consensus; textbook references,2
+FC_00293,The Great Wall of China is visible from space - variation 29,general,rejected,0.9131535809140773,medium,Scientific consensus; textbook references,3
+FC_00294,Humans use only 10% of their brain - variation 29,general,rejected,0.7058452989916986,medium,Scientific consensus; textbook references,2
+FC_00295,Lightning never strikes the same place twice - variation 29,general,rejected,0.7430167008991825,medium,Scientific consensus; textbook references,3
+FC_00296,The Sun is a star - variation 29,general,supported,0.8028613992546919,medium,Scientific consensus; textbook references,1
+FC_00297,Goldfish have a 3-second memory - variation 29,general,rejected,0.8908621654368449,medium,Scientific consensus; textbook references,2
+FC_00298,Bats are blind - variation 29,general,rejected,0.7774816303392973,medium,Scientific consensus; textbook references,2
+FC_00299,Mount Everest is the tallest mountain on Earth - variation 29,general,supported,0.7753429227529015,medium,Scientific consensus; textbook references,2
+FC_00300,The Amazon is the longest river in the world - variation 29,general,rejected,0.65345117939995,medium,Scientific consensus; textbook references,1
+FC_00301,The Earth is round - variation 30,general,supported,0.8153254430663842,hard,Scientific consensus; textbook references,1
+FC_00302,Water boils at 100°C at sea level - variation 30,general,supported,0.7371098283869053,hard,Scientific consensus; textbook references,3
+FC_00303,The Great Wall of China is visible from space - variation 30,general,rejected,0.8223295299264703,hard,Scientific consensus; textbook references,2
+FC_00304,Humans use only 10% of their brain - variation 30,general,rejected,0.8418679205089318,hard,Scientific consensus; textbook references,1
+FC_00305,Lightning never strikes the same place twice - variation 30,general,rejected,0.612907217495543,hard,Scientific consensus; textbook references,2
+FC_00306,The Sun is a star - variation 30,general,supported,0.6516715187609728,hard,Scientific consensus; textbook references,3
+FC_00307,Goldfish have a 3-second memory - variation 30,general,rejected,0.8129630747110217,hard,Scientific consensus; textbook references,1
+FC_00308,Bats are blind - variation 30,general,rejected,0.8711139809357809,hard,Scientific consensus; textbook references,1
+FC_00309,Mount Everest is the tallest mountain on Earth - variation 30,general,supported,0.9040865888117217,hard,Scientific consensus; textbook references,2
+FC_00310,The Amazon is the longest river in the world - variation 30,general,rejected,0.790064649057397,hard,Scientific consensus; textbook references,3
+FC_00311,The Earth is round - variation 31,general,supported,0.6641524540455463,expert,Scientific consensus; textbook references,2
+FC_00312,Water boils at 100°C at sea level - variation 31,general,supported,0.7819881538036823,expert,Scientific consensus; textbook references,3
+FC_00313,The Great Wall of China is visible from space - variation 31,general,rejected,0.7658315343527299,expert,Scientific consensus; textbook references,1
+FC_00314,Humans use only 10% of their brain - variation 31,general,rejected,0.7199078704676388,expert,Scientific consensus; textbook references,2
+FC_00315,Lightning never strikes the same place twice - variation 31,general,rejected,0.7737604151571551,expert,Scientific consensus; textbook references,1
+FC_00316,The Sun is a star - variation 31,general,supported,0.9034372266034814,expert,Scientific consensus; textbook references,2
+FC_00317,Goldfish have a 3-second memory - variation 31,general,rejected,0.6749879181307927,expert,Scientific consensus; textbook references,1
+FC_00318,Bats are blind - variation 31,general,rejected,0.7979159831128726,expert,Scientific consensus; textbook references,3
+FC_00319,Mount Everest is the tallest mountain on Earth - variation 31,general,supported,0.9415419551612543,expert,Scientific consensus; textbook references,2
+FC_00320,The Amazon is the longest river in the world - variation 31,general,rejected,0.6645425074203849,expert,Scientific consensus; textbook references,2
+FC_00321,The Earth is round - variation 32,general,supported,0.7800593374418614,easy,Scientific consensus; textbook references,2
+FC_00322,Water boils at 100°C at sea level - variation 32,general,supported,0.8798363434063223,easy,Scientific consensus; textbook references,1
+FC_00323,The Great Wall of China is visible from space - variation 32,general,rejected,0.9006577125078272,easy,Scientific consensus; textbook references,2
+FC_00324,Humans use only 10% of their brain - variation 32,general,rejected,0.8734268356119642,easy,Scientific consensus; textbook references,1
+FC_00325,Lightning never strikes the same place twice - variation 32,general,rejected,0.8702494851716631,easy,Scientific consensus; textbook references,1
+FC_00326,The Sun is a star - variation 32,general,supported,0.8927453418888169,easy,Scientific consensus; textbook references,1
+FC_00327,Goldfish have a 3-second memory - variation 32,general,rejected,0.6112766140179983,easy,Scientific consensus; textbook references,2
+FC_00328,Bats are blind - variation 32,general,rejected,0.7468180063636063,easy,Scientific consensus; textbook references,3
+FC_00329,Mount Everest is the tallest mountain on Earth - variation 32,general,supported,0.6150555419229725,easy,Scientific consensus; textbook references,3
+FC_00330,The Amazon is the longest river in the world - variation 32,general,rejected,0.6969273968780684,easy,Scientific consensus; textbook references,3
+FC_00331,The Earth is round - variation 33,general,supported,0.7626409383105001,medium,Scientific consensus; textbook references,1
+FC_00332,Water boils at 100°C at sea level - variation 33,general,supported,0.6139065943909485,medium,Scientific consensus; textbook references,1
+FC_00333,The Great Wall of China is visible from space - variation 33,general,rejected,0.6495457899609868,medium,Scientific consensus; textbook references,2
+FC_00334,Humans use only 10% of their brain - variation 33,general,rejected,0.7031448636603833,medium,Scientific consensus; textbook references,1
+FC_00335,Lightning never strikes the same place twice - variation 33,general,rejected,0.7317533544022701,medium,Scientific consensus; textbook references,1
+FC_00336,The Sun is a star - variation 33,general,supported,0.9164511157475504,medium,Scientific consensus; textbook references,2
+FC_00337,Goldfish have a 3-second memory - variation 33,general,rejected,0.7766887507675067,medium,Scientific consensus; textbook references,1
+FC_00338,Bats are blind - variation 33,general,rejected,0.8983621373152944,medium,Scientific consensus; textbook references,2
+FC_00339,Mount Everest is the tallest mountain on Earth - variation 33,general,supported,0.8375876620083356,medium,Scientific consensus; textbook references,2
+FC_00340,The Amazon is the longest river in the world - variation 33,general,rejected,0.6416726908012991,medium,Scientific consensus; textbook references,1
+FC_00341,The Earth is round - variation 34,general,supported,0.6635087982678164,hard,Scientific consensus; textbook references,2
+FC_00342,Water boils at 100°C at sea level - variation 34,general,supported,0.6656427867548007,hard,Scientific consensus; textbook references,1
+FC_00343,The Great Wall of China is visible from space - variation 34,general,rejected,0.7074493180826413,hard,Scientific consensus; textbook references,3
+FC_00344,Humans use only 10% of their brain - variation 34,general,rejected,0.8582829234725528,hard,Scientific consensus; textbook references,1
+FC_00345,Lightning never strikes the same place twice - variation 34,general,rejected,0.6163198153762902,hard,Scientific consensus; textbook references,3
+FC_00346,The Sun is a star - variation 34,general,supported,0.7107657748219289,hard,Scientific consensus; textbook references,1
+FC_00347,Goldfish have a 3-second memory - variation 34,general,rejected,0.8513225949660836,hard,Scientific consensus; textbook references,3
+FC_00348,Bats are blind - variation 34,general,rejected,0.6284523322351203,hard,Scientific consensus; textbook references,1
+FC_00349,Mount Everest is the tallest mountain on Earth - variation 34,general,supported,0.7506615415627311,hard,Scientific consensus; textbook references,2
+FC_00350,The Amazon is the longest river in the world - variation 34,general,rejected,0.9408740196424361,hard,Scientific consensus; textbook references,1
+FC_00351,The Earth is round - variation 35,general,supported,0.710094817065882,expert,Scientific consensus; textbook references,3
+FC_00352,Water boils at 100°C at sea level - variation 35,general,supported,0.9184422809975885,expert,Scientific consensus; textbook references,3
+FC_00353,The Great Wall of China is visible from space - variation 35,general,rejected,0.7495851398969611,expert,Scientific consensus; textbook references,2
+FC_00354,Humans use only 10% of their brain - variation 35,general,rejected,0.6613528396980745,expert,Scientific consensus; textbook references,2
+FC_00355,Lightning never strikes the same place twice - variation 35,general,rejected,0.8669801644369672,expert,Scientific consensus; textbook references,2
+FC_00356,The Sun is a star - variation 35,general,supported,0.8214221238014554,expert,Scientific consensus; textbook references,2
+FC_00357,Goldfish have a 3-second memory - variation 35,general,rejected,0.8748330202475938,expert,Scientific consensus; textbook references,1
+FC_00358,Bats are blind - variation 35,general,rejected,0.726214466284353,expert,Scientific consensus; textbook references,3
+FC_00359,Mount Everest is the tallest mountain on Earth - variation 35,general,supported,0.8119777080884587,expert,Scientific consensus; textbook references,3
+FC_00360,The Amazon is the longest river in the world - variation 35,general,rejected,0.6650188239398829,expert,Scientific consensus; textbook references,3
+FC_00361,The Earth is round - variation 36,general,supported,0.8850896346145176,easy,Scientific consensus; textbook references,3
+FC_00362,Water boils at 100°C at sea level - variation 36,general,supported,0.7493827695497892,easy,Scientific consensus; textbook references,1
+FC_00363,The Great Wall of China is visible from space - variation 36,general,rejected,0.645010189140168,easy,Scientific consensus; textbook references,2
+FC_00364,Humans use only 10% of their brain - variation 36,general,rejected,0.8789570471545056,easy,Scientific consensus; textbook references,3
+FC_00365,Lightning never strikes the same place twice - variation 36,general,rejected,0.8494253668450527,easy,Scientific consensus; textbook references,2
+FC_00366,The Sun is a star - variation 36,general,supported,0.7337622655519866,easy,Scientific consensus; textbook references,1
+FC_00367,Goldfish have a 3-second memory - variation 36,general,rejected,0.7456940751242501,easy,Scientific consensus; textbook references,1
+FC_00368,Bats are blind - variation 36,general,rejected,0.8155898119374869,easy,Scientific consensus; textbook references,3
+FC_00369,Mount Everest is the tallest mountain on Earth - variation 36,general,supported,0.7092474257579999,easy,Scientific consensus; textbook references,1
+FC_00370,The Amazon is the longest river in the world - variation 36,general,rejected,0.8724472578029703,easy,Scientific consensus; textbook references,3
+FC_00371,The Earth is round - variation 37,general,supported,0.9083380177265385,medium,Scientific consensus; textbook references,2
+FC_00372,Water boils at 100°C at sea level - variation 37,general,supported,0.7705133604458343,medium,Scientific consensus; textbook references,2
+FC_00373,The Great Wall of China is visible from space - variation 37,general,rejected,0.8850545965575978,medium,Scientific consensus; textbook references,3
+FC_00374,Humans use only 10% of their brain - variation 37,general,rejected,0.9365465627546559,medium,Scientific consensus; textbook references,1
+FC_00375,Lightning never strikes the same place twice - variation 37,general,rejected,0.8397729029992516,medium,Scientific consensus; textbook references,3
+FC_00376,The Sun is a star - variation 37,general,supported,0.8421967987018306,medium,Scientific consensus; textbook references,1
+FC_00377,Goldfish have a 3-second memory - variation 37,general,rejected,0.684741214095298,medium,Scientific consensus; textbook references,3
+FC_00378,Bats are blind - variation 37,general,rejected,0.8778034553489882,medium,Scientific consensus; textbook references,3
+FC_00379,Mount Everest is the tallest mountain on Earth - variation 37,general,supported,0.7972242521541767,medium,Scientific consensus; textbook references,3
+FC_00380,The Amazon is the longest river in the world - variation 37,general,rejected,0.6558909681110154,medium,Scientific consensus; textbook references,2
+FC_00381,The Earth is round - variation 38,general,supported,0.782638732060775,hard,Scientific consensus; textbook references,3
+FC_00382,Water boils at 100°C at sea level - variation 38,general,supported,0.6007442656812886,hard,Scientific consensus; textbook references,2
+FC_00383,The Great Wall of China is visible from space - variation 38,general,rejected,0.8736508239383145,hard,Scientific consensus; textbook references,1
+FC_00384,Humans use only 10% of their brain - variation 38,general,rejected,0.7979222682596397,hard,Scientific consensus; textbook references,2
+FC_00385,Lightning never strikes the same place twice - variation 38,general,rejected,0.7795108818168918,hard,Scientific consensus; textbook references,3
+FC_00386,The Sun is a star - variation 38,general,supported,0.6162898787243317,hard,Scientific consensus; textbook references,2
+FC_00387,Goldfish have a 3-second memory - variation 38,general,rejected,0.7251496164845112,hard,Scientific consensus; textbook references,2
+FC_00388,Bats are blind - variation 38,general,rejected,0.8082699685309923,hard,Scientific consensus; textbook references,2
+FC_00389,Mount Everest is the tallest mountain on Earth - variation 38,general,supported,0.7347199557761576,hard,Scientific consensus; textbook references,2
+FC_00390,The Amazon is the longest river in the world - variation 38,general,rejected,0.746848103853438,hard,Scientific consensus; textbook references,3
+FC_00391,The Earth is round - variation 39,general,supported,0.8551546762974057,expert,Scientific consensus; textbook references,2
+FC_00392,Water boils at 100°C at sea level - variation 39,general,supported,0.6710297589423095,expert,Scientific consensus; textbook references,3
+FC_00393,The Great Wall of China is visible from space - variation 39,general,rejected,0.8802475856188574,expert,Scientific consensus; textbook references,1
+FC_00394,Humans use only 10% of their brain - variation 39,general,rejected,0.8351365206379068,expert,Scientific consensus; textbook references,1
+FC_00395,Lightning never strikes the same place twice - variation 39,general,rejected,0.7711114490303658,expert,Scientific consensus; textbook references,2
+FC_00396,The Sun is a star - variation 39,general,supported,0.6276126414966565,expert,Scientific consensus; textbook references,3
+FC_00397,Goldfish have a 3-second memory - variation 39,general,rejected,0.6076352728648392,expert,Scientific consensus; textbook references,1
+FC_00398,Bats are blind - variation 39,general,rejected,0.6985788285989115,expert,Scientific consensus; textbook references,2
+FC_00399,Mount Everest is the tallest mountain on Earth - variation 39,general,supported,0.6098586806172437,expert,Scientific consensus; textbook references,3
+FC_00400,The Amazon is the longest river in the world - variation 39,general,rejected,0.7035007454295084,expert,Scientific consensus; textbook references,2
+FC_00401,The Earth is round - variation 40,general,supported,0.6589428366932765,easy,Scientific consensus; textbook references,1
+FC_00402,Water boils at 100°C at sea level - variation 40,general,supported,0.7692421145599663,easy,Scientific consensus; textbook references,3
+FC_00403,The Great Wall of China is visible from space - variation 40,general,rejected,0.7123411982337606,easy,Scientific consensus; textbook references,3
+FC_00404,Humans use only 10% of their brain - variation 40,general,rejected,0.7853622805819516,easy,Scientific consensus; textbook references,3
+FC_00405,Lightning never strikes the same place twice - variation 40,general,rejected,0.8476742424546206,easy,Scientific consensus; textbook references,3
+FC_00406,The Sun is a star - variation 40,general,supported,0.674417456688284,easy,Scientific consensus; textbook references,3
+FC_00407,Goldfish have a 3-second memory - variation 40,general,rejected,0.642979001311207,easy,Scientific consensus; textbook references,1
+FC_00408,Bats are blind - variation 40,general,rejected,0.9296911752895585,easy,Scientific consensus; textbook references,2
+FC_00409,Mount Everest is the tallest mountain on Earth - variation 40,general,supported,0.7582091997504461,easy,Scientific consensus; textbook references,1
+FC_00410,The Amazon is the longest river in the world - variation 40,general,rejected,0.8773407331583079,easy,Scientific consensus; textbook references,1
+FC_00411,The Earth is round - variation 41,general,supported,0.7699340976361283,medium,Scientific consensus; textbook references,2
+FC_00412,Water boils at 100°C at sea level - variation 41,general,supported,0.6956822655131106,medium,Scientific consensus; textbook references,2
+FC_00413,The Great Wall of China is visible from space - variation 41,general,rejected,0.6933330310864764,medium,Scientific consensus; textbook references,3
+FC_00414,Humans use only 10% of their brain - variation 41,general,rejected,0.8042714400220596,medium,Scientific consensus; textbook references,3
+FC_00415,Lightning never strikes the same place twice - variation 41,general,rejected,0.9311868119535484,medium,Scientific consensus; textbook references,2
+FC_00416,The Sun is a star - variation 41,general,supported,0.818149606759401,medium,Scientific consensus; textbook references,2
+FC_00417,Goldfish have a 3-second memory - variation 41,general,rejected,0.8344298858634347,medium,Scientific consensus; textbook references,3
+FC_00418,Bats are blind - variation 41,general,rejected,0.6250119684863771,medium,Scientific consensus; textbook references,3
+FC_00419,Mount Everest is the tallest mountain on Earth - variation 41,general,supported,0.6729160148102462,medium,Scientific consensus; textbook references,3
+FC_00420,The Amazon is the longest river in the world - variation 41,general,rejected,0.6425308002007457,medium,Scientific consensus; textbook references,2
+FC_00421,The Earth is round - variation 42,general,supported,0.9252545951982245,hard,Scientific consensus; textbook references,1
+FC_00422,Water boils at 100°C at sea level - variation 42,general,supported,0.7992697991230912,hard,Scientific consensus; textbook references,3
+FC_00423,The Great Wall of China is visible from space - variation 42,general,rejected,0.8618825709375117,hard,Scientific consensus; textbook references,1
+FC_00424,Humans use only 10% of their brain - variation 42,general,rejected,0.8294227848985768,hard,Scientific consensus; textbook references,1
+FC_00425,Lightning never strikes the same place twice - variation 42,general,rejected,0.9465810478640914,hard,Scientific consensus; textbook references,1
+FC_00426,The Sun is a star - variation 42,general,supported,0.6048032718430034,hard,Scientific consensus; textbook references,2
+FC_00427,Goldfish have a 3-second memory - variation 42,general,rejected,0.620952216935877,hard,Scientific consensus; textbook references,1
+FC_00428,Bats are blind - variation 42,general,rejected,0.8033959243032777,hard,Scientific consensus; textbook references,3
+FC_00429,Mount Everest is the tallest mountain on Earth - variation 42,general,supported,0.685320841864564,hard,Scientific consensus; textbook references,2
+FC_00430,The Amazon is the longest river in the world - variation 42,general,rejected,0.9240492130594266,hard,Scientific consensus; textbook references,1
+FC_00431,The Earth is round - variation 43,general,supported,0.8437027365144097,expert,Scientific consensus; textbook references,3
+FC_00432,Water boils at 100°C at sea level - variation 43,general,supported,0.6169077696706041,expert,Scientific consensus; textbook references,2
+FC_00433,The Great Wall of China is visible from space - variation 43,general,rejected,0.6827851706928696,expert,Scientific consensus; textbook references,2
+FC_00434,Humans use only 10% of their brain - variation 43,general,rejected,0.6214380335491957,expert,Scientific consensus; textbook references,2
+FC_00435,Lightning never strikes the same place twice - variation 43,general,rejected,0.708657420812068,expert,Scientific consensus; textbook references,2
+FC_00436,The Sun is a star - variation 43,general,supported,0.8002457498127021,expert,Scientific consensus; textbook references,3
+FC_00437,Goldfish have a 3-second memory - variation 43,general,rejected,0.9434445563450795,expert,Scientific consensus; textbook references,1
+FC_00438,Bats are blind - variation 43,general,rejected,0.8270342373220625,expert,Scientific consensus; textbook references,1
+FC_00439,Mount Everest is the tallest mountain on Earth - variation 43,general,supported,0.735217987410394,expert,Scientific consensus; textbook references,3
+FC_00440,The Amazon is the longest river in the world - variation 43,general,rejected,0.9376503773834153,expert,Scientific consensus; textbook references,2
+FC_00441,The Earth is round - variation 44,general,supported,0.619793373098019,easy,Scientific consensus; textbook references,1
+FC_00442,Water boils at 100°C at sea level - variation 44,general,supported,0.6264287619141546,easy,Scientific consensus; textbook references,1
+FC_00443,The Great Wall of China is visible from space - variation 44,general,rejected,0.6214794344852739,easy,Scientific consensus; textbook references,2
+FC_00444,Humans use only 10% of their brain - variation 44,general,rejected,0.7807393959192525,easy,Scientific consensus; textbook references,3
+FC_00445,Lightning never strikes the same place twice - variation 44,general,rejected,0.6251880672902906,easy,Scientific consensus; textbook references,2
+FC_00446,The Sun is a star - variation 44,general,supported,0.8965075527685469,easy,Scientific consensus; textbook references,1
+FC_00447,Goldfish have a 3-second memory - variation 44,general,rejected,0.9490125969832516,easy,Scientific consensus; textbook references,3
+FC_00448,Bats are blind - variation 44,general,rejected,0.8401353612893285,easy,Scientific consensus; textbook references,2
+FC_00449,Mount Everest is the tallest mountain on Earth - variation 44,general,supported,0.6989320147339496,easy,Scientific consensus; textbook references,1
+FC_00450,The Amazon is the longest river in the world - variation 44,general,rejected,0.923852253270004,easy,Scientific consensus; textbook references,3
+FC_00451,The Earth is round - variation 45,general,supported,0.7663509879286341,medium,Scientific consensus; textbook references,3
+FC_00452,Water boils at 100°C at sea level - variation 45,general,supported,0.7698319022880004,medium,Scientific consensus; textbook references,2
+FC_00453,The Great Wall of China is visible from space - variation 45,general,rejected,0.6779357217794929,medium,Scientific consensus; textbook references,3
+FC_00454,Humans use only 10% of their brain - variation 45,general,rejected,0.8672267794059472,medium,Scientific consensus; textbook references,3
+FC_00455,Lightning never strikes the same place twice - variation 45,general,rejected,0.6776322709685,medium,Scientific consensus; textbook references,2
+FC_00456,The Sun is a star - variation 45,general,supported,0.899018183720439,medium,Scientific consensus; textbook references,1
+FC_00457,Goldfish have a 3-second memory - variation 45,general,rejected,0.822892523733759,medium,Scientific consensus; textbook references,2
+FC_00458,Bats are blind - variation 45,general,rejected,0.9462428206772757,medium,Scientific consensus; textbook references,2
+FC_00459,Mount Everest is the tallest mountain on Earth - variation 45,general,supported,0.9003619771469025,medium,Scientific consensus; textbook references,1
+FC_00460,The Amazon is the longest river in the world - variation 45,general,rejected,0.689669210815046,medium,Scientific consensus; textbook references,2
+FC_00461,The Earth is round - variation 46,general,supported,0.771457683369801,hard,Scientific consensus; textbook references,3
+FC_00462,Water boils at 100°C at sea level - variation 46,general,supported,0.6330468489939123,hard,Scientific consensus; textbook references,3
+FC_00463,The Great Wall of China is visible from space - variation 46,general,rejected,0.6437589637025528,hard,Scientific consensus; textbook references,2
+FC_00464,Humans use only 10% of their brain - variation 46,general,rejected,0.6148116331465681,hard,Scientific consensus; textbook references,2
+FC_00465,Lightning never strikes the same place twice - variation 46,general,rejected,0.6659149061383948,hard,Scientific consensus; textbook references,2
+FC_00466,The Sun is a star - variation 46,general,supported,0.6233351069012323,hard,Scientific consensus; textbook references,1
+FC_00467,Goldfish have a 3-second memory - variation 46,general,rejected,0.769131851228213,hard,Scientific consensus; textbook references,2
+FC_00468,Bats are blind - variation 46,general,rejected,0.8152622984840353,hard,Scientific consensus; textbook references,2
+FC_00469,Mount Everest is the tallest mountain on Earth - variation 46,general,supported,0.80921866976424,hard,Scientific consensus; textbook references,3
+FC_00470,The Amazon is the longest river in the world - variation 46,general,rejected,0.6159097513924715,hard,Scientific consensus; textbook references,2
+FC_00471,The Earth is round - variation 47,general,supported,0.9344822094739755,expert,Scientific consensus; textbook references,2
+FC_00472,Water boils at 100°C at sea level - variation 47,general,supported,0.6284477267701966,expert,Scientific consensus; textbook references,3
+FC_00473,The Great Wall of China is visible from space - variation 47,general,rejected,0.6338090776462809,expert,Scientific consensus; textbook references,2
+FC_00474,Humans use only 10% of their brain - variation 47,general,rejected,0.6112546775642189,expert,Scientific consensus; textbook references,1
+FC_00475,Lightning never strikes the same place twice - variation 47,general,rejected,0.6519402795904543,expert,Scientific consensus; textbook references,2
+FC_00476,The Sun is a star - variation 47,general,supported,0.6650292271937924,expert,Scientific consensus; textbook references,1
+FC_00477,Goldfish have a 3-second memory - variation 47,general,rejected,0.6406865273819256,expert,Scientific consensus; textbook references,2
+FC_00478,Bats are blind - variation 47,general,rejected,0.6682302053536154,expert,Scientific consensus; textbook references,1
+FC_00479,Mount Everest is the tallest mountain on Earth - variation 47,general,supported,0.6582571855357624,expert,Scientific consensus; textbook references,2
+FC_00480,The Amazon is the longest river in the world - variation 47,general,rejected,0.8692250200182389,expert,Scientific consensus; textbook references,1
+FC_00481,The Earth is round - variation 48,general,supported,0.7671452835436372,easy,Scientific consensus; textbook references,2
+FC_00482,Water boils at 100°C at sea level - variation 48,general,supported,0.8730701784285523,easy,Scientific consensus; textbook references,1
+FC_00483,The Great Wall of China is visible from space - variation 48,general,rejected,0.6053323896735805,easy,Scientific consensus; textbook references,1
+FC_00484,Humans use only 10% of their brain - variation 48,general,rejected,0.8489530801691783,easy,Scientific consensus; textbook references,1
+FC_00485,Lightning never strikes the same place twice - variation 48,general,rejected,0.8696022637564094,easy,Scientific consensus; textbook references,3
+FC_00486,The Sun is a star - variation 48,general,supported,0.7069928847446366,easy,Scientific consensus; textbook references,3
+FC_00487,Goldfish have a 3-second memory - variation 48,general,rejected,0.9068199283728033,easy,Scientific consensus; textbook references,2
+FC_00488,Bats are blind - variation 48,general,rejected,0.6977299620957946,easy,Scientific consensus; textbook references,2
+FC_00489,Mount Everest is the tallest mountain on Earth - variation 48,general,supported,0.8343587173068838,easy,Scientific consensus; textbook references,1
+FC_00490,The Amazon is the longest river in the world - variation 48,general,rejected,0.9313283896287643,easy,Scientific consensus; textbook references,2
+FC_00491,The Earth is round - variation 49,general,supported,0.8765356385204479,medium,Scientific consensus; textbook references,2
+FC_00492,Water boils at 100°C at sea level - variation 49,general,supported,0.743851962599708,medium,Scientific consensus; textbook references,3
+FC_00493,The Great Wall of China is visible from space - variation 49,general,rejected,0.605880223711365,medium,Scientific consensus; textbook references,1
+FC_00494,Humans use only 10% of their brain - variation 49,general,rejected,0.6569028367248183,medium,Scientific consensus; textbook references,2
+FC_00495,Lightning never strikes the same place twice - variation 49,general,rejected,0.875072556001631,medium,Scientific consensus; textbook references,1
+FC_00496,The Sun is a star - variation 49,general,supported,0.6133502784312007,medium,Scientific consensus; textbook references,2
+FC_00497,Goldfish have a 3-second memory - variation 49,general,rejected,0.7170128067048573,medium,Scientific consensus; textbook references,2
+FC_00498,Bats are blind - variation 49,general,rejected,0.6080650492707121,medium,Scientific consensus; textbook references,2
+FC_00499,Mount Everest is the tallest mountain on Earth - variation 49,general,supported,0.9051830030115882,medium,Scientific consensus; textbook references,3
+FC_00500,The Amazon is the longest river in the world - variation 49,general,rejected,0.7280965987561084,medium,Scientific consensus; textbook references,1
+FC_00501,The Earth is round - variation 50,general,supported,0.830371088527381,hard,Scientific consensus; textbook references,3
+FC_00502,Water boils at 100°C at sea level - variation 50,general,supported,0.7178828206110462,hard,Scientific consensus; textbook references,3
+FC_00503,The Great Wall of China is visible from space - variation 50,general,rejected,0.905848391700403,hard,Scientific consensus; textbook references,2
+FC_00504,Humans use only 10% of their brain - variation 50,general,rejected,0.8998223397813607,hard,Scientific consensus; textbook references,1
+FC_00505,Lightning never strikes the same place twice - variation 50,general,rejected,0.6784201336736126,hard,Scientific consensus; textbook references,2
+FC_00506,The Sun is a star - variation 50,general,supported,0.8867361931209692,hard,Scientific consensus; textbook references,1
+FC_00507,Goldfish have a 3-second memory - variation 50,general,rejected,0.6470484025810883,hard,Scientific consensus; textbook references,2
+FC_00508,Bats are blind - variation 50,general,rejected,0.7613630491444057,hard,Scientific consensus; textbook references,2
+FC_00509,Mount Everest is the tallest mountain on Earth - variation 50,general,supported,0.9292208351110955,hard,Scientific consensus; textbook references,1
+FC_00510,The Amazon is the longest river in the world - variation 50,general,rejected,0.616518651739304,hard,Scientific consensus; textbook references,2
+FC_00511,The Earth is round - variation 51,general,supported,0.6228885605478555,expert,Scientific consensus; textbook references,3
+FC_00512,Water boils at 100°C at sea level - variation 51,general,supported,0.9318894447200241,expert,Scientific consensus; textbook references,3
+FC_00513,The Great Wall of China is visible from space - variation 51,general,rejected,0.9394152883092066,expert,Scientific consensus; textbook references,1
+FC_00514,Humans use only 10% of their brain - variation 51,general,rejected,0.7658261661973116,expert,Scientific consensus; textbook references,3
+FC_00515,Lightning never strikes the same place twice - variation 51,general,rejected,0.9091114158894023,expert,Scientific consensus; textbook references,3
+FC_00516,The Sun is a star - variation 51,general,supported,0.9406129865982715,expert,Scientific consensus; textbook references,2
+FC_00517,Goldfish have a 3-second memory - variation 51,general,rejected,0.8662157068989771,expert,Scientific consensus; textbook references,3
+FC_00518,Bats are blind - variation 51,general,rejected,0.761689906710634,expert,Scientific consensus; textbook references,1
+FC_00519,Mount Everest is the tallest mountain on Earth - variation 51,general,supported,0.6773670279918272,expert,Scientific consensus; textbook references,2
+FC_00520,The Amazon is the longest river in the world - variation 51,general,rejected,0.623248323855222,expert,Scientific consensus; textbook references,3
+FC_00521,The Earth is round - variation 52,general,supported,0.8427735224791796,easy,Scientific consensus; textbook references,2
+FC_00522,Water boils at 100°C at sea level - variation 52,general,supported,0.6303345694033202,easy,Scientific consensus; textbook references,1
+FC_00523,The Great Wall of China is visible from space - variation 52,general,rejected,0.7069966674943556,easy,Scientific consensus; textbook references,2
+FC_00524,Humans use only 10% of their brain - variation 52,general,rejected,0.810608279164839,easy,Scientific consensus; textbook references,2
+FC_00525,Lightning never strikes the same place twice - variation 52,general,rejected,0.811697250723986,easy,Scientific consensus; textbook references,2
+FC_00526,The Sun is a star - variation 52,general,supported,0.6513888430441893,easy,Scientific consensus; textbook references,1
+FC_00527,Goldfish have a 3-second memory - variation 52,general,rejected,0.881892634365475,easy,Scientific consensus; textbook references,3
+FC_00528,Bats are blind - variation 52,general,rejected,0.8115632256586742,easy,Scientific consensus; textbook references,3
+FC_00529,Mount Everest is the tallest mountain on Earth - variation 52,general,supported,0.8123089866932973,easy,Scientific consensus; textbook references,1
+FC_00530,The Amazon is the longest river in the world - variation 52,general,rejected,0.8851924225754122,easy,Scientific consensus; textbook references,3
+FC_00531,The Earth is round - variation 53,general,supported,0.7142423582621054,medium,Scientific consensus; textbook references,3
+FC_00532,Water boils at 100°C at sea level - variation 53,general,supported,0.7334025797645481,medium,Scientific consensus; textbook references,2
+FC_00533,The Great Wall of China is visible from space - variation 53,general,rejected,0.8670522522485726,medium,Scientific consensus; textbook references,1
+FC_00534,Humans use only 10% of their brain - variation 53,general,rejected,0.7559520267695684,medium,Scientific consensus; textbook references,3
+FC_00535,Lightning never strikes the same place twice - variation 53,general,rejected,0.798305767151869,medium,Scientific consensus; textbook references,1
+FC_00536,The Sun is a star - variation 53,general,supported,0.8889948292216936,medium,Scientific consensus; textbook references,1
+FC_00537,Goldfish have a 3-second memory - variation 53,general,rejected,0.6414995844829714,medium,Scientific consensus; textbook references,1
+FC_00538,Bats are blind - variation 53,general,rejected,0.9254992995406089,medium,Scientific consensus; textbook references,1
+FC_00539,Mount Everest is the tallest mountain on Earth - variation 53,general,supported,0.7162939038846388,medium,Scientific consensus; textbook references,2
+FC_00540,The Amazon is the longest river in the world - variation 53,general,rejected,0.7375017723437216,medium,Scientific consensus; textbook references,2
+FC_00541,The Earth is round - variation 54,general,supported,0.7087268221216829,hard,Scientific consensus; textbook references,2
+FC_00542,Water boils at 100°C at sea level - variation 54,general,supported,0.8564435764948797,hard,Scientific consensus; textbook references,1
+FC_00543,The Great Wall of China is visible from space - variation 54,general,rejected,0.6761280079795154,hard,Scientific consensus; textbook references,3
+FC_00544,Humans use only 10% of their brain - variation 54,general,rejected,0.9157098375664572,hard,Scientific consensus; textbook references,1
+FC_00545,Lightning never strikes the same place twice - variation 54,general,rejected,0.6154870296590846,hard,Scientific consensus; textbook references,3
+FC_00546,The Sun is a star - variation 54,general,supported,0.7806001309191812,hard,Scientific consensus; textbook references,3
+FC_00547,Goldfish have a 3-second memory - variation 54,general,rejected,0.92612813626769,hard,Scientific consensus; textbook references,3
+FC_00548,Bats are blind - variation 54,general,rejected,0.6925077729426677,hard,Scientific consensus; textbook references,1
+FC_00549,Mount Everest is the tallest mountain on Earth - variation 54,general,supported,0.6106615238642026,hard,Scientific consensus; textbook references,1
+FC_00550,The Amazon is the longest river in the world - variation 54,general,rejected,0.8437819956125129,hard,Scientific consensus; textbook references,3
+FC_00551,The Earth is round - variation 55,general,supported,0.660799617248339,expert,Scientific consensus; textbook references,1
+FC_00552,Water boils at 100°C at sea level - variation 55,general,supported,0.8751899749712324,expert,Scientific consensus; textbook references,3
+FC_00553,The Great Wall of China is visible from space - variation 55,general,rejected,0.7867569326103503,expert,Scientific consensus; textbook references,3
+FC_00554,Humans use only 10% of their brain - variation 55,general,rejected,0.6376880338257489,expert,Scientific consensus; textbook references,3
+FC_00555,Lightning never strikes the same place twice - variation 55,general,rejected,0.6975148425753637,expert,Scientific consensus; textbook references,1
+FC_00556,The Sun is a star - variation 55,general,supported,0.8223734768086224,expert,Scientific consensus; textbook references,1
+FC_00557,Goldfish have a 3-second memory - variation 55,general,rejected,0.9367328617401158,expert,Scientific consensus; textbook references,2
+FC_00558,Bats are blind - variation 55,general,rejected,0.9038851205522802,expert,Scientific consensus; textbook references,2
+FC_00559,Mount Everest is the tallest mountain on Earth - variation 55,general,supported,0.7197920706474201,expert,Scientific consensus; textbook references,1
+FC_00560,The Amazon is the longest river in the world - variation 55,general,rejected,0.7597626814742077,expert,Scientific consensus; textbook references,1
+FC_00561,The Earth is round - variation 56,general,supported,0.6776193215166164,easy,Scientific consensus; textbook references,3
+FC_00562,Water boils at 100°C at sea level - variation 56,general,supported,0.8977567437506563,easy,Scientific consensus; textbook references,2
+FC_00563,The Great Wall of China is visible from space - variation 56,general,rejected,0.6821377376116866,easy,Scientific consensus; textbook references,1
+FC_00564,Humans use only 10% of their brain - variation 56,general,rejected,0.7320887678169886,easy,Scientific consensus; textbook references,3
+FC_00565,Lightning never strikes the same place twice - variation 56,general,rejected,0.8220790855753508,easy,Scientific consensus; textbook references,1
+FC_00566,The Sun is a star - variation 56,general,supported,0.6424725686193327,easy,Scientific consensus; textbook references,2
+FC_00567,Goldfish have a 3-second memory - variation 56,general,rejected,0.6368996349196031,easy,Scientific consensus; textbook references,3
+FC_00568,Bats are blind - variation 56,general,rejected,0.8897120550674293,easy,Scientific consensus; textbook references,1
+FC_00569,Mount Everest is the tallest mountain on Earth - variation 56,general,supported,0.8366268074997498,easy,Scientific consensus; textbook references,1
+FC_00570,The Amazon is the longest river in the world - variation 56,general,rejected,0.7307290394746753,easy,Scientific consensus; textbook references,3
+FC_00571,The Earth is round - variation 57,general,supported,0.6077685359868299,medium,Scientific consensus; textbook references,1
+FC_00572,Water boils at 100°C at sea level - variation 57,general,supported,0.8422122090860393,medium,Scientific consensus; textbook references,1
+FC_00573,The Great Wall of China is visible from space - variation 57,general,rejected,0.6938520210399819,medium,Scientific consensus; textbook references,2
+FC_00574,Humans use only 10% of their brain - variation 57,general,rejected,0.8093235240596397,medium,Scientific consensus; textbook references,1
+FC_00575,Lightning never strikes the same place twice - variation 57,general,rejected,0.7559340008030856,medium,Scientific consensus; textbook references,3
+FC_00576,The Sun is a star - variation 57,general,supported,0.7088157616856869,medium,Scientific consensus; textbook references,2
+FC_00577,Goldfish have a 3-second memory - variation 57,general,rejected,0.7967702949338806,medium,Scientific consensus; textbook references,1
+FC_00578,Bats are blind - variation 57,general,rejected,0.9484037998198107,medium,Scientific consensus; textbook references,2
+FC_00579,Mount Everest is the tallest mountain on Earth - variation 57,general,supported,0.7495186512563727,medium,Scientific consensus; textbook references,1
+FC_00580,The Amazon is the longest river in the world - variation 57,general,rejected,0.7855640464418799,medium,Scientific consensus; textbook references,3
+FC_00581,The Earth is round - variation 58,general,supported,0.6462370262041043,hard,Scientific consensus; textbook references,2
+FC_00582,Water boils at 100°C at sea level - variation 58,general,supported,0.8007373585639196,hard,Scientific consensus; textbook references,3
+FC_00583,The Great Wall of China is visible from space - variation 58,general,rejected,0.6508230960540712,hard,Scientific consensus; textbook references,3
+FC_00584,Humans use only 10% of their brain - variation 58,general,rejected,0.7655142074508043,hard,Scientific consensus; textbook references,2
+FC_00585,Lightning never strikes the same place twice - variation 58,general,rejected,0.7587002834781601,hard,Scientific consensus; textbook references,1
+FC_00586,The Sun is a star - variation 58,general,supported,0.8701324511649982,hard,Scientific consensus; textbook references,2
+FC_00587,Goldfish have a 3-second memory - variation 58,general,rejected,0.6957326427859574,hard,Scientific consensus; textbook references,1
+FC_00588,Bats are blind - variation 58,general,rejected,0.7953249856915672,hard,Scientific consensus; textbook references,1
+FC_00589,Mount Everest is the tallest mountain on Earth - variation 58,general,supported,0.6094231311505652,hard,Scientific consensus; textbook references,2
+FC_00590,The Amazon is the longest river in the world - variation 58,general,rejected,0.7092412052481789,hard,Scientific consensus; textbook references,3
+FC_00591,The Earth is round - variation 59,general,supported,0.9395266547709444,expert,Scientific consensus; textbook references,3
+FC_00592,Water boils at 100°C at sea level - variation 59,general,supported,0.6342948901557823,expert,Scientific consensus; textbook references,2
+FC_00593,The Great Wall of China is visible from space - variation 59,general,rejected,0.8876775743614826,expert,Scientific consensus; textbook references,2
+FC_00594,Humans use only 10% of their brain - variation 59,general,rejected,0.8070064286729678,expert,Scientific consensus; textbook references,1
+FC_00595,Lightning never strikes the same place twice - variation 59,general,rejected,0.8173426088284714,expert,Scientific consensus; textbook references,2
+FC_00596,The Sun is a star - variation 59,general,supported,0.6936768476285635,expert,Scientific consensus; textbook references,1
+FC_00597,Goldfish have a 3-second memory - variation 59,general,rejected,0.7858276925815129,expert,Scientific consensus; textbook references,3
+FC_00598,Bats are blind - variation 59,general,rejected,0.7862715222136978,expert,Scientific consensus; textbook references,1
+FC_00599,Mount Everest is the tallest mountain on Earth - variation 59,general,supported,0.6885843674634287,expert,Scientific consensus; textbook references,3
+FC_00600,The Amazon is the longest river in the world - variation 59,general,rejected,0.8941841003151473,expert,Scientific consensus; textbook references,3
+FC_00601,The Earth is round - variation 60,general,supported,0.7645053189133302,easy,Scientific consensus; textbook references,2
+FC_00602,Water boils at 100°C at sea level - variation 60,general,supported,0.8985464854106936,easy,Scientific consensus; textbook references,2
+FC_00603,The Great Wall of China is visible from space - variation 60,general,rejected,0.7503650871784412,easy,Scientific consensus; textbook references,3
+FC_00604,Humans use only 10% of their brain - variation 60,general,rejected,0.6598426310306065,easy,Scientific consensus; textbook references,3
+FC_00605,Lightning never strikes the same place twice - variation 60,general,rejected,0.6183747071230016,easy,Scientific consensus; textbook references,1
+FC_00606,The Sun is a star - variation 60,general,supported,0.7775171630556061,easy,Scientific consensus; textbook references,1
+FC_00607,Goldfish have a 3-second memory - variation 60,general,rejected,0.8549824245256222,easy,Scientific consensus; textbook references,3
+FC_00608,Bats are blind - variation 60,general,rejected,0.8904787394692942,easy,Scientific consensus; textbook references,1
+FC_00609,Mount Everest is the tallest mountain on Earth - variation 60,general,supported,0.764173709359263,easy,Scientific consensus; textbook references,1
+FC_00610,The Amazon is the longest river in the world - variation 60,general,rejected,0.7848121259664124,easy,Scientific consensus; textbook references,3
+FC_00611,The Earth is round - variation 61,general,supported,0.8874632275375851,medium,Scientific consensus; textbook references,2
+FC_00612,Water boils at 100°C at sea level - variation 61,general,supported,0.6173086096830652,medium,Scientific consensus; textbook references,2
+FC_00613,The Great Wall of China is visible from space - variation 61,general,rejected,0.7214558206466617,medium,Scientific consensus; textbook references,3
+FC_00614,Humans use only 10% of their brain - variation 61,general,rejected,0.741147317716123,medium,Scientific consensus; textbook references,2
+FC_00615,Lightning never strikes the same place twice - variation 61,general,rejected,0.7476664734854117,medium,Scientific consensus; textbook references,3
+FC_00616,The Sun is a star - variation 61,general,supported,0.8021167196722684,medium,Scientific consensus; textbook references,2
+FC_00617,Goldfish have a 3-second memory - variation 61,general,rejected,0.6861377540942275,medium,Scientific consensus; textbook references,3
+FC_00618,Bats are blind - variation 61,general,rejected,0.8163263819925483,medium,Scientific consensus; textbook references,3
+FC_00619,Mount Everest is the tallest mountain on Earth - variation 61,general,supported,0.7160753896583377,medium,Scientific consensus; textbook references,3
+FC_00620,The Amazon is the longest river in the world - variation 61,general,rejected,0.6869610654517783,medium,Scientific consensus; textbook references,3
+FC_00621,The Earth is round - variation 62,general,supported,0.8247241377722444,hard,Scientific consensus; textbook references,3
+FC_00622,Water boils at 100°C at sea level - variation 62,general,supported,0.7730125667220568,hard,Scientific consensus; textbook references,1
+FC_00623,The Great Wall of China is visible from space - variation 62,general,rejected,0.747850677542431,hard,Scientific consensus; textbook references,2
+FC_00624,Humans use only 10% of their brain - variation 62,general,rejected,0.7658833819398131,hard,Scientific consensus; textbook references,2
+FC_00625,Lightning never strikes the same place twice - variation 62,general,rejected,0.8683261700097142,hard,Scientific consensus; textbook references,3
+FC_00626,The Sun is a star - variation 62,general,supported,0.8167958741522536,hard,Scientific consensus; textbook references,2
+FC_00627,Goldfish have a 3-second memory - variation 62,general,rejected,0.7710371740821107,hard,Scientific consensus; textbook references,1
+FC_00628,Bats are blind - variation 62,general,rejected,0.8041207710820605,hard,Scientific consensus; textbook references,3
+FC_00629,Mount Everest is the tallest mountain on Earth - variation 62,general,supported,0.8228962876072815,hard,Scientific consensus; textbook references,1
+FC_00630,The Amazon is the longest river in the world - variation 62,general,rejected,0.8073760963881231,hard,Scientific consensus; textbook references,1
+FC_00631,The Earth is round - variation 63,general,supported,0.7296816658453922,expert,Scientific consensus; textbook references,3
+FC_00632,Water boils at 100°C at sea level - variation 63,general,supported,0.9212095467711809,expert,Scientific consensus; textbook references,3
+FC_00633,The Great Wall of China is visible from space - variation 63,general,rejected,0.6362994715686143,expert,Scientific consensus; textbook references,1
+FC_00634,Humans use only 10% of their brain - variation 63,general,rejected,0.7705327060762127,expert,Scientific consensus; textbook references,2
+FC_00635,Lightning never strikes the same place twice - variation 63,general,rejected,0.6029360711955204,expert,Scientific consensus; textbook references,2
+FC_00636,The Sun is a star - variation 63,general,supported,0.76612295377091,expert,Scientific consensus; textbook references,3
+FC_00637,Goldfish have a 3-second memory - variation 63,general,rejected,0.9447443890667235,expert,Scientific consensus; textbook references,1
+FC_00638,Bats are blind - variation 63,general,rejected,0.9488048857807097,expert,Scientific consensus; textbook references,1
+FC_00639,Mount Everest is the tallest mountain on Earth - variation 63,general,supported,0.6650750701660237,expert,Scientific consensus; textbook references,1
+FC_00640,The Amazon is the longest river in the world - variation 63,general,rejected,0.7920694439919616,expert,Scientific consensus; textbook references,2
+FC_00641,The Earth is round - variation 64,general,supported,0.6832343588630454,easy,Scientific consensus; textbook references,3
+FC_00642,Water boils at 100°C at sea level - variation 64,general,supported,0.7978965741285251,easy,Scientific consensus; textbook references,2
+FC_00643,The Great Wall of China is visible from space - variation 64,general,rejected,0.8960879288753353,easy,Scientific consensus; textbook references,3
+FC_00644,Humans use only 10% of their brain - variation 64,general,rejected,0.6813229886352482,easy,Scientific consensus; textbook references,3
+FC_00645,Lightning never strikes the same place twice - variation 64,general,rejected,0.6967317756446151,easy,Scientific consensus; textbook references,3
+FC_00646,The Sun is a star - variation 64,general,supported,0.8384853690453777,easy,Scientific consensus; textbook references,2
+FC_00647,Goldfish have a 3-second memory - variation 64,general,rejected,0.6911246341917296,easy,Scientific consensus; textbook references,2
+FC_00648,Bats are blind - variation 64,general,rejected,0.6311869197320503,easy,Scientific consensus; textbook references,3
+FC_00649,Mount Everest is the tallest mountain on Earth - variation 64,general,supported,0.8804912155732688,easy,Scientific consensus; textbook references,3
+FC_00650,The Amazon is the longest river in the world - variation 64,general,rejected,0.7326593592284734,easy,Scientific consensus; textbook references,2
+FC_00651,The Earth is round - variation 65,general,supported,0.8502281412733886,medium,Scientific consensus; textbook references,1
+FC_00652,Water boils at 100°C at sea level - variation 65,general,supported,0.6427988322708632,medium,Scientific consensus; textbook references,2
+FC_00653,The Great Wall of China is visible from space - variation 65,general,rejected,0.8228854773477109,medium,Scientific consensus; textbook references,1
+FC_00654,Humans use only 10% of their brain - variation 65,general,rejected,0.6688345384130446,medium,Scientific consensus; textbook references,2
+FC_00655,Lightning never strikes the same place twice - variation 65,general,rejected,0.8180273571794489,medium,Scientific consensus; textbook references,1
+FC_00656,The Sun is a star - variation 65,general,supported,0.6007724466944617,medium,Scientific consensus; textbook references,1
+FC_00657,Goldfish have a 3-second memory - variation 65,general,rejected,0.7450965259717851,medium,Scientific consensus; textbook references,1
+FC_00658,Bats are blind - variation 65,general,rejected,0.9459096215031904,medium,Scientific consensus; textbook references,3
+FC_00659,Mount Everest is the tallest mountain on Earth - variation 65,general,supported,0.9319345313352179,medium,Scientific consensus; textbook references,1
+FC_00660,The Amazon is the longest river in the world - variation 65,general,rejected,0.7788105536775634,medium,Scientific consensus; textbook references,1
+FC_00661,The Earth is round - variation 66,general,supported,0.6459408133651157,hard,Scientific consensus; textbook references,2
+FC_00662,Water boils at 100°C at sea level - variation 66,general,supported,0.6516331521462593,hard,Scientific consensus; textbook references,3
+FC_00663,The Great Wall of China is visible from space - variation 66,general,rejected,0.865829079049948,hard,Scientific consensus; textbook references,1
+FC_00664,Humans use only 10% of their brain - variation 66,general,rejected,0.8714793358424298,hard,Scientific consensus; textbook references,2
+FC_00665,Lightning never strikes the same place twice - variation 66,general,rejected,0.8411871289254235,hard,Scientific consensus; textbook references,3
+FC_00666,The Sun is a star - variation 66,general,supported,0.786981653722794,hard,Scientific consensus; textbook references,1
+FC_00667,Goldfish have a 3-second memory - variation 66,general,rejected,0.6703741251085615,hard,Scientific consensus; textbook references,2
+FC_00668,Bats are blind - variation 66,general,rejected,0.8819709319682756,hard,Scientific consensus; textbook references,3
+FC_00669,Mount Everest is the tallest mountain on Earth - variation 66,general,supported,0.9083340080550841,hard,Scientific consensus; textbook references,2
+FC_00670,The Amazon is the longest river in the world - variation 66,general,rejected,0.8917120361021211,hard,Scientific consensus; textbook references,1
+FC_00671,The Earth is round - variation 67,general,supported,0.7054124620477926,expert,Scientific consensus; textbook references,3
+FC_00672,Water boils at 100°C at sea level - variation 67,general,supported,0.6861557251472641,expert,Scientific consensus; textbook references,1
+FC_00673,The Great Wall of China is visible from space - variation 67,general,rejected,0.9116133810457824,expert,Scientific consensus; textbook references,1
+FC_00674,Humans use only 10% of their brain - variation 67,general,rejected,0.6787558887207032,expert,Scientific consensus; textbook references,1
+FC_00675,Lightning never strikes the same place twice - variation 67,general,rejected,0.8905374782928663,expert,Scientific consensus; textbook references,2
+FC_00676,The Sun is a star - variation 67,general,supported,0.8960479297746555,expert,Scientific consensus; textbook references,1
+FC_00677,Goldfish have a 3-second memory - variation 67,general,rejected,0.6346762119721192,expert,Scientific consensus; textbook references,2
+FC_00678,Bats are blind - variation 67,general,rejected,0.8258315690424638,expert,Scientific consensus; textbook references,3
+FC_00679,Mount Everest is the tallest mountain on Earth - variation 67,general,supported,0.8661586198219768,expert,Scientific consensus; textbook references,2
+FC_00680,The Amazon is the longest river in the world - variation 67,general,rejected,0.7904148472570369,expert,Scientific consensus; textbook references,2
+FC_00681,The Earth is round - variation 68,general,supported,0.7160692638143961,easy,Scientific consensus; textbook references,2
+FC_00682,Water boils at 100°C at sea level - variation 68,general,supported,0.7423220422516235,easy,Scientific consensus; textbook references,1
+FC_00683,The Great Wall of China is visible from space - variation 68,general,rejected,0.7759494017034694,easy,Scientific consensus; textbook references,1
+FC_00684,Humans use only 10% of their brain - variation 68,general,rejected,0.7463695053238824,easy,Scientific consensus; textbook references,1
+FC_00685,Lightning never strikes the same place twice - variation 68,general,rejected,0.6061593698684382,easy,Scientific consensus; textbook references,1
+FC_00686,The Sun is a star - variation 68,general,supported,0.7710922231389128,easy,Scientific consensus; textbook references,2
+FC_00687,Goldfish have a 3-second memory - variation 68,general,rejected,0.6523520148027543,easy,Scientific consensus; textbook references,2
+FC_00688,Bats are blind - variation 68,general,rejected,0.7417593199179999,easy,Scientific consensus; textbook references,3
+FC_00689,Mount Everest is the tallest mountain on Earth - variation 68,general,supported,0.6940759190627238,easy,Scientific consensus; textbook references,3
+FC_00690,The Amazon is the longest river in the world - variation 68,general,rejected,0.8580096747226609,easy,Scientific consensus; textbook references,3
+FC_00691,The Earth is round - variation 69,general,supported,0.946329709537062,medium,Scientific consensus; textbook references,3
+FC_00692,Water boils at 100°C at sea level - variation 69,general,supported,0.9280209592987512,medium,Scientific consensus; textbook references,1
+FC_00693,The Great Wall of China is visible from space - variation 69,general,rejected,0.7314617868108481,medium,Scientific consensus; textbook references,2
+FC_00694,Humans use only 10% of their brain - variation 69,general,rejected,0.9105989213960382,medium,Scientific consensus; textbook references,3
+FC_00695,Lightning never strikes the same place twice - variation 69,general,rejected,0.770550281871129,medium,Scientific consensus; textbook references,3
+FC_00696,The Sun is a star - variation 69,general,supported,0.8800112367157638,medium,Scientific consensus; textbook references,3
+FC_00697,Goldfish have a 3-second memory - variation 69,general,rejected,0.6816480348637018,medium,Scientific consensus; textbook references,1
+FC_00698,Bats are blind - variation 69,general,rejected,0.8923854833116366,medium,Scientific consensus; textbook references,3
+FC_00699,Mount Everest is the tallest mountain on Earth - variation 69,general,supported,0.790017337005987,medium,Scientific consensus; textbook references,2
+FC_00700,The Amazon is the longest river in the world - variation 69,general,rejected,0.9467558615784285,medium,Scientific consensus; textbook references,3
+FC_00701,The Earth is round - variation 70,general,supported,0.9154188089764137,hard,Scientific consensus; textbook references,2
+FC_00702,Water boils at 100°C at sea level - variation 70,general,supported,0.8042433753797334,hard,Scientific consensus; textbook references,3
+FC_00703,The Great Wall of China is visible from space - variation 70,general,rejected,0.7619942490342818,hard,Scientific consensus; textbook references,1
+FC_00704,Humans use only 10% of their brain - variation 70,general,rejected,0.6020953214103453,hard,Scientific consensus; textbook references,1
+FC_00705,Lightning never strikes the same place twice - variation 70,general,rejected,0.6459291023017935,hard,Scientific consensus; textbook references,3
+FC_00706,The Sun is a star - variation 70,general,supported,0.7430086332282055,hard,Scientific consensus; textbook references,2
+FC_00707,Goldfish have a 3-second memory - variation 70,general,rejected,0.7666566072971772,hard,Scientific consensus; textbook references,1
+FC_00708,Bats are blind - variation 70,general,rejected,0.6339827714233481,hard,Scientific consensus; textbook references,3
+FC_00709,Mount Everest is the tallest mountain on Earth - variation 70,general,supported,0.8246923381812532,hard,Scientific consensus; textbook references,3
+FC_00710,The Amazon is the longest river in the world - variation 70,general,rejected,0.6432566308341818,hard,Scientific consensus; textbook references,1
+FC_00711,The Earth is round - variation 71,general,supported,0.725929096739496,expert,Scientific consensus; textbook references,2
+FC_00712,Water boils at 100°C at sea level - variation 71,general,supported,0.6761473438929111,expert,Scientific consensus; textbook references,2
+FC_00713,The Great Wall of China is visible from space - variation 71,general,rejected,0.8352655635968326,expert,Scientific consensus; textbook references,1
+FC_00714,Humans use only 10% of their brain - variation 71,general,rejected,0.8454735703175608,expert,Scientific consensus; textbook references,2
+FC_00715,Lightning never strikes the same place twice - variation 71,general,rejected,0.8447449962088233,expert,Scientific consensus; textbook references,3
+FC_00716,The Sun is a star - variation 71,general,supported,0.7505634009639796,expert,Scientific consensus; textbook references,1
+FC_00717,Goldfish have a 3-second memory - variation 71,general,rejected,0.7898444071376574,expert,Scientific consensus; textbook references,3
+FC_00718,Bats are blind - variation 71,general,rejected,0.6790467096069781,expert,Scientific consensus; textbook references,2
+FC_00719,Mount Everest is the tallest mountain on Earth - variation 71,general,supported,0.6990225105522062,expert,Scientific consensus; textbook references,2
+FC_00720,The Amazon is the longest river in the world - variation 71,general,rejected,0.6587371560846974,expert,Scientific consensus; textbook references,2
+FC_00721,The Earth is round - variation 72,general,supported,0.6261913846387196,easy,Scientific consensus; textbook references,3
+FC_00722,Water boils at 100°C at sea level - variation 72,general,supported,0.9413708630006465,easy,Scientific consensus; textbook references,2
+FC_00723,The Great Wall of China is visible from space - variation 72,general,rejected,0.7150723604934388,easy,Scientific consensus; textbook references,1
+FC_00724,Humans use only 10% of their brain - variation 72,general,rejected,0.9003407953954957,easy,Scientific consensus; textbook references,2
+FC_00725,Lightning never strikes the same place twice - variation 72,general,rejected,0.7392576742231722,easy,Scientific consensus; textbook references,2
+FC_00726,The Sun is a star - variation 72,general,supported,0.7682964138019914,easy,Scientific consensus; textbook references,1
+FC_00727,Goldfish have a 3-second memory - variation 72,general,rejected,0.8439558453017508,easy,Scientific consensus; textbook references,2
+FC_00728,Bats are blind - variation 72,general,rejected,0.7800846677533867,easy,Scientific consensus; textbook references,2
+FC_00729,Mount Everest is the tallest mountain on Earth - variation 72,general,supported,0.6970138313583847,easy,Scientific consensus; textbook references,1
+FC_00730,The Amazon is the longest river in the world - variation 72,general,rejected,0.8740070246130723,easy,Scientific consensus; textbook references,2
+FC_00731,The Earth is round - variation 73,general,supported,0.6276007388709667,medium,Scientific consensus; textbook references,2
+FC_00732,Water boils at 100°C at sea level - variation 73,general,supported,0.7530491079586118,medium,Scientific consensus; textbook references,3
+FC_00733,The Great Wall of China is visible from space - variation 73,general,rejected,0.7559267057495579,medium,Scientific consensus; textbook references,3
+FC_00734,Humans use only 10% of their brain - variation 73,general,rejected,0.6915290114023904,medium,Scientific consensus; textbook references,2
+FC_00735,Lightning never strikes the same place twice - variation 73,general,rejected,0.6402593498246046,medium,Scientific consensus; textbook references,2
+FC_00736,The Sun is a star - variation 73,general,supported,0.6735815557948399,medium,Scientific consensus; textbook references,2
+FC_00737,Goldfish have a 3-second memory - variation 73,general,rejected,0.6564823507565474,medium,Scientific consensus; textbook references,3
+FC_00738,Bats are blind - variation 73,general,rejected,0.9236164653671901,medium,Scientific consensus; textbook references,3
+FC_00739,Mount Everest is the tallest mountain on Earth - variation 73,general,supported,0.6976464314581889,medium,Scientific consensus; textbook references,1
+FC_00740,The Amazon is the longest river in the world - variation 73,general,rejected,0.6514703694636036,medium,Scientific consensus; textbook references,2
+FC_00741,The Earth is round - variation 74,general,supported,0.8399690762285519,hard,Scientific consensus; textbook references,3
+FC_00742,Water boils at 100°C at sea level - variation 74,general,supported,0.6973867209173777,hard,Scientific consensus; textbook references,2
+FC_00743,The Great Wall of China is visible from space - variation 74,general,rejected,0.9236206309283534,hard,Scientific consensus; textbook references,2
+FC_00744,Humans use only 10% of their brain - variation 74,general,rejected,0.6441896981782133,hard,Scientific consensus; textbook references,2
+FC_00745,Lightning never strikes the same place twice - variation 74,general,rejected,0.7510324727507787,hard,Scientific consensus; textbook references,1
+FC_00746,The Sun is a star - variation 74,general,supported,0.6303355536725836,hard,Scientific consensus; textbook references,1
+FC_00747,Goldfish have a 3-second memory - variation 74,general,rejected,0.6759055651356586,hard,Scientific consensus; textbook references,2
+FC_00748,Bats are blind - variation 74,general,rejected,0.8615599884061205,hard,Scientific consensus; textbook references,1
+FC_00749,Mount Everest is the tallest mountain on Earth - variation 74,general,supported,0.7245989950210375,hard,Scientific consensus; textbook references,1
+FC_00750,The Amazon is the longest river in the world - variation 74,general,rejected,0.9016780762679745,hard,Scientific consensus; textbook references,1
+FC_00751,The Earth is round - variation 75,general,supported,0.8767373801416449,expert,Scientific consensus; textbook references,3
+FC_00752,Water boils at 100°C at sea level - variation 75,general,supported,0.7338651494599967,expert,Scientific consensus; textbook references,3
+FC_00753,The Great Wall of China is visible from space - variation 75,general,rejected,0.7621343670832328,expert,Scientific consensus; textbook references,2
+FC_00754,Humans use only 10% of their brain - variation 75,general,rejected,0.7272814589491874,expert,Scientific consensus; textbook references,3
+FC_00755,Lightning never strikes the same place twice - variation 75,general,rejected,0.9465379940440726,expert,Scientific consensus; textbook references,3
+FC_00756,The Sun is a star - variation 75,general,supported,0.8554250654610398,expert,Scientific consensus; textbook references,3
+FC_00757,Goldfish have a 3-second memory - variation 75,general,rejected,0.7675906590277026,expert,Scientific consensus; textbook references,1
+FC_00758,Bats are blind - variation 75,general,rejected,0.7505512400221523,expert,Scientific consensus; textbook references,3
+FC_00759,Mount Everest is the tallest mountain on Earth - variation 75,general,supported,0.8021026366632236,expert,Scientific consensus; textbook references,1
+FC_00760,The Amazon is the longest river in the world - variation 75,general,rejected,0.9371351751710169,expert,Scientific consensus; textbook references,2
+FC_00761,The Earth is round - variation 76,general,supported,0.6988064805986798,easy,Scientific consensus; textbook references,3
+FC_00762,Water boils at 100°C at sea level - variation 76,general,supported,0.7942560791074549,easy,Scientific consensus; textbook references,3
+FC_00763,The Great Wall of China is visible from space - variation 76,general,rejected,0.7280157120865726,easy,Scientific consensus; textbook references,2
+FC_00764,Humans use only 10% of their brain - variation 76,general,rejected,0.9238896979997511,easy,Scientific consensus; textbook references,2
+FC_00765,Lightning never strikes the same place twice - variation 76,general,rejected,0.6947552476192927,easy,Scientific consensus; textbook references,2
+FC_00766,The Sun is a star - variation 76,general,supported,0.9377548005918215,easy,Scientific consensus; textbook references,1
+FC_00767,Goldfish have a 3-second memory - variation 76,general,rejected,0.8422858131272611,easy,Scientific consensus; textbook references,1
+FC_00768,Bats are blind - variation 76,general,rejected,0.9035391019081311,easy,Scientific consensus; textbook references,3
+FC_00769,Mount Everest is the tallest mountain on Earth - variation 76,general,supported,0.7029978459511115,easy,Scientific consensus; textbook references,1
+FC_00770,The Amazon is the longest river in the world - variation 76,general,rejected,0.7416373487134016,easy,Scientific consensus; textbook references,3
+FC_00771,The Earth is round - variation 77,general,supported,0.7979882429139367,medium,Scientific consensus; textbook references,1
+FC_00772,Water boils at 100°C at sea level - variation 77,general,supported,0.6403806124985143,medium,Scientific consensus; textbook references,2
+FC_00773,The Great Wall of China is visible from space - variation 77,general,rejected,0.6921481355935409,medium,Scientific consensus; textbook references,3
+FC_00774,Humans use only 10% of their brain - variation 77,general,rejected,0.8269938647199901,medium,Scientific consensus; textbook references,2
+FC_00775,Lightning never strikes the same place twice - variation 77,general,rejected,0.9028178909552695,medium,Scientific consensus; textbook references,1
+FC_00776,The Sun is a star - variation 77,general,supported,0.7512297201312812,medium,Scientific consensus; textbook references,1
+FC_00777,Goldfish have a 3-second memory - variation 77,general,rejected,0.926062723625132,medium,Scientific consensus; textbook references,3
+FC_00778,Bats are blind - variation 77,general,rejected,0.9374030166249687,medium,Scientific consensus; textbook references,2
+FC_00779,Mount Everest is the tallest mountain on Earth - variation 77,general,supported,0.7396415862782814,medium,Scientific consensus; textbook references,1
+FC_00780,The Amazon is the longest river in the world - variation 77,general,rejected,0.8523355677082727,medium,Scientific consensus; textbook references,1
+FC_00781,The Earth is round - variation 78,general,supported,0.6611959001558558,hard,Scientific consensus; textbook references,2
+FC_00782,Water boils at 100°C at sea level - variation 78,general,supported,0.6270565069141675,hard,Scientific consensus; textbook references,3
+FC_00783,The Great Wall of China is visible from space - variation 78,general,rejected,0.9396663390415838,hard,Scientific consensus; textbook references,1
+FC_00784,Humans use only 10% of their brain - variation 78,general,rejected,0.7529082349459668,hard,Scientific consensus; textbook references,2
+FC_00785,Lightning never strikes the same place twice - variation 78,general,rejected,0.6919329193998508,hard,Scientific consensus; textbook references,2
+FC_00786,The Sun is a star - variation 78,general,supported,0.7581840395509831,hard,Scientific consensus; textbook references,3
+FC_00787,Goldfish have a 3-second memory - variation 78,general,rejected,0.8655226048348668,hard,Scientific consensus; textbook references,3
+FC_00788,Bats are blind - variation 78,general,rejected,0.6668211334072407,hard,Scientific consensus; textbook references,2
+FC_00789,Mount Everest is the tallest mountain on Earth - variation 78,general,supported,0.7615208457106901,hard,Scientific consensus; textbook references,3
+FC_00790,The Amazon is the longest river in the world - variation 78,general,rejected,0.736610591825373,hard,Scientific consensus; textbook references,3
+FC_00791,The Earth is round - variation 79,general,supported,0.7875060238423891,expert,Scientific consensus; textbook references,2
+FC_00792,Water boils at 100°C at sea level - variation 79,general,supported,0.8083448577246889,expert,Scientific consensus; textbook references,3
+FC_00793,The Great Wall of China is visible from space - variation 79,general,rejected,0.9181810579891612,expert,Scientific consensus; textbook references,2
+FC_00794,Humans use only 10% of their brain - variation 79,general,rejected,0.8750489055503279,expert,Scientific consensus; textbook references,3
+FC_00795,Lightning never strikes the same place twice - variation 79,general,rejected,0.6362707526343059,expert,Scientific consensus; textbook references,2
+FC_00796,The Sun is a star - variation 79,general,supported,0.714692235718907,expert,Scientific consensus; textbook references,2
+FC_00797,Goldfish have a 3-second memory - variation 79,general,rejected,0.6879797350890942,expert,Scientific consensus; textbook references,2
+FC_00798,Bats are blind - variation 79,general,rejected,0.8892730597064491,expert,Scientific consensus; textbook references,2
+FC_00799,Mount Everest is the tallest mountain on Earth - variation 79,general,supported,0.7464249834874767,expert,Scientific consensus; textbook references,3
+FC_00800,The Amazon is the longest river in the world - variation 79,general,rejected,0.7372331696478669,expert,Scientific consensus; textbook references,1
+FC_00801,The Earth is round - variation 80,general,supported,0.81160826707827,easy,Scientific consensus; textbook references,2
+FC_00802,Water boils at 100°C at sea level - variation 80,general,supported,0.871560783756977,easy,Scientific consensus; textbook references,3
+FC_00803,The Great Wall of China is visible from space - variation 80,general,rejected,0.7742025078390977,easy,Scientific consensus; textbook references,1
+FC_00804,Humans use only 10% of their brain - variation 80,general,rejected,0.601710239147735,easy,Scientific consensus; textbook references,1
+FC_00805,Lightning never strikes the same place twice - variation 80,general,rejected,0.916269867807322,easy,Scientific consensus; textbook references,2
+FC_00806,The Sun is a star - variation 80,general,supported,0.7233081624727267,easy,Scientific consensus; textbook references,2
+FC_00807,Goldfish have a 3-second memory - variation 80,general,rejected,0.889902889588055,easy,Scientific consensus; textbook references,3
+FC_00808,Bats are blind - variation 80,general,rejected,0.8908999700926556,easy,Scientific consensus; textbook references,2
+FC_00809,Mount Everest is the tallest mountain on Earth - variation 80,general,supported,0.6638264741585332,easy,Scientific consensus; textbook references,2
+FC_00810,The Amazon is the longest river in the world - variation 80,general,rejected,0.8321109874135568,easy,Scientific consensus; textbook references,1
+FC_00811,The Earth is round - variation 81,general,supported,0.6512806755121279,medium,Scientific consensus; textbook references,3
+FC_00812,Water boils at 100°C at sea level - variation 81,general,supported,0.6744996813477205,medium,Scientific consensus; textbook references,3
+FC_00813,The Great Wall of China is visible from space - variation 81,general,rejected,0.7542098037947556,medium,Scientific consensus; textbook references,3
+FC_00814,Humans use only 10% of their brain - variation 81,general,rejected,0.8582448285858887,medium,Scientific consensus; textbook references,3
+FC_00815,Lightning never strikes the same place twice - variation 81,general,rejected,0.7864449923792719,medium,Scientific consensus; textbook references,1
+FC_00816,The Sun is a star - variation 81,general,supported,0.7744659998114585,medium,Scientific consensus; textbook references,1
+FC_00817,Goldfish have a 3-second memory - variation 81,general,rejected,0.6015394469173637,medium,Scientific consensus; textbook references,2
+FC_00818,Bats are blind - variation 81,general,rejected,0.8931747328154693,medium,Scientific consensus; textbook references,2
+FC_00819,Mount Everest is the tallest mountain on Earth - variation 81,general,supported,0.8940937016413135,medium,Scientific consensus; textbook references,3
+FC_00820,The Amazon is the longest river in the world - variation 81,general,rejected,0.6407732038209102,medium,Scientific consensus; textbook references,1
+FC_00821,The Earth is round - variation 82,general,supported,0.6571692683069121,hard,Scientific consensus; textbook references,1
+FC_00822,Water boils at 100°C at sea level - variation 82,general,supported,0.646618006281486,hard,Scientific consensus; textbook references,3
+FC_00823,The Great Wall of China is visible from space - variation 82,general,rejected,0.6592827901838769,hard,Scientific consensus; textbook references,3
+FC_00824,Humans use only 10% of their brain - variation 82,general,rejected,0.8786179327426304,hard,Scientific consensus; textbook references,3
+FC_00825,Lightning never strikes the same place twice - variation 82,general,rejected,0.6020248848516874,hard,Scientific consensus; textbook references,2
+FC_00826,The Sun is a star - variation 82,general,supported,0.6376376974964821,hard,Scientific consensus; textbook references,1
+FC_00827,Goldfish have a 3-second memory - variation 82,general,rejected,0.8947320211996929,hard,Scientific consensus; textbook references,3
+FC_00828,Bats are blind - variation 82,general,rejected,0.8347201034492219,hard,Scientific consensus; textbook references,1
+FC_00829,Mount Everest is the tallest mountain on Earth - variation 82,general,supported,0.8710196792614582,hard,Scientific consensus; textbook references,3
+FC_00830,The Amazon is the longest river in the world - variation 82,general,rejected,0.8933269123984942,hard,Scientific consensus; textbook references,2
+FC_00831,The Earth is round - variation 83,general,supported,0.6065136676859504,expert,Scientific consensus; textbook references,2
+FC_00832,Water boils at 100°C at sea level - variation 83,general,supported,0.7064822731853762,expert,Scientific consensus; textbook references,3
+FC_00833,The Great Wall of China is visible from space - variation 83,general,rejected,0.8349277321421389,expert,Scientific consensus; textbook references,3
+FC_00834,Humans use only 10% of their brain - variation 83,general,rejected,0.9348526501775114,expert,Scientific consensus; textbook references,2
+FC_00835,Lightning never strikes the same place twice - variation 83,general,rejected,0.7533894398906911,expert,Scientific consensus; textbook references,1
+FC_00836,The Sun is a star - variation 83,general,supported,0.938495777940326,expert,Scientific consensus; textbook references,1
+FC_00837,Goldfish have a 3-second memory - variation 83,general,rejected,0.7278673962314968,expert,Scientific consensus; textbook references,2
+FC_00838,Bats are blind - variation 83,general,rejected,0.935594207609068,expert,Scientific consensus; textbook references,1
+FC_00839,Mount Everest is the tallest mountain on Earth - variation 83,general,supported,0.818034664608944,expert,Scientific consensus; textbook references,3
+FC_00840,The Amazon is the longest river in the world - variation 83,general,rejected,0.8212696117126986,expert,Scientific consensus; textbook references,1
+FC_00841,The Earth is round - variation 84,general,supported,0.6911169323223125,easy,Scientific consensus; textbook references,3
+FC_00842,Water boils at 100°C at sea level - variation 84,general,supported,0.7986040658695616,easy,Scientific consensus; textbook references,1
+FC_00843,The Great Wall of China is visible from space - variation 84,general,rejected,0.6315162270686757,easy,Scientific consensus; textbook references,3
+FC_00844,Humans use only 10% of their brain - variation 84,general,rejected,0.669574622308636,easy,Scientific consensus; textbook references,3
+FC_00845,Lightning never strikes the same place twice - variation 84,general,rejected,0.912632260899296,easy,Scientific consensus; textbook references,3
+FC_00846,The Sun is a star - variation 84,general,supported,0.7216248542418965,easy,Scientific consensus; textbook references,1
+FC_00847,Goldfish have a 3-second memory - variation 84,general,rejected,0.8181195616206104,easy,Scientific consensus; textbook references,3
+FC_00848,Bats are blind - variation 84,general,rejected,0.7772203705905782,easy,Scientific consensus; textbook references,3
+FC_00849,Mount Everest is the tallest mountain on Earth - variation 84,general,supported,0.6163681130010421,easy,Scientific consensus; textbook references,3
+FC_00850,The Amazon is the longest river in the world - variation 84,general,rejected,0.8534978345501572,easy,Scientific consensus; textbook references,2
+FC_00851,The Earth is round - variation 85,general,supported,0.8678697146085999,medium,Scientific consensus; textbook references,2
+FC_00852,Water boils at 100°C at sea level - variation 85,general,supported,0.7001243363670392,medium,Scientific consensus; textbook references,1
+FC_00853,The Great Wall of China is visible from space - variation 85,general,rejected,0.7457046516749388,medium,Scientific consensus; textbook references,3
+FC_00854,Humans use only 10% of their brain - variation 85,general,rejected,0.7352938342356568,medium,Scientific consensus; textbook references,3
+FC_00855,Lightning never strikes the same place twice - variation 85,general,rejected,0.7364048875435367,medium,Scientific consensus; textbook references,1
+FC_00856,The Sun is a star - variation 85,general,supported,0.6349526348627492,medium,Scientific consensus; textbook references,1
+FC_00857,Goldfish have a 3-second memory - variation 85,general,rejected,0.7420969836343388,medium,Scientific consensus; textbook references,3
+FC_00858,Bats are blind - variation 85,general,rejected,0.6003339462988946,medium,Scientific consensus; textbook references,2
+FC_00859,Mount Everest is the tallest mountain on Earth - variation 85,general,supported,0.7994284356694217,medium,Scientific consensus; textbook references,3
+FC_00860,The Amazon is the longest river in the world - variation 85,general,rejected,0.7352309697247791,medium,Scientific consensus; textbook references,2
+FC_00861,The Earth is round - variation 86,general,supported,0.7799299530757687,hard,Scientific consensus; textbook references,3
+FC_00862,Water boils at 100°C at sea level - variation 86,general,supported,0.8844058321851803,hard,Scientific consensus; textbook references,2
+FC_00863,The Great Wall of China is visible from space - variation 86,general,rejected,0.9237873424435847,hard,Scientific consensus; textbook references,1
+FC_00864,Humans use only 10% of their brain - variation 86,general,rejected,0.8989815485825947,hard,Scientific consensus; textbook references,2
+FC_00865,Lightning never strikes the same place twice - variation 86,general,rejected,0.9217325377789121,hard,Scientific consensus; textbook references,1
+FC_00866,The Sun is a star - variation 86,general,supported,0.7537631092225335,hard,Scientific consensus; textbook references,2
+FC_00867,Goldfish have a 3-second memory - variation 86,general,rejected,0.6519155346155803,hard,Scientific consensus; textbook references,3
+FC_00868,Bats are blind - variation 86,general,rejected,0.6466306535284014,hard,Scientific consensus; textbook references,2
+FC_00869,Mount Everest is the tallest mountain on Earth - variation 86,general,supported,0.720876872639602,hard,Scientific consensus; textbook references,2
+FC_00870,The Amazon is the longest river in the world - variation 86,general,rejected,0.7950159047635365,hard,Scientific consensus; textbook references,1
+FC_00871,The Earth is round - variation 87,general,supported,0.9461332907615696,expert,Scientific consensus; textbook references,3
+FC_00872,Water boils at 100°C at sea level - variation 87,general,supported,0.8144582812250027,expert,Scientific consensus; textbook references,1
+FC_00873,The Great Wall of China is visible from space - variation 87,general,rejected,0.6620142065840013,expert,Scientific consensus; textbook references,1
+FC_00874,Humans use only 10% of their brain - variation 87,general,rejected,0.7011080053061746,expert,Scientific consensus; textbook references,1
+FC_00875,Lightning never strikes the same place twice - variation 87,general,rejected,0.6912192230026823,expert,Scientific consensus; textbook references,1
+FC_00876,The Sun is a star - variation 87,general,supported,0.7281845999008167,expert,Scientific consensus; textbook references,3
+FC_00877,Goldfish have a 3-second memory - variation 87,general,rejected,0.691830710082736,expert,Scientific consensus; textbook references,2
+FC_00878,Bats are blind - variation 87,general,rejected,0.7312985554762774,expert,Scientific consensus; textbook references,3
+FC_00879,Mount Everest is the tallest mountain on Earth - variation 87,general,supported,0.8165332776208811,expert,Scientific consensus; textbook references,1
+FC_00880,The Amazon is the longest river in the world - variation 87,general,rejected,0.8454785606038557,expert,Scientific consensus; textbook references,3
+FC_00881,The Earth is round - variation 88,general,supported,0.622343259214875,easy,Scientific consensus; textbook references,2
+FC_00882,Water boils at 100°C at sea level - variation 88,general,supported,0.698061889239922,easy,Scientific consensus; textbook references,1
+FC_00883,The Great Wall of China is visible from space - variation 88,general,rejected,0.6258130579499298,easy,Scientific consensus; textbook references,1
+FC_00884,Humans use only 10% of their brain - variation 88,general,rejected,0.8526737298094184,easy,Scientific consensus; textbook references,2
+FC_00885,Lightning never strikes the same place twice - variation 88,general,rejected,0.7641808130991836,easy,Scientific consensus; textbook references,3
+FC_00886,The Sun is a star - variation 88,general,supported,0.8409245436318338,easy,Scientific consensus; textbook references,2
+FC_00887,Goldfish have a 3-second memory - variation 88,general,rejected,0.8219032205827441,easy,Scientific consensus; textbook references,1
+FC_00888,Bats are blind - variation 88,general,rejected,0.8705162409892386,easy,Scientific consensus; textbook references,2
+FC_00889,Mount Everest is the tallest mountain on Earth - variation 88,general,supported,0.9141431606704024,easy,Scientific consensus; textbook references,2
+FC_00890,The Amazon is the longest river in the world - variation 88,general,rejected,0.8018629859443949,easy,Scientific consensus; textbook references,1
+FC_00891,The Earth is round - variation 89,general,supported,0.7436790299674514,medium,Scientific consensus; textbook references,1
+FC_00892,Water boils at 100°C at sea level - variation 89,general,supported,0.6493807767194095,medium,Scientific consensus; textbook references,3
+FC_00893,The Great Wall of China is visible from space - variation 89,general,rejected,0.6653643333280953,medium,Scientific consensus; textbook references,3
+FC_00894,Humans use only 10% of their brain - variation 89,general,rejected,0.816738393323101,medium,Scientific consensus; textbook references,2
+FC_00895,Lightning never strikes the same place twice - variation 89,general,rejected,0.9238387654595865,medium,Scientific consensus; textbook references,2
+FC_00896,The Sun is a star - variation 89,general,supported,0.6975047626335387,medium,Scientific consensus; textbook references,3
+FC_00897,Goldfish have a 3-second memory - variation 89,general,rejected,0.644499891818803,medium,Scientific consensus; textbook references,2
+FC_00898,Bats are blind - variation 89,general,rejected,0.6505311384185727,medium,Scientific consensus; textbook references,3
+FC_00899,Mount Everest is the tallest mountain on Earth - variation 89,general,supported,0.8964210060162202,medium,Scientific consensus; textbook references,3
+FC_00900,The Amazon is the longest river in the world - variation 89,general,rejected,0.8372943536200879,medium,Scientific consensus; textbook references,1
+FC_00901,The Earth is round - variation 90,general,supported,0.7850920498304008,hard,Scientific consensus; textbook references,3
+FC_00902,Water boils at 100°C at sea level - variation 90,general,supported,0.9355814389070944,hard,Scientific consensus; textbook references,3
+FC_00903,The Great Wall of China is visible from space - variation 90,general,rejected,0.8009614255312655,hard,Scientific consensus; textbook references,3
+FC_00904,Humans use only 10% of their brain - variation 90,general,rejected,0.6027996723137312,hard,Scientific consensus; textbook references,3
+FC_00905,Lightning never strikes the same place twice - variation 90,general,rejected,0.7929674418861644,hard,Scientific consensus; textbook references,3
+FC_00906,The Sun is a star - variation 90,general,supported,0.847977168824694,hard,Scientific consensus; textbook references,3
+FC_00907,Goldfish have a 3-second memory - variation 90,general,rejected,0.855495877223726,hard,Scientific consensus; textbook references,1
+FC_00908,Bats are blind - variation 90,general,rejected,0.798227515596186,hard,Scientific consensus; textbook references,2
+FC_00909,Mount Everest is the tallest mountain on Earth - variation 90,general,supported,0.9161379199422686,hard,Scientific consensus; textbook references,1
+FC_00910,The Amazon is the longest river in the world - variation 90,general,rejected,0.947831942253778,hard,Scientific consensus; textbook references,1
+FC_00911,The Earth is round - variation 91,general,supported,0.7396796742966569,expert,Scientific consensus; textbook references,2
+FC_00912,Water boils at 100°C at sea level - variation 91,general,supported,0.7658260387969829,expert,Scientific consensus; textbook references,3
+FC_00913,The Great Wall of China is visible from space - variation 91,general,rejected,0.6846492721097399,expert,Scientific consensus; textbook references,3
+FC_00914,Humans use only 10% of their brain - variation 91,general,rejected,0.8845800732707164,expert,Scientific consensus; textbook references,3
+FC_00915,Lightning never strikes the same place twice - variation 91,general,rejected,0.9027078470399966,expert,Scientific consensus; textbook references,2
+FC_00916,The Sun is a star - variation 91,general,supported,0.7866204735556301,expert,Scientific consensus; textbook references,1
+FC_00917,Goldfish have a 3-second memory - variation 91,general,rejected,0.8537693725596088,expert,Scientific consensus; textbook references,2
+FC_00918,Bats are blind - variation 91,general,rejected,0.6518161302288817,expert,Scientific consensus; textbook references,1
+FC_00919,Mount Everest is the tallest mountain on Earth - variation 91,general,supported,0.685473184880502,expert,Scientific consensus; textbook references,1
+FC_00920,The Amazon is the longest river in the world - variation 91,general,rejected,0.6508558029001978,expert,Scientific consensus; textbook references,1
+FC_00921,The Earth is round - variation 92,general,supported,0.77580929317391,easy,Scientific consensus; textbook references,2
+FC_00922,Water boils at 100°C at sea level - variation 92,general,supported,0.8344655952458158,easy,Scientific consensus; textbook references,2
+FC_00923,The Great Wall of China is visible from space - variation 92,general,rejected,0.7894226388089327,easy,Scientific consensus; textbook references,3
+FC_00924,Humans use only 10% of their brain - variation 92,general,rejected,0.7843098391329171,easy,Scientific consensus; textbook references,2
+FC_00925,Lightning never strikes the same place twice - variation 92,general,rejected,0.7513628312516675,easy,Scientific consensus; textbook references,3
+FC_00926,The Sun is a star - variation 92,general,supported,0.8597282181498569,easy,Scientific consensus; textbook references,2
+FC_00927,Goldfish have a 3-second memory - variation 92,general,rejected,0.7754729288664335,easy,Scientific consensus; textbook references,2
+FC_00928,Bats are blind - variation 92,general,rejected,0.6751568040258606,easy,Scientific consensus; textbook references,1
+FC_00929,Mount Everest is the tallest mountain on Earth - variation 92,general,supported,0.6194558505974016,easy,Scientific consensus; textbook references,1
+FC_00930,The Amazon is the longest river in the world - variation 92,general,rejected,0.8111117150974254,easy,Scientific consensus; textbook references,2
+FC_00931,The Earth is round - variation 93,general,supported,0.8197944167021276,medium,Scientific consensus; textbook references,2
+FC_00932,Water boils at 100°C at sea level - variation 93,general,supported,0.6808808452323483,medium,Scientific consensus; textbook references,1
+FC_00933,The Great Wall of China is visible from space - variation 93,general,rejected,0.875010001222099,medium,Scientific consensus; textbook references,1
+FC_00934,Humans use only 10% of their brain - variation 93,general,rejected,0.809764201039352,medium,Scientific consensus; textbook references,1
+FC_00935,Lightning never strikes the same place twice - variation 93,general,rejected,0.7323051833041939,medium,Scientific consensus; textbook references,3
+FC_00936,The Sun is a star - variation 93,general,supported,0.8957215160916578,medium,Scientific consensus; textbook references,2
+FC_00937,Goldfish have a 3-second memory - variation 93,general,rejected,0.7372129101655894,medium,Scientific consensus; textbook references,2
+FC_00938,Bats are blind - variation 93,general,rejected,0.7996517568534558,medium,Scientific consensus; textbook references,1
+FC_00939,Mount Everest is the tallest mountain on Earth - variation 93,general,supported,0.768725030533369,medium,Scientific consensus; textbook references,1
+FC_00940,The Amazon is the longest river in the world - variation 93,general,rejected,0.9222012804107331,medium,Scientific consensus; textbook references,1
+FC_00941,The Earth is round - variation 94,general,supported,0.9340202464878439,hard,Scientific consensus; textbook references,3
+FC_00942,Water boils at 100°C at sea level - variation 94,general,supported,0.7757836155925573,hard,Scientific consensus; textbook references,2
+FC_00943,The Great Wall of China is visible from space - variation 94,general,rejected,0.8123149579182444,hard,Scientific consensus; textbook references,2
+FC_00944,Humans use only 10% of their brain - variation 94,general,rejected,0.6651325667968937,hard,Scientific consensus; textbook references,2
+FC_00945,Lightning never strikes the same place twice - variation 94,general,rejected,0.8221514318287421,hard,Scientific consensus; textbook references,1
+FC_00946,The Sun is a star - variation 94,general,supported,0.9304887066604264,hard,Scientific consensus; textbook references,2
+FC_00947,Goldfish have a 3-second memory - variation 94,general,rejected,0.6571718668947204,hard,Scientific consensus; textbook references,3
+FC_00948,Bats are blind - variation 94,general,rejected,0.809724459933864,hard,Scientific consensus; textbook references,1
+FC_00949,Mount Everest is the tallest mountain on Earth - variation 94,general,supported,0.9197230193693064,hard,Scientific consensus; textbook references,3
+FC_00950,The Amazon is the longest river in the world - variation 94,general,rejected,0.7214993862906258,hard,Scientific consensus; textbook references,1
+FC_00951,The Earth is round - variation 95,general,supported,0.8825718370151184,expert,Scientific consensus; textbook references,1
+FC_00952,Water boils at 100°C at sea level - variation 95,general,supported,0.78539468779015,expert,Scientific consensus; textbook references,3
+FC_00953,The Great Wall of China is visible from space - variation 95,general,rejected,0.8827185939139917,expert,Scientific consensus; textbook references,3
+FC_00954,Humans use only 10% of their brain - variation 95,general,rejected,0.6451503253680398,expert,Scientific consensus; textbook references,3
+FC_00955,Lightning never strikes the same place twice - variation 95,general,rejected,0.8952112151578717,expert,Scientific consensus; textbook references,3
+FC_00956,The Sun is a star - variation 95,general,supported,0.8125093843383522,expert,Scientific consensus; textbook references,1
+FC_00957,Goldfish have a 3-second memory - variation 95,general,rejected,0.9283808693759159,expert,Scientific consensus; textbook references,1
+FC_00958,Bats are blind - variation 95,general,rejected,0.8635231975539752,expert,Scientific consensus; textbook references,3
+FC_00959,Mount Everest is the tallest mountain on Earth - variation 95,general,supported,0.802187856564518,expert,Scientific consensus; textbook references,2
+FC_00960,The Amazon is the longest river in the world - variation 95,general,rejected,0.8960066036084773,expert,Scientific consensus; textbook references,1
+FC_00961,The Earth is round - variation 96,general,supported,0.6388113983803595,easy,Scientific consensus; textbook references,2
+FC_00962,Water boils at 100°C at sea level - variation 96,general,supported,0.6160597698858266,easy,Scientific consensus; textbook references,2
+FC_00963,The Great Wall of China is visible from space - variation 96,general,rejected,0.8639460547527222,easy,Scientific consensus; textbook references,1
+FC_00964,Humans use only 10% of their brain - variation 96,general,rejected,0.6262618873803912,easy,Scientific consensus; textbook references,3
+FC_00965,Lightning never strikes the same place twice - variation 96,general,rejected,0.7919475583720839,easy,Scientific consensus; textbook references,3
+FC_00966,The Sun is a star - variation 96,general,supported,0.7902600646877658,easy,Scientific consensus; textbook references,2
+FC_00967,Goldfish have a 3-second memory - variation 96,general,rejected,0.63345790906604,easy,Scientific consensus; textbook references,3
+FC_00968,Bats are blind - variation 96,general,rejected,0.7200405141641659,easy,Scientific consensus; textbook references,1
+FC_00969,Mount Everest is the tallest mountain on Earth - variation 96,general,supported,0.7828021152528853,easy,Scientific consensus; textbook references,3
+FC_00970,The Amazon is the longest river in the world - variation 96,general,rejected,0.8716576400417434,easy,Scientific consensus; textbook references,3
+FC_00971,The Earth is round - variation 97,general,supported,0.8580588720018847,medium,Scientific consensus; textbook references,2
+FC_00972,Water boils at 100°C at sea level - variation 97,general,supported,0.8471108369435641,medium,Scientific consensus; textbook references,1
+FC_00973,The Great Wall of China is visible from space - variation 97,general,rejected,0.7853706214881118,medium,Scientific consensus; textbook references,2
+FC_00974,Humans use only 10% of their brain - variation 97,general,rejected,0.789981143393095,medium,Scientific consensus; textbook references,1
+FC_00975,Lightning never strikes the same place twice - variation 97,general,rejected,0.6000227926608702,medium,Scientific consensus; textbook references,1
+FC_00976,The Sun is a star - variation 97,general,supported,0.7409382623046965,medium,Scientific consensus; textbook references,2
+FC_00977,Goldfish have a 3-second memory - variation 97,general,rejected,0.9129437986174203,medium,Scientific consensus; textbook references,2
+FC_00978,Bats are blind - variation 97,general,rejected,0.6215184131106917,medium,Scientific consensus; textbook references,3
+FC_00979,Mount Everest is the tallest mountain on Earth - variation 97,general,supported,0.644848086663231,medium,Scientific consensus; textbook references,3
+FC_00980,The Amazon is the longest river in the world - variation 97,general,rejected,0.7389347798016784,medium,Scientific consensus; textbook references,1
+FC_00981,The Earth is round - variation 98,general,supported,0.9469806252805165,hard,Scientific consensus; textbook references,1
+FC_00982,Water boils at 100°C at sea level - variation 98,general,supported,0.9181174251507228,hard,Scientific consensus; textbook references,1
+FC_00983,The Great Wall of China is visible from space - variation 98,general,rejected,0.9000774712849482,hard,Scientific consensus; textbook references,1
+FC_00984,Humans use only 10% of their brain - variation 98,general,rejected,0.9118763579813758,hard,Scientific consensus; textbook references,1
+FC_00985,Lightning never strikes the same place twice - variation 98,general,rejected,0.9430631402091572,hard,Scientific consensus; textbook references,1
+FC_00986,The Sun is a star - variation 98,general,supported,0.6852821365842101,hard,Scientific consensus; textbook references,1
+FC_00987,Goldfish have a 3-second memory - variation 98,general,rejected,0.7747347530637251,hard,Scientific consensus; textbook references,1
+FC_00988,Bats are blind - variation 98,general,rejected,0.6553868966411056,hard,Scientific consensus; textbook references,1
+FC_00989,Mount Everest is the tallest mountain on Earth - variation 98,general,supported,0.7088574662576745,hard,Scientific consensus; textbook references,2
+FC_00990,The Amazon is the longest river in the world - variation 98,general,rejected,0.6569457154785092,hard,Scientific consensus; textbook references,1
+FC_00991,The Earth is round - variation 99,general,supported,0.7941586938725879,expert,Scientific consensus; textbook references,2
+FC_00992,Water boils at 100°C at sea level - variation 99,general,supported,0.6742987830684912,expert,Scientific consensus; textbook references,2
+FC_00993,The Great Wall of China is visible from space - variation 99,general,rejected,0.673935401541884,expert,Scientific consensus; textbook references,2
+FC_00994,Humans use only 10% of their brain - variation 99,general,rejected,0.8406058452741312,expert,Scientific consensus; textbook references,3
+FC_00995,Lightning never strikes the same place twice - variation 99,general,rejected,0.6083492009873035,expert,Scientific consensus; textbook references,3
+FC_00996,The Sun is a star - variation 99,general,supported,0.945694276233917,expert,Scientific consensus; textbook references,1
+FC_00997,Goldfish have a 3-second memory - variation 99,general,rejected,0.6910028327258253,expert,Scientific consensus; textbook references,2
+FC_00998,Bats are blind - variation 99,general,rejected,0.8184398086974147,expert,Scientific consensus; textbook references,2
+FC_00999,Mount Everest is the tallest mountain on Earth - variation 99,general,supported,0.7059840390606456,expert,Scientific consensus; textbook references,2
+FC_01000,The Amazon is the longest river in the world - variation 99,general,rejected,0.8497555210830698,expert,Scientific consensus; textbook references,1
+FC_01001,The Earth is round - variation 100,general,supported,0.6072486612859236,easy,Scientific consensus; textbook references,3
+FC_01002,Water boils at 100°C at sea level - variation 100,general,supported,0.6711837715503987,easy,Scientific consensus; textbook references,3
+FC_01003,The Great Wall of China is visible from space - variation 100,general,rejected,0.7018008495584349,easy,Scientific consensus; textbook references,1
+FC_01004,Humans use only 10% of their brain - variation 100,general,rejected,0.7216023838073335,easy,Scientific consensus; textbook references,1
+FC_01005,Lightning never strikes the same place twice - variation 100,general,rejected,0.7914902992888594,easy,Scientific consensus; textbook references,3
+FC_01006,The Sun is a star - variation 100,general,supported,0.6557629466707767,easy,Scientific consensus; textbook references,2
+FC_01007,Goldfish have a 3-second memory - variation 100,general,rejected,0.8027549085739343,easy,Scientific consensus; textbook references,1
+FC_01008,Bats are blind - variation 100,general,rejected,0.8000333316063876,easy,Scientific consensus; textbook references,1
+FC_01009,Mount Everest is the tallest mountain on Earth - variation 100,general,supported,0.8788168432877161,easy,Scientific consensus; textbook references,1
+FC_01010,The Amazon is the longest river in the world - variation 100,general,rejected,0.6392206978804674,easy,Scientific consensus; textbook references,2
+FC_01011,The Earth is round - variation 101,general,supported,0.785315497868994,medium,Scientific consensus; textbook references,3
+FC_01012,Water boils at 100°C at sea level - variation 101,general,supported,0.887622832130158,medium,Scientific consensus; textbook references,2
+FC_01013,The Great Wall of China is visible from space - variation 101,general,rejected,0.638823297455938,medium,Scientific consensus; textbook references,1
+FC_01014,Humans use only 10% of their brain - variation 101,general,rejected,0.680988861973099,medium,Scientific consensus; textbook references,2
+FC_01015,Lightning never strikes the same place twice - variation 101,general,rejected,0.9015704058779941,medium,Scientific consensus; textbook references,1
+FC_01016,The Sun is a star - variation 101,general,supported,0.9304894744926564,medium,Scientific consensus; textbook references,2
+FC_01017,Goldfish have a 3-second memory - variation 101,general,rejected,0.914312257406946,medium,Scientific consensus; textbook references,2
+FC_01018,Bats are blind - variation 101,general,rejected,0.6025498048130322,medium,Scientific consensus; textbook references,1
+FC_01019,Mount Everest is the tallest mountain on Earth - variation 101,general,supported,0.868222448818593,medium,Scientific consensus; textbook references,2
+FC_01020,The Amazon is the longest river in the world - variation 101,general,rejected,0.9265507791545673,medium,Scientific consensus; textbook references,2
+FC_01021,The Earth is round - variation 102,general,supported,0.8281916255023053,hard,Scientific consensus; textbook references,1
+FC_01022,Water boils at 100°C at sea level - variation 102,general,supported,0.8845039407232336,hard,Scientific consensus; textbook references,2
+FC_01023,The Great Wall of China is visible from space - variation 102,general,rejected,0.877042557394035,hard,Scientific consensus; textbook references,2
+FC_01024,Humans use only 10% of their brain - variation 102,general,rejected,0.9424426308674992,hard,Scientific consensus; textbook references,3
+FC_01025,Lightning never strikes the same place twice - variation 102,general,rejected,0.6821745137524465,hard,Scientific consensus; textbook references,2
+FC_01026,The Sun is a star - variation 102,general,supported,0.8501994053126662,hard,Scientific consensus; textbook references,2
+FC_01027,Goldfish have a 3-second memory - variation 102,general,rejected,0.7807405865065804,hard,Scientific consensus; textbook references,2
+FC_01028,Bats are blind - variation 102,general,rejected,0.9429045112001497,hard,Scientific consensus; textbook references,1
+FC_01029,Mount Everest is the tallest mountain on Earth - variation 102,general,supported,0.8293969528981732,hard,Scientific consensus; textbook references,2
+FC_01030,The Amazon is the longest river in the world - variation 102,general,rejected,0.700928005767495,hard,Scientific consensus; textbook references,2
+FC_01031,The Earth is round - variation 103,general,supported,0.7618681289250837,expert,Scientific consensus; textbook references,2
+FC_01032,Water boils at 100°C at sea level - variation 103,general,supported,0.9007303752040292,expert,Scientific consensus; textbook references,3
+FC_01033,The Great Wall of China is visible from space - variation 103,general,rejected,0.6603044764883843,expert,Scientific consensus; textbook references,1
+FC_01034,Humans use only 10% of their brain - variation 103,general,rejected,0.8243625695222832,expert,Scientific consensus; textbook references,2
+FC_01035,Lightning never strikes the same place twice - variation 103,general,rejected,0.8351874723142103,expert,Scientific consensus; textbook references,3
+FC_01036,The Sun is a star - variation 103,general,supported,0.7448681395982897,expert,Scientific consensus; textbook references,2
+FC_01037,Goldfish have a 3-second memory - variation 103,general,rejected,0.7725779142686168,expert,Scientific consensus; textbook references,3
+FC_01038,Bats are blind - variation 103,general,rejected,0.8110993968799804,expert,Scientific consensus; textbook references,1
+FC_01039,Mount Everest is the tallest mountain on Earth - variation 103,general,supported,0.7310184796327751,expert,Scientific consensus; textbook references,1
+FC_01040,The Amazon is the longest river in the world - variation 103,general,rejected,0.7123316601715338,expert,Scientific consensus; textbook references,1
+FC_01041,The Earth is round - variation 104,general,supported,0.823269634031166,easy,Scientific consensus; textbook references,3
+FC_01042,Water boils at 100°C at sea level - variation 104,general,supported,0.7895599938593173,easy,Scientific consensus; textbook references,1
+FC_01043,The Great Wall of China is visible from space - variation 104,general,rejected,0.7655033175356492,easy,Scientific consensus; textbook references,2
+FC_01044,Humans use only 10% of their brain - variation 104,general,rejected,0.6188276654831093,easy,Scientific consensus; textbook references,1
+FC_01045,Lightning never strikes the same place twice - variation 104,general,rejected,0.7218541832156468,easy,Scientific consensus; textbook references,2
+FC_01046,The Sun is a star - variation 104,general,supported,0.6989649046800835,easy,Scientific consensus; textbook references,2
+FC_01047,Goldfish have a 3-second memory - variation 104,general,rejected,0.6201822018665202,easy,Scientific consensus; textbook references,2
+FC_01048,Bats are blind - variation 104,general,rejected,0.7678994464550452,easy,Scientific consensus; textbook references,3
+FC_01049,Mount Everest is the tallest mountain on Earth - variation 104,general,supported,0.6085448053281017,easy,Scientific consensus; textbook references,3
+FC_01050,The Amazon is the longest river in the world - variation 104,general,rejected,0.6013494568486014,easy,Scientific consensus; textbook references,1

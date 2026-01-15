@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+PI_00001,Minimum wage increases lead to job losses,policy,undecided,0.894,easy,Labor economics,1
+PI_00002,Universal basic income reduces poverty,policy,undecided,0.926,medium,Pilot studies,1
+PI_00003,Carbon taxes effectively reduce emissions,policy,supported,0.643,hard,European data,2
+PI_00004,Strict gun laws reduce gun violence,policy,supported,0.841,expert,Comparative studies,2
+PI_00005,Free trade benefits all parties equally,policy,rejected,0.943,easy,Trade deficit data,1
+PI_00006,Immigration boosts economic growth,policy,supported,0.763,medium,GDP analysis,4
+PI_00007,Rent control reduces housing supply,policy,supported,0.715,hard,Housing market data,3
+PI_00008,Higher education subsidies increase enrollment,policy,supported,0.941,expert,Enrollment data,2
+PI_00009,War on drugs has reduced drug use,policy,rejected,0.787,easy,Prevalence data,2
+PI_00010,Affirmative action improves diversity,policy,supported,0.557,medium,University data,4
+PI_00011,Minimum wage increases lead to job losses (context 1),policy,undecided,0.842,expert,Labor economics,1
+PI_00012,Universal basic income reduces poverty (context 1),policy,undecided,0.765,easy,Pilot studies,2
+PI_00013,Carbon taxes effectively reduce emissions (context 1),policy,supported,0.864,medium,European data,2
+PI_00014,Strict gun laws reduce gun violence (context 1),policy,supported,0.736,hard,Comparative studies,1
+PI_00015,Free trade benefits all parties equally (context 1),policy,rejected,0.595,expert,Trade deficit data,1
+PI_00016,Immigration boosts economic growth (context 1),policy,supported,0.652,easy,GDP analysis,2
+PI_00017,Rent control reduces housing supply (context 1),policy,supported,0.897,medium,Housing market data,3
+PI_00018,Higher education subsidies increase enrollment (context 1),policy,supported,0.794,hard,Enrollment data,4
+PI_00019,War on drugs has reduced drug use (context 1),policy,rejected,0.83,expert,Prevalence data,2
+PI_00020,Affirmative action improves diversity (context 1),policy,supported,0.84,easy,University data,3
+PI_00021,Minimum wage increases lead to job losses (context 2),policy,undecided,0.561,hard,Labor economics,4
+PI_00022,Universal basic income reduces poverty (context 2),policy,undecided,0.911,expert,Pilot studies,1
+PI_00023,Carbon taxes effectively reduce emissions (context 2),policy,supported,0.76,easy,European data,2
+PI_00024,Strict gun laws reduce gun violence (context 2),policy,supported,0.893,medium,Comparative studies,1
+PI_00025,Free trade benefits all parties equally (context 2),policy,rejected,0.721,hard,Trade deficit data,3
+PI_00026,Immigration boosts economic growth (context 2),policy,supported,0.92,expert,GDP analysis,2
+PI_00027,Rent control reduces housing supply (context 2),policy,supported,0.941,easy,Housing market data,2
+PI_00028,Higher education subsidies increase enrollment (context 2),policy,supported,0.585,medium,Enrollment data,4
+PI_00029,War on drugs has reduced drug use (context 2),policy,rejected,0.9,hard,Prevalence data,1
+PI_00030,Affirmative action improves diversity (context 2),policy,supported,0.563,expert,University data,4
+PI_00031,Minimum wage increases lead to job losses (context 3),policy,undecided,0.899,medium,Labor economics,2
+PI_00032,Universal basic income reduces poverty (context 3),policy,undecided,0.73,hard,Pilot studies,3
+PI_00033,Carbon taxes effectively reduce emissions (context 3),policy,supported,0.594,expert,European data,2
+PI_00034,Strict gun laws reduce gun violence (context 3),policy,supported,0.903,easy,Comparative studies,2
+PI_00035,Free trade benefits all parties equally (context 3),policy,rejected,0.931,medium,Trade deficit data,3
+PI_00036,Immigration boosts economic growth (context 3),policy,supported,0.871,hard,GDP analysis,1
+PI_00037,Rent control reduces housing supply (context 3),policy,supported,0.944,expert,Housing market data,4
+PI_00038,Higher education subsidies increase enrollment (context 3),policy,supported,0.582,easy,Enrollment data,4
+PI_00039,War on drugs has reduced drug use (context 3),policy,rejected,0.756,medium,Prevalence data,4
+PI_00040,Affirmative action improves diversity (context 3),policy,supported,0.555,hard,University data,2
+PI_00041,Minimum wage increases lead to job losses (context 4),policy,undecided,0.79,easy,Labor economics,1
+PI_00042,Universal basic income reduces poverty (context 4),policy,undecided,0.801,medium,Pilot studies,1
+PI_00043,Carbon taxes effectively reduce emissions (context 4),policy,supported,0.898,hard,European data,1
+PI_00044,Strict gun laws reduce gun violence (context 4),policy,supported,0.733,expert,Comparative studies,4
+PI_00045,Free trade benefits all parties equally (context 4),policy,rejected,0.842,easy,Trade deficit data,3
+PI_00046,Immigration boosts economic growth (context 4),policy,supported,0.938,medium,GDP analysis,2
+PI_00047,Rent control reduces housing supply (context 4),policy,supported,0.575,hard,Housing market data,4
+PI_00048,Higher education subsidies increase enrollment (context 4),policy,supported,0.633,expert,Enrollment data,1
+PI_00049,War on drugs has reduced drug use (context 4),policy,rejected,0.927,easy,Prevalence data,1
+PI_00050,Affirmative action improves diversity (context 4),policy,supported,0.678,medium,University data,2
+PI_00051,Minimum wage increases lead to job losses (context 5),policy,undecided,0.897,expert,Labor economics,3
+PI_00052,Universal basic income reduces poverty (context 5),policy,undecided,0.641,easy,Pilot studies,3
+PI_00053,Carbon taxes effectively reduce emissions (context 5),policy,supported,0.6,medium,European data,3
+PI_00054,Strict gun laws reduce gun violence (context 5),policy,supported,0.759,hard,Comparative studies,2
+PI_00055,Free trade benefits all parties equally (context 5),policy,rejected,0.824,expert,Trade deficit data,2
+PI_00056,Immigration boosts economic growth (context 5),policy,supported,0.82,easy,GDP analysis,2
+PI_00057,Rent control reduces housing supply (context 5),policy,supported,0.611,medium,Housing market data,4
+PI_00058,Higher education subsidies increase enrollment (context 5),policy,supported,0.761,hard,Enrollment data,1
+PI_00059,War on drugs has reduced drug use (context 5),policy,rejected,0.874,expert,Prevalence data,3
+PI_00060,Affirmative action improves diversity (context 5),policy,supported,0.924,easy,University data,2
+PI_00061,Minimum wage increases lead to job losses (context 6),policy,undecided,0.609,hard,Labor economics,3
+PI_00062,Universal basic income reduces poverty (context 6),policy,undecided,0.798,expert,Pilot studies,1
+PI_00063,Carbon taxes effectively reduce emissions (context 6),policy,supported,0.585,easy,European data,2
+PI_00064,Strict gun laws reduce gun violence (context 6),policy,supported,0.909,medium,Comparative studies,2
+PI_00065,Free trade benefits all parties equally (context 6),policy,rejected,0.634,hard,Trade deficit data,2
+PI_00066,Immigration boosts economic growth (context 6),policy,supported,0.866,expert,GDP analysis,1
+PI_00067,Rent control reduces housing supply (context 6),policy,supported,0.836,easy,Housing market data,4
+PI_00068,Higher education subsidies increase enrollment (context 6),policy,supported,0.598,medium,Enrollment data,1
+PI_00069,War on drugs has reduced drug use (context 6),policy,rejected,0.588,hard,Prevalence data,2
+PI_00070,Affirmative action improves diversity (context 6),policy,supported,0.715,expert,University data,1
+PI_00071,Minimum wage increases lead to job losses (context 7),policy,undecided,0.58,medium,Labor economics,4
+PI_00072,Universal basic income reduces poverty (context 7),policy,undecided,0.78,hard,Pilot studies,4
+PI_00073,Carbon taxes effectively reduce emissions (context 7),policy,supported,0.914,expert,European data,1
+PI_00074,Strict gun laws reduce gun violence (context 7),policy,supported,0.91,easy,Comparative studies,1
+PI_00075,Free trade benefits all parties equally (context 7),policy,rejected,0.786,medium,Trade deficit data,4
+PI_00076,Immigration boosts economic growth (context 7),policy,supported,0.621,hard,GDP analysis,1
+PI_00077,Rent control reduces housing supply (context 7),policy,supported,0.711,expert,Housing market data,4
+PI_00078,Higher education subsidies increase enrollment (context 7),policy,supported,0.882,easy,Enrollment data,1
+PI_00079,War on drugs has reduced drug use (context 7),policy,rejected,0.947,medium,Prevalence data,3
+PI_00080,Affirmative action improves diversity (context 7),policy,supported,0.565,hard,University data,3
+PI_00081,Minimum wage increases lead to job losses (context 8),policy,undecided,0.816,easy,Labor economics,4
+PI_00082,Universal basic income reduces poverty (context 8),policy,undecided,0.728,medium,Pilot studies,3
+PI_00083,Carbon taxes effectively reduce emissions (context 8),policy,supported,0.639,hard,European data,2
+PI_00084,Strict gun laws reduce gun violence (context 8),policy,supported,0.899,expert,Comparative studies,4
+PI_00085,Free trade benefits all parties equally (context 8),policy,rejected,0.847,easy,Trade deficit data,1
+PI_00086,Immigration boosts economic growth (context 8),policy,supported,0.678,medium,GDP analysis,4
+PI_00087,Rent control reduces housing supply (context 8),policy,supported,0.652,hard,Housing market data,1
+PI_00088,Higher education subsidies increase enrollment (context 8),policy,supported,0.766,expert,Enrollment data,4
+PI_00089,War on drugs has reduced drug use (context 8),policy,rejected,0.644,easy,Prevalence data,2
+PI_00090,Affirmative action improves diversity (context 8),policy,supported,0.626,medium,University data,1
+PI_00091,Minimum wage increases lead to job losses (context 9),policy,undecided,0.682,expert,Labor economics,4
+PI_00092,Universal basic income reduces poverty (context 9),policy,undecided,0.614,easy,Pilot studies,2
+PI_00093,Carbon taxes effectively reduce emissions (context 9),policy,supported,0.608,medium,European data,4
+PI_00094,Strict gun laws reduce gun violence (context 9),policy,supported,0.556,hard,Comparative studies,3
+PI_00095,Free trade benefits all parties equally (context 9),policy,rejected,0.708,expert,Trade deficit data,3
+PI_00096,Immigration boosts economic growth (context 9),policy,supported,0.855,easy,GDP analysis,4
+PI_00097,Rent control reduces housing supply (context 9),policy,supported,0.901,medium,Housing market data,1
+PI_00098,Higher education subsidies increase enrollment (context 9),policy,supported,0.722,hard,Enrollment data,4
+PI_00099,War on drugs has reduced drug use (context 9),policy,rejected,0.877,expert,Prevalence data,2
+PI_00100,Affirmative action improves diversity (context 9),policy,supported,0.843,easy,University data,2
+PI_00101,Minimum wage increases lead to job losses (context 10),policy,undecided,0.791,hard,Labor economics,1
+PI_00102,Universal basic income reduces poverty (context 10),policy,undecided,0.628,expert,Pilot studies,3
+PI_00103,Carbon taxes effectively reduce emissions (context 10),policy,supported,0.926,easy,European data,3
+PI_00104,Strict gun laws reduce gun violence (context 10),policy,supported,0.919,medium,Comparative studies,4
+PI_00105,Free trade benefits all parties equally (context 10),policy,rejected,0.839,hard,Trade deficit data,4
+PI_00106,Immigration boosts economic growth (context 10),policy,supported,0.777,expert,GDP analysis,2
+PI_00107,Rent control reduces housing supply (context 10),policy,supported,0.647,easy,Housing market data,3
+PI_00108,Higher education subsidies increase enrollment (context 10),policy,supported,0.594,medium,Enrollment data,1
+PI_00109,War on drugs has reduced drug use (context 10),policy,rejected,0.793,hard,Prevalence data,1
+PI_00110,Affirmative action improves diversity (context 10),policy,supported,0.761,expert,University data,2
+PI_00111,Minimum wage increases lead to job losses (context 11),policy,undecided,0.914,medium,Labor economics,4
+PI_00112,Universal basic income reduces poverty (context 11),policy,undecided,0.85,hard,Pilot studies,2
+PI_00113,Carbon taxes effectively reduce emissions (context 11),policy,supported,0.606,expert,European data,1
+PI_00114,Strict gun laws reduce gun violence (context 11),policy,supported,0.582,easy,Comparative studies,3
+PI_00115,Free trade benefits all parties equally (context 11),policy,rejected,0.688,medium,Trade deficit data,3
+PI_00116,Immigration boosts economic growth (context 11),policy,supported,0.743,hard,GDP analysis,2
+PI_00117,Rent control reduces housing supply (context 11),policy,supported,0.645,expert,Housing market data,3
+PI_00118,Higher education subsidies increase enrollment (context 11),policy,supported,0.949,easy,Enrollment data,4
+PI_00119,War on drugs has reduced drug use (context 11),policy,rejected,0.603,medium,Prevalence data,4
+PI_00120,Affirmative action improves diversity (context 11),policy,supported,0.784,hard,University data,2
+PI_00121,Minimum wage increases lead to job losses (context 12),policy,undecided,0.664,easy,Labor economics,4
+PI_00122,Universal basic income reduces poverty (context 12),policy,undecided,0.699,medium,Pilot studies,1
+PI_00123,Carbon taxes effectively reduce emissions (context 12),policy,supported,0.804,hard,European data,4
+PI_00124,Strict gun laws reduce gun violence (context 12),policy,supported,0.901,expert,Comparative studies,4
+PI_00125,Free trade benefits all parties equally (context 12),policy,rejected,0.663,easy,Trade deficit data,3
+PI_00126,Immigration boosts economic growth (context 12),policy,supported,0.878,medium,GDP analysis,1
+PI_00127,Rent control reduces housing supply (context 12),policy,supported,0.851,hard,Housing market data,1
+PI_00128,Higher education subsidies increase enrollment (context 12),policy,supported,0.719,expert,Enrollment data,2
+PI_00129,War on drugs has reduced drug use (context 12),policy,rejected,0.676,easy,Prevalence data,2
+PI_00130,Affirmative action improves diversity (context 12),policy,supported,0.755,medium,University data,3
+PI_00131,Minimum wage increases lead to job losses (context 13),policy,undecided,0.723,expert,Labor economics,3
+PI_00132,Universal basic income reduces poverty (context 13),policy,undecided,0.777,easy,Pilot studies,3
+PI_00133,Carbon taxes effectively reduce emissions (context 13),policy,supported,0.773,medium,European data,1
+PI_00134,Strict gun laws reduce gun violence (context 13),policy,supported,0.647,hard,Comparative studies,1
+PI_00135,Free trade benefits all parties equally (context 13),policy,rejected,0.912,expert,Trade deficit data,3
+PI_00136,Immigration boosts economic growth (context 13),policy,supported,0.597,easy,GDP analysis,3
+PI_00137,Rent control reduces housing supply (context 13),policy,supported,0.755,medium,Housing market data,2
+PI_00138,Higher education subsidies increase enrollment (context 13),policy,supported,0.943,hard,Enrollment data,4
+PI_00139,War on drugs has reduced drug use (context 13),policy,rejected,0.649,expert,Prevalence data,1
+PI_00140,Affirmative action improves diversity (context 13),policy,supported,0.821,easy,University data,1
+PI_00141,Minimum wage increases lead to job losses (context 14),policy,undecided,0.913,hard,Labor economics,1
+PI_00142,Universal basic income reduces poverty (context 14),policy,undecided,0.586,expert,Pilot studies,1
+PI_00143,Carbon taxes effectively reduce emissions (context 14),policy,supported,0.587,easy,European data,3
+PI_00144,Strict gun laws reduce gun violence (context 14),policy,supported,0.895,medium,Comparative studies,3
+PI_00145,Free trade benefits all parties equally (context 14),policy,rejected,0.625,hard,Trade deficit data,1
+PI_00146,Immigration boosts economic growth (context 14),policy,supported,0.613,expert,GDP analysis,4
+PI_00147,Rent control reduces housing supply (context 14),policy,supported,0.741,easy,Housing market data,1
+PI_00148,Higher education subsidies increase enrollment (context 14),policy,supported,0.601,medium,Enrollment data,4
+PI_00149,War on drugs has reduced drug use (context 14),policy,rejected,0.906,hard,Prevalence data,4
+PI_00150,Affirmative action improves diversity (context 14),policy,supported,0.781,expert,University data,1
+PI_00151,Minimum wage increases lead to job losses (context 15),policy,undecided,0.755,medium,Labor economics,4
+PI_00152,Universal basic income reduces poverty (context 15),policy,undecided,0.741,hard,Pilot studies,3
+PI_00153,Carbon taxes effectively reduce emissions (context 15),policy,supported,0.785,expert,European data,4
+PI_00154,Strict gun laws reduce gun violence (context 15),policy,supported,0.584,easy,Comparative studies,3
+PI_00155,Free trade benefits all parties equally (context 15),policy,rejected,0.861,medium,Trade deficit data,4
+PI_00156,Immigration boosts economic growth (context 15),policy,supported,0.841,hard,GDP analysis,3
+PI_00157,Rent control reduces housing supply (context 15),policy,supported,0.857,expert,Housing market data,4
+PI_00158,Higher education subsidies increase enrollment (context 15),policy,supported,0.925,easy,Enrollment data,3
+PI_00159,War on drugs has reduced drug use (context 15),policy,rejected,0.737,medium,Prevalence data,4
+PI_00160,Affirmative action improves diversity (context 15),policy,supported,0.666,hard,University data,3
+PI_00161,Minimum wage increases lead to job losses (context 16),policy,undecided,0.601,easy,Labor economics,3
+PI_00162,Universal basic income reduces poverty (context 16),policy,undecided,0.806,medium,Pilot studies,2
+PI_00163,Carbon taxes effectively reduce emissions (context 16),policy,supported,0.623,hard,European data,4
+PI_00164,Strict gun laws reduce gun violence (context 16),policy,supported,0.791,expert,Comparative studies,2
+PI_00165,Free trade benefits all parties equally (context 16),policy,rejected,0.747,easy,Trade deficit data,3
+PI_00166,Immigration boosts economic growth (context 16),policy,supported,0.826,medium,GDP analysis,4
+PI_00167,Rent control reduces housing supply (context 16),policy,supported,0.949,hard,Housing market data,4
+PI_00168,Higher education subsidies increase enrollment (context 16),policy,supported,0.738,expert,Enrollment data,4
+PI_00169,War on drugs has reduced drug use (context 16),policy,rejected,0.884,easy,Prevalence data,3
+PI_00170,Affirmative action improves diversity (context 16),policy,supported,0.88,medium,University data,3
+PI_00171,Minimum wage increases lead to job losses (context 17),policy,undecided,0.812,expert,Labor economics,4
+PI_00172,Universal basic income reduces poverty (context 17),policy,undecided,0.587,easy,Pilot studies,1
+PI_00173,Carbon taxes effectively reduce emissions (context 17),policy,supported,0.712,medium,European data,3
+PI_00174,Strict gun laws reduce gun violence (context 17),policy,supported,0.854,hard,Comparative studies,2
+PI_00175,Free trade benefits all parties equally (context 17),policy,rejected,0.925,expert,Trade deficit data,4
+PI_00176,Immigration boosts economic growth (context 17),policy,supported,0.808,easy,GDP analysis,3
+PI_00177,Rent control reduces housing supply (context 17),policy,supported,0.786,medium,Housing market data,4
+PI_00178,Higher education subsidies increase enrollment (context 17),policy,supported,0.783,hard,Enrollment data,3
+PI_00179,War on drugs has reduced drug use (context 17),policy,rejected,0.949,expert,Prevalence data,2
+PI_00180,Affirmative action improves diversity (context 17),policy,supported,0.567,easy,University data,4
+PI_00181,Minimum wage increases lead to job losses (context 18),policy,undecided,0.785,hard,Labor economics,1
+PI_00182,Universal basic income reduces poverty (context 18),policy,undecided,0.698,expert,Pilot studies,1
+PI_00183,Carbon taxes effectively reduce emissions (context 18),policy,supported,0.773,easy,European data,3
+PI_00184,Strict gun laws reduce gun violence (context 18),policy,supported,0.737,medium,Comparative studies,2
+PI_00185,Free trade benefits all parties equally (context 18),policy,rejected,0.792,hard,Trade deficit data,2
+PI_00186,Immigration boosts economic growth (context 18),policy,supported,0.684,expert,GDP analysis,3
+PI_00187,Rent control reduces housing supply (context 18),policy,supported,0.652,easy,Housing market data,4
+PI_00188,Higher education subsidies increase enrollment (context 18),policy,supported,0.779,medium,Enrollment data,2
+PI_00189,War on drugs has reduced drug use (context 18),policy,rejected,0.697,hard,Prevalence data,1
+PI_00190,Affirmative action improves diversity (context 18),policy,supported,0.834,expert,University data,2
+PI_00191,Minimum wage increases lead to job losses (context 19),policy,undecided,0.763,medium,Labor economics,4
+PI_00192,Universal basic income reduces poverty (context 19),policy,undecided,0.927,hard,Pilot studies,3
+PI_00193,Carbon taxes effectively reduce emissions (context 19),policy,supported,0.928,expert,European data,1
+PI_00194,Strict gun laws reduce gun violence (context 19),policy,supported,0.885,easy,Comparative studies,2
+PI_00195,Free trade benefits all parties equally (context 19),policy,rejected,0.727,medium,Trade deficit data,2
+PI_00196,Immigration boosts economic growth (context 19),policy,supported,0.657,hard,GDP analysis,2
+PI_00197,Rent control reduces housing supply (context 19),policy,supported,0.683,expert,Housing market data,3
+PI_00198,Higher education subsidies increase enrollment (context 19),policy,supported,0.865,easy,Enrollment data,1
+PI_00199,War on drugs has reduced drug use (context 19),policy,rejected,0.728,medium,Prevalence data,3
+PI_00200,Affirmative action improves diversity (context 19),policy,supported,0.94,hard,University data,2
+PI_00201,Minimum wage increases lead to job losses (context 20),policy,undecided,0.681,easy,Labor economics,3
+PI_00202,Universal basic income reduces poverty (context 20),policy,undecided,0.615,medium,Pilot studies,3
+PI_00203,Carbon taxes effectively reduce emissions (context 20),policy,supported,0.896,hard,European data,1
+PI_00204,Strict gun laws reduce gun violence (context 20),policy,supported,0.702,expert,Comparative studies,3
+PI_00205,Free trade benefits all parties equally (context 20),policy,rejected,0.702,easy,Trade deficit data,1
+PI_00206,Immigration boosts economic growth (context 20),policy,supported,0.753,medium,GDP analysis,1
+PI_00207,Rent control reduces housing supply (context 20),policy,supported,0.931,hard,Housing market data,2
+PI_00208,Higher education subsidies increase enrollment (context 20),policy,supported,0.618,expert,Enrollment data,4
+PI_00209,War on drugs has reduced drug use (context 20),policy,rejected,0.587,easy,Prevalence data,4
+PI_00210,Affirmative action improves diversity (context 20),policy,supported,0.678,medium,University data,4
+PI_00211,Minimum wage increases lead to job losses (context 21),policy,undecided,0.651,expert,Labor economics,2
+PI_00212,Universal basic income reduces poverty (context 21),policy,undecided,0.62,easy,Pilot studies,3
+PI_00213,Carbon taxes effectively reduce emissions (context 21),policy,supported,0.714,medium,European data,2
+PI_00214,Strict gun laws reduce gun violence (context 21),policy,supported,0.688,hard,Comparative studies,3
+PI_00215,Free trade benefits all parties equally (context 21),policy,rejected,0.682,expert,Trade deficit data,2
+PI_00216,Immigration boosts economic growth (context 21),policy,supported,0.842,easy,GDP analysis,2
+PI_00217,Rent control reduces housing supply (context 21),policy,supported,0.569,medium,Housing market data,4
+PI_00218,Higher education subsidies increase enrollment (context 21),policy,supported,0.568,hard,Enrollment data,1
+PI_00219,War on drugs has reduced drug use (context 21),policy,rejected,0.58,expert,Prevalence data,1
+PI_00220,Affirmative action improves diversity (context 21),policy,supported,0.602,easy,University data,3
+PI_00221,Minimum wage increases lead to job losses (context 22),policy,undecided,0.73,hard,Labor economics,3
+PI_00222,Universal basic income reduces poverty (context 22),policy,undecided,0.767,expert,Pilot studies,1
+PI_00223,Carbon taxes effectively reduce emissions (context 22),policy,supported,0.567,easy,European data,2
+PI_00224,Strict gun laws reduce gun violence (context 22),policy,supported,0.623,medium,Comparative studies,1
+PI_00225,Free trade benefits all parties equally (context 22),policy,rejected,0.572,hard,Trade deficit data,1
+PI_00226,Immigration boosts economic growth (context 22),policy,supported,0.603,expert,GDP analysis,3
+PI_00227,Rent control reduces housing supply (context 22),policy,supported,0.588,easy,Housing market data,2
+PI_00228,Higher education subsidies increase enrollment (context 22),policy,supported,0.682,medium,Enrollment data,1
+PI_00229,War on drugs has reduced drug use (context 22),policy,rejected,0.68,hard,Prevalence data,4
+PI_00230,Affirmative action improves diversity (context 22),policy,supported,0.662,expert,University data,1
+PI_00231,Minimum wage increases lead to job losses (context 23),policy,undecided,0.761,medium,Labor economics,1
+PI_00232,Universal basic income reduces poverty (context 23),policy,undecided,0.621,hard,Pilot studies,2
+PI_00233,Carbon taxes effectively reduce emissions (context 23),policy,supported,0.587,expert,European data,4
+PI_00234,Strict gun laws reduce gun violence (context 23),policy,supported,0.771,easy,Comparative studies,2
+PI_00235,Free trade benefits all parties equally (context 23),policy,rejected,0.584,medium,Trade deficit data,3
+PI_00236,Immigration boosts economic growth (context 23),policy,supported,0.88,hard,GDP analysis,2
+PI_00237,Rent control reduces housing supply (context 23),policy,supported,0.681,expert,Housing market data,3
+PI_00238,Higher education subsidies increase enrollment (context 23),policy,supported,0.609,easy,Enrollment data,2
+PI_00239,War on drugs has reduced drug use (context 23),policy,rejected,0.621,medium,Prevalence data,2
+PI_00240,Affirmative action improves diversity (context 23),policy,supported,0.735,hard,University data,3
+PI_00241,Minimum wage increases lead to job losses (context 24),policy,undecided,0.752,easy,Labor economics,2
+PI_00242,Universal basic income reduces poverty (context 24),policy,undecided,0.767,medium,Pilot studies,2
+PI_00243,Carbon taxes effectively reduce emissions (context 24),policy,supported,0.944,hard,European data,2
+PI_00244,Strict gun laws reduce gun violence (context 24),policy,supported,0.708,expert,Comparative studies,1
+PI_00245,Free trade benefits all parties equally (context 24),policy,rejected,0.839,easy,Trade deficit data,3
+PI_00246,Immigration boosts economic growth (context 24),policy,supported,0.571,medium,GDP analysis,2
+PI_00247,Rent control reduces housing supply (context 24),policy,supported,0.87,hard,Housing market data,3
+PI_00248,Higher education subsidies increase enrollment (context 24),policy,supported,0.838,expert,Enrollment data,4
+PI_00249,War on drugs has reduced drug use (context 24),policy,rejected,0.89,easy,Prevalence data,1
+PI_00250,Affirmative action improves diversity (context 24),policy,supported,0.827,medium,University data,3
+PI_00251,Minimum wage increases lead to job losses (context 25),policy,undecided,0.902,expert,Labor economics,3
+PI_00252,Universal basic income reduces poverty (context 25),policy,undecided,0.856,easy,Pilot studies,3
+PI_00253,Carbon taxes effectively reduce emissions (context 25),policy,supported,0.802,medium,European data,3
+PI_00254,Strict gun laws reduce gun violence (context 25),policy,supported,0.557,hard,Comparative studies,3
+PI_00255,Free trade benefits all parties equally (context 25),policy,rejected,0.663,expert,Trade deficit data,3
+PI_00256,Immigration boosts economic growth (context 25),policy,supported,0.67,easy,GDP analysis,1
+PI_00257,Rent control reduces housing supply (context 25),policy,supported,0.571,medium,Housing market data,4
+PI_00258,Higher education subsidies increase enrollment (context 25),policy,supported,0.849,hard,Enrollment data,4
+PI_00259,War on drugs has reduced drug use (context 25),policy,rejected,0.55,expert,Prevalence data,4
+PI_00260,Affirmative action improves diversity (context 25),policy,supported,0.921,easy,University data,1
+PI_00261,Minimum wage increases lead to job losses (context 26),policy,undecided,0.943,hard,Labor economics,2
+PI_00262,Universal basic income reduces poverty (context 26),policy,undecided,0.655,expert,Pilot studies,4
+PI_00263,Carbon taxes effectively reduce emissions (context 26),policy,supported,0.563,easy,European data,2
+PI_00264,Strict gun laws reduce gun violence (context 26),policy,supported,0.607,medium,Comparative studies,4
+PI_00265,Free trade benefits all parties equally (context 26),policy,rejected,0.585,hard,Trade deficit data,1
+PI_00266,Immigration boosts economic growth (context 26),policy,supported,0.573,expert,GDP analysis,3
+PI_00267,Rent control reduces housing supply (context 26),policy,supported,0.832,easy,Housing market data,2
+PI_00268,Higher education subsidies increase enrollment (context 26),policy,supported,0.551,medium,Enrollment data,3
+PI_00269,War on drugs has reduced drug use (context 26),policy,rejected,0.748,hard,Prevalence data,1
+PI_00270,Affirmative action improves diversity (context 26),policy,supported,0.556,expert,University data,4
+PI_00271,Minimum wage increases lead to job losses (context 27),policy,undecided,0.638,medium,Labor economics,3
+PI_00272,Universal basic income reduces poverty (context 27),policy,undecided,0.607,hard,Pilot studies,4
+PI_00273,Carbon taxes effectively reduce emissions (context 27),policy,supported,0.873,expert,European data,1
+PI_00274,Strict gun laws reduce gun violence (context 27),policy,supported,0.896,easy,Comparative studies,4
+PI_00275,Free trade benefits all parties equally (context 27),policy,rejected,0.85,medium,Trade deficit data,2
+PI_00276,Immigration boosts economic growth (context 27),policy,supported,0.731,hard,GDP analysis,1
+PI_00277,Rent control reduces housing supply (context 27),policy,supported,0.665,expert,Housing market data,2
+PI_00278,Higher education subsidies increase enrollment (context 27),policy,supported,0.919,easy,Enrollment data,1
+PI_00279,War on drugs has reduced drug use (context 27),policy,rejected,0.929,medium,Prevalence data,4
+PI_00280,Affirmative action improves diversity (context 27),policy,supported,0.563,hard,University data,3
+PI_00281,Minimum wage increases lead to job losses (context 28),policy,undecided,0.628,easy,Labor economics,4
+PI_00282,Universal basic income reduces poverty (context 28),policy,undecided,0.63,medium,Pilot studies,3
+PI_00283,Carbon taxes effectively reduce emissions (context 28),policy,supported,0.815,hard,European data,2
+PI_00284,Strict gun laws reduce gun violence (context 28),policy,supported,0.775,expert,Comparative studies,3
+PI_00285,Free trade benefits all parties equally (context 28),policy,rejected,0.685,easy,Trade deficit data,2
+PI_00286,Immigration boosts economic growth (context 28),policy,supported,0.803,medium,GDP analysis,3
+PI_00287,Rent control reduces housing supply (context 28),policy,supported,0.766,hard,Housing market data,1
+PI_00288,Higher education subsidies increase enrollment (context 28),policy,supported,0.593,expert,Enrollment data,3
+PI_00289,War on drugs has reduced drug use (context 28),policy,rejected,0.606,easy,Prevalence data,2
+PI_00290,Affirmative action improves diversity (context 28),policy,supported,0.813,medium,University data,2
+PI_00291,Minimum wage increases lead to job losses (context 29),policy,undecided,0.629,expert,Labor economics,2
+PI_00292,Universal basic income reduces poverty (context 29),policy,undecided,0.914,easy,Pilot studies,2
+PI_00293,Carbon taxes effectively reduce emissions (context 29),policy,supported,0.795,medium,European data,2
+PI_00294,Strict gun laws reduce gun violence (context 29),policy,supported,0.808,hard,Comparative studies,4
+PI_00295,Free trade benefits all parties equally (context 29),policy,rejected,0.609,expert,Trade deficit data,2
+PI_00296,Immigration boosts economic growth (context 29),policy,supported,0.59,easy,GDP analysis,1
+PI_00297,Rent control reduces housing supply (context 29),policy,supported,0.929,medium,Housing market data,2
+PI_00298,Higher education subsidies increase enrollment (context 29),policy,supported,0.591,hard,Enrollment data,2
+PI_00299,War on drugs has reduced drug use (context 29),policy,rejected,0.63,expert,Prevalence data,1
+PI_00300,Affirmative action improves diversity (context 29),policy,supported,0.61,easy,University data,3
+PI_00301,Minimum wage increases lead to job losses (context 30),policy,undecided,0.611,hard,Labor economics,1
+PI_00302,Universal basic income reduces poverty (context 30),policy,undecided,0.863,expert,Pilot studies,4
+PI_00303,Carbon taxes effectively reduce emissions (context 30),policy,supported,0.924,easy,European data,2
+PI_00304,Strict gun laws reduce gun violence (context 30),policy,supported,0.804,medium,Comparative studies,2
+PI_00305,Free trade benefits all parties equally (context 30),policy,rejected,0.938,hard,Trade deficit data,2
+PI_00306,Immigration boosts economic growth (context 30),policy,supported,0.792,expert,GDP analysis,3
+PI_00307,Rent control reduces housing supply (context 30),policy,supported,0.574,easy,Housing market data,2
+PI_00308,Higher education subsidies increase enrollment (context 30),policy,supported,0.873,medium,Enrollment data,3
+PI_00309,War on drugs has reduced drug use (context 30),policy,rejected,0.842,hard,Prevalence data,4
+PI_00310,Affirmative action improves diversity (context 30),policy,supported,0.652,expert,University data,1
+PI_00311,Minimum wage increases lead to job losses (context 31),policy,undecided,0.802,medium,Labor economics,4
+PI_00312,Universal basic income reduces poverty (context 31),policy,undecided,0.885,hard,Pilot studies,3
+PI_00313,Carbon taxes effectively reduce emissions (context 31),policy,supported,0.814,expert,European data,4
+PI_00314,Strict gun laws reduce gun violence (context 31),policy,supported,0.809,easy,Comparative studies,1
+PI_00315,Free trade benefits all parties equally (context 31),policy,rejected,0.862,medium,Trade deficit data,4
+PI_00316,Immigration boosts economic growth (context 31),policy,supported,0.581,hard,GDP analysis,2
+PI_00317,Rent control reduces housing supply (context 31),policy,supported,0.721,expert,Housing market data,4
+PI_00318,Higher education subsidies increase enrollment (context 31),policy,supported,0.6,easy,Enrollment data,2
+PI_00319,War on drugs has reduced drug use (context 31),policy,rejected,0.594,medium,Prevalence data,4
+PI_00320,Affirmative action improves diversity (context 31),policy,supported,0.812,hard,University data,1
+PI_00321,Minimum wage increases lead to job losses (context 32),policy,undecided,0.645,easy,Labor economics,4
+PI_00322,Universal basic income reduces poverty (context 32),policy,undecided,0.776,medium,Pilot studies,1
+PI_00323,Carbon taxes effectively reduce emissions (context 32),policy,supported,0.879,hard,European data,1
+PI_00324,Strict gun laws reduce gun violence (context 32),policy,supported,0.602,expert,Comparative studies,2
+PI_00325,Free trade benefits all parties equally (context 32),policy,rejected,0.705,easy,Trade deficit data,1
+PI_00326,Immigration boosts economic growth (context 32),policy,supported,0.598,medium,GDP analysis,1
+PI_00327,Rent control reduces housing supply (context 32),policy,supported,0.673,hard,Housing market data,1
+PI_00328,Higher education subsidies increase enrollment (context 32),policy,supported,0.559,expert,Enrollment data,4
+PI_00329,War on drugs has reduced drug use (context 32),policy,rejected,0.814,easy,Prevalence data,4
+PI_00330,Affirmative action improves diversity (context 32),policy,supported,0.74,medium,University data,2
+PI_00331,Minimum wage increases lead to job losses (context 33),policy,undecided,0.946,expert,Labor economics,4
+PI_00332,Universal basic income reduces poverty (context 33),policy,undecided,0.944,easy,Pilot studies,4
+PI_00333,Carbon taxes effectively reduce emissions (context 33),policy,supported,0.829,medium,European data,2
+PI_00334,Strict gun laws reduce gun violence (context 33),policy,supported,0.678,hard,Comparative studies,3
+PI_00335,Free trade benefits all parties equally (context 33),policy,rejected,0.947,expert,Trade deficit data,3
+PI_00336,Immigration boosts economic growth (context 33),policy,supported,0.707,easy,GDP analysis,3
+PI_00337,Rent control reduces housing supply (context 33),policy,supported,0.775,medium,Housing market data,4
+PI_00338,Higher education subsidies increase enrollment (context 33),policy,supported,0.93,hard,Enrollment data,1
+PI_00339,War on drugs has reduced drug use (context 33),policy,rejected,0.605,expert,Prevalence data,3
+PI_00340,Affirmative action improves diversity (context 33),policy,supported,0.695,easy,University data,4
+PI_00341,Minimum wage increases lead to job losses (context 34),policy,undecided,0.69,hard,Labor economics,2
+PI_00342,Universal basic income reduces poverty (context 34),policy,undecided,0.69,expert,Pilot studies,3
+PI_00343,Carbon taxes effectively reduce emissions (context 34),policy,supported,0.641,easy,European data,2
+PI_00344,Strict gun laws reduce gun violence (context 34),policy,supported,0.914,medium,Comparative studies,4
+PI_00345,Free trade benefits all parties equally (context 34),policy,rejected,0.897,hard,Trade deficit data,2
+PI_00346,Immigration boosts economic growth (context 34),policy,supported,0.913,expert,GDP analysis,4
+PI_00347,Rent control reduces housing supply (context 34),policy,supported,0.913,easy,Housing market data,2
+PI_00348,Higher education subsidies increase enrollment (context 34),policy,supported,0.89,medium,Enrollment data,4
+PI_00349,War on drugs has reduced drug use (context 34),policy,rejected,0.728,hard,Prevalence data,4
+PI_00350,Affirmative action improves diversity (context 34),policy,supported,0.716,expert,University data,2
+PI_00351,Minimum wage increases lead to job losses (context 35),policy,undecided,0.561,medium,Labor economics,3
+PI_00352,Universal basic income reduces poverty (context 35),policy,undecided,0.659,hard,Pilot studies,4
+PI_00353,Carbon taxes effectively reduce emissions (context 35),policy,supported,0.812,expert,European data,4
+PI_00354,Strict gun laws reduce gun violence (context 35),policy,supported,0.735,easy,Comparative studies,3
+PI_00355,Free trade benefits all parties equally (context 35),policy,rejected,0.886,medium,Trade deficit data,3
+PI_00356,Immigration boosts economic growth (context 35),policy,supported,0.601,hard,GDP analysis,4
+PI_00357,Rent control reduces housing supply (context 35),policy,supported,0.601,expert,Housing market data,1
+PI_00358,Higher education subsidies increase enrollment (context 35),policy,supported,0.914,easy,Enrollment data,1
+PI_00359,War on drugs has reduced drug use (context 35),policy,rejected,0.911,medium,Prevalence data,1
+PI_00360,Affirmative action improves diversity (context 35),policy,supported,0.757,hard,University data,2
+PI_00361,Minimum wage increases lead to job losses (context 36),policy,undecided,0.922,easy,Labor economics,3
+PI_00362,Universal basic income reduces poverty (context 36),policy,undecided,0.839,medium,Pilot studies,2
+PI_00363,Carbon taxes effectively reduce emissions (context 36),policy,supported,0.775,hard,European data,2
+PI_00364,Strict gun laws reduce gun violence (context 36),policy,supported,0.82,expert,Comparative studies,1
+PI_00365,Free trade benefits all parties equally (context 36),policy,rejected,0.834,easy,Trade deficit data,1
+PI_00366,Immigration boosts economic growth (context 36),policy,supported,0.659,medium,GDP analysis,3
+PI_00367,Rent control reduces housing supply (context 36),policy,supported,0.673,hard,Housing market data,1
+PI_00368,Higher education subsidies increase enrollment (context 36),policy,supported,0.656,expert,Enrollment data,4
+PI_00369,War on drugs has reduced drug use (context 36),policy,rejected,0.827,easy,Prevalence data,1
+PI_00370,Affirmative action improves diversity (context 36),policy,supported,0.614,medium,University data,4
+PI_00371,Minimum wage increases lead to job losses (context 37),policy,undecided,0.835,expert,Labor economics,2
+PI_00372,Universal basic income reduces poverty (context 37),policy,undecided,0.852,easy,Pilot studies,1
+PI_00373,Carbon taxes effectively reduce emissions (context 37),policy,supported,0.764,medium,European data,3
+PI_00374,Strict gun laws reduce gun violence (context 37),policy,supported,0.749,hard,Comparative studies,4
+PI_00375,Free trade benefits all parties equally (context 37),policy,rejected,0.601,expert,Trade deficit data,1
+PI_00376,Immigration boosts economic growth (context 37),policy,supported,0.85,easy,GDP analysis,4
+PI_00377,Rent control reduces housing supply (context 37),policy,supported,0.621,medium,Housing market data,2
+PI_00378,Higher education subsidies increase enrollment (context 37),policy,supported,0.776,hard,Enrollment data,3
+PI_00379,War on drugs has reduced drug use (context 37),policy,rejected,0.698,expert,Prevalence data,3
+PI_00380,Affirmative action improves diversity (context 37),policy,supported,0.558,easy,University data,3
+PI_00381,Minimum wage increases lead to job losses (context 38),policy,undecided,0.84,hard,Labor economics,4
+PI_00382,Universal basic income reduces poverty (context 38),policy,undecided,0.565,expert,Pilot studies,1
+PI_00383,Carbon taxes effectively reduce emissions (context 38),policy,supported,0.762,easy,European data,3
+PI_00384,Strict gun laws reduce gun violence (context 38),policy,supported,0.582,medium,Comparative studies,2
+PI_00385,Free trade benefits all parties equally (context 38),policy,rejected,0.86,hard,Trade deficit data,3
+PI_00386,Immigration boosts economic growth (context 38),policy,supported,0.645,expert,GDP analysis,1
+PI_00387,Rent control reduces housing supply (context 38),policy,supported,0.925,easy,Housing market data,1
+PI_00388,Higher education subsidies increase enrollment (context 38),policy,supported,0.656,medium,Enrollment data,1
+PI_00389,War on drugs has reduced drug use (context 38),policy,rejected,0.93,hard,Prevalence data,1
+PI_00390,Affirmative action improves diversity (context 38),policy,supported,0.878,expert,University data,2
+PI_00391,Minimum wage increases lead to job losses (context 39),policy,undecided,0.725,medium,Labor economics,1
+PI_00392,Universal basic income reduces poverty (context 39),policy,undecided,0.739,hard,Pilot studies,3
+PI_00393,Carbon taxes effectively reduce emissions (context 39),policy,supported,0.754,expert,European data,2
+PI_00394,Strict gun laws reduce gun violence (context 39),policy,supported,0.92,easy,Comparative studies,3
+PI_00395,Free trade benefits all parties equally (context 39),policy,rejected,0.585,medium,Trade deficit data,3
+PI_00396,Immigration boosts economic growth (context 39),policy,supported,0.851,hard,GDP analysis,2
+PI_00397,Rent control reduces housing supply (context 39),policy,supported,0.794,expert,Housing market data,4
+PI_00398,Higher education subsidies increase enrollment (context 39),policy,supported,0.787,easy,Enrollment data,2
+PI_00399,War on drugs has reduced drug use (context 39),policy,rejected,0.917,medium,Prevalence data,4
+PI_00400,Affirmative action improves diversity (context 39),policy,supported,0.866,hard,University data,1
+PI_00401,Minimum wage increases lead to job losses (context 40),policy,undecided,0.853,easy,Labor economics,3
+PI_00402,Universal basic income reduces poverty (context 40),policy,undecided,0.634,medium,Pilot studies,2
+PI_00403,Carbon taxes effectively reduce emissions (context 40),policy,supported,0.757,hard,European data,1
+PI_00404,Strict gun laws reduce gun violence (context 40),policy,supported,0.781,expert,Comparative studies,4
+PI_00405,Free trade benefits all parties equally (context 40),policy,rejected,0.672,easy,Trade deficit data,2
+PI_00406,Immigration boosts economic growth (context 40),policy,supported,0.702,medium,GDP analysis,4
+PI_00407,Rent control reduces housing supply (context 40),policy,supported,0.683,hard,Housing market data,3
+PI_00408,Higher education subsidies increase enrollment (context 40),policy,supported,0.77,expert,Enrollment data,2
+PI_00409,War on drugs has reduced drug use (context 40),policy,rejected,0.888,easy,Prevalence data,3
+PI_00410,Affirmative action improves diversity (context 40),policy,supported,0.716,medium,University data,1
+PI_00411,Minimum wage increases lead to job losses (context 41),policy,undecided,0.611,expert,Labor economics,3
+PI_00412,Universal basic income reduces poverty (context 41),policy,undecided,0.927,easy,Pilot studies,1
+PI_00413,Carbon taxes effectively reduce emissions (context 41),policy,supported,0.624,medium,European data,1
+PI_00414,Strict gun laws reduce gun violence (context 41),policy,supported,0.872,hard,Comparative studies,4
+PI_00415,Free trade benefits all parties equally (context 41),policy,rejected,0.898,expert,Trade deficit data,1
+PI_00416,Immigration boosts economic growth (context 41),policy,supported,0.571,easy,GDP analysis,4
+PI_00417,Rent control reduces housing supply (context 41),policy,supported,0.875,medium,Housing market data,3
+PI_00418,Higher education subsidies increase enrollment (context 41),policy,supported,0.873,hard,Enrollment data,3
+PI_00419,War on drugs has reduced drug use (context 41),policy,rejected,0.77,expert,Prevalence data,1
+PI_00420,Affirmative action improves diversity (context 41),policy,supported,0.78,easy,University data,3
+PI_00421,Minimum wage increases lead to job losses (context 42),policy,undecided,0.772,hard,Labor economics,4
+PI_00422,Universal basic income reduces poverty (context 42),policy,undecided,0.842,expert,Pilot studies,4
+PI_00423,Carbon taxes effectively reduce emissions (context 42),policy,supported,0.666,easy,European data,3
+PI_00424,Strict gun laws reduce gun violence (context 42),policy,supported,0.937,medium,Comparative studies,4
+PI_00425,Free trade benefits all parties equally (context 42),policy,rejected,0.709,hard,Trade deficit data,4
+PI_00426,Immigration boosts economic growth (context 42),policy,supported,0.857,expert,GDP analysis,4
+PI_00427,Rent control reduces housing supply (context 42),policy,supported,0.931,easy,Housing market data,3
+PI_00428,Higher education subsidies increase enrollment (context 42),policy,supported,0.748,medium,Enrollment data,2
+PI_00429,War on drugs has reduced drug use (context 42),policy,rejected,0.791,hard,Prevalence data,2
+PI_00430,Affirmative action improves diversity (context 42),policy,supported,0.829,expert,University data,3
+PI_00431,Minimum wage increases lead to job losses (context 43),policy,undecided,0.658,medium,Labor economics,4
+PI_00432,Universal basic income reduces poverty (context 43),policy,undecided,0.61,hard,Pilot studies,2
+PI_00433,Carbon taxes effectively reduce emissions (context 43),policy,supported,0.704,expert,European data,3
+PI_00434,Strict gun laws reduce gun violence (context 43),policy,supported,0.779,easy,Comparative studies,3
+PI_00435,Free trade benefits all parties equally (context 43),policy,rejected,0.601,medium,Trade deficit data,1
+PI_00436,Immigration boosts economic growth (context 43),policy,supported,0.889,hard,GDP analysis,4
+PI_00437,Rent control reduces housing supply (context 43),policy,supported,0.939,expert,Housing market data,4
+PI_00438,Higher education subsidies increase enrollment (context 43),policy,supported,0.616,easy,Enrollment data,3
+PI_00439,War on drugs has reduced drug use (context 43),policy,rejected,0.779,medium,Prevalence data,3
+PI_00440,Affirmative action improves diversity (context 43),policy,supported,0.743,hard,University data,3
+PI_00441,Minimum wage increases lead to job losses (context 44),policy,undecided,0.617,easy,Labor economics,1
+PI_00442,Universal basic income reduces poverty (context 44),policy,undecided,0.59,medium,Pilot studies,3
+PI_00443,Carbon taxes effectively reduce emissions (context 44),policy,supported,0.844,hard,European data,3
+PI_00444,Strict gun laws reduce gun violence (context 44),policy,supported,0.588,expert,Comparative studies,2
+PI_00445,Free trade benefits all parties equally (context 44),policy,rejected,0.856,easy,Trade deficit data,3
+PI_00446,Immigration boosts economic growth (context 44),policy,supported,0.936,medium,GDP analysis,3
+PI_00447,Rent control reduces housing supply (context 44),policy,supported,0.713,hard,Housing market data,2
+PI_00448,Higher education subsidies increase enrollment (context 44),policy,supported,0.725,expert,Enrollment data,3
+PI_00449,War on drugs has reduced drug use (context 44),policy,rejected,0.858,easy,Prevalence data,2
+PI_00450,Affirmative action improves diversity (context 44),policy,supported,0.787,medium,University data,2
+PI_00451,Minimum wage increases lead to job losses (context 45),policy,undecided,0.565,expert,Labor economics,4
+PI_00452,Universal basic income reduces poverty (context 45),policy,undecided,0.874,easy,Pilot studies,2
+PI_00453,Carbon taxes effectively reduce emissions (context 45),policy,supported,0.72,medium,European data,1
+PI_00454,Strict gun laws reduce gun violence (context 45),policy,supported,0.816,hard,Comparative studies,2
+PI_00455,Free trade benefits all parties equally (context 45),policy,rejected,0.588,expert,Trade deficit data,4
+PI_00456,Immigration boosts economic growth (context 45),policy,supported,0.628,easy,GDP analysis,1
+PI_00457,Rent control reduces housing supply (context 45),policy,supported,0.877,medium,Housing market data,2
+PI_00458,Higher education subsidies increase enrollment (context 45),policy,supported,0.671,hard,Enrollment data,3
+PI_00459,War on drugs has reduced drug use (context 45),policy,rejected,0.743,expert,Prevalence data,4
+PI_00460,Affirmative action improves diversity (context 45),policy,supported,0.898,easy,University data,3
+PI_00461,Minimum wage increases lead to job losses (context 46),policy,undecided,0.927,hard,Labor economics,1
+PI_00462,Universal basic income reduces poverty (context 46),policy,undecided,0.736,expert,Pilot studies,3
+PI_00463,Carbon taxes effectively reduce emissions (context 46),policy,supported,0.657,easy,European data,4
+PI_00464,Strict gun laws reduce gun violence (context 46),policy,supported,0.741,medium,Comparative studies,4
+PI_00465,Free trade benefits all parties equally (context 46),policy,rejected,0.882,hard,Trade deficit data,4
+PI_00466,Immigration boosts economic growth (context 46),policy,supported,0.736,expert,GDP analysis,4
+PI_00467,Rent control reduces housing supply (context 46),policy,supported,0.58,easy,Housing market data,4
+PI_00468,Higher education subsidies increase enrollment (context 46),policy,supported,0.855,medium,Enrollment data,2
+PI_00469,War on drugs has reduced drug use (context 46),policy,rejected,0.712,hard,Prevalence data,2
+PI_00470,Affirmative action improves diversity (context 46),policy,supported,0.553,expert,University data,4
+PI_00471,Minimum wage increases lead to job losses (context 47),policy,undecided,0.718,medium,Labor economics,4
+PI_00472,Universal basic income reduces poverty (context 47),policy,undecided,0.855,hard,Pilot studies,1
+PI_00473,Carbon taxes effectively reduce emissions (context 47),policy,supported,0.564,expert,European data,1
+PI_00474,Strict gun laws reduce gun violence (context 47),policy,supported,0.891,easy,Comparative studies,2
+PI_00475,Free trade benefits all parties equally (context 47),policy,rejected,0.633,medium,Trade deficit data,3
+PI_00476,Immigration boosts economic growth (context 47),policy,supported,0.798,hard,GDP analysis,4
+PI_00477,Rent control reduces housing supply (context 47),policy,supported,0.88,expert,Housing market data,1
+PI_00478,Higher education subsidies increase enrollment (context 47),policy,supported,0.556,easy,Enrollment data,3
+PI_00479,War on drugs has reduced drug use (context 47),policy,rejected,0.721,medium,Prevalence data,4
+PI_00480,Affirmative action improves diversity (context 47),policy,supported,0.88,hard,University data,3
+PI_00481,Minimum wage increases lead to job losses (context 48),policy,undecided,0.918,easy,Labor economics,4
+PI_00482,Universal basic income reduces poverty (context 48),policy,undecided,0.804,medium,Pilot studies,1
+PI_00483,Carbon taxes effectively reduce emissions (context 48),policy,supported,0.587,hard,European data,2
+PI_00484,Strict gun laws reduce gun violence (context 48),policy,supported,0.9,expert,Comparative studies,3
+PI_00485,Free trade benefits all parties equally (context 48),policy,rejected,0.667,easy,Trade deficit data,1
+PI_00486,Immigration boosts economic growth (context 48),policy,supported,0.745,medium,GDP analysis,3
+PI_00487,Rent control reduces housing supply (context 48),policy,supported,0.696,hard,Housing market data,4
+PI_00488,Higher education subsidies increase enrollment (context 48),policy,supported,0.8,expert,Enrollment data,3
+PI_00489,War on drugs has reduced drug use (context 48),policy,rejected,0.744,easy,Prevalence data,3
+PI_00490,Affirmative action improves diversity (context 48),policy,supported,0.694,medium,University data,2
+PI_00491,Minimum wage increases lead to job losses (context 49),policy,undecided,0.756,expert,Labor economics,2
+PI_00492,Universal basic income reduces poverty (context 49),policy,undecided,0.58,easy,Pilot studies,1
+PI_00493,Carbon taxes effectively reduce emissions (context 49),policy,supported,0.836,medium,European data,4
+PI_00494,Strict gun laws reduce gun violence (context 49),policy,supported,0.656,hard,Comparative studies,3
+PI_00495,Free trade benefits all parties equally (context 49),policy,rejected,0.713,expert,Trade deficit data,4
+PI_00496,Immigration boosts economic growth (context 49),policy,supported,0.762,easy,GDP analysis,4
+PI_00497,Rent control reduces housing supply (context 49),policy,supported,0.803,medium,Housing market data,2
+PI_00498,Higher education subsidies increase enrollment (context 49),policy,supported,0.916,hard,Enrollment data,4
+PI_00499,War on drugs has reduced drug use (context 49),policy,rejected,0.922,expert,Prevalence data,4
+PI_00500,Affirmative action improves diversity (context 49),policy,supported,0.772,easy,University data,4
+PI_00501,Minimum wage increases lead to job losses (context 50),policy,undecided,0.761,hard,Labor economics,3
+PI_00502,Universal basic income reduces poverty (context 50),policy,undecided,0.706,expert,Pilot studies,3
+PI_00503,Carbon taxes effectively reduce emissions (context 50),policy,supported,0.933,easy,European data,3
+PI_00504,Strict gun laws reduce gun violence (context 50),policy,supported,0.736,medium,Comparative studies,4
+PI_00505,Free trade benefits all parties equally (context 50),policy,rejected,0.948,hard,Trade deficit data,2
+PI_00506,Immigration boosts economic growth (context 50),policy,supported,0.643,expert,GDP analysis,3
+PI_00507,Rent control reduces housing supply (context 50),policy,supported,0.889,easy,Housing market data,3
+PI_00508,Higher education subsidies increase enrollment (context 50),policy,supported,0.629,medium,Enrollment data,1
+PI_00509,War on drugs has reduced drug use (context 50),policy,rejected,0.772,hard,Prevalence data,4
+PI_00510,Affirmative action improves diversity (context 50),policy,supported,0.749,expert,University data,4
+PI_00511,Minimum wage increases lead to job losses (context 51),policy,undecided,0.891,medium,Labor economics,2
+PI_00512,Universal basic income reduces poverty (context 51),policy,undecided,0.929,hard,Pilot studies,3
+PI_00513,Carbon taxes effectively reduce emissions (context 51),policy,supported,0.59,expert,European data,4
+PI_00514,Strict gun laws reduce gun violence (context 51),policy,supported,0.751,easy,Comparative studies,3
+PI_00515,Free trade benefits all parties equally (context 51),policy,rejected,0.866,medium,Trade deficit data,1
+PI_00516,Immigration boosts economic growth (context 51),policy,supported,0.697,hard,GDP analysis,3
+PI_00517,Rent control reduces housing supply (context 51),policy,supported,0.674,expert,Housing market data,4
+PI_00518,Higher education subsidies increase enrollment (context 51),policy,supported,0.74,easy,Enrollment data,3
+PI_00519,War on drugs has reduced drug use (context 51),policy,rejected,0.601,medium,Prevalence data,2
+PI_00520,Affirmative action improves diversity (context 51),policy,supported,0.597,hard,University data,1
+PI_00521,Minimum wage increases lead to job losses (context 52),policy,undecided,0.689,easy,Labor economics,3
+PI_00522,Universal basic income reduces poverty (context 52),policy,undecided,0.731,medium,Pilot studies,2
+PI_00523,Carbon taxes effectively reduce emissions (context 52),policy,supported,0.864,hard,European data,2
+PI_00524,Strict gun laws reduce gun violence (context 52),policy,supported,0.611,expert,Comparative studies,3
+PI_00525,Free trade benefits all parties equally (context 52),policy,rejected,0.913,easy,Trade deficit data,1
+PI_00526,Immigration boosts economic growth (context 52),policy,supported,0.85,medium,GDP analysis,1
+PI_00527,Rent control reduces housing supply (context 52),policy,supported,0.713,hard,Housing market data,1
+PI_00528,Higher education subsidies increase enrollment (context 52),policy,supported,0.815,expert,Enrollment data,2
+PI_00529,War on drugs has reduced drug use (context 52),policy,rejected,0.559,easy,Prevalence data,2
+PI_00530,Affirmative action improves diversity (context 52),policy,supported,0.852,medium,University data,3
+PI_00531,Minimum wage increases lead to job losses (context 53),policy,undecided,0.943,expert,Labor economics,2
+PI_00532,Universal basic income reduces poverty (context 53),policy,undecided,0.924,easy,Pilot studies,2
+PI_00533,Carbon taxes effectively reduce emissions (context 53),policy,supported,0.558,medium,European data,3
+PI_00534,Strict gun laws reduce gun violence (context 53),policy,supported,0.732,hard,Comparative studies,2
+PI_00535,Free trade benefits all parties equally (context 53),policy,rejected,0.776,expert,Trade deficit data,3
+PI_00536,Immigration boosts economic growth (context 53),policy,supported,0.624,easy,GDP analysis,2
+PI_00537,Rent control reduces housing supply (context 53),policy,supported,0.758,medium,Housing market data,2
+PI_00538,Higher education subsidies increase enrollment (context 53),policy,supported,0.944,hard,Enrollment data,3
+PI_00539,War on drugs has reduced drug use (context 53),policy,rejected,0.598,expert,Prevalence data,3
+PI_00540,Affirmative action improves diversity (context 53),policy,supported,0.829,easy,University data,3
+PI_00541,Minimum wage increases lead to job losses (context 54),policy,undecided,0.598,hard,Labor economics,1
+PI_00542,Universal basic income reduces poverty (context 54),policy,undecided,0.764,expert,Pilot studies,4
+PI_00543,Carbon taxes effectively reduce emissions (context 54),policy,supported,0.641,easy,European data,3
+PI_00544,Strict gun laws reduce gun violence (context 54),policy,supported,0.75,medium,Comparative studies,4
+PI_00545,Free trade benefits all parties equally (context 54),policy,rejected,0.854,hard,Trade deficit data,1
+PI_00546,Immigration boosts economic growth (context 54),policy,supported,0.9,expert,GDP analysis,2
+PI_00547,Rent control reduces housing supply (context 54),policy,supported,0.568,easy,Housing market data,4
+PI_00548,Higher education subsidies increase enrollment (context 54),policy,supported,0.559,medium,Enrollment data,2
+PI_00549,War on drugs has reduced drug use (context 54),policy,rejected,0.722,hard,Prevalence data,2
+PI_00550,Affirmative action improves diversity (context 54),policy,supported,0.864,expert,University data,3
+PI_00551,Minimum wage increases lead to job losses (context 55),policy,undecided,0.767,medium,Labor economics,4
+PI_00552,Universal basic income reduces poverty (context 55),policy,undecided,0.911,hard,Pilot studies,3
+PI_00553,Carbon taxes effectively reduce emissions (context 55),policy,supported,0.744,expert,European data,2
+PI_00554,Strict gun laws reduce gun violence (context 55),policy,supported,0.9,easy,Comparative studies,2
+PI_00555,Free trade benefits all parties equally (context 55),policy,rejected,0.934,medium,Trade deficit data,4
+PI_00556,Immigration boosts economic growth (context 55),policy,supported,0.551,hard,GDP analysis,2
+PI_00557,Rent control reduces housing supply (context 55),policy,supported,0.816,expert,Housing market data,3
+PI_00558,Higher education subsidies increase enrollment (context 55),policy,supported,0.845,easy,Enrollment data,4
+PI_00559,War on drugs has reduced drug use (context 55),policy,rejected,0.707,medium,Prevalence data,4
+PI_00560,Affirmative action improves diversity (context 55),policy,supported,0.696,hard,University data,2
+PI_00561,Minimum wage increases lead to job losses (context 56),policy,undecided,0.726,easy,Labor economics,4
+PI_00562,Universal basic income reduces poverty (context 56),policy,undecided,0.731,medium,Pilot studies,3
+PI_00563,Carbon taxes effectively reduce emissions (context 56),policy,supported,0.586,hard,European data,1
+PI_00564,Strict gun laws reduce gun violence (context 56),policy,supported,0.706,expert,Comparative studies,3
+PI_00565,Free trade benefits all parties equally (context 56),policy,rejected,0.836,easy,Trade deficit data,4
+PI_00566,Immigration boosts economic growth (context 56),policy,supported,0.63,medium,GDP analysis,3
+PI_00567,Rent control reduces housing supply (context 56),policy,supported,0.822,hard,Housing market data,2
+PI_00568,Higher education subsidies increase enrollment (context 56),policy,supported,0.855,expert,Enrollment data,2
+PI_00569,War on drugs has reduced drug use (context 56),policy,rejected,0.596,easy,Prevalence data,2
+PI_00570,Affirmative action improves diversity (context 56),policy,supported,0.835,medium,University data,2
+PI_00571,Minimum wage increases lead to job losses (context 57),policy,undecided,0.866,expert,Labor economics,4
+PI_00572,Universal basic income reduces poverty (context 57),policy,undecided,0.77,easy,Pilot studies,4
+PI_00573,Carbon taxes effectively reduce emissions (context 57),policy,supported,0.819,medium,European data,1
+PI_00574,Strict gun laws reduce gun violence (context 57),policy,supported,0.887,hard,Comparative studies,4
+PI_00575,Free trade benefits all parties equally (context 57),policy,rejected,0.909,expert,Trade deficit data,4
+PI_00576,Immigration boosts economic growth (context 57),policy,supported,0.897,easy,GDP analysis,1
+PI_00577,Rent control reduces housing supply (context 57),policy,supported,0.58,medium,Housing market data,2
+PI_00578,Higher education subsidies increase enrollment (context 57),policy,supported,0.65,hard,Enrollment data,2
+PI_00579,War on drugs has reduced drug use (context 57),policy,rejected,0.566,expert,Prevalence data,3
+PI_00580,Affirmative action improves diversity (context 57),policy,supported,0.854,easy,University data,3
+PI_00581,Minimum wage increases lead to job losses (context 58),policy,undecided,0.6,hard,Labor economics,4
+PI_00582,Universal basic income reduces poverty (context 58),policy,undecided,0.826,expert,Pilot studies,1
+PI_00583,Carbon taxes effectively reduce emissions (context 58),policy,supported,0.603,easy,European data,2
+PI_00584,Strict gun laws reduce gun violence (context 58),policy,supported,0.644,medium,Comparative studies,3
+PI_00585,Free trade benefits all parties equally (context 58),policy,rejected,0.781,hard,Trade deficit data,1
+PI_00586,Immigration boosts economic growth (context 58),policy,supported,0.789,expert,GDP analysis,3
+PI_00587,Rent control reduces housing supply (context 58),policy,supported,0.783,easy,Housing market data,2
+PI_00588,Higher education subsidies increase enrollment (context 58),policy,supported,0.725,medium,Enrollment data,2
+PI_00589,War on drugs has reduced drug use (context 58),policy,rejected,0.767,hard,Prevalence data,4
+PI_00590,Affirmative action improves diversity (context 58),policy,supported,0.683,expert,University data,1
+PI_00591,Minimum wage increases lead to job losses (context 59),policy,undecided,0.814,medium,Labor economics,4
+PI_00592,Universal basic income reduces poverty (context 59),policy,undecided,0.906,hard,Pilot studies,1
+PI_00593,Carbon taxes effectively reduce emissions (context 59),policy,supported,0.704,expert,European data,2
+PI_00594,Strict gun laws reduce gun violence (context 59),policy,supported,0.575,easy,Comparative studies,4
+PI_00595,Free trade benefits all parties equally (context 59),policy,rejected,0.654,medium,Trade deficit data,1
+PI_00596,Immigration boosts economic growth (context 59),policy,supported,0.607,hard,GDP analysis,3
+PI_00597,Rent control reduces housing supply (context 59),policy,supported,0.857,expert,Housing market data,4
+PI_00598,Higher education subsidies increase enrollment (context 59),policy,supported,0.709,easy,Enrollment data,3
+PI_00599,War on drugs has reduced drug use (context 59),policy,rejected,0.939,medium,Prevalence data,2
+PI_00600,Affirmative action improves diversity (context 59),policy,supported,0.622,hard,University data,3
+PI_00601,Minimum wage increases lead to job losses (context 60),policy,undecided,0.909,easy,Labor economics,3
+PI_00602,Universal basic income reduces poverty (context 60),policy,undecided,0.57,medium,Pilot studies,4
+PI_00603,Carbon taxes effectively reduce emissions (context 60),policy,supported,0.705,hard,European data,3
+PI_00604,Strict gun laws reduce gun violence (context 60),policy,supported,0.939,expert,Comparative studies,4
+PI_00605,Free trade benefits all parties equally (context 60),policy,rejected,0.717,easy,Trade deficit data,3
+PI_00606,Immigration boosts economic growth (context 60),policy,supported,0.928,medium,GDP analysis,1
+PI_00607,Rent control reduces housing supply (context 60),policy,supported,0.582,hard,Housing market data,4
+PI_00608,Higher education subsidies increase enrollment (context 60),policy,supported,0.705,expert,Enrollment data,4
+PI_00609,War on drugs has reduced drug use (context 60),policy,rejected,0.728,easy,Prevalence data,1
+PI_00610,Affirmative action improves diversity (context 60),policy,supported,0.932,medium,University data,1
+PI_00611,Minimum wage increases lead to job losses (context 61),policy,undecided,0.777,expert,Labor economics,2
+PI_00612,Universal basic income reduces poverty (context 61),policy,undecided,0.586,easy,Pilot studies,1
+PI_00613,Carbon taxes effectively reduce emissions (context 61),policy,supported,0.83,medium,European data,3
+PI_00614,Strict gun laws reduce gun violence (context 61),policy,supported,0.709,hard,Comparative studies,2
+PI_00615,Free trade benefits all parties equally (context 61),policy,rejected,0.881,expert,Trade deficit data,3
+PI_00616,Immigration boosts economic growth (context 61),policy,supported,0.837,easy,GDP analysis,4
+PI_00617,Rent control reduces housing supply (context 61),policy,supported,0.794,medium,Housing market data,3
+PI_00618,Higher education subsidies increase enrollment (context 61),policy,supported,0.874,hard,Enrollment data,3
+PI_00619,War on drugs has reduced drug use (context 61),policy,rejected,0.813,expert,Prevalence data,4
+PI_00620,Affirmative action improves diversity (context 61),policy,supported,0.728,easy,University data,1
+PI_00621,Minimum wage increases lead to job losses (context 62),policy,undecided,0.771,hard,Labor economics,2
+PI_00622,Universal basic income reduces poverty (context 62),policy,undecided,0.554,expert,Pilot studies,4
+PI_00623,Carbon taxes effectively reduce emissions (context 62),policy,supported,0.639,easy,European data,2
+PI_00624,Strict gun laws reduce gun violence (context 62),policy,supported,0.735,medium,Comparative studies,2
+PI_00625,Free trade benefits all parties equally (context 62),policy,rejected,0.782,hard,Trade deficit data,2
+PI_00626,Immigration boosts economic growth (context 62),policy,supported,0.811,expert,GDP analysis,1
+PI_00627,Rent control reduces housing supply (context 62),policy,supported,0.821,easy,Housing market data,3
+PI_00628,Higher education subsidies increase enrollment (context 62),policy,supported,0.74,medium,Enrollment data,4
+PI_00629,War on drugs has reduced drug use (context 62),policy,rejected,0.59,hard,Prevalence data,3
+PI_00630,Affirmative action improves diversity (context 62),policy,supported,0.597,expert,University data,4
+PI_00631,Minimum wage increases lead to job losses (context 63),policy,undecided,0.91,medium,Labor economics,1
+PI_00632,Universal basic income reduces poverty (context 63),policy,undecided,0.743,hard,Pilot studies,3
+PI_00633,Carbon taxes effectively reduce emissions (context 63),policy,supported,0.707,expert,European data,3
+PI_00634,Strict gun laws reduce gun violence (context 63),policy,supported,0.664,easy,Comparative studies,3
+PI_00635,Free trade benefits all parties equally (context 63),policy,rejected,0.825,medium,Trade deficit data,2
+PI_00636,Immigration boosts economic growth (context 63),policy,supported,0.714,hard,GDP analysis,4
+PI_00637,Rent control reduces housing supply (context 63),policy,supported,0.805,expert,Housing market data,3
+PI_00638,Higher education subsidies increase enrollment (context 63),policy,supported,0.869,easy,Enrollment data,2
+PI_00639,War on drugs has reduced drug use (context 63),policy,rejected,0.808,medium,Prevalence data,4
+PI_00640,Affirmative action improves diversity (context 63),policy,supported,0.72,hard,University data,2
+PI_00641,Minimum wage increases lead to job losses (context 64),policy,undecided,0.777,easy,Labor economics,2
+PI_00642,Universal basic income reduces poverty (context 64),policy,undecided,0.57,medium,Pilot studies,1
+PI_00643,Carbon taxes effectively reduce emissions (context 64),policy,supported,0.681,hard,European data,4
+PI_00644,Strict gun laws reduce gun violence (context 64),policy,supported,0.947,expert,Comparative studies,4
+PI_00645,Free trade benefits all parties equally (context 64),policy,rejected,0.912,easy,Trade deficit data,4
+PI_00646,Immigration boosts economic growth (context 64),policy,supported,0.894,medium,GDP analysis,4
+PI_00647,Rent control reduces housing supply (context 64),policy,supported,0.568,hard,Housing market data,4
+PI_00648,Higher education subsidies increase enrollment (context 64),policy,supported,0.79,expert,Enrollment data,4
+PI_00649,War on drugs has reduced drug use (context 64),policy,rejected,0.614,easy,Prevalence data,3
+PI_00650,Affirmative action improves diversity (context 64),policy,supported,0.78,medium,University data,1
+PI_00651,Minimum wage increases lead to job losses (context 65),policy,undecided,0.844,expert,Labor economics,2
+PI_00652,Universal basic income reduces poverty (context 65),policy,undecided,0.594,easy,Pilot studies,2
+PI_00653,Carbon taxes effectively reduce emissions (context 65),policy,supported,0.752,medium,European data,4
+PI_00654,Strict gun laws reduce gun violence (context 65),policy,supported,0.795,hard,Comparative studies,3
+PI_00655,Free trade benefits all parties equally (context 65),policy,rejected,0.753,expert,Trade deficit data,4
+PI_00656,Immigration boosts economic growth (context 65),policy,supported,0.721,easy,GDP analysis,4
+PI_00657,Rent control reduces housing supply (context 65),policy,supported,0.575,medium,Housing market data,4
+PI_00658,Higher education subsidies increase enrollment (context 65),policy,supported,0.837,hard,Enrollment data,3
+PI_00659,War on drugs has reduced drug use (context 65),policy,rejected,0.763,expert,Prevalence data,2
+PI_00660,Affirmative action improves diversity (context 65),policy,supported,0.938,easy,University data,3
+PI_00661,Minimum wage increases lead to job losses (context 66),policy,undecided,0.892,hard,Labor economics,4
+PI_00662,Universal basic income reduces poverty (context 66),policy,undecided,0.832,expert,Pilot studies,3
+PI_00663,Carbon taxes effectively reduce emissions (context 66),policy,supported,0.777,easy,European data,3
+PI_00664,Strict gun laws reduce gun violence (context 66),policy,supported,0.775,medium,Comparative studies,2
+PI_00665,Free trade benefits all parties equally (context 66),policy,rejected,0.591,hard,Trade deficit data,1
+PI_00666,Immigration boosts economic growth (context 66),policy,supported,0.589,expert,GDP analysis,1
+PI_00667,Rent control reduces housing supply (context 66),policy,supported,0.893,easy,Housing market data,2
+PI_00668,Higher education subsidies increase enrollment (context 66),policy,supported,0.571,medium,Enrollment data,3
+PI_00669,War on drugs has reduced drug use (context 66),policy,rejected,0.818,hard,Prevalence data,1
+PI_00670,Affirmative action improves diversity (context 66),policy,supported,0.828,expert,University data,2
+PI_00671,Minimum wage increases lead to job losses (context 67),policy,undecided,0.591,medium,Labor economics,2
+PI_00672,Universal basic income reduces poverty (context 67),policy,undecided,0.78,hard,Pilot studies,3
+PI_00673,Carbon taxes effectively reduce emissions (context 67),policy,supported,0.834,expert,European data,2
+PI_00674,Strict gun laws reduce gun violence (context 67),policy,supported,0.775,easy,Comparative studies,1
+PI_00675,Free trade benefits all parties equally (context 67),policy,rejected,0.909,medium,Trade deficit data,1
+PI_00676,Immigration boosts economic growth (context 67),policy,supported,0.801,hard,GDP analysis,3
+PI_00677,Rent control reduces housing supply (context 67),policy,supported,0.563,expert,Housing market data,1
+PI_00678,Higher education subsidies increase enrollment (context 67),policy,supported,0.685,easy,Enrollment data,1
+PI_00679,War on drugs has reduced drug use (context 67),policy,rejected,0.88,medium,Prevalence data,4
+PI_00680,Affirmative action improves diversity (context 67),policy,supported,0.631,hard,University data,3
+PI_00681,Minimum wage increases lead to job losses (context 68),policy,undecided,0.77,easy,Labor economics,1
+PI_00682,Universal basic income reduces poverty (context 68),policy,undecided,0.691,medium,Pilot studies,4
+PI_00683,Carbon taxes effectively reduce emissions (context 68),policy,supported,0.563,hard,European data,2
+PI_00684,Strict gun laws reduce gun violence (context 68),policy,supported,0.722,expert,Comparative studies,4
+PI_00685,Free trade benefits all parties equally (context 68),policy,rejected,0.661,easy,Trade deficit data,2
+PI_00686,Immigration boosts economic growth (context 68),policy,supported,0.617,medium,GDP analysis,3
+PI_00687,Rent control reduces housing supply (context 68),policy,supported,0.573,hard,Housing market data,4
+PI_00688,Higher education subsidies increase enrollment (context 68),policy,supported,0.605,expert,Enrollment data,3
+PI_00689,War on drugs has reduced drug use (context 68),policy,rejected,0.88,easy,Prevalence data,2
+PI_00690,Affirmative action improves diversity (context 68),policy,supported,0.91,medium,University data,3
+PI_00691,Minimum wage increases lead to job losses (context 69),policy,undecided,0.811,expert,Labor economics,1
+PI_00692,Universal basic income reduces poverty (context 69),policy,undecided,0.686,easy,Pilot studies,4
+PI_00693,Carbon taxes effectively reduce emissions (context 69),policy,supported,0.614,medium,European data,2
+PI_00694,Strict gun laws reduce gun violence (context 69),policy,supported,0.576,hard,Comparative studies,2
+PI_00695,Free trade benefits all parties equally (context 69),policy,rejected,0.922,expert,Trade deficit data,2
+PI_00696,Immigration boosts economic growth (context 69),policy,supported,0.9,easy,GDP analysis,2
+PI_00697,Rent control reduces housing supply (context 69),policy,supported,0.64,medium,Housing market data,4
+PI_00698,Higher education subsidies increase enrollment (context 69),policy,supported,0.748,hard,Enrollment data,3
+PI_00699,War on drugs has reduced drug use (context 69),policy,rejected,0.585,expert,Prevalence data,2
+PI_00700,Affirmative action improves diversity (context 69),policy,supported,0.7,easy,University data,1
+PI_00701,Minimum wage increases lead to job losses (context 70),policy,undecided,0.637,hard,Labor economics,1
+PI_00702,Universal basic income reduces poverty (context 70),policy,undecided,0.724,expert,Pilot studies,1
+PI_00703,Carbon taxes effectively reduce emissions (context 70),policy,supported,0.901,easy,European data,2
+PI_00704,Strict gun laws reduce gun violence (context 70),policy,supported,0.694,medium,Comparative studies,4
+PI_00705,Free trade benefits all parties equally (context 70),policy,rejected,0.698,hard,Trade deficit data,3
+PI_00706,Immigration boosts economic growth (context 70),policy,supported,0.752,expert,GDP analysis,3
+PI_00707,Rent control reduces housing supply (context 70),policy,supported,0.636,easy,Housing market data,4
+PI_00708,Higher education subsidies increase enrollment (context 70),policy,supported,0.566,medium,Enrollment data,4
+PI_00709,War on drugs has reduced drug use (context 70),policy,rejected,0.759,hard,Prevalence data,3
+PI_00710,Affirmative action improves diversity (context 70),policy,supported,0.871,expert,University data,1
+PI_00711,Minimum wage increases lead to job losses (context 71),policy,undecided,0.779,medium,Labor economics,4
+PI_00712,Universal basic income reduces poverty (context 71),policy,undecided,0.911,hard,Pilot studies,4
+PI_00713,Carbon taxes effectively reduce emissions (context 71),policy,supported,0.693,expert,European data,3
+PI_00714,Strict gun laws reduce gun violence (context 71),policy,supported,0.887,easy,Comparative studies,4
+PI_00715,Free trade benefits all parties equally (context 71),policy,rejected,0.642,medium,Trade deficit data,1
+PI_00716,Immigration boosts economic growth (context 71),policy,supported,0.644,hard,GDP analysis,2
+PI_00717,Rent control reduces housing supply (context 71),policy,supported,0.898,expert,Housing market data,1
+PI_00718,Higher education subsidies increase enrollment (context 71),policy,supported,0.766,easy,Enrollment data,1
+PI_00719,War on drugs has reduced drug use (context 71),policy,rejected,0.779,medium,Prevalence data,3
+PI_00720,Affirmative action improves diversity (context 71),policy,supported,0.851,hard,University data,2
+PI_00721,Minimum wage increases lead to job losses (context 72),policy,undecided,0.749,easy,Labor economics,3
+PI_00722,Universal basic income reduces poverty (context 72),policy,undecided,0.561,medium,Pilot studies,3
+PI_00723,Carbon taxes effectively reduce emissions (context 72),policy,supported,0.893,hard,European data,3
+PI_00724,Strict gun laws reduce gun violence (context 72),policy,supported,0.613,expert,Comparative studies,4
+PI_00725,Free trade benefits all parties equally (context 72),policy,rejected,0.805,easy,Trade deficit data,3
+PI_00726,Immigration boosts economic growth (context 72),policy,supported,0.829,medium,GDP analysis,2
+PI_00727,Rent control reduces housing supply (context 72),policy,supported,0.937,hard,Housing market data,2
+PI_00728,Higher education subsidies increase enrollment (context 72),policy,supported,0.709,expert,Enrollment data,3
+PI_00729,War on drugs has reduced drug use (context 72),policy,rejected,0.69,easy,Prevalence data,4
+PI_00730,Affirmative action improves diversity (context 72),policy,supported,0.919,medium,University data,3
+PI_00731,Minimum wage increases lead to job losses (context 73),policy,undecided,0.943,expert,Labor economics,2
+PI_00732,Universal basic income reduces poverty (context 73),policy,undecided,0.669,easy,Pilot studies,4
+PI_00733,Carbon taxes effectively reduce emissions (context 73),policy,supported,0.735,medium,European data,1
+PI_00734,Strict gun laws reduce gun violence (context 73),policy,supported,0.884,hard,Comparative studies,3
+PI_00735,Free trade benefits all parties equally (context 73),policy,rejected,0.691,expert,Trade deficit data,4
+PI_00736,Immigration boosts economic growth (context 73),policy,supported,0.824,easy,GDP analysis,1
+PI_00737,Rent control reduces housing supply (context 73),policy,supported,0.6,medium,Housing market data,3
+PI_00738,Higher education subsidies increase enrollment (context 73),policy,supported,0.72,hard,Enrollment data,1
+PI_00739,War on drugs has reduced drug use (context 73),policy,rejected,0.948,expert,Prevalence data,2
+PI_00740,Affirmative action improves diversity (context 73),policy,supported,0.717,easy,University data,1
+PI_00741,Minimum wage increases lead to job losses (context 74),policy,undecided,0.88,hard,Labor economics,4
+PI_00742,Universal basic income reduces poverty (context 74),policy,undecided,0.879,expert,Pilot studies,4
+PI_00743,Carbon taxes effectively reduce emissions (context 74),policy,supported,0.943,easy,European data,2
+PI_00744,Strict gun laws reduce gun violence (context 74),policy,supported,0.878,medium,Comparative studies,3
+PI_00745,Free trade benefits all parties equally (context 74),policy,rejected,0.752,hard,Trade deficit data,4
+PI_00746,Immigration boosts economic growth (context 74),policy,supported,0.787,expert,GDP analysis,3
+PI_00747,Rent control reduces housing supply (context 74),policy,supported,0.749,easy,Housing market data,1
+PI_00748,Higher education subsidies increase enrollment (context 74),policy,supported,0.622,medium,Enrollment data,2
+PI_00749,War on drugs has reduced drug use (context 74),policy,rejected,0.617,hard,Prevalence data,2
+PI_00750,Affirmative action improves diversity (context 74),policy,supported,0.687,expert,University data,3
+PI_00751,Minimum wage increases lead to job losses (context 75),policy,undecided,0.797,medium,Labor economics,2
+PI_00752,Universal basic income reduces poverty (context 75),policy,undecided,0.716,hard,Pilot studies,4
+PI_00753,Carbon taxes effectively reduce emissions (context 75),policy,supported,0.905,expert,European data,4
+PI_00754,Strict gun laws reduce gun violence (context 75),policy,supported,0.735,easy,Comparative studies,1
+PI_00755,Free trade benefits all parties equally (context 75),policy,rejected,0.62,medium,Trade deficit data,4
+PI_00756,Immigration boosts economic growth (context 75),policy,supported,0.898,hard,GDP analysis,1
+PI_00757,Rent control reduces housing supply (context 75),policy,supported,0.842,expert,Housing market data,4
+PI_00758,Higher education subsidies increase enrollment (context 75),policy,supported,0.805,easy,Enrollment data,2
+PI_00759,War on drugs has reduced drug use (context 75),policy,rejected,0.94,medium,Prevalence data,4
+PI_00760,Affirmative action improves diversity (context 75),policy,supported,0.707,hard,University data,3
+PI_00761,Minimum wage increases lead to job losses (context 76),policy,undecided,0.624,easy,Labor economics,1
+PI_00762,Universal basic income reduces poverty (context 76),policy,undecided,0.71,medium,Pilot studies,2
+PI_00763,Carbon taxes effectively reduce emissions (context 76),policy,supported,0.742,hard,European data,2
+PI_00764,Strict gun laws reduce gun violence (context 76),policy,supported,0.61,expert,Comparative studies,1
+PI_00765,Free trade benefits all parties equally (context 76),policy,rejected,0.942,easy,Trade deficit data,1
+PI_00766,Immigration boosts economic growth (context 76),policy,supported,0.77,medium,GDP analysis,4
+PI_00767,Rent control reduces housing supply (context 76),policy,supported,0.931,hard,Housing market data,2
+PI_00768,Higher education subsidies increase enrollment (context 76),policy,supported,0.874,expert,Enrollment data,2
+PI_00769,War on drugs has reduced drug use (context 76),policy,rejected,0.928,easy,Prevalence data,1
+PI_00770,Affirmative action improves diversity (context 76),policy,supported,0.69,medium,University data,2
+PI_00771,Minimum wage increases lead to job losses (context 77),policy,undecided,0.904,expert,Labor economics,1
+PI_00772,Universal basic income reduces poverty (context 77),policy,undecided,0.589,easy,Pilot studies,1
+PI_00773,Carbon taxes effectively reduce emissions (context 77),policy,supported,0.853,medium,European data,1
+PI_00774,Strict gun laws reduce gun violence (context 77),policy,supported,0.575,hard,Comparative studies,1
+PI_00775,Free trade benefits all parties equally (context 77),policy,rejected,0.62,expert,Trade deficit data,4
+PI_00776,Immigration boosts economic growth (context 77),policy,supported,0.764,easy,GDP analysis,2
+PI_00777,Rent control reduces housing supply (context 77),policy,supported,0.699,medium,Housing market data,1
+PI_00778,Higher education subsidies increase enrollment (context 77),policy,supported,0.783,hard,Enrollment data,2
+PI_00779,War on drugs has reduced drug use (context 77),policy,rejected,0.907,expert,Prevalence data,2
+PI_00780,Affirmative action improves diversity (context 77),policy,supported,0.58,easy,University data,2
+PI_00781,Minimum wage increases lead to job losses (context 78),policy,undecided,0.711,hard,Labor economics,1
+PI_00782,Universal basic income reduces poverty (context 78),policy,undecided,0.906,expert,Pilot studies,3
+PI_00783,Carbon taxes effectively reduce emissions (context 78),policy,supported,0.866,easy,European data,2
+PI_00784,Strict gun laws reduce gun violence (context 78),policy,supported,0.587,medium,Comparative studies,4
+PI_00785,Free trade benefits all parties equally (context 78),policy,rejected,0.904,hard,Trade deficit data,3
+PI_00786,Immigration boosts economic growth (context 78),policy,supported,0.574,expert,GDP analysis,4
+PI_00787,Rent control reduces housing supply (context 78),policy,supported,0.568,easy,Housing market data,3
+PI_00788,Higher education subsidies increase enrollment (context 78),policy,supported,0.937,medium,Enrollment data,2
+PI_00789,War on drugs has reduced drug use (context 78),policy,rejected,0.69,hard,Prevalence data,2
+PI_00790,Affirmative action improves diversity (context 78),policy,supported,0.586,expert,University data,2
+PI_00791,Minimum wage increases lead to job losses (context 79),policy,undecided,0.676,medium,Labor economics,4
+PI_00792,Universal basic income reduces poverty (context 79),policy,undecided,0.932,hard,Pilot studies,1
+PI_00793,Carbon taxes effectively reduce emissions (context 79),policy,supported,0.692,expert,European data,4
+PI_00794,Strict gun laws reduce gun violence (context 79),policy,supported,0.644,easy,Comparative studies,1
+PI_00795,Free trade benefits all parties equally (context 79),policy,rejected,0.819,medium,Trade deficit data,3
+PI_00796,Immigration boosts economic growth (context 79),policy,supported,0.855,hard,GDP analysis,4
+PI_00797,Rent control reduces housing supply (context 79),policy,supported,0.811,expert,Housing market data,4
+PI_00798,Higher education subsidies increase enrollment (context 79),policy,supported,0.916,easy,Enrollment data,2
+PI_00799,War on drugs has reduced drug use (context 79),policy,rejected,0.695,medium,Prevalence data,3
+PI_00800,Affirmative action improves diversity (context 79),policy,supported,0.677,hard,University data,4
+PI_00801,Minimum wage increases lead to job losses (context 80),policy,undecided,0.661,easy,Labor economics,3
+PI_00802,Universal basic income reduces poverty (context 80),policy,undecided,0.64,medium,Pilot studies,4
+PI_00803,Carbon taxes effectively reduce emissions (context 80),policy,supported,0.583,hard,European data,4
+PI_00804,Strict gun laws reduce gun violence (context 80),policy,supported,0.667,expert,Comparative studies,3
+PI_00805,Free trade benefits all parties equally (context 80),policy,rejected,0.584,easy,Trade deficit data,1
+PI_00806,Immigration boosts economic growth (context 80),policy,supported,0.688,medium,GDP analysis,1
+PI_00807,Rent control reduces housing supply (context 80),policy,supported,0.938,hard,Housing market data,3
+PI_00808,Higher education subsidies increase enrollment (context 80),policy,supported,0.89,expert,Enrollment data,2
+PI_00809,War on drugs has reduced drug use (context 80),policy,rejected,0.918,easy,Prevalence data,3
+PI_00810,Affirmative action improves diversity (context 80),policy,supported,0.596,medium,University data,3
+PI_00811,Minimum wage increases lead to job losses (context 81),policy,undecided,0.902,expert,Labor economics,2
+PI_00812,Universal basic income reduces poverty (context 81),policy,undecided,0.633,easy,Pilot studies,1
+PI_00813,Carbon taxes effectively reduce emissions (context 81),policy,supported,0.88,medium,European data,4
+PI_00814,Strict gun laws reduce gun violence (context 81),policy,supported,0.901,hard,Comparative studies,1
+PI_00815,Free trade benefits all parties equally (context 81),policy,rejected,0.706,expert,Trade deficit data,2
+PI_00816,Immigration boosts economic growth (context 81),policy,supported,0.634,easy,GDP analysis,3
+PI_00817,Rent control reduces housing supply (context 81),policy,supported,0.898,medium,Housing market data,1
+PI_00818,Higher education subsidies increase enrollment (context 81),policy,supported,0.681,hard,Enrollment data,1
+PI_00819,War on drugs has reduced drug use (context 81),policy,rejected,0.777,expert,Prevalence data,4
+PI_00820,Affirmative action improves diversity (context 81),policy,supported,0.613,easy,University data,1
+PI_00821,Minimum wage increases lead to job losses (context 82),policy,undecided,0.59,hard,Labor economics,4
+PI_00822,Universal basic income reduces poverty (context 82),policy,undecided,0.786,expert,Pilot studies,1
+PI_00823,Carbon taxes effectively reduce emissions (context 82),policy,supported,0.657,easy,European data,1
+PI_00824,Strict gun laws reduce gun violence (context 82),policy,supported,0.609,medium,Comparative studies,1
+PI_00825,Free trade benefits all parties equally (context 82),policy,rejected,0.805,hard,Trade deficit data,4
+PI_00826,Immigration boosts economic growth (context 82),policy,supported,0.807,expert,GDP analysis,4
+PI_00827,Rent control reduces housing supply (context 82),policy,supported,0.702,easy,Housing market data,1
+PI_00828,Higher education subsidies increase enrollment (context 82),policy,supported,0.693,medium,Enrollment data,1
+PI_00829,War on drugs has reduced drug use (context 82),policy,rejected,0.608,hard,Prevalence data,1
+PI_00830,Affirmative action improves diversity (context 82),policy,supported,0.823,expert,University data,4
+PI_00831,Minimum wage increases lead to job losses (context 83),policy,undecided,0.575,medium,Labor economics,2
+PI_00832,Universal basic income reduces poverty (context 83),policy,undecided,0.84,hard,Pilot studies,3
+PI_00833,Carbon taxes effectively reduce emissions (context 83),policy,supported,0.821,expert,European data,4
+PI_00834,Strict gun laws reduce gun violence (context 83),policy,supported,0.894,easy,Comparative studies,3
+PI_00835,Free trade benefits all parties equally (context 83),policy,rejected,0.59,medium,Trade deficit data,4
+PI_00836,Immigration boosts economic growth (context 83),policy,supported,0.869,hard,GDP analysis,2
+PI_00837,Rent control reduces housing supply (context 83),policy,supported,0.67,expert,Housing market data,4
+PI_00838,Higher education subsidies increase enrollment (context 83),policy,supported,0.897,easy,Enrollment data,3
+PI_00839,War on drugs has reduced drug use (context 83),policy,rejected,0.591,medium,Prevalence data,2
+PI_00840,Affirmative action improves diversity (context 83),policy,supported,0.771,hard,University data,3
+PI_00841,Minimum wage increases lead to job losses (context 84),policy,undecided,0.646,easy,Labor economics,3
+PI_00842,Universal basic income reduces poverty (context 84),policy,undecided,0.856,medium,Pilot studies,3
+PI_00843,Carbon taxes effectively reduce emissions (context 84),policy,supported,0.668,hard,European data,1
+PI_00844,Strict gun laws reduce gun violence (context 84),policy,supported,0.823,expert,Comparative studies,3
+PI_00845,Free trade benefits all parties equally (context 84),policy,rejected,0.838,easy,Trade deficit data,4
+PI_00846,Immigration boosts economic growth (context 84),policy,supported,0.757,medium,GDP analysis,3
+PI_00847,Rent control reduces housing supply (context 84),policy,supported,0.597,hard,Housing market data,4
+PI_00848,Higher education subsidies increase enrollment (context 84),policy,supported,0.646,expert,Enrollment data,1
+PI_00849,War on drugs has reduced drug use (context 84),policy,rejected,0.769,easy,Prevalence data,2
+PI_00850,Affirmative action improves diversity (context 84),policy,supported,0.843,medium,University data,3
+PI_00851,Minimum wage increases lead to job losses (context 85),policy,undecided,0.85,expert,Labor economics,2
+PI_00852,Universal basic income reduces poverty (context 85),policy,undecided,0.911,easy,Pilot studies,1
+PI_00853,Carbon taxes effectively reduce emissions (context 85),policy,supported,0.889,medium,European data,1
+PI_00854,Strict gun laws reduce gun violence (context 85),policy,supported,0.905,hard,Comparative studies,2
+PI_00855,Free trade benefits all parties equally (context 85),policy,rejected,0.838,expert,Trade deficit data,2
+PI_00856,Immigration boosts economic growth (context 85),policy,supported,0.753,easy,GDP analysis,2
+PI_00857,Rent control reduces housing supply (context 85),policy,supported,0.63,medium,Housing market data,2
+PI_00858,Higher education subsidies increase enrollment (context 85),policy,supported,0.721,hard,Enrollment data,4
+PI_00859,War on drugs has reduced drug use (context 85),policy,rejected,0.74,expert,Prevalence data,3
+PI_00860,Affirmative action improves diversity (context 85),policy,supported,0.708,easy,University data,3
+PI_00861,Minimum wage increases lead to job losses (context 86),policy,undecided,0.832,hard,Labor economics,2
+PI_00862,Universal basic income reduces poverty (context 86),policy,undecided,0.945,expert,Pilot studies,1
+PI_00863,Carbon taxes effectively reduce emissions (context 86),policy,supported,0.665,easy,European data,2
+PI_00864,Strict gun laws reduce gun violence (context 86),policy,supported,0.639,medium,Comparative studies,4
+PI_00865,Free trade benefits all parties equally (context 86),policy,rejected,0.838,hard,Trade deficit data,1
+PI_00866,Immigration boosts economic growth (context 86),policy,supported,0.67,expert,GDP analysis,1
+PI_00867,Rent control reduces housing supply (context 86),policy,supported,0.902,easy,Housing market data,4
+PI_00868,Higher education subsidies increase enrollment (context 86),policy,supported,0.774,medium,Enrollment data,3
+PI_00869,War on drugs has reduced drug use (context 86),policy,rejected,0.578,hard,Prevalence data,3
+PI_00870,Affirmative action improves diversity (context 86),policy,supported,0.653,expert,University data,4
+PI_00871,Minimum wage increases lead to job losses (context 87),policy,undecided,0.896,medium,Labor economics,3
+PI_00872,Universal basic income reduces poverty (context 87),policy,undecided,0.711,hard,Pilot studies,1
+PI_00873,Carbon taxes effectively reduce emissions (context 87),policy,supported,0.936,expert,European data,4
+PI_00874,Strict gun laws reduce gun violence (context 87),policy,supported,0.933,easy,Comparative studies,1
+PI_00875,Free trade benefits all parties equally (context 87),policy,rejected,0.742,medium,Trade deficit data,2
+PI_00876,Immigration boosts economic growth (context 87),policy,supported,0.841,hard,GDP analysis,3
+PI_00877,Rent control reduces housing supply (context 87),policy,supported,0.602,expert,Housing market data,2
+PI_00878,Higher education subsidies increase enrollment (context 87),policy,supported,0.865,easy,Enrollment data,2
+PI_00879,War on drugs has reduced drug use (context 87),policy,rejected,0.943,medium,Prevalence data,3
+PI_00880,Affirmative action improves diversity (context 87),policy,supported,0.767,hard,University data,1
+PI_00881,Minimum wage increases lead to job losses (context 88),policy,undecided,0.834,easy,Labor economics,2
+PI_00882,Universal basic income reduces poverty (context 88),policy,undecided,0.647,medium,Pilot studies,4
+PI_00883,Carbon taxes effectively reduce emissions (context 88),policy,supported,0.718,hard,European data,1
+PI_00884,Strict gun laws reduce gun violence (context 88),policy,supported,0.642,expert,Comparative studies,3
+PI_00885,Free trade benefits all parties equally (context 88),policy,rejected,0.744,easy,Trade deficit data,3
+PI_00886,Immigration boosts economic growth (context 88),policy,supported,0.652,medium,GDP analysis,4
+PI_00887,Rent control reduces housing supply (context 88),policy,supported,0.663,hard,Housing market data,3
+PI_00888,Higher education subsidies increase enrollment (context 88),policy,supported,0.743,expert,Enrollment data,4
+PI_00889,War on drugs has reduced drug use (context 88),policy,rejected,0.769,easy,Prevalence data,2
+PI_00890,Affirmative action improves diversity (context 88),policy,supported,0.762,medium,University data,4
+PI_00891,Minimum wage increases lead to job losses (context 89),policy,undecided,0.769,expert,Labor economics,3
+PI_00892,Universal basic income reduces poverty (context 89),policy,undecided,0.561,easy,Pilot studies,1
+PI_00893,Carbon taxes effectively reduce emissions (context 89),policy,supported,0.78,medium,European data,1
+PI_00894,Strict gun laws reduce gun violence (context 89),policy,supported,0.633,hard,Comparative studies,2
+PI_00895,Free trade benefits all parties equally (context 89),policy,rejected,0.794,expert,Trade deficit data,3
+PI_00896,Immigration boosts economic growth (context 89),policy,supported,0.806,easy,GDP analysis,3
+PI_00897,Rent control reduces housing supply (context 89),policy,supported,0.792,medium,Housing market data,4
+PI_00898,Higher education subsidies increase enrollment (context 89),policy,supported,0.7,hard,Enrollment data,4
+PI_00899,War on drugs has reduced drug use (context 89),policy,rejected,0.612,expert,Prevalence data,4
+PI_00900,Affirmative action improves diversity (context 89),policy,supported,0.799,easy,University data,2
+PI_00901,Minimum wage increases lead to job losses (context 90),policy,undecided,0.64,hard,Labor economics,4
+PI_00902,Universal basic income reduces poverty (context 90),policy,undecided,0.88,expert,Pilot studies,2
+PI_00903,Carbon taxes effectively reduce emissions (context 90),policy,supported,0.773,easy,European data,1
+PI_00904,Strict gun laws reduce gun violence (context 90),policy,supported,0.629,medium,Comparative studies,2
+PI_00905,Free trade benefits all parties equally (context 90),policy,rejected,0.592,hard,Trade deficit data,4
+PI_00906,Immigration boosts economic growth (context 90),policy,supported,0.924,expert,GDP analysis,1
+PI_00907,Rent control reduces housing supply (context 90),policy,supported,0.847,easy,Housing market data,3
+PI_00908,Higher education subsidies increase enrollment (context 90),policy,supported,0.886,medium,Enrollment data,3
+PI_00909,War on drugs has reduced drug use (context 90),policy,rejected,0.875,hard,Prevalence data,1
+PI_00910,Affirmative action improves diversity (context 90),policy,supported,0.586,expert,University data,4
+PI_00911,Minimum wage increases lead to job losses (context 91),policy,undecided,0.791,medium,Labor economics,4
+PI_00912,Universal basic income reduces poverty (context 91),policy,undecided,0.887,hard,Pilot studies,1
+PI_00913,Carbon taxes effectively reduce emissions (context 91),policy,supported,0.808,expert,European data,1
+PI_00914,Strict gun laws reduce gun violence (context 91),policy,supported,0.893,easy,Comparative studies,2
+PI_00915,Free trade benefits all parties equally (context 91),policy,rejected,0.675,medium,Trade deficit data,1
+PI_00916,Immigration boosts economic growth (context 91),policy,supported,0.848,hard,GDP analysis,2
+PI_00917,Rent control reduces housing supply (context 91),policy,supported,0.665,expert,Housing market data,1
+PI_00918,Higher education subsidies increase enrollment (context 91),policy,supported,0.569,easy,Enrollment data,1
+PI_00919,War on drugs has reduced drug use (context 91),policy,rejected,0.785,medium,Prevalence data,3
+PI_00920,Affirmative action improves diversity (context 91),policy,supported,0.77,hard,University data,1
+PI_00921,Minimum wage increases lead to job losses (context 92),policy,undecided,0.582,easy,Labor economics,3
+PI_00922,Universal basic income reduces poverty (context 92),policy,undecided,0.738,medium,Pilot studies,3
+PI_00923,Carbon taxes effectively reduce emissions (context 92),policy,supported,0.945,hard,European data,4
+PI_00924,Strict gun laws reduce gun violence (context 92),policy,supported,0.757,expert,Comparative studies,2
+PI_00925,Free trade benefits all parties equally (context 92),policy,rejected,0.76,easy,Trade deficit data,1
+PI_00926,Immigration boosts economic growth (context 92),policy,supported,0.685,medium,GDP analysis,4
+PI_00927,Rent control reduces housing supply (context 92),policy,supported,0.605,hard,Housing market data,2
+PI_00928,Higher education subsidies increase enrollment (context 92),policy,supported,0.884,expert,Enrollment data,4
+PI_00929,War on drugs has reduced drug use (context 92),policy,rejected,0.943,easy,Prevalence data,4
+PI_00930,Affirmative action improves diversity (context 92),policy,supported,0.878,medium,University data,4
+PI_00931,Minimum wage increases lead to job losses (context 93),policy,undecided,0.841,expert,Labor economics,3
+PI_00932,Universal basic income reduces poverty (context 93),policy,undecided,0.698,easy,Pilot studies,4
+PI_00933,Carbon taxes effectively reduce emissions (context 93),policy,supported,0.702,medium,European data,2
+PI_00934,Strict gun laws reduce gun violence (context 93),policy,supported,0.587,hard,Comparative studies,4
+PI_00935,Free trade benefits all parties equally (context 93),policy,rejected,0.897,expert,Trade deficit data,3
+PI_00936,Immigration boosts economic growth (context 93),policy,supported,0.811,easy,GDP analysis,1
+PI_00937,Rent control reduces housing supply (context 93),policy,supported,0.602,medium,Housing market data,2
+PI_00938,Higher education subsidies increase enrollment (context 93),policy,supported,0.828,hard,Enrollment data,4
+PI_00939,War on drugs has reduced drug use (context 93),policy,rejected,0.85,expert,Prevalence data,3
+PI_00940,Affirmative action improves diversity (context 93),policy,supported,0.815,easy,University data,2
+PI_00941,Minimum wage increases lead to job losses (context 94),policy,undecided,0.622,hard,Labor economics,2
+PI_00942,Universal basic income reduces poverty (context 94),policy,undecided,0.777,expert,Pilot studies,2
+PI_00943,Carbon taxes effectively reduce emissions (context 94),policy,supported,0.687,easy,European data,3
+PI_00944,Strict gun laws reduce gun violence (context 94),policy,supported,0.788,medium,Comparative studies,1
+PI_00945,Free trade benefits all parties equally (context 94),policy,rejected,0.705,hard,Trade deficit data,3
+PI_00946,Immigration boosts economic growth (context 94),policy,supported,0.878,expert,GDP analysis,3
+PI_00947,Rent control reduces housing supply (context 94),policy,supported,0.804,easy,Housing market data,3
+PI_00948,Higher education subsidies increase enrollment (context 94),policy,supported,0.94,medium,Enrollment data,3
+PI_00949,War on drugs has reduced drug use (context 94),policy,rejected,0.682,hard,Prevalence data,4
+PI_00950,Affirmative action improves diversity (context 94),policy,supported,0.733,expert,University data,4
+PI_00951,Minimum wage increases lead to job losses (context 95),policy,undecided,0.916,medium,Labor economics,3
+PI_00952,Universal basic income reduces poverty (context 95),policy,undecided,0.698,hard,Pilot studies,2
+PI_00953,Carbon taxes effectively reduce emissions (context 95),policy,supported,0.91,expert,European data,4
+PI_00954,Strict gun laws reduce gun violence (context 95),policy,supported,0.783,easy,Comparative studies,2
+PI_00955,Free trade benefits all parties equally (context 95),policy,rejected,0.622,medium,Trade deficit data,4
+PI_00956,Immigration boosts economic growth (context 95),policy,supported,0.765,hard,GDP analysis,3
+PI_00957,Rent control reduces housing supply (context 95),policy,supported,0.938,expert,Housing market data,4
+PI_00958,Higher education subsidies increase enrollment (context 95),policy,supported,0.572,easy,Enrollment data,3
+PI_00959,War on drugs has reduced drug use (context 95),policy,rejected,0.587,medium,Prevalence data,2
+PI_00960,Affirmative action improves diversity (context 95),policy,supported,0.938,hard,University data,3
+PI_00961,Minimum wage increases lead to job losses (context 96),policy,undecided,0.878,easy,Labor economics,3
+PI_00962,Universal basic income reduces poverty (context 96),policy,undecided,0.58,medium,Pilot studies,1
+PI_00963,Carbon taxes effectively reduce emissions (context 96),policy,supported,0.649,hard,European data,4
+PI_00964,Strict gun laws reduce gun violence (context 96),policy,supported,0.831,expert,Comparative studies,1
+PI_00965,Free trade benefits all parties equally (context 96),policy,rejected,0.603,easy,Trade deficit data,3
+PI_00966,Immigration boosts economic growth (context 96),policy,supported,0.921,medium,GDP analysis,2
+PI_00967,Rent control reduces housing supply (context 96),policy,supported,0.624,hard,Housing market data,4
+PI_00968,Higher education subsidies increase enrollment (context 96),policy,supported,0.567,expert,Enrollment data,3
+PI_00969,War on drugs has reduced drug use (context 96),policy,rejected,0.597,easy,Prevalence data,4
+PI_00970,Affirmative action improves diversity (context 96),policy,supported,0.551,medium,University data,3
+PI_00971,Minimum wage increases lead to job losses (context 97),policy,undecided,0.72,expert,Labor economics,4
+PI_00972,Universal basic income reduces poverty (context 97),policy,undecided,0.586,easy,Pilot studies,3
+PI_00973,Carbon taxes effectively reduce emissions (context 97),policy,supported,0.859,medium,European data,4
+PI_00974,Strict gun laws reduce gun violence (context 97),policy,supported,0.696,hard,Comparative studies,3
+PI_00975,Free trade benefits all parties equally (context 97),policy,rejected,0.944,expert,Trade deficit data,2
+PI_00976,Immigration boosts economic growth (context 97),policy,supported,0.652,easy,GDP analysis,4
+PI_00977,Rent control reduces housing supply (context 97),policy,supported,0.935,medium,Housing market data,2
+PI_00978,Higher education subsidies increase enrollment (context 97),policy,supported,0.718,hard,Enrollment data,2
+PI_00979,War on drugs has reduced drug use (context 97),policy,rejected,0.587,expert,Prevalence data,2
+PI_00980,Affirmative action improves diversity (context 97),policy,supported,0.557,easy,University data,4
+PI_00981,Minimum wage increases lead to job losses (context 98),policy,undecided,0.807,hard,Labor economics,2
+PI_00982,Universal basic income reduces poverty (context 98),policy,undecided,0.695,expert,Pilot studies,1
+PI_00983,Carbon taxes effectively reduce emissions (context 98),policy,supported,0.606,easy,European data,3
+PI_00984,Strict gun laws reduce gun violence (context 98),policy,supported,0.721,medium,Comparative studies,2
+PI_00985,Free trade benefits all parties equally (context 98),policy,rejected,0.746,hard,Trade deficit data,3
+PI_00986,Immigration boosts economic growth (context 98),policy,supported,0.559,expert,GDP analysis,2
+PI_00987,Rent control reduces housing supply (context 98),policy,supported,0.679,easy,Housing market data,3
+PI_00988,Higher education subsidies increase enrollment (context 98),policy,supported,0.608,medium,Enrollment data,2
+PI_00989,War on drugs has reduced drug use (context 98),policy,rejected,0.902,hard,Prevalence data,1
+PI_00990,Affirmative action improves diversity (context 98),policy,supported,0.741,expert,University data,1
+PI_00991,Minimum wage increases lead to job losses (context 99),policy,undecided,0.704,medium,Labor economics,3
+PI_00992,Universal basic income reduces poverty (context 99),policy,undecided,0.626,hard,Pilot studies,2
+PI_00993,Carbon taxes effectively reduce emissions (context 99),policy,supported,0.816,expert,European data,1
+PI_00994,Strict gun laws reduce gun violence (context 99),policy,supported,0.778,easy,Comparative studies,1
+PI_00995,Free trade benefits all parties equally (context 99),policy,rejected,0.894,medium,Trade deficit data,2
+PI_00996,Immigration boosts economic growth (context 99),policy,supported,0.618,hard,GDP analysis,3
+PI_00997,Rent control reduces housing supply (context 99),policy,supported,0.573,expert,Housing market data,2
+PI_00998,Higher education subsidies increase enrollment (context 99),policy,supported,0.654,easy,Enrollment data,2
+PI_00999,War on drugs has reduced drug use (context 99),policy,rejected,0.949,medium,Prevalence data,2
+PI_01000,Affirmative action improves diversity (context 99),policy,supported,0.695,hard,University data,2
+PI_01001,Minimum wage increases lead to job losses (context 100),policy,undecided,0.616,easy,Labor economics,3
+PI_01002,Universal basic income reduces poverty (context 100),policy,undecided,0.884,medium,Pilot studies,2
+PI_01003,Carbon taxes effectively reduce emissions (context 100),policy,supported,0.833,hard,European data,2
+PI_01004,Strict gun laws reduce gun violence (context 100),policy,supported,0.937,expert,Comparative studies,1
+PI_01005,Free trade benefits all parties equally (context 100),policy,rejected,0.636,easy,Trade deficit data,2
+PI_01006,Immigration boosts economic growth (context 100),policy,supported,0.836,medium,GDP analysis,1
+PI_01007,Rent control reduces housing supply (context 100),policy,supported,0.872,hard,Housing market data,4
+PI_01008,Higher education subsidies increase enrollment (context 100),policy,supported,0.572,expert,Enrollment data,2
+PI_01009,War on drugs has reduced drug use (context 100),policy,rejected,0.844,easy,Prevalence data,2
+PI_01010,Affirmative action improves diversity (context 100),policy,supported,0.761,medium,University data,3
+PI_01011,Minimum wage increases lead to job losses (context 101),policy,undecided,0.94,expert,Labor economics,4
+PI_01012,Universal basic income reduces poverty (context 101),policy,undecided,0.722,easy,Pilot studies,3
+PI_01013,Carbon taxes effectively reduce emissions (context 101),policy,supported,0.849,medium,European data,3
+PI_01014,Strict gun laws reduce gun violence (context 101),policy,supported,0.945,hard,Comparative studies,2
+PI_01015,Free trade benefits all parties equally (context 101),policy,rejected,0.777,expert,Trade deficit data,3
+PI_01016,Immigration boosts economic growth (context 101),policy,supported,0.847,easy,GDP analysis,4
+PI_01017,Rent control reduces housing supply (context 101),policy,supported,0.562,medium,Housing market data,4
+PI_01018,Higher education subsidies increase enrollment (context 101),policy,supported,0.922,hard,Enrollment data,4
+PI_01019,War on drugs has reduced drug use (context 101),policy,rejected,0.928,expert,Prevalence data,3
+PI_01020,Affirmative action improves diversity (context 101),policy,supported,0.744,easy,University data,4
+PI_01021,Minimum wage increases lead to job losses (context 102),policy,undecided,0.918,hard,Labor economics,4
+PI_01022,Universal basic income reduces poverty (context 102),policy,undecided,0.565,expert,Pilot studies,3
+PI_01023,Carbon taxes effectively reduce emissions (context 102),policy,supported,0.608,easy,European data,1
+PI_01024,Strict gun laws reduce gun violence (context 102),policy,supported,0.694,medium,Comparative studies,2
+PI_01025,Free trade benefits all parties equally (context 102),policy,rejected,0.591,hard,Trade deficit data,2
+PI_01026,Immigration boosts economic growth (context 102),policy,supported,0.922,expert,GDP analysis,4
+PI_01027,Rent control reduces housing supply (context 102),policy,supported,0.76,easy,Housing market data,3
+PI_01028,Higher education subsidies increase enrollment (context 102),policy,supported,0.663,medium,Enrollment data,3
+PI_01029,War on drugs has reduced drug use (context 102),policy,rejected,0.718,hard,Prevalence data,1
+PI_01030,Affirmative action improves diversity (context 102),policy,supported,0.891,expert,University data,1
+PI_01031,Minimum wage increases lead to job losses (context 103),policy,undecided,0.577,medium,Labor economics,2
+PI_01032,Universal basic income reduces poverty (context 103),policy,undecided,0.601,hard,Pilot studies,3
+PI_01033,Carbon taxes effectively reduce emissions (context 103),policy,supported,0.686,expert,European data,2
+PI_01034,Strict gun laws reduce gun violence (context 103),policy,supported,0.906,easy,Comparative studies,2
+PI_01035,Free trade benefits all parties equally (context 103),policy,rejected,0.661,medium,Trade deficit data,4
+PI_01036,Immigration boosts economic growth (context 103),policy,supported,0.633,hard,GDP analysis,3
+PI_01037,Rent control reduces housing supply (context 103),policy,supported,0.694,expert,Housing market data,3
+PI_01038,Higher education subsidies increase enrollment (context 103),policy,supported,0.553,easy,Enrollment data,2
+PI_01039,War on drugs has reduced drug use (context 103),policy,rejected,0.791,medium,Prevalence data,2
+PI_01040,Affirmative action improves diversity (context 103),policy,supported,0.583,hard,University data,1
+PI_01041,Minimum wage increases lead to job losses (context 104),policy,undecided,0.812,easy,Labor economics,3
+PI_01042,Universal basic income reduces poverty (context 104),policy,undecided,0.809,medium,Pilot studies,4
+PI_01043,Carbon taxes effectively reduce emissions (context 104),policy,supported,0.915,hard,European data,2
+PI_01044,Strict gun laws reduce gun violence (context 104),policy,supported,0.808,expert,Comparative studies,3
+PI_01045,Free trade benefits all parties equally (context 104),policy,rejected,0.903,easy,Trade deficit data,1
+PI_01046,Immigration boosts economic growth (context 104),policy,supported,0.796,medium,GDP analysis,3
+PI_01047,Rent control reduces housing supply (context 104),policy,supported,0.596,hard,Housing market data,4
+PI_01048,Higher education subsidies increase enrollment (context 104),policy,supported,0.661,expert,Enrollment data,3
+PI_01049,War on drugs has reduced drug use (context 104),policy,rejected,0.862,easy,Prevalence data,3
+PI_01050,Affirmative action improves diversity (context 104),policy,supported,0.762,medium,University data,3

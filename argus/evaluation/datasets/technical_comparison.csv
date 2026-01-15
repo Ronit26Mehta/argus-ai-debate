@@ -1,0 +1,1051 @@
+id,proposition,domain,ground_truth,confidence,difficulty,evidence_hints,expected_rounds
+TC_00001,Python is faster than C++,technology,rejected,0.765,easy,Benchmark data,3
+TC_00002,Cloud computing is more secure than on-premises,technology,undecided,0.874,medium,Security audits,2
+TC_00003,React outperforms Angular for large applications,technology,undecided,0.769,hard,Performance tests,3
+TC_00004,SSDs are more reliable than HDDs,technology,supported,0.798,expert,Failure rate data,1
+TC_00005,5G networks pose health risks,technology,rejected,0.828,easy,WHO/FCC studies,4
+TC_00006,Open source software is more secure,technology,undecided,0.816,medium,CVE analysis,3
+TC_00007,Machine learning models are biased,technology,supported,0.747,hard,Fairness audits,3
+TC_00008,Quantum computers will break encryption by 2030,technology,undecided,0.86,expert,Expert forecasts,4
+TC_00009,Electric vehicles are better for the environment,technology,supported,0.674,easy,Lifecycle analysis,4
+TC_00010,NoSQL databases scale better than SQL,technology,undecided,0.673,medium,Architecture comparison,3
+TC_00011,Python is faster than C++ (context 1),technology,rejected,0.814,expert,Benchmark data,1
+TC_00012,Cloud computing is more secure than on-premises (context 1),technology,undecided,0.809,easy,Security audits,4
+TC_00013,React outperforms Angular for large applications (context 1),technology,undecided,0.718,medium,Performance tests,1
+TC_00014,SSDs are more reliable than HDDs (context 1),technology,supported,0.612,hard,Failure rate data,2
+TC_00015,5G networks pose health risks (context 1),technology,rejected,0.87,expert,WHO/FCC studies,4
+TC_00016,Open source software is more secure (context 1),technology,undecided,0.614,easy,CVE analysis,2
+TC_00017,Machine learning models are biased (context 1),technology,supported,0.589,medium,Fairness audits,2
+TC_00018,Quantum computers will break encryption by 2030 (context 1),technology,undecided,0.879,hard,Expert forecasts,2
+TC_00019,Electric vehicles are better for the environment (context 1),technology,supported,0.693,expert,Lifecycle analysis,1
+TC_00020,NoSQL databases scale better than SQL (context 1),technology,undecided,0.705,easy,Architecture comparison,2
+TC_00021,Python is faster than C++ (context 2),technology,rejected,0.56,hard,Benchmark data,3
+TC_00022,Cloud computing is more secure than on-premises (context 2),technology,undecided,0.598,expert,Security audits,2
+TC_00023,React outperforms Angular for large applications (context 2),technology,undecided,0.611,easy,Performance tests,3
+TC_00024,SSDs are more reliable than HDDs (context 2),technology,supported,0.567,medium,Failure rate data,3
+TC_00025,5G networks pose health risks (context 2),technology,rejected,0.696,hard,WHO/FCC studies,1
+TC_00026,Open source software is more secure (context 2),technology,undecided,0.693,expert,CVE analysis,4
+TC_00027,Machine learning models are biased (context 2),technology,supported,0.585,easy,Fairness audits,1
+TC_00028,Quantum computers will break encryption by 2030 (context 2),technology,undecided,0.894,medium,Expert forecasts,2
+TC_00029,Electric vehicles are better for the environment (context 2),technology,supported,0.883,hard,Lifecycle analysis,1
+TC_00030,NoSQL databases scale better than SQL (context 2),technology,undecided,0.881,expert,Architecture comparison,3
+TC_00031,Python is faster than C++ (context 3),technology,rejected,0.719,medium,Benchmark data,4
+TC_00032,Cloud computing is more secure than on-premises (context 3),technology,undecided,0.656,hard,Security audits,4
+TC_00033,React outperforms Angular for large applications (context 3),technology,undecided,0.692,expert,Performance tests,4
+TC_00034,SSDs are more reliable than HDDs (context 3),technology,supported,0.84,easy,Failure rate data,2
+TC_00035,5G networks pose health risks (context 3),technology,rejected,0.789,medium,WHO/FCC studies,4
+TC_00036,Open source software is more secure (context 3),technology,undecided,0.907,hard,CVE analysis,2
+TC_00037,Machine learning models are biased (context 3),technology,supported,0.883,expert,Fairness audits,4
+TC_00038,Quantum computers will break encryption by 2030 (context 3),technology,undecided,0.928,easy,Expert forecasts,2
+TC_00039,Electric vehicles are better for the environment (context 3),technology,supported,0.812,medium,Lifecycle analysis,4
+TC_00040,NoSQL databases scale better than SQL (context 3),technology,undecided,0.927,hard,Architecture comparison,1
+TC_00041,Python is faster than C++ (context 4),technology,rejected,0.708,easy,Benchmark data,4
+TC_00042,Cloud computing is more secure than on-premises (context 4),technology,undecided,0.621,medium,Security audits,1
+TC_00043,React outperforms Angular for large applications (context 4),technology,undecided,0.743,hard,Performance tests,4
+TC_00044,SSDs are more reliable than HDDs (context 4),technology,supported,0.813,expert,Failure rate data,1
+TC_00045,5G networks pose health risks (context 4),technology,rejected,0.6,easy,WHO/FCC studies,2
+TC_00046,Open source software is more secure (context 4),technology,undecided,0.855,medium,CVE analysis,3
+TC_00047,Machine learning models are biased (context 4),technology,supported,0.747,hard,Fairness audits,3
+TC_00048,Quantum computers will break encryption by 2030 (context 4),technology,undecided,0.759,expert,Expert forecasts,2
+TC_00049,Electric vehicles are better for the environment (context 4),technology,supported,0.926,easy,Lifecycle analysis,4
+TC_00050,NoSQL databases scale better than SQL (context 4),technology,undecided,0.781,medium,Architecture comparison,3
+TC_00051,Python is faster than C++ (context 5),technology,rejected,0.913,expert,Benchmark data,4
+TC_00052,Cloud computing is more secure than on-premises (context 5),technology,undecided,0.899,easy,Security audits,1
+TC_00053,React outperforms Angular for large applications (context 5),technology,undecided,0.914,medium,Performance tests,3
+TC_00054,SSDs are more reliable than HDDs (context 5),technology,supported,0.822,hard,Failure rate data,2
+TC_00055,5G networks pose health risks (context 5),technology,rejected,0.761,expert,WHO/FCC studies,4
+TC_00056,Open source software is more secure (context 5),technology,undecided,0.65,easy,CVE analysis,3
+TC_00057,Machine learning models are biased (context 5),technology,supported,0.848,medium,Fairness audits,3
+TC_00058,Quantum computers will break encryption by 2030 (context 5),technology,undecided,0.574,hard,Expert forecasts,3
+TC_00059,Electric vehicles are better for the environment (context 5),technology,supported,0.919,expert,Lifecycle analysis,3
+TC_00060,NoSQL databases scale better than SQL (context 5),technology,undecided,0.943,easy,Architecture comparison,2
+TC_00061,Python is faster than C++ (context 6),technology,rejected,0.735,hard,Benchmark data,1
+TC_00062,Cloud computing is more secure than on-premises (context 6),technology,undecided,0.698,expert,Security audits,4
+TC_00063,React outperforms Angular for large applications (context 6),technology,undecided,0.778,easy,Performance tests,1
+TC_00064,SSDs are more reliable than HDDs (context 6),technology,supported,0.586,medium,Failure rate data,1
+TC_00065,5G networks pose health risks (context 6),technology,rejected,0.608,hard,WHO/FCC studies,1
+TC_00066,Open source software is more secure (context 6),technology,undecided,0.611,expert,CVE analysis,3
+TC_00067,Machine learning models are biased (context 6),technology,supported,0.807,easy,Fairness audits,1
+TC_00068,Quantum computers will break encryption by 2030 (context 6),technology,undecided,0.802,medium,Expert forecasts,2
+TC_00069,Electric vehicles are better for the environment (context 6),technology,supported,0.861,hard,Lifecycle analysis,1
+TC_00070,NoSQL databases scale better than SQL (context 6),technology,undecided,0.715,expert,Architecture comparison,3
+TC_00071,Python is faster than C++ (context 7),technology,rejected,0.756,medium,Benchmark data,3
+TC_00072,Cloud computing is more secure than on-premises (context 7),technology,undecided,0.65,hard,Security audits,2
+TC_00073,React outperforms Angular for large applications (context 7),technology,undecided,0.56,expert,Performance tests,1
+TC_00074,SSDs are more reliable than HDDs (context 7),technology,supported,0.708,easy,Failure rate data,1
+TC_00075,5G networks pose health risks (context 7),technology,rejected,0.844,medium,WHO/FCC studies,1
+TC_00076,Open source software is more secure (context 7),technology,undecided,0.651,hard,CVE analysis,2
+TC_00077,Machine learning models are biased (context 7),technology,supported,0.667,expert,Fairness audits,2
+TC_00078,Quantum computers will break encryption by 2030 (context 7),technology,undecided,0.92,easy,Expert forecasts,4
+TC_00079,Electric vehicles are better for the environment (context 7),technology,supported,0.774,medium,Lifecycle analysis,1
+TC_00080,NoSQL databases scale better than SQL (context 7),technology,undecided,0.843,hard,Architecture comparison,3
+TC_00081,Python is faster than C++ (context 8),technology,rejected,0.87,easy,Benchmark data,1
+TC_00082,Cloud computing is more secure than on-premises (context 8),technology,undecided,0.681,medium,Security audits,1
+TC_00083,React outperforms Angular for large applications (context 8),technology,undecided,0.88,hard,Performance tests,2
+TC_00084,SSDs are more reliable than HDDs (context 8),technology,supported,0.65,expert,Failure rate data,3
+TC_00085,5G networks pose health risks (context 8),technology,rejected,0.556,easy,WHO/FCC studies,1
+TC_00086,Open source software is more secure (context 8),technology,undecided,0.833,medium,CVE analysis,1
+TC_00087,Machine learning models are biased (context 8),technology,supported,0.663,hard,Fairness audits,4
+TC_00088,Quantum computers will break encryption by 2030 (context 8),technology,undecided,0.913,expert,Expert forecasts,3
+TC_00089,Electric vehicles are better for the environment (context 8),technology,supported,0.763,easy,Lifecycle analysis,4
+TC_00090,NoSQL databases scale better than SQL (context 8),technology,undecided,0.853,medium,Architecture comparison,1
+TC_00091,Python is faster than C++ (context 9),technology,rejected,0.798,expert,Benchmark data,2
+TC_00092,Cloud computing is more secure than on-premises (context 9),technology,undecided,0.643,easy,Security audits,1
+TC_00093,React outperforms Angular for large applications (context 9),technology,undecided,0.839,medium,Performance tests,1
+TC_00094,SSDs are more reliable than HDDs (context 9),technology,supported,0.552,hard,Failure rate data,2
+TC_00095,5G networks pose health risks (context 9),technology,rejected,0.942,expert,WHO/FCC studies,2
+TC_00096,Open source software is more secure (context 9),technology,undecided,0.64,easy,CVE analysis,4
+TC_00097,Machine learning models are biased (context 9),technology,supported,0.727,medium,Fairness audits,3
+TC_00098,Quantum computers will break encryption by 2030 (context 9),technology,undecided,0.801,hard,Expert forecasts,4
+TC_00099,Electric vehicles are better for the environment (context 9),technology,supported,0.733,expert,Lifecycle analysis,3
+TC_00100,NoSQL databases scale better than SQL (context 9),technology,undecided,0.769,easy,Architecture comparison,1
+TC_00101,Python is faster than C++ (context 10),technology,rejected,0.732,hard,Benchmark data,4
+TC_00102,Cloud computing is more secure than on-premises (context 10),technology,undecided,0.766,expert,Security audits,2
+TC_00103,React outperforms Angular for large applications (context 10),technology,undecided,0.839,easy,Performance tests,2
+TC_00104,SSDs are more reliable than HDDs (context 10),technology,supported,0.594,medium,Failure rate data,1
+TC_00105,5G networks pose health risks (context 10),technology,rejected,0.661,hard,WHO/FCC studies,3
+TC_00106,Open source software is more secure (context 10),technology,undecided,0.886,expert,CVE analysis,4
+TC_00107,Machine learning models are biased (context 10),technology,supported,0.625,easy,Fairness audits,3
+TC_00108,Quantum computers will break encryption by 2030 (context 10),technology,undecided,0.835,medium,Expert forecasts,4
+TC_00109,Electric vehicles are better for the environment (context 10),technology,supported,0.642,hard,Lifecycle analysis,3
+TC_00110,NoSQL databases scale better than SQL (context 10),technology,undecided,0.706,expert,Architecture comparison,4
+TC_00111,Python is faster than C++ (context 11),technology,rejected,0.577,medium,Benchmark data,3
+TC_00112,Cloud computing is more secure than on-premises (context 11),technology,undecided,0.853,hard,Security audits,2
+TC_00113,React outperforms Angular for large applications (context 11),technology,undecided,0.572,expert,Performance tests,3
+TC_00114,SSDs are more reliable than HDDs (context 11),technology,supported,0.875,easy,Failure rate data,3
+TC_00115,5G networks pose health risks (context 11),technology,rejected,0.647,medium,WHO/FCC studies,4
+TC_00116,Open source software is more secure (context 11),technology,undecided,0.825,hard,CVE analysis,3
+TC_00117,Machine learning models are biased (context 11),technology,supported,0.819,expert,Fairness audits,3
+TC_00118,Quantum computers will break encryption by 2030 (context 11),technology,undecided,0.59,easy,Expert forecasts,4
+TC_00119,Electric vehicles are better for the environment (context 11),technology,supported,0.907,medium,Lifecycle analysis,2
+TC_00120,NoSQL databases scale better than SQL (context 11),technology,undecided,0.682,hard,Architecture comparison,4
+TC_00121,Python is faster than C++ (context 12),technology,rejected,0.772,easy,Benchmark data,3
+TC_00122,Cloud computing is more secure than on-premises (context 12),technology,undecided,0.568,medium,Security audits,2
+TC_00123,React outperforms Angular for large applications (context 12),technology,undecided,0.641,hard,Performance tests,2
+TC_00124,SSDs are more reliable than HDDs (context 12),technology,supported,0.837,expert,Failure rate data,3
+TC_00125,5G networks pose health risks (context 12),technology,rejected,0.912,easy,WHO/FCC studies,4
+TC_00126,Open source software is more secure (context 12),technology,undecided,0.904,medium,CVE analysis,1
+TC_00127,Machine learning models are biased (context 12),technology,supported,0.924,hard,Fairness audits,1
+TC_00128,Quantum computers will break encryption by 2030 (context 12),technology,undecided,0.555,expert,Expert forecasts,4
+TC_00129,Electric vehicles are better for the environment (context 12),technology,supported,0.559,easy,Lifecycle analysis,2
+TC_00130,NoSQL databases scale better than SQL (context 12),technology,undecided,0.732,medium,Architecture comparison,1
+TC_00131,Python is faster than C++ (context 13),technology,rejected,0.835,expert,Benchmark data,2
+TC_00132,Cloud computing is more secure than on-premises (context 13),technology,undecided,0.606,easy,Security audits,3
+TC_00133,React outperforms Angular for large applications (context 13),technology,undecided,0.92,medium,Performance tests,1
+TC_00134,SSDs are more reliable than HDDs (context 13),technology,supported,0.766,hard,Failure rate data,3
+TC_00135,5G networks pose health risks (context 13),technology,rejected,0.845,expert,WHO/FCC studies,4
+TC_00136,Open source software is more secure (context 13),technology,undecided,0.844,easy,CVE analysis,1
+TC_00137,Machine learning models are biased (context 13),technology,supported,0.751,medium,Fairness audits,2
+TC_00138,Quantum computers will break encryption by 2030 (context 13),technology,undecided,0.748,hard,Expert forecasts,1
+TC_00139,Electric vehicles are better for the environment (context 13),technology,supported,0.751,expert,Lifecycle analysis,4
+TC_00140,NoSQL databases scale better than SQL (context 13),technology,undecided,0.593,easy,Architecture comparison,3
+TC_00141,Python is faster than C++ (context 14),technology,rejected,0.817,hard,Benchmark data,2
+TC_00142,Cloud computing is more secure than on-premises (context 14),technology,undecided,0.906,expert,Security audits,4
+TC_00143,React outperforms Angular for large applications (context 14),technology,undecided,0.915,easy,Performance tests,1
+TC_00144,SSDs are more reliable than HDDs (context 14),technology,supported,0.709,medium,Failure rate data,4
+TC_00145,5G networks pose health risks (context 14),technology,rejected,0.876,hard,WHO/FCC studies,4
+TC_00146,Open source software is more secure (context 14),technology,undecided,0.835,expert,CVE analysis,3
+TC_00147,Machine learning models are biased (context 14),technology,supported,0.916,easy,Fairness audits,2
+TC_00148,Quantum computers will break encryption by 2030 (context 14),technology,undecided,0.943,medium,Expert forecasts,4
+TC_00149,Electric vehicles are better for the environment (context 14),technology,supported,0.898,hard,Lifecycle analysis,3
+TC_00150,NoSQL databases scale better than SQL (context 14),technology,undecided,0.818,expert,Architecture comparison,3
+TC_00151,Python is faster than C++ (context 15),technology,rejected,0.943,medium,Benchmark data,1
+TC_00152,Cloud computing is more secure than on-premises (context 15),technology,undecided,0.91,hard,Security audits,3
+TC_00153,React outperforms Angular for large applications (context 15),technology,undecided,0.848,expert,Performance tests,3
+TC_00154,SSDs are more reliable than HDDs (context 15),technology,supported,0.692,easy,Failure rate data,1
+TC_00155,5G networks pose health risks (context 15),technology,rejected,0.615,medium,WHO/FCC studies,4
+TC_00156,Open source software is more secure (context 15),technology,undecided,0.646,hard,CVE analysis,4
+TC_00157,Machine learning models are biased (context 15),technology,supported,0.713,expert,Fairness audits,1
+TC_00158,Quantum computers will break encryption by 2030 (context 15),technology,undecided,0.767,easy,Expert forecasts,3
+TC_00159,Electric vehicles are better for the environment (context 15),technology,supported,0.556,medium,Lifecycle analysis,3
+TC_00160,NoSQL databases scale better than SQL (context 15),technology,undecided,0.916,hard,Architecture comparison,2
+TC_00161,Python is faster than C++ (context 16),technology,rejected,0.814,easy,Benchmark data,2
+TC_00162,Cloud computing is more secure than on-premises (context 16),technology,undecided,0.817,medium,Security audits,2
+TC_00163,React outperforms Angular for large applications (context 16),technology,undecided,0.596,hard,Performance tests,1
+TC_00164,SSDs are more reliable than HDDs (context 16),technology,supported,0.62,expert,Failure rate data,3
+TC_00165,5G networks pose health risks (context 16),technology,rejected,0.565,easy,WHO/FCC studies,1
+TC_00166,Open source software is more secure (context 16),technology,undecided,0.83,medium,CVE analysis,4
+TC_00167,Machine learning models are biased (context 16),technology,supported,0.765,hard,Fairness audits,3
+TC_00168,Quantum computers will break encryption by 2030 (context 16),technology,undecided,0.813,expert,Expert forecasts,1
+TC_00169,Electric vehicles are better for the environment (context 16),technology,supported,0.93,easy,Lifecycle analysis,3
+TC_00170,NoSQL databases scale better than SQL (context 16),technology,undecided,0.802,medium,Architecture comparison,3
+TC_00171,Python is faster than C++ (context 17),technology,rejected,0.943,expert,Benchmark data,4
+TC_00172,Cloud computing is more secure than on-premises (context 17),technology,undecided,0.857,easy,Security audits,1
+TC_00173,React outperforms Angular for large applications (context 17),technology,undecided,0.672,medium,Performance tests,3
+TC_00174,SSDs are more reliable than HDDs (context 17),technology,supported,0.732,hard,Failure rate data,1
+TC_00175,5G networks pose health risks (context 17),technology,rejected,0.849,expert,WHO/FCC studies,1
+TC_00176,Open source software is more secure (context 17),technology,undecided,0.789,easy,CVE analysis,1
+TC_00177,Machine learning models are biased (context 17),technology,supported,0.567,medium,Fairness audits,4
+TC_00178,Quantum computers will break encryption by 2030 (context 17),technology,undecided,0.724,hard,Expert forecasts,4
+TC_00179,Electric vehicles are better for the environment (context 17),technology,supported,0.645,expert,Lifecycle analysis,4
+TC_00180,NoSQL databases scale better than SQL (context 17),technology,undecided,0.935,easy,Architecture comparison,3
+TC_00181,Python is faster than C++ (context 18),technology,rejected,0.676,hard,Benchmark data,3
+TC_00182,Cloud computing is more secure than on-premises (context 18),technology,undecided,0.633,expert,Security audits,2
+TC_00183,React outperforms Angular for large applications (context 18),technology,undecided,0.885,easy,Performance tests,1
+TC_00184,SSDs are more reliable than HDDs (context 18),technology,supported,0.723,medium,Failure rate data,3
+TC_00185,5G networks pose health risks (context 18),technology,rejected,0.881,hard,WHO/FCC studies,3
+TC_00186,Open source software is more secure (context 18),technology,undecided,0.554,expert,CVE analysis,3
+TC_00187,Machine learning models are biased (context 18),technology,supported,0.566,easy,Fairness audits,3
+TC_00188,Quantum computers will break encryption by 2030 (context 18),technology,undecided,0.716,medium,Expert forecasts,2
+TC_00189,Electric vehicles are better for the environment (context 18),technology,supported,0.83,hard,Lifecycle analysis,3
+TC_00190,NoSQL databases scale better than SQL (context 18),technology,undecided,0.573,expert,Architecture comparison,2
+TC_00191,Python is faster than C++ (context 19),technology,rejected,0.805,medium,Benchmark data,3
+TC_00192,Cloud computing is more secure than on-premises (context 19),technology,undecided,0.691,hard,Security audits,2
+TC_00193,React outperforms Angular for large applications (context 19),technology,undecided,0.824,expert,Performance tests,1
+TC_00194,SSDs are more reliable than HDDs (context 19),technology,supported,0.605,easy,Failure rate data,4
+TC_00195,5G networks pose health risks (context 19),technology,rejected,0.606,medium,WHO/FCC studies,2
+TC_00196,Open source software is more secure (context 19),technology,undecided,0.871,hard,CVE analysis,4
+TC_00197,Machine learning models are biased (context 19),technology,supported,0.852,expert,Fairness audits,4
+TC_00198,Quantum computers will break encryption by 2030 (context 19),technology,undecided,0.637,easy,Expert forecasts,3
+TC_00199,Electric vehicles are better for the environment (context 19),technology,supported,0.608,medium,Lifecycle analysis,2
+TC_00200,NoSQL databases scale better than SQL (context 19),technology,undecided,0.864,hard,Architecture comparison,4
+TC_00201,Python is faster than C++ (context 20),technology,rejected,0.742,easy,Benchmark data,4
+TC_00202,Cloud computing is more secure than on-premises (context 20),technology,undecided,0.649,medium,Security audits,2
+TC_00203,React outperforms Angular for large applications (context 20),technology,undecided,0.908,hard,Performance tests,2
+TC_00204,SSDs are more reliable than HDDs (context 20),technology,supported,0.885,expert,Failure rate data,2
+TC_00205,5G networks pose health risks (context 20),technology,rejected,0.813,easy,WHO/FCC studies,1
+TC_00206,Open source software is more secure (context 20),technology,undecided,0.912,medium,CVE analysis,1
+TC_00207,Machine learning models are biased (context 20),technology,supported,0.705,hard,Fairness audits,1
+TC_00208,Quantum computers will break encryption by 2030 (context 20),technology,undecided,0.656,expert,Expert forecasts,1
+TC_00209,Electric vehicles are better for the environment (context 20),technology,supported,0.766,easy,Lifecycle analysis,2
+TC_00210,NoSQL databases scale better than SQL (context 20),technology,undecided,0.809,medium,Architecture comparison,3
+TC_00211,Python is faster than C++ (context 21),technology,rejected,0.826,expert,Benchmark data,2
+TC_00212,Cloud computing is more secure than on-premises (context 21),technology,undecided,0.759,easy,Security audits,2
+TC_00213,React outperforms Angular for large applications (context 21),technology,undecided,0.802,medium,Performance tests,3
+TC_00214,SSDs are more reliable than HDDs (context 21),technology,supported,0.669,hard,Failure rate data,1
+TC_00215,5G networks pose health risks (context 21),technology,rejected,0.676,expert,WHO/FCC studies,3
+TC_00216,Open source software is more secure (context 21),technology,undecided,0.932,easy,CVE analysis,3
+TC_00217,Machine learning models are biased (context 21),technology,supported,0.798,medium,Fairness audits,4
+TC_00218,Quantum computers will break encryption by 2030 (context 21),technology,undecided,0.857,hard,Expert forecasts,2
+TC_00219,Electric vehicles are better for the environment (context 21),technology,supported,0.581,expert,Lifecycle analysis,1
+TC_00220,NoSQL databases scale better than SQL (context 21),technology,undecided,0.58,easy,Architecture comparison,2
+TC_00221,Python is faster than C++ (context 22),technology,rejected,0.884,hard,Benchmark data,4
+TC_00222,Cloud computing is more secure than on-premises (context 22),technology,undecided,0.636,expert,Security audits,2
+TC_00223,React outperforms Angular for large applications (context 22),technology,undecided,0.939,easy,Performance tests,1
+TC_00224,SSDs are more reliable than HDDs (context 22),technology,supported,0.705,medium,Failure rate data,3
+TC_00225,5G networks pose health risks (context 22),technology,rejected,0.923,hard,WHO/FCC studies,3
+TC_00226,Open source software is more secure (context 22),technology,undecided,0.562,expert,CVE analysis,4
+TC_00227,Machine learning models are biased (context 22),technology,supported,0.647,easy,Fairness audits,4
+TC_00228,Quantum computers will break encryption by 2030 (context 22),technology,undecided,0.562,medium,Expert forecasts,4
+TC_00229,Electric vehicles are better for the environment (context 22),technology,supported,0.872,hard,Lifecycle analysis,2
+TC_00230,NoSQL databases scale better than SQL (context 22),technology,undecided,0.914,expert,Architecture comparison,4
+TC_00231,Python is faster than C++ (context 23),technology,rejected,0.642,medium,Benchmark data,1
+TC_00232,Cloud computing is more secure than on-premises (context 23),technology,undecided,0.669,hard,Security audits,1
+TC_00233,React outperforms Angular for large applications (context 23),technology,undecided,0.754,expert,Performance tests,1
+TC_00234,SSDs are more reliable than HDDs (context 23),technology,supported,0.905,easy,Failure rate data,4
+TC_00235,5G networks pose health risks (context 23),technology,rejected,0.817,medium,WHO/FCC studies,3
+TC_00236,Open source software is more secure (context 23),technology,undecided,0.624,hard,CVE analysis,4
+TC_00237,Machine learning models are biased (context 23),technology,supported,0.679,expert,Fairness audits,1
+TC_00238,Quantum computers will break encryption by 2030 (context 23),technology,undecided,0.715,easy,Expert forecasts,1
+TC_00239,Electric vehicles are better for the environment (context 23),technology,supported,0.89,medium,Lifecycle analysis,4
+TC_00240,NoSQL databases scale better than SQL (context 23),technology,undecided,0.905,hard,Architecture comparison,4
+TC_00241,Python is faster than C++ (context 24),technology,rejected,0.863,easy,Benchmark data,3
+TC_00242,Cloud computing is more secure than on-premises (context 24),technology,undecided,0.923,medium,Security audits,2
+TC_00243,React outperforms Angular for large applications (context 24),technology,undecided,0.624,hard,Performance tests,2
+TC_00244,SSDs are more reliable than HDDs (context 24),technology,supported,0.676,expert,Failure rate data,3
+TC_00245,5G networks pose health risks (context 24),technology,rejected,0.911,easy,WHO/FCC studies,3
+TC_00246,Open source software is more secure (context 24),technology,undecided,0.626,medium,CVE analysis,2
+TC_00247,Machine learning models are biased (context 24),technology,supported,0.848,hard,Fairness audits,1
+TC_00248,Quantum computers will break encryption by 2030 (context 24),technology,undecided,0.717,expert,Expert forecasts,3
+TC_00249,Electric vehicles are better for the environment (context 24),technology,supported,0.771,easy,Lifecycle analysis,2
+TC_00250,NoSQL databases scale better than SQL (context 24),technology,undecided,0.803,medium,Architecture comparison,3
+TC_00251,Python is faster than C++ (context 25),technology,rejected,0.781,expert,Benchmark data,3
+TC_00252,Cloud computing is more secure than on-premises (context 25),technology,undecided,0.632,easy,Security audits,2
+TC_00253,React outperforms Angular for large applications (context 25),technology,undecided,0.812,medium,Performance tests,1
+TC_00254,SSDs are more reliable than HDDs (context 25),technology,supported,0.774,hard,Failure rate data,2
+TC_00255,5G networks pose health risks (context 25),technology,rejected,0.702,expert,WHO/FCC studies,4
+TC_00256,Open source software is more secure (context 25),technology,undecided,0.6,easy,CVE analysis,2
+TC_00257,Machine learning models are biased (context 25),technology,supported,0.668,medium,Fairness audits,3
+TC_00258,Quantum computers will break encryption by 2030 (context 25),technology,undecided,0.87,hard,Expert forecasts,4
+TC_00259,Electric vehicles are better for the environment (context 25),technology,supported,0.612,expert,Lifecycle analysis,3
+TC_00260,NoSQL databases scale better than SQL (context 25),technology,undecided,0.595,easy,Architecture comparison,1
+TC_00261,Python is faster than C++ (context 26),technology,rejected,0.744,hard,Benchmark data,1
+TC_00262,Cloud computing is more secure than on-premises (context 26),technology,undecided,0.638,expert,Security audits,2
+TC_00263,React outperforms Angular for large applications (context 26),technology,undecided,0.695,easy,Performance tests,4
+TC_00264,SSDs are more reliable than HDDs (context 26),technology,supported,0.889,medium,Failure rate data,3
+TC_00265,5G networks pose health risks (context 26),technology,rejected,0.839,hard,WHO/FCC studies,4
+TC_00266,Open source software is more secure (context 26),technology,undecided,0.879,expert,CVE analysis,1
+TC_00267,Machine learning models are biased (context 26),technology,supported,0.631,easy,Fairness audits,4
+TC_00268,Quantum computers will break encryption by 2030 (context 26),technology,undecided,0.856,medium,Expert forecasts,4
+TC_00269,Electric vehicles are better for the environment (context 26),technology,supported,0.857,hard,Lifecycle analysis,3
+TC_00270,NoSQL databases scale better than SQL (context 26),technology,undecided,0.775,expert,Architecture comparison,1
+TC_00271,Python is faster than C++ (context 27),technology,rejected,0.731,medium,Benchmark data,1
+TC_00272,Cloud computing is more secure than on-premises (context 27),technology,undecided,0.735,hard,Security audits,4
+TC_00273,React outperforms Angular for large applications (context 27),technology,undecided,0.574,expert,Performance tests,2
+TC_00274,SSDs are more reliable than HDDs (context 27),technology,supported,0.803,easy,Failure rate data,4
+TC_00275,5G networks pose health risks (context 27),technology,rejected,0.655,medium,WHO/FCC studies,3
+TC_00276,Open source software is more secure (context 27),technology,undecided,0.622,hard,CVE analysis,3
+TC_00277,Machine learning models are biased (context 27),technology,supported,0.696,expert,Fairness audits,1
+TC_00278,Quantum computers will break encryption by 2030 (context 27),technology,undecided,0.569,easy,Expert forecasts,4
+TC_00279,Electric vehicles are better for the environment (context 27),technology,supported,0.93,medium,Lifecycle analysis,3
+TC_00280,NoSQL databases scale better than SQL (context 27),technology,undecided,0.831,hard,Architecture comparison,4
+TC_00281,Python is faster than C++ (context 28),technology,rejected,0.551,easy,Benchmark data,2
+TC_00282,Cloud computing is more secure than on-premises (context 28),technology,undecided,0.75,medium,Security audits,2
+TC_00283,React outperforms Angular for large applications (context 28),technology,undecided,0.786,hard,Performance tests,4
+TC_00284,SSDs are more reliable than HDDs (context 28),technology,supported,0.579,expert,Failure rate data,3
+TC_00285,5G networks pose health risks (context 28),technology,rejected,0.701,easy,WHO/FCC studies,3
+TC_00286,Open source software is more secure (context 28),technology,undecided,0.921,medium,CVE analysis,1
+TC_00287,Machine learning models are biased (context 28),technology,supported,0.557,hard,Fairness audits,1
+TC_00288,Quantum computers will break encryption by 2030 (context 28),technology,undecided,0.75,expert,Expert forecasts,1
+TC_00289,Electric vehicles are better for the environment (context 28),technology,supported,0.774,easy,Lifecycle analysis,1
+TC_00290,NoSQL databases scale better than SQL (context 28),technology,undecided,0.912,medium,Architecture comparison,4
+TC_00291,Python is faster than C++ (context 29),technology,rejected,0.651,expert,Benchmark data,2
+TC_00292,Cloud computing is more secure than on-premises (context 29),technology,undecided,0.617,easy,Security audits,2
+TC_00293,React outperforms Angular for large applications (context 29),technology,undecided,0.914,medium,Performance tests,1
+TC_00294,SSDs are more reliable than HDDs (context 29),technology,supported,0.905,hard,Failure rate data,3
+TC_00295,5G networks pose health risks (context 29),technology,rejected,0.823,expert,WHO/FCC studies,2
+TC_00296,Open source software is more secure (context 29),technology,undecided,0.788,easy,CVE analysis,1
+TC_00297,Machine learning models are biased (context 29),technology,supported,0.714,medium,Fairness audits,3
+TC_00298,Quantum computers will break encryption by 2030 (context 29),technology,undecided,0.884,hard,Expert forecasts,1
+TC_00299,Electric vehicles are better for the environment (context 29),technology,supported,0.684,expert,Lifecycle analysis,4
+TC_00300,NoSQL databases scale better than SQL (context 29),technology,undecided,0.818,easy,Architecture comparison,2
+TC_00301,Python is faster than C++ (context 30),technology,rejected,0.579,hard,Benchmark data,1
+TC_00302,Cloud computing is more secure than on-premises (context 30),technology,undecided,0.923,expert,Security audits,1
+TC_00303,React outperforms Angular for large applications (context 30),technology,undecided,0.581,easy,Performance tests,3
+TC_00304,SSDs are more reliable than HDDs (context 30),technology,supported,0.63,medium,Failure rate data,2
+TC_00305,5G networks pose health risks (context 30),technology,rejected,0.831,hard,WHO/FCC studies,3
+TC_00306,Open source software is more secure (context 30),technology,undecided,0.601,expert,CVE analysis,1
+TC_00307,Machine learning models are biased (context 30),technology,supported,0.649,easy,Fairness audits,3
+TC_00308,Quantum computers will break encryption by 2030 (context 30),technology,undecided,0.783,medium,Expert forecasts,2
+TC_00309,Electric vehicles are better for the environment (context 30),technology,supported,0.799,hard,Lifecycle analysis,1
+TC_00310,NoSQL databases scale better than SQL (context 30),technology,undecided,0.738,expert,Architecture comparison,2
+TC_00311,Python is faster than C++ (context 31),technology,rejected,0.756,medium,Benchmark data,4
+TC_00312,Cloud computing is more secure than on-premises (context 31),technology,undecided,0.744,hard,Security audits,4
+TC_00313,React outperforms Angular for large applications (context 31),technology,undecided,0.9,expert,Performance tests,4
+TC_00314,SSDs are more reliable than HDDs (context 31),technology,supported,0.826,easy,Failure rate data,2
+TC_00315,5G networks pose health risks (context 31),technology,rejected,0.912,medium,WHO/FCC studies,3
+TC_00316,Open source software is more secure (context 31),technology,undecided,0.73,hard,CVE analysis,1
+TC_00317,Machine learning models are biased (context 31),technology,supported,0.7,expert,Fairness audits,4
+TC_00318,Quantum computers will break encryption by 2030 (context 31),technology,undecided,0.611,easy,Expert forecasts,3
+TC_00319,Electric vehicles are better for the environment (context 31),technology,supported,0.831,medium,Lifecycle analysis,4
+TC_00320,NoSQL databases scale better than SQL (context 31),technology,undecided,0.852,hard,Architecture comparison,2
+TC_00321,Python is faster than C++ (context 32),technology,rejected,0.819,easy,Benchmark data,1
+TC_00322,Cloud computing is more secure than on-premises (context 32),technology,undecided,0.947,medium,Security audits,4
+TC_00323,React outperforms Angular for large applications (context 32),technology,undecided,0.69,hard,Performance tests,4
+TC_00324,SSDs are more reliable than HDDs (context 32),technology,supported,0.659,expert,Failure rate data,4
+TC_00325,5G networks pose health risks (context 32),technology,rejected,0.843,easy,WHO/FCC studies,4
+TC_00326,Open source software is more secure (context 32),technology,undecided,0.898,medium,CVE analysis,2
+TC_00327,Machine learning models are biased (context 32),technology,supported,0.865,hard,Fairness audits,2
+TC_00328,Quantum computers will break encryption by 2030 (context 32),technology,undecided,0.768,expert,Expert forecasts,3
+TC_00329,Electric vehicles are better for the environment (context 32),technology,supported,0.898,easy,Lifecycle analysis,1
+TC_00330,NoSQL databases scale better than SQL (context 32),technology,undecided,0.633,medium,Architecture comparison,4
+TC_00331,Python is faster than C++ (context 33),technology,rejected,0.924,expert,Benchmark data,1
+TC_00332,Cloud computing is more secure than on-premises (context 33),technology,undecided,0.913,easy,Security audits,1
+TC_00333,React outperforms Angular for large applications (context 33),technology,undecided,0.803,medium,Performance tests,2
+TC_00334,SSDs are more reliable than HDDs (context 33),technology,supported,0.582,hard,Failure rate data,2
+TC_00335,5G networks pose health risks (context 33),technology,rejected,0.948,expert,WHO/FCC studies,2
+TC_00336,Open source software is more secure (context 33),technology,undecided,0.864,easy,CVE analysis,3
+TC_00337,Machine learning models are biased (context 33),technology,supported,0.722,medium,Fairness audits,3
+TC_00338,Quantum computers will break encryption by 2030 (context 33),technology,undecided,0.579,hard,Expert forecasts,2
+TC_00339,Electric vehicles are better for the environment (context 33),technology,supported,0.886,expert,Lifecycle analysis,2
+TC_00340,NoSQL databases scale better than SQL (context 33),technology,undecided,0.866,easy,Architecture comparison,2
+TC_00341,Python is faster than C++ (context 34),technology,rejected,0.664,hard,Benchmark data,4
+TC_00342,Cloud computing is more secure than on-premises (context 34),technology,undecided,0.867,expert,Security audits,4
+TC_00343,React outperforms Angular for large applications (context 34),technology,undecided,0.714,easy,Performance tests,1
+TC_00344,SSDs are more reliable than HDDs (context 34),technology,supported,0.874,medium,Failure rate data,3
+TC_00345,5G networks pose health risks (context 34),technology,rejected,0.945,hard,WHO/FCC studies,4
+TC_00346,Open source software is more secure (context 34),technology,undecided,0.553,expert,CVE analysis,4
+TC_00347,Machine learning models are biased (context 34),technology,supported,0.779,easy,Fairness audits,3
+TC_00348,Quantum computers will break encryption by 2030 (context 34),technology,undecided,0.662,medium,Expert forecasts,2
+TC_00349,Electric vehicles are better for the environment (context 34),technology,supported,0.93,hard,Lifecycle analysis,4
+TC_00350,NoSQL databases scale better than SQL (context 34),technology,undecided,0.715,expert,Architecture comparison,1
+TC_00351,Python is faster than C++ (context 35),technology,rejected,0.69,medium,Benchmark data,2
+TC_00352,Cloud computing is more secure than on-premises (context 35),technology,undecided,0.597,hard,Security audits,2
+TC_00353,React outperforms Angular for large applications (context 35),technology,undecided,0.669,expert,Performance tests,1
+TC_00354,SSDs are more reliable than HDDs (context 35),technology,supported,0.837,easy,Failure rate data,4
+TC_00355,5G networks pose health risks (context 35),technology,rejected,0.88,medium,WHO/FCC studies,3
+TC_00356,Open source software is more secure (context 35),technology,undecided,0.565,hard,CVE analysis,4
+TC_00357,Machine learning models are biased (context 35),technology,supported,0.796,expert,Fairness audits,4
+TC_00358,Quantum computers will break encryption by 2030 (context 35),technology,undecided,0.629,easy,Expert forecasts,2
+TC_00359,Electric vehicles are better for the environment (context 35),technology,supported,0.715,medium,Lifecycle analysis,3
+TC_00360,NoSQL databases scale better than SQL (context 35),technology,undecided,0.721,hard,Architecture comparison,4
+TC_00361,Python is faster than C++ (context 36),technology,rejected,0.691,easy,Benchmark data,1
+TC_00362,Cloud computing is more secure than on-premises (context 36),technology,undecided,0.583,medium,Security audits,1
+TC_00363,React outperforms Angular for large applications (context 36),technology,undecided,0.888,hard,Performance tests,2
+TC_00364,SSDs are more reliable than HDDs (context 36),technology,supported,0.609,expert,Failure rate data,3
+TC_00365,5G networks pose health risks (context 36),technology,rejected,0.948,easy,WHO/FCC studies,2
+TC_00366,Open source software is more secure (context 36),technology,undecided,0.602,medium,CVE analysis,3
+TC_00367,Machine learning models are biased (context 36),technology,supported,0.693,hard,Fairness audits,2
+TC_00368,Quantum computers will break encryption by 2030 (context 36),technology,undecided,0.695,expert,Expert forecasts,4
+TC_00369,Electric vehicles are better for the environment (context 36),technology,supported,0.77,easy,Lifecycle analysis,4
+TC_00370,NoSQL databases scale better than SQL (context 36),technology,undecided,0.751,medium,Architecture comparison,3
+TC_00371,Python is faster than C++ (context 37),technology,rejected,0.754,expert,Benchmark data,1
+TC_00372,Cloud computing is more secure than on-premises (context 37),technology,undecided,0.835,easy,Security audits,2
+TC_00373,React outperforms Angular for large applications (context 37),technology,undecided,0.941,medium,Performance tests,2
+TC_00374,SSDs are more reliable than HDDs (context 37),technology,supported,0.916,hard,Failure rate data,4
+TC_00375,5G networks pose health risks (context 37),technology,rejected,0.577,expert,WHO/FCC studies,4
+TC_00376,Open source software is more secure (context 37),technology,undecided,0.671,easy,CVE analysis,3
+TC_00377,Machine learning models are biased (context 37),technology,supported,0.568,medium,Fairness audits,4
+TC_00378,Quantum computers will break encryption by 2030 (context 37),technology,undecided,0.782,hard,Expert forecasts,1
+TC_00379,Electric vehicles are better for the environment (context 37),technology,supported,0.682,expert,Lifecycle analysis,1
+TC_00380,NoSQL databases scale better than SQL (context 37),technology,undecided,0.595,easy,Architecture comparison,2
+TC_00381,Python is faster than C++ (context 38),technology,rejected,0.846,hard,Benchmark data,3
+TC_00382,Cloud computing is more secure than on-premises (context 38),technology,undecided,0.892,expert,Security audits,2
+TC_00383,React outperforms Angular for large applications (context 38),technology,undecided,0.755,easy,Performance tests,1
+TC_00384,SSDs are more reliable than HDDs (context 38),technology,supported,0.69,medium,Failure rate data,4
+TC_00385,5G networks pose health risks (context 38),technology,rejected,0.77,hard,WHO/FCC studies,1
+TC_00386,Open source software is more secure (context 38),technology,undecided,0.865,expert,CVE analysis,3
+TC_00387,Machine learning models are biased (context 38),technology,supported,0.708,easy,Fairness audits,1
+TC_00388,Quantum computers will break encryption by 2030 (context 38),technology,undecided,0.677,medium,Expert forecasts,4
+TC_00389,Electric vehicles are better for the environment (context 38),technology,supported,0.9,hard,Lifecycle analysis,4
+TC_00390,NoSQL databases scale better than SQL (context 38),technology,undecided,0.909,expert,Architecture comparison,4
+TC_00391,Python is faster than C++ (context 39),technology,rejected,0.918,medium,Benchmark data,1
+TC_00392,Cloud computing is more secure than on-premises (context 39),technology,undecided,0.591,hard,Security audits,3
+TC_00393,React outperforms Angular for large applications (context 39),technology,undecided,0.927,expert,Performance tests,2
+TC_00394,SSDs are more reliable than HDDs (context 39),technology,supported,0.7,easy,Failure rate data,3
+TC_00395,5G networks pose health risks (context 39),technology,rejected,0.75,medium,WHO/FCC studies,4
+TC_00396,Open source software is more secure (context 39),technology,undecided,0.863,hard,CVE analysis,3
+TC_00397,Machine learning models are biased (context 39),technology,supported,0.712,expert,Fairness audits,3
+TC_00398,Quantum computers will break encryption by 2030 (context 39),technology,undecided,0.763,easy,Expert forecasts,3
+TC_00399,Electric vehicles are better for the environment (context 39),technology,supported,0.606,medium,Lifecycle analysis,1
+TC_00400,NoSQL databases scale better than SQL (context 39),technology,undecided,0.571,hard,Architecture comparison,4
+TC_00401,Python is faster than C++ (context 40),technology,rejected,0.69,easy,Benchmark data,1
+TC_00402,Cloud computing is more secure than on-premises (context 40),technology,undecided,0.711,medium,Security audits,2
+TC_00403,React outperforms Angular for large applications (context 40),technology,undecided,0.708,hard,Performance tests,4
+TC_00404,SSDs are more reliable than HDDs (context 40),technology,supported,0.639,expert,Failure rate data,3
+TC_00405,5G networks pose health risks (context 40),technology,rejected,0.83,easy,WHO/FCC studies,4
+TC_00406,Open source software is more secure (context 40),technology,undecided,0.703,medium,CVE analysis,3
+TC_00407,Machine learning models are biased (context 40),technology,supported,0.912,hard,Fairness audits,1
+TC_00408,Quantum computers will break encryption by 2030 (context 40),technology,undecided,0.75,expert,Expert forecasts,1
+TC_00409,Electric vehicles are better for the environment (context 40),technology,supported,0.659,easy,Lifecycle analysis,3
+TC_00410,NoSQL databases scale better than SQL (context 40),technology,undecided,0.817,medium,Architecture comparison,1
+TC_00411,Python is faster than C++ (context 41),technology,rejected,0.798,expert,Benchmark data,2
+TC_00412,Cloud computing is more secure than on-premises (context 41),technology,undecided,0.825,easy,Security audits,1
+TC_00413,React outperforms Angular for large applications (context 41),technology,undecided,0.59,medium,Performance tests,2
+TC_00414,SSDs are more reliable than HDDs (context 41),technology,supported,0.598,hard,Failure rate data,2
+TC_00415,5G networks pose health risks (context 41),technology,rejected,0.926,expert,WHO/FCC studies,4
+TC_00416,Open source software is more secure (context 41),technology,undecided,0.725,easy,CVE analysis,3
+TC_00417,Machine learning models are biased (context 41),technology,supported,0.944,medium,Fairness audits,3
+TC_00418,Quantum computers will break encryption by 2030 (context 41),technology,undecided,0.782,hard,Expert forecasts,4
+TC_00419,Electric vehicles are better for the environment (context 41),technology,supported,0.598,expert,Lifecycle analysis,3
+TC_00420,NoSQL databases scale better than SQL (context 41),technology,undecided,0.736,easy,Architecture comparison,2
+TC_00421,Python is faster than C++ (context 42),technology,rejected,0.833,hard,Benchmark data,2
+TC_00422,Cloud computing is more secure than on-premises (context 42),technology,undecided,0.631,expert,Security audits,1
+TC_00423,React outperforms Angular for large applications (context 42),technology,undecided,0.693,easy,Performance tests,4
+TC_00424,SSDs are more reliable than HDDs (context 42),technology,supported,0.922,medium,Failure rate data,2
+TC_00425,5G networks pose health risks (context 42),technology,rejected,0.574,hard,WHO/FCC studies,1
+TC_00426,Open source software is more secure (context 42),technology,undecided,0.74,expert,CVE analysis,1
+TC_00427,Machine learning models are biased (context 42),technology,supported,0.616,easy,Fairness audits,4
+TC_00428,Quantum computers will break encryption by 2030 (context 42),technology,undecided,0.7,medium,Expert forecasts,3
+TC_00429,Electric vehicles are better for the environment (context 42),technology,supported,0.858,hard,Lifecycle analysis,3
+TC_00430,NoSQL databases scale better than SQL (context 42),technology,undecided,0.724,expert,Architecture comparison,1
+TC_00431,Python is faster than C++ (context 43),technology,rejected,0.763,medium,Benchmark data,2
+TC_00432,Cloud computing is more secure than on-premises (context 43),technology,undecided,0.916,hard,Security audits,3
+TC_00433,React outperforms Angular for large applications (context 43),technology,undecided,0.644,expert,Performance tests,2
+TC_00434,SSDs are more reliable than HDDs (context 43),technology,supported,0.949,easy,Failure rate data,1
+TC_00435,5G networks pose health risks (context 43),technology,rejected,0.746,medium,WHO/FCC studies,3
+TC_00436,Open source software is more secure (context 43),technology,undecided,0.624,hard,CVE analysis,1
+TC_00437,Machine learning models are biased (context 43),technology,supported,0.848,expert,Fairness audits,4
+TC_00438,Quantum computers will break encryption by 2030 (context 43),technology,undecided,0.667,easy,Expert forecasts,2
+TC_00439,Electric vehicles are better for the environment (context 43),technology,supported,0.867,medium,Lifecycle analysis,1
+TC_00440,NoSQL databases scale better than SQL (context 43),technology,undecided,0.782,hard,Architecture comparison,3
+TC_00441,Python is faster than C++ (context 44),technology,rejected,0.823,easy,Benchmark data,4
+TC_00442,Cloud computing is more secure than on-premises (context 44),technology,undecided,0.829,medium,Security audits,1
+TC_00443,React outperforms Angular for large applications (context 44),technology,undecided,0.707,hard,Performance tests,3
+TC_00444,SSDs are more reliable than HDDs (context 44),technology,supported,0.843,expert,Failure rate data,4
+TC_00445,5G networks pose health risks (context 44),technology,rejected,0.904,easy,WHO/FCC studies,2
+TC_00446,Open source software is more secure (context 44),technology,undecided,0.888,medium,CVE analysis,4
+TC_00447,Machine learning models are biased (context 44),technology,supported,0.767,hard,Fairness audits,3
+TC_00448,Quantum computers will break encryption by 2030 (context 44),technology,undecided,0.629,expert,Expert forecasts,4
+TC_00449,Electric vehicles are better for the environment (context 44),technology,supported,0.847,easy,Lifecycle analysis,1
+TC_00450,NoSQL databases scale better than SQL (context 44),technology,undecided,0.569,medium,Architecture comparison,2
+TC_00451,Python is faster than C++ (context 45),technology,rejected,0.653,expert,Benchmark data,3
+TC_00452,Cloud computing is more secure than on-premises (context 45),technology,undecided,0.678,easy,Security audits,1
+TC_00453,React outperforms Angular for large applications (context 45),technology,undecided,0.838,medium,Performance tests,3
+TC_00454,SSDs are more reliable than HDDs (context 45),technology,supported,0.8,hard,Failure rate data,3
+TC_00455,5G networks pose health risks (context 45),technology,rejected,0.68,expert,WHO/FCC studies,1
+TC_00456,Open source software is more secure (context 45),technology,undecided,0.783,easy,CVE analysis,1
+TC_00457,Machine learning models are biased (context 45),technology,supported,0.573,medium,Fairness audits,3
+TC_00458,Quantum computers will break encryption by 2030 (context 45),technology,undecided,0.816,hard,Expert forecasts,4
+TC_00459,Electric vehicles are better for the environment (context 45),technology,supported,0.737,expert,Lifecycle analysis,2
+TC_00460,NoSQL databases scale better than SQL (context 45),technology,undecided,0.85,easy,Architecture comparison,2
+TC_00461,Python is faster than C++ (context 46),technology,rejected,0.661,hard,Benchmark data,2
+TC_00462,Cloud computing is more secure than on-premises (context 46),technology,undecided,0.636,expert,Security audits,2
+TC_00463,React outperforms Angular for large applications (context 46),technology,undecided,0.825,easy,Performance tests,3
+TC_00464,SSDs are more reliable than HDDs (context 46),technology,supported,0.584,medium,Failure rate data,3
+TC_00465,5G networks pose health risks (context 46),technology,rejected,0.906,hard,WHO/FCC studies,1
+TC_00466,Open source software is more secure (context 46),technology,undecided,0.781,expert,CVE analysis,4
+TC_00467,Machine learning models are biased (context 46),technology,supported,0.819,easy,Fairness audits,1
+TC_00468,Quantum computers will break encryption by 2030 (context 46),technology,undecided,0.771,medium,Expert forecasts,2
+TC_00469,Electric vehicles are better for the environment (context 46),technology,supported,0.565,hard,Lifecycle analysis,4
+TC_00470,NoSQL databases scale better than SQL (context 46),technology,undecided,0.767,expert,Architecture comparison,3
+TC_00471,Python is faster than C++ (context 47),technology,rejected,0.745,medium,Benchmark data,3
+TC_00472,Cloud computing is more secure than on-premises (context 47),technology,undecided,0.63,hard,Security audits,3
+TC_00473,React outperforms Angular for large applications (context 47),technology,undecided,0.555,expert,Performance tests,1
+TC_00474,SSDs are more reliable than HDDs (context 47),technology,supported,0.849,easy,Failure rate data,2
+TC_00475,5G networks pose health risks (context 47),technology,rejected,0.799,medium,WHO/FCC studies,1
+TC_00476,Open source software is more secure (context 47),technology,undecided,0.945,hard,CVE analysis,1
+TC_00477,Machine learning models are biased (context 47),technology,supported,0.927,expert,Fairness audits,3
+TC_00478,Quantum computers will break encryption by 2030 (context 47),technology,undecided,0.896,easy,Expert forecasts,1
+TC_00479,Electric vehicles are better for the environment (context 47),technology,supported,0.571,medium,Lifecycle analysis,1
+TC_00480,NoSQL databases scale better than SQL (context 47),technology,undecided,0.617,hard,Architecture comparison,1
+TC_00481,Python is faster than C++ (context 48),technology,rejected,0.789,easy,Benchmark data,1
+TC_00482,Cloud computing is more secure than on-premises (context 48),technology,undecided,0.752,medium,Security audits,1
+TC_00483,React outperforms Angular for large applications (context 48),technology,undecided,0.888,hard,Performance tests,4
+TC_00484,SSDs are more reliable than HDDs (context 48),technology,supported,0.757,expert,Failure rate data,4
+TC_00485,5G networks pose health risks (context 48),technology,rejected,0.711,easy,WHO/FCC studies,2
+TC_00486,Open source software is more secure (context 48),technology,undecided,0.841,medium,CVE analysis,1
+TC_00487,Machine learning models are biased (context 48),technology,supported,0.824,hard,Fairness audits,1
+TC_00488,Quantum computers will break encryption by 2030 (context 48),technology,undecided,0.771,expert,Expert forecasts,3
+TC_00489,Electric vehicles are better for the environment (context 48),technology,supported,0.921,easy,Lifecycle analysis,1
+TC_00490,NoSQL databases scale better than SQL (context 48),technology,undecided,0.838,medium,Architecture comparison,4
+TC_00491,Python is faster than C++ (context 49),technology,rejected,0.718,expert,Benchmark data,1
+TC_00492,Cloud computing is more secure than on-premises (context 49),technology,undecided,0.736,easy,Security audits,2
+TC_00493,React outperforms Angular for large applications (context 49),technology,undecided,0.666,medium,Performance tests,3
+TC_00494,SSDs are more reliable than HDDs (context 49),technology,supported,0.552,hard,Failure rate data,1
+TC_00495,5G networks pose health risks (context 49),technology,rejected,0.92,expert,WHO/FCC studies,1
+TC_00496,Open source software is more secure (context 49),technology,undecided,0.587,easy,CVE analysis,2
+TC_00497,Machine learning models are biased (context 49),technology,supported,0.761,medium,Fairness audits,3
+TC_00498,Quantum computers will break encryption by 2030 (context 49),technology,undecided,0.734,hard,Expert forecasts,1
+TC_00499,Electric vehicles are better for the environment (context 49),technology,supported,0.782,expert,Lifecycle analysis,3
+TC_00500,NoSQL databases scale better than SQL (context 49),technology,undecided,0.581,easy,Architecture comparison,2
+TC_00501,Python is faster than C++ (context 50),technology,rejected,0.581,hard,Benchmark data,4
+TC_00502,Cloud computing is more secure than on-premises (context 50),technology,undecided,0.729,expert,Security audits,3
+TC_00503,React outperforms Angular for large applications (context 50),technology,undecided,0.867,easy,Performance tests,1
+TC_00504,SSDs are more reliable than HDDs (context 50),technology,supported,0.788,medium,Failure rate data,2
+TC_00505,5G networks pose health risks (context 50),technology,rejected,0.718,hard,WHO/FCC studies,1
+TC_00506,Open source software is more secure (context 50),technology,undecided,0.928,expert,CVE analysis,2
+TC_00507,Machine learning models are biased (context 50),technology,supported,0.717,easy,Fairness audits,2
+TC_00508,Quantum computers will break encryption by 2030 (context 50),technology,undecided,0.926,medium,Expert forecasts,2
+TC_00509,Electric vehicles are better for the environment (context 50),technology,supported,0.812,hard,Lifecycle analysis,2
+TC_00510,NoSQL databases scale better than SQL (context 50),technology,undecided,0.898,expert,Architecture comparison,4
+TC_00511,Python is faster than C++ (context 51),technology,rejected,0.891,medium,Benchmark data,2
+TC_00512,Cloud computing is more secure than on-premises (context 51),technology,undecided,0.602,hard,Security audits,4
+TC_00513,React outperforms Angular for large applications (context 51),technology,undecided,0.711,expert,Performance tests,3
+TC_00514,SSDs are more reliable than HDDs (context 51),technology,supported,0.887,easy,Failure rate data,1
+TC_00515,5G networks pose health risks (context 51),technology,rejected,0.856,medium,WHO/FCC studies,1
+TC_00516,Open source software is more secure (context 51),technology,undecided,0.724,hard,CVE analysis,1
+TC_00517,Machine learning models are biased (context 51),technology,supported,0.736,expert,Fairness audits,1
+TC_00518,Quantum computers will break encryption by 2030 (context 51),technology,undecided,0.795,easy,Expert forecasts,3
+TC_00519,Electric vehicles are better for the environment (context 51),technology,supported,0.72,medium,Lifecycle analysis,1
+TC_00520,NoSQL databases scale better than SQL (context 51),technology,undecided,0.732,hard,Architecture comparison,1
+TC_00521,Python is faster than C++ (context 52),technology,rejected,0.878,easy,Benchmark data,2
+TC_00522,Cloud computing is more secure than on-premises (context 52),technology,undecided,0.93,medium,Security audits,1
+TC_00523,React outperforms Angular for large applications (context 52),technology,undecided,0.716,hard,Performance tests,2
+TC_00524,SSDs are more reliable than HDDs (context 52),technology,supported,0.567,expert,Failure rate data,2
+TC_00525,5G networks pose health risks (context 52),technology,rejected,0.847,easy,WHO/FCC studies,3
+TC_00526,Open source software is more secure (context 52),technology,undecided,0.627,medium,CVE analysis,4
+TC_00527,Machine learning models are biased (context 52),technology,supported,0.898,hard,Fairness audits,4
+TC_00528,Quantum computers will break encryption by 2030 (context 52),technology,undecided,0.73,expert,Expert forecasts,1
+TC_00529,Electric vehicles are better for the environment (context 52),technology,supported,0.832,easy,Lifecycle analysis,4
+TC_00530,NoSQL databases scale better than SQL (context 52),technology,undecided,0.68,medium,Architecture comparison,1
+TC_00531,Python is faster than C++ (context 53),technology,rejected,0.835,expert,Benchmark data,4
+TC_00532,Cloud computing is more secure than on-premises (context 53),technology,undecided,0.655,easy,Security audits,3
+TC_00533,React outperforms Angular for large applications (context 53),technology,undecided,0.619,medium,Performance tests,1
+TC_00534,SSDs are more reliable than HDDs (context 53),technology,supported,0.741,hard,Failure rate data,3
+TC_00535,5G networks pose health risks (context 53),technology,rejected,0.592,expert,WHO/FCC studies,3
+TC_00536,Open source software is more secure (context 53),technology,undecided,0.687,easy,CVE analysis,4
+TC_00537,Machine learning models are biased (context 53),technology,supported,0.803,medium,Fairness audits,3
+TC_00538,Quantum computers will break encryption by 2030 (context 53),technology,undecided,0.878,hard,Expert forecasts,3
+TC_00539,Electric vehicles are better for the environment (context 53),technology,supported,0.693,expert,Lifecycle analysis,1
+TC_00540,NoSQL databases scale better than SQL (context 53),technology,undecided,0.691,easy,Architecture comparison,4
+TC_00541,Python is faster than C++ (context 54),technology,rejected,0.68,hard,Benchmark data,4
+TC_00542,Cloud computing is more secure than on-premises (context 54),technology,undecided,0.803,expert,Security audits,1
+TC_00543,React outperforms Angular for large applications (context 54),technology,undecided,0.886,easy,Performance tests,1
+TC_00544,SSDs are more reliable than HDDs (context 54),technology,supported,0.753,medium,Failure rate data,1
+TC_00545,5G networks pose health risks (context 54),technology,rejected,0.582,hard,WHO/FCC studies,2
+TC_00546,Open source software is more secure (context 54),technology,undecided,0.863,expert,CVE analysis,2
+TC_00547,Machine learning models are biased (context 54),technology,supported,0.799,easy,Fairness audits,1
+TC_00548,Quantum computers will break encryption by 2030 (context 54),technology,undecided,0.715,medium,Expert forecasts,1
+TC_00549,Electric vehicles are better for the environment (context 54),technology,supported,0.649,hard,Lifecycle analysis,2
+TC_00550,NoSQL databases scale better than SQL (context 54),technology,undecided,0.632,expert,Architecture comparison,1
+TC_00551,Python is faster than C++ (context 55),technology,rejected,0.835,medium,Benchmark data,4
+TC_00552,Cloud computing is more secure than on-premises (context 55),technology,undecided,0.76,hard,Security audits,4
+TC_00553,React outperforms Angular for large applications (context 55),technology,undecided,0.635,expert,Performance tests,3
+TC_00554,SSDs are more reliable than HDDs (context 55),technology,supported,0.615,easy,Failure rate data,4
+TC_00555,5G networks pose health risks (context 55),technology,rejected,0.609,medium,WHO/FCC studies,2
+TC_00556,Open source software is more secure (context 55),technology,undecided,0.863,hard,CVE analysis,1
+TC_00557,Machine learning models are biased (context 55),technology,supported,0.911,expert,Fairness audits,2
+TC_00558,Quantum computers will break encryption by 2030 (context 55),technology,undecided,0.903,easy,Expert forecasts,3
+TC_00559,Electric vehicles are better for the environment (context 55),technology,supported,0.922,medium,Lifecycle analysis,4
+TC_00560,NoSQL databases scale better than SQL (context 55),technology,undecided,0.59,hard,Architecture comparison,3
+TC_00561,Python is faster than C++ (context 56),technology,rejected,0.78,easy,Benchmark data,4
+TC_00562,Cloud computing is more secure than on-premises (context 56),technology,undecided,0.755,medium,Security audits,1
+TC_00563,React outperforms Angular for large applications (context 56),technology,undecided,0.66,hard,Performance tests,4
+TC_00564,SSDs are more reliable than HDDs (context 56),technology,supported,0.604,expert,Failure rate data,2
+TC_00565,5G networks pose health risks (context 56),technology,rejected,0.879,easy,WHO/FCC studies,2
+TC_00566,Open source software is more secure (context 56),technology,undecided,0.713,medium,CVE analysis,2
+TC_00567,Machine learning models are biased (context 56),technology,supported,0.601,hard,Fairness audits,1
+TC_00568,Quantum computers will break encryption by 2030 (context 56),technology,undecided,0.753,expert,Expert forecasts,4
+TC_00569,Electric vehicles are better for the environment (context 56),technology,supported,0.829,easy,Lifecycle analysis,3
+TC_00570,NoSQL databases scale better than SQL (context 56),technology,undecided,0.578,medium,Architecture comparison,3
+TC_00571,Python is faster than C++ (context 57),technology,rejected,0.776,expert,Benchmark data,4
+TC_00572,Cloud computing is more secure than on-premises (context 57),technology,undecided,0.679,easy,Security audits,1
+TC_00573,React outperforms Angular for large applications (context 57),technology,undecided,0.844,medium,Performance tests,2
+TC_00574,SSDs are more reliable than HDDs (context 57),technology,supported,0.851,hard,Failure rate data,1
+TC_00575,5G networks pose health risks (context 57),technology,rejected,0.571,expert,WHO/FCC studies,1
+TC_00576,Open source software is more secure (context 57),technology,undecided,0.66,easy,CVE analysis,1
+TC_00577,Machine learning models are biased (context 57),technology,supported,0.941,medium,Fairness audits,3
+TC_00578,Quantum computers will break encryption by 2030 (context 57),technology,undecided,0.817,hard,Expert forecasts,3
+TC_00579,Electric vehicles are better for the environment (context 57),technology,supported,0.59,expert,Lifecycle analysis,2
+TC_00580,NoSQL databases scale better than SQL (context 57),technology,undecided,0.842,easy,Architecture comparison,4
+TC_00581,Python is faster than C++ (context 58),technology,rejected,0.896,hard,Benchmark data,1
+TC_00582,Cloud computing is more secure than on-premises (context 58),technology,undecided,0.69,expert,Security audits,2
+TC_00583,React outperforms Angular for large applications (context 58),technology,undecided,0.559,easy,Performance tests,4
+TC_00584,SSDs are more reliable than HDDs (context 58),technology,supported,0.651,medium,Failure rate data,4
+TC_00585,5G networks pose health risks (context 58),technology,rejected,0.802,hard,WHO/FCC studies,1
+TC_00586,Open source software is more secure (context 58),technology,undecided,0.591,expert,CVE analysis,3
+TC_00587,Machine learning models are biased (context 58),technology,supported,0.94,easy,Fairness audits,1
+TC_00588,Quantum computers will break encryption by 2030 (context 58),technology,undecided,0.711,medium,Expert forecasts,1
+TC_00589,Electric vehicles are better for the environment (context 58),technology,supported,0.77,hard,Lifecycle analysis,1
+TC_00590,NoSQL databases scale better than SQL (context 58),technology,undecided,0.628,expert,Architecture comparison,2
+TC_00591,Python is faster than C++ (context 59),technology,rejected,0.924,medium,Benchmark data,2
+TC_00592,Cloud computing is more secure than on-premises (context 59),technology,undecided,0.626,hard,Security audits,1
+TC_00593,React outperforms Angular for large applications (context 59),technology,undecided,0.753,expert,Performance tests,1
+TC_00594,SSDs are more reliable than HDDs (context 59),technology,supported,0.572,easy,Failure rate data,1
+TC_00595,5G networks pose health risks (context 59),technology,rejected,0.815,medium,WHO/FCC studies,3
+TC_00596,Open source software is more secure (context 59),technology,undecided,0.739,hard,CVE analysis,1
+TC_00597,Machine learning models are biased (context 59),technology,supported,0.837,expert,Fairness audits,4
+TC_00598,Quantum computers will break encryption by 2030 (context 59),technology,undecided,0.691,easy,Expert forecasts,1
+TC_00599,Electric vehicles are better for the environment (context 59),technology,supported,0.95,medium,Lifecycle analysis,2
+TC_00600,NoSQL databases scale better than SQL (context 59),technology,undecided,0.717,hard,Architecture comparison,4
+TC_00601,Python is faster than C++ (context 60),technology,rejected,0.579,easy,Benchmark data,2
+TC_00602,Cloud computing is more secure than on-premises (context 60),technology,undecided,0.816,medium,Security audits,1
+TC_00603,React outperforms Angular for large applications (context 60),technology,undecided,0.9,hard,Performance tests,3
+TC_00604,SSDs are more reliable than HDDs (context 60),technology,supported,0.557,expert,Failure rate data,4
+TC_00605,5G networks pose health risks (context 60),technology,rejected,0.635,easy,WHO/FCC studies,1
+TC_00606,Open source software is more secure (context 60),technology,undecided,0.659,medium,CVE analysis,2
+TC_00607,Machine learning models are biased (context 60),technology,supported,0.693,hard,Fairness audits,3
+TC_00608,Quantum computers will break encryption by 2030 (context 60),technology,undecided,0.802,expert,Expert forecasts,3
+TC_00609,Electric vehicles are better for the environment (context 60),technology,supported,0.604,easy,Lifecycle analysis,4
+TC_00610,NoSQL databases scale better than SQL (context 60),technology,undecided,0.728,medium,Architecture comparison,1
+TC_00611,Python is faster than C++ (context 61),technology,rejected,0.82,expert,Benchmark data,4
+TC_00612,Cloud computing is more secure than on-premises (context 61),technology,undecided,0.588,easy,Security audits,2
+TC_00613,React outperforms Angular for large applications (context 61),technology,undecided,0.801,medium,Performance tests,4
+TC_00614,SSDs are more reliable than HDDs (context 61),technology,supported,0.623,hard,Failure rate data,3
+TC_00615,5G networks pose health risks (context 61),technology,rejected,0.706,expert,WHO/FCC studies,4
+TC_00616,Open source software is more secure (context 61),technology,undecided,0.832,easy,CVE analysis,4
+TC_00617,Machine learning models are biased (context 61),technology,supported,0.846,medium,Fairness audits,4
+TC_00618,Quantum computers will break encryption by 2030 (context 61),technology,undecided,0.723,hard,Expert forecasts,3
+TC_00619,Electric vehicles are better for the environment (context 61),technology,supported,0.897,expert,Lifecycle analysis,4
+TC_00620,NoSQL databases scale better than SQL (context 61),technology,undecided,0.889,easy,Architecture comparison,1
+TC_00621,Python is faster than C++ (context 62),technology,rejected,0.651,hard,Benchmark data,4
+TC_00622,Cloud computing is more secure than on-premises (context 62),technology,undecided,0.553,expert,Security audits,1
+TC_00623,React outperforms Angular for large applications (context 62),technology,undecided,0.552,easy,Performance tests,1
+TC_00624,SSDs are more reliable than HDDs (context 62),technology,supported,0.754,medium,Failure rate data,3
+TC_00625,5G networks pose health risks (context 62),technology,rejected,0.849,hard,WHO/FCC studies,3
+TC_00626,Open source software is more secure (context 62),technology,undecided,0.627,expert,CVE analysis,2
+TC_00627,Machine learning models are biased (context 62),technology,supported,0.902,easy,Fairness audits,3
+TC_00628,Quantum computers will break encryption by 2030 (context 62),technology,undecided,0.95,medium,Expert forecasts,2
+TC_00629,Electric vehicles are better for the environment (context 62),technology,supported,0.803,hard,Lifecycle analysis,1
+TC_00630,NoSQL databases scale better than SQL (context 62),technology,undecided,0.56,expert,Architecture comparison,1
+TC_00631,Python is faster than C++ (context 63),technology,rejected,0.812,medium,Benchmark data,2
+TC_00632,Cloud computing is more secure than on-premises (context 63),technology,undecided,0.836,hard,Security audits,1
+TC_00633,React outperforms Angular for large applications (context 63),technology,undecided,0.898,expert,Performance tests,4
+TC_00634,SSDs are more reliable than HDDs (context 63),technology,supported,0.74,easy,Failure rate data,1
+TC_00635,5G networks pose health risks (context 63),technology,rejected,0.748,medium,WHO/FCC studies,3
+TC_00636,Open source software is more secure (context 63),technology,undecided,0.917,hard,CVE analysis,4
+TC_00637,Machine learning models are biased (context 63),technology,supported,0.821,expert,Fairness audits,4
+TC_00638,Quantum computers will break encryption by 2030 (context 63),technology,undecided,0.661,easy,Expert forecasts,3
+TC_00639,Electric vehicles are better for the environment (context 63),technology,supported,0.563,medium,Lifecycle analysis,4
+TC_00640,NoSQL databases scale better than SQL (context 63),technology,undecided,0.708,hard,Architecture comparison,3
+TC_00641,Python is faster than C++ (context 64),technology,rejected,0.714,easy,Benchmark data,4
+TC_00642,Cloud computing is more secure than on-premises (context 64),technology,undecided,0.876,medium,Security audits,4
+TC_00643,React outperforms Angular for large applications (context 64),technology,undecided,0.557,hard,Performance tests,1
+TC_00644,SSDs are more reliable than HDDs (context 64),technology,supported,0.817,expert,Failure rate data,3
+TC_00645,5G networks pose health risks (context 64),technology,rejected,0.699,easy,WHO/FCC studies,4
+TC_00646,Open source software is more secure (context 64),technology,undecided,0.736,medium,CVE analysis,3
+TC_00647,Machine learning models are biased (context 64),technology,supported,0.856,hard,Fairness audits,1
+TC_00648,Quantum computers will break encryption by 2030 (context 64),technology,undecided,0.589,expert,Expert forecasts,2
+TC_00649,Electric vehicles are better for the environment (context 64),technology,supported,0.836,easy,Lifecycle analysis,2
+TC_00650,NoSQL databases scale better than SQL (context 64),technology,undecided,0.575,medium,Architecture comparison,1
+TC_00651,Python is faster than C++ (context 65),technology,rejected,0.647,expert,Benchmark data,4
+TC_00652,Cloud computing is more secure than on-premises (context 65),technology,undecided,0.722,easy,Security audits,2
+TC_00653,React outperforms Angular for large applications (context 65),technology,undecided,0.85,medium,Performance tests,4
+TC_00654,SSDs are more reliable than HDDs (context 65),technology,supported,0.907,hard,Failure rate data,1
+TC_00655,5G networks pose health risks (context 65),technology,rejected,0.946,expert,WHO/FCC studies,3
+TC_00656,Open source software is more secure (context 65),technology,undecided,0.638,easy,CVE analysis,3
+TC_00657,Machine learning models are biased (context 65),technology,supported,0.613,medium,Fairness audits,2
+TC_00658,Quantum computers will break encryption by 2030 (context 65),technology,undecided,0.883,hard,Expert forecasts,1
+TC_00659,Electric vehicles are better for the environment (context 65),technology,supported,0.922,expert,Lifecycle analysis,1
+TC_00660,NoSQL databases scale better than SQL (context 65),technology,undecided,0.749,easy,Architecture comparison,4
+TC_00661,Python is faster than C++ (context 66),technology,rejected,0.662,hard,Benchmark data,1
+TC_00662,Cloud computing is more secure than on-premises (context 66),technology,undecided,0.751,expert,Security audits,1
+TC_00663,React outperforms Angular for large applications (context 66),technology,undecided,0.712,easy,Performance tests,3
+TC_00664,SSDs are more reliable than HDDs (context 66),technology,supported,0.563,medium,Failure rate data,1
+TC_00665,5G networks pose health risks (context 66),technology,rejected,0.851,hard,WHO/FCC studies,3
+TC_00666,Open source software is more secure (context 66),technology,undecided,0.78,expert,CVE analysis,2
+TC_00667,Machine learning models are biased (context 66),technology,supported,0.693,easy,Fairness audits,4
+TC_00668,Quantum computers will break encryption by 2030 (context 66),technology,undecided,0.572,medium,Expert forecasts,3
+TC_00669,Electric vehicles are better for the environment (context 66),technology,supported,0.796,hard,Lifecycle analysis,2
+TC_00670,NoSQL databases scale better than SQL (context 66),technology,undecided,0.78,expert,Architecture comparison,1
+TC_00671,Python is faster than C++ (context 67),technology,rejected,0.713,medium,Benchmark data,2
+TC_00672,Cloud computing is more secure than on-premises (context 67),technology,undecided,0.936,hard,Security audits,4
+TC_00673,React outperforms Angular for large applications (context 67),technology,undecided,0.831,expert,Performance tests,4
+TC_00674,SSDs are more reliable than HDDs (context 67),technology,supported,0.701,easy,Failure rate data,1
+TC_00675,5G networks pose health risks (context 67),technology,rejected,0.769,medium,WHO/FCC studies,3
+TC_00676,Open source software is more secure (context 67),technology,undecided,0.813,hard,CVE analysis,4
+TC_00677,Machine learning models are biased (context 67),technology,supported,0.62,expert,Fairness audits,2
+TC_00678,Quantum computers will break encryption by 2030 (context 67),technology,undecided,0.942,easy,Expert forecasts,1
+TC_00679,Electric vehicles are better for the environment (context 67),technology,supported,0.919,medium,Lifecycle analysis,3
+TC_00680,NoSQL databases scale better than SQL (context 67),technology,undecided,0.576,hard,Architecture comparison,3
+TC_00681,Python is faster than C++ (context 68),technology,rejected,0.671,easy,Benchmark data,3
+TC_00682,Cloud computing is more secure than on-premises (context 68),technology,undecided,0.578,medium,Security audits,2
+TC_00683,React outperforms Angular for large applications (context 68),technology,undecided,0.894,hard,Performance tests,4
+TC_00684,SSDs are more reliable than HDDs (context 68),technology,supported,0.699,expert,Failure rate data,2
+TC_00685,5G networks pose health risks (context 68),technology,rejected,0.901,easy,WHO/FCC studies,1
+TC_00686,Open source software is more secure (context 68),technology,undecided,0.922,medium,CVE analysis,4
+TC_00687,Machine learning models are biased (context 68),technology,supported,0.579,hard,Fairness audits,2
+TC_00688,Quantum computers will break encryption by 2030 (context 68),technology,undecided,0.785,expert,Expert forecasts,3
+TC_00689,Electric vehicles are better for the environment (context 68),technology,supported,0.677,easy,Lifecycle analysis,3
+TC_00690,NoSQL databases scale better than SQL (context 68),technology,undecided,0.769,medium,Architecture comparison,1
+TC_00691,Python is faster than C++ (context 69),technology,rejected,0.705,expert,Benchmark data,1
+TC_00692,Cloud computing is more secure than on-premises (context 69),technology,undecided,0.635,easy,Security audits,4
+TC_00693,React outperforms Angular for large applications (context 69),technology,undecided,0.606,medium,Performance tests,1
+TC_00694,SSDs are more reliable than HDDs (context 69),technology,supported,0.864,hard,Failure rate data,4
+TC_00695,5G networks pose health risks (context 69),technology,rejected,0.779,expert,WHO/FCC studies,4
+TC_00696,Open source software is more secure (context 69),technology,undecided,0.898,easy,CVE analysis,3
+TC_00697,Machine learning models are biased (context 69),technology,supported,0.723,medium,Fairness audits,4
+TC_00698,Quantum computers will break encryption by 2030 (context 69),technology,undecided,0.734,hard,Expert forecasts,1
+TC_00699,Electric vehicles are better for the environment (context 69),technology,supported,0.821,expert,Lifecycle analysis,2
+TC_00700,NoSQL databases scale better than SQL (context 69),technology,undecided,0.92,easy,Architecture comparison,3
+TC_00701,Python is faster than C++ (context 70),technology,rejected,0.746,hard,Benchmark data,3
+TC_00702,Cloud computing is more secure than on-premises (context 70),technology,undecided,0.717,expert,Security audits,1
+TC_00703,React outperforms Angular for large applications (context 70),technology,undecided,0.923,easy,Performance tests,4
+TC_00704,SSDs are more reliable than HDDs (context 70),technology,supported,0.597,medium,Failure rate data,1
+TC_00705,5G networks pose health risks (context 70),technology,rejected,0.561,hard,WHO/FCC studies,1
+TC_00706,Open source software is more secure (context 70),technology,undecided,0.75,expert,CVE analysis,3
+TC_00707,Machine learning models are biased (context 70),technology,supported,0.584,easy,Fairness audits,2
+TC_00708,Quantum computers will break encryption by 2030 (context 70),technology,undecided,0.596,medium,Expert forecasts,2
+TC_00709,Electric vehicles are better for the environment (context 70),technology,supported,0.799,hard,Lifecycle analysis,1
+TC_00710,NoSQL databases scale better than SQL (context 70),technology,undecided,0.65,expert,Architecture comparison,3
+TC_00711,Python is faster than C++ (context 71),technology,rejected,0.753,medium,Benchmark data,4
+TC_00712,Cloud computing is more secure than on-premises (context 71),technology,undecided,0.551,hard,Security audits,1
+TC_00713,React outperforms Angular for large applications (context 71),technology,undecided,0.83,expert,Performance tests,1
+TC_00714,SSDs are more reliable than HDDs (context 71),technology,supported,0.565,easy,Failure rate data,3
+TC_00715,5G networks pose health risks (context 71),technology,rejected,0.778,medium,WHO/FCC studies,1
+TC_00716,Open source software is more secure (context 71),technology,undecided,0.776,hard,CVE analysis,3
+TC_00717,Machine learning models are biased (context 71),technology,supported,0.651,expert,Fairness audits,2
+TC_00718,Quantum computers will break encryption by 2030 (context 71),technology,undecided,0.682,easy,Expert forecasts,2
+TC_00719,Electric vehicles are better for the environment (context 71),technology,supported,0.891,medium,Lifecycle analysis,1
+TC_00720,NoSQL databases scale better than SQL (context 71),technology,undecided,0.784,hard,Architecture comparison,2
+TC_00721,Python is faster than C++ (context 72),technology,rejected,0.899,easy,Benchmark data,4
+TC_00722,Cloud computing is more secure than on-premises (context 72),technology,undecided,0.655,medium,Security audits,1
+TC_00723,React outperforms Angular for large applications (context 72),technology,undecided,0.847,hard,Performance tests,3
+TC_00724,SSDs are more reliable than HDDs (context 72),technology,supported,0.873,expert,Failure rate data,1
+TC_00725,5G networks pose health risks (context 72),technology,rejected,0.908,easy,WHO/FCC studies,1
+TC_00726,Open source software is more secure (context 72),technology,undecided,0.566,medium,CVE analysis,1
+TC_00727,Machine learning models are biased (context 72),technology,supported,0.95,hard,Fairness audits,3
+TC_00728,Quantum computers will break encryption by 2030 (context 72),technology,undecided,0.604,expert,Expert forecasts,1
+TC_00729,Electric vehicles are better for the environment (context 72),technology,supported,0.795,easy,Lifecycle analysis,3
+TC_00730,NoSQL databases scale better than SQL (context 72),technology,undecided,0.8,medium,Architecture comparison,3
+TC_00731,Python is faster than C++ (context 73),technology,rejected,0.902,expert,Benchmark data,4
+TC_00732,Cloud computing is more secure than on-premises (context 73),technology,undecided,0.76,easy,Security audits,3
+TC_00733,React outperforms Angular for large applications (context 73),technology,undecided,0.931,medium,Performance tests,3
+TC_00734,SSDs are more reliable than HDDs (context 73),technology,supported,0.625,hard,Failure rate data,4
+TC_00735,5G networks pose health risks (context 73),technology,rejected,0.897,expert,WHO/FCC studies,4
+TC_00736,Open source software is more secure (context 73),technology,undecided,0.894,easy,CVE analysis,3
+TC_00737,Machine learning models are biased (context 73),technology,supported,0.628,medium,Fairness audits,2
+TC_00738,Quantum computers will break encryption by 2030 (context 73),technology,undecided,0.698,hard,Expert forecasts,4
+TC_00739,Electric vehicles are better for the environment (context 73),technology,supported,0.661,expert,Lifecycle analysis,1
+TC_00740,NoSQL databases scale better than SQL (context 73),technology,undecided,0.779,easy,Architecture comparison,4
+TC_00741,Python is faster than C++ (context 74),technology,rejected,0.757,hard,Benchmark data,4
+TC_00742,Cloud computing is more secure than on-premises (context 74),technology,undecided,0.72,expert,Security audits,1
+TC_00743,React outperforms Angular for large applications (context 74),technology,undecided,0.708,easy,Performance tests,3
+TC_00744,SSDs are more reliable than HDDs (context 74),technology,supported,0.726,medium,Failure rate data,1
+TC_00745,5G networks pose health risks (context 74),technology,rejected,0.9,hard,WHO/FCC studies,1
+TC_00746,Open source software is more secure (context 74),technology,undecided,0.828,expert,CVE analysis,2
+TC_00747,Machine learning models are biased (context 74),technology,supported,0.678,easy,Fairness audits,1
+TC_00748,Quantum computers will break encryption by 2030 (context 74),technology,undecided,0.763,medium,Expert forecasts,1
+TC_00749,Electric vehicles are better for the environment (context 74),technology,supported,0.7,hard,Lifecycle analysis,1
+TC_00750,NoSQL databases scale better than SQL (context 74),technology,undecided,0.665,expert,Architecture comparison,1
+TC_00751,Python is faster than C++ (context 75),technology,rejected,0.831,medium,Benchmark data,2
+TC_00752,Cloud computing is more secure than on-premises (context 75),technology,undecided,0.588,hard,Security audits,1
+TC_00753,React outperforms Angular for large applications (context 75),technology,undecided,0.731,expert,Performance tests,1
+TC_00754,SSDs are more reliable than HDDs (context 75),technology,supported,0.558,easy,Failure rate data,3
+TC_00755,5G networks pose health risks (context 75),technology,rejected,0.863,medium,WHO/FCC studies,1
+TC_00756,Open source software is more secure (context 75),technology,undecided,0.751,hard,CVE analysis,3
+TC_00757,Machine learning models are biased (context 75),technology,supported,0.806,expert,Fairness audits,3
+TC_00758,Quantum computers will break encryption by 2030 (context 75),technology,undecided,0.586,easy,Expert forecasts,2
+TC_00759,Electric vehicles are better for the environment (context 75),technology,supported,0.603,medium,Lifecycle analysis,4
+TC_00760,NoSQL databases scale better than SQL (context 75),technology,undecided,0.884,hard,Architecture comparison,3
+TC_00761,Python is faster than C++ (context 76),technology,rejected,0.582,easy,Benchmark data,2
+TC_00762,Cloud computing is more secure than on-premises (context 76),technology,undecided,0.578,medium,Security audits,1
+TC_00763,React outperforms Angular for large applications (context 76),technology,undecided,0.853,hard,Performance tests,2
+TC_00764,SSDs are more reliable than HDDs (context 76),technology,supported,0.843,expert,Failure rate data,1
+TC_00765,5G networks pose health risks (context 76),technology,rejected,0.854,easy,WHO/FCC studies,2
+TC_00766,Open source software is more secure (context 76),technology,undecided,0.613,medium,CVE analysis,2
+TC_00767,Machine learning models are biased (context 76),technology,supported,0.659,hard,Fairness audits,1
+TC_00768,Quantum computers will break encryption by 2030 (context 76),technology,undecided,0.584,expert,Expert forecasts,1
+TC_00769,Electric vehicles are better for the environment (context 76),technology,supported,0.946,easy,Lifecycle analysis,3
+TC_00770,NoSQL databases scale better than SQL (context 76),technology,undecided,0.75,medium,Architecture comparison,2
+TC_00771,Python is faster than C++ (context 77),technology,rejected,0.686,expert,Benchmark data,3
+TC_00772,Cloud computing is more secure than on-premises (context 77),technology,undecided,0.682,easy,Security audits,2
+TC_00773,React outperforms Angular for large applications (context 77),technology,undecided,0.655,medium,Performance tests,4
+TC_00774,SSDs are more reliable than HDDs (context 77),technology,supported,0.722,hard,Failure rate data,4
+TC_00775,5G networks pose health risks (context 77),technology,rejected,0.571,expert,WHO/FCC studies,1
+TC_00776,Open source software is more secure (context 77),technology,undecided,0.577,easy,CVE analysis,4
+TC_00777,Machine learning models are biased (context 77),technology,supported,0.935,medium,Fairness audits,2
+TC_00778,Quantum computers will break encryption by 2030 (context 77),technology,undecided,0.903,hard,Expert forecasts,3
+TC_00779,Electric vehicles are better for the environment (context 77),technology,supported,0.594,expert,Lifecycle analysis,3
+TC_00780,NoSQL databases scale better than SQL (context 77),technology,undecided,0.905,easy,Architecture comparison,3
+TC_00781,Python is faster than C++ (context 78),technology,rejected,0.606,hard,Benchmark data,4
+TC_00782,Cloud computing is more secure than on-premises (context 78),technology,undecided,0.737,expert,Security audits,4
+TC_00783,React outperforms Angular for large applications (context 78),technology,undecided,0.838,easy,Performance tests,1
+TC_00784,SSDs are more reliable than HDDs (context 78),technology,supported,0.83,medium,Failure rate data,4
+TC_00785,5G networks pose health risks (context 78),technology,rejected,0.792,hard,WHO/FCC studies,2
+TC_00786,Open source software is more secure (context 78),technology,undecided,0.651,expert,CVE analysis,3
+TC_00787,Machine learning models are biased (context 78),technology,supported,0.938,easy,Fairness audits,4
+TC_00788,Quantum computers will break encryption by 2030 (context 78),technology,undecided,0.638,medium,Expert forecasts,2
+TC_00789,Electric vehicles are better for the environment (context 78),technology,supported,0.736,hard,Lifecycle analysis,3
+TC_00790,NoSQL databases scale better than SQL (context 78),technology,undecided,0.745,expert,Architecture comparison,2
+TC_00791,Python is faster than C++ (context 79),technology,rejected,0.554,medium,Benchmark data,4
+TC_00792,Cloud computing is more secure than on-premises (context 79),technology,undecided,0.577,hard,Security audits,4
+TC_00793,React outperforms Angular for large applications (context 79),technology,undecided,0.61,expert,Performance tests,4
+TC_00794,SSDs are more reliable than HDDs (context 79),technology,supported,0.702,easy,Failure rate data,2
+TC_00795,5G networks pose health risks (context 79),technology,rejected,0.697,medium,WHO/FCC studies,3
+TC_00796,Open source software is more secure (context 79),technology,undecided,0.728,hard,CVE analysis,4
+TC_00797,Machine learning models are biased (context 79),technology,supported,0.568,expert,Fairness audits,4
+TC_00798,Quantum computers will break encryption by 2030 (context 79),technology,undecided,0.829,easy,Expert forecasts,4
+TC_00799,Electric vehicles are better for the environment (context 79),technology,supported,0.755,medium,Lifecycle analysis,4
+TC_00800,NoSQL databases scale better than SQL (context 79),technology,undecided,0.946,hard,Architecture comparison,1
+TC_00801,Python is faster than C++ (context 80),technology,rejected,0.576,easy,Benchmark data,1
+TC_00802,Cloud computing is more secure than on-premises (context 80),technology,undecided,0.746,medium,Security audits,2
+TC_00803,React outperforms Angular for large applications (context 80),technology,undecided,0.615,hard,Performance tests,1
+TC_00804,SSDs are more reliable than HDDs (context 80),technology,supported,0.9,expert,Failure rate data,1
+TC_00805,5G networks pose health risks (context 80),technology,rejected,0.893,easy,WHO/FCC studies,2
+TC_00806,Open source software is more secure (context 80),technology,undecided,0.57,medium,CVE analysis,3
+TC_00807,Machine learning models are biased (context 80),technology,supported,0.925,hard,Fairness audits,3
+TC_00808,Quantum computers will break encryption by 2030 (context 80),technology,undecided,0.902,expert,Expert forecasts,2
+TC_00809,Electric vehicles are better for the environment (context 80),technology,supported,0.598,easy,Lifecycle analysis,1
+TC_00810,NoSQL databases scale better than SQL (context 80),technology,undecided,0.758,medium,Architecture comparison,1
+TC_00811,Python is faster than C++ (context 81),technology,rejected,0.79,expert,Benchmark data,3
+TC_00812,Cloud computing is more secure than on-premises (context 81),technology,undecided,0.602,easy,Security audits,4
+TC_00813,React outperforms Angular for large applications (context 81),technology,undecided,0.666,medium,Performance tests,1
+TC_00814,SSDs are more reliable than HDDs (context 81),technology,supported,0.564,hard,Failure rate data,4
+TC_00815,5G networks pose health risks (context 81),technology,rejected,0.716,expert,WHO/FCC studies,3
+TC_00816,Open source software is more secure (context 81),technology,undecided,0.938,easy,CVE analysis,1
+TC_00817,Machine learning models are biased (context 81),technology,supported,0.574,medium,Fairness audits,4
+TC_00818,Quantum computers will break encryption by 2030 (context 81),technology,undecided,0.71,hard,Expert forecasts,1
+TC_00819,Electric vehicles are better for the environment (context 81),technology,supported,0.696,expert,Lifecycle analysis,3
+TC_00820,NoSQL databases scale better than SQL (context 81),technology,undecided,0.763,easy,Architecture comparison,2
+TC_00821,Python is faster than C++ (context 82),technology,rejected,0.831,hard,Benchmark data,1
+TC_00822,Cloud computing is more secure than on-premises (context 82),technology,undecided,0.74,expert,Security audits,2
+TC_00823,React outperforms Angular for large applications (context 82),technology,undecided,0.794,easy,Performance tests,4
+TC_00824,SSDs are more reliable than HDDs (context 82),technology,supported,0.855,medium,Failure rate data,4
+TC_00825,5G networks pose health risks (context 82),technology,rejected,0.937,hard,WHO/FCC studies,3
+TC_00826,Open source software is more secure (context 82),technology,undecided,0.806,expert,CVE analysis,4
+TC_00827,Machine learning models are biased (context 82),technology,supported,0.674,easy,Fairness audits,4
+TC_00828,Quantum computers will break encryption by 2030 (context 82),technology,undecided,0.917,medium,Expert forecasts,4
+TC_00829,Electric vehicles are better for the environment (context 82),technology,supported,0.675,hard,Lifecycle analysis,2
+TC_00830,NoSQL databases scale better than SQL (context 82),technology,undecided,0.776,expert,Architecture comparison,3
+TC_00831,Python is faster than C++ (context 83),technology,rejected,0.882,medium,Benchmark data,2
+TC_00832,Cloud computing is more secure than on-premises (context 83),technology,undecided,0.775,hard,Security audits,3
+TC_00833,React outperforms Angular for large applications (context 83),technology,undecided,0.701,expert,Performance tests,1
+TC_00834,SSDs are more reliable than HDDs (context 83),technology,supported,0.778,easy,Failure rate data,3
+TC_00835,5G networks pose health risks (context 83),technology,rejected,0.552,medium,WHO/FCC studies,2
+TC_00836,Open source software is more secure (context 83),technology,undecided,0.793,hard,CVE analysis,4
+TC_00837,Machine learning models are biased (context 83),technology,supported,0.912,expert,Fairness audits,2
+TC_00838,Quantum computers will break encryption by 2030 (context 83),technology,undecided,0.731,easy,Expert forecasts,1
+TC_00839,Electric vehicles are better for the environment (context 83),technology,supported,0.772,medium,Lifecycle analysis,1
+TC_00840,NoSQL databases scale better than SQL (context 83),technology,undecided,0.559,hard,Architecture comparison,2
+TC_00841,Python is faster than C++ (context 84),technology,rejected,0.606,easy,Benchmark data,3
+TC_00842,Cloud computing is more secure than on-premises (context 84),technology,undecided,0.843,medium,Security audits,2
+TC_00843,React outperforms Angular for large applications (context 84),technology,undecided,0.577,hard,Performance tests,2
+TC_00844,SSDs are more reliable than HDDs (context 84),technology,supported,0.646,expert,Failure rate data,1
+TC_00845,5G networks pose health risks (context 84),technology,rejected,0.592,easy,WHO/FCC studies,1
+TC_00846,Open source software is more secure (context 84),technology,undecided,0.921,medium,CVE analysis,4
+TC_00847,Machine learning models are biased (context 84),technology,supported,0.835,hard,Fairness audits,3
+TC_00848,Quantum computers will break encryption by 2030 (context 84),technology,undecided,0.643,expert,Expert forecasts,3
+TC_00849,Electric vehicles are better for the environment (context 84),technology,supported,0.601,easy,Lifecycle analysis,3
+TC_00850,NoSQL databases scale better than SQL (context 84),technology,undecided,0.676,medium,Architecture comparison,1
+TC_00851,Python is faster than C++ (context 85),technology,rejected,0.69,expert,Benchmark data,3
+TC_00852,Cloud computing is more secure than on-premises (context 85),technology,undecided,0.633,easy,Security audits,4
+TC_00853,React outperforms Angular for large applications (context 85),technology,undecided,0.677,medium,Performance tests,2
+TC_00854,SSDs are more reliable than HDDs (context 85),technology,supported,0.732,hard,Failure rate data,4
+TC_00855,5G networks pose health risks (context 85),technology,rejected,0.778,expert,WHO/FCC studies,4
+TC_00856,Open source software is more secure (context 85),technology,undecided,0.792,easy,CVE analysis,1
+TC_00857,Machine learning models are biased (context 85),technology,supported,0.925,medium,Fairness audits,2
+TC_00858,Quantum computers will break encryption by 2030 (context 85),technology,undecided,0.604,hard,Expert forecasts,3
+TC_00859,Electric vehicles are better for the environment (context 85),technology,supported,0.868,expert,Lifecycle analysis,3
+TC_00860,NoSQL databases scale better than SQL (context 85),technology,undecided,0.567,easy,Architecture comparison,3
+TC_00861,Python is faster than C++ (context 86),technology,rejected,0.612,hard,Benchmark data,1
+TC_00862,Cloud computing is more secure than on-premises (context 86),technology,undecided,0.848,expert,Security audits,4
+TC_00863,React outperforms Angular for large applications (context 86),technology,undecided,0.726,easy,Performance tests,3
+TC_00864,SSDs are more reliable than HDDs (context 86),technology,supported,0.692,medium,Failure rate data,4
+TC_00865,5G networks pose health risks (context 86),technology,rejected,0.647,hard,WHO/FCC studies,1
+TC_00866,Open source software is more secure (context 86),technology,undecided,0.765,expert,CVE analysis,2
+TC_00867,Machine learning models are biased (context 86),technology,supported,0.576,easy,Fairness audits,4
+TC_00868,Quantum computers will break encryption by 2030 (context 86),technology,undecided,0.924,medium,Expert forecasts,4
+TC_00869,Electric vehicles are better for the environment (context 86),technology,supported,0.819,hard,Lifecycle analysis,2
+TC_00870,NoSQL databases scale better than SQL (context 86),technology,undecided,0.811,expert,Architecture comparison,2
+TC_00871,Python is faster than C++ (context 87),technology,rejected,0.55,medium,Benchmark data,2
+TC_00872,Cloud computing is more secure than on-premises (context 87),technology,undecided,0.722,hard,Security audits,1
+TC_00873,React outperforms Angular for large applications (context 87),technology,undecided,0.659,expert,Performance tests,3
+TC_00874,SSDs are more reliable than HDDs (context 87),technology,supported,0.599,easy,Failure rate data,4
+TC_00875,5G networks pose health risks (context 87),technology,rejected,0.809,medium,WHO/FCC studies,4
+TC_00876,Open source software is more secure (context 87),technology,undecided,0.881,hard,CVE analysis,4
+TC_00877,Machine learning models are biased (context 87),technology,supported,0.739,expert,Fairness audits,1
+TC_00878,Quantum computers will break encryption by 2030 (context 87),technology,undecided,0.838,easy,Expert forecasts,3
+TC_00879,Electric vehicles are better for the environment (context 87),technology,supported,0.627,medium,Lifecycle analysis,2
+TC_00880,NoSQL databases scale better than SQL (context 87),technology,undecided,0.711,hard,Architecture comparison,3
+TC_00881,Python is faster than C++ (context 88),technology,rejected,0.844,easy,Benchmark data,2
+TC_00882,Cloud computing is more secure than on-premises (context 88),technology,undecided,0.818,medium,Security audits,1
+TC_00883,React outperforms Angular for large applications (context 88),technology,undecided,0.788,hard,Performance tests,2
+TC_00884,SSDs are more reliable than HDDs (context 88),technology,supported,0.81,expert,Failure rate data,3
+TC_00885,5G networks pose health risks (context 88),technology,rejected,0.724,easy,WHO/FCC studies,4
+TC_00886,Open source software is more secure (context 88),technology,undecided,0.864,medium,CVE analysis,2
+TC_00887,Machine learning models are biased (context 88),technology,supported,0.658,hard,Fairness audits,3
+TC_00888,Quantum computers will break encryption by 2030 (context 88),technology,undecided,0.826,expert,Expert forecasts,4
+TC_00889,Electric vehicles are better for the environment (context 88),technology,supported,0.785,easy,Lifecycle analysis,2
+TC_00890,NoSQL databases scale better than SQL (context 88),technology,undecided,0.82,medium,Architecture comparison,3
+TC_00891,Python is faster than C++ (context 89),technology,rejected,0.617,expert,Benchmark data,4
+TC_00892,Cloud computing is more secure than on-premises (context 89),technology,undecided,0.89,easy,Security audits,3
+TC_00893,React outperforms Angular for large applications (context 89),technology,undecided,0.832,medium,Performance tests,4
+TC_00894,SSDs are more reliable than HDDs (context 89),technology,supported,0.616,hard,Failure rate data,3
+TC_00895,5G networks pose health risks (context 89),technology,rejected,0.75,expert,WHO/FCC studies,3
+TC_00896,Open source software is more secure (context 89),technology,undecided,0.637,easy,CVE analysis,3
+TC_00897,Machine learning models are biased (context 89),technology,supported,0.948,medium,Fairness audits,3
+TC_00898,Quantum computers will break encryption by 2030 (context 89),technology,undecided,0.732,hard,Expert forecasts,1
+TC_00899,Electric vehicles are better for the environment (context 89),technology,supported,0.859,expert,Lifecycle analysis,2
+TC_00900,NoSQL databases scale better than SQL (context 89),technology,undecided,0.682,easy,Architecture comparison,1
+TC_00901,Python is faster than C++ (context 90),technology,rejected,0.737,hard,Benchmark data,4
+TC_00902,Cloud computing is more secure than on-premises (context 90),technology,undecided,0.781,expert,Security audits,3
+TC_00903,React outperforms Angular for large applications (context 90),technology,undecided,0.742,easy,Performance tests,3
+TC_00904,SSDs are more reliable than HDDs (context 90),technology,supported,0.877,medium,Failure rate data,3
+TC_00905,5G networks pose health risks (context 90),technology,rejected,0.598,hard,WHO/FCC studies,4
+TC_00906,Open source software is more secure (context 90),technology,undecided,0.77,expert,CVE analysis,2
+TC_00907,Machine learning models are biased (context 90),technology,supported,0.613,easy,Fairness audits,3
+TC_00908,Quantum computers will break encryption by 2030 (context 90),technology,undecided,0.788,medium,Expert forecasts,1
+TC_00909,Electric vehicles are better for the environment (context 90),technology,supported,0.869,hard,Lifecycle analysis,3
+TC_00910,NoSQL databases scale better than SQL (context 90),technology,undecided,0.936,expert,Architecture comparison,2
+TC_00911,Python is faster than C++ (context 91),technology,rejected,0.836,medium,Benchmark data,4
+TC_00912,Cloud computing is more secure than on-premises (context 91),technology,undecided,0.608,hard,Security audits,2
+TC_00913,React outperforms Angular for large applications (context 91),technology,undecided,0.872,expert,Performance tests,3
+TC_00914,SSDs are more reliable than HDDs (context 91),technology,supported,0.865,easy,Failure rate data,3
+TC_00915,5G networks pose health risks (context 91),technology,rejected,0.889,medium,WHO/FCC studies,2
+TC_00916,Open source software is more secure (context 91),technology,undecided,0.877,hard,CVE analysis,3
+TC_00917,Machine learning models are biased (context 91),technology,supported,0.739,expert,Fairness audits,4
+TC_00918,Quantum computers will break encryption by 2030 (context 91),technology,undecided,0.657,easy,Expert forecasts,1
+TC_00919,Electric vehicles are better for the environment (context 91),technology,supported,0.776,medium,Lifecycle analysis,3
+TC_00920,NoSQL databases scale better than SQL (context 91),technology,undecided,0.595,hard,Architecture comparison,1
+TC_00921,Python is faster than C++ (context 92),technology,rejected,0.756,easy,Benchmark data,3
+TC_00922,Cloud computing is more secure than on-premises (context 92),technology,undecided,0.623,medium,Security audits,4
+TC_00923,React outperforms Angular for large applications (context 92),technology,undecided,0.781,hard,Performance tests,2
+TC_00924,SSDs are more reliable than HDDs (context 92),technology,supported,0.808,expert,Failure rate data,1
+TC_00925,5G networks pose health risks (context 92),technology,rejected,0.762,easy,WHO/FCC studies,2
+TC_00926,Open source software is more secure (context 92),technology,undecided,0.684,medium,CVE analysis,3
+TC_00927,Machine learning models are biased (context 92),technology,supported,0.695,hard,Fairness audits,2
+TC_00928,Quantum computers will break encryption by 2030 (context 92),technology,undecided,0.589,expert,Expert forecasts,1
+TC_00929,Electric vehicles are better for the environment (context 92),technology,supported,0.636,easy,Lifecycle analysis,3
+TC_00930,NoSQL databases scale better than SQL (context 92),technology,undecided,0.707,medium,Architecture comparison,1
+TC_00931,Python is faster than C++ (context 93),technology,rejected,0.827,expert,Benchmark data,3
+TC_00932,Cloud computing is more secure than on-premises (context 93),technology,undecided,0.776,easy,Security audits,4
+TC_00933,React outperforms Angular for large applications (context 93),technology,undecided,0.925,medium,Performance tests,4
+TC_00934,SSDs are more reliable than HDDs (context 93),technology,supported,0.697,hard,Failure rate data,1
+TC_00935,5G networks pose health risks (context 93),technology,rejected,0.73,expert,WHO/FCC studies,1
+TC_00936,Open source software is more secure (context 93),technology,undecided,0.659,easy,CVE analysis,1
+TC_00937,Machine learning models are biased (context 93),technology,supported,0.603,medium,Fairness audits,1
+TC_00938,Quantum computers will break encryption by 2030 (context 93),technology,undecided,0.832,hard,Expert forecasts,4
+TC_00939,Electric vehicles are better for the environment (context 93),technology,supported,0.639,expert,Lifecycle analysis,1
+TC_00940,NoSQL databases scale better than SQL (context 93),technology,undecided,0.874,easy,Architecture comparison,3
+TC_00941,Python is faster than C++ (context 94),technology,rejected,0.63,hard,Benchmark data,3
+TC_00942,Cloud computing is more secure than on-premises (context 94),technology,undecided,0.583,expert,Security audits,4
+TC_00943,React outperforms Angular for large applications (context 94),technology,undecided,0.729,easy,Performance tests,1
+TC_00944,SSDs are more reliable than HDDs (context 94),technology,supported,0.638,medium,Failure rate data,2
+TC_00945,5G networks pose health risks (context 94),technology,rejected,0.567,hard,WHO/FCC studies,1
+TC_00946,Open source software is more secure (context 94),technology,undecided,0.901,expert,CVE analysis,2
+TC_00947,Machine learning models are biased (context 94),technology,supported,0.557,easy,Fairness audits,4
+TC_00948,Quantum computers will break encryption by 2030 (context 94),technology,undecided,0.817,medium,Expert forecasts,3
+TC_00949,Electric vehicles are better for the environment (context 94),technology,supported,0.916,hard,Lifecycle analysis,3
+TC_00950,NoSQL databases scale better than SQL (context 94),technology,undecided,0.949,expert,Architecture comparison,2
+TC_00951,Python is faster than C++ (context 95),technology,rejected,0.674,medium,Benchmark data,1
+TC_00952,Cloud computing is more secure than on-premises (context 95),technology,undecided,0.861,hard,Security audits,3
+TC_00953,React outperforms Angular for large applications (context 95),technology,undecided,0.728,expert,Performance tests,2
+TC_00954,SSDs are more reliable than HDDs (context 95),technology,supported,0.595,easy,Failure rate data,3
+TC_00955,5G networks pose health risks (context 95),technology,rejected,0.591,medium,WHO/FCC studies,1
+TC_00956,Open source software is more secure (context 95),technology,undecided,0.679,hard,CVE analysis,1
+TC_00957,Machine learning models are biased (context 95),technology,supported,0.843,expert,Fairness audits,2
+TC_00958,Quantum computers will break encryption by 2030 (context 95),technology,undecided,0.919,easy,Expert forecasts,4
+TC_00959,Electric vehicles are better for the environment (context 95),technology,supported,0.861,medium,Lifecycle analysis,3
+TC_00960,NoSQL databases scale better than SQL (context 95),technology,undecided,0.93,hard,Architecture comparison,2
+TC_00961,Python is faster than C++ (context 96),technology,rejected,0.57,easy,Benchmark data,1
+TC_00962,Cloud computing is more secure than on-premises (context 96),technology,undecided,0.835,medium,Security audits,1
+TC_00963,React outperforms Angular for large applications (context 96),technology,undecided,0.616,hard,Performance tests,2
+TC_00964,SSDs are more reliable than HDDs (context 96),technology,supported,0.754,expert,Failure rate data,2
+TC_00965,5G networks pose health risks (context 96),technology,rejected,0.561,easy,WHO/FCC studies,3
+TC_00966,Open source software is more secure (context 96),technology,undecided,0.712,medium,CVE analysis,2
+TC_00967,Machine learning models are biased (context 96),technology,supported,0.558,hard,Fairness audits,4
+TC_00968,Quantum computers will break encryption by 2030 (context 96),technology,undecided,0.806,expert,Expert forecasts,2
+TC_00969,Electric vehicles are better for the environment (context 96),technology,supported,0.561,easy,Lifecycle analysis,4
+TC_00970,NoSQL databases scale better than SQL (context 96),technology,undecided,0.729,medium,Architecture comparison,1
+TC_00971,Python is faster than C++ (context 97),technology,rejected,0.625,expert,Benchmark data,1
+TC_00972,Cloud computing is more secure than on-premises (context 97),technology,undecided,0.749,easy,Security audits,4
+TC_00973,React outperforms Angular for large applications (context 97),technology,undecided,0.635,medium,Performance tests,2
+TC_00974,SSDs are more reliable than HDDs (context 97),technology,supported,0.864,hard,Failure rate data,4
+TC_00975,5G networks pose health risks (context 97),technology,rejected,0.817,expert,WHO/FCC studies,3
+TC_00976,Open source software is more secure (context 97),technology,undecided,0.747,easy,CVE analysis,2
+TC_00977,Machine learning models are biased (context 97),technology,supported,0.641,medium,Fairness audits,4
+TC_00978,Quantum computers will break encryption by 2030 (context 97),technology,undecided,0.651,hard,Expert forecasts,2
+TC_00979,Electric vehicles are better for the environment (context 97),technology,supported,0.891,expert,Lifecycle analysis,2
+TC_00980,NoSQL databases scale better than SQL (context 97),technology,undecided,0.756,easy,Architecture comparison,2
+TC_00981,Python is faster than C++ (context 98),technology,rejected,0.779,hard,Benchmark data,2
+TC_00982,Cloud computing is more secure than on-premises (context 98),technology,undecided,0.811,expert,Security audits,3
+TC_00983,React outperforms Angular for large applications (context 98),technology,undecided,0.653,easy,Performance tests,1
+TC_00984,SSDs are more reliable than HDDs (context 98),technology,supported,0.771,medium,Failure rate data,3
+TC_00985,5G networks pose health risks (context 98),technology,rejected,0.863,hard,WHO/FCC studies,3
+TC_00986,Open source software is more secure (context 98),technology,undecided,0.843,expert,CVE analysis,2
+TC_00987,Machine learning models are biased (context 98),technology,supported,0.559,easy,Fairness audits,3
+TC_00988,Quantum computers will break encryption by 2030 (context 98),technology,undecided,0.667,medium,Expert forecasts,4
+TC_00989,Electric vehicles are better for the environment (context 98),technology,supported,0.888,hard,Lifecycle analysis,1
+TC_00990,NoSQL databases scale better than SQL (context 98),technology,undecided,0.745,expert,Architecture comparison,4
+TC_00991,Python is faster than C++ (context 99),technology,rejected,0.826,medium,Benchmark data,2
+TC_00992,Cloud computing is more secure than on-premises (context 99),technology,undecided,0.659,hard,Security audits,2
+TC_00993,React outperforms Angular for large applications (context 99),technology,undecided,0.933,expert,Performance tests,1
+TC_00994,SSDs are more reliable than HDDs (context 99),technology,supported,0.884,easy,Failure rate data,2
+TC_00995,5G networks pose health risks (context 99),technology,rejected,0.852,medium,WHO/FCC studies,4
+TC_00996,Open source software is more secure (context 99),technology,undecided,0.927,hard,CVE analysis,2
+TC_00997,Machine learning models are biased (context 99),technology,supported,0.757,expert,Fairness audits,2
+TC_00998,Quantum computers will break encryption by 2030 (context 99),technology,undecided,0.889,easy,Expert forecasts,4
+TC_00999,Electric vehicles are better for the environment (context 99),technology,supported,0.713,medium,Lifecycle analysis,3
+TC_01000,NoSQL databases scale better than SQL (context 99),technology,undecided,0.948,hard,Architecture comparison,2
+TC_01001,Python is faster than C++ (context 100),technology,rejected,0.589,easy,Benchmark data,1
+TC_01002,Cloud computing is more secure than on-premises (context 100),technology,undecided,0.609,medium,Security audits,1
+TC_01003,React outperforms Angular for large applications (context 100),technology,undecided,0.794,hard,Performance tests,4
+TC_01004,SSDs are more reliable than HDDs (context 100),technology,supported,0.673,expert,Failure rate data,1
+TC_01005,5G networks pose health risks (context 100),technology,rejected,0.609,easy,WHO/FCC studies,3
+TC_01006,Open source software is more secure (context 100),technology,undecided,0.899,medium,CVE analysis,1
+TC_01007,Machine learning models are biased (context 100),technology,supported,0.75,hard,Fairness audits,1
+TC_01008,Quantum computers will break encryption by 2030 (context 100),technology,undecided,0.845,expert,Expert forecasts,4
+TC_01009,Electric vehicles are better for the environment (context 100),technology,supported,0.696,easy,Lifecycle analysis,3
+TC_01010,NoSQL databases scale better than SQL (context 100),technology,undecided,0.727,medium,Architecture comparison,4
+TC_01011,Python is faster than C++ (context 101),technology,rejected,0.802,expert,Benchmark data,1
+TC_01012,Cloud computing is more secure than on-premises (context 101),technology,undecided,0.947,easy,Security audits,4
+TC_01013,React outperforms Angular for large applications (context 101),technology,undecided,0.708,medium,Performance tests,4
+TC_01014,SSDs are more reliable than HDDs (context 101),technology,supported,0.71,hard,Failure rate data,4
+TC_01015,5G networks pose health risks (context 101),technology,rejected,0.659,expert,WHO/FCC studies,3
+TC_01016,Open source software is more secure (context 101),technology,undecided,0.839,easy,CVE analysis,1
+TC_01017,Machine learning models are biased (context 101),technology,supported,0.754,medium,Fairness audits,2
+TC_01018,Quantum computers will break encryption by 2030 (context 101),technology,undecided,0.931,hard,Expert forecasts,4
+TC_01019,Electric vehicles are better for the environment (context 101),technology,supported,0.774,expert,Lifecycle analysis,3
+TC_01020,NoSQL databases scale better than SQL (context 101),technology,undecided,0.838,easy,Architecture comparison,4
+TC_01021,Python is faster than C++ (context 102),technology,rejected,0.9,hard,Benchmark data,2
+TC_01022,Cloud computing is more secure than on-premises (context 102),technology,undecided,0.623,expert,Security audits,3
+TC_01023,React outperforms Angular for large applications (context 102),technology,undecided,0.926,easy,Performance tests,2
+TC_01024,SSDs are more reliable than HDDs (context 102),technology,supported,0.874,medium,Failure rate data,3
+TC_01025,5G networks pose health risks (context 102),technology,rejected,0.655,hard,WHO/FCC studies,4
+TC_01026,Open source software is more secure (context 102),technology,undecided,0.685,expert,CVE analysis,3
+TC_01027,Machine learning models are biased (context 102),technology,supported,0.754,easy,Fairness audits,1
+TC_01028,Quantum computers will break encryption by 2030 (context 102),technology,undecided,0.764,medium,Expert forecasts,3
+TC_01029,Electric vehicles are better for the environment (context 102),technology,supported,0.945,hard,Lifecycle analysis,1
+TC_01030,NoSQL databases scale better than SQL (context 102),technology,undecided,0.638,expert,Architecture comparison,4
+TC_01031,Python is faster than C++ (context 103),technology,rejected,0.823,medium,Benchmark data,2
+TC_01032,Cloud computing is more secure than on-premises (context 103),technology,undecided,0.831,hard,Security audits,2
+TC_01033,React outperforms Angular for large applications (context 103),technology,undecided,0.696,expert,Performance tests,3
+TC_01034,SSDs are more reliable than HDDs (context 103),technology,supported,0.663,easy,Failure rate data,4
+TC_01035,5G networks pose health risks (context 103),technology,rejected,0.765,medium,WHO/FCC studies,3
+TC_01036,Open source software is more secure (context 103),technology,undecided,0.767,hard,CVE analysis,1
+TC_01037,Machine learning models are biased (context 103),technology,supported,0.564,expert,Fairness audits,3
+TC_01038,Quantum computers will break encryption by 2030 (context 103),technology,undecided,0.92,easy,Expert forecasts,1
+TC_01039,Electric vehicles are better for the environment (context 103),technology,supported,0.797,medium,Lifecycle analysis,2
+TC_01040,NoSQL databases scale better than SQL (context 103),technology,undecided,0.644,hard,Architecture comparison,2
+TC_01041,Python is faster than C++ (context 104),technology,rejected,0.841,easy,Benchmark data,4
+TC_01042,Cloud computing is more secure than on-premises (context 104),technology,undecided,0.781,medium,Security audits,1
+TC_01043,React outperforms Angular for large applications (context 104),technology,undecided,0.939,hard,Performance tests,4
+TC_01044,SSDs are more reliable than HDDs (context 104),technology,supported,0.644,expert,Failure rate data,2
+TC_01045,5G networks pose health risks (context 104),technology,rejected,0.612,easy,WHO/FCC studies,4
+TC_01046,Open source software is more secure (context 104),technology,undecided,0.866,medium,CVE analysis,2
+TC_01047,Machine learning models are biased (context 104),technology,supported,0.886,hard,Fairness audits,3
+TC_01048,Quantum computers will break encryption by 2030 (context 104),technology,undecided,0.726,expert,Expert forecasts,2
+TC_01049,Electric vehicles are better for the environment (context 104),technology,supported,0.9,easy,Lifecycle analysis,4
+TC_01050,NoSQL databases scale better than SQL (context 104),technology,undecided,0.901,medium,Architecture comparison,1
