@@ -1634,6 +1634,92 @@ pre-commit install
 
 ---
 
+## Evaluation Framework
+
+ARGUS includes a comprehensive evaluation framework for benchmarking and testing the AI debate system.
+
+### Datasets (10 domains, 1050+ samples each)
+
+| Dataset | Domain | Description |
+|---------|--------|-------------|
+| `factual_claims` | General | Knowledge verification |
+| `scientific_hypotheses` | Science | Research claims |
+| `financial_analysis` | Finance | Market predictions |
+| `medical_efficacy` | Medical | Treatment claims |
+| `legal_reasoning` | Legal | Case analysis |
+| `technical_comparison` | Tech | System comparisons |
+| `policy_impact` | Policy | Economic analysis |
+| `historical_interpretation` | History | Event analysis |
+| `environmental_risk` | Environment | Climate claims |
+| `adversarial_edge_cases` | Adversarial | Stress testing |
+
+### Global Benchmark Support
+
+| Benchmark | Task | Description |
+|-----------|------|-------------|
+| **FEVER** | Fact Verification | Wikipedia-based claim verification |
+| **SNLI/MultiNLI** | NLI | Natural language inference |
+| **TruthfulQA** | Truthfulness | Truthfulness evaluation |
+| **BoolQ** | Yes/No QA | Boolean questions |
+| **ARC** | Science QA | Grade-school science |
+
+### Scoring Metrics
+
+#### Novel ARGUS Metrics (Unique to ARGUS)
+
+| Metric | Full Name | Description |
+|--------|-----------|-------------|
+| **ARCIS** | Argus Reasoning Coherence Index Score | Logical consistency across rounds |
+| **EVID-Q** | Evidence Quality Quotient | relevance × confidence × source quality |
+| **DIALEC** | Dialectical Depth Evaluation Coefficient | Attack/defense sophistication |
+| **REBUT-F** | Rebuttal Effectiveness Factor | Rebuttal impact measurement |
+| **CONV-S** | Convergence Stability Score | Posterior convergence quality |
+| **PROV-I** | Provenance Integrity Index | Citation chain completeness |
+| **CALIB-M** | Calibration Matrix Score | Confidence alignment |
+| **EIG-U** | Expected Information Gain Utilization | Uncertainty reduction efficiency |
+
+#### Standard Industry Metrics
+
+| Metric | Category | Description |
+|--------|----------|-------------|
+| **Accuracy** | Classification | Proportion of correct predictions |
+| **F1 / Macro F1** | Classification | Precision-recall balance |
+| **Brier Score** | Calibration | Probability prediction accuracy |
+| **ECE / MCE** | Calibration | Expected/Maximum calibration error |
+| **Log Loss** | Information | Cross-entropy loss |
+| **Dialectical Balance** | Argumentation | Support/attack balance |
+
+### Quick Start
+
+```python
+from argus.evaluation import BenchmarkRunner, load_dataset
+from argus.evaluation.datasets import load_global_benchmark
+
+# Load FEVER benchmark
+fever_df = load_global_benchmark("fever", max_samples=1000)
+
+# Compute standard and novel scores
+from argus.evaluation.scoring import compute_all_scores, compute_all_standard_metrics
+novel_scores = compute_all_scores(debate_result)
+standard_scores = compute_all_standard_metrics(predictions, ground_truths)
+```
+
+### CLI Usage
+
+```bash
+# Dry run (no LLM calls)
+python -m argus.evaluation.runner.benchmark_runner --dry-run
+
+# Full benchmark run
+python -m argus.evaluation.runner.benchmark_runner \
+    --datasets factual_claims scientific_hypotheses \
+    --benchmarks debate_quality \
+    --max-samples 10 \
+    --num-rounds 1
+```
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

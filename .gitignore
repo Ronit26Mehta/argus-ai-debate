@@ -55,11 +55,15 @@ PUBLISHING.md
 
 # PyPI rc (contains tokens - NEVER commit!)
 .pypirc
-
+collect_python_code.py
+collected_python_code.txt
 argus_ai-0.1.0
 argus_ai.egg-info
 argus_debate_ai-1.0.0
 argus_debate_ai.egg-info
 dist
-pyproject.toml
-pytest.ini
+docs\diagrams
+out
+docs
+
+Testing
