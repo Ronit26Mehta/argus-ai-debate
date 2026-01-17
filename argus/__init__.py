@@ -26,7 +26,7 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "1.3.0"
+__version__ = "1.4.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
@@ -154,6 +154,50 @@ from argus.provenance import (
 # Orchestrator
 from argus.orchestrator import RDCOrchestrator, DebateResult
 
+# Human-in-the-Loop (v1.4.0)
+from argus.hitl import (
+    HITLConfig,
+    HITLMiddleware,
+    InterruptRequest,
+    InterruptStatus,
+    ApprovalHandler,
+    RejectionHandler,
+    DecisionRouter,
+    FeedbackCallback,
+)
+
+# Memory Systems (v1.4.0)
+from argus.memory import (
+    MemoryConfig,
+    ConversationBufferMemory,
+    ConversationWindowMemory,
+    VectorStoreMemory,
+    SemanticCache,
+    MemoryStore,
+    SQLiteStore,
+)
+
+# MCP Integration (v1.4.0)
+from argus.mcp import (
+    MCPServerConfig,
+    MCPClientConfig,
+    ArgusServer,
+    MCPClient,
+    ToolAdapter,
+    ResourceRegistry,
+)
+
+# Durable Execution (v1.4.0)
+from argus.durable import (
+    DurableConfig,
+    DurableWorkflow,
+    Checkpoint,
+    MemoryCheckpointer,
+    SQLiteCheckpointer,
+    StateManager,
+    idempotent_task,
+)
+
 __all__ = [
     # Version
     "__version__",
@@ -247,5 +291,38 @@ __all__ = [
     # Orchestrator
     "RDCOrchestrator",
     "DebateResult",
+    # HITL (v1.4.0)
+    "HITLConfig",
+    "HITLMiddleware",
+    "InterruptRequest",
+    "InterruptStatus",
+    "ApprovalHandler",
+    "RejectionHandler",
+    "DecisionRouter",
+    "FeedbackCallback",
+    # Memory (v1.4.0)
+    "MemoryConfig",
+    "ConversationBufferMemory",
+    "ConversationWindowMemory",
+    "VectorStoreMemory",
+    "SemanticCache",
+    "MemoryStore",
+    "SQLiteStore",
+    # MCP (v1.4.0)
+    "MCPServerConfig",
+    "MCPClientConfig",
+    "ArgusServer",
+    "MCPClient",
+    "ToolAdapter",
+    "ResourceRegistry",
+    # Durable (v1.4.0)
+    "DurableConfig",
+    "DurableWorkflow",
+    "Checkpoint",
+    "MemoryCheckpointer",
+    "SQLiteCheckpointer",
+    "StateManager",
+    "idempotent_task",
 ]
+
 
