@@ -9,6 +9,7 @@ Features:
     - Automatic tool registration and discovery
     - Result caching for expensive operations
     - Guardrails for content filtering and policy enforcement
+    - 19+ pre-built tool integrations (search, web, productivity, database, finance)
 
 Example:
     >>> from argus.tools import BaseTool, ToolRegistry, ToolExecutor
@@ -28,6 +29,11 @@ Example:
     >>> 
     >>> executor = ToolExecutor(registry)
     >>> result = executor.run("web_search", query="climate change effects")
+    
+    >>> # Or use pre-built tools
+    >>> from argus.tools.integrations import DuckDuckGoTool, WikipediaTool
+    >>> search = DuckDuckGoTool()
+    >>> result = search(query="AI research")
 """
 
 from argus.tools.base import (
@@ -60,6 +66,9 @@ from argus.tools.guardrails import (
     GuardrailResult,
 )
 
+# Import integrations for convenience
+from argus.tools import integrations
+
 __all__ = [
     # Base
     "BaseTool",
@@ -85,4 +94,7 @@ __all__ = [
     "ContentFilter",
     "PolicyEnforcer",
     "GuardrailResult",
+    # Integrations module
+    "integrations",
 ]
+
