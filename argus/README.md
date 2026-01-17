@@ -274,4 +274,4 @@ argus report debate_results.json --output report.html
 
 ## Version
 
-**ARGUS v1.4.1** - Production Release
+**ARGUS v1.4.2** - Production Release
