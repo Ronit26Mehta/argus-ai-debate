@@ -53,12 +53,6 @@ class LLMProviderConfig(BaseSettings):
     
     Manages API keys and endpoints for all supported LLM providers.
     Keys can be set via environment variables or programmatically.
-    
-    Attributes:
-        openai_api_key: OpenAI API key (from OPENAI_API_KEY env var)
-        anthropic_api_key: Anthropic API key (from ANTHROPIC_API_KEY env var)
-        google_api_key: Google API key (from GOOGLE_API_KEY env var)
-        ollama_host: Ollama server URL (from OLLAMA_HOST env var)
     """
     
     model_config = SettingsConfigDict(
@@ -67,60 +61,175 @@ class LLMProviderConfig(BaseSettings):
         extra="ignore",
     )
     
-    # Provider API keys - loaded from environment
-    openai_api_key: Optional[str] = Field(
-        default=None,
-        description="OpenAI API key for GPT models",
-    )
+    # Core Provider API keys
+    openai_api_key: Optional[str] = Field(default=None, description="OpenAI API key")
+    anthropic_api_key: Optional[str] = Field(default=None, description="Anthropic API key")
+    google_api_key: Optional[str] = Field(default=None, description="Google API key")
+    cohere_api_key: Optional[str] = Field(default=None, description="Cohere API key")
+    mistral_api_key: Optional[str] = Field(default=None, description="Mistral API key")
+    groq_api_key: Optional[str] = Field(default=None, description="Groq API key")
     
-    anthropic_api_key: Optional[str] = Field(
-        default=None,
-        description="Anthropic API key for Claude models",
-    )
+    # OpenAI-compatible providers
+    deepseek_api_key: Optional[str] = Field(default=None, description="DeepSeek API key")
+    xai_api_key: Optional[str] = Field(default=None, description="xAI (Grok) API key")
+    perplexity_api_key: Optional[str] = Field(default=None, description="Perplexity API key")
+    nvidia_api_key: Optional[str] = Field(default=None, description="NVIDIA API key")
+    together_api_key: Optional[str] = Field(default=None, description="Together AI API key")
+    fireworks_api_key: Optional[str] = Field(default=None, description="Fireworks AI API key")
     
-    google_api_key: Optional[str] = Field(
-        default=None,
-        description="Google API key for Gemini models",
-    )
+    # Cloud providers
+    azure_openai_api_key: Optional[str] = Field(default=None, description="Azure OpenAI API key")
+    azure_openai_endpoint: Optional[str] = Field(default=None, description="Azure OpenAI endpoint")
+    huggingface_api_key: Optional[str] = Field(default=None, description="HuggingFace API key")
     
-    ollama_host: str = Field(
-        default="http://localhost:11434",
-        description="Ollama server host URL",
-    )
+    # Enterprise providers
+    watsonx_api_key: Optional[str] = Field(default=None, description="IBM watsonx API key")
+    watsonx_project_id: Optional[str] = Field(default=None, description="IBM watsonx project ID")
+    databricks_token: Optional[str] = Field(default=None, description="Databricks token")
+    databricks_host: Optional[str] = Field(default=None, description="Databricks host URL")
+    sambanova_api_key: Optional[str] = Field(default=None, description="SambaNova API key")
+    cerebras_api_key: Optional[str] = Field(default=None, description="Cerebras API key")
+    
+    # Utility/self-hosted
+    cloudflare_api_token: Optional[str] = Field(default=None, description="Cloudflare API token")
+    cloudflare_account_id: Optional[str] = Field(default=None, description="Cloudflare account ID")
+    replicate_api_token: Optional[str] = Field(default=None, description="Replicate API token")
+    
+    # Local/self-hosted
+    ollama_host: str = Field(default="http://localhost:11434", description="Ollama server host")
+    vllm_base_url: Optional[str] = Field(default=None, description="vLLM server URL")
+    llamacpp_model_path: Optional[str] = Field(default=None, description="Llama.cpp model path")
     
     def has_provider(self, provider: str) -> bool:
-        """
-        Check if a provider is configured with valid credentials.
-        
-        Args:
-            provider: Provider name (openai, anthropic, gemini, ollama)
-            
-        Returns:
-            True if the provider has valid credentials configured
-        """
-        if provider == "openai":
-            return bool(self.openai_api_key)
-        elif provider == "anthropic":
-            return bool(self.anthropic_api_key)
-        elif provider == "gemini":
-            return bool(self.google_api_key)
-        elif provider == "ollama":
-            # Ollama is always "available" if host is set (local)
-            return bool(self.ollama_host)
-        return False
+        """Check if a provider is configured with valid credentials."""
+        provider = provider.lower()
+        provider_keys = {
+            "openai": self.openai_api_key,
+            "anthropic": self.anthropic_api_key,
+            "gemini": self.google_api_key,
+            "google": self.google_api_key,
+            "cohere": self.cohere_api_key,
+            "mistral": self.mistral_api_key,
+            "groq": self.groq_api_key,
+            "deepseek": self.deepseek_api_key,
+            "xai": self.xai_api_key,
+            "grok": self.xai_api_key,
+            "perplexity": self.perplexity_api_key,
+            "nvidia": self.nvidia_api_key,
+            "together": self.together_api_key,
+            "fireworks": self.fireworks_api_key,
+            "azure": self.azure_openai_api_key,
+            "azure_openai": self.azure_openai_api_key,
+            "huggingface": self.huggingface_api_key,
+            "hf": self.huggingface_api_key,
+            "watsonx": self.watsonx_api_key,
+            "ibm": self.watsonx_api_key,
+            "databricks": self.databricks_token,
+            "sambanova": self.sambanova_api_key,
+            "cerebras": self.cerebras_api_key,
+            "cloudflare": self.cloudflare_api_token,
+            "replicate": self.replicate_api_token,
+            "ollama": self.ollama_host,  # Always available if host set
+            "vllm": self.vllm_base_url or True,  # Local, may not need key
+            "llamacpp": self.llamacpp_model_path or True,  # Local
+            "litellm": True,  # Proxy, uses underlying provider keys
+        }
+        return bool(provider_keys.get(provider, False))
+    
+
+    def get_available_providers(self) -> list[str]:
+        """Get list of providers with valid credentials."""
+        all_providers = [
+            "openai", "anthropic", "gemini", "ollama", "cohere", "mistral", "groq",
+            "deepseek", "xai", "perplexity", "nvidia", "together", "fireworks",
+            "azure", "huggingface", "watsonx", "databricks", "sambanova", "cerebras",
+            "cloudflare", "replicate", "vllm", "llamacpp", "litellm"
+        ]
+        return [p for p in all_providers if self.has_provider(p)]
+
+
+class EmbeddingProviderConfig(BaseSettings):
+    """
+    Configuration for embedding providers.
+    
+    Manages API keys for all supported embedding providers.
+    Many providers share keys with LLM providers (OpenAI, Cohere, etc.)
+    """
+    
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+    
+    # Core embedding API keys (some shared with LLM providers)
+    openai_api_key: Optional[str] = Field(default=None, description="OpenAI API key")
+    cohere_api_key: Optional[str] = Field(default=None, description="Cohere API key")
+    google_api_key: Optional[str] = Field(default=None, description="Google API key")
+    huggingface_api_key: Optional[str] = Field(default=None, alias="hf_token", description="HuggingFace API token")
+    
+    # Specialized embedding providers
+    voyage_api_key: Optional[str] = Field(default=None, description="Voyage AI API key")
+    jina_api_key: Optional[str] = Field(default=None, description="Jina AI API key")
+    nomic_api_key: Optional[str] = Field(default=None, description="Nomic AI API key")
+    mistral_api_key: Optional[str] = Field(default=None, description="Mistral AI API key")
+    
+    # Cloud/Enterprise
+    azure_openai_api_key: Optional[str] = Field(default=None, description="Azure OpenAI API key")
+    azure_openai_endpoint: Optional[str] = Field(default=None, description="Azure OpenAI endpoint")
+    nvidia_api_key: Optional[str] = Field(default=None, description="NVIDIA NIM API key")
+    together_api_key: Optional[str] = Field(default=None, description="Together AI API key")
+    fireworks_api_key: Optional[str] = Field(default=None, description="Fireworks AI API key")
+    
+    # Local options
+    ollama_host: str = Field(default="http://localhost:11434", description="Ollama server host")
+    
+    # Default embedding settings
+    default_embedding_provider: str = Field(
+        default="sentence_transformers",
+        description="Default embedding provider",
+    )
+    default_embedding_model: str = Field(
+        default="all-MiniLM-L6-v2",
+        description="Default embedding model",
+    )
+    embedding_batch_size: int = Field(default=32, ge=1, le=1000)
+    embedding_normalize: bool = Field(default=True)
+    
+    def has_provider(self, provider: str) -> bool:
+        """Check if an embedding provider is configured."""
+        provider = provider.lower()
+        provider_keys = {
+            "openai": self.openai_api_key,
+            "cohere": self.cohere_api_key,
+            "google": self.google_api_key,
+            "gemini": self.google_api_key,
+            "huggingface": self.huggingface_api_key,
+            "hf": self.huggingface_api_key,
+            "voyage": self.voyage_api_key,
+            "jina": self.jina_api_key,
+            "nomic": self.nomic_api_key,
+            "mistral": self.mistral_api_key,
+            "azure": self.azure_openai_api_key,
+            "nvidia": self.nvidia_api_key,
+            "together": self.together_api_key,
+            "fireworks": self.fireworks_api_key,
+            "ollama": self.ollama_host,  # Always available
+            "sentence_transformers": True,  # Local, always available
+            "fastembed": True,  # Local, always available
+            "bedrock": True,  # Uses AWS credentials
+        }
+        return bool(provider_keys.get(provider, False))
     
     def get_available_providers(self) -> list[str]:
-        """
-        Get list of providers with valid credentials.
-        
-        Returns:
-            List of available provider names
-        """
-        providers = []
-        for provider in ["openai", "anthropic", "gemini", "ollama"]:
-            if self.has_provider(provider):
-                providers.append(provider)
-        return providers
+        """Get list of configured embedding providers."""
+        all_providers = [
+            "sentence_transformers", "fastembed", "ollama",  # Local
+            "openai", "cohere", "google", "huggingface", "voyage",
+            "jina", "nomic", "mistral", "azure", "nvidia",
+            "together", "fireworks", "bedrock"
+        ]
+        return [p for p in all_providers if self.has_provider(p)]
 
 
 class RetrievalConfig(BaseSettings):
