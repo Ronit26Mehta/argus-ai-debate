@@ -365,21 +365,32 @@ print(f"Reasoning: {verdict.reasoning}")
 
 ---
 
-## LLM Providers
+## LLM Providers (27+)
 
-ARGUS supports multiple LLM providers through a unified interface. All providers implement the same `BaseLLM` interface for seamless interchangeability.
+ARGUS v1.4 supports **27+ LLM providers** through a unified interface. All providers implement the same `BaseLLM` interface for seamless interchangeability.
 
 ### Supported Providers
 
 | Provider | Models | Features | API Key Env Variable |
 |----------|--------|----------|---------------------|
-| **OpenAI** | GPT-4o, GPT-4, GPT-3.5, o1 | Generate, Stream, Embed | `OPENAI_API_KEY` |
-| **Anthropic** | Claude 3.5 Sonnet, Claude 3 Opus/Haiku | Generate, Stream | `ANTHROPIC_API_KEY` |
-| **Google** | Gemini 1.5 Pro, Gemini 1.5 Flash | Generate, Stream, Embed | `GOOGLE_API_KEY` |
-| **Ollama** | Llama, Mistral, Phi, CodeLlama | Local deployment | N/A (local) |
-| **Cohere** | Command R, Command R+ | Generate, Stream, Embed | `COHERE_API_KEY` |
-| **Mistral** | Large, Medium, Small, Codestral | Generate, Stream, Embed | `MISTRAL_API_KEY` |
-| **Groq** | Llama 3.1 70B, Mixtral, Gemma | Generate, Stream (fast) | `GROQ_API_KEY` |
+| **OpenAI** | GPT-4o, GPT-4, o1 | Generate, Stream, Embed | `OPENAI_API_KEY` |
+| **Anthropic** | Claude 3.5 Sonnet, Opus | Generate, Stream | `ANTHROPIC_API_KEY` |
+| **Google** | Gemini 1.5 Pro/Flash | Generate, Stream, Embed | `GOOGLE_API_KEY` |
+| **Ollama** | Llama 3.2, Mistral, Phi | Local deployment | N/A (local) |
+| **Cohere** | Command R, R+ | Generate, Stream, Embed | `COHERE_API_KEY` |
+| **Mistral** | Large, Small, Codestral | Generate, Stream, Embed | `MISTRAL_API_KEY` |
+| **Groq** | Llama 3.1 70B (ultra-fast) | Generate, Stream | `GROQ_API_KEY` |
+| **DeepSeek** | DeepSeek Chat, Coder | Generate, Stream | `DEEPSEEK_API_KEY` |
+| **xAI** | Grok-beta | Generate, Stream | `XAI_API_KEY` |
+| **Perplexity** | Sonar (search-grounded) | Generate, Stream | `PERPLEXITY_API_KEY` |
+| **Together** | 100+ open models | Generate, Stream, Embed | `TOGETHER_API_KEY` |
+| **Fireworks** | Fast inference | Generate, Stream | `FIREWORKS_API_KEY` |
+| **NVIDIA** | NIM endpoints | Generate, Stream | `NVIDIA_API_KEY` |
+| **Azure OpenAI** | GPT-4 on Azure | Generate, Stream, Embed | `AZURE_OPENAI_API_KEY` |
+| **AWS Bedrock** | Claude, Llama on AWS | Generate, Stream | AWS credentials |
+| **Vertex AI** | Gemini on GCP | Generate, Stream | GCP credentials |
+| **+ 10 more** | See docs | Various | Various |
+
 
 ### Usage Examples
 
@@ -484,9 +495,100 @@ register_provider("custom", MyCustomLLM)
 
 ---
 
+## Embedding Models (v1.4.0)
+
+ARGUS v1.4 includes 16 embedding providers for semantic search and RAG applications.
+
+### Available Providers
+
+| Type | Providers |
+|------|-----------|
+| **Local (Free)** | SentenceTransformers, FastEmbed, Ollama |
+| **Cloud APIs** | OpenAI, Cohere, HuggingFace, Voyage, Mistral, Google, Azure, Together, NVIDIA, Jina, Nomic, Bedrock, Fireworks |
+
+### Quick Examples
+
+```python
+from argus.embeddings import get_embedding, list_embedding_providers
+
+# List all 16 providers
+print(list_embedding_providers())
+
+# Local embedding (free, no API key)
+embedder = get_embedding("sentence_transformers", model="all-MiniLM-L6-v2")
+vectors = embedder.embed_documents(["Hello world", "Machine learning"])
+print(f"Dimension: {len(vectors[0])}")  # 384
+
+# Query embedding for search
+query_vec = embedder.embed_query("What is AI?")
+
+# OpenAI embeddings
+embedder = get_embedding("openai", model="text-embedding-3-small")
+vectors = embedder.embed_documents(["Doc 1", "Doc 2"])
+
+# Cohere embeddings
+embedder = get_embedding("cohere", model="embed-english-v3.0")
+query_vec = embedder.embed_query("search query")  # Uses search_query input type
+```
+
+---
+
+## Tool Integrations (v1.4.0)
+
+ARGUS v1.4 includes 19 pre-built tools for search, web access, productivity, and finance.
+
+### Available Tools
+
+| Category | Tools | API Key Required |
+|----------|-------|------------------|
+| **Search** | DuckDuckGo, Wikipedia, ArXiv, Tavily, Brave, Exa | Some optional |
+| **Web** | HTTP Requests, Web Scraper, Jina Reader, YouTube | Some optional |
+| **Productivity** | FileSystem, Python REPL, Shell, GitHub, JSON | GitHub optional |
+| **Database** | SQL, Pandas DataFrame | None |
+| **Finance** | Yahoo Finance, Weather | Weather optional |
+
+### Quick Examples
+
+```python
+from argus.tools.integrations import (
+    DuckDuckGoTool, WikipediaTool, ArxivTool,
+    PythonReplTool, YahooFinanceTool
+)
+
+# Free web search
+search = DuckDuckGoTool()
+result = search(query="latest AI research 2024", max_results=5)
+for r in result.data["results"]:
+    print(f"- {r['title']}: {r['url']}")
+
+# Wikipedia lookup
+wiki = WikipediaTool()
+result = wiki(query="Machine Learning", action="summary", sentences=3)
+print(result.data["summary"])
+
+# ArXiv paper search
+arxiv = ArxivTool()
+result = arxiv(query="transformer attention", max_results=5)
+for paper in result.data["results"]:
+    print(f"📄 {paper['title']}")
+
+# Execute Python code
+repl = PythonReplTool()
+result = repl(code="print(sum([1,2,3,4,5]))")
+print(result.data["output"])  # 15
+
+# Stock quotes
+finance = YahooFinanceTool()
+result = finance(symbol="AAPL", action="quote")
+print(f"Apple: ${result.data['price']}")
+```
+
+---
+
 ## External Connectors
 
 ARGUS provides connectors for fetching data from external sources. All connectors implement the `BaseConnector` interface.
+
 
 ### Web Connector (with robots.txt compliance)
 
