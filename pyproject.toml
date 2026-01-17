@@ -4,16 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-debate-ai"
-version = "1.4.1"
+version = "1.4.2"
 description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.11"
-# All authors listed individually for PyPI visibility
+# Combined author string to display all names on PyPI (PyPI only shows first author from array)
 authors = [
-    {name = "Ankush Pandey", email = "ankush@argus-ai.io"},
-    {name = "Rishi Ghodawat", email = "rishi@argus-ai.io"},
-    {name = "Ronit Mehta", email = "ronit@argus-ai.io"},
+    {name = "Ankush Pandey, Rishi Ghodawat, Ronit Mehta", email = "mehtaronit702@gmail.com"},
 ]
 maintainers = [
     {name = "ARGUS Team", email = "mehtaronit702@gmail.com"},
