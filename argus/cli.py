@@ -1,5 +1,5 @@
 """
-ARGUS Command Line Interface.
+ARGUS Command Line Interface (v1.4.0).
 
 Provides CLI access to ARGUS functionality:
     - debate: Run a debate on a proposition
@@ -7,8 +7,9 @@ Provides CLI access to ARGUS functionality:
     - ingest: Ingest documents
     - benchmark: Run evaluation benchmarks
     - report: Generate reports
-    - providers: List LLM providers
-    - tools: List registered tools
+    - providers: List LLM providers (27+)
+    - embeddings: List embedding providers (16+)
+    - tools: List registered tools (19+)
     - datasets: List evaluation datasets
     - score: Compute ARGUS metrics
     - config: Show configuration
@@ -31,7 +32,7 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s 1.3.0",
+        version="%(prog)s 1.4.0",
     )
     
     parser.add_argument(
@@ -230,6 +231,26 @@ def setup_parser() -> argparse.ArgumentParser:
         nargs="?",
         default=None,
         help="Tool name for detailed info",
+    )
+    
+    # =========================================================================
+    # Embeddings command
+    # =========================================================================
+    embeddings_parser = subparsers.add_parser(
+        "embeddings",
+        help="List available embedding providers",
+    )
+    embeddings_parser.add_argument(
+        "name",
+        type=str,
+        nargs="?",
+        default=None,
+        help="Embedding provider name for detailed info",
+    )
+    embeddings_parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Check API key status for each provider",
     )
     
     # =========================================================================
@@ -608,6 +629,90 @@ def cmd_tools(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_embeddings(args: argparse.Namespace) -> int:
+    """List available embedding providers."""
+    try:
+        from argus.embeddings import list_embedding_providers, get_embedding
+    except ImportError:
+        print("❌ Embeddings module not available")
+        return 1
+    
+    providers = list_embedding_providers()
+    
+    if args.name:
+        # Show detailed info for specific provider
+        if args.name not in providers:
+            print(f"❌ Provider not found: {args.name}")
+            print(f"   Available: {', '.join(providers)}")
+            return 1
+        
+        print(f"📐 Embedding Provider: {args.name}")
+        print("=" * 50)
+        
+        # Provider info
+        provider_info = {
+            "sentence_transformers": ("Local", "all-MiniLM-L6-v2", "384", "None"),
+            "fastembed": ("Local", "BAAI/bge-small-en-v1.5", "384", "None"),
+            "ollama": ("Local", "nomic-embed-text", "768", "OLLAMA_HOST"),
+            "openai": ("Cloud", "text-embedding-3-small", "1536", "OPENAI_API_KEY"),
+            "cohere": ("Cloud", "embed-english-v3.0", "1024", "COHERE_API_KEY"),
+            "huggingface": ("Cloud", "BAAI/bge-small-en-v1.5", "384", "HF_TOKEN"),
+            "voyage": ("Cloud", "voyage-3", "1024", "VOYAGE_API_KEY"),
+            "mistral": ("Cloud", "mistral-embed", "1024", "MISTRAL_API_KEY"),
+            "google": ("Cloud", "text-embedding-004", "768", "GOOGLE_API_KEY"),
+            "azure": ("Cloud", "text-embedding-ada-002", "1536", "AZURE_OPENAI_API_KEY"),
+            "together": ("Cloud", "BAAI/bge-base-en-v1.5", "768", "TOGETHER_API_KEY"),
+            "nvidia": ("Cloud", "nvidia/nv-embedqa-e5-v5", "1024", "NVIDIA_API_KEY"),
+            "jina": ("Cloud", "jina-embeddings-v3", "1024", "JINA_API_KEY"),
+            "nomic": ("Cloud", "nomic-embed-text-v1.5", "768", "NOMIC_API_KEY"),
+            "bedrock": ("Cloud", "amazon.titan-embed-text-v2", "1024", "AWS credentials"),
+            "fireworks": ("Cloud", "nomic-ai/nomic-embed-text", "768", "FIREWORKS_API_KEY"),
+        }
+        
+        info = provider_info.get(args.name, ("Unknown", "Unknown", "Unknown", "Unknown"))
+        print(f"  Type: {info[0]}")
+        print(f"  Default Model: {info[1]}")
+        print(f"  Dimension: {info[2]}")
+        print(f"  API Key: {info[3]}")
+        print()
+        print("Example:")
+        print(f'  embedder = get_embedding("{args.name}")')
+        print('  vectors = embedder.embed_documents(["text1", "text2"])')
+    else:
+        # List all providers
+        print("📐 Available Embedding Providers (16)")
+        print("=" * 50)
+        
+        local = [p for p in providers if p in ["sentence_transformers", "fastembed", "ollama"]]
+        cloud = [p for p in providers if p not in local]
+        
+        if local:
+            print("\nLocal (No API key required):")
+            for name in local:
+                print(f"  • {name}")
+        
+        if cloud:
+            print("\nCloud APIs:")
+            for name in cloud:
+                print(f"  • {name}")
+        
+        print()
+        print(f"Total: {len(providers)} providers")
+        print()
+        print("Use 'argus embeddings <name>' for details")
+        
+        if args.check:
+            print()
+            print("API Key Status:")
+            from argus.core.config import EmbeddingProviderConfig
+            config = EmbeddingProviderConfig()
+            for provider in providers:
+                status = "✓" if config.has_provider(provider) else "✗"
+                print(f"  {provider}: {status}")
+    
+    return 0
+
+
 def cmd_score(args: argparse.Namespace) -> int:
     """Compute ARGUS scoring metrics."""
     from argus.evaluation.scoring import compute_all_scores
@@ -688,6 +793,7 @@ def main() -> int:
         "evaluate": cmd_evaluate,
         "ingest": cmd_ingest,
         "providers": cmd_providers,
+        "embeddings": cmd_embeddings,
         "benchmark": cmd_benchmark,
         "datasets": cmd_datasets,
         "report": cmd_report,
