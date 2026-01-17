@@ -165,6 +165,7 @@ class LLMRegistry:
 # Register default providers
 def _register_default_providers() -> None:
     """Register the built-in LLM providers."""
+    # Core providers
     from argus.core.llm.openai import OpenAILLM
     from argus.core.llm.anthropic import AnthropicLLM
     from argus.core.llm.gemini import GeminiLLM
@@ -173,6 +174,35 @@ def _register_default_providers() -> None:
     from argus.core.llm.mistral import MistralLLM
     from argus.core.llm.groq import GroqLLM
     
+    # OpenAI-compatible providers
+    from argus.core.llm.deepseek import DeepSeekLLM
+    from argus.core.llm.xai import XaiLLM
+    from argus.core.llm.perplexity import PerplexityLLM
+    from argus.core.llm.nvidia import NvidiaLLM
+    from argus.core.llm.together import TogetherLLM
+    from argus.core.llm.fireworks import FireworksLLM
+    
+    # Cloud providers
+    from argus.core.llm.bedrock import BedrockLLM
+    from argus.core.llm.azure_openai import AzureOpenAILLM
+    from argus.core.llm.vertex import VertexAILLM
+    from argus.core.llm.huggingface import HuggingFaceLLM
+    
+    # Enterprise providers
+    from argus.core.llm.watsonx import WatsonxLLM
+    from argus.core.llm.databricks import DatabricksLLM
+    from argus.core.llm.snowflake import SnowflakeLLM
+    from argus.core.llm.sambanova import SambanovaLLM
+    from argus.core.llm.cerebras import CerebrasLLM
+    
+    # Utility/self-hosted providers
+    from argus.core.llm.litellm import LiteLLMLLM
+    from argus.core.llm.cloudflare import CloudflareLLM
+    from argus.core.llm.replicate import ReplicateLLM
+    from argus.core.llm.vllm import VllmLLM
+    from argus.core.llm.llamacpp import LlamaCppLLM
+    
+    # Register core providers
     LLMRegistry.register("openai", OpenAILLM)
     LLMRegistry.register("anthropic", AnthropicLLM)
     LLMRegistry.register("gemini", GeminiLLM)
@@ -180,6 +210,40 @@ def _register_default_providers() -> None:
     LLMRegistry.register("cohere", CohereLLM)
     LLMRegistry.register("mistral", MistralLLM)
     LLMRegistry.register("groq", GroqLLM)
+    
+    # Register OpenAI-compatible providers
+    LLMRegistry.register("deepseek", DeepSeekLLM)
+    LLMRegistry.register("xai", XaiLLM)
+    LLMRegistry.register("grok", XaiLLM)  # Alias
+    LLMRegistry.register("perplexity", PerplexityLLM)
+    LLMRegistry.register("nvidia", NvidiaLLM)
+    LLMRegistry.register("together", TogetherLLM)
+    LLMRegistry.register("fireworks", FireworksLLM)
+    
+    # Register cloud providers
+    LLMRegistry.register("bedrock", BedrockLLM)
+    LLMRegistry.register("azure", AzureOpenAILLM)
+    LLMRegistry.register("azure_openai", AzureOpenAILLM)
+    LLMRegistry.register("vertex", VertexAILLM)
+    LLMRegistry.register("vertex_ai", VertexAILLM)
+    LLMRegistry.register("huggingface", HuggingFaceLLM)
+    LLMRegistry.register("hf", HuggingFaceLLM)  # Alias
+    
+    # Register enterprise providers
+    LLMRegistry.register("watsonx", WatsonxLLM)
+    LLMRegistry.register("ibm", WatsonxLLM)  # Alias
+    LLMRegistry.register("databricks", DatabricksLLM)
+    LLMRegistry.register("snowflake", SnowflakeLLM)
+    LLMRegistry.register("sambanova", SambanovaLLM)
+    LLMRegistry.register("cerebras", CerebrasLLM)
+    
+    # Register utility/self-hosted providers
+    LLMRegistry.register("litellm", LiteLLMLLM)
+    LLMRegistry.register("cloudflare", CloudflareLLM)
+    LLMRegistry.register("replicate", ReplicateLLM)
+    LLMRegistry.register("vllm", VllmLLM)
+    LLMRegistry.register("llamacpp", LlamaCppLLM)
+    LLMRegistry.register("llama.cpp", LlamaCppLLM)  # Alias
 
 
 # Auto-register on import
