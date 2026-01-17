@@ -495,7 +495,7 @@ register_provider("custom", MyCustomLLM)
 
 ---
 
-## Embedding Models (v1.4.0)
+## Embedding Models (v1.4.1)
 
 ARGUS v1.4 includes 16 embedding providers for semantic search and RAG applications.
 
@@ -533,7 +533,7 @@ query_vec = embedder.embed_query("search query")  # Uses search_query input type
 
 ---
 
-## Tool Integrations (v1.4.0)
+## Tool Integrations (v1.4.1)
 
 ARGUS v1.4 includes 19 pre-built tools for search, web access, productivity, and finance.
 
