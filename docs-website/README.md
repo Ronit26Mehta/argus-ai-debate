@@ -135,4 +135,4 @@ MIT License - see [LICENSE](https://github.com/Ronit26Mehta/argus-ai-debate/blob
 ## Version
 
 Current version: **1.0.0** (Documentation website)
-ARGUS version: **1.4.2**
+ARGUS version: **2.0.0**
