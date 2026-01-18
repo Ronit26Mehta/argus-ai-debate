@@ -6,7 +6,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/1.4.2/)
+[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/2.0.0/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type Checking: mypy](https://img.shields.io/badge/type%20checking-mypy-blue.svg)](https://mypy.readthedocs.io/)
 
@@ -495,7 +495,7 @@ register_provider("custom", MyCustomLLM)
 
 ---
 
-## Embedding Models (v1.4.2)
+## Embedding Models (v2.0.0)
 
 ARGUS v1.4 includes 16 embedding providers for semantic search and RAG applications.
 
@@ -533,7 +533,7 @@ query_vec = embedder.embed_query("search query")  # Uses search_query input type
 
 ---
 
-## Tool Integrations (v1.4.2)
+## Tool Integrations (v2.0.0)
 
 ARGUS v1.4 includes 19 pre-built tools for search, web access, productivity, and finance.
 
