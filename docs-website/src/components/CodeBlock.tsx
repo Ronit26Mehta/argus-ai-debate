@@ -21,15 +21,22 @@ export function CodeBlock({
 }: CodeBlockProps) {
     const [copied, setCopied] = useState(false)
     const [html, setHtml] = useState<string>('')
+    const [isLoading, setIsLoading] = useState(true)
 
     // Highlight code with Shiki
     React.useEffect(() => {
         async function highlightCode() {
-            const highlighted = await codeToHtml(code, {
-                lang: language,
-                theme: 'github-dark',
-            })
-            setHtml(highlighted)
+            try {
+                const highlighted = await codeToHtml(code, {
+                    lang: language,
+                    theme: 'github-dark',
+                })
+                setHtml(highlighted)
+            } catch (error) {
+                console.error('Failed to highlight code:', error)
+            } finally {
+                setIsLoading(false)
+            }
         }
         highlightCode()
     }, [code, language])
@@ -77,14 +84,14 @@ export function CodeBlock({
 
             {/* Code content */}
             <div className="relative overflow-x-auto">
-                {html ? (
+                {html && !isLoading ? (
                     <div
                         dangerouslySetInnerHTML={{ __html: html }}
                         className="code-block-content"
                     />
                 ) : (
-                    <pre className={filename ? 'rounded-t-none' : ''}>
-                        <code className={`language-${language}`}>{code}</code>
+                    <pre className={`${filename ? 'rounded-t-none' : ''} bg-slate-900 p-4 overflow-x-auto`}>
+                        <code className={`language-${language} text-slate-300 text-sm`}>{code}</code>
                     </pre>
                 )}
             </div>
