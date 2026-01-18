@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-debate-ai"
-version = "1.4.2"
+version = "2.0.0"
 description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
 readme = "README.md"
 license = {text = "MIT"}
@@ -56,7 +56,7 @@ keywords = [
 # Comprehensive classifiers for discoverability
 classifiers = [
     # Maturity
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 6 - Mature",
     # Audience
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
