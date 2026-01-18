@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --radius: 0.5rem;
+    --chart-1: 221.2 83.2% 53.3%;
+    --chart-2: 212 95% 68%;
+    --chart-3: 216 92% 60%;
+    --chart-4: 210 98% 78%;
+    --chart-5: 212 97% 87%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+/* Custom styles for documentation */
+.prose-custom {
+  @apply text-muted-foreground leading-relaxed;
+}
+
+.prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 {
+  @apply text-foreground font-bold tracking-tight mb-4 mt-8;
+}
+
+.prose-custom p {
+  @apply mb-4;
+}
+
+.prose-custom code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono text-primary;
+}
+
+.prose-custom pre {
+  @apply bg-muted p-4 rounded-lg overflow-x-auto mb-6 border border-border/50;
+}
+
+.prose-custom ul {
+  @apply list-disc list-inside mb-4 space-y-2;
+}
+
+.prose-custom ol {
+  @apply list-decimal list-inside mb-4 space-y-2;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-background/60 backdrop-blur-xl border border-border/50;
+}
+
+/* Glow effects */
+.glow-primary {
+  @apply shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)];
+}
+
+/* Gradient text */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-400 to-emerald-400;
+}

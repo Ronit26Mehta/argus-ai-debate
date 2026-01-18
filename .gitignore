@@ -67,5 +67,6 @@ out
 docs
 DOC-20250928-WA0028..pdf
 Testing
-
+.orchids
+node_modules
 git_auto_commit.py
