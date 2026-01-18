@@ -1,5 +1,5 @@
 """
-ARGUS Command Line Interface (v1.4.2).
+ARGUS Command Line Interface (v2.0.0).
 
 Provides CLI access to ARGUS functionality:
     - debate: Run a debate on a proposition
@@ -32,7 +32,7 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s 1.4.2",
+        version="%(prog)s 2.0.0",
     )
     
     parser.add_argument(
