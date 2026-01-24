@@ -1,0 +1,613 @@
+/*
+ * GREEN PHOSPHOR THEME - 1970s Retro CRT Aesthetic
+ * Classic terminal green with P1/P31 phosphor simulation
+ * 
+ * Primary: #00ff00 (P1 Green)
+ * Secondary: #00cc00 (Dark Green)
+ * Accent: #00ff88 (Cyan-Green Glow)
+ * Background: #0a0a0a (Deep Black)
+ */
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * GREEN COLOR VARIABLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+$primary: #00ff00;
+$primary-dim: #00cc00;
+$primary-bright: #33ff33;
+
+$secondary: #00cc00;
+$secondary-dim: #009900;
+
+$accent: #00ff88;
+$accent-bright: #66ffaa;
+
+$background: #0a0a0a;
+$background-light: #0f120f;
+$background-panel: #0c0e0c;
+$background-glow: #0a140a;
+
+$border-dim: #003300;
+$border-normal: #004d00;
+$border-bright: #006600;
+
+$text-primary: #00ff00;
+$text-secondary: #00cc00;
+$text-dim: #006600;
+$text-muted: #004400;
+
+$success: #00ff00;
+$warning: #ccff00;
+$error: #ff3333;
+$info: #00ffcc;
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SCREEN & BACKGROUND
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Screen {
+    background: $background;
+    color: $text-primary;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * HEADER - Classic Terminal Top Bar
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#app-header {
+    background: $background-panel;
+    color: $primary;
+    border-bottom: double $border-normal;
+}
+
+#header-logo {
+    color: $primary-bright;
+    text-style: bold;
+}
+
+#header-status {
+    color: $primary;
+}
+
+#header-time {
+    color: $secondary;
+}
+
+.status-active {
+    color: $accent;
+}
+
+.status-idle {
+    color: $primary-dim;
+}
+
+.status-error {
+    color: $error;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * FOOTER - Command Bar
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#app-footer {
+    background: $background-panel;
+    color: $primary;
+    border-top: double $border-normal;
+}
+
+#command-input {
+    color: $primary-bright;
+    background: $background;
+    border: solid $border-dim;
+}
+
+#command-input:focus {
+    border: double $border-bright;
+    background: $background-glow;
+}
+
+#command-prompt {
+    color: $accent;
+    text-style: bold;
+}
+
+#footer-help {
+    color: $text-dim;
+}
+
+.hotkey {
+    color: $accent-bright;
+    text-style: bold;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SIDEBAR - Navigation
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#sidebar {
+    background: $background-panel;
+    border-right: double $border-normal;
+    color: $primary;
+}
+
+#sidebar-title {
+    color: $primary-bright;
+    text-style: bold;
+    border-bottom: solid $border-dim;
+}
+
+.sidebar-item {
+    color: $primary-dim;
+}
+
+.sidebar-item:hover {
+    color: $primary;
+    background: $background-glow;
+}
+
+.sidebar-item:focus {
+    color: $primary-bright;
+    background: $background-light;
+}
+
+.sidebar-item.--active {
+    color: $background;
+    background: $primary;
+    text-style: bold;
+}
+
+.sidebar-icon {
+    color: $accent;
+    margin-right: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * PANELS
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.panel {
+    background: $background-panel;
+    border: double $border-normal;
+    color: $primary;
+}
+
+.panel:focus-within {
+    border: double $border-bright;
+}
+
+.panel-title {
+    color: $primary-bright;
+    text-style: bold;
+    border-bottom: solid $border-dim;
+    margin-bottom: 1;
+}
+
+.panel-subtitle {
+    color: $secondary;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * CARDS - Agent & Info Cards
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.card {
+    background: $background-panel;
+    border: solid $border-dim;
+    color: $primary;
+}
+
+.card:hover {
+    border: solid $border-normal;
+    background: $background-glow;
+}
+
+.card:focus {
+    border: double $border-bright;
+}
+
+.card-header {
+    color: $primary-bright;
+    text-style: bold;
+    border-bottom: solid $border-dim;
+}
+
+.card-icon {
+    color: $accent;
+}
+
+.agent-card {
+    border: double $border-normal;
+}
+
+.agent-card.--active {
+    border: double $accent;
+    background: $background-glow;
+}
+
+.agent-card.--working {
+    border: double $primary-bright;
+}
+
+.agent-card.--complete {
+    border: double $success;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * BUTTONS
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Button {
+    background: $background-light;
+    color: $primary;
+    border: solid $border-normal;
+}
+
+Button:hover {
+    background: $background-glow;
+    border: solid $border-bright;
+    color: $primary-bright;
+}
+
+Button:focus {
+    border: double $border-bright;
+    color: $primary-bright;
+}
+
+Button.-primary {
+    background: $primary-dim;
+    color: $background;
+    border: solid $primary;
+}
+
+Button.-primary:hover {
+    background: $primary;
+}
+
+Button.-accent {
+    background: $accent;
+    color: $background;
+    border: solid $accent-bright;
+}
+
+Button.-success {
+    background: $background-light;
+    color: $success;
+    border: solid $success;
+}
+
+Button.-danger {
+    background: $background-light;
+    color: $error;
+    border: solid $error;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * INPUTS
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Input {
+    background: $background;
+    color: $primary;
+    border: solid $border-normal;
+}
+
+Input:focus {
+    border: double $border-bright;
+    background: $background-glow;
+}
+
+Input.-valid {
+    border: solid $success;
+}
+
+Input.-invalid {
+    border: solid $error;
+}
+
+.input-label {
+    color: $secondary;
+    margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SELECT / DROPDOWN
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Select {
+    background: $background;
+    color: $primary;
+    border: solid $border-normal;
+}
+
+Select:focus {
+    border: double $border-bright;
+}
+
+Select > SelectCurrent {
+    color: $primary;
+}
+
+Select > SelectOverlay {
+    background: $background-panel;
+    border: double $border-bright;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * DATA TABLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+DataTable {
+    background: $background;
+    color: $primary;
+    border: solid $border-normal;
+}
+
+DataTable:focus {
+    border: double $border-bright;
+}
+
+DataTable > .datatable--header {
+    background: $background-panel;
+    color: $primary-bright;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: $primary;
+    color: $background;
+}
+
+DataTable > .datatable--hover {
+    background: $background-glow;
+}
+
+/* Even/odd row styling for scanline effect */
+DataTable > .datatable--even-row {
+    background: $background;
+}
+
+DataTable > .datatable--odd-row {
+    background: #0b0d0b;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * TREE VIEW
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Tree {
+    background: $background;
+    color: $primary;
+    border: solid $border-normal;
+}
+
+Tree:focus {
+    border: double $border-bright;
+}
+
+Tree > .tree--cursor {
+    background: $primary;
+    color: $background;
+}
+
+Tree > .tree--guides {
+    color: $border-dim;
+}
+
+Tree > .tree--guides-hover {
+    color: $border-normal;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * TABS
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Tabs {
+    background: $background-panel;
+    border-bottom: solid $border-normal;
+}
+
+Tab {
+    color: $primary-dim;
+    background: $background;
+    border: solid transparent;
+}
+
+Tab:hover {
+    color: $primary;
+    background: $background-glow;
+}
+
+Tab.-active {
+    color: $background;
+    background: $primary;
+    text-style: bold;
+}
+
+TabPane {
+    background: $background;
+    color: $primary;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * PROGRESS BAR
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+ProgressBar {
+    color: $primary;
+}
+
+ProgressBar > .bar--bar {
+    color: $primary;
+    background: $border-dim;
+}
+
+ProgressBar > .bar--complete {
+    color: $success;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * LOG VIEWER
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#log-viewer {
+    background: $background;
+    border: solid $border-normal;
+    color: $primary;
+}
+
+.log-info {
+    color: $secondary;
+}
+
+.log-warning {
+    color: $warning;
+}
+
+.log-error {
+    color: $error;
+}
+
+.log-success {
+    color: $success;
+}
+
+.log-debug {
+    color: $text-dim;
+}
+
+.log-timestamp {
+    color: $accent;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * MODALS
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#modal-container {
+    background: $background-panel;
+    border: double $border-bright;
+    color: $primary;
+}
+
+#modal-title {
+    color: $primary-bright;
+    text-style: bold;
+    border-bottom: double $border-normal;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * C-DAG VISUALIZATION
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.cdag-proposition {
+    color: $primary-bright;
+    text-style: bold;
+}
+
+.cdag-evidence-support {
+    color: $accent;
+}
+
+.cdag-evidence-attack {
+    color: $error;
+}
+
+.cdag-rebuttal {
+    color: $warning;
+}
+
+.cdag-edge-positive {
+    color: $accent;
+}
+
+.cdag-edge-negative {
+    color: $error;
+}
+
+.cdag-node {
+    border: solid $border-normal;
+    padding: 0 1;
+}
+
+.cdag-node:focus {
+    border: double $primary;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * POSTERIOR GAUGE
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.gauge-low {
+    color: $error;
+}
+
+.gauge-medium {
+    color: $warning;
+}
+
+.gauge-high {
+    color: $accent;
+}
+
+.gauge-value {
+    color: $primary-bright;
+    text-style: bold;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SPECIAL EFFECTS - Phosphor Glow
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.glow {
+    text-style: bold;
+    color: $primary-bright;
+}
+
+.highlight {
+    background: $primary;
+    color: $background;
+}
+
+.scanline {
+    background: #090b09;
+}
+
+/* Phosphor persistence effect - subtle text trails */
+.phosphor-trail {
+    color: $primary-dim;
+    text-style: italic;
+}
+
+/* Provider category colors */
+.provider-cloud {
+    color: $secondary;
+}
+
+.provider-local {
+    color: $accent;
+}
+
+.provider-enterprise {
+    color: $warning;
+}
+
+/* Tool category colors */
+.tool-search {
+    color: #66ff66;
+}
+
+.tool-web {
+    color: #00ffcc;
+}
+
+.tool-productivity {
+    color: #99ff99;
+}
+
+.tool-database {
+    color: #ccff66;
+}
+
+.tool-finance {
+    color: #ffff66;
+}
