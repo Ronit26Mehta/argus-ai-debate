@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-debate-ai"
-version = "2.0.0"
+version = "2.1.1"
 description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
 readme = "README.md"
 license = {text = "MIT"}
@@ -126,6 +126,7 @@ dependencies = [
     "tenacity>=8.2,<9.0",
     "tiktoken>=0.5,<1.0",
     "requests>=2.31,<3.0",
+    "textual>=0.47,<1.0",
 ]
 
 [project.optional-dependencies]
@@ -184,6 +185,12 @@ plotting = [
     "plotly>=5.15,<6.0",
 ]
 
+# Terminal Sandbox
+terminal = [
+    "textual>=0.47,<1.0",
+    "pyinstaller>=6.0,<7.0",
+]
+
 # All features
 all = [
     "argus-debate-ai[dev]",
@@ -205,10 +212,12 @@ Changelog = "https://github.com/Ronit26Mehta/argus-ai-debate/releases"
 
 [project.scripts]
 argus = "argus.cli:main"
+argus-sandbox = "argus_terminal.argus_terminal:main"
+argus-terminal = "argus_terminal.argus_terminal:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["argus*"]
+include = ["argus*", "argus_terminal*"]
 
 [tool.setuptools.package-data]
 argus = ["py.typed", "**/*.md"]
