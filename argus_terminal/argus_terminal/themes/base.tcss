@@ -1,0 +1,395 @@
+/* 
+ * Base Theme - Shared Styles for Argus Terminal Sandbox
+ * Bloomberg Terminal inspired design with retro CRT aesthetics
+ */
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * ROOT VARIABLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+$background: #0a0a0a;
+$background-light: #151515;
+$background-panel: #0d0d0d;
+
+$border-dim: #333333;
+$border-normal: #444444;
+$border-bright: #666666;
+
+$text-dim: #666666;
+$text-muted: #888888;
+
+$success: #00ff00;
+$warning: #ffcc00;
+$error: #ff3333;
+$info: #00ccff;
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * GLOBAL STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Screen {
+    background: $background;
+    layers: base overlay;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * HEADER STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#app-header {
+    dock: top;
+    height: 3;
+    background: $background-panel;
+    border-bottom: double $border-normal;
+    padding: 0 2;
+}
+
+#header-logo {
+    width: auto;
+    content-align: left middle;
+}
+
+#header-status {
+    width: auto;
+    dock: right;
+    content-align: right middle;
+}
+
+#header-time {
+    width: 20;
+    dock: right;
+    content-align: right middle;
+    margin-right: 2;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * FOOTER STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#app-footer {
+    dock: bottom;
+    height: 3;
+    background: $background-panel;
+    border-top: double $border-normal;
+    padding: 0 2;
+}
+
+#command-input {
+    width: 1fr;
+    height: 1;
+    margin: 1 0;
+    border: none;
+    background: $background;
+    padding: 0 1;
+}
+
+#footer-help {
+    dock: right;
+    width: auto;
+    content-align: right middle;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SIDEBAR STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#sidebar {
+    dock: left;
+    width: 28;
+    background: $background-panel;
+    border-right: double $border-normal;
+    padding: 1;
+}
+
+#sidebar-title {
+    text-style: bold;
+    width: 100%;
+    height: 1;
+    content-align: center middle;
+    margin-bottom: 1;
+}
+
+.sidebar-item {
+    width: 100%;
+    height: 1;
+    padding: 0 1;
+    margin: 0;
+}
+
+.sidebar-item:hover {
+    background: $background-light;
+}
+
+.sidebar-item:focus {
+    background: $background-light;
+    text-style: bold;
+}
+
+.sidebar-item.--active {
+    text-style: bold reverse;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * MAIN CONTENT
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    background: $background;
+    padding: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * PANEL STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.panel {
+    background: $background-panel;
+    border: double $border-normal;
+    padding: 1;
+    margin: 0 0 1 0;
+}
+
+.panel-title {
+    text-style: bold;
+    width: 100%;
+    height: 1;
+    margin-bottom: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * CARD STYLES  
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.card {
+    background: $background-panel;
+    border: solid $border-dim;
+    padding: 1;
+    margin: 0 0 1 0;
+    height: auto;
+}
+
+.card:hover {
+    border: solid $border-bright;
+}
+
+.card:focus {
+    border: solid $border-bright;
+}
+
+.card-header {
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * BUTTON STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Button {
+    background: $background-light;
+    border: solid $border-normal;
+    height: 3;
+    min-width: 16;
+    margin: 0 1;
+}
+
+Button:hover {
+    border: solid $border-bright;
+}
+
+Button:focus {
+    border: double $border-bright;
+}
+
+Button.-primary {
+    text-style: bold;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * INPUT STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Input {
+    background: $background;
+    border: solid $border-normal;
+    height: 3;
+    margin: 0 0 1 0;
+    padding: 0 1;
+}
+
+Input:focus {
+    border: double $border-bright;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SELECT STYLES  
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Select {
+    background: $background;
+    border: solid $border-normal;
+    height: 3;
+    margin: 0 0 1 0;
+}
+
+Select:focus {
+    border: double $border-bright;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * DATA TABLE STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+DataTable {
+    height: auto;
+    max-height: 20;
+    background: $background;
+    border: solid $border-normal;
+    scrollbar-size: 1 1;
+}
+
+DataTable > .datatable--header {
+    text-style: bold;
+    background: $background-panel;
+}
+
+DataTable > .datatable--cursor {
+    text-style: reverse;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * TREE STYLES  
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+Tree {
+    background: $background;
+    border: solid $border-normal;
+    padding: 1;
+    height: auto;
+    max-height: 20;
+}
+
+Tree:focus {
+    border: double $border-bright;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * TAB STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+TabbedContent {
+    height: 100%;
+}
+
+Tabs {
+    background: $background-panel;
+    border-bottom: solid $border-normal;
+}
+
+Tab {
+    padding: 0 2;
+    height: 3;
+    background: $background;
+    margin: 0 1;
+}
+
+Tab:hover {
+    background: $background-light;
+}
+
+Tab.-active {
+    text-style: bold reverse;
+}
+
+TabPane {
+    padding: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * SCROLLBAR STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+*::-webkit-scrollbar {
+    width: 1;
+    height: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * LOG VIEWER STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+#log-viewer {
+    height: 100%;
+    background: $background;
+    border: solid $border-normal;
+    padding: 1;
+    overflow-y: auto;
+}
+
+.log-entry {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.log-info {
+    color: $info;
+}
+
+.log-warning {
+    color: $warning;
+}
+
+.log-error {
+    color: $error;
+}
+
+.log-success {
+    color: $success;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * PROGRESS BAR STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+ProgressBar {
+    height: 1;
+    margin: 1 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * MODAL STYLES
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+ModalScreen {
+    align: center middle;
+}
+
+#modal-container {
+    width: 60%;
+    height: auto;
+    max-height: 80%;
+    background: $background-panel;
+    border: double $border-bright;
+    padding: 2;
+}
+
+#modal-title {
+    text-style: bold;
+    width: 100%;
+    content-align: center middle;
+    margin-bottom: 1;
+}
+
+#modal-content {
+    height: auto;
+    margin-bottom: 1;
+}
+
+#modal-buttons {
+    height: 3;
+    align: center middle;
+}
