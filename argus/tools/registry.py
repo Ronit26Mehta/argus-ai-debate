@@ -236,7 +236,18 @@ def get_default_registry() -> ToolRegistry:
             _default_registry.register(EchoTool())
             _default_registry.register(CalculatorTool())
             
-            logger.info("Created default registry with built-in tools")
+            # Register integration tools
+            try:
+                from argus.tools.integrations import get_all_tools
+                for tool in get_all_tools():
+                    try:
+                        _default_registry.register(tool)
+                    except ValueError:
+                        pass  # Ignore duplicates
+            except Exception as e:
+                logger.warning(f"Failed to register integration tools: {e}")
+            
+            logger.info("Created default registry with built-in and integration tools")
         
         return _default_registry
 
