@@ -22,6 +22,7 @@
 - [LLM Providers](#llm-providers)
 - [External Connectors](#external-connectors)
 - [Visualization & Plotting](#visualization--plotting)
+- [Argus Terminal (TUI)](#argus-terminal-tui)
 - [Command Line Interface](#command-line-interface)
 - [Configuration](#configuration)
 - [Architecture](#architecture)
@@ -929,6 +930,31 @@ python -m testing.workflows.sec_enhanced_debate
 | `pdf` | Academic papers, print (vector graphics) |
 | `svg` | Web scalable graphics (vector) |
 | `html` | Interactive plots (Plotly only) |
+
+---
+
+---
+
+## Argus Terminal (TUI)
+
+Argus includes a Bloomberg-style Terminal User Interface (TUI) for interactive debates and research.
+
+### Features
+- **Retro Aesthetics**: Choose between 1980s Amber (financial) and 1970s Green (CRT) themes.
+- **Real-time Debate**: Watch agents debate, cite evidence, and reach verdicts live.
+- **System Monitoring**: Track token usage, costs, and agent states.
+- **Interactive Tools**: Browser-like tool execution within the terminal.
+
+### Quick Start
+Run the terminal directly from your command line:
+```bash
+argus-terminal
+```
+
+### Controls
+- **1-8**: Switch screens (Dashboard, Debate, Providers, Tools, etc.)
+- **Tab/Enter**: Navigate and select
+- **q**: Quit
 
 ---
 
