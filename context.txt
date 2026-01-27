@@ -1,0 +1,1855 @@
+# ARGUS - Agentic Research & Governance Unified System
+# Context File for LLM Integration
+# Version: 2.1.1 | License: MIT | Python: 3.11+
+
+================================================================================
+## OVERVIEW
+================================================================================
+
+ARGUS is a production-ready, debate-native, multi-agent AI framework for 
+evidence-based reasoning with structured argumentation, decision-theoretic 
+planning, and full provenance tracking.
+
+**Package Name:** argus-debate-ai
+**Installation:** pip install argus-debate-ai
+**Repository:** https://github.com/Ronit26Mehta/argus-ai-debate
+**PyPI:** https://pypi.org/project/argus-debate-ai/
+
+**Core Concept - Research Debate Chain (RDC):**
+Instead of single-pass LLM inference, ARGUS orchestrates multiple specialist 
+agents that gather evidence, generate rebuttals, and render verdicts through 
+Bayesian aggregation. This addresses LLM hallucination, overconfidence, and 
+opacity through adversarial debate.
+
+================================================================================
+## QUICK START
+================================================================================
+
+### Basic Debate
+```python
+from argus import RDCOrchestrator, get_llm
+
+# Initialize with any supported LLM
+llm = get_llm("openai", model="gpt-4o")
+
+# Run a debate on a proposition
+orchestrator = RDCOrchestrator(llm=llm, max_rounds=5)
+result = orchestrator.debate(
+    "The new treatment reduces symptoms by more than 20%",
+    prior=0.5,  # Start with 50/50 uncertainty
+)
+
+print(f"Verdict: {result.verdict.label}")
+print(f"Posterior: {result.verdict.posterior:.3f}")
+print(f"Evidence: {result.num_evidence} items")
+print(f"Reasoning: {result.verdict.reasoning}")
+```
+
+### Building a Debate Graph Manually
+```python
+from argus import CDAG, Proposition, Evidence, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior
+
+# Create the graph
+graph = CDAG(name="drug_efficacy_debate")
+
+# Add the proposition to evaluate
+prop = Proposition(
+    text="Drug X is effective for treating condition Y",
+    prior=0.5,
+    domain="clinical",
+)
+graph.add_proposition(prop)
+
+# Add supporting evidence
+trial_evidence = Evidence(
+    text="Phase 3 RCT showed 35% symptom reduction (n=500, p<0.001)",
+    evidence_type=EvidenceType.EMPIRICAL,
+    polarity=1,  # Supports
+    confidence=0.9,
+    relevance=0.95,
+    quality=0.85,
+)
+graph.add_evidence(trial_evidence, prop.id, EdgeType.SUPPORTS)
+
+# Compute Bayesian posterior
+posterior = compute_posterior(graph, prop.id)
+print(f"Posterior probability: {posterior:.3f}")
+```
+
+================================================================================
+## PROJECT ARCHITECTURE
+================================================================================
+
+```
+argus/
+├── __init__.py         # Main exports and version
+├── orchestrator.py     # RDCOrchestrator - Main entry point
+├── cli.py              # Command-line interface (argus command)
+│
+├── agents/             # Multi-Agent Debate System
+│   ├── base.py         # BaseAgent class
+│   ├── moderator.py    # Orchestrates debate, creates agendas, checks stopping
+│   ├── specialist.py   # Domain-specific evidence gathering
+│   ├── refuter.py      # Generates challenges and rebuttals
+│   └── jury.py         # Renders final verdicts via Bayesian aggregation
+│
+├── cdag/               # Conceptual Debate Graph
+│   ├── graph.py        # CDAG class - main graph structure
+│   ├── nodes.py        # Proposition, Evidence, Rebuttal, Finding, Assumption
+│   ├── edges.py        # Edge, EdgeType, EdgePolarity
+│   └── propagation.py  # Bayesian belief propagation algorithms
+│
+├── core/               # Core Infrastructure
+│   ├── config.py       # ArgusConfig, get_config()
+│   ├── models.py       # Document, Chunk, Embedding, Claim, Citation
+│   └── llm/            # 27+ LLM Provider Integrations
+│       ├── base.py     # BaseLLM abstract class
+│       ├── registry.py # get_llm(), list_providers()
+│       ├── openai.py, anthropic.py, gemini.py, ollama.py
+│       ├── cohere.py, mistral.py, groq.py, deepseek.py
+│       └── ... (20+ more providers)
+│
+├── decision/           # Decision-Theoretic Planning
+│   ├── bayesian.py     # BayesianUpdater
+│   ├── eig.py          # Expected Information Gain estimation
+│   ├── planner.py      # VoIPlanner - Value of Information planning
+│   └── calibration.py  # Brier score, ECE, temperature scaling
+│
+├── knowledge/          # Document Processing & Ingestion
+│   ├── ingestion.py    # DocumentLoader
+│   ├── chunking.py     # Chunker, ChunkingStrategy
+│   ├── embeddings.py   # EmbeddingGenerator
+│   ├── indexing.py     # HybridIndex
+│   └── connectors/     # External Data Sources
+│       ├── base.py     # BaseConnector
+│       ├── web.py      # WebConnector (robots.txt compliant)
+│       ├── arxiv.py    # ArxivConnector
+│       └── crossref.py # CrossRefConnector
+│
+├── embeddings/         # 16 Embedding Providers
+│   ├── base.py         # BaseEmbedding
+│   ├── registry.py     # get_embedding(), list_embedding_providers()
+│   ├── sentence_transformers.py, fastembed.py, ollama.py  # Local
+│   ├── openai.py, cohere.py, voyage.py, mistral.py        # Cloud
+│   └── ... (10+ more providers)
+│
+├── retrieval/          # Hybrid Retrieval System
+│   ├── hybrid.py       # HybridRetriever (BM25 + FAISS + RRF)
+│   ├── reranker.py     # CrossEncoderReranker
+│   └── cite_critique.py # cite_and_critique()
+│
+├── tools/              # 19+ Tool Integrations
+│   ├── base.py         # BaseTool, ToolResult
+│   ├── registry.py     # ToolRegistry, register_tool(), get_tool()
+│   ├── executor.py     # ToolExecutor
+│   ├── cache.py        # ResultCache
+│   ├── guardrails.py   # Guardrail
+│   └── integrations/   # Pre-built Tools
+│       ├── search/     # DuckDuckGo, Wikipedia, ArXiv, Tavily, Brave
+│       ├── web/        # HTTP, WebScraper, JinaReader, YouTube
+│       ├── productivity/ # FileSystem, PythonREPL, Shell, GitHub
+│       ├── database/   # SQL, Pandas DataFrame
+│       └── finance/    # YahooFinance, Weather
+│
+├── provenance/         # Audit & Governance
+│   ├── ledger.py       # ProvenanceLedger, EventType
+│   └── integrity.py    # Hash-chain verification, attestations
+│
+├── outputs/            # Reporting & Visualization
+│   ├── reports.py      # ReportGenerator, DebateReport
+│   └── plotting.py     # DebatePlotter, 15+ plot types
+│
+├── metrics/            # Observability
+│   ├── __init__.py     # MetricsCollector, Tracer
+│   └── ...
+│
+├── evaluation/         # Benchmarking Framework
+│   ├── datasets/       # 10 domains, 1050+ samples each
+│   ├── benchmarks/     # debate_quality, evidence_analysis, etc.
+│   ├── runner/         # BenchmarkRunner
+│   └── scoring/        # ARGUS-specific and standard metrics
+│
+├── hitl/               # Human-in-the-Loop
+│   ├── config.py       # HITLConfig
+│   ├── middleware.py   # HITLMiddleware
+│   ├── handlers.py     # ApprovalHandler, RejectionHandler
+│   └── callbacks.py    # FeedbackCallback
+│
+├── memory/             # Memory Systems
+│   ├── config.py       # MemoryConfig
+│   ├── short_term.py   # ConversationBufferMemory, WindowMemory
+│   ├── long_term.py    # VectorStoreMemory
+│   ├── semantic_cache.py # SemanticCache
+│   └── store.py        # MemoryStore, SQLiteStore
+│
+├── mcp/                # Model Context Protocol Integration
+│   ├── config.py       # MCPServerConfig, MCPClientConfig
+│   ├── server.py       # ArgusServer
+│   ├── client.py       # MCPClient
+│   ├── tools.py        # ToolAdapter
+│   └── resources.py    # ResourceRegistry
+│
+└── durable/            # Durable Execution & Checkpointing
+    ├── config.py       # DurableConfig
+    ├── workflow.py     # DurableWorkflow
+    ├── checkpointer.py # MemoryCheckpointer, SQLiteCheckpointer
+    ├── state.py        # StateManager
+    └── tasks.py        # idempotent_task decorator
+```
+
+================================================================================
+## KEY CLASSES AND THEIR USAGE
+================================================================================
+
+### RDCOrchestrator (Main Entry Point)
+```python
+from argus import RDCOrchestrator, get_llm
+
+orchestrator = RDCOrchestrator(
+    llm=get_llm("anthropic", model="claude-3-5-sonnet-20241022"),
+    max_rounds=5,
+)
+
+result = orchestrator.debate(
+    proposition_text="Claim to evaluate",
+    prior=0.5,           # Initial probability
+    retriever=retriever, # Optional HybridRetriever
+    domain="clinical",   # Domain for specialist
+)
+
+# Access results
+result.verdict.label      # "supported", "rejected", "undecided"
+result.verdict.posterior  # Final probability (0-1)
+result.verdict.confidence # Confidence in verdict
+result.verdict.reasoning  # Explanation
+result.num_rounds         # Rounds completed
+result.num_evidence       # Evidence gathered
+result.num_rebuttals      # Rebuttals generated
+result.graph              # Final CDAG state
+```
+
+### CDAG (Conceptual Debate Graph)
+```python
+from argus import CDAG, Proposition, Evidence, Rebuttal, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior, compute_all_posteriors
+
+# Create graph
+graph = CDAG(name="my_debate")
+
+# Add proposition (the claim to evaluate)
+prop = Proposition(
+    text="The claim under evaluation",
+    prior=0.5,
+    domain="general",
+)
+graph.add_proposition(prop)
+
+# Add supporting evidence
+evidence = Evidence(
+    text="Supporting fact from research",
+    evidence_type=EvidenceType.EMPIRICAL,  # EMPIRICAL, THEORETICAL, STATISTICAL, etc.
+    polarity=1,      # +1 supports, -1 attacks
+    confidence=0.85,
+    relevance=0.9,
+    quality=0.8,
+)
+graph.add_evidence(evidence, prop.id, EdgeType.SUPPORTS)
+
+# Add rebuttal to challenge evidence
+rebuttal = Rebuttal(
+    text="Counter-argument to the evidence",
+    target_id=evidence.id,
+    rebuttal_type="methodological",
+    strength=0.7,
+    confidence=0.8,
+)
+graph.add_rebuttal(rebuttal, evidence.id)
+
+# Compute posterior
+posterior = compute_posterior(graph, prop.id)
+
+# Graph queries
+evidences = graph.get_evidence_for(prop.id)
+rebuttals = graph.get_rebuttals_for(evidence.id)
+nx_graph = graph.to_networkx()  # Export to NetworkX
+```
+
+### Agent System
+```python
+from argus import get_llm
+from argus.agents import Moderator, Specialist, Refuter, Jury
+
+llm = get_llm("openai", model="gpt-4o")
+
+# Moderator - orchestrates debate
+moderator = Moderator(llm)
+agenda = moderator.create_agenda(graph, prop.id)
+should_stop, reason = moderator.should_stop(graph)
+
+# Specialist - gathers domain evidence
+specialist = Specialist(llm, domain="clinical")
+evidence = specialist.gather_evidence(graph, prop.id)
+
+# Refuter - generates challenges
+refuter = Refuter(llm)
+rebuttals = refuter.generate_rebuttals(graph, prop.id)
+
+# Jury - renders verdict
+jury = Jury(llm)
+verdict = jury.evaluate(graph, prop.id)
+```
+
+### LLM Providers (27+)
+```python
+from argus import get_llm, list_providers
+
+# List available providers
+providers = list_providers()  
+# ['openai', 'anthropic', 'gemini', 'ollama', 'cohere', 'mistral', 'groq', ...]
+
+# Get LLM instance
+llm = get_llm("openai", model="gpt-4o")
+llm = get_llm("anthropic", model="claude-3-5-sonnet-20241022")
+llm = get_llm("gemini", model="gemini-1.5-pro")
+llm = get_llm("ollama", model="llama3.1")  # Local
+llm = get_llm("groq", model="llama-3.1-70b-versatile")
+
+# Generate text
+response = llm.generate("Your prompt here", temperature=0.7)
+print(response.content)
+
+# Stream response
+for chunk in llm.stream("Your prompt here"):
+    print(chunk, end="", flush=True)
+
+# Embeddings (if supported)
+vectors = llm.embed(["text1", "text2"])
+```
+
+### Embeddings (16 Providers)
+```python
+from argus.embeddings import get_embedding, list_embedding_providers
+
+# List providers
+providers = list_embedding_providers()
+
+# Local embeddings (free, no API key)
+embedder = get_embedding("sentence_transformers", model="all-MiniLM-L6-v2")
+
+# Cloud embeddings
+embedder = get_embedding("openai", model="text-embedding-3-small")
+embedder = get_embedding("cohere", model="embed-english-v3.0")
+
+# Generate embeddings
+vectors = embedder.embed_documents(["doc1", "doc2"])  # For documents
+query_vec = embedder.embed_query("search query")       # For queries
+```
+
+### Document Processing
+```python
+from argus import DocumentLoader, Chunker, EmbeddingGenerator, HybridIndex
+
+# Load documents (PDF, TXT, HTML, Markdown, JSON)
+loader = DocumentLoader()
+doc = loader.load("research_paper.pdf")
+
+# Chunk with overlap
+chunker = Chunker(chunk_size=512, chunk_overlap=50)
+chunks = chunker.chunk(doc)
+
+# Generate embeddings
+embedder = EmbeddingGenerator(model="all-MiniLM-L6-v2")
+embeddings = embedder.embed_chunks(chunks)
+
+# Build index
+index = HybridIndex(dimension=384)
+index.add_chunks(chunks, [e.vector for e in embeddings])
+```
+
+### Hybrid Retrieval
+```python
+from argus.retrieval import HybridRetriever, CrossEncoderReranker
+
+retriever = HybridRetriever(
+    embedding_model="all-MiniLM-L6-v2",
+    lambda_param=0.7,    # Weight toward dense (semantic) retrieval
+    use_reranker=True,   # Enable cross-encoder reranking
+)
+retriever.index_chunks(chunks)
+
+# Search with hybrid scoring
+results = retriever.retrieve("treatment efficacy results", top_k=10)
+for r in results:
+    print(f"[{r.rank}] Score: {r.score:.3f} - {r.chunk.text[:100]}...")
+```
+
+### External Connectors
+```python
+from argus.knowledge.connectors import WebConnector, ArxivConnector, CrossRefConnector
+
+# Web (robots.txt compliant)
+web = WebConnector()
+result = web.fetch("https://example.com/article")
+
+# arXiv papers
+arxiv = ArxivConnector()
+result = arxiv.fetch("machine learning transformers", max_results=10)
+
+# CrossRef citations
+crossref = CrossRefConnector()
+result = crossref.fetch_by_doi("10.1038/nature12373")
+```
+
+### Tools Framework (19+ Integrations)
+```python
+from argus.tools.integrations import (
+    DuckDuckGoTool, WikipediaTool, ArxivTool,
+    PythonReplTool, YahooFinanceTool
+)
+
+# Web search
+search = DuckDuckGoTool()
+result = search(query="latest AI research 2024", max_results=5)
+
+# Wikipedia
+wiki = WikipediaTool()
+result = wiki(query="Machine Learning", action="summary")
+
+# Python execution
+repl = PythonReplTool()
+result = repl(code="print(sum([1,2,3,4,5]))")
+
+# Stock quotes
+finance = YahooFinanceTool()
+result = finance(symbol="AAPL", action="quote")
+```
+
+### Provenance Tracking
+```python
+from argus.provenance import ProvenanceLedger, EventType
+
+ledger = ProvenanceLedger()
+
+# Record events
+ledger.record(EventType.SESSION_START)
+ledger.record(EventType.PROPOSITION_ADDED, entity_id=prop.id)
+ledger.record(EventType.EVIDENCE_ADDED, agent_id="specialist", entity_id=evidence.id)
+ledger.record(EventType.REBUTTAL_ADDED, agent_id="refuter", entity_id=rebuttal.id)
+ledger.record(EventType.VERDICT_RENDERED, entity_id=prop.id)
+ledger.record(EventType.SESSION_END)
+
+# Verify integrity (hash-chain)
+is_valid, errors = ledger.verify_integrity()
+
+# Export for audit
+events = ledger.get_events()
+```
+
+### Visualization & Plotting
+```python
+from argus.outputs import DebatePlotter, PlotConfig
+
+config = PlotConfig(
+    output_dir="./plots",
+    dpi=300,
+    format="png",
+    theme="publication",  # publication, dark, light, minimal
+)
+
+plotter = DebatePlotter(config)
+
+# Generate individual plots
+plotter.plot_posterior_evolution(result)
+plotter.plot_evidence_distribution(result)
+plotter.plot_specialist_contributions(result)
+plotter.plot_cdag_network(result)
+
+# Generate all plots
+paths = plotter.generate_all_plots(result)
+```
+
+### Report Generation
+```python
+from argus.outputs import ReportGenerator, ReportConfig
+
+config = ReportConfig()
+generator = ReportGenerator(config)
+
+report = generator.generate(debate_result)
+markdown = report.to_markdown()
+json_output = report.to_json()
+```
+
+================================================================================
+## CLI COMMANDS
+================================================================================
+
+```bash
+# Run a debate
+argus debate "The hypothesis is supported by evidence" --prior 0.5 --rounds 3
+
+# Quick evaluation (single LLM call)
+argus evaluate "Climate change increases wildfire frequency"
+
+# Debate with specific provider
+argus --provider anthropic --model claude-3-5-sonnet-20241022 debate "Query"
+
+# Ingest documents
+argus ingest ./documents --output ./index
+
+# List providers
+argus providers --check  # Check API key status
+
+# List tools
+argus tools
+
+# List embeddings
+argus embeddings
+
+# List datasets
+argus datasets
+
+# Run benchmark
+argus benchmark debate_quality --dataset factual_claims --samples 10
+
+# Generate report
+argus report ./results.json --format markdown --output report.md
+
+# Show config
+argus config
+```
+
+================================================================================
+## CONFIGURATION
+================================================================================
+
+### Environment Variables
+```bash
+# LLM API Keys
+OPENAI_API_KEY="sk-..."
+ANTHROPIC_API_KEY="sk-ant-..."
+GOOGLE_API_KEY="..."
+COHERE_API_KEY="..."
+MISTRAL_API_KEY="..."
+GROQ_API_KEY="gsk_..."
+
+# Default settings
+ARGUS_DEFAULT_PROVIDER="openai"
+ARGUS_DEFAULT_MODEL="gpt-4o"
+ARGUS_TEMPERATURE="0.7"
+ARGUS_MAX_TOKENS="4096"
+
+# Ollama (local)
+ARGUS_OLLAMA_HOST="http://localhost:11434"
+
+# Logging
+ARGUS_LOG_LEVEL="INFO"
+```
+
+### Programmatic Configuration
+```python
+from argus import ArgusConfig, get_config
+
+config = ArgusConfig(
+    default_provider="anthropic",
+    default_model="claude-3-5-sonnet-20241022",
+    temperature=0.5,
+    max_tokens=4096,
+)
+
+# Or get global config
+config = get_config()
+config.llm.openai_api_key
+config.chunking.chunk_size
+```
+
+================================================================================
+## ALGORITHMS
+================================================================================
+
+### Bayesian Belief Propagation (Log-Odds Space)
+```
+posterior = σ(log-odds(prior) + Σᵢ wᵢ · log(LRᵢ))
+
+Where:
+- σ is the logistic (sigmoid) function
+- LRᵢ is the likelihood ratio for evidence i
+- wᵢ = polarityᵢ × confidenceᵢ × relevanceᵢ × qualityᵢ
+```
+
+### Expected Information Gain (EIG)
+```
+EIG(a) = H(p) - 𝔼ᵧ[H(p|y)]
+
+Where:
+- H(p) is the entropy of current belief
+- 𝔼ᵧ[H(p|y)] is expected entropy after observing outcome y
+```
+
+### Calibration Metrics
+- **Brier Score:** Mean squared error of probability estimates
+- **ECE:** Expected Calibration Error (binned reliability)
+- **MCE:** Maximum Calibration Error
+- **Temperature Scaling:** T* = argmin_T Σᵢ CrossEntropy(yᵢ, σ(zᵢ/T))
+
+================================================================================
+## NODE & EDGE TYPES
+================================================================================
+
+### Node Types
+- **Proposition:** Main claims under evaluation (text, prior, domain, status)
+- **Evidence:** Supporting/attacking information (polarity, confidence, type)
+- **Rebuttal:** Challenges to evidence (target_id, strength, type)
+- **Finding:** Intermediate conclusions (derived_from, confidence)
+- **Assumption:** Underlying premises (explicit, challenged)
+
+### Evidence Types (EvidenceType Enum)
+- EMPIRICAL, THEORETICAL, STATISTICAL, CASE_STUDY
+- EXPERT_OPINION, LITERATURE, LOGICAL, METHODOLOGICAL, ECONOMIC
+
+### Edge Types
+- **SUPPORTS (+1):** Evidence supporting a proposition
+- **ATTACKS (-1):** Evidence challenging a proposition
+- **REBUTS (-1):** Rebuttal targeting evidence
+- **REFINES (0):** Clarification or specification
+
+================================================================================
+## EVALUATION FRAMEWORK
+================================================================================
+
+### Datasets (10 domains)
+- factual_claims, scientific_hypotheses, financial_analysis
+- medical_efficacy, legal_reasoning, technical_comparison
+- policy_impact, historical_interpretation, environmental_risk
+- adversarial_edge_cases
+
+### Global Benchmarks
+- FEVER (Fact Verification), SNLI/MultiNLI (NLI)
+- TruthfulQA, BoolQ, ARC (Science QA)
+
+### ARGUS-Specific Metrics
+- **ARCIS:** Argument Coherence Index Score
+- **EVID-Q:** Evidence Quality Quotient
+- **DIALEC:** Dialectical Depth Coefficient
+- **REBUT-F:** Rebuttal Effectiveness Factor
+- **CONV-S:** Convergence Stability Score
+- **PROV-I:** Provenance Integrity Index
+- **CALIB-M:** Calibration Matrix Score
+- **EIG-U:** Expected Information Gain Utilization
+
+### Standard Metrics
+- Accuracy, F1/Macro F1, Brier Score, ECE/MCE, Log Loss
+
+================================================================================
+## DEPENDENCIES
+================================================================================
+
+### Core
+- pydantic (2.0+), numpy (1.24+), scipy (1.10+), networkx (3.0+)
+
+### LLM Providers
+- litellm, openai, anthropic, google-generativeai
+
+### Embeddings & Retrieval
+- sentence-transformers, rank-bm25, faiss-cpu
+
+### Document Processing
+- pymupdf, beautifulsoup4, lxml, chardet
+
+### CLI & Utilities
+- click, rich, python-dotenv, httpx, tenacity, tiktoken, textual
+
+### Optional Extras
+- pip install argus-debate-ai[ollama]
+- pip install argus-debate-ai[cohere]
+- pip install argus-debate-ai[tools]
+- pip install argus-debate-ai[plotting]
+- pip install argus-debate-ai[all]
+
+================================================================================
+## TERMINAL UI (TUI)
+================================================================================
+
+ARGUS includes a Bloomberg-style Terminal User Interface:
+
+```bash
+argus-terminal
+# or
+argus-sandbox
+```
+
+Features:
+- Retro aesthetics (1980s Amber, 1970s Green themes)
+- Real-time debate visualization
+- System monitoring (tokens, costs, agent states)
+- Interactive tool execution
+
+Controls: 1-8 switch screens, Tab/Enter navigate, q quit
+
+================================================================================
+## TYPICAL WORKFLOW
+================================================================================
+
+1. **Initialize LLM:** `llm = get_llm("openai", model="gpt-4o")`
+2. **Load Documents:** `loader.load()` + `chunker.chunk()`
+3. **Create Retriever:** `HybridRetriever().index_chunks()`
+4. **Create Orchestrator:** `RDCOrchestrator(llm=llm)`
+5. **Run Debate:** `orchestrator.debate(proposition, retriever=retriever)`
+6. **Analyze Result:** `result.verdict`, `result.graph`, metrics
+7. **Generate Report:** `ReportGenerator().generate(result)`
+8. **Visualize:** `DebatePlotter().generate_all_plots(result)`
+
+================================================================================
+## EXTENDING ARGUS
+================================================================================
+
+### Custom LLM Provider
+```python
+from argus.core.llm import BaseLLM, register_provider
+
+class MyCustomLLM(BaseLLM):
+    def generate(self, prompt, **kwargs):
+        # Implementation
+        pass
+    
+    def stream(self, prompt, **kwargs):
+        # Implementation
+        pass
+
+register_provider("custom", MyCustomLLM)
+```
+
+### Custom Tool
+```python
+from argus.tools import BaseTool, ToolResult, register_tool
+
+class MyTool(BaseTool):
+    name = "my_tool"
+    description = "Description"
+    
+    def __call__(self, **kwargs):
+        # Implementation
+        return ToolResult(success=True, data={...})
+
+register_tool(MyTool())
+```
+
+### Custom Connector
+```python
+from argus.knowledge.connectors import BaseConnector, ConnectorResult
+
+class MyConnector(BaseConnector):
+    name = "my_api"
+    
+    def fetch(self, query, max_results=10, **kwargs):
+        # Implementation
+        return ConnectorResult(success=True, documents=[...])
+```
+
+================================================================================
+## KEY IMPORTS SUMMARY
+================================================================================
+
+```python
+# Main
+from argus import RDCOrchestrator, DebateResult, get_llm, list_providers
+
+# C-DAG
+from argus import CDAG, Proposition, Evidence, Rebuttal, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior
+
+# Agents
+from argus.agents import Moderator, Specialist, Refuter, Jury, Verdict
+
+# Knowledge
+from argus import DocumentLoader, Chunker, EmbeddingGenerator, HybridIndex
+
+# Retrieval
+from argus.retrieval import HybridRetriever, CrossEncoderReranker
+
+# Decision
+from argus.decision import BayesianUpdater, VoIPlanner, compute_brier_score
+
+# Provenance
+from argus.provenance import ProvenanceLedger, EventType
+
+# Tools
+from argus import BaseTool, ToolResult, register_tool, get_tool, list_tools
+
+# Outputs
+from argus.outputs import ReportGenerator, DebatePlotter, PlotConfig
+
+# Config
+from argus import ArgusConfig, get_config
+
+# Connectors
+from argus.knowledge.connectors import WebConnector, ArxivConnector
+
+# Embeddings
+from argus.embeddings import get_embedding, list_embedding_providers
+
+# HITL
+from argus.hitl import HITLConfig, HITLMiddleware
+
+# Memory
+from argus.memory import ConversationBufferMemory, VectorStoreMemory, SemanticCache
+
+# MCP
+from argus.mcp import ArgusServer, MCPClient
+
+# Durable
+from argus.durable import DurableWorkflow, idempotent_task
+```
+
+================================================================================
+## VERSION HISTORY
+================================================================================
+
+- **v2.1.1** (Current): Production-ready, 27+ LLM providers, 16 embedding providers
+- **v2.0.0**: Major refactor, maturity status
+- **v1.4.x**: HITL, Memory, MCP, Durable execution
+- **v1.1.x**: Tools framework, outputs, metrics, connectors
+
+================================================================================
+## COMPREHENSIVE WORKFLOWS
+================================================================================
+
+### WORKFLOW 1: Basic Single-Proposition Debate
+The simplest workflow - evaluate a single claim with default settings.
+
+```python
+from argus import RDCOrchestrator, get_llm
+
+def basic_debate_workflow(proposition: str, prior: float = 0.5) -> dict:
+    """
+    Basic debate workflow for evaluating a single proposition.
+    
+    Args:
+        proposition: The claim to evaluate
+        prior: Initial probability (0.0-1.0)
+    
+    Returns:
+        dict with verdict, posterior, reasoning
+    """
+    # Initialize LLM
+    llm = get_llm("openai", model="gpt-4o")
+    
+    # Create orchestrator with defaults
+    orchestrator = RDCOrchestrator(llm=llm, max_rounds=3)
+    
+    # Run debate
+    result = orchestrator.debate(proposition, prior=prior)
+    
+    return {
+        "verdict": result.verdict.label,
+        "posterior": result.verdict.posterior,
+        "confidence": result.verdict.confidence,
+        "reasoning": result.verdict.reasoning,
+        "evidence_count": result.num_evidence,
+        "rounds": result.num_rounds,
+    }
+
+# Usage
+result = basic_debate_workflow(
+    "Machine learning models can achieve human-level performance on image classification",
+    prior=0.6
+)
+print(f"Verdict: {result['verdict']} (p={result['posterior']:.3f})")
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 2: Multi-Specialist Debate with Different Perspectives
+Use multiple specialists with different personas (Bull, Bear, Technical analysts).
+
+```python
+import json
+import time
+from argus.core.llm import get_llm
+from argus.cdag import CDAG, Proposition, Evidence, Rebuttal, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior, compute_all_posteriors
+from argus.agents.jury import Jury, JuryConfig
+from argus.agents.moderator import Moderator, ModeratorConfig
+from argus.provenance import ProvenanceLedger, EventType
+
+def multi_specialist_debate(
+    proposition_text: str,
+    specialists: dict[str, dict],
+    num_rounds: int = 3,
+    llm=None,
+) -> dict:
+    """
+    Multi-specialist debate with different perspectives.
+    
+    Args:
+        proposition_text: The claim to evaluate
+        specialists: Dict of {name: {"persona": str, "instruction": str}}
+        num_rounds: Number of debate rounds
+        llm: LLM instance (optional)
+    
+    Returns:
+        Complete debate result with transcript
+    """
+    llm = llm or get_llm("gemini", model="gemini-2.0-flash")
+    
+    # Initialize graph and proposition
+    graph = CDAG(name="multi_specialist_debate")
+    prop = Proposition(text=proposition_text, prior=0.5)
+    graph.add_proposition(prop)
+    
+    # Initialize agents
+    jury = Jury(llm, config=JuryConfig(use_llm_reasoning=True))
+    ledger = ProvenanceLedger()
+    ledger.record(EventType.SESSION_START)
+    
+    rounds_data = []
+    
+    for round_num in range(1, num_rounds + 1):
+        posterior_before = compute_posterior(graph, prop.id)
+        round_evidence = []
+        
+        # Each specialist generates evidence
+        for specialist_name, specialist_info in specialists.items():
+            prompt = f"""You are a {specialist_name}. {specialist_info['instruction']}
+
+PROPOSITION: {proposition_text}
+
+Provide 2 evidence points. Return JSON:
+{{
+    "evidence": [
+        {{"claim": "...", "supports_proposition": true/false, "confidence": 0.0-1.0}}
+    ]
+}}
+Only output JSON."""
+
+            try:
+                response = llm.generate(prompt, temperature=0.4)
+                content = response.content.strip()
+                
+                # Parse JSON (handle markdown code blocks)
+                if content.startswith("```"):
+                    content = content.split("```")[1]
+                    if content.startswith("json"):
+                        content = content[4:]
+                content = content.strip()
+                
+                data = json.loads(content)
+                
+                for item in data.get("evidence", [])[:2]:
+                    polarity = 1 if item.get("supports_proposition", True) else -1
+                    
+                    evidence = Evidence(
+                        text=item.get("claim", ""),
+                        evidence_type=EvidenceType.EMPIRICAL,
+                        polarity=polarity,
+                        confidence=float(item.get("confidence", 0.7)),
+                        metadata={"specialist": specialist_name}
+                    )
+                    
+                    edge_type = EdgeType.SUPPORTS if polarity > 0 else EdgeType.ATTACKS
+                    graph.add_evidence(evidence, prop.id, edge_type)
+                    round_evidence.append({
+                        "specialist": specialist_name,
+                        "text": evidence.text,
+                        "polarity": polarity
+                    })
+                    
+                    ledger.record(EventType.EVIDENCE_ADDED, entity_id=evidence.id)
+                    
+            except Exception as e:
+                print(f"[{specialist_name}] Error: {e}")
+            
+            time.sleep(0.5)  # Rate limiting
+        
+        # Compute posteriors
+        compute_all_posteriors(graph)
+        posterior_after = compute_posterior(graph, prop.id)
+        
+        rounds_data.append({
+            "round": round_num,
+            "posterior_before": posterior_before,
+            "posterior_after": posterior_after,
+            "evidence": round_evidence,
+        })
+    
+    # Final verdict
+    verdict = jury.evaluate(graph, prop.id)
+    ledger.record(EventType.VERDICT_RENDERED, entity_id=prop.id)
+    ledger.record(EventType.SESSION_END)
+    
+    return {
+        "proposition": proposition_text,
+        "verdict": verdict.label,
+        "posterior": verdict.posterior,
+        "confidence": verdict.confidence,
+        "reasoning": verdict.reasoning,
+        "rounds": rounds_data,
+        "graph_summary": graph.summary(),
+    }
+
+# Usage
+specialists = {
+    "Bull Analyst": {"persona": "bull", "instruction": "Find supporting evidence"},
+    "Bear Analyst": {"persona": "bear", "instruction": "Find evidence against"},
+    "Technical Analyst": {"persona": "technical", "instruction": "Provide quantitative analysis"},
+}
+
+result = multi_specialist_debate(
+    "Apple's current valuation is justified by its fundamentals",
+    specialists=specialists,
+    num_rounds=2
+)
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 3: RAG-Enhanced Debate with Document Retrieval
+Debate using evidence retrieved from indexed documents.
+
+```python
+from argus import RDCOrchestrator, get_llm, DocumentLoader, Chunker
+from argus.retrieval import HybridRetriever
+from argus.embeddings import get_embedding
+
+def rag_enhanced_debate(
+    proposition: str,
+    document_paths: list[str],
+    llm_provider: str = "openai",
+    llm_model: str = "gpt-4o",
+    chunk_size: int = 512,
+    chunk_overlap: int = 50,
+    top_k: int = 10,
+) -> dict:
+    """
+    RAG-enhanced debate using document retrieval.
+    
+    Args:
+        proposition: The claim to evaluate
+        document_paths: List of paths to documents (PDF, TXT, HTML, MD)
+        llm_provider: LLM provider name
+        llm_model: Model name
+        chunk_size: Characters per chunk
+        chunk_overlap: Overlap between chunks
+        top_k: Number of chunks to retrieve
+    
+    Returns:
+        Debate result with source citations
+    """
+    # Step 1: Load and chunk documents
+    loader = DocumentLoader()
+    chunker = Chunker(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    
+    all_chunks = []
+    for path in document_paths:
+        try:
+            doc = loader.load(path)
+            chunks = chunker.chunk(doc)
+            all_chunks.extend(chunks)
+            print(f"Loaded {len(chunks)} chunks from {path}")
+        except Exception as e:
+            print(f"Error loading {path}: {e}")
+    
+    if not all_chunks:
+        raise ValueError("No documents loaded successfully")
+    
+    # Step 2: Create hybrid retriever and index
+    retriever = HybridRetriever(
+        embedding_model="all-MiniLM-L6-v2",
+        lambda_param=0.7,  # Weight toward dense retrieval
+        use_reranker=True,
+    )
+    retriever.index_chunks(all_chunks)
+    print(f"Indexed {len(all_chunks)} chunks")
+    
+    # Step 3: Run debate with retriever
+    llm = get_llm(llm_provider, model=llm_model)
+    orchestrator = RDCOrchestrator(llm=llm, max_rounds=5)
+    
+    result = orchestrator.debate(
+        proposition,
+        prior=0.5,
+        retriever=retriever,
+    )
+    
+    return {
+        "verdict": result.verdict.label,
+        "posterior": result.verdict.posterior,
+        "confidence": result.verdict.confidence,
+        "reasoning": result.verdict.reasoning,
+        "evidence_count": result.num_evidence,
+        "documents_indexed": len(document_paths),
+        "chunks_indexed": len(all_chunks),
+    }
+
+# Usage
+result = rag_enhanced_debate(
+    "The treatment shows significant efficacy in Phase 3 trials",
+    document_paths=["clinical_trial.pdf", "meta_analysis.pdf"],
+    llm_provider="anthropic",
+    llm_model="claude-3-5-sonnet-20241022"
+)
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 4: Financial Analysis with SEC Filings
+Debate financial propositions using SEC EDGAR data.
+
+```python
+import os
+from argus.core.llm import get_llm
+from argus.cdag import CDAG, Proposition, Evidence, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior
+from argus.agents.jury import Jury, JuryConfig
+from argus.provenance import ProvenanceLedger, EventType
+
+# Set SEC EDGAR identity (required)
+os.environ["EDGAR_IDENTITY"] = "Your Name your@email.com"
+
+def financial_debate_with_sec(
+    symbol: str,
+    proposition: str,
+    num_rounds: int = 5,
+) -> dict:
+    """
+    Financial debate using SEC EDGAR filings.
+    
+    Args:
+        symbol: Stock ticker (e.g., "AAPL", "MSFT")
+        proposition: Financial claim to evaluate
+        num_rounds: Debate rounds
+    
+    Returns:
+        Debate result with SEC-based evidence
+    """
+    try:
+        from edgar import Company, set_identity
+        set_identity("ARGUS Financial Analysis argus@example.com")
+        
+        # Fetch SEC filings
+        company = Company(symbol)
+        filings_context = []
+        
+        # Get 10-K filings
+        for filing in list(company.get_filings(form="10-K"))[:2]:
+            filings_context.append({
+                "form": "10-K",
+                "date": str(filing.filing_date),
+                "preview": str(filing)[:3000]
+            })
+        
+        # Get 10-Q filings
+        for filing in list(company.get_filings(form="10-Q"))[:2]:
+            filings_context.append({
+                "form": "10-Q", 
+                "date": str(filing.filing_date),
+                "preview": str(filing)[:2000]
+            })
+            
+    except ImportError:
+        filings_context = []
+        print("edgartools not installed. Run: pip install edgartools")
+    
+    # Build SEC context string
+    sec_context = "\n\n".join([
+        f"=== {f['form']} ({f['date']}) ===\n{f['preview']}"
+        for f in filings_context
+    ])
+    
+    # Initialize debate
+    llm = get_llm("gemini", model="gemini-2.0-flash")
+    graph = CDAG(name=f"sec_debate_{symbol}")
+    prop = Proposition(text=proposition, prior=0.5)
+    graph.add_proposition(prop)
+    
+    ledger = ProvenanceLedger()
+    ledger.record(EventType.SESSION_START)
+    
+    # Generate evidence from SEC filings
+    specialists = [
+        ("Bull Analyst", "Find supporting evidence from SEC filings"),
+        ("Bear Analyst", "Find risk factors and concerns from SEC filings"),
+        ("SEC Filing Analyst", "Analyze regulatory disclosures and material events"),
+    ]
+    
+    for specialist_name, instruction in specialists:
+        prompt = f"""You are a {specialist_name}. {instruction}
+
+STOCK: {symbol}
+PROPOSITION: {proposition}
+
+SEC FILINGS:
+{sec_context[:4000]}
+
+Return JSON:
+{{"evidence": [{{"claim": "...", "supports": true/false, "confidence": 0.8}}]}}"""
+
+        try:
+            response = llm.generate(prompt, temperature=0.3)
+            # Parse and add evidence...
+            # (Similar parsing logic as previous workflows)
+        except Exception as e:
+            print(f"[{specialist_name}] Error: {e}")
+    
+    # Render verdict
+    jury = Jury(llm, config=JuryConfig(use_llm_reasoning=True))
+    verdict = jury.evaluate(graph, prop.id)
+    
+    ledger.record(EventType.VERDICT_RENDERED)
+    ledger.record(EventType.SESSION_END)
+    
+    return {
+        "symbol": symbol,
+        "proposition": proposition,
+        "verdict": verdict.label,
+        "posterior": verdict.posterior,
+        "sec_filings_analyzed": len(filings_context),
+    }
+
+# Usage
+result = financial_debate_with_sec(
+    symbol="AAPL",
+    proposition="Apple's current valuation is justified by its fundamentals"
+)
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 5: Durable Execution with Checkpointing
+Fault-tolerant debate workflow with state persistence.
+
+```python
+from argus import RDCOrchestrator, get_llm
+from argus.durable import DurableWorkflow, idempotent_task, SQLiteCheckpointer
+from argus.durable.config import DurableConfig
+
+def durable_debate_workflow(
+    proposition: str,
+    checkpoint_path: str = "./debate_checkpoints.db",
+    max_rounds: int = 5,
+) -> dict:
+    """
+    Durable debate workflow with automatic checkpointing.
+    
+    Survives failures and can resume from last checkpoint.
+    
+    Args:
+        proposition: Claim to evaluate
+        checkpoint_path: SQLite database for checkpoints
+        max_rounds: Maximum debate rounds
+    
+    Returns:
+        Debate result
+    """
+    # Configure durable execution
+    config = DurableConfig(
+        checkpoint_interval=1,  # Checkpoint every round
+        max_retries=3,
+        retry_delay=5.0,
+    )
+    
+    checkpointer = SQLiteCheckpointer(checkpoint_path)
+    
+    workflow = DurableWorkflow(
+        name="debate_workflow",
+        config=config,
+        checkpointer=checkpointer,
+    )
+    
+    @idempotent_task
+    def initialize_llm():
+        return get_llm("openai", model="gpt-4o")
+    
+    @idempotent_task
+    def run_debate(llm, proposition, max_rounds):
+        orchestrator = RDCOrchestrator(llm=llm, max_rounds=max_rounds)
+        return orchestrator.debate(proposition, prior=0.5)
+    
+    # Execute with checkpointing
+    with workflow.run() as ctx:
+        llm = ctx.execute(initialize_llm)
+        result = ctx.execute(run_debate, llm, proposition, max_rounds)
+    
+    return {
+        "verdict": result.verdict.label,
+        "posterior": result.verdict.posterior,
+        "checkpoints": workflow.get_checkpoint_count(),
+    }
+
+# Usage - can resume if interrupted
+result = durable_debate_workflow(
+    "Quantum computing will achieve practical advantage by 2030",
+    checkpoint_path="./quantum_debate.db"
+)
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 6: Human-in-the-Loop (HITL) Debate
+Debate with human approval checkpoints.
+
+```python
+from argus import RDCOrchestrator, get_llm, CDAG, Proposition
+from argus.hitl import HITLConfig, HITLMiddleware, ApprovalHandler
+from argus.agents import Specialist, Refuter, Jury
+
+def hitl_debate_workflow(
+    proposition: str,
+    require_evidence_approval: bool = True,
+    require_verdict_approval: bool = True,
+    approval_callback=None,
+) -> dict:
+    """
+    Human-in-the-Loop debate workflow.
+    
+    Args:
+        proposition: Claim to evaluate
+        require_evidence_approval: Require human approval for evidence
+        require_verdict_approval: Require human approval for verdict
+        approval_callback: Function to call for approvals
+    
+    Returns:
+        Debate result with approval history
+    """
+    # Configure HITL
+    hitl_config = HITLConfig(
+        require_evidence_approval=require_evidence_approval,
+        require_verdict_approval=require_verdict_approval,
+        approval_timeout=300,  # 5 minutes
+    )
+    
+    # Default approval callback (auto-approve for demo)
+    if approval_callback is None:
+        def approval_callback(item_type, item, context):
+            print(f"\n[HITL] Approval requested for {item_type}:")
+            print(f"  Content: {str(item)[:100]}...")
+            # In production, this would await human input
+            return True  # Auto-approve for demo
+    
+    middleware = HITLMiddleware(
+        config=hitl_config,
+        approval_handler=ApprovalHandler(callback=approval_callback)
+    )
+    
+    # Initialize
+    llm = get_llm("openai", model="gpt-4o")
+    graph = CDAG(name="hitl_debate")
+    prop = Proposition(text=proposition, prior=0.5)
+    graph.add_proposition(prop)
+    
+    specialist = Specialist(llm, domain="general")
+    refuter = Refuter(llm)
+    jury = Jury(llm)
+    
+    approvals = []
+    
+    # Gather evidence with HITL
+    evidence_list = specialist.gather_evidence(graph, prop.id)
+    for ev in evidence_list:
+        if middleware.requires_approval("evidence"):
+            approved = middleware.request_approval("evidence", ev, {"proposition": proposition})
+            approvals.append({"type": "evidence", "approved": approved, "item": ev.text[:50]})
+            if not approved:
+                continue
+        graph.add_evidence(ev, prop.id)
+    
+    # Generate rebuttals
+    rebuttals = refuter.generate_rebuttals(graph, prop.id)
+    for reb in rebuttals:
+        graph.add_rebuttal(reb, reb.target_id)
+    
+    # Render verdict with HITL
+    verdict = jury.evaluate(graph, prop.id)
+    if middleware.requires_approval("verdict"):
+        approved = middleware.request_approval("verdict", verdict, {"proposition": proposition})
+        approvals.append({"type": "verdict", "approved": approved})
+    
+    return {
+        "verdict": verdict.label,
+        "posterior": verdict.posterior,
+        "approvals": approvals,
+        "approval_rate": sum(1 for a in approvals if a["approved"]) / len(approvals) if approvals else 1.0,
+    }
+
+# Usage
+result = hitl_debate_workflow(
+    "The proposed policy will reduce emissions by 30%",
+    require_evidence_approval=True,
+    require_verdict_approval=True
+)
+```
+
+--------------------------------------------------------------------------------
+
+### WORKFLOW 7: Batch Debate with Multiple Propositions
+Process multiple claims in batch with parallel execution.
+
+```python
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+from argus import RDCOrchestrator, get_llm
+
+def batch_debate_workflow(
+    propositions: list[str],
+    max_workers: int = 3,
+    max_rounds: int = 3,
+) -> list[dict]:
+    """
+    Batch debate multiple propositions.
+    
+    Args:
+        propositions: List of claims to evaluate
+        max_workers: Parallel execution threads
+        max_rounds: Rounds per debate
+    
+    Returns:
+        List of debate results
+    """
+    llm = get_llm("openai", model="gpt-4o")
+    
+    def debate_single(proposition: str) -> dict:
+        try:
+            orchestrator = RDCOrchestrator(llm=llm, max_rounds=max_rounds)
+            result = orchestrator.debate(proposition, prior=0.5)
+            return {
+                "proposition": proposition,
+                "verdict": result.verdict.label,
+                "posterior": result.verdict.posterior,
+                "success": True,
+            }
+        except Exception as e:
+            return {
+                "proposition": proposition,
+                "error": str(e),
+                "success": False,
+            }
+    
+    results = []
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(debate_single, p) for p in propositions]
+        for future in futures:
+            results.append(future.result())
+    
+    # Summary
+    successful = sum(1 for r in results if r.get("success"))
+    print(f"Batch complete: {successful}/{len(propositions)} successful")
+    
+    return results
+
+# Usage
+propositions = [
+    "AI will surpass human intelligence by 2050",
+    "Remote work increases productivity",
+    "Electric vehicles are better for the environment",
+]
+results = batch_debate_workflow(propositions, max_workers=2)
+```
+
+================================================================================
+## EDGE CASES & ERROR HANDLING
+================================================================================
+
+### EDGE CASE 1: Empty Evidence Handling
+```python
+from argus import CDAG, Proposition
+from argus.cdag.propagation import compute_posterior
+
+def handle_empty_evidence(proposition_text: str, prior: float = 0.5) -> float:
+    """Handle case where no evidence is gathered."""
+    graph = CDAG(name="empty_evidence")
+    prop = Proposition(text=proposition_text, prior=prior)
+    graph.add_proposition(prop)
+    
+    # With no evidence, posterior equals prior
+    posterior = compute_posterior(graph, prop.id)
+    assert posterior == prior, "Empty evidence should return prior"
+    
+    return posterior
+
+# Posterior = 0.5 (unchanged from prior)
+result = handle_empty_evidence("Unresearched claim", prior=0.5)
+```
+
+### EDGE CASE 2: Conflicting Evidence (Equal Support/Attack)
+```python
+from argus import CDAG, Proposition, Evidence, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior
+
+def handle_conflicting_evidence() -> dict:
+    """Handle balanced supporting and attacking evidence."""
+    graph = CDAG(name="conflicting")
+    prop = Proposition(text="Contested claim", prior=0.5)
+    graph.add_proposition(prop)
+    
+    # Add equal strength support
+    support = Evidence(
+        text="Supporting evidence",
+        evidence_type=EvidenceType.EMPIRICAL,
+        polarity=1,
+        confidence=0.8,
+    )
+    graph.add_evidence(support, prop.id, EdgeType.SUPPORTS)
+    
+    # Add equal strength attack
+    attack = Evidence(
+        text="Contradicting evidence",
+        evidence_type=EvidenceType.EMPIRICAL,
+        polarity=-1,
+        confidence=0.8,
+    )
+    graph.add_evidence(attack, prop.id, EdgeType.ATTACKS)
+    
+    posterior = compute_posterior(graph, prop.id)
+    
+    return {
+        "posterior": posterior,
+        "is_undecided": 0.4 <= posterior <= 0.6,  # Near prior
+        "evidence_balance": "equal"
+    }
+
+result = handle_conflicting_evidence()
+# Posterior ≈ 0.5 (balanced evidence cancels out)
+```
+
+### EDGE CASE 3: Extreme Prior Values
+```python
+from argus import CDAG, Proposition, Evidence, EdgeType
+from argus.cdag.nodes import EvidenceType
+from argus.cdag.propagation import compute_posterior
+
+def handle_extreme_priors():
+    """Handle edge cases with extreme prior values."""
+    results = {}
+    
+    for prior in [0.01, 0.5, 0.99]:
+        graph = CDAG(name=f"prior_{prior}")
+        prop = Proposition(text="Test claim", prior=prior)
+        graph.add_proposition(prop)
+        
+        # Add moderate supporting evidence
+        evidence = Evidence(
+            text="Moderate support",
+            evidence_type=EvidenceType.EMPIRICAL,
+            polarity=1,
+            confidence=0.7,
+        )
+        graph.add_evidence(evidence, prop.id, EdgeType.SUPPORTS)
+        
+        posterior = compute_posterior(graph, prop.id)
+        
+        results[f"prior_{prior}"] = {
+            "prior": prior,
+            "posterior": posterior,
+            "shift": posterior - prior,
+        }
+    
+    return results
+
+# Results show how priors affect posterior updates
+results = handle_extreme_priors()
+```
+
+### EDGE CASE 4: LLM API Failures with Retry
+```python
+import time
+from tenacity import retry, stop_after_attempt, wait_exponential
+from argus import get_llm
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=10),
+)
+def resilient_llm_call(prompt: str, provider: str = "openai") -> str:
+    """LLM call with automatic retry on failures."""
+    llm = get_llm(provider, model="gpt-4o")
+    response = llm.generate(prompt, temperature=0.7)
+    return response.content
+
+def debate_with_fallback(proposition: str) -> dict:
+    """Debate with LLM provider fallback."""
+    providers = ["openai", "anthropic", "gemini"]
+    
+    for provider in providers:
+        try:
+            llm = get_llm(provider)
+            from argus import RDCOrchestrator
+            orchestrator = RDCOrchestrator(llm=llm, max_rounds=3)
+            result = orchestrator.debate(proposition, prior=0.5)
+            return {
+                "success": True,
+                "provider_used": provider,
+                "verdict": result.verdict.label,
+            }
+        except Exception as e:
+            print(f"Provider {provider} failed: {e}")
+            continue
+    
+    return {"success": False, "error": "All providers failed"}
+
+result = debate_with_fallback("Test proposition")
+```
+
+### EDGE CASE 5: Rate Limiting Handling
+```python
+import time
+from argus import get_llm
+
+class RateLimitedDebate:
+    """Debate with rate limiting awareness."""
+    
+    def __init__(self, requests_per_minute: int = 20):
+        self.requests_per_minute = requests_per_minute
+        self.min_interval = 60.0 / requests_per_minute
+        self.last_request = 0
+    
+    def _wait_if_needed(self):
+        elapsed = time.time() - self.last_request
+        if elapsed < self.min_interval:
+            time.sleep(self.min_interval - elapsed)
+        self.last_request = time.time()
+    
+    def generate(self, llm, prompt: str) -> str:
+        self._wait_if_needed()
+        return llm.generate(prompt).content
+
+# Usage
+rate_limited = RateLimitedDebate(requests_per_minute=15)
+llm = get_llm("gemini", model="gemini-2.0-flash")
+response = rate_limited.generate(llm, "Your prompt")
+```
+
+### EDGE CASE 6: Invalid/Malformed Evidence Filtering
+```python
+from argus import CDAG, Proposition, Evidence, EdgeType
+from argus.cdag.nodes import EvidenceType
+
+def filter_invalid_evidence(raw_evidence: list[dict]) -> list[Evidence]:
+    """Filter and validate evidence before adding to graph."""
+    valid_evidence = []
+    
+    for item in raw_evidence:
+        # Validate required fields
+        if not item.get("text") or len(item["text"].strip()) < 10:
+            print(f"Skipped: Empty or too short text")
+            continue
+        
+        # Validate confidence range
+        confidence = item.get("confidence", 0.5)
+        if not 0.0 <= confidence <= 1.0:
+            confidence = max(0.0, min(1.0, confidence))
+            print(f"Adjusted confidence to valid range: {confidence}")
+        
+        # Validate polarity
+        polarity = item.get("polarity", 1)
+        if polarity not in [-1, 0, 1]:
+            polarity = 1 if polarity > 0 else -1
+            print(f"Adjusted polarity: {polarity}")
+        
+        evidence = Evidence(
+            text=item["text"].strip(),
+            evidence_type=EvidenceType.EMPIRICAL,
+            polarity=polarity,
+            confidence=confidence,
+        )
+        valid_evidence.append(evidence)
+    
+    return valid_evidence
+
+# Usage
+raw = [
+    {"text": "", "polarity": 1},  # Will be skipped (empty)
+    {"text": "Valid evidence statement", "confidence": 1.5},  # Confidence adjusted
+    {"text": "Another valid point", "polarity": 5},  # Polarity adjusted
+]
+valid = filter_invalid_evidence(raw)
+print(f"Valid evidence: {len(valid)}/{len(raw)}")
+```
+
+### EDGE CASE 7: Graph Cycle Detection
+```python
+from argus import CDAG, Proposition, Evidence, Rebuttal, EdgeType
+from argus.cdag.nodes import EvidenceType
+
+def safe_add_with_cycle_check(graph: CDAG, node, target_id, edge_type=None) -> bool:
+    """Safely add nodes with cycle detection."""
+    # Get current node IDs
+    existing_ids = set(graph._nodes.keys())
+    
+    try:
+        if isinstance(node, Evidence):
+            graph.add_evidence(node, target_id, edge_type)
+        elif isinstance(node, Rebuttal):
+            graph.add_rebuttal(node, target_id)
+        else:
+            return False
+        
+        # Check for cycles using NetworkX
+        nx_graph = graph.to_networkx()
+        import networkx as nx
+        if not nx.is_directed_acyclic_graph(nx_graph):
+            # Remove the problematic node
+            # (In practice, you'd need graph.remove_node() support)
+            print("Cycle detected! Node addition prevented.")
+            return False
+        
+        return True
+        
+    except Exception as e:
+        print(f"Error adding node: {e}")
+        return False
+```
+
+### EDGE CASE 8: Memory Management for Large Debates
+```python
+from argus import CDAG, Proposition
+from argus.memory import ConversationWindowMemory
+
+def large_debate_with_memory_limits(
+    proposition: str,
+    max_evidence: int = 100,
+    max_memory_mb: int = 512,
+) -> dict:
+    """Handle large debates with memory constraints."""
+    import sys
+    
+    graph = CDAG(name="large_debate")
+    prop = Proposition(text=proposition, prior=0.5)
+    graph.add_proposition(prop)
+    
+    # Use windowed memory to limit context size
+    memory = ConversationWindowMemory(
+        max_messages=50,  # Keep last 50 exchanges
+        max_tokens=8000,  # Limit token count
+    )
+    
+    evidence_count = 0
+    
+    while evidence_count < max_evidence:
+        # Check memory usage
+        memory_mb = sys.getsizeof(graph._nodes) / (1024 * 1024)
+        if memory_mb > max_memory_mb:
+            print(f"Memory limit reached: {memory_mb:.1f}MB")
+            break
+        
+        # Add evidence (in practice, gather from LLM)
+        evidence_count += 1
+        
+        # Periodic cleanup
+        if evidence_count % 20 == 0:
+            memory.clear_old_messages()
+    
+    return {
+        "evidence_count": evidence_count,
+        "memory_used_mb": sys.getsizeof(graph._nodes) / (1024 * 1024),
+    }
+```
+
+### EDGE CASE 9: Timeout Handling
+```python
+import signal
+from contextlib import contextmanager
+from argus import RDCOrchestrator, get_llm
+
+class TimeoutError(Exception):
+    pass
+
+@contextmanager
+def timeout(seconds: int):
+    """Context manager for timeout."""
+    def handler(signum, frame):
+        raise TimeoutError(f"Operation timed out after {seconds}s")
+    
+    # Note: signal.alarm only works on Unix
+    try:
+        old_handler = signal.signal(signal.SIGALRM, handler)
+        signal.alarm(seconds)
+        yield
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
+
+def debate_with_timeout(proposition: str, timeout_seconds: int = 300) -> dict:
+    """Run debate with timeout protection."""
+    try:
+        with timeout(timeout_seconds):
+            llm = get_llm("openai", model="gpt-4o")
+            orchestrator = RDCOrchestrator(llm=llm, max_rounds=5)
+            result = orchestrator.debate(proposition, prior=0.5)
+            return {
+                "success": True,
+                "verdict": result.verdict.label,
+            }
+    except TimeoutError:
+        return {
+            "success": False,
+            "error": "Debate timed out",
+            "timeout_seconds": timeout_seconds,
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e),
+        }
+```
+
+### EDGE CASE 10: JSON Parsing with Fallback
+```python
+import json
+import re
+
+def robust_json_parse(content: str) -> dict:
+    """Parse LLM JSON output with multiple fallback strategies."""
+    
+    # Strategy 1: Direct parse
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        pass
+    
+    # Strategy 2: Extract from markdown code block
+    try:
+        if "```" in content:
+            match = re.search(r"```(?:json)?\s*([\s\S]*?)```", content)
+            if match:
+                return json.loads(match.group(1).strip())
+    except json.JSONDecodeError:
+        pass
+    
+    # Strategy 3: Find JSON-like structure
+    try:
+        match = re.search(r"\{[\s\S]*\}", content)
+        if match:
+            return json.loads(match.group(0))
+    except json.JSONDecodeError:
+        pass
+    
+    # Strategy 4: Return empty default
+    print(f"JSON parse failed, returning default. Content: {content[:100]}...")
+    return {"evidence": [], "error": "parse_failed"}
+
+# Usage
+raw_response = '''
+Here's the analysis:
+```json
+{"evidence": [{"claim": "Test", "supports": true}]}
+```
+'''
+data = robust_json_parse(raw_response)
+```
+
+================================================================================
+## AUTHORS & LICENSE
+================================================================================
+
+**Authors:** Ankush Pandey, Rishi Ghodawat, Ronit Mehta
+**License:** MIT
+**Python:** 3.11+
+
+For detailed documentation, see the README.md in the repository.
