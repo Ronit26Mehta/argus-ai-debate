@@ -1,0 +1,827 @@
+/* BioSage Terminal - Main Stylesheet */
+/* Based on the comprehensive styling scheme specification */
+
+/* ===== Global Styles ===== */
+
+Screen {
+    background: #0F172A;
+}
+
+* {
+    scrollbar-background: #1E293B;
+    scrollbar-color: #334155;
+    scrollbar-color-hover: #3B82F6;
+    scrollbar-color-active: #2563EB;
+}
+
+/* ===== Header and Footer ===== */
+
+Header {
+    height: 3;
+    dock: top;
+    background: #1E293B;
+    color: #F1F5F9;
+    text-style: bold;
+    border-bottom: solid #334155;
+    padding: 0 2;
+}
+
+Footer {
+    height: 1;
+    dock: bottom;
+    background: #1E293B;
+    color: #94A3B8;
+    border-top: solid #334155;
+}
+
+/* ===== Containers ===== */
+
+.container {
+    padding: 1 2;
+}
+
+.panel {
+    background: #1E293B;
+    border: solid #334155;
+    padding: 1;
+    margin: 1;
+}
+
+.panel-title {
+    text-style: bold;
+    color: #F1F5F9;
+    margin-bottom: 1;
+}
+
+.card {
+    background: #1E293B;
+    border: round #334155;
+    padding: 1;
+    margin: 1;
+    height: auto;
+}
+
+.card:hover {
+    border: round #3B82F6;
+}
+
+.card:focus {
+    border: round #3B82F6;
+    background: #1E3A5F;
+}
+
+/* ===== Typography ===== */
+
+.text-primary {
+    color: #F1F5F9;
+}
+
+.text-secondary {
+    color: #94A3B8;
+}
+
+.text-muted {
+    color: #64748B;
+}
+
+.text-success {
+    color: #22C55E;
+}
+
+.text-warning {
+    color: #EAB308;
+}
+
+.text-error {
+    color: #EF4444;
+}
+
+.text-info {
+    color: #06B6D4;
+}
+
+.text-bold {
+    text-style: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* ===== Welcome Screen ===== */
+
+.welcome-container {
+    align: center middle;
+    padding: 2;
+}
+
+.hero-title {
+    text-style: bold;
+    color: #3B82F6;
+    text-align: center;
+    margin-bottom: 1;
+}
+
+.hero-subtitle {
+    color: #94A3B8;
+    text-align: center;
+    margin-bottom: 2;
+}
+
+.action-button {
+    width: 24;
+    height: 3;
+    margin: 1;
+    background: #1E293B;
+    border: solid #3B82F6;
+    color: #F1F5F9;
+    text-style: bold;
+}
+
+.action-button:hover {
+    background: #3B82F6;
+    color: #FFFFFF;
+}
+
+.action-button:focus {
+    background: #2563EB;
+    color: #FFFFFF;
+    border: solid #93C5FD;
+}
+
+.feature-card {
+    width: 30;
+    height: 12;
+    background: #1E293B;
+    border: round #334155;
+    padding: 1;
+    margin: 1;
+}
+
+.feature-card:hover {
+    border: round #3B82F6;
+}
+
+/* ===== Dashboard ===== */
+
+.metrics-bar {
+    height: 9;
+    layout: horizontal;
+    padding: 1;
+    background: #1E293B;
+    border-bottom: solid #334155;
+}
+
+.metric-card {
+    width: 1fr;
+    height: 7;
+    background: #0F172A;
+    border: double #334155;
+    padding: 1;
+    margin: 0 1;
+    text-align: center;
+}
+
+.metric-value {
+    text-style: bold;
+    color: #3B82F6;
+}
+
+.metric-label {
+    color: #94A3B8;
+}
+
+.agent-grid {
+    layout: grid;
+    grid-size: 3 2;
+    grid-gutter: 1;
+    padding: 1;
+}
+
+.agent-card {
+    height: 12;
+    background: #1E293B;
+    border: solid #334155;
+    padding: 1;
+}
+
+.agent-card.status-online {
+    border: solid #22C55E;
+}
+
+.agent-card.status-degraded {
+    border: solid #EAB308;
+}
+
+.agent-card.status-offline {
+    border: solid #EF4444;
+}
+
+.agent-name {
+    text-style: bold;
+    color: #F1F5F9;
+}
+
+.agent-status {
+    margin-top: 1;
+}
+
+/* ===== Patient Tables ===== */
+
+DataTable {
+    height: auto;
+    background: #1E293B;
+    border: solid #334155;
+}
+
+DataTable > .datatable--header {
+    text-style: bold;
+    background: #0F172A;
+    color: #F1F5F9;
+}
+
+DataTable > .datatable--cursor {
+    background: #3B82F6;
+    color: #FFFFFF;
+}
+
+DataTable > .datatable--even-row {
+    background: #1E293B;
+}
+
+DataTable > .datatable--odd-row {
+    background: #0F172A;
+}
+
+/* ===== Forms ===== */
+
+Input {
+    background: #0F172A;
+    border: solid #334155;
+    color: #F1F5F9;
+    padding: 0 1;
+}
+
+Input:focus {
+    border: solid #3B82F6;
+}
+
+Input.-invalid {
+    border: solid #EF4444;
+}
+
+Label {
+    color: #F1F5F9;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+Select {
+    background: #0F172A;
+    border: solid #334155;
+    color: #F1F5F9;
+}
+
+Select:focus {
+    border: solid #3B82F6;
+}
+
+TextArea {
+    background: #0F172A;
+    border: solid #334155;
+    color: #F1F5F9;
+}
+
+TextArea:focus {
+    border: solid #3B82F6;
+}
+
+/* ===== Buttons ===== */
+
+Button {
+    background: #1E293B;
+    border: solid #334155;
+    color: #F1F5F9;
+    padding: 0 2;
+    height: 3;
+    min-width: 10;
+}
+
+Button:hover {
+    background: #334155;
+    border: solid #3B82F6;
+}
+
+Button:focus {
+    background: #3B82F6;
+    color: #FFFFFF;
+}
+
+Button.primary {
+    background: #3B82F6;
+    border: solid #3B82F6;
+    color: #FFFFFF;
+}
+
+Button.primary:hover {
+    background: #2563EB;
+    border: solid #2563EB;
+}
+
+Button.success {
+    background: #22C55E;
+    border: solid #22C55E;
+    color: #FFFFFF;
+}
+
+Button.success:hover {
+    background: #16A34A;
+}
+
+Button.danger {
+    background: #EF4444;
+    border: solid #EF4444;
+    color: #FFFFFF;
+}
+
+Button.danger:hover {
+    background: #DC2626;
+}
+
+Button.secondary {
+    background: transparent;
+    border: solid #334155;
+    color: #94A3B8;
+}
+
+Button.secondary:hover {
+    border: solid #3B82F6;
+    color: #F1F5F9;
+}
+
+/* ===== Progress Bars ===== */
+
+ProgressBar {
+    padding: 1;
+}
+
+ProgressBar > .bar--bar {
+    color: #3B82F6;
+}
+
+ProgressBar > .bar--complete {
+    color: #22C55E;
+}
+
+ProgressBar > .bar--indeterminate {
+    color: #3B82F6;
+}
+
+/* ===== Tabs ===== */
+
+TabbedContent {
+    background: #0F172A;
+}
+
+Tabs {
+    background: #1E293B;
+    border-bottom: solid #334155;
+}
+
+Tab {
+    background: transparent;
+    color: #94A3B8;
+    padding: 1 2;
+}
+
+Tab:hover {
+    color: #F1F5F9;
+}
+
+Tab.-active {
+    background: #3B82F6;
+    color: #FFFFFF;
+    text-style: bold;
+}
+
+TabPane {
+    padding: 1;
+}
+
+/* ===== Trees ===== */
+
+Tree {
+    background: #1E293B;
+    padding: 1;
+}
+
+Tree > .tree--cursor {
+    background: #3B82F6;
+    color: #FFFFFF;
+}
+
+Tree > .tree--guides {
+    color: #334155;
+}
+
+Tree > .tree--guides-hover {
+    color: #3B82F6;
+}
+
+/* ===== Lists ===== */
+
+ListView {
+    background: #1E293B;
+    border: solid #334155;
+}
+
+ListItem {
+    padding: 1;
+}
+
+ListItem:hover {
+    background: #334155;
+}
+
+ListItem.-selected {
+    background: #3B82F6;
+    color: #FFFFFF;
+}
+
+/* ===== Modals ===== */
+
+ModalScreen {
+    align: center middle;
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.modal-container {
+    width: 80%;
+    max-width: 100;
+    height: auto;
+    max-height: 80%;
+    background: #1E293B;
+    border: solid #3B82F6;
+    padding: 2;
+}
+
+.modal-title {
+    text-style: bold;
+    color: #F1F5F9;
+    margin-bottom: 1;
+    border-bottom: solid #334155;
+    padding-bottom: 1;
+}
+
+.modal-content {
+    padding: 1;
+}
+
+.modal-footer {
+    margin-top: 1;
+    border-top: solid #334155;
+    padding-top: 1;
+    align: right middle;
+}
+
+/* ===== Specialist Cards ===== */
+
+.specialist-infectious {
+    border-left: wide #EF4444;
+}
+
+.specialist-cardiology {
+    border-left: wide #F97316;
+}
+
+.specialist-neurology {
+    border-left: wide #A855F7;
+}
+
+.specialist-oncology {
+    border-left: wide #EC4899;
+}
+
+.specialist-autoimmune {
+    border-left: wide #EAB308;
+}
+
+.specialist-toxicology {
+    border-left: wide #22C55E;
+}
+
+/* ===== Priority Indicators ===== */
+
+.priority-low {
+    color: #22C55E;
+}
+
+.priority-medium {
+    color: #EAB308;
+}
+
+.priority-high {
+    color: #F97316;
+}
+
+.priority-critical {
+    color: #EF4444;
+}
+
+/* ===== Status Badges ===== */
+
+.badge {
+    padding: 0 1;
+    margin: 0 1;
+}
+
+.badge-success {
+    background: #22C55E;
+    color: #FFFFFF;
+}
+
+.badge-warning {
+    background: #EAB308;
+    color: #000000;
+}
+
+.badge-error {
+    background: #EF4444;
+    color: #FFFFFF;
+}
+
+.badge-info {
+    background: #06B6D4;
+    color: #FFFFFF;
+}
+
+/* ===== Diagnosis Result ===== */
+
+.diagnosis-card {
+    background: #1E293B;
+    border: solid #3B82F6;
+    padding: 2;
+    margin: 1;
+}
+
+.diagnosis-title {
+    text-style: bold;
+    color: #3B82F6;
+}
+
+.diagnosis-confidence {
+    margin-top: 1;
+}
+
+.diagnosis-rationale {
+    color: #94A3B8;
+    margin-top: 1;
+}
+
+/* ===== Evidence Explorer ===== */
+
+.evidence-panel {
+    height: 100%;
+}
+
+.evidence-tree {
+    width: 40%;
+    border-right: solid #334155;
+}
+
+.evidence-details {
+    width: 60%;
+    padding: 1;
+}
+
+.citation {
+    background: #0F172A;
+    border: solid #334155;
+    padding: 1;
+    margin: 1 0;
+}
+
+.citation-title {
+    text-style: bold;
+    color: #06B6D4;
+}
+
+.citation-text {
+    color: #94A3B8;
+    margin-top: 1;
+}
+
+/* ===== Loading Screen ===== */
+
+.loading-container {
+    align: center middle;
+}
+
+.loading-title {
+    text-style: bold;
+    color: #3B82F6;
+    text-align: center;
+}
+
+.loading-spinner {
+    text-align: center;
+    color: #06B6D4;
+}
+
+.loading-caption {
+    color: #94A3B8;
+    text-align: center;
+}
+
+/* ===== Patient Summary ===== */
+
+.demographics-box {
+    background: #1E293B;
+    border: solid #334155;
+    padding: 1;
+    margin-bottom: 1;
+}
+
+.demographics-row {
+    layout: horizontal;
+}
+
+.demographics-label {
+    width: 20;
+    text-style: bold;
+    color: #94A3B8;
+}
+
+.demographics-value {
+    color: #F1F5F9;
+}
+
+.vitals-grid {
+    layout: grid;
+    grid-size: 3 2;
+    grid-gutter: 1;
+    padding: 1;
+}
+
+.vital-card {
+    height: 8;
+    background: #1E293B;
+    border: solid #334155;
+    padding: 1;
+    text-align: center;
+}
+
+.vital-value {
+    text-style: bold;
+}
+
+.vital-value.normal {
+    color: #22C55E;
+}
+
+.vital-value.abnormal {
+    color: #EAB308;
+}
+
+.vital-value.critical {
+    color: #EF4444;
+}
+
+.vital-label {
+    color: #94A3B8;
+}
+
+/* ===== Timeline ===== */
+
+.timeline {
+    padding: 1;
+}
+
+.timeline-event {
+    padding-left: 4;
+    border-left: solid #334155;
+    margin-bottom: 1;
+}
+
+.timeline-marker {
+    color: #3B82F6;
+    text-style: bold;
+}
+
+.timeline-date {
+    text-style: bold;
+    color: #F1F5F9;
+}
+
+.timeline-content {
+    color: #94A3B8;
+    padding-left: 2;
+}
+
+/* ===== Audit Log ===== */
+
+.audit-row {
+    padding: 1;
+}
+
+.audit-timestamp {
+    color: #64748B;
+    width: 20;
+}
+
+.audit-user {
+    color: #94A3B8;
+    width: 20;
+}
+
+.audit-action {
+    color: #F1F5F9;
+}
+
+.audit-status-success {
+    color: #22C55E;
+}
+
+.audit-status-warning {
+    color: #EAB308;
+}
+
+.audit-status-error {
+    color: #EF4444;
+}
+
+/* ===== Wizard Steps ===== */
+
+.wizard-progress {
+    height: 3;
+    background: #1E293B;
+    padding: 1;
+    border-bottom: solid #334155;
+}
+
+.wizard-step {
+    padding: 2;
+}
+
+.wizard-navigation {
+    height: 5;
+    layout: horizontal;
+    align: center middle;
+    padding: 1;
+    border-top: solid #334155;
+}
+
+/* ===== Scrollable Containers ===== */
+
+.scrollable {
+    overflow-y: auto;
+}
+
+VerticalScroll {
+    scrollbar-gutter: stable;
+}
+
+/* ===== Responsive Helpers ===== */
+
+.hidden {
+    display: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+/* ===== Horizontal Layout ===== */
+
+.horizontal {
+    layout: horizontal;
+}
+
+.vertical {
+    layout: vertical;
+}
+
+.space-between {
+    align: left middle;
+}
+
+/* ===== Spacing ===== */
+
+.mt-1 { margin-top: 1; }
+.mt-2 { margin-top: 2; }
+.mb-1 { margin-bottom: 1; }
+.mb-2 { margin-bottom: 2; }
+.ml-1 { margin-left: 1; }
+.ml-2 { margin-left: 2; }
+.mr-1 { margin-right: 1; }
+.mr-2 { margin-right: 2; }
+.p-1 { padding: 1; }
+.p-2 { padding: 2; }
