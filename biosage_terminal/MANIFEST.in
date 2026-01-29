@@ -1,0 +1,20 @@
+# Include documentation and metadata files
+include README.md
+include LICENSE
+include pyproject.toml
+include BUILD_AND_PUBLISH.md
+
+# Include package data
+recursive-include biosage_terminal *.tcss
+recursive-include biosage_terminal/screens *.py
+
+# Exclude unnecessary files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude *.egg-info
+prune .git
+prune .github
+prune tests
+prune docs
