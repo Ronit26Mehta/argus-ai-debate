@@ -1,0 +1,172 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biosage-terminal"
+version = "1.0.0"
+description = "BioSage - AI-Powered Medical Diagnostic Assistant TUI with ARGUS Debate Framework"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "BioSage Team", email = "team@biosage.ai"}
+]
+maintainers = [
+    {name = "BioSage Team", email = "team@biosage.ai"}
+]
+keywords = [
+    "medical",
+    "diagnosis",
+    "ai",
+    "tui",
+    "terminal",
+    "healthcare",
+    "argus",
+    "debate-framework",
+    "bayesian",
+    "clinical-decision-support",
+    "medical-ai",
+    "multi-agent",
+    "llm",
+    "evidence-based-medicine"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Environment :: Console :: Curses",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Terminals",
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "textual>=0.47.0",
+    "rich>=13.7.0",
+    "argus-debate-ai>=1.0.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "plotext>=5.2.8",
+    "aiofiles>=23.2.1",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "black>=24.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.8.0",
+    "build>=1.0.0",
+    "twine>=5.0.0",
+]
+# LLM provider dependencies (install the ones you need)
+gemini = ["google-generativeai>=0.8.0"]
+openai = ["openai>=1.40.0"]
+anthropic = ["anthropic>=0.34.0"]
+groq = ["groq>=0.10.0"]
+mistral = ["mistralai>=1.0.0"]
+cohere = ["cohere>=5.9.0"]
+all-llms = [
+    "google-generativeai>=0.8.0",
+    "openai>=1.40.0",
+    "anthropic>=0.34.0",
+    "groq>=0.10.0",
+    "mistralai>=1.0.0",
+    "cohere>=5.9.0",
+]
+
+[project.scripts]
+biosage = "biosage_terminal.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/biosage/biosage-terminal"
+Documentation = "https://biosage.ai/docs"
+Repository = "https://github.com/biosage/biosage-terminal"
+"Bug Tracker" = "https://github.com/biosage/biosage-terminal/issues"
+Changelog = "https://github.com/biosage/biosage-terminal/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["biosage_terminal*"]
+exclude = ["tests*", "docs*", "*.egg-info"]
+
+[tool.setuptools.package-data]
+biosage_terminal = ["*.tcss", "py.typed", "data/*.json", "screens/*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "C4", "T20"]
+ignore = ["E501"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=biosage_terminal --cov-report=term-missing"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
