@@ -35,16 +35,21 @@ class DiagnosisProgressScreen(Screen):
     CSS = """
     DiagnosisProgressScreen {
         background: #0F172A;
+        align: center middle;
     }
     
     .progress-container {
         align: center middle;
-        height: 100%;
+        width: auto;
+        height: auto;
         padding: 4;
+        content-align: center middle;
     }
     
     .progress-title {
         text-align: center;
+        width: 100%;
+        content-align: center middle;
         margin-bottom: 2;
     }
     
@@ -52,21 +57,29 @@ class DiagnosisProgressScreen(Screen):
         width: 60;
         height: 3;
         margin: 2 0;
+        text-align: center;
+        content-align: center middle;
     }
     
     .progress-message {
         text-align: center;
+        width: 100%;
+        content-align: center middle;
         margin: 1 0;
     }
     
     .spinner {
         text-align: center;
+        width: 100%;
+        content-align: center middle;
         margin-top: 2;
     }
     
     .status-list {
         margin-top: 3;
         padding: 1;
+        text-align: center;
+        content-align: center middle;
     }
     """
     
@@ -99,12 +112,13 @@ class DiagnosisProgressScreen(Screen):
         self.completed_steps = []
     
     def compose(self) -> ComposeResult:
-        with Container(classes="progress-container"):
-            yield Static(self._render_title(), id="title", classes="progress-title")
-            yield Static(self._render_progress(), id="progress", classes="progress-bar-container")
-            yield Static(self._render_message(), id="message", classes="progress-message")
-            yield Static(self._render_spinner(), id="spinner", classes="spinner")
-            yield Static(self._render_status_list(), id="status_list", classes="status-list")
+        with Center():
+            with Container(classes="progress-container"):
+                yield Static(self._render_title(), id="title", classes="progress-title")
+                yield Static(self._render_progress(), id="progress", classes="progress-bar-container")
+                yield Static(self._render_message(), id="message", classes="progress-message")
+                yield Static(self._render_spinner(), id="spinner", classes="spinner")
+                yield Static(self._render_status_list(), id="status_list", classes="status-list")
         
         yield Footer()
     
