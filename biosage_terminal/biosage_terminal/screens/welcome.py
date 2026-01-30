@@ -8,6 +8,12 @@ from textual.containers import Container, Horizontal, Vertical, Center
 from textual.widgets import Static, Button, Footer
 from rich.text import Text
 
+try:
+    import pyfiglet
+    HAS_PYFIGLET = True
+except ImportError:
+    HAS_PYFIGLET = False
+
 
 class WelcomeScreen(Screen):
     """Welcome/Landing screen with hero section and feature cards."""
@@ -139,16 +145,28 @@ class WelcomeScreen(Screen):
         yield Footer()
     
     def _render_hero_title(self) -> Text:
-        """Render the hero title."""
+        """Render the hero title with a clean Unicode-based logo."""
         text = Text(justify="center")
         text.append("=" * 60 + "\n", style="#334155")
         text.append("\n", style="")
-        text.append("  ____  _       ____                   \n", style="bold #3B82F6")
-        text.append(" | __ )(_) ___ / ___|  __ _  __ _  ___ \n", style="bold #3B82F6")
-        text.append(" |  _ \\| |/ _ \\\\___ \\ / _` |/ _` |/ _ \\\n", style="bold #60A5FA")
-        text.append(" | |_) | | (_) |___) | (_| | (_| |  __/\n", style="bold #93C5FD")
-        text.append(" |____/|_|\\___/|____/ \\__,_|\\__, |\\___|\n", style="bold #BFDBFE")
-        text.append("                            |___/      \n", style="bold #BFDBFE")
+        
+        # Clean Unicode block-style logo that works in all terminals
+        logo_lines = [
+            "  ██████╗ ██╗ ██████╗ ███████╗ █████╗  ██████╗ ███████╗",
+            "  ██╔══██╗██║██╔═══██╗██╔════╝██╔══██╗██╔════╝ ██╔════╝",
+            "  ██████╔╝██║██║   ██║███████╗███████║██║  ███╗█████╗  ",
+            "  ██╔══██╗██║██║   ██║╚════██║██╔══██║██║   ██║██╔══╝  ",
+            "  ██████╔╝██║╚██████╔╝███████║██║  ██║╚██████╔╝███████╗",
+            "  ╚═════╝ ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝",
+        ]
+        
+        # Apply gradient colors
+        colors = ["#3B82F6", "#3B82F6", "#60A5FA", "#60A5FA", "#93C5FD", "#BFDBFE"]
+        
+        for i, line in enumerate(logo_lines):
+            color = colors[i % len(colors)]
+            text.append(line + "\n", style=f"bold {color}")
+        
         text.append("\n", style="")
         text.append("=" * 60, style="#334155")
         return text
