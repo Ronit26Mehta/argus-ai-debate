@@ -16,6 +16,7 @@ from biosage_terminal.screens.research_hub import ResearchHubScreen
 from biosage_terminal.screens.visual_diagnosis import VisualDiagnosisScreen
 from biosage_terminal.screens.diagnosis_result import DiagnosisResultScreen
 from biosage_terminal.screens.cases_manager import CasesManagerScreen
+from biosage_terminal.screens.help import HelpScreen
 
 __all__ = [
     "WelcomeScreen",
@@ -34,4 +35,5 @@ __all__ = [
     "VisualDiagnosisScreen",
     "DiagnosisResultScreen",
     "CasesManagerScreen",
+    "HelpScreen",
 ]
