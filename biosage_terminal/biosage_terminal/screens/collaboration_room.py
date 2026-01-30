@@ -169,46 +169,86 @@ class CollaborationRoomScreen(Screen):
     CSS = """
     CollaborationRoomScreen {
         background: #0F172A;
+        layout: vertical;
     }
     
     .collab-header {
         dock: top;
         height: 3;
-        background: #3B82F6;
-        color: #F1F5F9;
-        padding: 0 2;
+        background: #1E40AF;
+        color: #FFFFFF;
+        padding: 1 2;
+        border-bottom: tall #3B82F6;
     }
     
     .main-grid {
-        layout: grid;
-        grid-size: 4;
-        grid-columns: 1fr 2fr 1fr;
+        layout: horizontal;
         padding: 1;
-        height: 100%;
+        height: 1fr;
     }
     
     .sidebar-left {
-        column-span: 1;
+        width: 25%;
         height: 100%;
         padding: 0 1;
+        layout: vertical;
     }
     
     .main-chat {
-        column-span: 2;
+        width: 50%;
         height: 100%;
         padding: 0 1;
+        layout: vertical;
     }
     
     .sidebar-right {
-        column-span: 1;
+        width: 25%;
         height: 100%;
         padding: 0 1;
+        layout: vertical;
     }
     
     .section-box {
         border: solid #3B82F6;
         padding: 1;
         margin-bottom: 1;
+        background: #1E293B;
+        height: auto;
+    }
+    
+    .section-box-scroll {
+        border: solid #3B82F6;
+        padding: 1;
+        margin-bottom: 1;
+        background: #1E293B;
+        height: 1fr;
+        overflow-y: auto;
+    }
+    
+    .participants-box {
+        height: auto;
+        max-height: 40%;
+    }
+    
+    .discussions-box {
+        height: 1fr;
+    }
+    
+    .chat-box {
+        height: 1fr;
+    }
+    
+    .pinned-box {
+        height: auto;
+        max-height: 35%;
+    }
+    
+    .vote-box {
+        height: auto;
+    }
+    
+    .actions-box {
+        height: auto;
     }
     
     .section-title {
@@ -222,22 +262,33 @@ class CollaborationRoomScreen(Screen):
         border: none none solid none #334155;
     }
     
+    .chat-container {
+        height: 1fr;
+        overflow-y: auto;
+        border: solid #334155;
+        background: #0F172A;
+        padding: 1;
+    }
+    
     .chat-message {
         padding: 1;
         margin-bottom: 1;
         background: #1E293B;
+        border-left: solid #3B82F6;
     }
     
     .discussion-card {
         padding: 1;
         margin-bottom: 1;
-        background: #1E293B;
+        background: #0F172A;
+        border-left: solid #8B5CF6;
     }
     
     .pinned-item {
         padding: 1;
         margin-bottom: 1;
-        background: #1E293B;
+        background: #0F172A;
+        border-left: solid #22C55E;
     }
     
     .message-input {
@@ -246,18 +297,26 @@ class CollaborationRoomScreen(Screen):
     }
     
     .vote-option {
-        height: 2;
         margin-bottom: 1;
-    }
-    
-    .vote-bar {
-        background: #1E293B;
-        height: 1;
+        padding: 0;
     }
     
     .controls-row {
-        height: 3;
-        dock: bottom;
+        height: 4;
+        margin-top: 1;
+    }
+    
+    .controls-row Button {
+        margin-right: 1;
+    }
+    
+    .section-box Button {
+        width: 100%;
+        margin-bottom: 1;
+    }
+    
+    .scroll-inner {
+        height: auto;
     }
     """
     
@@ -298,47 +357,47 @@ class CollaborationRoomScreen(Screen):
         ]
     
     def compose(self) -> ComposeResult:
-        yield Header()
-        
         online_count = sum(1 for p in self.participants if p["status"] == "online")
         
-        with Container(classes="collab-header"):
-            yield Static(
-                f"[bold]Collaboration Room[/bold] | Case: {self.case_id or 'BSG-2024-001'} | "
-                f"[green]{online_count} Online[/green] | [d] Dashboard [s] Send [v] Vote [ESC] Back"
-            )
+        yield Static(
+            f"[bold]Collaboration Room[/bold]  │  Case: {self.case_id or 'BSG-2024-001'}  │  "
+            f"[green]{online_count} Online[/green]  │  [d] Dashboard  [s] Send  [v] Vote  [ESC] Back",
+            classes="collab-header"
+        )
         
-        with Container(classes="main-grid"):
+        with Horizontal(classes="main-grid"):
             # Left sidebar - Participants and Discussions
-            with ScrollableContainer(classes="sidebar-left"):
-                with Container(classes="section-box"):
-                    yield Static(f"[bold]Participants ({len(self.participants)})[/bold]", classes="section-title")
-                    for p in self.participants:
-                        yield ParticipantCard(
-                            name=p["name"],
-                            role=p["role"],
-                            status=p["status"],
-                            last_seen=p["last_seen"]
-                        )
+            with Vertical(classes="sidebar-left"):
+                with Container(classes="section-box participants-box"):
+                    yield Static(f"[bold #8B5CF6]Participants ({len(self.participants)})[/bold #8B5CF6]", classes="section-title")
+                    with ScrollableContainer(classes="scroll-inner"):
+                        for p in self.participants:
+                            yield ParticipantCard(
+                                name=p["name"],
+                                role=p["role"],
+                                status=p["status"],
+                                last_seen=p["last_seen"]
+                            )
                 
-                with Container(classes="section-box"):
-                    yield Static("[bold]Discussions[/bold]", classes="section-title")
-                    for d in self.discussions:
-                        yield DiscussionCard(
-                            title=d["title"],
-                            participants=d["participants"],
-                            messages=d["messages"],
-                            last_activity=d["last_activity"],
-                            status=d["status"],
-                            priority=d["priority"]
-                        )
+                with Container(classes="section-box discussions-box"):
+                    yield Static("[bold #8B5CF6]Discussions[/bold #8B5CF6]", classes="section-title")
+                    with ScrollableContainer(classes="scroll-inner"):
+                        for d in self.discussions:
+                            yield DiscussionCard(
+                                title=d["title"],
+                                participants=d["participants"],
+                                messages=d["messages"],
+                                last_activity=d["last_activity"],
+                                status=d["status"],
+                                priority=d["priority"]
+                            )
             
             # Main chat area
-            with Container(classes="main-chat"):
-                with Container(classes="section-box"):
-                    yield Static("[bold]SLE vs MCTD Differential Discussion[/bold]", classes="section-title")
+            with Vertical(classes="main-chat"):
+                with Container(classes="section-box chat-box"):
+                    yield Static("[bold #8B5CF6]SLE vs MCTD Differential Discussion[/bold #8B5CF6]", classes="section-title")
                     
-                    with ScrollableContainer(id="chat-scroll"):
+                    with ScrollableContainer(id="chat-scroll", classes="chat-container"):
                         for msg in self.chat_messages:
                             yield ChatMessage(
                                 sender=msg["sender"],
@@ -360,34 +419,32 @@ class CollaborationRoomScreen(Screen):
                         yield Button("Summary", id="btn-summary", variant="default")
             
             # Right sidebar - Pinned items and voting
-            with ScrollableContainer(classes="sidebar-right"):
-                with Container(classes="section-box"):
-                    yield Static("[bold]Pinned Items[/bold]", classes="section-title")
-                    for item in self.pinned_items:
-                        yield PinnedItem(
-                            title=item["title"],
-                            content=item["content"],
-                            item_type=item["type"],
-                            pinned_by=item["pinned_by"],
-                            timestamp=item["timestamp"]
-                        )
+            with Vertical(classes="sidebar-right"):
+                with Container(classes="section-box pinned-box"):
+                    yield Static("[bold #8B5CF6]Pinned Items[/bold #8B5CF6]", classes="section-title")
+                    with ScrollableContainer(classes="scroll-inner"):
+                        for item in self.pinned_items:
+                            yield PinnedItem(
+                                title=item["title"],
+                                content=item["content"],
+                                item_type=item["type"],
+                                pinned_by=item["pinned_by"],
+                                timestamp=item["timestamp"]
+                            )
                 
-                with Container(classes="section-box"):
-                    yield Static("[bold]Current Vote[/bold]", classes="section-title")
+                with Container(classes="section-box vote-box"):
+                    yield Static("[bold #8B5CF6]Current Vote[/bold #8B5CF6]", classes="section-title")
                     yield Static("[dim]Next steps for case[/dim]")
                     
                     for opt in self.vote_options:
                         bar_filled = int(opt["percentage"] / 5)
-                        bar = "[green]" + "#" * bar_filled + "[/green]" + "-" * (20 - bar_filled)
-                        yield Static(f"{opt['label']}\n{bar} {opt['votes']} votes ({opt['percentage']}%)", classes="vote-option")
-                    
-                    yield Button("Cast Your Vote", id="btn-vote", variant="primary")
+                        bar = "[#22C55E]" + "█" * bar_filled + "[/#22C55E]" + "[#334155]─[/#334155]" * (20 - bar_filled)
+                        yield Static(f"{opt['label']}\n{bar} {opt['votes']} votes", classes="vote-option")
                 
-                with Container(classes="section-box"):
-                    yield Static("[bold]Quick Actions[/bold]", classes="section-title")
+                with Container(classes="section-box actions-box"):
+                    yield Static("[bold #8B5CF6]Quick Actions[/bold #8B5CF6]", classes="section-title")
                     yield Button("Export Discussion", id="btn-export", variant="default")
                     yield Button("Invite Specialist", id="btn-invite", variant="default")
-                    yield Button("Schedule Follow-up", id="btn-schedule", variant="default")
         
         yield Footer()
     
