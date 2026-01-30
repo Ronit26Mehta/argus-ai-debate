@@ -24,6 +24,7 @@ from biosage_terminal.screens.research_hub import ResearchHubScreen
 from biosage_terminal.screens.visual_diagnosis import VisualDiagnosisScreen
 from biosage_terminal.screens.diagnosis_result import DiagnosisResultScreen
 from biosage_terminal.screens.cases_manager import CasesManagerScreen
+from biosage_terminal.screens.help import HelpScreen
 
 
 class BioSageApp(App):
@@ -177,6 +178,7 @@ class BioSageApp(App):
         "research": ResearchHubScreen,
         "visual": VisualDiagnosisScreen,
         "cases_manager": CasesManagerScreen,
+        "help": HelpScreen,
     }
     
     def __init__(self):
@@ -195,17 +197,8 @@ class BioSageApp(App):
             self.pop_screen()
     
     def action_show_help(self) -> None:
-        """Show help dialog."""
-        self.notify(
-            "BioSage Help\n"
-            "[q] Quit  [Esc] Back  [d] Dashboard\n"
-            "[o] New Case  [l] Cases Manager\n"
-            "[s] Specialists  [e] Evidence\n"
-            "[m] Model Ops  [a] Audit  [c] Collab\n"
-            "[r] Research  [v] Visual Dx",
-            title="Keyboard Shortcuts",
-            timeout=5,
-        )
+        """Show help screen."""
+        self.push_screen("help")
     
     def goto_dashboard(self) -> None:
         """Navigate to dashboard screen."""
