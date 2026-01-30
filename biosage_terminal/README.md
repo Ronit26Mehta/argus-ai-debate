@@ -1,5 +1,12 @@
 # BioSage Terminal
 
+**Version 2.0.0** | **Production Release**
+
+[![PyPI version](https://img.shields.io/pypi/v/biosage-terminal.svg)](https://pypi.org/project/biosage-terminal/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status: Production](https://img.shields.io/badge/Status-Production-green.svg)]()
+
 AI-Powered Medical Diagnostic Assistant - Terminal User Interface
 
 ## Overview
@@ -125,6 +132,16 @@ git clone https://github.com/biosage/biosage-terminal
 cd biosage-terminal
 pip install -e .[dev]
 ```
+
+## Changelog
+
+### v2.0.0 (Production Release)
+- **Production-ready release** with stable APIs
+- Full ARGUS debate framework integration
+- Multi-provider LLM support (Gemini, OpenAI, Anthropic, Groq, Mistral, Cohere, Ollama)
+- Complete patient management and case tracking
+- Evidence-based Bayesian diagnostic reasoning
+- Rich terminal UI with intuitive navigation
 
 ## License
 
