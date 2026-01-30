@@ -200,9 +200,12 @@ class DiagnosisResultScreen(Screen):
     }
     
     .action-buttons {
-        height: 3;
+        height: 5;
         padding: 1;
         dock: bottom;
+        background: #1E293B;
+        border-top: solid #334155;
+        margin-top: 1;
     }
     """
     
