@@ -105,22 +105,25 @@ class CasesManagerScreen(Screen):
     }
     
     .cases-header {
-        dock: top;
         height: 3;
-        background: #3B82F6;
-        color: #F1F5F9;
-        padding: 0 2;
+        background: #1E40AF;
+        color: #FFFFFF;
+        padding: 1 2;
+        text-align: center;
+        text-style: bold;
+        border-bottom: solid #3B82F6;
     }
     
     .toolbar {
-        height: 5;
-        padding: 1;
+        height: 3;
+        padding: 0 1;
         background: #1E293B;
         border-bottom: solid #334155;
+        layout: horizontal;
     }
     
     .stats-bar {
-        height: 4;
+        height: 3;
         layout: horizontal;
         padding: 0 1;
         background: #1E293B;
@@ -134,20 +137,26 @@ class CasesManagerScreen(Screen):
         border-right: solid #334155;
     }
     
+    .stat-box:last-of-type {
+        border-right: none;
+    }
+    
     .main-content {
         height: 1fr;
         layout: horizontal;
+        padding: 1;
     }
     
     .cases-list-container {
-        width: 65%;
+        width: 2fr;
         height: 100%;
-        padding: 1;
+        margin-right: 1;
     }
     
     .cases-table-container {
         height: 100%;
         border: solid #334155;
+        background: #1E293B;
     }
     
     .case-card-content {
@@ -161,57 +170,34 @@ class CasesManagerScreen(Screen):
         border: solid #3B82F6;
     }
     
-    .selected-case {
-        border: solid #22C55E;
-        background: #1E3A2F;
-    }
-    
     .detail-panel {
-        width: 35%;
+        width: 1fr;
         height: 100%;
         padding: 1;
         background: #1E293B;
-        border-left: solid #334155;
+        border: solid #334155;
         layout: vertical;
     }
     
     .detail-content-scroll {
         height: 1fr;
-        overflow-y: auto;
-    }
-    
-    .detail-section {
         padding: 1;
-        margin-bottom: 1;
-    }
-    
-    .section-title {
-        text-style: bold;
-        color: #8B5CF6;
-        margin-bottom: 1;
     }
     
     .action-buttons {
-        dock: bottom;
         height: auto;
-        layout: vertical;
         padding: 1;
+        layout: vertical;
     }
     
     .action-btn {
         width: 100%;
-        margin: 1 0;
+        margin-bottom: 1;
     }
     
     .filter-input {
         width: 40;
         margin-right: 2;
-    }
-    
-    .no-cases {
-        text-align: center;
-        padding: 4;
-        color: #64748B;
     }
     """
     
@@ -430,11 +416,13 @@ class CasesManagerScreen(Screen):
     def _render_header(self) -> Text:
         """Render the header."""
         text = Text()
-        text.append("BioSage", style="bold white")
-        text.append(" | ", style="#94A3B8")
-        text.append("Cases Manager", style="bold white")
-        text.append(" | ", style="#94A3B8")
-        text.append("View, diagnose, and manage all cases", style="#94A3B8")
+        text.append("\n", style="")
+        text.append("🏥 BioSage", style="bold #FFFFFF")
+        text.append("  │  ", style="bold #60A5FA")
+        text.append("Cases Manager", style="bold #60A5FA")
+        text.append("  │  ", style="bold #60A5FA")
+        text.append("View, diagnose, and manage all cases", style="#93C5FD")
+        text.append("\n", style="")
         return text
     
     def _render_stat(self, label: str, value: str, color: str = "#F1F5F9") -> Text:
