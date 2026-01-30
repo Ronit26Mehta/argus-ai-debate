@@ -168,20 +168,32 @@ class ResearchHubScreen(Screen):
     CSS = """
     ResearchHubScreen {
         background: #0F172A;
+        layout: vertical;
     }
     
     .research-header {
-        dock: top;
         height: 3;
-        background: #3B82F6;
-        color: #F1F5F9;
-        padding: 0 2;
+        background: #1E40AF;
+        color: #FFFFFF;
+        padding: 1 2;
+        border-bottom: solid #3B82F6;
     }
     
     .search-row {
         height: 3;
-        padding: 1 2;
+        padding: 0 2;
         background: #1E293B;
+        border-bottom: solid #334155;
+        layout: horizontal;
+    }
+    
+    .search-row Input {
+        width: 50;
+        margin-right: 1;
+    }
+    
+    .search-row Button {
+        margin-right: 2;
     }
     
     .research-card {
@@ -205,27 +217,29 @@ class ResearchHubScreen(Screen):
         border: solid #8B5CF6;
     }
     
-    .stats-grid {
-        layout: grid;
-        grid-size: 3;
-        height: 5;
+    .section-header {
         padding: 1;
-    }
-    
-    .stat-box {
-        text-align: center;
-        padding: 1;
+        margin-bottom: 1;
         background: #1E293B;
-        margin: 0 1;
     }
     
     .action-buttons {
         height: 3;
         padding: 0 1;
+        margin-bottom: 1;
+        layout: horizontal;
     }
     
-    .house-mode-indicator {
-        color: #F59E0B;
+    .action-buttons Button {
+        margin-right: 1;
+    }
+    
+    TabbedContent {
+        height: 1fr;
+    }
+    
+    TabPane {
+        padding: 1;
     }
     """
     
@@ -348,97 +362,90 @@ class ResearchHubScreen(Screen):
         ]
     
     def compose(self) -> ComposeResult:
-        yield Header()
-        
         house_indicator = " [HOUSE MODE]" if self.house_mode else ""
         
-        with Container(classes="research-header"):
-            yield Static(
-                f"[bold]Research Hub[/bold]{house_indicator} | [h] Toggle House Mode [g] Generate Brief "
-                "[1] Suggestions [2] Trials [3] Briefs [ESC] Back"
-            )
+        yield Static(
+            f"[bold]Research Hub[/bold]{house_indicator}  │  "
+            "[h] House Mode  [g] Generate Brief  "
+            "[1] Suggestions  [2] Trials  [3] Briefs  [ESC] Back",
+            classes="research-header"
+        )
         
         with Horizontal(classes="search-row"):
             yield Input(placeholder="Search research...", id="search-input")
             yield Button("Search", id="btn-search", variant="primary")
-            yield Static("  House Mode:", classes="house-label")
             yield Switch(value=self.house_mode, id="house-switch")
         
         with TabbedContent(id="research-tabs"):
             with TabPane("Research Suggestions", id="tab-suggestions"):
-                with ScrollableContainer():
-                    yield Static(
-                        f"[bold]AI-Curated Research Suggestions[/bold]\n"
-                        f"[dim]{'Expanded search including rare diseases and analogical reasoning' if self.house_mode else 'Standard research suggestions based on current case patterns'}[/dim]",
-                        classes="section-header"
+                yield Static(
+                    "[bold]AI-Curated Research Suggestions[/bold]\n"
+                    "[dim]Research suggestions based on current case patterns[/dim]",
+                    classes="section-header"
+                )
+                
+                for suggestion in self.research_suggestions:
+                    yield ResearchSuggestionCard(
+                        title=suggestion["title"],
+                        category=suggestion["category"],
+                        confidence=suggestion["confidence"],
+                        description=suggestion["description"],
+                        suggested_actions=suggestion["suggested_actions"],
+                        similar_cases=suggestion["similar_cases"],
+                        literature=suggestion["literature"],
+                        priority=suggestion["priority"]
                     )
-                    
-                    for suggestion in self.research_suggestions:
-                        yield ResearchSuggestionCard(
-                            title=suggestion["title"],
-                            category=suggestion["category"],
-                            confidence=suggestion["confidence"],
-                            description=suggestion["description"],
-                            suggested_actions=suggestion["suggested_actions"],
-                            similar_cases=suggestion["similar_cases"],
-                            literature=suggestion["literature"],
-                            priority=suggestion["priority"]
-                        )
-                        with Horizontal(classes="action-buttons"):
-                            yield Button("Explore Research", variant="primary")
-                            yield Button("View Literature", variant="default")
-                            yield Button("Generate Brief", variant="default")
+                    with Horizontal(classes="action-buttons"):
+                        yield Button("Explore", variant="primary")
+                        yield Button("Literature", variant="default")
+                        yield Button("Brief", variant="default")
             
             with TabPane("Clinical Trials", id="tab-trials"):
-                with ScrollableContainer():
-                    yield Static(
-                        "[bold]Clinical Trial Matching[/bold]\n"
-                        "[dim]Relevant clinical trials based on patient characteristics and current case[/dim]",
-                        classes="section-header"
+                yield Static(
+                    "[bold]Clinical Trial Matching[/bold]\n"
+                    "[dim]Relevant trials based on patient characteristics[/dim]",
+                    classes="section-header"
+                )
+                
+                for trial in self.clinical_trials:
+                    yield ClinicalTrialCard(
+                        trial_id=trial["id"],
+                        title=trial["title"],
+                        phase=trial["phase"],
+                        status=trial["status"],
+                        location=trial["location"],
+                        match_score=trial["match_score"],
+                        eligibility=trial["eligibility"],
+                        endpoint=trial["endpoint"],
+                        contact=trial["contact"],
+                        distance=trial["distance"]
                     )
-                    
-                    for trial in self.clinical_trials:
-                        yield ClinicalTrialCard(
-                            trial_id=trial["id"],
-                            title=trial["title"],
-                            phase=trial["phase"],
-                            status=trial["status"],
-                            location=trial["location"],
-                            match_score=trial["match_score"],
-                            eligibility=trial["eligibility"],
-                            endpoint=trial["endpoint"],
-                            contact=trial["contact"],
-                            distance=trial["distance"]
-                        )
-                        with Horizontal(classes="action-buttons"):
-                            yield Button("Check Eligibility", variant="primary")
-                            yield Button("ClinicalTrials.gov", variant="default")
-                            yield Button("Contact PI", variant="default")
+                    with Horizontal(classes="action-buttons"):
+                        yield Button("Eligibility", variant="primary")
+                        yield Button("Details", variant="default")
             
             with TabPane("Research Briefs", id="tab-briefs"):
-                with ScrollableContainer():
-                    with Horizontal():
-                        yield Static(
-                            "[bold]Auto-Generated Research Briefs[/bold]\n"
-                            "[dim]Comprehensive reports on relevant medical topics[/dim]",
-                            classes="section-header"
-                        )
-                        yield Button("Generate New Brief", id="btn-new-brief", variant="primary")
-                    
-                    for brief in self.research_briefs:
-                        yield ResearchBriefCard(
-                            title=brief["title"],
-                            author=brief["author"],
-                            date_generated=brief["date_generated"],
-                            pages=brief["pages"],
-                            sections=brief["sections"],
-                            key_insights=brief["key_insights"],
-                            citations=brief["citations"],
-                            downloads=brief["downloads"]
-                        )
-                        with Horizontal(classes="action-buttons"):
-                            yield Button("Preview", variant="default")
-                            yield Button("Download PDF", variant="primary")
+                yield Static(
+                    "[bold]Auto-Generated Research Briefs[/bold]\n"
+                    "[dim]Comprehensive reports on relevant medical topics[/dim]",
+                    classes="section-header"
+                )
+                yield Button("Generate New Brief", id="btn-new-brief", variant="primary")
+                
+                for brief in self.research_briefs:
+                    yield ResearchBriefCard(
+                        title=brief["title"],
+                        author=brief["author"],
+                        date_generated=brief["date_generated"],
+                        pages=brief["pages"],
+                        sections=brief["sections"],
+                        key_insights=brief["key_insights"],
+                        citations=brief["citations"],
+                        downloads=brief["downloads"]
+                    )
+                    with Horizontal(classes="action-buttons"):
+                        yield Button("Preview", variant="default")
+                        yield Button("Download", variant="primary")
         
         yield Footer()
     
