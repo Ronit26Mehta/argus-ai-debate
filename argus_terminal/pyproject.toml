@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-terminal"
-version = "2.1.1"
+version = "2.5"
 description = "Argus Terminal Sandbox - Bloomberg-style TUI for AI Debate System"
 readme = "README.md"
 license = {text = "MIT"}
