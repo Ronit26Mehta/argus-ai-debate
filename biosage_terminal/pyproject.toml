@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "biosage-terminal"
-version = "2.0.0"
+version = "2.5"
 description = "BioSage - AI-Powered Medical Diagnostic Assistant TUI with ARGUS Debate Framework"
 readme = "README.md"
 license = {text = "MIT"}
