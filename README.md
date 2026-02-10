@@ -6,7 +6,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/2.0.0/)
+[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/2.5/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type Checking: mypy](https://img.shields.io/badge/type%20checking-mypy-blue.svg)](https://mypy.readthedocs.io/)
 
@@ -23,6 +23,7 @@
 - [External Connectors](#external-connectors)
 - [Visualization & Plotting](#visualization--plotting)
 - [Argus Terminal (TUI)](#argus-terminal-tui)
+- [Argus-Viz (Streamlit Sandbox)](#argus-viz-streamlit-sandbox)
 - [Command Line Interface](#command-line-interface)
 - [Configuration](#configuration)
 - [Architecture](#architecture)
@@ -955,6 +956,49 @@ argus-terminal
 - **1-8**: Switch screens (Dashboard, Debate, Providers, Tools, etc.)
 - **Tab/Enter**: Navigate and select
 - **q**: Quit
+
+---
+
+## Argus-Viz (Streamlit Sandbox)
+
+ARGUS v2.5 includes **Argus-Viz**, an interactive Streamlit web application for experimenting with and visualizing AI debates in real-time.
+
+### Features
+
+| Feature | Description |
+|---------|-------------|
+| **Live Debate Arena** | Run debates with real-time streaming — watch posterior probability and debate flow graph update incrementally each round |
+| **10 Interactive Charts** | Posterior evolution, evidence waterfall, CDAG network, specialist radar, confidence histogram, debate timeline, polarity donut, round heatmap, and full lifecycle DAG |
+| **Debate Flow Explainer** | Sankey pipeline diagram, step-by-step explanations, Bayesian algorithm visualization with LaTeX formulas |
+| **Configurable Sidebar** | Pick LLM provider/model, set API key, adjust rounds, prior, jury threshold, toggle refuter, customize specialists |
+| **Raw Data Export** | Download full debate results as JSON |
+
+### Quick Start
+
+```bash
+# Install viz dependencies
+pip install argus-debate-ai[viz]
+
+# Launch (any of these work)
+argus-viz
+python -m argus_viz
+streamlit run argus_viz/app.py
+```
+
+### Tabs
+
+| Tab | What It Shows |
+|-----|---------------|
+| **⚔️ Debate Arena** | Live posterior chart + debate flow DAG updating each round, round logs, verdict card, evidence cards |
+| **📊 Analysis Dashboard** | All 10 Plotly charts rendered in a grid layout |
+| **🗺️ Debate Flow** | ARGUS pipeline Sankey diagram, step explanations, Bayesian formula, data overlay |
+| **📋 Raw Data** | JSON result viewer, graph summary, download button |
+
+### Live Visualization
+
+During a debate, two charts update side-by-side in real-time:
+- **Left**: Posterior probability evolution (line chart with confidence band)
+- **Right**: Debate flow DAG — nodes and edges grow each round (Proposition → Specialists → Evidence → Rebuttals → Bayesian Updates → Verdict)
 
 ---
 
