@@ -8,7 +8,7 @@ A comprehensive terminal-style sandbox playground application featuring:
 - Non-technical user friendly interface
 """
 
-__version__ = "2.1.1"
+__version__ = "2.5"
 __author__ = "Argus Team"
 
 from argus_terminal.app import ArgusTerminalApp
