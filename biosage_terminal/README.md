@@ -1,6 +1,6 @@
 # BioSage Terminal
 
-**Version 2.0.0** | **Production Release**
+**Version 2.5** | **Production Release**
 
 [![PyPI version](https://img.shields.io/pypi/v/biosage-terminal.svg)](https://pypi.org/project/biosage-terminal/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
