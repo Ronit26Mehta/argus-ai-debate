@@ -1,0 +1,374 @@
+
+CRUX
+Claim-Routed Uncertainty eXchange Protocol
+Version 1.0 — Specification Draft
+Designed for the ARGUS Multi-Agent Framework
+2026
+
+Abstract
+CRUX (Claim-Routed Uncertainty eXchange) is a novel inter-agent communication protocol
+designed specifically for debate-native, Bayesian multi-agent reasoning systems.
+
+Unlike Google's A2A (task exchange) or Anthropic's MCP (tool invocation), CRUX is the
+first protocol that treats epistemic state — beliefs, uncertainty distributions, argument
+lineage, and credibility — as first-class citizens of inter-agent communication.
+
+CRUX introduces seven primitive concepts: Epistemic Agent Cards, Claim Bundles,
+Dialectical Routing, the Belief Reconciliation Protocol, the Credibility Ledger,
+Epistemic Dead Reckoning, and the Challenger Auction. Together these enable ARGUS agents
+to not just pass tasks, but to share, challenge, and converge on calibrated beliefs.
+ 
+1. Motivation & Problem Statement
+Modern multi-agent communication protocols address task delegation (A2A) and tool invocation (MCP). Neither was designed for the epistemic challenges inherent in debate-native reasoning systems like ARGUS.
+
+1.1  The Missing Layer
+When an ARGUS Specialist agent discovers high-confidence evidence and needs to share it with a Jury agent, it currently has no standard way to communicate:
+
+•	What confidence distribution does this evidence carry?
+•	What is the argument lineage — which prior claims does this build on?
+•	Should the Jury weight this claim by the Specialist's historical calibration score?
+•	Is this claim still open for challenge, or has a Refuter already engaged?
+
+1.2  Comparison with Existing Protocols
+
+Dimension	A2A (Google)	MCP (Anthropic)	CRUX (Novel)
+Atomic Unit	Task	Tool Call	Claim Bundle
+Carries Uncertainty	No	No	Yes — full Beta distribution
+Agent Discovery	Agent Card (capability)	Server manifest	Epistemic Agent Card (domain + calibration)
+Routing Logic	Capability match	Tool name match	Dialectical Fitness Score
+Conflict Resolution	Not specified	Not applicable	Belief Reconciliation Protocol
+Trust Model	OAuth / API key	OAuth / API key	Credibility Ledger (Bayesian)
+Offline Resync	Not specified	Not applicable	Epistemic Dead Reckoning
+Adversarial Design	No	No	Challenger Auction
+
+ 
+2. Core Concepts
+CRUX is built on seven primitives. Each maps directly onto an existing ARGUS component, making adoption incremental rather than a ground-up rebuild.
+
+CRUX Primitive	ARGUS Mapping	What it replaces / extends
+Epistemic Agent Card	AgentConfig + calibration metrics	A2A Agent Card (adds belief metadata)
+Claim Bundle	C-DAG node (Evidence / Finding)	A2A Task (adds uncertainty payload)
+Dialectical Routing	EDDO agent selection logic	A2A capability routing (adversarial-aware)
+Belief Reconciliation Protocol	Jury + Bayesian aggregation	No prior art
+Credibility Ledger	PROV-O hash-chain ledger	OAuth trust (statistical, not binary)
+Epistemic Dead Reckoning	Provenance event replay	No prior art
+Challenger Auction	Refuter assignment in EDDO	No prior art
+
+ 
+3. Protocol Primitives
+3.1  Primitive 1 — Epistemic Agent Card (EAC)
+Every agent that participates in a CRUX network publishes an Epistemic Agent Card — a JSON document that extends A2A's Agent Card with belief-domain declarations and calibration metadata. Cards are served at a well-known endpoint and refreshed on each session.
+
+{
+  "crux_version": "1.0",
+  "agent_id": "argus-specialist-oncology-001",
+  "agent_type": "Specialist",
+  "belief_domains": ["oncology", "clinical-trials", "RCT-methodology"],
+  "calibration": {
+    "brier_score": 0.112,
+    "ece": 0.043,
+    "credibility_rating": 0.91,
+    "sample_size": 1847
+  },
+  "capabilities": {
+    "emit_claims":    true,
+    "challenge_claims": true,
+    "render_verdicts": false,
+    "max_rounds": 5
+  },
+  "crux_endpoint": "crux://argus.local/agents/specialist-oncology-001",
+  "ledger_pubkey": "ed25519:AbCdEf..."
+}
+
+Key innovation: Calibration scores are not static claims — they are derived from the agent's history in the Credibility Ledger and updated after every debate session. An agent that has been consistently miscalibrated sees its effective credibility_rating decay, automatically reducing the Bayesian weight its future claims carry.
+
+3.2  Primitive 2 — Claim Bundle (CB)
+The Claim Bundle is the atomic unit of CRUX exchange. It is not a task, not a message, and not a tool call — it is a belief, fully specified with its uncertainty distribution and argument ancestry.
+
+{
+  "cb_id": "cb_sha256_7fa3b1c...",
+  "schema": "crux/claim-bundle/1.0",
+  "claim_text": "Treatment X reduces symptoms by more than 20%",
+  "proposition_id": "prop_abc123",
+  "polarity": 1,
+  "prior": 0.50,
+  "posterior": 0.73,
+  "confidence_distribution": {
+    "type": "beta",
+    "alpha": 7.3,
+    "beta": 2.7,
+    "mean": 0.73,
+    "std": 0.14
+  },
+  "evidence_refs": ["ev_001", "ev_002", "ev_003"],
+  "argument_lineage_hash": "sha256:a1b2c3...",
+  "issuer_agent": "argus-specialist-oncology-001",
+  "issuer_credibility": 0.91,
+  "challenge_open": true,
+  "challenge_deadline_utc": "2026-03-01T12:00:00Z",
+  "issued_at": "2026-02-20T09:00:00Z",
+  "ttl_seconds": 3600,
+  "signature": "ed25519:XyZ..."
+}
+
+The confidence_distribution field is the core innovation. Instead of a scalar confidence value (as in ARGUS's current Evidence node), CRUX carries a full parametric distribution — enabling proper Bayesian fusion when multiple agents emit contradicting Claim Bundles on the same proposition.
+
+3.3  Primitive 3 — Dialectical Routing (DR)
+Standard capability routing (A2A) picks any agent that can process a task. Dialectical Routing intentionally routes Claim Bundles toward agents best positioned to CHALLENGE them — maximising epistemic pressure and reducing echo-chamber failure modes.
+
+Dialectical Fitness Score (DFS)
+For each candidate agent a and incoming Claim Bundle cb, the orchestrator computes:
+
+DFS(agent, cb) =
+    w1 * domain_match(agent.belief_domains, cb.claim_text)
+  + w2 * adversarial_potential(agent, cb.polarity)
+  + w3 * agent.credibility_rating
+  + w4 * (1 - recency_penalty(agent, cb.proposition_id))
+
+# default weights: w1=0.35, w2=0.35, w3=0.20, w4=0.10
+
+# adversarial_potential rewards agents whose prior on the
+# proposition differs from the CB posterior — i.e., they are
+# intrinsically motivated to push back.
+
+Key constraint: An agent that issued the Claim Bundle is excluded from its own routing table — self-challenge is not permitted.
+
+3.4  Primitive 4 — Belief Reconciliation Protocol (BRP)
+When two agents issue contradicting Claim Bundles on the same proposition (opposite polarity or posterior divergence exceeding threshold θ), the CRUX orchestrator automatically triggers the Belief Reconciliation Protocol — a structured mini-debate that merges beliefs into a reconciled posterior.
+
+BRP State Machine
+
+IDLE
+  │
+  ▼  contradiction detected (|Δposterior| > θ AND polarity conflict)
+TRIGGER
+  │
+  ▼  orchestrator spawns BRP sub-session
+MINI_DEBATE  (1–3 rounds, configurable)
+  │  each agent submits: challenge_claim, supporting_evidence_refs
+  │  and updated confidence_distribution
+  ▼
+BAYESIAN_MERGE
+  │  merged_posterior = Σ(credibility_i * posterior_i) / Σ(credibility_i)
+  │  merged_distribution = moment-matched Beta from weighted mixture
+  ▼
+PROVENANCE_FORK
+  │  lineage hash branches (like git merge commit)
+  │  both original hashes preserved in ancestry chain
+  ▼
+RESOLVED  →  emit reconciled Claim Bundle
+
+The reconciled Claim Bundle carries both original issuer_agent IDs in a contributors[] field, ensuring provenance is never lost during merges. This maps directly to ARGUS's PROV-O ledger and C-DAG edge semantics.
+
+3.5  Primitive 5 — Credibility Ledger (CL)
+The Credibility Ledger is a distributed, append-only log — compatible with ARGUS's existing SHA-256 hash chain — that records every agent's calibration history. It is the statistical trust layer of CRUX, replacing binary API-key authentication with probabilistic credibility scores.
+
+Ledger Entry Schema
+
+{
+  "entry_id": "cl_sha256_...",
+  "agent_id": "argus-specialist-oncology-001",
+  "session_id": "session_xyz",
+  "proposition_id": "prop_abc123",
+  "predicted_posterior": 0.73,
+  "ground_truth": 1,
+  "brier_contribution": 0.073,
+  "timestamp": "2026-02-20T10:00:00Z",
+  "prev_entry_hash": "sha256:prev...",
+  "entry_hash": "sha256:this..."
+}
+
+Credibility Update Rule
+
+# Exponential moving average — recent performance weighted more
+new_credibility = (1 - λ) * old_credibility + λ * (1 - brier_contribution)
+
+# λ = recency weight, default 0.15
+# brier_contribution in [0,1], lower = better
+
+# Effect: an agent whose recent predictions are poor sees its
+# credibility_rating fall, automatically down-weighting its
+# Claim Bundles in future BRP merges.
+
+3.6  Primitive 6 — Epistemic Dead Reckoning (EDR)
+Agents in a long-running ARGUS session may disconnect mid-debate — network failure, restart, or provider timeout. Epistemic Dead Reckoning allows a reconnecting agent to reconstruct its belief state without replaying the full session, using only its last checkpoint hash and a compact delta bundle.
+
+class EDRSync:
+    """Called by an agent on reconnect."""
+
+    def sync(self, agent_id: str, last_known_hash: str) -> EDRDelta:
+        # 1. Locate checkpoint in PROV-O ledger
+        checkpoint = ledger.find_entry(last_known_hash)
+
+        # 2. Collect all Claim Bundles issued after checkpoint
+        delta_cbs = ledger.get_bundles_after(checkpoint.timestamp)
+
+        # 3. Detect conflicts with agent's last known beliefs
+        conflicts = [cb for cb in delta_cbs
+                     if conflicts_with(cb, agent.last_beliefs)]
+
+        # 4. Trigger BRP for each conflict
+        resolutions = [brp.resolve(c) for c in conflicts]
+
+        return EDRDelta(bundles=delta_cbs, resolutions=resolutions)
+
+EDR is designed to be idempotent — calling sync() multiple times with the same checkpoint hash returns the same delta, making it safe to retry after partial failures.
+
+3.7  Primitive 7 — Challenger Auction (CA)
+When a Claim Bundle is marked challenge_open: true, CRUX runs a Challenger Auction to select the best-positioned agent to rebut it. Unlike simple first-available assignment, the auction ensures the strongest possible adversarial engagement — a core requirement for ARGUS's epistemic integrity.
+
+Auction Flow
+
+1. CB is broadcast with challenge_open=true
+2. Eligible agents (all except issuer) submit Challenger Bids:
+
+   {
+     "bidder_agent": "argus-refuter-002",
+     "cb_id": "cb_sha256_7fa3b1c...",
+     "estimated_dfs": 0.82,
+     "domain_confidence": 0.88,
+     "adversarial_strategy": "methodological_critique",
+     "bid_expires": "2026-02-20T09:05:00Z"
+   }
+
+3. Orchestrator selects winner: argmax(estimated_dfs)
+4. Winner is assigned; all other bids are rejected
+5. If no bids within timeout → CB marked "unchallenged" (notable in provenance)
+
+Why this matters: An unchallenged claim is weaker, epistemically, than a claim that survived adversarial scrutiny. CRUX marks the distinction explicitly in the Claim Bundle's provenance, allowing the Jury to apply a discount factor to posteriors that were never contested.
+
+ 
+4. End-to-End Message Flow
+The following shows a complete CRUX exchange for a standard ARGUS debate round, illustrating how all seven primitives interact.
+
+ARGUS Session: "Does Treatment X reduce symptoms by >20%?"
+═══════════════════════════════════════════════════════════
+
+[1] DISCOVERY
+    Moderator fetches Epistemic Agent Cards from all agents.
+    Builds routing table with DFS scores per domain.
+
+[2] SPECIALIST EMITS CLAIM BUNDLE
+    Specialist-Oncology researches evidence →
+    Emits CB{posterior=0.73, challenge_open=true}
+
+[3] CHALLENGER AUCTION
+    Refuter-001 bids DFS=0.79 (methodological_critique)
+    Refuter-002 bids DFS=0.82 (counter_evidence)
+    → Refuter-002 WINS auction
+
+[4] REFUTER EMITS COUNTER-CLAIM BUNDLE
+    Refuter-002 finds conflicting RCT data →
+    Emits CB{posterior=0.41, polarity=-1, challenge_open=false}
+
+[5] CONTRADICTION DETECTED → BRP TRIGGERED
+    |Δposterior| = |0.73 - 0.41| = 0.32 > θ(0.20)
+    polarity conflict: +1 vs -1
+    → BRP sub-session spawned (2 rounds)
+
+[6] BAYESIAN MERGE
+    credibility(Specialist) = 0.91
+    credibility(Refuter)    = 0.88
+    merged_posterior = (0.91*0.73 + 0.88*0.41) / (0.91+0.88)
+                     = 0.576
+
+[7] RECONCILED CB → JURY
+    Jury receives CB{posterior=0.576, contributors=[S,R]}
+    Jury renders verdict: UNCERTAIN (prior 0.5 → posterior 0.576)
+
+[8] CREDIBILITY LEDGER UPDATED
+    Both agents' brier_contributions logged.
+    EDR checkpoint hash recorded.
+
+ 
+5. ARGUS Integration Guide
+CRUX is designed to layer on top of ARGUS with minimal breaking changes. The integration path is additive: existing C-DAG, EDDO, and PROV-O components are extended rather than replaced.
+
+5.1  What Changes
+
+ARGUS Component	Change Required	Effort
+Evidence (C-DAG node)	Add confidence_distribution field (Beta params)	Low
+AgentConfig	Extend with belief_domains + calibration block → EAC	Low
+EDDO orchestrator	Replace agent selection with DFS + Challenger Auction	Medium
+ProvenanceLedger	Add Credibility Ledger schema + update rule	Medium
+RDCOrchestrator	Add BRP trigger logic + EDR sync on reconnect	Medium
+Jury agent	Accept reconciled CB from BRP rather than raw C-DAG	Low
+
+5.2  New CRUX Endpoint
+ARGUS agents expose a new /crux endpoint alongside existing APIs:
+
+GET  /crux/card           → Epistemic Agent Card
+POST /crux/claim          → Submit a Claim Bundle
+POST /crux/bid            → Submit a Challenger Bid
+GET  /crux/ledger/{agent} → Credibility Ledger for agent
+POST /crux/sync           → EDR resync request
+WS   /crux/stream         → Real-time CB subscription (SSE compatible)
+
+5.3  Python Sketch
+
+from argus.crux import ClaimBundle, CRUXOrchestrator, CredibilityLedger
+
+# Existing ARGUS setup
+orchestrator = RDCOrchestrator(llm=llm, max_rounds=5)
+
+# Wrap with CRUX layer
+crux = CRUXOrchestrator(
+    base=orchestrator,
+    ledger=CredibilityLedger(backend="prov-o"),
+    contradiction_threshold=0.20,
+    auction_timeout_seconds=30,
+)
+
+# Run a CRUX-enabled debate
+result = crux.debate(
+    "Treatment X reduces symptoms by more than 20%",
+    prior=0.5,
+)
+
+print(result.verdict.label)          # UNCERTAIN
+print(result.reconciled_cb.posterior) # 0.576
+print(result.challenger_auction.winner) # refuter-002
+
+ 
+6. Security & Trust Model
+6.1  Signature Verification
+Every Claim Bundle must be signed with the issuing agent's Ed25519 private key (declared in its EAC). Recipients verify the signature before accepting the CB into the C-DAG. Unsigned bundles are rejected.
+
+6.2  Sybil Resistance
+The Credibility Ledger provides natural Sybil resistance: a new agent starts with a neutral credibility_rating of 0.50 and must build a track record before its Claim Bundles carry significant weight in BRP merges. A cluster of new agents with identical belief_domains triggers an anomaly alert.
+
+6.3  Replay Attack Prevention
+Each Claim Bundle carries a nonce and a TTL. Bundles received after their ttl_seconds window are rejected. The PROV-O ledger's hash chain makes replay of old bundles detectable — the hash will not chain correctly into the current ledger head.
+
+6.4  Adversarial Agent Detection
+An agent whose credibility_rating drops below a configurable floor (default 0.30) is automatically suspended from the Challenger Auction and its Claim Bundles are flagged for human review. This prevents a persistently miscalibrated or malicious agent from influencing verdicts.
+
+ 
+7. Future Extensions
+
+Extension	Description	Dependency
+CRUX-FED (Federated)	Multiple ARGUS instances share a global Credibility Ledger via a distributed ledger (Hyperledger Fabric or similar)	CRUX 1.0 stable
+CRUX-HUM (Human-in-Loop)	Human experts can submit Claim Bundles with a credibility_rating derived from peer review h-index or similar	CRUX 1.0 stable
+CRUX-STREAM (Continuous)	Real-time streaming debates where Claim Bundles arrive as token-level inference progresses, not post-hoc	CRUX 1.0 + SSE
+CRUX-VIZ (Visual)	Live C-DAG visualization showing BRP merges, DFS heatmaps, and Credibility Ledger decay curves in Argus-Viz	Argus-Viz integration
+CRUX-BENCH (Eval)	New evaluation metric: Dialectical Integrity Score (DIS) = % of final verdicts backed by at least one Challenger Auction winner	Evaluation framework
+
+ 
+8. Glossary
+
+Term	Definition
+BRP	Belief Reconciliation Protocol — CRUX sub-protocol for merging contradicting Claim Bundles
+CA	Challenger Auction — auction that selects the strongest challenger for an open Claim Bundle
+CB	Claim Bundle — atomic epistemic unit in CRUX, carrying a belief with full uncertainty distribution
+CL	Credibility Ledger — append-only log of agent calibration history
+DFS	Dialectical Fitness Score — routing metric that rewards adversarial potential and domain match
+EAC	Epistemic Agent Card — agent's published identity card, extending A2A's Agent Card with calibration metadata
+EDR	Epistemic Dead Reckoning — resync protocol allowing reconnecting agents to restore belief state from a checkpoint hash
+polarity	Claim Bundle field: +1 (supports proposition), -1 (attacks proposition)
+θ (theta)	Contradiction threshold — minimum posterior divergence triggering BRP, default 0.20
+λ (lambda)	Credibility recency weight — controls how fast past calibration decays, default 0.15
+
+
+
+CRUX Protocol v1.0 — Designed for ARGUS
+This document is an original invention. Not derived from any existing protocol.
