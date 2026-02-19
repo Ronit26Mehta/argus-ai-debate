@@ -10,7 +10,7 @@ Launch:
     streamlit run argus_viz/app.py
 """
 
-__version__ = "2.5"
+__version__ = "3.0"
 __app_name__ = "Argus-Viz"
 
 
