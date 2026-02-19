@@ -24,6 +24,7 @@
 - [Visualization & Plotting](#visualization--plotting)
 - [Argus Terminal (TUI)](#argus-terminal-tui)
 - [Argus-Viz (Streamlit Sandbox)](#argus-viz-streamlit-sandbox)
+- [CRUX Protocol](#crux-protocol)
 - [Command Line Interface](#command-line-interface)
 - [Configuration](#configuration)
 - [Architecture](#architecture)
@@ -999,6 +1000,425 @@ streamlit run argus_viz/app.py
 During a debate, two charts update side-by-side in real-time:
 - **Left**: Posterior probability evolution (line chart with confidence band)
 - **Right**: Debate flow DAG — nodes and edges grow each round (Proposition → Specialists → Evidence → Rebuttals → Bayesian Updates → Verdict)
+
+---
+
+## CRUX Protocol
+
+**Claim-Routed Uncertainty eXchange (CRUX)** is a novel inter-agent communication protocol that extends ARGUS with first-class epistemic state management. CRUX treats beliefs, uncertainty distributions, argument lineage, and credibility as core primitives of agent communication.
+
+### Overview
+
+Traditional multi-agent systems pass messages without explicit epistemic context. CRUX addresses this by:
+
+- **Explicit Uncertainty**: Every claim carries a Beta distribution over confidence
+- **Credibility Tracking**: Agents build statistical trust records based on prediction accuracy
+- **Adversarial Routing**: Claims are routed to agents most likely to challenge them
+- **Belief Reconciliation**: Contradicting claims are merged using Bayesian inference
+- **Offline Support**: Agents can disconnect and reconnect without losing epistemic state
+
+### Installation
+
+```python
+# CRUX is included with argus-debate-ai
+from argus.crux import (
+    CRUXOrchestrator,
+    ClaimBundle,
+    CredibilityLedger,
+    EpistemicAgentCard,
+)
+```
+
+### Seven Core Primitives
+
+| Primitive | Module | Description |
+|-----------|--------|-------------|
+| **Epistemic Agent Card (EAC)** | `agent_card.py` | Agent identity with calibration metadata, domain expertise, and capability flags |
+| **Claim Bundle (CB)** | `claim_bundle.py` | Atomic epistemic unit with uncertainty distribution (Beta), lineage, and supporting evidence |
+| **Dialectical Routing (DR)** | `routing.py` | Adversarial-aware agent selection using Dialectical Fitness Scores (DFS) |
+| **Belief Reconciliation Protocol (BRP)** | `brp.py` | Merging contradicting claims via Bayesian inference with proof certificates |
+| **Credibility Ledger (CL)** | `ledger.py` | Hash-chained statistical trust layer with ELO-style updates |
+| **Epistemic Dead Reckoning (EDR)** | `edr.py` | Reconnection sync protocol for offline agents |
+| **Challenger Auction (CA)** | `auction.py` | Best challenger selection via competitive bidding |
+
+### Quick Start
+
+```python
+from argus import RDCOrchestrator, get_llm
+from argus.crux import (
+    CRUXOrchestrator,
+    CRUXConfig,
+    ClaimBundle,
+    BetaDistribution,
+)
+
+# Create base ARGUS orchestrator
+llm = get_llm("openai", model="gpt-4o")
+base = RDCOrchestrator(llm=llm, max_rounds=5)
+
+# Wrap with CRUX for enhanced epistemic tracking
+config = CRUXConfig(
+    contradiction_threshold=0.20,
+    enable_edr=True,
+    enable_auction=True,
+)
+crux = CRUXOrchestrator(base=base, config=config)
+
+# Run a CRUX-enabled debate
+result = crux.debate(
+    "Treatment X reduces symptoms by more than 20%",
+    prior=0.5,
+)
+
+# Access CRUX-specific results
+print(f"Verdict: {result.verdict.label}")
+print(f"Reconciled Posterior: {result.reconciled_cb.posterior:.3f}")
+print(f"Final Credibility Scores: {result.credibility_snapshot}")
+```
+
+### Epistemic Agent Card (EAC)
+
+Every agent in CRUX declares its epistemic capabilities through an Agent Card:
+
+```python
+from argus.crux import EpistemicAgentCard, AgentCalibration, AgentCapabilities
+
+card = EpistemicAgentCard(
+    agent_id="specialist-clinical-001",
+    agent_type="specialist",
+    display_name="Clinical Trial Specialist",
+    calibration=AgentCalibration(
+        brier_score=0.12,
+        ece=0.08,
+        n_predictions=500,
+        last_updated="2024-01-15T10:00:00Z",
+    ),
+    capabilities=AgentCapabilities(
+        domains=["clinical", "pharmacology", "epidemiology"],
+        evidence_types=["empirical", "statistical"],
+        can_refute=True,
+        can_synthesize=True,
+    ),
+    llm_provider="anthropic",
+    llm_model="claude-3-5-sonnet-20241022",
+)
+
+# Register with the orchestrator
+crux.register_agent_card(card)
+```
+
+### Claim Bundle
+
+Claim Bundles are the atomic unit of epistemic exchange:
+
+```python
+from argus.crux import ClaimBundle, ClaimBundleFactory, BetaDistribution
+
+# Create a claim with confidence distribution
+bundle = ClaimBundle(
+    claim_id="claim-001",
+    text="The intervention reduces mortality by 15%",
+    source_agent="specialist-clinical-001",
+    confidence_distribution=BetaDistribution(alpha=8.0, beta=2.0),
+    lineage=["evidence-001", "evidence-002"],
+    timestamp="2024-01-15T10:30:00Z",
+)
+
+# Access derived properties
+print(f"Posterior: {bundle.posterior:.3f}")           # Mean of Beta: α/(α+β)
+print(f"Uncertainty: {bundle.uncertainty:.3f}")       # Variance of Beta
+print(f"95% CI: {bundle.credible_interval(0.95)}")    # Bayesian credible interval
+
+# Factory for creating bundles from debate evidence
+factory = ClaimBundleFactory()
+bundle = factory.from_evidence(
+    evidence=evidence_node,
+    source_agent="specialist-001",
+)
+```
+
+### Dialectical Fitness Score (DFS)
+
+DFS determines which agent should handle a claim based on adversarial potential:
+
+```python
+from argus.crux import DialecticalRouter, compute_dfs
+
+# Initialize router with agent cards
+router = DialecticalRouter(
+    registry=crux.agent_registry,
+    ledger=crux.credibility_ledger,
+)
+
+# Compute DFS for all agents on a claim
+scores = router.compute_all_dfs(claim_bundle)
+for agent_id, score in scores.items():
+    print(f"{agent_id}: DFS={score.total:.3f}")
+    print(f"  Domain Match: {score.domain_match:.2f}")
+    print(f"  Adversarial Potential: {score.adversarial_potential:.2f}")
+    print(f"  Credibility: {score.credibility:.2f}")
+    print(f"  Recency: {score.recency:.2f}")
+
+# Route to best challenger
+best_agent = router.select_best_challenger(claim_bundle)
+print(f"Routed to: {best_agent}")
+```
+
+**DFS Formula:**
+```
+DFS(agent, claim) = w₁·domain_match + w₂·adversarial_potential + w₃·credibility + w₄·recency
+```
+
+### Belief Reconciliation Protocol (BRP)
+
+When agents produce contradicting claims, BRP merges them:
+
+```python
+from argus.crux import BeliefReconciliationProtocol, BRPSession
+
+brp = BeliefReconciliationProtocol(
+    contradiction_threshold=0.20,  # Claims >20% apart are contradictions
+)
+
+# Detect contradictions
+contradictions = brp.detect_contradictions([bundle1, bundle2, bundle3])
+
+for contradiction in contradictions:
+    print(f"Contradiction: {contradiction.bundle_a.claim_id} vs {contradiction.bundle_b.claim_id}")
+    print(f"  Gap: {contradiction.gap:.2%}")
+    
+    # Reconcile using Bayesian merging
+    result = brp.reconcile(contradiction)
+    print(f"  Merged Posterior: {result.merged_bundle.posterior:.3f}")
+    print(f"  Method: {result.method}")  # bayesian_merge, credibility_weighted, etc.
+    print(f"  Proof: {result.proof_certificate}")
+```
+
+**Reconciliation Methods:**
+- **Bayesian Merge**: Combine Beta distributions via parameter addition
+- **Credibility-Weighted**: Weight by agent credibility scores
+- **Evidence Quality**: Weight by underlying evidence quality metrics
+- **Dominance**: Higher-credibility agent's claim dominates
+
+### Credibility Ledger
+
+The Credibility Ledger maintains a hash-chained record of agent performance:
+
+```python
+from argus.crux import CredibilityLedger, CredibilityUpdate
+
+ledger = CredibilityLedger()
+
+# Record a prediction outcome
+ledger.record_update(
+    agent_id="specialist-001",
+    update=CredibilityUpdate(
+        claim_id="claim-001",
+        predicted_probability=0.75,
+        actual_outcome=True,  # Claim was verified
+        timestamp="2024-01-15T12:00:00Z",
+    )
+)
+
+# Get current credibility
+cred = ledger.get_credibility("specialist-001")
+print(f"Credibility: {cred.score:.3f}")
+print(f"Brier Score: {cred.brier_score:.3f}")
+print(f"N Predictions: {cred.n_predictions}")
+
+# Verify ledger integrity
+assert ledger.verify_chain(), "Ledger tampered!"
+
+# Get full history for visualization
+history = ledger.get_credibility_history("specialist-001")
+```
+
+**Hash Chain:**
+```
+entry_hash = SHA256(prev_hash || agent_id || update_data || timestamp)
+```
+
+### Epistemic Dead Reckoning (EDR)
+
+EDR enables agents to disconnect and reconnect without losing state:
+
+```python
+from argus.crux import EpistemicDeadReckoning, EDRSynchronizer
+
+edr = EpistemicDeadReckoning(session=crux_session)
+
+# Checkpoint before agent disconnects
+checkpoint = edr.create_checkpoint("specialist-001")
+print(f"Checkpoint ID: {checkpoint.checkpoint_id}")
+print(f"Belief State: {len(checkpoint.belief_state)} claims")
+
+# ... agent is offline ...
+
+# Sync when agent reconnects
+sync_result = edr.synchronize(
+    agent_id="specialist-001",
+    checkpoint_id=checkpoint.checkpoint_id,
+)
+
+print(f"Deltas Applied: {len(sync_result.deltas)}")
+print(f"New Claims: {sync_result.new_claims}")
+print(f"Updated Claims: {sync_result.updated_claims}")
+print(f"Conflicts Resolved: {sync_result.conflicts_resolved}")
+```
+
+### Challenger Auction
+
+For high-stakes claims, CRUX runs an auction to select the best challenger:
+
+```python
+from argus.crux import ChallengerAuction, ChallengerBid
+
+auction = ChallengerAuction(
+    claim=claim_bundle,
+    timeout_seconds=30,
+)
+
+# Agents submit bids
+auction.submit_bid(ChallengerBid(
+    agent_id="refuter-001",
+    confidence=0.85,
+    evidence_preview=["Counter-evidence from meta-analysis..."],
+    stake=0.10,  # Credibility stake
+))
+
+auction.submit_bid(ChallengerBid(
+    agent_id="refuter-002",
+    confidence=0.72,
+    evidence_preview=["Methodological concerns..."],
+    stake=0.08,
+))
+
+# Close auction and select winner
+result = auction.close()
+print(f"Winner: {result.winner_agent_id}")
+print(f"Winning Bid DFS: {result.winning_dfs:.3f}")
+print(f"All Bids Evaluated: {len(result.all_bids)}")
+```
+
+### Visualization
+
+CRUX includes comprehensive visualization for debates:
+
+```python
+from argus.crux import (
+    plot_crux_debate_flow,
+    plot_credibility_evolution,
+    plot_brp_merge,
+    plot_dfs_heatmap,
+    plot_auction_results,
+    create_crux_dashboard,
+    export_debate_static,
+)
+
+# Interactive debate flow (Plotly)
+fig = plot_crux_debate_flow(crux_result)
+fig.show()
+
+# Credibility evolution over time
+fig = plot_credibility_evolution(crux_result)
+fig.write_html("credibility.html")
+
+# BRP merge visualization
+fig = plot_brp_merge(reconciliation_result)
+fig.show()
+
+# DFS heatmap for routing decisions
+fig = plot_dfs_heatmap(routing_history)
+fig.write_image("dfs_heatmap.png")
+
+# Auction results
+fig = plot_auction_results(auction_result)
+fig.show()
+
+# Complete dashboard
+fig = create_crux_dashboard(crux_result)
+fig.write_html("crux_dashboard.html")
+
+# Static export for papers
+export_debate_static(
+    crux_result,
+    output_dir="./figures",
+    format="pdf",  # pdf, png, svg
+    dpi=300,
+)
+```
+
+### Module Structure
+
+```
+argus/crux/
+├── __init__.py          # Public exports
+├── models.py            # Core data structures (BetaDistribution, etc.)
+├── agent_card.py        # Epistemic Agent Card
+├── claim_bundle.py      # Claim Bundle
+├── routing.py           # Dialectical Routing & DFS
+├── brp.py               # Belief Reconciliation Protocol
+├── ledger.py            # Credibility Ledger (hash-chained)
+├── edr.py               # Epistemic Dead Reckoning
+├── auction.py           # Challenger Auction
+├── orchestrator.py      # CRUXOrchestrator wrapper
+└── visualization.py     # Plotting functions
+```
+
+### Integration with ARGUS
+
+CRUX integrates seamlessly with existing ARGUS components:
+
+```python
+# CRUX extends the C-DAG with confidence distributions
+from argus import CDAG
+from argus.crux import ClaimBundleFactory
+
+cdag = CDAG(name="crux_enabled_debate")
+factory = ClaimBundleFactory()
+
+# Convert Evidence nodes to Claim Bundles
+for evidence in cdag.get_all_evidence():
+    bundle = factory.from_evidence(evidence, source_agent="specialist-001")
+    crux_session.add_claim(bundle)
+
+# CRUX writes to PROV-O ledger
+from argus.provenance import ProvenanceLedger
+
+ledger = ProvenanceLedger()
+crux = CRUXOrchestrator(base=orchestrator, provenance_ledger=ledger)
+
+# All CRUX operations are recorded
+result = crux.debate("proposition")
+assert len(ledger.events) > 0
+```
+
+### Configuration
+
+```python
+from argus.crux import CRUXConfig
+
+config = CRUXConfig(
+    # BRP settings
+    contradiction_threshold=0.20,      # Gap to trigger reconciliation
+    reconciliation_method="bayesian",  # bayesian, credibility_weighted
+    
+    # DFS weights
+    dfs_domain_weight=0.3,
+    dfs_adversarial_weight=0.3,
+    dfs_credibility_weight=0.25,
+    dfs_recency_weight=0.15,
+    
+    # Features
+    enable_edr=True,                   # Enable dead reckoning
+    enable_auction=True,               # Enable challenger auction
+    auction_timeout=30,                # Seconds
+    
+    # Credibility
+    initial_credibility=0.5,
+    credibility_update_rate=0.1,       # ELO-style K-factor
+)
+```
 
 ---
 
