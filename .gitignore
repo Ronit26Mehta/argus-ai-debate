@@ -53,7 +53,8 @@ Thumbs.db
 argus_report_final.pdf
 pdf_content.txt
 PUBLISHING.md
-
+crux.txt
+crux_test_output.txt
 # PyPI rc (contains tokens - NEVER commit!)
 .pypirc
 collect_python_code.py
