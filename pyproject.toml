@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-debate-ai"
-version = "3.0"
-description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
+version = "3.1.0"
+description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, 50+ tool integrations, OpenAPI REST generation, context caching/compression, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.11"
@@ -51,6 +51,14 @@ keywords = [
     "openai",
     "anthropic",
     "ollama",
+    # New features
+    "openapi",
+    "rest-api",
+    "context-caching",
+    "context-compression",
+    "tool-integrations",
+    "observability",
+    "mlops",
 ]
 
 # Comprehensive classifiers for discoverability
@@ -178,6 +186,51 @@ tools = [
     "yfinance>=0.2,<1.0",
 ]
 
+# Extended Tools (new integrations)
+tools-extended = [
+    # AI Agent Tools
+    "agentops>=0.3,<1.0",
+    # Cloud Tools
+    "google-cloud-bigquery>=3.0,<4.0",
+    "google-cloud-pubsub>=2.0,<3.0",
+    "google-cloud-trace>=1.0,<2.0",
+    "google-cloud-aiplatform>=1.40,<2.0",
+    # Vector DB Tools
+    "chromadb>=0.4,<1.0",
+    "pinecone-client>=3.0,<4.0",
+    "qdrant-client>=1.7,<2.0",
+    "pymongo>=4.6,<5.0",
+    # Productivity Tools
+    "asana>=5.0,<6.0",
+    "jira>=3.0,<4.0",
+    "atlassian-python-api>=3.0,<4.0",
+    "notion-client>=2.0,<3.0",
+    # DevOps Tools
+    "python-gitlab>=4.0,<5.0",
+    # Media/AI Tools
+    "elevenlabs>=1.0,<2.0",
+    "huggingface-hub>=0.20,<1.0",
+    # Observability Tools
+    "mlflow>=2.10,<3.0",
+    "wandb>=0.16,<1.0",
+    "arize>=7.0,<8.0",
+    "opentelemetry-api>=1.20,<2.0",
+    "opentelemetry-sdk>=1.20,<2.0",
+]
+
+# Context Management
+context = [
+    "tiktoken>=0.5,<1.0",
+    "redis>=5.0,<6.0",
+    "diskcache>=5.6,<6.0",
+]
+
+# OpenAPI
+openapi = [
+    "pyyaml>=6.0,<7.0",
+    "jsonschema>=4.20,<5.0",
+]
+
 # Visualization
 plotting = [
     "matplotlib>=3.7,<4.0",
@@ -206,9 +259,12 @@ all = [
     "argus-debate-ai[mistral]",
     "argus-debate-ai[groq]",
     "argus-debate-ai[tools]",
+    "argus-debate-ai[tools-extended]",
     "argus-debate-ai[embeddings]",
     "argus-debate-ai[plotting]",
     "argus-debate-ai[viz]",
+    "argus-debate-ai[context]",
+    "argus-debate-ai[openapi]",
 ]
 
 [project.urls]
