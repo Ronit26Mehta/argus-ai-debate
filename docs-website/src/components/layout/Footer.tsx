@@ -125,7 +125,7 @@ export function Footer() {
                         >
                             MIT License
                         </Link>
-                        . Version 1.4.2
+                        . Version 3.1.0
                     </p>
                 </div>
             </div>
