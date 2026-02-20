@@ -247,7 +247,7 @@ class SettingsScreen(Screen):
                         yield Static("◈ ABOUT", classes="section-title")
                         yield Static(
                             "[#ffcc33]ARGUS Terminal Sandbox[/]\n"
-                            "[#ff8c00]Version:[/] 2.0.0\n"
+                            "[#ff8c00]Version:[/] 3.1.0\n"
                             "[#ff8c00]Built with:[/] Textual + Rich\n"
                             "[#ff8c00]License:[/] MIT\n"
                             "[#ff8c00]Authors:[/] ARGUS Team"
