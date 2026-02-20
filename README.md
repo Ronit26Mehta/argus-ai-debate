@@ -6,9 +6,11 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/2.5/)
+[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/3.1.0/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type Checking: mypy](https://img.shields.io/badge/type%20checking-mypy-blue.svg)](https://mypy.readthedocs.io/)
+[![Tools: 50+](https://img.shields.io/badge/tools-50+-green.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#tool-integrations-50)
+[![LLM Providers: 27+](https://img.shields.io/badge/LLM%20providers-27+-purple.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#llm-providers-27)
 
 ---
 
@@ -20,6 +22,11 @@
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [LLM Providers](#llm-providers)
+- [Tool Integrations (50+)](#tool-integrations-50)
+- [OpenAPI REST Integration](#openapi-rest-integration)
+- [Context Caching](#context-caching)
+- [Context Compression](#context-compression)
+- [Debate Visualization](#debate-visualization)
 - [External Connectors](#external-connectors)
 - [Visualization & Plotting](#visualization--plotting)
 - [Argus Terminal (TUI)](#argus-terminal-tui)
@@ -370,7 +377,7 @@ print(f"Reasoning: {verdict.reasoning}")
 
 ## LLM Providers (27+)
 
-ARGUS v1.4 supports **27+ LLM providers** through a unified interface. All providers implement the same `BaseLLM` interface for seamless interchangeability.
+ARGUS v3.1 supports **27+ LLM providers** through a unified interface. All providers implement the same `BaseLLM` interface for seamless interchangeability.
 
 ### Supported Providers
 
@@ -498,9 +505,9 @@ register_provider("custom", MyCustomLLM)
 
 ---
 
-## Embedding Models (v2.0.0)
+## Embedding Models (16+)
 
-ARGUS v1.4 includes 16 embedding providers for semantic search and RAG applications.
+ARGUS v3.1 includes 16 embedding providers for semantic search and RAG applications.
 
 ### Available Providers
 
@@ -536,26 +543,55 @@ query_vec = embedder.embed_query("search query")  # Uses search_query input type
 
 ---
 
-## Tool Integrations (v2.0.0)
+## Tool Integrations (50+)
 
-ARGUS v1.4 includes 19 pre-built tools for search, web access, productivity, and finance.
+ARGUS v3.1 includes **50+ pre-built tools** across 13 categories for comprehensive agent capabilities.
 
-### Available Tools
+### Available Tools by Category
 
-| Category | Tools | API Key Required |
-|----------|-------|------------------|
-| **Search** | DuckDuckGo, Wikipedia, ArXiv, Tavily, Brave, Exa | Some optional |
-| **Web** | HTTP Requests, Web Scraper, Jina Reader, YouTube | Some optional |
-| **Productivity** | FileSystem, Python REPL, Shell, GitHub, JSON | GitHub optional |
-| **Database** | SQL, Pandas DataFrame | None |
-| **Finance** | Yahoo Finance, Weather | Weather optional |
+| Category | Tools | Description |
+|----------|-------|-------------|
+| **Search** | DuckDuckGo, Wikipedia, ArXiv, Tavily, Brave, Exa | Web and academic search |
+| **Web** | Requests, WebScraper, JinaReader, YouTube | Web content access |
+| **Productivity** | FileSystem, PythonREPL, Shell, GitHub, JSON | Core productivity |
+| **Database** | SQL, Pandas | Data access and manipulation |
+| **Finance** | YahooFinance, Weather | Financial and weather data |
+| **AI Agents** | AgentMail, AgentOps, GoodMem, Freeplay | AI agent infrastructure |
+| **Cloud** | BigQuery, PubSub, CloudTrace, VertexAI Search/RAG | Google Cloud services |
+| **Vector DB** | Chroma, Pinecone, Qdrant, MongoDB | Vector databases |
+| **Productivity (Extended)** | Asana, Jira, Confluence, Linear, Notion | Project management |
+| **Communication** | Mailgun, Stripe, PayPal | Email and payments |
+| **DevOps** | GitLab, Postman, Daytona, N8n | Development operations |
+| **Media/AI** | ElevenLabs, Cartesia, HuggingFace | Media and AI platforms |
+| **Observability** | Arize, Phoenix, Monocle, MLflow, W&B Weave | ML observability |
+
+### Installation
+
+```bash
+# Core tools (search, web, productivity, database, finance)
+pip install argus-debate-ai[tools]
+
+# Extended tools (all 50+ integrations)
+pip install argus-debate-ai[tools-extended]
+
+# Or install all features
+pip install argus-debate-ai[all]
+```
 
 ### Quick Examples
 
 ```python
 from argus.tools.integrations import (
+    # Search
     DuckDuckGoTool, WikipediaTool, ArxivTool,
-    PythonReplTool, YahooFinanceTool
+    # Productivity
+    PythonReplTool, AsanaTool, NotionTool,
+    # Cloud
+    BigQueryTool, VertexAISearchTool,
+    # Vector DB
+    PineconeTool, QdrantTool,
+    # Observability
+    MLflowTool, WandBWeaveTool,
 )
 
 # Free web search
@@ -580,10 +616,816 @@ repl = PythonReplTool()
 result = repl(code="print(sum([1,2,3,4,5]))")
 print(result.data["output"])  # 15
 
-# Stock quotes
-finance = YahooFinanceTool()
-result = finance(symbol="AAPL", action="quote")
-print(f"Apple: ${result.data['price']}")
+# Asana task management
+asana = AsanaTool()
+result = asana(action="list_tasks", project_gid="your-project-id")
+
+# Notion database query
+notion = NotionTool()
+result = notion(action="query_database", database_id="your-db-id")
+
+# BigQuery data analysis
+bq = BigQueryTool()
+result = bq(action="query", query="SELECT * FROM dataset.table LIMIT 10")
+
+# Pinecone vector search
+pinecone = PineconeTool()
+result = pinecone(action="query", vector=[0.1]*1536, top_k=5)
+
+# MLflow experiment tracking
+mlflow = MLflowTool()
+result = mlflow(action="log_metric", run_id="run-123", key="accuracy", value=0.95)
+
+# W&B Weave tracing
+weave = WandBWeaveTool()
+result = weave(action="log_call", call_data={"model": "gpt-4", "input": "Hello"})
+```
+
+### AI Agent Tools
+
+Tools for AI agent infrastructure and orchestration:
+
+```python
+from argus.tools.integrations import AgentMailTool, AgentOpsTool, GoodMemTool, FreeplayTool
+
+# AgentMail - Autonomous email handling
+agentmail = AgentMailTool()
+result = agentmail(action="create_inbox", name="support-agent")
+
+# AgentOps - Agent observability
+agentops = AgentOpsTool()
+result = agentops(action="create_session", tags=["prod", "customer-support"])
+
+# GoodMem - Long-term memory for agents
+goodmem = GoodMemTool()
+result = goodmem(action="create_memory", content="User prefers detailed explanations")
+
+# Freeplay - LLM testing and evaluation
+freeplay = FreeplayTool()
+result = freeplay(action="run_test", prompt_id="prompt-123")
+```
+
+### Cloud Tools
+
+Google Cloud Platform integrations:
+
+```python
+from argus.tools.integrations import (
+    BigQueryTool, PubSubTool, CloudTraceTool,
+    VertexAISearchTool, VertexAIRAGTool,
+)
+
+# BigQuery - Data warehouse
+bq = BigQueryTool()
+result = bq(action="query", query="SELECT * FROM analytics.events LIMIT 100")
+
+# Pub/Sub - Messaging
+pubsub = PubSubTool()
+result = pubsub(action="publish", topic="events", message={"event": "user_signup"})
+
+# Cloud Trace - Distributed tracing
+trace = CloudTraceTool()
+result = trace(action="create_span", name="process_request")
+
+# Vertex AI Search - Enterprise search
+search = VertexAISearchTool()
+result = search(action="search", query="product documentation", data_store_id="my-store")
+
+# Vertex AI RAG - Retrieval augmented generation
+rag = VertexAIRAGTool()
+result = rag(action="query", query="How do I configure X?", corpus_id="my-corpus")
+```
+
+### Vector Database Tools
+
+Full CRUD operations for vector databases:
+
+```python
+from argus.tools.integrations import ChromaTool, PineconeTool, QdrantTool, MongoDBTool
+
+# Chroma - Local vector DB
+chroma = ChromaTool()
+result = chroma(action="add", collection="docs", documents=["Hello world"], ids=["doc1"])
+
+# Pinecone - Cloud vector DB
+pinecone = PineconeTool()
+result = pinecone(action="upsert", vectors=[{"id": "v1", "values": [0.1]*1536}])
+
+# Qdrant - High-performance vector search
+qdrant = QdrantTool()
+result = qdrant(action="search", collection="embeddings", vector=[0.1]*384, limit=5)
+
+# MongoDB - Document + vector search
+mongodb = MongoDBTool()
+result = mongodb(action="vector_search", collection="articles", vector=[0.1]*1536)
+```
+
+### Productivity Tools (Extended)
+
+Project management and documentation tools:
+
+```python
+from argus.tools.integrations import AsanaTool, JiraTool, ConfluenceTool, LinearTool, NotionTool
+
+# Asana - Project management
+asana = AsanaTool()
+result = asana(action="create_task", project_gid="123", name="Review PR", assignee="me")
+
+# Jira - Issue tracking
+jira = JiraTool()
+result = jira(action="create_issue", project_key="PROJ", summary="Bug fix", issue_type="Bug")
+
+# Confluence - Documentation
+confluence = ConfluenceTool()
+result = confluence(action="create_page", space_key="DOCS", title="API Guide", body="<p>...</p>")
+
+# Linear - Engineering issues
+linear = LinearTool()
+result = linear(action="create_issue", team_id="team-123", title="Feature request")
+
+# Notion - Knowledge management
+notion = NotionTool()
+result = notion(action="create_page", parent_id="page-123", title="Meeting Notes")
+```
+
+### Communication & Payment Tools
+
+Email and payment processing:
+
+```python
+from argus.tools.integrations import MailgunTool, StripeTool, PayPalTool
+
+# Mailgun - Email sending
+mailgun = MailgunTool()
+result = mailgun(action="send", to="user@example.com", subject="Welcome!", text="...")
+
+# Stripe - Payments
+stripe = StripeTool()
+result = stripe(action="create_payment_intent", amount=2000, currency="usd")
+
+# PayPal - Payments
+paypal = PayPalTool()
+result = paypal(action="create_order", amount="19.99", currency="USD")
+```
+
+### DevOps Tools
+
+Development operations and automation:
+
+```python
+from argus.tools.integrations import GitLabTool, PostmanTool, DaytonaTool, N8nTool
+
+# GitLab - Git operations
+gitlab = GitLabTool()
+result = gitlab(action="create_merge_request", project_id=123, source="feature", target="main")
+
+# Postman - API testing
+postman = PostmanTool()
+result = postman(action="run_collection", collection_id="col-123")
+
+# Daytona - Dev environments
+daytona = DaytonaTool()
+result = daytona(action="create_workspace", repository="https://github.com/org/repo")
+
+# N8n - Workflow automation
+n8n = N8nTool()
+result = n8n(action="execute_workflow", workflow_id="wf-123")
+```
+
+### Media & AI Tools
+
+Media generation and AI platforms:
+
+```python
+from argus.tools.integrations import ElevenLabsTool, CartesiaTool, HuggingFaceTool
+
+# ElevenLabs - Text-to-speech
+elevenlabs = ElevenLabsTool()
+result = elevenlabs(action="text_to_speech", text="Hello world", voice_id="voice-123")
+
+# Cartesia - Audio AI
+cartesia = CartesiaTool()
+result = cartesia(action="synthesize", text="Welcome to ARGUS", voice_id="voice-456")
+
+# HuggingFace - ML models
+huggingface = HuggingFaceTool()
+result = huggingface(action="inference", model_id="gpt2", inputs="The future of AI is")
+```
+
+### Observability Tools
+
+ML observability and monitoring:
+
+```python
+from argus.tools.integrations import ArizeTool, PhoenixTool, MonocleTool, MLflowTool, WandBWeaveTool
+
+# Arize - ML observability
+arize = ArizeTool()
+result = arize(action="log_prediction", model_id="classifier-v1", prediction=0.85)
+
+# Phoenix - LLM tracing
+phoenix = PhoenixTool()
+result = phoenix(action="log_span", name="llm_call", input="Query", output="Response")
+
+# Monocle - GenAI tracing
+monocle = MonocleTool()
+result = monocle(action="start_trace", name="agent_workflow")
+
+# MLflow - Experiment tracking
+mlflow = MLflowTool()
+result = mlflow(action="create_run", experiment_id="exp-123")
+
+# W&B Weave - LLM evaluation
+weave = WandBWeaveTool()
+result = weave(action="create_dataset", name="eval-dataset", rows=[...])
+```
+
+### Tool Registry
+
+```python
+from argus.tools.integrations import (
+    list_all_tools,
+    list_tool_categories,
+    get_tools_by_category,
+    get_tool_count,
+)
+
+# List all 50+ tools
+print(list_all_tools())
+
+# List categories (13 categories)
+print(list_tool_categories())
+# ['search', 'web', 'productivity', 'database', 'finance', 'ai_agents', 
+#  'cloud', 'vectordb', 'productivity_extended', 'communication', 
+#  'devops', 'media_ai', 'observability']
+
+# Get tools by category
+observability_tools = get_tools_by_category("observability")
+# [ArizeTool, PhoenixTool, MonocleTool, MLflowTool, WandBWeaveTool]
+
+# Total count
+print(f"Total tools: {get_tool_count()}")  # 50+
+```
+
+---
+
+## OpenAPI REST Integration
+
+ARGUS v3.1 includes a powerful OpenAPI module for automatically generating tools from REST API specifications.
+
+### Features
+
+- **OpenAPI v2 (Swagger) and v3 support**
+- **Automatic client generation** from specs
+- **Tool code generation** for agent integrations
+- **Full authentication support** (API Key, Bearer, Basic, OAuth2)
+- **Type-safe parameter handling**
+
+### Installation
+
+```bash
+pip install argus-debate-ai[openapi]
+```
+
+### Quick Start
+
+```python
+from argus.core.openapi import (
+    load_openapi_spec,
+    OpenAPIParser,
+    OpenAPIClient,
+    OpenAPIToolGenerator,
+)
+
+# Load OpenAPI spec (JSON, YAML, or URL)
+spec = load_openapi_spec("https://api.example.com/openapi.json")
+
+# Parse the specification
+parser = OpenAPIParser()
+api_spec = parser.parse(spec)
+
+print(f"API: {api_spec.title} v{api_spec.version}")
+print(f"Endpoints: {len(api_spec.operations)}")
+```
+
+### Dynamic Client Generation
+
+```python
+from argus.core.openapi import create_client
+
+# Create a dynamic REST client from any OpenAPI spec
+client = create_client(
+    spec_path="https://petstore.swagger.io/v2/swagger.json",
+    api_key="your-api-key",  # Or bearer_token, basic_auth
+)
+
+# Methods are generated automatically from the spec
+pets = client.get_pets(limit=10)
+pet = client.get_pet_by_id(pet_id=123)
+new_pet = client.create_pet(name="Fluffy", status="available")
+```
+
+### Tool Code Generation
+
+Generate complete tool implementations for agent use:
+
+```python
+from argus.core.openapi import generate_tool_code
+
+# Generate a full BaseTool implementation
+code = generate_tool_code(
+    spec_path="./api_spec.yaml",
+    class_name="PetStoreTool",
+)
+
+# Save to file
+with open("petstore_tool.py", "w") as f:
+    f.write(code)
+
+# The generated tool can be immediately used:
+# from petstore_tool import PetStoreTool
+# tool = PetStoreTool()
+# result = tool(action="get_pets", limit=10)
+```
+
+### CLI Usage
+
+```bash
+# List available endpoints
+argus openapi ./api_spec.yaml --list-endpoints
+
+# Validate a spec
+argus openapi https://api.example.com/openapi.json --validate
+
+# Generate tool code
+argus openapi ./api_spec.yaml --output my_tool.py --class-name MyAPITool
+```
+
+### Authentication
+
+```python
+from argus.core.openapi import create_client
+
+# API Key authentication
+client = create_client(spec_path="./spec.yaml", api_key="sk-xxx")
+
+# Bearer token authentication
+client = create_client(spec_path="./spec.yaml", bearer_token="eyJ...")
+
+# Basic authentication
+client = create_client(spec_path="./spec.yaml", basic_auth=("user", "pass"))
+```
+
+---
+
+## Context Caching
+
+ARGUS v3.1 includes a comprehensive caching system for optimizing context management, reducing API costs, and improving performance.
+
+### Features
+
+- **Multiple backends**: Memory (LRU), File (persistent), Redis (distributed)
+- **Specialized caches**: Conversation, Embedding, LLM Response
+- **TTL support**: Automatic expiration
+- **Namespaces**: Isolated cache spaces
+- **Statistics**: Hit rates, access patterns
+
+### Installation
+
+```bash
+pip install argus-debate-ai[context]
+```
+
+### Quick Start
+
+```python
+from argus.core.context_caching import (
+    ContextCache,
+    MemoryBackend,
+    FileBackend,
+    ConversationCache,
+    EmbeddingCache,
+    LLMResponseCache,
+)
+
+# Simple in-memory cache
+cache = ContextCache(backend=MemoryBackend())
+cache.set("key", {"data": "value"}, ttl=3600)
+result = cache.get("key")
+
+# Persistent file cache
+cache = ContextCache(
+    backend=FileBackend(cache_dir=".argus_cache"),
+    namespace="my_app",
+)
+```
+
+### Conversation Cache
+
+Efficiently manage multi-turn conversation history:
+
+```python
+from argus.core.context_caching import ConversationCache
+
+# Create conversation cache
+conv_cache = ConversationCache(max_messages=100, max_tokens=8000)
+
+# Add messages
+conv_cache.add_message("user", "Hello, how are you?")
+conv_cache.add_message("assistant", "I'm doing well, thank you!")
+
+# Get conversation for LLM
+messages = conv_cache.get_messages()
+
+# Get recent context with token limit
+context = conv_cache.get_recent_context(max_tokens=4000)
+
+# Summarize old messages to save space
+conv_cache.summarize_and_truncate(llm=your_llm, keep_recent=10)
+```
+
+### Embedding Cache
+
+Cache embeddings to reduce API calls:
+
+```python
+from argus.core.context_caching import EmbeddingCache
+
+# Create embedding cache
+embed_cache = EmbeddingCache(
+    backend=FileBackend(cache_dir=".embeddings_cache"),
+    model_name="text-embedding-3-small",
+)
+
+# Check cache before calling API
+text = "Hello world"
+cached = embed_cache.get(text)
+if cached is None:
+    # Generate embedding
+    embedding = your_embedder.embed(text)
+    embed_cache.set(text, embedding)
+else:
+    embedding = cached
+
+# Batch operations
+texts = ["doc1", "doc2", "doc3"]
+cached, missing = embed_cache.get_batch(texts)
+# Only generate embeddings for missing texts
+```
+
+### LLM Response Cache
+
+Cache LLM responses for identical inputs:
+
+```python
+from argus.core.context_caching import LLMResponseCache
+
+# Create response cache (deterministic key from prompt + params)
+response_cache = LLMResponseCache(
+    backend=MemoryBackend(max_size=1000),
+    default_ttl=86400,  # 24 hours
+)
+
+# Cache lookup
+prompt = "Explain machine learning"
+params = {"model": "gpt-4", "temperature": 0}
+
+cached = response_cache.get(prompt, **params)
+if cached is None:
+    response = llm.generate(prompt, **params)
+    response_cache.set(prompt, response, **params)
+else:
+    response = cached
+```
+
+### Decorator Pattern
+
+```python
+from argus.core.context_caching import ContextCache
+
+cache = ContextCache(backend=MemoryBackend())
+
+@cache.cached(ttl=3600)
+def expensive_computation(input_data: str) -> dict:
+    # This will be cached
+    return {"result": process(input_data)}
+```
+
+### CLI Usage
+
+```bash
+# Show cache statistics
+argus cache stats --backend file --path .argus_cache
+
+# Clear cache
+argus cache clear --backend memory
+
+# Export cache (for debugging/migration)
+argus cache export --path ./cache_backup
+```
+
+---
+
+## Context Compression
+
+ARGUS v3.1 includes advanced compression techniques to reduce token usage while preserving meaning.
+
+### Features
+
+- **Multiple compression methods**: Whitespace, Punctuation, Stopword, Sentence, Code, Semantic
+- **Compression levels**: Minimal, Moderate, Aggressive, Extreme
+- **Token counting**: Accurate token estimation with tiktoken
+- **Message compression**: Optimize conversation history
+- **Auto-detection**: Automatically select best method for content type
+
+### Installation
+
+```bash
+pip install argus-debate-ai[context]
+```
+
+### Quick Start
+
+```python
+from argus.core.context_compression import (
+    compress_text,
+    compress_to_tokens,
+    CompressionLevel,
+)
+
+# Simple compression
+result = compress_text(
+    "This is a   very    long text   with   lots of   whitespace...",
+    level=CompressionLevel.MODERATE,
+)
+print(result.compressed_text)
+print(f"Savings: {result.savings_percentage:.1f}%")
+
+# Compress to target token count
+result = compress_to_tokens(long_text, target_tokens=1000)
+print(f"Tokens saved: {result.tokens_saved}")
+```
+
+### Compression Methods
+
+```python
+from argus.core.context_compression import (
+    WhitespaceCompressor,
+    StopwordCompressor,
+    SentenceCompressor,
+    CodeCompressor,
+    SemanticCompressor,
+)
+
+# Whitespace compression (fastest, safest)
+compressor = WhitespaceCompressor()
+result = compressor.compress("Hello    world")  # "Hello world"
+
+# Stopword removal (moderate compression)
+compressor = StopwordCompressor()
+result = compressor.compress("This is a very important document")
+# "very important document"
+
+# Sentence compression (keeps important sentences)
+compressor = SentenceCompressor(ratio=0.5, min_sentences=3)
+result = compressor.compress(long_document)
+
+# Code compression (minifies code while preserving syntax)
+compressor = CodeCompressor()
+result = compressor.compress(python_code)
+
+# Semantic compression (LLM-based, best quality)
+compressor = SemanticCompressor(llm=your_llm)
+result = compressor.compress(document, target_ratio=0.3)
+```
+
+### Message Compression
+
+Compress conversation history for LLM context:
+
+```python
+from argus.core.context_compression import MessageCompressor
+
+compressor = MessageCompressor(
+    max_tokens=4000,
+    preserve_system=True,  # Keep system messages intact
+    preserve_recent=5,      # Keep last 5 messages intact
+)
+
+messages = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Long user message..."},
+    {"role": "assistant", "content": "Long assistant response..."},
+    # ... many more messages
+]
+
+compressed = compressor.compress(messages)
+print(f"Messages: {len(messages)} -> {len(compressed)}")
+```
+
+### Context Compressor (Auto)
+
+Automatically detect content type and apply best compression:
+
+```python
+from argus.core.context_compression import ContextCompressor
+
+compressor = ContextCompressor()
+
+# Auto-detects content type and applies appropriate method
+result = compressor.auto_compress(
+    content=mixed_content,
+    target_tokens=2000,
+)
+
+# Analyze content before compression
+analysis = compressor.analyze(content)
+print(f"Type: {analysis['content_type']}")
+print(f"Current tokens: {analysis['token_count']}")
+print(f"Recommended method: {analysis['recommended_method']}")
+```
+
+### CLI Usage
+
+```bash
+# Compress a file
+argus compress input.txt --output compressed.txt --level moderate
+
+# Compress to token target
+argus compress input.txt --target-tokens 1000
+
+# Specific compression method
+argus compress code.py --method code --output minified.py
+```
+
+---
+
+## Debate Visualization
+
+ARGUS v3.1 includes a comprehensive visualization module for debate analysis and presentation.
+
+### Features
+
+- **Argument flow graphs**: NetworkX-based directed graphs
+- **Timeline visualization**: Temporal argument progression
+- **Agent performance charts**: Multi-metric agent analysis
+- **Confidence evolution**: Rolling average tracking
+- **Round summaries**: Per-round statistics
+- **Interaction heatmaps**: Agent collaboration patterns
+- **Interactive dashboards**: Combined multi-panel views
+- **Export formats**: HTML, PNG, JSON reports
+
+### Installation
+
+```bash
+pip install argus-debate-ai[plotting]
+```
+
+### Quick Start
+
+```python
+from argus.debate.visualization import (
+    DebateSession,
+    create_debate_dashboard,
+    export_debate_html,
+    plot_argument_flow,
+)
+
+# Load debate data
+with open("debate_results.json") as f:
+    data = json.load(f)
+
+session = DebateSession.from_dict(data)
+
+# Create comprehensive dashboard
+fig = create_debate_dashboard(session)
+export_debate_html(fig, "debate_dashboard.html")
+```
+
+### Argument Flow Visualization
+
+Visualize the argument structure as a directed graph:
+
+```python
+from argus.debate.visualization import plot_argument_flow
+
+# Hierarchical layout (default)
+fig = plot_argument_flow(session, layout="hierarchical")
+
+# Radial layout (good for many nodes)
+fig = plot_argument_flow(session, layout="radial")
+
+# Force-directed layout (organic)
+fig = plot_argument_flow(session, layout="force")
+
+fig.show()
+```
+
+### Timeline Visualization
+
+Track argument progression over time:
+
+```python
+from argus.debate.visualization import plot_debate_timeline
+
+fig = plot_debate_timeline(session)
+fig.show()
+
+# Arguments are colored by type:
+# - Claim (blue)
+# - Evidence (green)
+# - Rebuttal (red)
+# - Synthesis (purple)
+```
+
+### Agent Performance Analysis
+
+```python
+from argus.debate.visualization import plot_agent_performance
+
+fig = plot_agent_performance(session)
+# Shows:
+# - Arguments per agent
+# - Average confidence
+# - Acceptance rate
+# - Interaction count
+```
+
+### Confidence Evolution
+
+```python
+from argus.debate.visualization import plot_confidence_evolution
+
+fig = plot_confidence_evolution(session, window_size=3)
+# Rolling average of confidence scores over time
+```
+
+### Round Summary
+
+```python
+from argus.debate.visualization import plot_round_summary
+
+fig = plot_round_summary(session)
+# Per-round statistics:
+# - Total arguments
+# - Claims, Evidence, Rebuttals
+# - Average confidence
+```
+
+### Interaction Heatmap
+
+```python
+from argus.debate.visualization import plot_interaction_heatmap
+
+fig = plot_interaction_heatmap(session)
+# Agent-to-agent interaction matrix
+```
+
+### Complete Dashboard
+
+```python
+from argus.debate.visualization import create_debate_dashboard
+
+# Creates a comprehensive multi-panel dashboard with all visualizations
+fig = create_debate_dashboard(session)
+fig.update_layout(height=1200)  # Adjust size
+fig.show()
+```
+
+### Export and Reports
+
+```python
+from argus.debate.visualization import (
+    export_debate_html,
+    export_debate_png,
+    generate_debate_report,
+)
+
+# Export as interactive HTML
+export_debate_html(fig, "debate.html")
+
+# Export as static PNG
+export_debate_png(fig, "debate.png", width=1920, height=1080)
+
+# Generate JSON report with statistics
+report = generate_debate_report(session)
+print(f"Total arguments: {report['summary']['total_arguments']}")
+print(f"Agents: {report['summary']['agent_count']}")
+print(f"Duration: {report['summary']['duration_seconds']}s")
+```
+
+### CLI Usage
+
+```bash
+# Generate dashboard
+argus visualize debate_results.json --chart dashboard --output viz
+
+# Specific chart type
+argus visualize debate_results.json --chart flow --layout radial
+
+# Export all formats
+argus visualize debate_results.json --format all --output debate_viz
+# Creates: debate_viz.html, debate_viz.png, debate_viz_report.json
 ```
 
 ---
@@ -1426,7 +2268,6 @@ config = CRUXConfig(
 
 ARGUS provides a full-featured CLI for common operations:
 
-
 ### Debate Commands
 
 ```bash
@@ -1459,6 +2300,75 @@ argus index stats ./index
 argus search "treatment efficacy" --index ./index --top-k 10
 ```
 
+### Tool Management
+
+```bash
+# List all 50+ tools by category
+argus tools
+
+# Get detailed info on specific tool
+argus tools BigQueryTool
+```
+
+### OpenAPI Commands
+
+```bash
+# List endpoints in an OpenAPI spec
+argus openapi ./api_spec.yaml --list-endpoints
+
+# Validate an OpenAPI spec
+argus openapi https://api.example.com/openapi.json --validate
+
+# Generate tool code from spec
+argus openapi ./api_spec.yaml --output my_tool.py --class-name MyAPITool
+```
+
+### Cache Management
+
+```bash
+# Show cache statistics
+argus cache stats --backend file --path .argus_cache
+
+# Clear all cached data
+argus cache clear --backend memory
+
+# Export cache for backup
+argus cache export --path ./cache_backup
+```
+
+### Context Compression
+
+```bash
+# Compress text file with moderate compression
+argus compress input.txt --output compressed.txt --level moderate
+
+# Compress to specific token count
+argus compress long_document.txt --target-tokens 2000
+
+# Use specific compression method
+argus compress source_code.py --method code --output minified.py
+
+# Available methods: whitespace, stopword, sentence, code, auto
+# Available levels: minimal, moderate, aggressive, extreme
+```
+
+### Visualization
+
+```bash
+# Generate debate dashboard (default)
+argus visualize debate_results.json --output viz
+
+# Specific chart type
+argus visualize debate_results.json --chart flow --layout radial
+
+# Export in multiple formats
+argus visualize debate_results.json --format all --output debate_viz
+# Creates: debate_viz.html, debate_viz.png, debate_viz_report.json
+
+# Available charts: flow, timeline, performance, confidence, 
+#                   rounds, heatmap, distribution, dashboard
+```
+
 ### Configuration
 
 ```bash
@@ -1478,8 +2388,11 @@ argus config validate
 ### Utility Commands
 
 ```bash
-# List available providers
+# List available providers (27+)
 argus providers
+
+# List embedding providers (16+)
+argus embeddings
 
 # Check connection to provider
 argus ping openai
