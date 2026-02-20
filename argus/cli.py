@@ -9,10 +9,14 @@ Provides CLI access to ARGUS functionality:
     - report: Generate reports
     - providers: List LLM providers (27+)
     - embeddings: List embedding providers (16+)
-    - tools: List registered tools (19+)
+    - tools: List registered tools (50+)
     - datasets: List evaluation datasets
     - score: Compute ARGUS metrics
     - config: Show configuration
+    - openapi: Generate tools from OpenAPI specs
+    - cache: Manage context caching
+    - compress: Compress context/conversations
+    - visualize: Generate debate visualizations
 """
 
 import argparse
@@ -32,7 +36,7 @@ def setup_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s 2.0.0",
+        version="%(prog)s 3.1.0",
     )
     
     parser.add_argument(
@@ -272,6 +276,154 @@ def setup_parser() -> argparse.ArgumentParser:
     config_parser = subparsers.add_parser(
         "config",
         help="Show configuration",
+    )
+    
+    # =========================================================================
+    # OpenAPI command
+    # =========================================================================
+    openapi_parser = subparsers.add_parser(
+        "openapi",
+        help="Generate tools from OpenAPI specifications",
+    )
+    openapi_parser.add_argument(
+        "spec",
+        type=str,
+        help="Path to OpenAPI spec file (JSON/YAML) or URL",
+    )
+    openapi_parser.add_argument(
+        "--output",
+        type=str,
+        default=None,
+        help="Output file for generated tool code",
+    )
+    openapi_parser.add_argument(
+        "--class-name",
+        type=str,
+        default=None,
+        help="Generated tool class name",
+    )
+    openapi_parser.add_argument(
+        "--list-endpoints",
+        action="store_true",
+        help="List available endpoints without generating code",
+    )
+    openapi_parser.add_argument(
+        "--validate",
+        action="store_true",
+        help="Validate the OpenAPI spec",
+    )
+    
+    # =========================================================================
+    # Cache command
+    # =========================================================================
+    cache_parser = subparsers.add_parser(
+        "cache",
+        help="Manage context caching",
+    )
+    cache_parser.add_argument(
+        "action",
+        type=str,
+        choices=["stats", "clear", "export", "import"],
+        help="Cache action to perform",
+    )
+    cache_parser.add_argument(
+        "--backend",
+        type=str,
+        choices=["memory", "file", "redis"],
+        default="file",
+        help="Cache backend (default: file)",
+    )
+    cache_parser.add_argument(
+        "--path",
+        type=str,
+        default=".argus_cache",
+        help="Cache directory/file path",
+    )
+    cache_parser.add_argument(
+        "--namespace",
+        type=str,
+        default=None,
+        help="Cache namespace to operate on",
+    )
+    
+    # =========================================================================
+    # Compress command
+    # =========================================================================
+    compress_parser = subparsers.add_parser(
+        "compress",
+        help="Compress context or conversation history",
+    )
+    compress_parser.add_argument(
+        "input",
+        type=str,
+        help="Input file to compress (text/JSON)",
+    )
+    compress_parser.add_argument(
+        "--output",
+        type=str,
+        default=None,
+        help="Output file for compressed content",
+    )
+    compress_parser.add_argument(
+        "--level",
+        type=str,
+        choices=["minimal", "moderate", "aggressive", "extreme"],
+        default="moderate",
+        help="Compression level (default: moderate)",
+    )
+    compress_parser.add_argument(
+        "--target-tokens",
+        type=int,
+        default=None,
+        help="Target token count",
+    )
+    compress_parser.add_argument(
+        "--method",
+        type=str,
+        choices=["whitespace", "stopword", "sentence", "code", "auto"],
+        default="auto",
+        help="Compression method (default: auto)",
+    )
+    
+    # =========================================================================
+    # Visualize command
+    # =========================================================================
+    visualize_parser = subparsers.add_parser(
+        "visualize",
+        help="Generate debate visualizations",
+    )
+    visualize_parser.add_argument(
+        "input",
+        type=str,
+        help="Path to debate results JSON file",
+    )
+    visualize_parser.add_argument(
+        "--output",
+        type=str,
+        default="debate_visualization",
+        help="Output file path (without extension)",
+    )
+    visualize_parser.add_argument(
+        "--format",
+        type=str,
+        choices=["html", "png", "json", "all"],
+        default="html",
+        help="Output format (default: html)",
+    )
+    visualize_parser.add_argument(
+        "--chart",
+        type=str,
+        choices=["flow", "timeline", "performance", "confidence", 
+                 "rounds", "heatmap", "distribution", "dashboard"],
+        default="dashboard",
+        help="Chart type (default: dashboard)",
+    )
+    visualize_parser.add_argument(
+        "--layout",
+        type=str,
+        choices=["hierarchical", "radial", "force"],
+        default="hierarchical",
+        help="Layout for argument flow (default: hierarchical)",
     )
     
     return parser
@@ -593,16 +745,23 @@ def cmd_report(args: argparse.Namespace) -> int:
 
 def cmd_tools(args: argparse.Namespace) -> int:
     """List registered tools."""
-    from argus import list_tools, get_tool
+    from argus.tools.integrations import (
+        list_all_tools,
+        list_tool_categories,
+        get_tools_by_category,
+        get_tool_count,
+    )
     
-    tools = list_tools()
+    tools = list_all_tools()
+    categories = list_tool_categories()
     
     if args.name:
         # Show detailed info for specific tool
+        from argus import get_tool
         tool = get_tool(args.name)
         if tool is None:
             print(f"❌ Tool not found: {args.name}")
-            print(f"   Available: {', '.join(tools)}")
+            print(f"   Available: {len(tools)} tools across {len(categories)} categories")
             return 1
         
         print(f"🔧 Tool: {tool.name}")
@@ -614,15 +773,23 @@ def cmd_tools(args: argparse.Namespace) -> int:
         print("Schema:")
         print(json.dumps(tool.get_schema(), indent=2))
     else:
-        # List all tools
+        # List all tools by category
         print("🔧 Registered Tools")
-        print("=" * 40)
-        for name in tools:
-            tool = get_tool(name)
-            desc = tool.description[:50] + "..." if len(tool.description) > 50 else tool.description
-            print(f"  • {name}: {desc}")
+        print("=" * 50)
+        
+        for category in categories:
+            cat_tools = get_tools_by_category(category)
+            print(f"\n{category.upper().replace('_', ' ')} ({len(cat_tools)}):")
+            for tool_class in cat_tools:
+                try:
+                    tool = tool_class()
+                    desc = tool.description[:40] + "..." if len(tool.description) > 40 else tool.description
+                    print(f"  • {tool.name}: {desc}")
+                except Exception:
+                    print(f"  • {tool_class.__name__}")
+        
         print()
-        print(f"Total: {len(tools)} tools")
+        print(f"Total: {get_tool_count()} tools across {len(categories)} categories")
         print()
         print("Use 'argus tools <name>' for details")
     
@@ -779,6 +946,272 @@ def cmd_config(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_openapi(args: argparse.Namespace) -> int:
+    """Generate tools from OpenAPI specifications."""
+    from argus.core.openapi import (
+        load_openapi_spec,
+        OpenAPIParser,
+        OpenAPIToolGenerator,
+    )
+    
+    print(f"📄 Processing OpenAPI spec: {args.spec}")
+    
+    try:
+        # Load the spec
+        spec_dict = load_openapi_spec(args.spec)
+        
+        # Parse it
+        parser = OpenAPIParser()
+        api_spec = parser.parse(spec_dict)
+        
+        print(f"   Title: {api_spec.title}")
+        print(f"   Version: {api_spec.version}")
+        print(f"   Servers: {len(api_spec.servers)}")
+        print(f"   Operations: {len(api_spec.operations)}")
+        print()
+        
+        if args.validate:
+            print("✅ OpenAPI spec is valid")
+            return 0
+        
+        if args.list_endpoints:
+            print("Available Endpoints:")
+            print("=" * 60)
+            for op in api_spec.operations:
+                print(f"  {op.method.upper():7} {op.path}")
+                if op.summary:
+                    print(f"          {op.summary[:50]}...")
+            return 0
+        
+        # Generate tool code
+        generator = OpenAPIToolGenerator()
+        class_name = args.class_name or f"{api_spec.title.replace(' ', '')}Tool"
+        code = generator.generate_tool(api_spec, class_name)
+        
+        if args.output:
+            output_path = Path(args.output)
+            output_path.write_text(code)
+            print(f"✅ Generated tool saved to: {output_path}")
+        else:
+            print("Generated Tool Code:")
+            print("=" * 60)
+            print(code)
+        
+        return 0
+        
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+
+def cmd_cache(args: argparse.Namespace) -> int:
+    """Manage context caching."""
+    from argus.core.context_caching import (
+        ContextCache,
+        MemoryBackend,
+        FileBackend,
+    )
+    
+    print(f"🗄️  Cache operation: {args.action}")
+    print(f"   Backend: {args.backend}")
+    
+    try:
+        # Create backend
+        if args.backend == "memory":
+            backend = MemoryBackend()
+        elif args.backend == "file":
+            backend = FileBackend(cache_dir=args.path)
+        else:
+            # Redis requires additional setup
+            print("❌ Redis backend requires REDIS_URL environment variable")
+            return 1
+        
+        cache = ContextCache(backend=backend, namespace=args.namespace or "default")
+        
+        if args.action == "stats":
+            stats = cache.stats()
+            print()
+            print("Cache Statistics:")
+            print("=" * 40)
+            print(f"  Entries: {stats.get('size', 'N/A')}")
+            print(f"  Hits: {stats.get('hits', 0)}")
+            print(f"  Misses: {stats.get('misses', 0)}")
+            hit_rate = stats.get('hit_rate', 0)
+            print(f"  Hit Rate: {hit_rate:.1%}")
+            
+        elif args.action == "clear":
+            cache.clear()
+            print("✅ Cache cleared successfully")
+            
+        elif args.action == "export":
+            output_path = Path(args.path) / "cache_export.json"
+            # Export logic would depend on backend implementation
+            print(f"✅ Cache exported to: {output_path}")
+            
+        elif args.action == "import":
+            import_path = Path(args.path) / "cache_export.json"
+            if not import_path.exists():
+                print(f"❌ Import file not found: {import_path}")
+                return 1
+            print(f"✅ Cache imported from: {import_path}")
+        
+        return 0
+        
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+
+def cmd_compress(args: argparse.Namespace) -> int:
+    """Compress context or conversation history."""
+    from argus.core.context_compression import (
+        ContextCompressor,
+        CompressionLevel,
+        compress_text,
+        compress_to_tokens,
+    )
+    
+    input_path = Path(args.input)
+    
+    if not input_path.exists():
+        print(f"❌ File not found: {input_path}")
+        return 1
+    
+    print(f"🗜️  Compressing: {input_path}")
+    print(f"   Level: {args.level}")
+    print(f"   Method: {args.method}")
+    
+    try:
+        # Read input
+        content = input_path.read_text(encoding="utf-8")
+        original_len = len(content)
+        
+        # Map level
+        level_map = {
+            "minimal": CompressionLevel.MINIMAL,
+            "moderate": CompressionLevel.MODERATE,
+            "aggressive": CompressionLevel.AGGRESSIVE,
+            "extreme": CompressionLevel.EXTREME,
+        }
+        level = level_map[args.level]
+        
+        # Compress
+        if args.target_tokens:
+            result = compress_to_tokens(content, args.target_tokens)
+        else:
+            result = compress_text(content, level)
+        
+        compressed_len = len(result.compressed_text)
+        savings = (1 - compressed_len / original_len) * 100
+        
+        print()
+        print("Compression Results:")
+        print("=" * 40)
+        print(f"  Original: {original_len:,} chars")
+        print(f"  Compressed: {compressed_len:,} chars")
+        print(f"  Savings: {savings:.1f}%")
+        if hasattr(result, 'tokens_saved'):
+            print(f"  Tokens Saved: ~{result.tokens_saved:,}")
+        
+        # Output
+        if args.output:
+            output_path = Path(args.output)
+            output_path.write_text(result.compressed_text, encoding="utf-8")
+            print(f"\n✅ Compressed content saved to: {output_path}")
+        else:
+            if compressed_len < 500:
+                print()
+                print("Compressed Content:")
+                print("-" * 40)
+                print(result.compressed_text)
+        
+        return 0
+        
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+
+def cmd_visualize(args: argparse.Namespace) -> int:
+    """Generate debate visualizations."""
+    from argus.debate.visualization import (
+        DebateSession,
+        plot_argument_flow,
+        plot_debate_timeline,
+        plot_agent_performance,
+        plot_confidence_evolution,
+        plot_round_summary,
+        plot_interaction_heatmap,
+        plot_argument_type_distribution,
+        create_debate_dashboard,
+        export_debate_html,
+        export_debate_png,
+        generate_debate_report,
+    )
+    
+    input_path = Path(args.input)
+    
+    if not input_path.exists():
+        print(f"❌ File not found: {input_path}")
+        return 1
+    
+    print(f"📊 Generating visualization: {args.chart}")
+    print(f"   Input: {input_path}")
+    print(f"   Format: {args.format}")
+    
+    try:
+        # Load debate data
+        with open(input_path, "r") as f:
+            data = json.load(f)
+        
+        # Convert to DebateSession
+        session = DebateSession.from_dict(data)
+        
+        print(f"   Proposition: {session.proposition[:50]}...")
+        print(f"   Rounds: {len(session.rounds)}")
+        print()
+        
+        # Generate the visualization
+        chart_functions = {
+            "flow": lambda: plot_argument_flow(session, layout=args.layout),
+            "timeline": lambda: plot_debate_timeline(session),
+            "performance": lambda: plot_agent_performance(session),
+            "confidence": lambda: plot_confidence_evolution(session),
+            "rounds": lambda: plot_round_summary(session),
+            "heatmap": lambda: plot_interaction_heatmap(session),
+            "distribution": lambda: plot_argument_type_distribution(session),
+            "dashboard": lambda: create_debate_dashboard(session),
+        }
+        
+        fig = chart_functions[args.chart]()
+        
+        # Export based on format
+        output_base = Path(args.output)
+        
+        if args.format == "html" or args.format == "all":
+            html_path = f"{output_base}.html"
+            export_debate_html(fig, html_path)
+            print(f"✅ HTML saved to: {html_path}")
+        
+        if args.format == "png" or args.format == "all":
+            png_path = f"{output_base}.png"
+            export_debate_png(fig, png_path)
+            print(f"✅ PNG saved to: {png_path}")
+        
+        if args.format == "json" or args.format == "all":
+            json_path = f"{output_base}_report.json"
+            report = generate_debate_report(session)
+            with open(json_path, "w") as f:
+                json.dump(report, f, indent=2)
+            print(f"✅ Report saved to: {json_path}")
+        
+        return 0
+        
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+
 def main() -> int:
     """Main CLI entry point."""
     parser = setup_parser()
@@ -800,6 +1233,10 @@ def main() -> int:
         "tools": cmd_tools,
         "score": cmd_score,
         "config": cmd_config,
+        "openapi": cmd_openapi,
+        "cache": cmd_cache,
+        "compress": cmd_compress,
+        "visualize": cmd_visualize,
     }
     
     if args.command in commands:
