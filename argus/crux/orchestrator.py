@@ -359,7 +359,7 @@ class CRUXOrchestrator:
             registry=self.registry,
             config=self.config,
         )
-        self.cb_factory = ClaimBundleFactory(config=self.config)
+        self.cb_factory = ClaimBundleFactory  # class ref only — all methods are @staticmethod
         
         # Session tracking
         self._current_session: Optional[CRUXSession] = None
@@ -608,91 +608,85 @@ class CRUXOrchestrator:
     ) -> list[ClaimBundle]:
         """
         Convert debate evidence to Claim Bundles.
-        
-        Args:
-            result: Debate result
-            proposition_text: Original proposition
-            
-        Returns:
-            List of ClaimBundles
+
+        Uses graph.get_all_evidence() — the verified CDAG API.
+        Uses ClaimBundleFactory.from_evidence() — the only real factory method.
         """
+        from argus.crux.claim_bundle import ClaimBundleFactory
+
         claim_bundles = []
-        
+
         if result.graph is None:
             return claim_bundles
-        
-        # Get all evidence nodes from C-DAG
+
         graph = result.graph
-        
-        for node in graph.nodes:
-            if hasattr(node, 'likelihood_ratio') and hasattr(node, 'confidence'):
-                # This is an Evidence node
-                evidence = node
-                
-                # Determine polarity from likelihood ratio
-                if evidence.likelihood_ratio > 1.0:
-                    polarity = Polarity.SUPPORTS
-                elif evidence.likelihood_ratio < 1.0:
-                    polarity = Polarity.ATTACKS
-                else:
-                    polarity = Polarity.NEUTRAL
-                
-                # Create confidence distribution
-                confidence_dist = ConfidenceDistribution.from_mean_std(
-                    mean=evidence.confidence,
-                    std=0.1,  # Default uncertainty
+        prior = 0.5
+
+        # graph.get_all_evidence() — verified CDAG method returning list[Evidence]
+        all_evidence = graph.get_all_evidence()
+
+        for evidence in all_evidence:
+            # Determine issuer from polarity: positive → specialist, negative → refuter
+            polarity_val = getattr(evidence, "polarity", 0)
+            issuer = (
+                "argus-specialist-001"
+                if polarity_val >= 0
+                else "argus-refuter-001"
+            )
+
+            # Get agent card from registry for credibility rating
+            card = self.registry.get_card(issuer)
+            issuer_credibility = (
+                card.calibration.credibility_rating if card else 0.85
+            )
+
+            # Temporarily attach issuer info so from_evidence() can read it
+            # from the agent_card argument — use the actual card or a default
+            if card is None:
+                from argus.crux.agent_card import (
+                    EpistemicAgentCard, AgentCalibration, AgentCapabilities
                 )
-                
-                # Compute posterior estimate
-                prior = result.verdict.prior if hasattr(result.verdict, 'prior') else 0.5
-                posterior = self._compute_evidence_posterior(
-                    prior,
-                    evidence.likelihood_ratio,
-                    evidence.confidence,
+                card = EpistemicAgentCard(
+                    agent_id=issuer,
+                    agent_type="Specialist",
+                    belief_domains=["general"],
+                    calibration=AgentCalibration(
+                        brier_score=0.15,
+                        ece=0.05,
+                        credibility_rating=issuer_credibility,
+                        sample_size=0,
+                    ),
+                    capabilities=AgentCapabilities(
+                        emit_claims=True,
+                        challenge_claims=False,
+                        render_verdicts=False,
+                    ),
                 )
-                
-                # Determine issuer
-                issuer = (
-                    "argus-specialist-001" 
-                    if polarity == Polarity.SUPPORTS 
-                    else "argus-refuter-001"
-                )
-                
-                # Get credibility from registry
-                card = self.registry.get_card(issuer)
-                issuer_credibility = (
-                    card.calibration.credibility_rating 
-                    if card else 0.85
-                )
-                
-                cb = self.cb_factory.create(
-                    claim_text=evidence.text if hasattr(evidence, 'text') else str(evidence),
+
+            # ClaimBundleFactory.from_evidence() — verified static method
+            try:
+                cb = ClaimBundleFactory.from_evidence(
+                    evidence=evidence,
                     proposition_id=result.proposition_id,
-                    polarity=polarity,
+                    agent_card=card,
                     prior=prior,
-                    posterior=posterior,
-                    confidence_distribution=confidence_dist,
-                    evidence_refs=[evidence.id if hasattr(evidence, 'id') else ""],
-                    issuer_agent=issuer,
-                    issuer_credibility=issuer_credibility,
-                    challenge_open=True,
                 )
-                
                 claim_bundles.append(cb)
-        
-        # If no evidence nodes found, create a summary bundle from verdict
+            except Exception as e:
+                logger.warning(f"[CB] Could not convert evidence to CB: {e}")
+                continue
+
+        # If no evidence found, create a summary bundle from verdict
         if not claim_bundles and result.verdict:
             verdict = result.verdict
-            
-            posterior = verdict.posterior if hasattr(verdict, 'posterior') else 0.5
-            prior = verdict.prior if hasattr(verdict, 'prior') else 0.5
-            
+            posterior = getattr(verdict, "posterior", 0.5)
+
             confidence_dist = ConfidenceDistribution.from_mean_std(
                 mean=posterior,
                 std=0.15,
             )
-            
-            cb = self.cb_factory.create(
+
+            cb = ClaimBundle(
                 claim_text=proposition_text,
                 proposition_id=result.proposition_id,
                 polarity=Polarity.SUPPORTS if posterior > 0.5 else Polarity.ATTACKS,
@@ -701,12 +695,12 @@ class CRUXOrchestrator:
                 confidence_distribution=confidence_dist,
                 issuer_agent="argus-jury-001",
                 issuer_credibility=0.92,
-                challenge_open=False,  # Verdict is not challengeable
+                challenge_open=False,
             )
-            
             claim_bundles.append(cb)
-        
+
         return claim_bundles
+
     
     def _compute_evidence_posterior(
         self,
@@ -937,14 +931,16 @@ class CRUXOrchestrator:
                 brier_contribution = (predicted - ground_truth) ** 2
                 
                 # Record in ledger
-                self.ledger.record_prediction(
+                # record_prediction_with_outcome() — verified ledger API that
+                # accepts ground_truth. record_prediction() does NOT have ground_truth.
+                self.ledger.record_prediction_with_outcome(
                     agent_id=cb.issuer_agent,
-                    session_id=self._current_session.session_id,
                     proposition_id=cb.proposition_id or "",
                     predicted_posterior=predicted,
-                    ground_truth=ground_truth,
+                    ground_truth=int(ground_truth),
+                    session_id=self._current_session.session_id,
                 )
-                
+
                 self._current_session.stats.total_credibility_updates += 1
     
     # Event registration
