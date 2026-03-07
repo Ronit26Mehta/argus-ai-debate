@@ -1,0 +1,69 @@
+direction: right
+classes: {
+  user: {
+    shape: person
+    style: {
+      fill: "#1168bd"
+      stroke: "#083f75"
+      font-color: "#ffffff"
+      font-size: 28
+      bold: true
+    }
+  }
+  system: {
+    shape: cylinder
+    style: {
+      fill: "#438dd5"
+      stroke: "#2b5a88"
+      font-color: "#ffffff"
+      font-size: 32
+      bold: true
+    }
+  }
+  external: {
+    shape: rectangle
+    style: {
+      fill: "#999999"
+      stroke: "#666666"
+      font-color: "#ffffff"
+      font-size: 24
+      bold: true
+    }
+  }
+}
+
+Researcher: Researcher / Developer {
+  class: user
+}
+
+ARGUS: ARGUS Framework\n(AI Debate & Orchestration) {
+  class: system
+}
+
+LLMs: LLM Providers\n(OpenAI, Anthropic, Gemini, etc.) {
+  class: external
+}
+
+Embeddings: Embedding Providers\n(SentenceTransformers, Cohere, etc.) {
+  class: external
+}
+
+Tools: External APIs & Tools\n(Wikipedia, ArXiv, DuckDuckGo, etc.) {
+  class: external
+}
+
+Researcher -> ARGUS: Configures debates, queries knowledge base, runs agents {
+  style: { font-size: 22; stroke-width: 4 }
+}
+
+ARGUS -> LLMs: Sends prompts, receives generated text {
+  style: { font-size: 22; stroke-width: 4 }
+}
+
+ARGUS -> Embeddings: Sends text, receives vector embeddings {
+  style: { font-size: 22; stroke-width: 4 }
+}
+
+ARGUS -> Tools: Executes searches, fetches data {
+  style: { font-size: 22; stroke-width: 4 }
+}
