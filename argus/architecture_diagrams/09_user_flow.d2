@@ -1,0 +1,49 @@
+direction: down
+classes: {
+  step: {
+    shape: rectangle
+    style: {
+      fill: "#438dd5"
+      stroke: "#2b5a88"
+      font-color: "#ffffff"
+      font-size: 28
+      bold: true
+      border-radius: 5
+    }
+  }
+  decision: {
+    shape: diamond
+    style: {
+      fill: "#ffeb3b"
+      stroke: "#fbc02d"
+      font-size: 24
+      bold: true
+    }
+  }
+}
+
+Start: Start ARGUS CLI/API { class: step }
+Choose: Select Operation Mode { class: decision }
+
+Debate: Configure Debate { class: step }
+Tools: Select Tool { class: step }
+KB: Load Documents { class: step }
+
+RunDebate: Execute Debate Rounds { class: step }
+RunTool: Execute Tool Query { class: step }
+RunKB: Generate Embeddings & Search { class: step }
+
+Results: View/Export Results { class: step }
+
+Start -> Choose { style: { stroke-width: 4 } }
+Choose -> Debate: Debate Mode { style: { font-size: 22; stroke-width: 4 } }
+Choose -> Tools: Tools Mode { style: { font-size: 22; stroke-width: 4 } }
+Choose -> KB: Knowledge Mode { style: { font-size: 22; stroke-width: 4 } }
+
+Debate -> RunDebate { style: { stroke-width: 4 } }
+Tools -> RunTool { style: { stroke-width: 4 } }
+KB -> RunKB { style: { stroke-width: 4 } }
+
+RunDebate -> Results { style: { stroke-width: 4 } }
+RunTool -> Results { style: { stroke-width: 4 } }
+RunKB -> Results { style: { stroke-width: 4 } }
