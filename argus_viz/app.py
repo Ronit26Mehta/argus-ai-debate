@@ -13,6 +13,13 @@ import os
 import json
 import streamlit as st
 
+# Load .env so GROQ_API_KEY and other keys are available
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"), override=False)
+except ImportError:
+    pass  # python-dotenv not installed; rely on shell env vars
+
 # Must be first Streamlit call
 st.set_page_config(
     page_title="Argus-Viz | Debate Sandbox",
@@ -95,7 +102,7 @@ def render_sidebar() -> dict:
         provider = st.selectbox(
             "Provider",
             options=providers,
-            index=providers.index("gemini") if "gemini" in providers else 0,
+            index=providers.index("groq") if "groq" in providers else 0,
             help="Select the LLM provider to use for the debate.",
         )
 
@@ -105,7 +112,7 @@ def render_sidebar() -> dict:
             "anthropic": "claude-3-5-sonnet-20241022",
             "gemini": "gemini-2.0-flash",
             "ollama": "llama3.1",
-            "groq": "llama-3.1-70b-versatile",
+            "groq": "llama-3.3-70b-versatile",
             "mistral": "mistral-large-latest",
             "cohere": "command-r-plus",
             "deepseek": "deepseek-chat",
@@ -116,11 +123,19 @@ def render_sidebar() -> dict:
             help="Model identifier. Leave empty for provider default.",
         )
 
-        # API Key
+        # Auto-load API key from environment for the selected provider
+        _env_key_map = {
+            "groq": "GROQ_API_KEY", "openai": "OPENAI_API_KEY",
+            "anthropic": "ANTHROPIC_API_KEY", "gemini": "GOOGLE_API_KEY",
+            "mistral": "MISTRAL_API_KEY", "cohere": "COHERE_API_KEY",
+            "deepseek": "DEEPSEEK_API_KEY", "together": "TOGETHER_API_KEY",
+        }
+        _env_val = os.environ.get(_env_key_map.get(provider, ""), "")
         api_key = st.text_input(
             "API Key",
+            value=_env_val,
             type="password",
-            help="API key for the selected provider. Set here or via environment variable.",
+            help="API key for the selected provider. Auto-loaded from .env / environment.",
         )
 
         st.markdown("---")
