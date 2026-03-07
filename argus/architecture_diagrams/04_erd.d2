@@ -1,0 +1,46 @@
+direction: right
+classes: {
+  table: {
+    shape: sql_table
+    style: {
+      font-size: 24
+      bold: true
+    }
+  }
+}
+
+DebateConfig: {
+  class: table
+  topic: string
+  num_rounds: int
+  judge_model: string
+  agent_model: string
+}
+
+DebateResult: {
+  class: table
+  id: uuid
+  winner: string
+  final_score: float
+  summary: string
+}
+
+Round: {
+  class: table
+  number: int
+  proponent_argument: text
+  opponent_argument: text
+  judge_evaluation: text
+  score: float
+}
+
+Agent: {
+  class: table
+  id: uuid
+  role: string
+  model: string
+}
+
+DebateConfig -> DebateResult: produces { style: { font-size: 22; stroke-width: 4 } }
+DebateResult -> Round: contains (1..N) { style: { font-size: 22; stroke-width: 4 } }
+Round -> Agent: involves (2..N) { style: { font-size: 22; stroke-width: 4 } }
