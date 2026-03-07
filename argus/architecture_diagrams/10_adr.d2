@@ -1,0 +1,37 @@
+direction: right
+classes: {
+  node: {
+    shape: rectangle
+    style: {
+      fill: "#f4f4f4"
+      stroke: "#333333"
+      font-size: 28
+      bold: true
+      border-radius: 5
+    }
+  }
+}
+
+Context: Context\nMultiple LLM providers exist\nwith different API structures. {
+  class: node
+  style: { fill: "#e3f2fd"; stroke: "#1e88e5" }
+}
+
+Decision: Decision\nImplement a Unified LLM Interface\n(argus.core.llm) {
+  class: node
+  style: { fill: "#e8f5e9"; stroke: "#43a047" }
+}
+
+Options: Options Considered\n1. Direct API calls (Rejected)\n2. Unified Interface (Accepted) {
+  class: node
+  style: { fill: "#fff3e0"; stroke: "#fb8c00" }
+}
+
+Consequences: Consequences\n+ Easy to switch providers\n+ Consistent agent logic\n- Maintenance overhead for new APIs {
+  class: node
+  style: { fill: "#fce4ec"; stroke: "#d81b60" }
+}
+
+Context -> Options: leads to { style: { font-size: 22; stroke-width: 4 } }
+Options -> Decision: resolves to { style: { font-size: 22; stroke-width: 4 } }
+Decision -> Consequences: results in { style: { font-size: 22; stroke-width: 4 } }
