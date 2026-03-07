@@ -8,6 +8,7 @@ to challenge existing evidence and propositions.
 from __future__ import annotations
 
 import json
+import re
 import logging
 from typing import Optional, Any, TYPE_CHECKING
 
@@ -228,9 +229,9 @@ Return JSON:
         
         rebuttals: list[Rebuttal] = []
         config = self.config if isinstance(self.config, RefuterConfig) else RefuterConfig()
-        
+
         try:
-            data = json.loads(response)
+            data = json.loads(self._strip_json(response))
             rebuttal_data = data.get("rebuttals", [])
             
             for rd in rebuttal_data[:config.max_rebuttals_per_round]:
@@ -257,8 +258,8 @@ Return JSON:
                 graph.add_rebuttal(rebuttal, target_id)
                 rebuttals.append(rebuttal)
                 
-        except json.JSONDecodeError:
-            logger.warning("Failed to parse refuter response as JSON")
+        except (json.JSONDecodeError, ValueError):
+            logger.warning("Failed to parse refuter response as JSON — raw: %s", response[:200])
         
         self.log_action("generate_rebuttals", {
             "proposition_id": proposition_id,
@@ -323,9 +324,19 @@ Return JSON:
 }}"""
         
         response = self.generate(prompt)
-        
+
         try:
-            data = json.loads(response)
+            data = json.loads(self._strip_json(response))
             return data.get("contradictions", [])
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, ValueError):
             return []
+
+    @staticmethod
+    def _strip_json(text: str) -> str:
+        """Strip markdown code fences from LLM JSON responses."""
+        # Remove ```json ... ``` or ``` ... ``` wrappers
+        text = text.strip()
+        match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
+        if match:
+            return match.group(1).strip()
+        return text
