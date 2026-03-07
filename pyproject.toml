@@ -251,6 +251,14 @@ viz = [
     "networkx>=3.0,<4.0",
 ]
 
+# CRUX-Viz Sandbox (Streamlit + CRUX Protocol)
+"crux-viz" = [
+    "streamlit>=1.30,<2.0",
+    "plotly>=5.15,<6.0",
+    "networkx>=3.0,<4.0",
+    "scipy>=1.10,<2.0",
+]
+
 # All features
 all = [
     "argus-debate-ai[dev]",
@@ -263,6 +271,7 @@ all = [
     "argus-debate-ai[embeddings]",
     "argus-debate-ai[plotting]",
     "argus-debate-ai[viz]",
+    "argus-debate-ai[crux-viz]",
     "argus-debate-ai[context]",
     "argus-debate-ai[openapi]",
 ]
@@ -279,10 +288,11 @@ argus = "argus.cli:main"
 argus-sandbox = "argus_terminal.argus_terminal:main"
 argus-terminal = "argus_terminal.argus_terminal:main"
 argus-viz = "argus_viz:main"
+crux-viz = "crux_viz:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["argus*", "argus_terminal*", "argus_viz*"]
+include = ["argus*", "argus_terminal*", "argus_viz*", "crux_viz*"]
 
 [tool.setuptools.package-data]
 argus = ["py.typed", "**/*.md"]
