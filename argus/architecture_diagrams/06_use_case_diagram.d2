@@ -1,0 +1,46 @@
+direction: right
+classes: {
+  actor: {
+    shape: person
+    style: {
+      fill: "#1168bd"
+      stroke: "#083f75"
+      font-color: "#ffffff"
+      font-size: 28
+      bold: true
+    }
+  }
+  usecase: {
+    shape: oval
+    style: {
+      fill: "#e2f0cb"
+      stroke: "#88b04b"
+      font-size: 24
+      bold: true
+    }
+  }
+}
+
+User: Researcher / Developer { class: actor }
+
+System: ARGUS Framework {
+  style: {
+    fill: transparent
+    stroke: "#333333"
+    stroke-dash: 5
+    font-size: 28
+    bold: true
+  }
+  
+  UC1: Run Multi-Agent Debate { class: usecase }
+  UC2: Query Knowledge Base { class: usecase }
+  UC3: Execute External Tools { class: usecase }
+  UC4: Evaluate LLM Models { class: usecase }
+  UC5: Generate Embeddings { class: usecase }
+}
+
+User -> System.UC1 { style: { stroke-width: 4 } }
+User -> System.UC2 { style: { stroke-width: 4 } }
+User -> System.UC3 { style: { stroke-width: 4 } }
+User -> System.UC4 { style: { stroke-width: 4 } }
+User -> System.UC5 { style: { stroke-width: 4 } }
