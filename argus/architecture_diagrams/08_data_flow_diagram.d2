@@ -1,0 +1,52 @@
+direction: right
+classes: {
+  process: {
+    shape: circle
+    style: {
+      fill: "#438dd5"
+      stroke: "#2b5a88"
+      font-color: "#ffffff"
+      font-size: 24
+      bold: true
+    }
+  }
+  store: {
+    shape: cylinder
+    style: {
+      fill: "#f4f4f4"
+      stroke: "#333333"
+      font-size: 24
+      bold: true
+    }
+  }
+  entity: {
+    shape: rectangle
+    style: {
+      fill: "#e2f0cb"
+      stroke: "#88b04b"
+      font-size: 24
+      bold: true
+    }
+  }
+}
+
+User: User Input { class: entity }
+Output: Debate Report { class: entity }
+
+P1: Orchestrate Debate { class: process }
+P2: Generate Arguments { class: process }
+P3: Retrieve Context { class: process }
+
+KB: Knowledge Base { class: store }
+LLM: LLM API { class: store }
+
+User -> P1: Topic & Config { style: { font-size: 22; stroke-width: 4 } }
+P1 -> P2: Round Context { style: { font-size: 22; stroke-width: 4 } }
+P2 -> P3: Search Query { style: { font-size: 22; stroke-width: 4 } }
+P3 -> KB: Query { style: { font-size: 22; stroke-width: 4 } }
+KB -> P3: Documents { style: { font-size: 22; stroke-width: 4 } }
+P3 -> P2: Context { style: { font-size: 22; stroke-width: 4 } }
+P2 -> LLM: Prompt { style: { font-size: 22; stroke-width: 4 } }
+LLM -> P2: Generated Text { style: { font-size: 22; stroke-width: 4 } }
+P2 -> P1: Argument/Score { style: { font-size: 22; stroke-width: 4 } }
+P1 -> Output: Final Result { style: { font-size: 22; stroke-width: 4 } }
