@@ -711,7 +711,6 @@ def plot_dfs_heatmap(
         ],
         colorbar=dict(
             title="DFS Score",
-            titleside="right",
         ),
         hovertemplate=(
             "Agent: %{y}<br>"
