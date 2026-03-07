@@ -1,0 +1,37 @@
+direction: right
+classes: {
+  state: {
+    shape: rectangle
+    style: {
+      fill: "#ffeb3b"
+      stroke: "#fbc02d"
+      font-size: 28
+      bold: true
+      border-radius: 10
+    }
+  }
+}
+
+Start: "" {
+  shape: circle
+  style: { fill: "#000000"; width: 40; height: 40 }
+}
+
+Initialized: Initialized { class: state }
+ProponentTurn: Proponent Turn { class: state }
+OpponentTurn: Opponent Turn { class: state }
+JudgeTurn: Judge Evaluation { class: state }
+Completed: Completed { class: state }
+
+End: "" {
+  shape: circle
+  style: { fill: "#000000"; stroke: "#ffffff"; stroke-width: 6; width: 40; height: 40 }
+}
+
+Start -> Initialized: Config Loaded { style: { font-size: 22; stroke-width: 4 } }
+Initialized -> ProponentTurn: Start Round { style: { font-size: 22; stroke-width: 4 } }
+ProponentTurn -> OpponentTurn: Argument Submitted { style: { font-size: 22; stroke-width: 4 } }
+OpponentTurn -> JudgeTurn: Counter-Argument Submitted { style: { font-size: 22; stroke-width: 4 } }
+JudgeTurn -> ProponentTurn: Next Round [Rounds < Max] { style: { font-size: 22; stroke-width: 4 } }
+JudgeTurn -> Completed: Finish [Rounds == Max] { style: { font-size: 22; stroke-width: 4 } }
+Completed -> End { style: { stroke-width: 4 } }
