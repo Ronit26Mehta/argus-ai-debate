@@ -1,0 +1,29 @@
+shape: sequence_diagram
+style: {
+  font-size: 24
+}
+
+User
+Orchestrator
+Proponent
+Opponent
+Judge
+LLM
+
+User -> Orchestrator: Start Debate (Topic, Config)
+Orchestrator -> Proponent: Generate Argument
+Proponent -> LLM: Request Generation
+LLM --> Proponent: Return Argument
+Proponent --> Orchestrator: Submit Argument
+
+Orchestrator -> Opponent: Generate Counter-Argument
+Opponent -> LLM: Request Generation
+LLM --> Opponent: Return Counter-Argument
+Opponent --> Orchestrator: Submit Counter-Argument
+
+Orchestrator -> Judge: Evaluate Round
+Judge -> LLM: Request Evaluation
+LLM --> Judge: Return Score & Summary
+Judge --> Orchestrator: Submit Evaluation
+
+Orchestrator --> User: Return Debate Result
