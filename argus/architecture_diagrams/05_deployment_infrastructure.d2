@@ -1,0 +1,46 @@
+direction: down
+classes: {
+  node: {
+    shape: package
+    style: {
+      fill: "#f4f4f4"
+      stroke: "#333333"
+      font-size: 28
+      bold: true
+    }
+  }
+  component: {
+    shape: rectangle
+    style: {
+      fill: "#438dd5"
+      stroke: "#2b5a88"
+      font-color: "#ffffff"
+      font-size: 24
+    }
+  }
+}
+
+Local Machine: Local Environment {
+  class: node
+  
+  Python Env: Python 3.9+ Virtual Environment {
+    class: node
+    
+    ARGUS: ARGUS Framework { class: component }
+    VectorDB: Local Vector Store (Chroma/FAISS) { class: component }
+  }
+  
+  Ollama: Local LLM Server (Ollama) { class: component }
+}
+
+Cloud: Cloud Services {
+  class: node
+  
+  LLM APIs: LLM Providers (OpenAI, Anthropic) { class: component }
+  Tool APIs: External APIs (Tavily, Wikipedia) { class: component }
+}
+
+Local Machine.Python Env.ARGUS -> Local Machine.Ollama: Local Inference { style: { font-size: 22; stroke-width: 4 } }
+Local Machine.Python Env.ARGUS -> Local Machine.Python Env.VectorDB: Read/Write Embeddings { style: { font-size: 22; stroke-width: 4 } }
+Local Machine.Python Env.ARGUS -> Cloud.LLM APIs: API Calls (HTTPS) { style: { font-size: 22; stroke-width: 4 } }
+Local Machine.Python Env.ARGUS -> Cloud.Tool APIs: API Calls (HTTPS) { style: { font-size: 22; stroke-width: 4 } }
