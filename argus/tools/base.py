@@ -49,6 +49,20 @@ class ToolCategory(str, Enum):
     EXTERNAL_API = "external_api"
     SIMULATION = "simulation"
     CUSTOM = "custom"
+    # Extended categories used by integrations
+    PRODUCTIVITY = "productivity"
+    COMMUNICATION = "communication"
+    DEVOPS = "devops"
+    MEDIA = "media"
+    OBSERVABILITY = "observability"
+    CLOUD = "cloud"
+    VECTOR_DB = "vector_db"
+    WEB = "web"
+    FINANCE = "finance"
+    AI_AGENT = "ai_agent"
+    DEVELOPMENT = "development"
+    AUTOMATION = "automation"
+    AI = "ai"
 
 
 class ToolConfig(BaseModel):
