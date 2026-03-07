@@ -1,0 +1,183 @@
+direction: right
+
+classes: {
+  start_end: {
+    shape: circle
+    style: {
+      fill: "#111111"
+      stroke: "#ffffff"
+      stroke-width: 4
+      width: 40
+      height: 40
+    }
+  }
+  state: {
+    shape: rectangle
+    style: {
+      fill: "#e3f2fd"
+      stroke: "#1e88e5"
+      font-size: 20
+      border-radius: 8
+      padding: 15
+    }
+  }
+  decision: {
+    shape: diamond
+    style: {
+      fill: "#fff3e0"
+      stroke: "#fb8c00"
+      font-size: 18
+      bold: true
+    }
+  }
+  submachine: {
+    shape: package
+    style: {
+      fill: "#f8f9fa"
+      stroke: "#546e7a"
+      stroke-width: 2
+      font-size: 24
+      bold: true
+    }
+  }
+  action: {
+    shape: rectangle
+    style: {
+      fill: "#e8f5e9"
+      stroke: "#43a047"
+      font-size: 18
+      border-radius: 5
+    }
+  }
+  database: {
+    shape: cylinder
+    style: {
+      fill: "#f3e5f5"
+      stroke: "#8e24aa"
+      font-size: 18
+    }
+  }
+}
+
+# --- Main Flow ---
+Start: "" { class: start_end }
+
+InitializeSystem: Initialize ARGUS System\n(Load Config, Env Vars) { class: state }
+SetupProviders: Setup Providers\n(LLMs, Embeddings) { class: state }
+
+SelectMode: Select Operation Mode { class: decision }
+
+End: "" { class: start_end }
+
+Start -> InitializeSystem: CLI/API Invoked { style: { stroke-width: 3 } }
+InitializeSystem -> SetupProviders: Config Loaded { style: { stroke-width: 3 } }
+SetupProviders -> SelectMode: System Ready { style: { stroke-width: 3 } }
+
+# --- Debate Submachine (RDCOrchestrator) ---
+DebateMode: Debate Orchestration (RDC) {
+  class: submachine
+  
+  D_Init: Initialize CDAG & Ledger { class: action }
+  D_Prop: Create Proposition { class: action }
+  D_Agenda: Moderator Creates Agenda { class: action }
+  
+  D_RoundStart: Start Debate Round { class: state }
+  
+  D_Evidence: Specialist Gathers Evidence { class: action }
+  D_Rebuttal: Refuter Generates Rebuttals { class: action }
+  D_Posterior: Compute CDAG Posteriors { class: action }
+  
+  D_CheckStop: Check Stopping Criteria\n(Moderator) { class: decision }
+  
+  D_Jury: Jury Evaluates Graph { class: action }
+  D_Verdict: Render Final Verdict { class: state }
+  
+  D_Init -> D_Prop: Session Started
+  D_Prop -> D_Agenda: Proposition Added
+  D_Agenda -> D_RoundStart: Agenda Ready
+  
+  D_RoundStart -> D_Evidence: Trigger Specialist
+  D_Evidence -> D_Rebuttal: Evidence Added to CDAG
+  D_Rebuttal -> D_Posterior: Rebuttals Added to CDAG
+  D_Posterior -> D_CheckStop: Graph Updated
+  
+  D_CheckStop -> D_RoundStart: Continue [Rounds < Max] { style: { stroke: "#fb8c00"; stroke-width: 2 } }
+  D_CheckStop -> D_Jury: Stop [Consensus or Max Rounds] { style: { stroke: "#43a047"; stroke-width: 2 } }
+  
+  D_Jury -> D_Verdict: Evaluation Complete
+}
+
+# --- Knowledge Base Submachine ---
+KnowledgeMode: Knowledge Base & RAG {
+  class: submachine
+  
+  K_Load: Load Documents\n(PDF, URL, Dir) { class: action }
+  K_Chunk: Chunk Documents { class: action }
+  K_Embed: Generate Embeddings { class: action }
+  K_Store: Store in Vector DB { class: database }
+  
+  K_Query: Receive Search Query { class: state }
+  K_Search: Hybrid Search\n(Semantic + BM25) { class: action }
+  K_Return: Return Context { class: state }
+  
+  K_Load -> K_Chunk: Docs Loaded
+  K_Chunk -> K_Embed: Chunks Ready
+  K_Embed -> K_Store: Vectors Generated
+  
+  K_Store -> K_Query: KB Ready
+  K_Query -> K_Search: Query Processed
+  K_Search -> K_Return: Results Ranked
+}
+
+# --- Tools Submachine ---
+ToolMode: Tool Execution {
+  class: submachine
+  
+  T_Select: Select Tool\n(Web, ArXiv, Python, etc.) { class: action }
+  T_Input: Validate Inputs { class: action }
+  T_Exec: Execute Tool API { class: action }
+  T_Parse: Parse & Format Output { class: action }
+  T_Result: Return Tool Data { class: state }
+  
+  T_Select -> T_Input: Tool Chosen
+  T_Input -> T_Exec: Inputs Validated
+  T_Exec -> T_Parse: Raw Response
+  T_Parse -> T_Result: Formatted Data
+}
+
+# --- Evaluation Submachine ---
+EvalMode: Benchmarking & Evaluation {
+  class: submachine
+  
+  E_Load: Load Dataset\n(MMLU, Custom) { class: action }
+  E_Run: Run Debates on Samples { class: action }
+  E_Score: Compute Metrics\n(Accuracy, Calibration) { class: action }
+  E_Report: Generate HTML/JSON Report { class: state }
+  
+  E_Load -> E_Run: Dataset Ready
+  E_Run -> E_Score: All Samples Processed
+  E_Score -> E_Report: Metrics Calculated
+}
+
+# --- Connections from Mode Selection ---
+SelectMode -> DebateMode.D_Init: Run Debate { style: { stroke-width: 3 } }
+SelectMode -> KnowledgeMode.K_Load: Build KB { style: { stroke-width: 3 } }
+SelectMode -> KnowledgeMode.K_Query: Query KB { style: { stroke-width: 3 } }
+SelectMode -> ToolMode.T_Select: Use Tool { style: { stroke-width: 3 } }
+SelectMode -> EvalMode.E_Load: Run Benchmark { style: { stroke-width: 3 } }
+
+# --- Connections to End ---
+DebateMode.D_Verdict -> End: Debate Result { style: { stroke-width: 3 } }
+KnowledgeMode.K_Return -> End: Search Results { style: { stroke-width: 3 } }
+ToolMode.T_Result -> End: Tool Output { style: { stroke-width: 3 } }
+EvalMode.E_Report -> End: Evaluation Report { style: { stroke-width: 3 } }
+
+# --- Cross-Submachine Interactions ---
+DebateMode.D_Evidence -> KnowledgeMode.K_Query: Specialist Queries KB { style: { stroke-dash: 5; stroke: "#8e24aa" } }
+KnowledgeMode.K_Return -> DebateMode.D_Evidence: Context Returned { style: { stroke-dash: 5; stroke: "#8e24aa" } }
+
+DebateMode.D_Evidence -> ToolMode.T_Select: Specialist Uses Tools { style: { stroke-dash: 5; stroke: "#e53935" } }
+ToolMode.T_Result -> DebateMode.D_Evidence: Tool Data Returned { style: { stroke-dash: 5; stroke: "#e53935" } }
+
+EvalMode.E_Run -> DebateMode.D_Init: Triggers Debates { style: { stroke-dash: 5; stroke: "#1e88e5" } }
+DebateMode.D_Verdict -> EvalMode.E_Run: Returns Verdict { style: { stroke-dash: 5; stroke: "#1e88e5" } }
