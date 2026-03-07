@@ -1,0 +1,60 @@
+direction: down
+classes: {
+  container: {
+    shape: rectangle
+    style: {
+      fill: "#438dd5"
+      stroke: "#2b5a88"
+      font-color: "#ffffff"
+      font-size: 28
+      bold: true
+      border-radius: 5
+    }
+  }
+  database: {
+    shape: cylinder
+    style: {
+      fill: "#2b5a88"
+      stroke: "#1a3651"
+      font-color: "#ffffff"
+      font-size: 28
+      bold: true
+    }
+  }
+}
+
+CLI: CLI & API Interface {
+  class: container
+}
+
+Core: Core Module\n(Config, LLM Interfaces) {
+  class: container
+}
+
+Debate: Debate Orchestrator {
+  class: container
+}
+
+Agents: Agent System\n(Proponent, Opponent, Judge) {
+  class: container
+}
+
+Knowledge: Knowledge Base & Retrieval {
+  class: database
+}
+
+Tools: Tools Integration\n(19+ Pre-built Tools) {
+  class: container
+}
+
+Embeddings: Embeddings Module {
+  class: container
+}
+
+CLI -> Core: Initializes { style: { font-size: 22; stroke-width: 4 } }
+CLI -> Debate: Starts debate { style: { font-size: 22; stroke-width: 4 } }
+Debate -> Agents: Manages rounds { style: { font-size: 22; stroke-width: 4 } }
+Agents -> Core: Requests LLM generation { style: { font-size: 22; stroke-width: 4 } }
+Agents -> Tools: Uses tools for evidence { style: { font-size: 22; stroke-width: 4 } }
+Agents -> Knowledge: Queries for context { style: { font-size: 22; stroke-width: 4 } }
+Knowledge -> Embeddings: Generates vectors { style: { font-size: 22; stroke-width: 4 } }
