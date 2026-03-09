@@ -26,7 +26,7 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "3.2"
+__version__ = "4.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
@@ -198,6 +198,14 @@ from argus.durable import (
     idempotent_task,
 )
 
+# ARISTOTLE Protocol (v4.0)
+from argus.aristotle import (
+    ARISTOTLE,
+    DebateFrame,
+    TopologySpec,
+    SynthesisResult,
+)
+
 __all__ = [
     # Version
     "__version__",
@@ -323,6 +331,11 @@ __all__ = [
     "SQLiteCheckpointer",
     "StateManager",
     "idempotent_task",
+    # ARISTOTLE (v4.0)
+    "ARISTOTLE",
+    "DebateFrame",
+    "TopologySpec",
+    "SynthesisResult",
 ]
 
 
