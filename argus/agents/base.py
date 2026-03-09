@@ -61,7 +61,7 @@ class AgentConfig(BaseModel):
     )
     
     max_tokens: int = Field(
-        default=2048,
+        default=4096,
         ge=1,
         description="Max tokens for generation",
     )
