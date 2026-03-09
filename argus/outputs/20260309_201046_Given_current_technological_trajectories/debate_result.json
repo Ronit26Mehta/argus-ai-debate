@@ -1,0 +1,1168 @@
+{
+  "proposition_id": "prop_cf1b733c08e4",
+  "proposition_text": "Given current technological trajectories and geopolitical stability, Chernobyl city will be restored to a habitable state with functional infrastructure by the year 3000.",
+  "verdict": {
+    "proposition_id": "prop_cf1b733c08e4",
+    "posterior": 0.9858330935492995,
+    "label": "supported",
+    "confidence": 0.9858330935492995,
+    "reasoning": "```json\n{\n    \"verdict\": \"SUPPORTED\",\n    \"confidence\": 0.95,\n    \"key_support\": [\n        \"Robotics and remote construction technologies are expected to mitigate risks associated with radiation exposure, enabling construction and restoration efforts.\",\n        \"Geopolitical stability, or at least the absence of major conflicts, is crucial for sustained investment and the long-term viability of reconstruction projects in Chernobyl.\"\n    ],\n    \"key_attack\": [\n        \"The current Exclusion Zone presents significant environmental and logistical challenges to reconstruction.\"\n    ],\n    \"reasoning\": \"Despite challenges posed by radiation and logistical hurdles, advancements in robotics, material science, and remote construction techniques, combined with a projection of sustained geopolitical stability over the next millennium, strongly support the proposition. The timeframe of 3000 allows for significant technological progress and gradual environmental remediation, making the restoration of Chernobyl city a plausible scenario.\"\n}\n```"
+  },
+  "final_posterior": 0.9858330935492995,
+  "num_rounds": 3,
+  "num_evidence": 27,
+  "num_rebuttals": 18,
+  "graph": {
+    "nodes": [
+      {
+        "id": "prop_cf1b733c08e4",
+        "text": "Given current technological trajectories and geopolitical stability, Chernobyl city will be restored to a habitable state with functional infrastructure by the year 3000.",
+        "type": "proposition",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": null,
+        "target_id": "",
+        "strength": 0.0,
+        "prior": 0.48,
+        "posterior": 0.9858330935492995
+      },
+      {
+        "id": "evid_6793b253ea5a",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Radioactive contamination will decay significantly by the year 3000, reducing risks to acceptable levels.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_6e7095ab447d",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Advancements in remediation technologies may further accelerate the reduction of radioactive contamination by 3000.",
+        "type": "evidence",
+        "confidence": 0.6,
+        "quality": 0.6,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_d95d567c2691",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Long-term weathering and natural processes will degrade building materials, potentially releasing radioactive particles and requiring extensive reconstruction.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b2f17dc39cbb",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Radiation levels in certain areas of the Chernobyl Exclusion Zone are decreasing and projected to reach levels safe for human habitation within centuries.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_0a2437cd9153",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Advancements in bioremediation and phytoremediation technologies could accelerate the removal of radioactive contaminants from the Chernobyl area.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_59ea0bd008d6",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Future advances in robotics and remote construction technologies could enable the building of infrastructure in contaminated areas with minimal human exposure.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_24820c76b520",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Technological advancements in radiation remediation and construction materials could make Chernobyl habitable by 3000.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_daf42f64f668",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Long-term geopolitical stability is necessary for sustained investment in Chernobyl's reconstruction.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_f5c08575bc3a",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] The current Exclusion Zone presents significant environmental and logistical challenges that hinder immediate restoration efforts.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_c85d9a9bc770",
+        "text": "The assertion that long-term geopolitical stability is *necessary* for sustained investment is a strong assumption. While stability would certainly help, history shows reconstruction can occur even amidst instability (e.g., post-war Europe). Furthermore, the type of stability matters. Localized conflicts might not deter investment if broader global stability exists, and the economic benefits outweigh the risks.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_64c052b79fd5",
+        "text": "While radioactive contamination will decay, the rate of decay for various isotopes differs significantly. Some isotopes with long half-lives may still present a significant hazard by the year 3000, especially in concentrated areas. The evidence doesn't specify which isotopes are being considered or provide concrete data on projected levels by 3000.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6793b253ea5a",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_85e6da8dab7f",
+        "text": "The claim that advancements in remediation technologies *may* accelerate the reduction of radioactive contamination is speculative and relies on future technological breakthroughs. While possible, there's no guarantee these technologies will be developed, affordable, or deployable at the scale required for Chernobyl. Furthermore, the effectiveness of these technologies in the specific environmental conditions of Chernobyl needs to be proven.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6e7095ab447d",
+        "strength": 0.6
+      },
+      {
+        "id": "rebt_76f3ed264e7b",
+        "text": "While long-term geopolitical stability is *necessary* for sustained investment, it is not *sufficient*. Even with stability, other factors like economic viability, competing investment priorities, and continued perceived risk associated with the site could prevent reconstruction.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_5fae19bbb595",
+        "text": "While radiation levels will decay, the evidence doesn't specify *what* acceptable levels are, or whether they are low enough for unrestricted habitation and infrastructure use. Different uses have different safety thresholds.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6793b253ea5a",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_9c3954e3bea2",
+        "text": "Advancements in remediation technologies are not guaranteed, and their effectiveness in the specific environment of Chernobyl is uncertain. Technologies that work in a lab may not scale effectively or be economically feasible for large-scale deployment in a complex, contaminated site.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6e7095ab447d",
+        "strength": 0.6
+      },
+      {
+        "id": "evid_2c8e9f726a87",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Concrete degradation due to radiation exposure is a significant long-term concern, but ongoing research aims to mitigate its effects, suggesting potential for future restoration.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e8d173aa7aaa",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Decontamination technologies are continuously improving, offering potential solutions for reducing radiation levels in the environment and making areas habitable in the long term.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_f09c1b049a9d",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Geopolitical instability and unforeseen events could significantly hinder or delay restoration efforts, making the proposition's timeline uncertain.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_877c913f012c",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] long-term environmental trends",
+        "type": "evidence",
+        "confidence": 0.6,
+        "quality": 0.6,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e2e3133ea051",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] potential technology",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_ca0ceb70d9b5",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] geopolitical factors",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b66a00747be6",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Long-term technological advancements in radiation remediation offer potential solutions for rendering Chernobyl habitable.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_ab823a979900",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Geopolitical stability is crucial for sustained international investment in Chernobyl's reconstruction.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3cf8292758ec",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] The exclusion zone presents unique opportunities for scientific research and technological development, potentially attracting investment.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_58f8a7b5532b",
+        "text": "While geopolitical stability is necessary, the proposition requires stability for nearly 800 years. Predicting geopolitical stability over such an extended period is inherently uncertain and speculative. The evidence only establishes a *necessary* condition, not a *sufficient* one, and does not address the probability of maintaining such stability.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_a1c5046df4ee",
+        "text": "Similar to the previous point, this evidence hinges on long-term geopolitical stability. While international investment is important, assuming this stability for 800 years is a significant assumption. The evidence does not provide any justification for this assumption.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_ab823a979900",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_ae53445b5c55",
+        "text": "While radioactive contamination will decay, it is not clear that it will decay *enough* by the year 3000 to render the area fully habitable with functional infrastructure. The evidence lacks specifics on the remaining radiation levels and their impact on human health and infrastructure integrity.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6793b253ea5a",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_5d00cd689956",
+        "text": "While long-term geopolitical stability is *necessary* for sustained investment, it is not *sufficient*. Even with stability, economic downturns, shifts in global priorities, or the emergence of more pressing humanitarian crises could divert resources away from Chernobyl's reconstruction. The argument oversimplifies the complex interplay of factors influencing investment decisions.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_4cce6bbc85eb",
+        "text": "Similar to the point about 'evid_daf42f64f668', geopolitical stability is a necessary but not sufficient condition. International cooperation can be fragile and subject to sudden shifts due to unforeseen events or changes in national interests. Relying solely on geopolitical stability as a predictor of sustained investment is overly optimistic.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_ab823a979900",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_c8c3a0e9d050",
+        "text": "While radioactive contamination will decay significantly, the claim that it will reduce risks to 'acceptable levels' by the year 3000 is vague and lacks specific, quantifiable thresholds. What constitutes 'acceptable levels'? Different stakeholders (e.g., scientists, residents, governments) might have different definitions, making this claim difficult to verify.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6793b253ea5a",
+        "strength": 0.6
+      },
+      {
+        "id": "evid_c52970f332ee",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Radiation levels in certain areas of the Chernobyl Exclusion Zone are decreasing and may reach acceptable levels for human habitation within centuries, given natural decay and ongoing remediation efforts.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_a1c9315c8b99",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] Technological advancements in radiation decontamination and infrastructure development could accelerate the restoration process, potentially making Chernobyl city habitable by 3000.",
+        "type": "evidence",
+        "confidence": 0.6,
+        "quality": 0.6,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3820bea7da9e",
+        "text": "[Long-term environmental impact of radiation on building materials and infrastructure in Chernobyl.] The long-term stability of political and economic conditions is crucial for sustained remediation efforts and infrastructure development in the Chernobyl area.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_a35d643f3584",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Advanced materials research, particularly in radiation-resistant concretes and self-healing polymers, shows potential for long-term infrastructure viability in contaminated zones.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_aaa67b308428",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Robotics and remote construction technologies are rapidly evolving, enabling safer and more efficient infrastructure development in hazardous environments like Chernobyl.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_fb1095ebb27e",
+        "text": "[Feasibility of advanced construction techniques and material science in extreme radiation environments.] Natural attenuation processes and ongoing remediation efforts contribute to a gradual reduction in radiation levels, improving long-term habitability prospects.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b8340d5e8ff6",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Technological advancements in radiation remediation and construction materials are likely to advance significantly over the next 976 years, potentially enabling effective decontamination and construction in previously uninhabitable zones.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_7c78fb56dcb6",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Geopolitical stability, or at least the absence of major global conflicts impacting Eastern Europe, is a prerequisite for sustained, long-term investment in Chernobyl's reconstruction.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e43aa756a2bb",
+        "text": "[Economic and geopolitical factors influencing long-term investment in Chernobyl's reconstruction.] Long-term economic growth and resource availability are essential for funding the extensive reconstruction efforts required to restore Chernobyl to a habitable state.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_d084fc95cbbf",
+        "text": "While geopolitical stability is *necessary* for sustained investment, it is not *sufficient*. The evidence doesn't address the likelihood of achieving and maintaining such stability for nearly 1000 years, especially considering historical trends and the inherent unpredictability of geopolitical landscapes. The argument implicitly assumes that long-term stability is achievable, which is a strong and potentially flawed assumption.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_0c950249463b",
+        "text": "This evidence states that 'Geopolitical stability, or at least the absence of major global conflicts impacting Eastern Europe' is necessary. However, even the *absence* of major conflicts doesn't guarantee stability. Localized conflicts, political tensions, or economic crises could still disrupt investment and reconstruction efforts. Furthermore, defining 'major global conflicts impacting Eastern Europe' is subjective and open to interpretation.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_7c78fb56dcb6",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_d51c53005226",
+        "text": "This evidence states that 'Long-term economic growth and resource availability are essential for funding the extensive reconstruction'. However, it fails to account for potential economic downturns, resource depletion, or shifts in global priorities that could divert funding away from Chernobyl. The evidence assumes a continuous upward trajectory for economic growth and resource availability, which is not guaranteed.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_e43aa756a2bb",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_76c201015d72",
+        "text": "While long-term geopolitical stability is *necessary*, it is not *sufficient* for sustained investment. Many other factors, such as economic viability, competing investment priorities, and continued public concern over radiation risks, could still prevent the restoration even if geopolitical stability is maintained.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_daf42f64f668",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_cd31fe573252",
+        "text": "Similar to the previous rebuttal, geopolitical stability, while crucial, doesn't guarantee sustained international investment. Shifting global priorities, economic downturns, or the emergence of other, more pressing global issues could divert funds away from Chernobyl reconstruction, regardless of geopolitical conditions.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_ab823a979900",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_f63717643eb2",
+        "text": "Long-term economic growth and resource availability are presented as essential, but the scale of resources needed for a complete restoration of Chernobyl city by 3000 is likely to be immense. Even with economic growth, diverting sufficient resources to this single project for centuries is not guaranteed, especially considering competing global needs like climate change mitigation, healthcare, and poverty reduction.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_e43aa756a2bb",
+        "strength": 0.7
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_686f890338f7",
+        "source": "evid_6793b253ea5a",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_7b03b374afd4",
+        "source": "evid_6e7095ab447d",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ca52e4d56ff2",
+        "source": "evid_d95d567c2691",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_257d45c5fa1f",
+        "source": "evid_b2f17dc39cbb",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_49bcb41e3ed3",
+        "source": "evid_0a2437cd9153",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_de62ccbc43d2",
+        "source": "evid_59ea0bd008d6",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_6b83057f33ff",
+        "source": "evid_24820c76b520",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_e4a3a569b9be",
+        "source": "evid_daf42f64f668",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_88f33a24e738",
+        "source": "evid_f5c08575bc3a",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_a74039deb2b1",
+        "source": "rebt_c85d9a9bc770",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_2b2206e19d0a",
+        "source": "rebt_64c052b79fd5",
+        "target": "evid_6793b253ea5a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_7d3e9eed6f32",
+        "source": "rebt_85e6da8dab7f",
+        "target": "evid_6e7095ab447d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_7af32a746c73",
+        "source": "rebt_76f3ed264e7b",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_51e92f271605",
+        "source": "rebt_5fae19bbb595",
+        "target": "evid_6793b253ea5a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_fbeacd3a4a6f",
+        "source": "rebt_9c3954e3bea2",
+        "target": "evid_6e7095ab447d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_04b1dbaaaf90",
+        "source": "evid_2c8e9f726a87",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_1dd5f27c6c60",
+        "source": "evid_e8d173aa7aaa",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_0d4c09115ec0",
+        "source": "evid_f09c1b049a9d",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_ca9f6cfaf03a",
+        "source": "evid_877c913f012c",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_79eb0803d407",
+        "source": "evid_e2e3133ea051",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_35e92360f562",
+        "source": "evid_ca0ceb70d9b5",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_4e1f57827c36",
+        "source": "evid_b66a00747be6",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_1f75df0ced15",
+        "source": "evid_ab823a979900",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_d2595ac5d98a",
+        "source": "evid_3cf8292758ec",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_bffd717eb2d4",
+        "source": "rebt_58f8a7b5532b",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_eb5d7bd8d8af",
+        "source": "rebt_a1c5046df4ee",
+        "target": "evid_ab823a979900",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_5526e97d4c7c",
+        "source": "rebt_ae53445b5c55",
+        "target": "evid_6793b253ea5a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_17ae2c42913e",
+        "source": "rebt_5d00cd689956",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_350a4b1b81c2",
+        "source": "rebt_4cce6bbc85eb",
+        "target": "evid_ab823a979900",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_fa6196d469d0",
+        "source": "rebt_c8c3a0e9d050",
+        "target": "evid_6793b253ea5a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_5e7af8104eda",
+        "source": "evid_c52970f332ee",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_5075acb7fe15",
+        "source": "evid_a1c9315c8b99",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_fd9a16bfb66a",
+        "source": "evid_3820bea7da9e",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_302e77fcaa7f",
+        "source": "evid_a35d643f3584",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ab48b95f40d7",
+        "source": "evid_aaa67b308428",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_959a4bdf4a29",
+        "source": "evid_fb1095ebb27e",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_03f5a52949b3",
+        "source": "evid_b8340d5e8ff6",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_7cc7c015e2a2",
+        "source": "evid_7c78fb56dcb6",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_f8e747f949b5",
+        "source": "evid_e43aa756a2bb",
+        "target": "prop_cf1b733c08e4",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_e54d15afb3c3",
+        "source": "rebt_d084fc95cbbf",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_394664da281e",
+        "source": "rebt_0c950249463b",
+        "target": "evid_7c78fb56dcb6",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_5c4af0e022f9",
+        "source": "rebt_d51c53005226",
+        "target": "evid_e43aa756a2bb",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_d18d52876aa4",
+        "source": "rebt_76c201015d72",
+        "target": "evid_daf42f64f668",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_2ae8a4978074",
+        "source": "rebt_cd31fe573252",
+        "target": "evid_ab823a979900",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_177c55788d98",
+        "source": "rebt_f63717643eb2",
+        "target": "evid_e43aa756a2bb",
+        "edge_type": "EdgeType.REBUTS"
+      }
+    ]
+  },
+  "posteriors": [
+    0.48,
+    0.5776082777496352,
+    0.5334968581281042,
+    0.9858330935492995
+  ],
+  "converged_at": null,
+  "total_tokens_used": 37500,
+  "decisions": [
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.09. Issuing refocus directive.",
+      "round_num": 1,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:38:03.352159+00:00",
+      "metadata": {
+        "similarity": 0.08695652173913043
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.09. Issuing refocus directive.",
+      "round_num": 2,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:39:17.893690+00:00",
+      "metadata": {
+        "similarity": 0.08695652173913043
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.08. Issuing refocus directive.",
+      "round_num": 3,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:40:32.027634+00:00",
+      "metadata": {
+        "similarity": 0.07692307692307693
+      }
+    }
+  ],
+  "evidence_log": [
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.7,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_6793b253ea5a"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.6,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_6e7095ab447d"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_d95d567c2691"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.75,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_b2f17dc39cbb"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.65,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_0a2437cd9153"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.7,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_59ea0bd008d6"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.7,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_24820c76b520"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_daf42f64f668"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_f5c08575bc3a"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.7,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_2c8e9f726a87"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.65,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_e8d173aa7aaa"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.75,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_f09c1b049a9d"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.6,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_877c913f012c"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.7,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_e2e3133ea051"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_ca0ceb70d9b5"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.75,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_b66a00747be6"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_ab823a979900"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.65,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_3cf8292758ec"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.7,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_c52970f332ee"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.6,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_a1c9315c8b99"
+    },
+    {
+      "agent_id": "ag-ca526f01afa2",
+      "agent_name": "Dr. Anya Petrova",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_3820bea7da9e"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.75,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_a35d643f3584"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_aaa67b308428"
+    },
+    {
+      "agent_id": "ag-d36af9a1fb75",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.65,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_fb1095ebb27e"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.75,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_b8340d5e8ff6"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_7c78fb56dcb6"
+    },
+    {
+      "agent_id": "ag-976b204071ea",
+      "agent_name": "Dr. Isabella Rossi",
+      "evid_q": 0.7,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_e43aa756a2bb"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "posterior": 0.48
+    },
+    {
+      "round": 1,
+      "posterior": 0.5776082777496352
+    },
+    {
+      "round": 2,
+      "posterior": 0.5334968581281042
+    },
+    {
+      "round": 3,
+      "posterior": 0.9858330935492995
+    }
+  ],
+  "duration_seconds": 0.0
+}
