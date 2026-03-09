@@ -1,0 +1,105 @@
+{
+  "id": "ts-136b47df48bc",
+  "frame_id": "df-b8743a2d32ab",
+  "specialists": [
+    {
+      "id": "ag-0e09a7a352e8",
+      "name": "Dr. Inessa Kovalchuk",
+      "role": "specialist",
+      "domain_mandate": "Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.",
+      "evidence_source_priority": [
+        "arXiv",
+        "PubMed",
+        "general_web"
+      ],
+      "epistemic_prior": 0.25,
+      "evidence_type_focus": [
+        "computational",
+        "meta_analysis"
+      ],
+      "persona_description": "A skeptical environmental physicist specializing in predictive modeling of radioactive contamination."
+    },
+    {
+      "id": "ag-b853412206a0",
+      "name": "Professor Kenji Tanaka",
+      "role": "specialist",
+      "domain_mandate": "Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.",
+      "evidence_source_priority": [
+        "PubMed",
+        "legal",
+        "general_web"
+      ],
+      "epistemic_prior": 0.65,
+      "evidence_type_focus": [
+        "empirical",
+        "expert_consensus"
+      ],
+      "persona_description": "An optimistic environmental engineer focused on practical solutions for nuclear remediation."
+    },
+    {
+      "id": "ag-e5d23c7ad199",
+      "name": "Dr. Elena Volkov",
+      "role": "specialist",
+      "domain_mandate": "The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.",
+      "evidence_source_priority": [
+        "PubMed",
+        "arXiv",
+        "general_web"
+      ],
+      "epistemic_prior": 0.5,
+      "evidence_type_focus": [
+        "empirical",
+        "case_report"
+      ],
+      "persona_description": "An environmental scientist focused on the natural processes influencing radiation levels."
+    }
+  ],
+  "refuters": [
+    {
+      "id": "ag-211b4c5d6ae8",
+      "name": "Dr. Anya Petrova",
+      "role": "refuter",
+      "domain_mandate": "Challenges the accuracy of predictive models used to forecast radiation decay rates in the Chernobyl Exclusion Zone, particularly concerning the long-term behavior of specific isotopes like Americium-241.",
+      "evidence_source_priority": [
+        "PubMed",
+        "arXiv",
+        "general_web"
+      ],
+      "epistemic_prior": 0.7,
+      "evidence_type_focus": [
+        "methodological_critique",
+        "statistical_reanalysis"
+      ],
+      "persona_description": "A skeptical environmental physicist specializing in radionuclide transport and long-term environmental remediation, questioning optimistic projections."
+    },
+    {
+      "id": "ag-ee551b51361b",
+      "name": "Mr. Kenichi Tanaka",
+      "role": "refuter",
+      "domain_mandate": "Focuses on the economic and logistical feasibility of large-scale remediation efforts required to achieve safe radiation levels by 2050, arguing that funding and political will are insufficient.",
+      "evidence_source_priority": [
+        "financial",
+        "general_web",
+        "legal"
+      ],
+      "epistemic_prior": 0.6,
+      "evidence_type_focus": [
+        "alternative_explanation"
+      ],
+      "persona_description": "An environmental policy analyst emphasizing the practical limitations and socio-economic constraints on achieving ambitious environmental goals in the Chernobyl Exclusion Zone."
+    }
+  ],
+  "jury": {
+    "architecture": "bayesian",
+    "size": 3,
+    "rationale": "Predictive claims use Bayesian posterior convergence"
+  },
+  "refuter_intensity": "medium",
+  "estimated_rounds": 2,
+  "round_reasoning": "base 2 + controversy 1 + evidence density 1 - parallel sub-claims 2 = 2",
+  "max_rounds": 3,
+  "estimated_tokens": 40000,
+  "estimated_runtime_seconds": 36.0,
+  "budget_cap_tokens": 100000,
+  "created_at": "2026-03-09T14:18:17.963394+00:00"
+}
