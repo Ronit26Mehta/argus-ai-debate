@@ -76,6 +76,7 @@ class LLMProviderConfig(BaseSettings):
     nvidia_api_key: Optional[str] = Field(default=None, description="NVIDIA API key")
     together_api_key: Optional[str] = Field(default=None, description="Together AI API key")
     fireworks_api_key: Optional[str] = Field(default=None, description="Fireworks AI API key")
+    openrouter_api_key: Optional[str] = Field(default=None, description="OpenRouter API key")
     
     # Cloud providers
     azure_openai_api_key: Optional[str] = Field(default=None, description="Azure OpenAI API key")
@@ -118,6 +119,7 @@ class LLMProviderConfig(BaseSettings):
             "nvidia": self.nvidia_api_key,
             "together": self.together_api_key,
             "fireworks": self.fireworks_api_key,
+            "openrouter": self.openrouter_api_key,
             "azure": self.azure_openai_api_key,
             "azure_openai": self.azure_openai_api_key,
             "huggingface": self.huggingface_api_key,
@@ -141,7 +143,7 @@ class LLMProviderConfig(BaseSettings):
         """Get list of providers with valid credentials."""
         all_providers = [
             "openai", "anthropic", "gemini", "ollama", "cohere", "mistral", "groq",
-            "deepseek", "xai", "perplexity", "nvidia", "together", "fireworks",
+            "deepseek", "xai", "perplexity", "nvidia", "together", "fireworks", "openrouter",
             "azure", "huggingface", "watsonx", "databricks", "sambanova", "cerebras",
             "cloudflare", "replicate", "vllm", "llamacpp", "litellm"
         ]
@@ -472,8 +474,16 @@ class ArgusConfig(BaseSettings):
     )
     
     # Default LLM settings
-    default_provider: Literal["openai", "anthropic", "gemini", "ollama"] = Field(
-        default="openai",
+    default_provider: Literal[
+        "openai", "anthropic", "gemini", "ollama",
+        "cohere", "mistral", "groq", "deepseek", "xai",
+        "perplexity", "nvidia", "together", "fireworks",
+        "bedrock", "azure", "vertex", "huggingface",
+        "watsonx", "databricks", "snowflake", "sambanova",
+        "cerebras", "litellm", "cloudflare", "replicate",
+        "vllm", "llamacpp", "openrouter",
+    ] = Field(
+        default="openrouter",
         description="Default LLM provider",
     )
     
@@ -569,6 +579,7 @@ class ArgusConfig(BaseSettings):
             "anthropic": "claude-3-5-sonnet-20241022",
             "gemini": "gemini-1.5-pro",
             "ollama": "llama3.2",
+            "openrouter": "deepseek/deepseek-chat-v3-0324:free",
         }
         
         # If using default model and it matches openai default, adapt to provider
