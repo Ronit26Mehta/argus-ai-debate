@@ -1,0 +1,1633 @@
+================================================================================
+ARGUS × ARISTOTLE
+The Autonomous Dynamic Debate Orchestration Protocol
+Complete Conceptual Blueprint — ARGUS v4.0 Module Integration
+Single-Pane Split Interface Edition · Full Lifecycle DAG · March 2026
+================================================================================
+
+Research-Backed · Zero-Config for Non-Technical Users
+ARISTOTLE as argus-debate-ai Sub-Module · Single Split-Pane Streamlit Interface
+Fully Autonomous Execution · Full Lifecycle DAG · Live Status Updates
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+  1.  Executive Summary
+  2.  Why Aristotle — The Naming Philosophy
+  3.  The Problem Space: Old Workflow vs. ARISTOTLE Protocol
+  4.  ARISTOTLE as a Module Inside argus-debate-ai
+  5.  ARISTOTLE Architecture — Five Layers
+  6.  The Single-Pane Split Interface — Complete Specification
+  7.  The Full Lifecycle DAG — Node, Edge & Animation Spec
+  8.  All Visualization Sub-Panels
+  9.  Research Gaps — What Remains Unsolved in Agentic AI
+ 10.  Novel Contributions — ARISTOTLE vs. State of the Art
+ 11.  Complete User Experience Walkthrough
+ 12.  Known Challenges and Mitigations
+ 13.  Implementation Roadmap
+ 14.  Closing Vision
+
+================================================================================
+1.  EXECUTIVE SUMMARY
+================================================================================
+
+ARGUS (Agentic Research & Governance Unified System) is one of the most
+architecturally sophisticated multi-agent debate frameworks in existence. It
+implements a Conceptual Debate Graph (C-DAG), Bayesian belief propagation,
+hybrid BM25 + FAISS retrieval, provenance hash-chain tracking, and a suite of
+novel evaluation metrics including ARCIS, EVID-Q, DIALEC, REBUT-F, CONV-S,
+PROV-I, CALIB-M, and EIG-U. Every one of these capabilities requires deep
+technical knowledge to configure and operate. The framework speaks fluently to
+engineers and researchers. It speaks not at all to the vast majority of people
+with a legitimate intellectual need to evaluate complex claims.
+
+ARISTOTLE — the Autonomous Reasoning Intelligence for Structured
+Topic-Orchestrated Logical Engagement — is the complete answer to that gap.
+
+Two architectural decisions define this edition of the ARISTOTLE protocol:
+
+  (1) MODULE PLACEMENT: ARISTOTLE is not a separate system, external wrapper,
+      or standalone application. It is a first-class sub-module of the
+      argus-debate-ai package, living at argus.aristotle, installed and
+      imported alongside every other ARGUS component.
+
+  (2) SINGLE-PANE SPLIT INTERFACE: ARISTOTLE does not use two separate
+      Streamlit tabs or screens. The entire experience — chat with ARISTOTLE
+      on the left, live debate visualization (including the Full Lifecycle DAG)
+      on the right — lives in one unified, split-pane Streamlit interface.
+      The right panel updates continuously as the debate progresses. The user
+      never changes tabs. Everything is visible simultaneously.
+
+The core proposition: A user opens ARGUS, types a question in the left chat
+pane, and watches the Full Lifecycle DAG grow on the right as ARISTOTLE builds
+and runs the debate autonomously. Status updates, belief trajectory, evidence
+heatmap, and all other visualization panels update in real time within the same
+view. One sentence in; complete, visualized, auditable truth out.
+
+================================================================================
+2.  WHY ARISTOTLE — THE NAMING PHILOSOPHY
+================================================================================
+
+The name ARISTOTLE is a precise intellectual alignment, not a branding choice.
+Aristotle of Stagira (384-322 BC) invented formal logic, created the syllogism,
+categorized all human knowledge, defined standards of rhetoric and evidence, and
+spent his life making complexity accessible without reducing its rigor. He
+tutored Alexander the Great — he made depth navigable for a powerful,
+non-specialist mind. These are exactly the properties ARISTOTLE the agent must
+have.
+
+  ARISTOTELIAN ACHIEVEMENT              MAPPING TO ARISTOTLE AGENT
+  ─────────────────────────────────     ──────────────────────────────────────
+  Invented the syllogism — first        ARISTOTLE's debate scaffold:
+  formal deductive reasoning system     Topic → Sub-Claims → Evidence →
+  (Prior Analytics, ~350 BC)           Inference → Verdict is a computational
+                                        syllogism engine at scale
+
+  Ten categories to classify all        The Framing Engine classifies every
+  knowledge (Categories, ~350 BC)       query into a typed Debate Frame:
+                                        domain, controversy, evidence type,
+                                        and stance space
+
+  The Golden Mean — virtue lies         ARISTOTLE is constitutionally neutral:
+  between extremes, avoid false         equal epistemic resources assigned to
+  dichotomies (Nicomachean Ethics)      all positions; pre-judging any claim
+                                        is architecturally forbidden
+
+  Three modes of rhetoric: logos        Maps precisely: logos = EVID-Q logical
+  (logic), ethos (credibility),         scoring; ethos = source quality and
+  pathos (resonance) — (Rhetoric)       provenance; pathos = calibrated
+                                        Bayesian confidence
+
+  Poetics: narrative structure is       ARISTOTLE's synthesis layer constructs
+  essential for human comprehension     a narrative arc — setup, conflict,
+  (Poetics, ~335 BC)                   turning point, resolution — making the
+                                        debate's conclusion humanly readable
+
+  Rejected abstract idealism; demanded  ARISTOTLE grounds every verdict in
+  empirical observation (Metaphysics)   provenanced, cited evidence. No
+                                        inference without data.
+
+  Tutor to Alexander the Great —        ARISTOTLE's mission: make ARGUS's
+  made depth accessible to a            full analytical depth accessible to
+  non-specialist powerful mind          journalists, doctors, students, and
+  (Macedonian Court, 343 BC)            policy analysts without any technical
+                                        training whatsoever
+
+================================================================================
+3.  THE PROBLEM SPACE: OLD WORKFLOW vs. ARISTOTLE PROTOCOL
+================================================================================
+
+3.1  THE OLD ARGUS WORKFLOW (Expert-Only)
+─────────────────────────────────────────
+
+Every ARGUS session currently requires the user to make at least seven
+expert-level decisions before a single debate token is generated.
+
+  DECISION POINT                  WHAT THE USER MUST KNOW
+  ──────────────────────────      ──────────────────────────────────────────
+  1. Proposition formulation      Restate question as falsifiable claim with
+                                  an explicit prior probability (0.0-1.0)
+
+  2. Specialist configuration     Agent count, domain focus, retrieval
+                                  sources, epistemic priors for each agent
+
+  3. Refuter setup                Refuter count, intensity, rebuttal strategy,
+                                  and target thresholds
+
+  4. Jury architecture            Aggregation method (Bayesian vs. majority),
+                                  jury size, calibration parameters
+
+  5. Stopping criteria            Max rounds, convergence thresholds, budget
+                                  limits, information gain cutoffs
+
+  6. Retrieval configuration      BM25/FAISS balance, source list, embedding
+                                  model selection
+
+  7. Output interpretation        Read Bayesian posterior curves, interpret
+                                  ARCIS/EVID-Q/DIALEC, navigate C-DAG manually
+
+Each is a potential failure point for a non-technical user. Even for expert
+users, each decision consumes time and attention that could be spent
+interpreting results rather than configuring systems.
+
+3.2  THE ARISTOTLE PROTOCOL (Any User)
+───────────────────────────────────────
+
+Every one of these seven decision points is eliminated. ARISTOTLE owns them
+all. The user's only action is typing a question in the left chat pane.
+
+  USER INPUT (the entirety of what is required):
+  "Does intermittent fasting actually work for long-term weight loss,
+   or is the evidence overhyped?"
+
+From this, ARISTOTLE executes the complete workflow autonomously across five
+layers — while the user watches the right visualization pane update live.
+
+  STEP    WHAT ARISTOTLE DOES                     WHAT USER SEES
+  ──────  ──────────────────────────────────────  ────────────────────────────
+  L1      Parses query: identifies domain,         Left pane: framing narrative
+          controversy, debate type, prior          appears in chat as ARISTOTLE
+                                                   thinks out loud
+
+  L2      Builds agent roster: specialist          Left pane: Topology Preview
+          personas, refuter config, jury type,     Card appears; user can
+          round count, cost estimate               approve or adjust via chat
+
+  L3      Runs debate autonomously through          Right pane: Full Lifecycle
+          ARGUS's existing RDC machinery;           DAG begins populating;
+          monitors and steers mid-debate            all panels update live
+
+  L4      Streams events to the right pane          Right pane: nodes appear
+          visualization panels in real time         round by round; status bar
+                                                    shows current posterior
+
+  L5      Synthesizes plain-language verdict        Left pane: complete result
+          and delivers it in chat                   package delivered in chat
+
+================================================================================
+4.  ARISTOTLE AS A MODULE INSIDE argus-debate-ai
+================================================================================
+
+4.1  PACKAGE PLACEMENT
+───────────────────────
+
+ARISTOTLE is a first-class sub-module of the argus-debate-ai Python package.
+It does not live in a separate repository, separate installation, or separate
+application. It is installed, imported, and versioned alongside every other
+ARGUS component.
+
+  PACKAGE STRUCTURE (argus-debate-ai)
+  ─────────────────────────────────────────────────────────────────────────
+  argus/
+  ├── __init__.py
+  ├── core/
+  │   ├── orchestrator.py          (existing — RDCOrchestrator)
+  │   ├── cdag.py                  (existing — Conceptual Debate Graph)
+  │   ├── eddo.py                  (existing — debate round management)
+  │   └── voi_planner.py           (existing — Expected Information Gain)
+  ├── agents/
+  │   ├── specialist.py            (existing)
+  │   ├── refuter.py               (existing)
+  │   └── jury.py                  (existing)
+  ├── retrieval/
+  │   └── hybrid_retriever.py      (existing — BM25 + FAISS + CrossEncoder)
+  ├── provenance/
+  │   └── ledger.py                (existing — PROV-O + SHA-256 hash chain)
+  ├── evaluation/
+  │   └── ...                      (existing — ARCIS, EVID-Q, DIALEC, etc.)
+  │
+  ├── aristotle/                   ← NEW SUB-MODULE (this protocol)
+  │   ├── __init__.py
+  │   ├── framing.py               (Layer 1: Intent Parsing & Framing Engine)
+  │   ├── topology.py              (Layer 2: Dynamic Topology Builder)
+  │   ├── monitor.py               (Layer 3: Autonomous Execution Monitor)
+  │   ├── interface.py             (Layer 4: Single-Pane Split Streamlit UI)
+  │   ├── dag_viz.py               (Full Lifecycle DAG Plotly builder)
+  │   ├── panels.py                (All other visualization sub-panels)
+  │   ├── synthesis.py             (Layer 5: Plain-Language Output Synthesis)
+  │   ├── decision_log.py          (ORCHESTRATOR_DECISION event management)
+  │   └── personas/
+  │       ├── specialist_bank.py   (pre-built persona templates per domain)
+  │       └── backup_agents.py     (replacement agents for mid-debate swap)
+  │
+  └── viz/
+      └── argus_viz/               (existing — Streamlit sandbox, unchanged)
+
+4.2  IMPORT AND ENTRY POINTS
+──────────────────────────────
+
+Once installed, ARISTOTLE is accessible via the standard argus namespace:
+
+  from argus.aristotle import ARISTOTLE
+  from argus.aristotle.framing import FramingEngine
+  from argus.aristotle.topology import TopologyBuilder
+  from argus.aristotle.interface import run_split_pane_app
+
+The primary user-facing entry point for the Streamlit interface:
+
+  argus aristotle run
+  (CLI command added to argus's existing CLI system)
+
+Or programmatically, for developers who want to embed ARISTOTLE's layers
+without the Streamlit UI:
+
+  from argus.aristotle import ARISTOTLE
+
+  agent = ARISTOTLE(llm=get_llm("openai", model="gpt-4o"))
+  result = agent.run("Is social media causing the mental health crisis?")
+
+4.3  RELATIONSHIP TO EXISTING ARGUS COMPONENTS
+────────────────────────────────────────────────
+
+ARISTOTLE is a consumer of ARGUS's existing APIs, not a replacement for them.
+Every existing component is preserved in full. ARISTOTLE's five layers map
+onto existing ARGUS classes as follows:
+
+  ARISTOTLE LAYER              ARGUS COMPONENTS IT DRIVES
+  ─────────────────────────    ─────────────────────────────────────────────
+  framing.py (L1)              Uses: get_llm(), web retrieval tools
+                               Produces: Proposition object for RDCOrchestrator
+
+  topology.py (L2)             Configures: RDCOrchestrator, Specialist,
+                               Refuter, Jury, EDDOAlgorithm, HybridRetriever
+
+  monitor.py (L3)              Wraps: RDCOrchestrator.run() with a parallel
+                               meta-monitor thread; injects callbacks into
+                               EDDOAlgorithm's round loop
+
+  interface.py + dag_viz.py    Subscribes to: ProvenanceLedger event emitter;
+  (L4)                         renders events as Plotly figures in the
+                               single-pane Streamlit UI
+
+  synthesis.py (L5)            Queries: C-DAG, ProvenanceLedger, VoIPlanner;
+                               formats results for chat delivery
+
+  decision_log.py              Writes to: ProvenanceLedger using new event
+                               type ORCHESTRATOR_DECISION
+
+4.4  BACKWARD COMPATIBILITY
+────────────────────────────
+
+The ARISTOTLE sub-module introduces zero breaking changes to any existing
+ARGUS code. It is an additive module only. The following are explicitly
+unchanged by this addition:
+
+  - C-DAG data structure, node types, edge types, propagation algorithm
+  - EDDO algorithm internal convergence logic
+  - VoI Planner Monte Carlo EIG estimation
+  - HybridRetriever BM25/FAISS/CrossEncoder pipeline
+  - ProvenanceLedger hash-chain integrity and PROV-O schema
+  - All existing evaluation metrics (ARCIS, EVID-Q, DIALEC, REBUT-F,
+    CONV-S, PROV-I, CALIB-M, EIG-U)
+  - Existing argus_viz Streamlit sandbox (remains available for post-hoc
+    expert analysis, untouched)
+  - Existing CLI interface for expert users who want manual configuration
+  - All existing pyproject.toml dependencies (ARISTOTLE adds only:
+    dash is NOT added since Plotly figures are rendered via st.plotly_chart
+    inside the Streamlit interface directly)
+
+4.5  VERSIONING
+────────────────
+
+ARISTOTLE is introduced in ARGUS v4.0 and follows ARGUS's existing semantic
+versioning. The aristotle sub-module has its own internal version constant
+(argus.aristotle.__version__) for tracking protocol-level changes
+independently of the broader ARGUS package version.
+
+================================================================================
+5.  ARISTOTLE ARCHITECTURE — FIVE LAYERS
+================================================================================
+
+ARISTOTLE is a five-layer meta-orchestration stack. Each layer is a distinct
+module inside argus.aristotle and each feeds sequentially into the next.
+
+  LAYER  MODULE           FUNCTION                           KEY OUTPUT
+  ─────  ───────────────  ─────────────────────────────────  ──────────────────
+  L1     framing.py       Parse NL query into Debate Frame   DebateFrame JSON
+  L2     topology.py      Build agent ecosystem from Frame   TopologySpec JSON
+  L3     monitor.py       Drive ARGUS; monitor mid-debate    C-DAG + event log
+  L4     interface.py     Single-pane split UI + DAG viz     Live Streamlit UI
+  L5     synthesis.py     Plain-language result package      Chat result card
+
+5.1  LAYER 1 — INTENT PARSING & FRAMING ENGINE (framing.py)
+────────────────────────────────────────────────────────────
+
+Activated when the user submits a message in the left chat pane. Performs
+seven analytical operations using a lightweight fast-inference model (not the
+full debate LLM — saves cost and latency):
+
+  (a) DOMAIN CLASSIFICATION
+      Identifies primary and secondary knowledge domains from the query.
+      Medical claims activate PubMed-weighted retrieval. Legal claims invoke
+      case law evidence standards. Technical claims use empirical criteria.
+      This is semantic domain inference, not keyword matching.
+
+  (b) DEBATE TYPE DETECTION
+      Classifies into one of six types:
+        Binary Factual   — "Is X true?"
+        Causal           — "Does X cause Y?"
+        Comparative      — "Is X better than Y?"
+        Predictive       — "Will X happen?"
+        Normative        — "Should X be done?"
+        Definitional     — "What does X actually mean?"
+      Each type has a different optimal agent configuration and evidence
+      standard that L2 uses to build the topology.
+
+  (c) CONTROVERSY LEVEL SCORING
+      A 0.0-1.0 score computed from:
+        - Presence of hedging language in query ("actually," "really,"
+          "overhyped," "just a," "or is it")
+        - Fast web probe counting conflicting expert positions
+        - Domain-specific controversy priors (nutrition science = inherently
+          contested; basic Newtonian mechanics = not contested)
+
+  (d) EVIDENCE DENSITY ESTIMATION
+      Estimates whether the topic has rich empirical evidence (published
+      trials, datasets, replication studies) or sparse evidence (emerging
+      technology, speculative forecasts). Determines whether the upcoming
+      debate will be evidence-intensive or inference-intensive — which
+      affects round count estimation and retrieval configuration.
+
+  (e) STANCE SPACE MAPPING
+      Identifies the full range of legitimate positions on the topic — not
+      just binary pro/con, but the multi-dimensional space of actual expert
+      disagreement. A climate policy debate has at least four distinct
+      positions that differ in kind, not just degree.
+
+  (f) CLAIM DECOMPOSITION
+      Multi-part or complex queries are broken into atomic sub-propositions
+      that can be debated in parallel or in sequential dependent rounds.
+      The primary claim is identified as the debate's anchor; sub-claims
+      are scheduled as dependent rounds in L3's execution plan.
+
+  (g) PRIOR PROBABILITY CALIBRATION
+      The Bayesian prior for each proposition is set using a weighted
+      combination of:
+        - Base rate for claims of that type in that domain
+        - Rapid n=10 literature scan with conclusion direction scoring
+          (weighted by recency and study type: RCT > cohort > case study)
+        - Explicit uncertainty language in the user's query
+
+5.2  LAYER 2 — DYNAMIC TOPOLOGY BUILDER (topology.py)
+───────────────────────────────────────────────────────
+
+The most novel layer. Takes the DebateFrame from L1 and constructs the
+entire agent ecosystem from scratch. No templates. No pre-defined configs.
+Every agent in every debate is invented specifically for that topic.
+
+  SPECIALIST AGENT CONSTRUCTION
+  For each specialist, topology.py generates a full AgentSpec:
+
+    - Agent Name: a realistic human name that signals expertise to the LLM
+      and to the user (e.g., Dr. Amara Osei, Prof. Sarah Chen)
+    - Domain Mandate: precise description of what aspect of the evidence
+      landscape this agent owns
+    - Evidence Source Priority: which retrieval sources to weight highest
+      (PubMed, arXiv, legal databases, financial APIs, general web)
+    - Epistemic Prior: where this agent starts in belief-space — set to
+      ensure meaningful initial disagreement following Wu et al. 2025's
+      finding that "initial mild disagreement increases the likelihood of
+      post-debate improvement"
+    - Evidence Type Focus: empirical studies, meta-analyses, case reports,
+      expert consensus statements, etc.
+
+  SPECIALIST COUNT SCALING
+    Scales with topic domain breadth × controversy score:
+      Controversy < 0.3  →  2 specialists
+      Controversy 0.3-0.5 → 3 specialists
+      Controversy 0.5-0.7 → 4 specialists
+      Controversy 0.7-1.0 → 5-6 specialists
+
+  REFUTER CONFIGURATION
+    Refuters are assigned opposing epistemic priors to specialists and
+    instructed to attack methodology, not just conclusions. Intensity
+    scales to controversy score:
+      LOW     — polite challenge; appropriate for near-settled science
+      MEDIUM  — active rebuttal; appropriate for contested empirical claims
+      HIGH    — adversarial cross-examination; appropriate for highly
+                controversial or values-laden disputes
+
+  JURY ARCHITECTURE SELECTION
+    topology.py selects one of three jury architectures based on debate type:
+
+      Bayesian Jury (3 members)
+        Used for: empirical factual and causal claims
+        Mechanism: members vote with weighted confidence; ARGUS's existing
+        Bayesian aggregation runs over their outputs
+
+      Deliberative Jury (5 members)
+        Used for: comparative and normative claims
+        Mechanism: members debate intermediate verdicts before aggregating,
+        following the ReConcile protocol
+
+      Validity-Weighted Jury (5 members)
+        Used for: contested scientific claims
+        Mechanism: following Wu et al. 2025's finding that "weighting update
+        decisions by argument validity maximizes post-debate improvement,"
+        each juror's influence is proportional to assessed reasoning quality
+
+  ROUND COUNT AND BUDGET ESTIMATION
+    Computed as:
+      Base Rounds (2)
+      + Controversy Bonus (0-3 based on controversy score)
+      + Evidence Density Bonus (0-2 if landscape is rich)
+      + Sub-Claim Adjustment (-1 per parallel sub-claim handled in batch)
+      Capped at 8 rounds maximum; floored at 2 rounds minimum
+
+    Pre-run cost estimate is computed from:
+      round_count × agent_count × expected_tokens_per_agent_per_round
+    Displayed in the left chat pane before the user confirms launch.
+
+5.3  LAYER 3 — AUTONOMOUS EXECUTION ENGINE (monitor.py)
+────────────────────────────────────────────────────────
+
+Once the user confirms the topology in the chat, monitor.py hands the
+TopologySpec to ARGUS's existing RDCOrchestrator and runs a parallel
+meta-monitor thread that watches the debate's information-theoretic
+trajectory in real time, intervening when necessary.
+
+  MONITORING MECHANISM   TRIGGER                    INTERVENTION
+  ────────────────────   ─────────────────────────  ────────────────────────
+  Convergence Watch      Posterior stable < 0.02    Early termination;
+                         for 2 consecutive rounds   jury verdict triggered;
+                                                    gold star appears in DAG
+
+  Stagnation Detector    2 rounds produce zero      Inject provocateur prompt
+                         EVID-Q > 0.4 evidence      forcing adjacent domain
+                                                    search
+
+  Drift Correction       Semantic similarity to     Refocus directive issued
+                         proposition drops < 0.70   to all agents; yellow
+                                                    edge in DAG highlights
+                                                    drift path
+
+  Confidence Escalation  Agent self-confidence      Hide confidence from all
+  Guard                  exceeds 0.90 in rounds     agents; trigger external
+                         1-3 (anti-Bayesian drift   calibration reset
+                         failure mode)
+
+  Evidence Drought       Specialist retrieves < 3   Replace with backup agent
+                         unique nodes in a round    from backup_agents.py;
+                                                    agent swap shown in DAG
+
+  Budget Overflow        Running token count        Accelerate: summative
+                         exceeds 90% of cap         evidence only; skip
+                                                    sub-claim rounds; amber
+                                                    warning in status bar
+
+  Deadlock Detection     Jury split 50/50 with      ARISTOTLE submits a
+                         high confidence for 2+     structured meta-argument
+                         rounds                     citing highest-quality
+                                                    evidence from both sides;
+                                                    ARISTOTLE node appears
+                                                    in DAG
+
+Every intervention is logged as an ORCHESTRATOR_DECISION event in the
+ProvenanceLedger (via decision_log.py). Every intervention is visible in
+the right visualization pane as a white pulsing marker in the Full
+Lifecycle DAG and as an entry in the Timeline sub-panel.
+
+5.4  LAYER 4 — SINGLE-PANE SPLIT INTERFACE (interface.py + dag_viz.py)
+───────────────────────────────────────────────────────────────────────
+
+The user-facing interface. Described in full detail in Section 6 and 7.
+The key architectural points at the layer level:
+
+  - Built as a Streamlit application (aristotle_app.py) added to argus's
+    existing application suite
+  - Single-pane split layout: left column (chat, 38% width) and right
+    column (visualization, 62% width) rendered simultaneously in one page
+  - No tabs, no page navigation, no separate browser windows
+  - Right panel updates via st.session_state event queue + Streamlit
+    re-run cycle at 800ms intervals as debate events arrive
+  - All visualization built with Plotly figures rendered via
+    st.plotly_chart(use_container_width=True)
+
+5.5  LAYER 5 — OUTPUT SYNTHESIS (synthesis.py)
+───────────────────────────────────────────────
+
+Transforms the structured debate record into a complete result package
+delivered in the left chat pane after the debate concludes. Synthesis is
+strictly grounded — synthesis.py only receives structured C-DAG nodes and
+ProvenanceLedger records as context, never free-form debate transcripts.
+Every narrative sentence must map to a specific C-DAG node ID.
+
+  OUTPUT COMPONENT              CONTENT AND GROUNDING
+  ─────────────────────────     ─────────────────────────────────────────────
+  The Verdict                   Plain-English statement of jury finding with
+                                confidence in natural language:
+                                  "Strong Evidence Supports"
+                                  "Contested with Moderate Evidence"
+                                  "Insufficient Evidence to Conclude"
+                                  "Evidence Actively Against"
+                                Grounded in: jury posterior + CONV-S score
+
+  The Reasoning Narrative       3-5 paragraph account of how the debate
+                                unfolded: key arguments, decisive evidence,
+                                sharpest disagreements, minority view
+                                Grounded in: C-DAG highest-weight argument
+                                chains
+
+  The Dissent Log               If jury members disagreed: minority position
+                                surfaced and explained in plain language;
+                                what evidence would have reversed the majority
+                                Grounded in: jury deliberation records +
+                                C-DAG counter-evidence nodes
+
+  What Could Change This        2-3 specific research suggestions derived from
+                                the VoI Planner's highest-EIG unexplored
+                                evidence nodes — a plain-language research
+                                agenda for the user
+                                Grounded in: VoI Planner EIG scores
+
+  Evidence Provenance Map       Every claim hyperlinked to its source evidence
+                                node in the C-DAG, which links to original
+                                source citation; full PROV-O compliance,
+                                SHA-256 hash-chain integrity
+                                Grounded in: ProvenanceLedger
+
+  Metric Dashboard              All ARGUS-native metrics alongside plain-
+                                language interpretations:
+                                "The arguments were highly coherent (ARCIS=0.87)"
+                                Grounded in: ARGUS evaluation framework
+
+================================================================================
+6.  THE SINGLE-PANE SPLIT INTERFACE — COMPLETE SPECIFICATION
+================================================================================
+
+6.1  CORE DESIGN PRINCIPLE
+────────────────────────────
+
+The ARISTOTLE interface is a single Streamlit page. There are no tabs. There
+are no separate screens. There is no navigation. The user sees everything
+simultaneously: their conversation with ARISTOTLE on the left, and the live
+evolving debate visualization on the right.
+
+This matters because:
+
+  - A user who wants to ask "why did confidence spike in round 3?" should
+    be able to look right, see the DAG, and look left to ask the question
+    in the same eye movement — not navigate between tabs
+  - Status updates (posterior probability, round number, convergence
+    progress) should be visible at all times without any action from the user
+  - The visualization does not require active user attention to update —
+    it updates automatically while the user continues conversing on the left
+
+6.2  LAYOUT SPECIFICATION
+───────────────────────────
+
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  ARGUS × ARISTOTLE                                    [Status Bar]      │
+  │  ─────────────────────────────────────────────────────────────────────  │
+  │                                                                         │
+  │  ┌─────────────────────────┐  ┌──────────────────────────────────────┐ │
+  │  │                         │  │                                      │ │
+  │  │   LEFT PANE             │  │   RIGHT PANE                         │ │
+  │  │   ARISTOTLE CHAT        │  │   LIVE DEBATE VISUALIZATION          │ │
+  │  │   (38% width)           │  │   (62% width)                        │ │
+  │  │                         │  │                                      │ │
+  │  │  [Chat history]         │  │  ┌──────────────────────────────┐   │ │
+  │  │  ARISTOTLE: Hello, I    │  │  │  FULL LIFECYCLE DAG           │   │ │
+  │  │  am here to help you    │  │  │  (top, 55% of right pane      │   │ │
+  │  │  find the truth...      │  │  │   height)                     │   │ │
+  │  │                         │  │  │                               │   │ │
+  │  │  User: Is social media  │  │  │  [Proposition diamond] ◇      │   │ │
+  │  │  causing the mental     │  │  │     ↓  ↓  ↓  ↓  ↓            │   │ │
+  │  │  health crisis?         │  │  │  [Specialist squares] ■■■■■   │   │ │
+  │  │                         │  │  │  ↙↓↘  ↙↓↘  ↙↓↘  ↙↓↘  ↙↓↘  │   │ │
+  │  │  ARISTOTLE: [Framing    │  │  │ ●●● ●●● ●●● ●●● ●●●          │   │ │
+  │  │  narrative appears      │  │  │ [Evidence circles - green/red] │   │ │
+  │  │  as ARISTOTLE thinks]   │  │  │    ▲ ▲   ▲ ▲   ▲ ▲           │   │ │
+  │  │                         │  │  │ [Rebuttal triangles - amber]   │   │ │
+  │  │  [Topology Preview Card]│  │  │    ○    ○    ○    ○            │   │ │
+  │  │                         │  │  │ [Bayesian Update - lavender]   │   │ │
+  │  │  [Launch Debate button] │  │  │              ★                 │   │ │
+  │  │                         │  │  │         [Verdict star - gold]  │   │ │
+  │  │  [Status updates during │  │  └──────────────────────────────┘   │ │
+  │  │  debate arrive here]    │  │                                      │ │
+  │  │                         │  │  ┌──────────────┐┌───────────────┐  │ │
+  │  │  [Verdict and results   │  │  │ BELIEF        ││ EVIDENCE      │  │ │
+  │  │  appear here after      │  │  │ TRAJECTORY    ││ HEATMAP       │  │ │
+  │  │  debate concludes]      │  │  │ (bottom-left) ││ (bottom-right)│  │ │
+  │  │                         │  │  └──────────────┘└───────────────┘  │ │
+  │  │  [  User input box  ]   │  │                                      │ │
+  │  │  [          Send  →  ]  │  │  [Expand ▼ for more panels]         │ │
+  │  └─────────────────────────┘  └──────────────────────────────────────┘ │
+  └─────────────────────────────────────────────────────────────────────────┘
+
+6.3  THE STATUS BAR
+─────────────────────
+
+A fixed-height status bar spans the full width above the split pane.
+It updates in real time throughout the debate and is always visible:
+
+  [●] Round 3 of 5  │  Posterior: 68%  │  Status: DEBATING  │  Agents: 5
+  active  │  Budget: 62% used  │  Evidence nodes: 23  │  Convergence: stable
+
+  Color coding:
+    Green dot + "DEBATING"    — debate is running normally
+    Amber dot + "ARISTOTLE INTERVENING" — an intervention is active
+    Blue dot  + "CONVERGING"  — posterior is stabilizing
+    Gold dot  + "VERDICT"     — debate is complete, jury has ruled
+
+6.4  LEFT PANE — CHAT INTERFACE
+────────────────────────────────
+
+The left pane is a full-height chat window implemented with Streamlit's
+st.chat_message() component. The chat history is persistent within the
+session and scrollable.
+
+  ARISTOTLE MESSAGES
+    - Styled with a dark navy (#0D1B4B) background bubble
+    - Gold (#B8860B) name label: "ARISTOTLE"
+    - Typing indicator: animated "..." bubble while ARISTOTLE processes
+    - Structured cards (Topology Preview, Verdict) appear as formatted
+      blocks within the chat thread — not as walls of raw text
+
+  USER MESSAGES
+    - Styled with a light steel blue (#D6E4F0) background bubble
+    - No label (or a customizable user alias)
+
+  FOUR INTERACTION MODES
+
+    Mode 1 — QUERY (pre-debate)
+      User submits a question. ARISTOTLE frames it (L1), builds the
+      topology (L2), and presents the Topology Preview Card in the chat.
+
+    Mode 2 — REFINEMENT (pre-debate)
+      User adjusts the topology via natural language:
+        "Add a more skeptical specialist"
+        "I want at least 4 rounds of debate"
+        "Focus only on studies from 2020 onwards"
+        "Make the refuters less aggressive"
+      ARISTOTLE interprets each instruction, updates the TopologySpec,
+      and re-presents the revised Topology Preview Card.
+
+    Mode 3 — MONITORING (during debate)
+      While the debate runs (visible on the right), ARISTOTLE sends
+      real-time status messages to the left chat at key milestones:
+        "Round 2 complete. Jury confidence moved from 0.61 to 0.68.
+         Dr. Whitfield's neuroimaging evidence was decisive this round."
+        "I have replaced Dr. Chen (average EVID-Q: 0.41) with Dr. Tanaka
+         (Systematic Reviews). Dr. Tanaka has been briefed on the debate."
+      Users can ask questions at any time during the debate:
+        "Why did confidence drop in round 2?"
+        "Which agent is producing the best evidence?"
+
+    Mode 4 — SYNTHESIS (post-debate)
+      ARISTOTLE delivers the complete result package in the chat:
+      verdict card, reasoning narrative, dissent log, What Could Change
+      This section, and a link to the full provenance report.
+      Users can ask follow-up questions:
+        "What was the strongest piece of counter-evidence?"
+        "Would the verdict change if we only used RCT studies?"
+        "Generate a summary I can share with my team"
+
+  TOPOLOGY PREVIEW CARD
+    Appears in the chat thread after L2 completes. Contains:
+      - Numbered list of all agents with name, domain, initial prior,
+        and a one-sentence description of each agent's role
+      - Jury type and size with plain-language explanation of the choice
+      - Estimated round count with reasoning shown
+      - Pre-debate cost estimate in tokens and approximate runtime
+      - [Launch Debate] button — activates L3 and L4
+      - [Adjust This Plan] button — re-enters Mode 2 refinement
+
+6.5  RIGHT PANE — LIVE VISUALIZATION
+──────────────────────────────────────
+
+The right pane is a 62%-width Streamlit column containing all visualization
+panels. It is divided into three zones:
+
+  ZONE A — TOP (55% of right pane height)
+    The Full Lifecycle DAG — the centerpiece visualization.
+    Implemented as a Plotly go.Figure with a Scatter trace (nodes) and
+    a custom SVG edge layer, rendered via st.plotly_chart(key="dag").
+    Full specification in Section 7.
+
+  ZONE B — BOTTOM ROW (35% of right pane height)
+    Two side-by-side sub-panels:
+      Left:  Belief Trajectory Line Chart
+      Right: Evidence Quality Heatmap
+    Both update in real time as debate events arrive.
+
+  ZONE C — EXPANDABLE DRAWER (initially collapsed)
+    A st.expander("More Panels") containing:
+      - Argument Flow Sankey Diagram
+      - Agent Influence Radar Chart
+      - Calibration Reliability Diagram
+      - Debate Timeline Event Plot
+    These are collapsed by default to keep the primary view clean.
+    Power users who want deeper analysis expand this drawer.
+
+6.6  REAL-TIME UPDATE MECHANISM
+────────────────────────────────
+
+The right pane achieves live updates through Streamlit's session state
+and periodic re-run architecture:
+
+  (a) The execution engine (L3/monitor.py) emits a structured JSON event
+      for each debate action (evidence submitted, rebuttal filed, Bayesian
+      update computed, ARISTOTLE intervention, round complete, verdict)
+
+  (b) Each event is appended to st.session_state["event_queue"]
+
+  (c) A background thread (running via concurrent.futures.ThreadPoolExecutor)
+      processes events from the queue and updates the visualization data
+      in st.session_state["dag_data"], ["belief_data"], ["heatmap_data"]
+
+  (d) Streamlit's st.empty() containers hold the Plotly figures;
+      the app re-runs on a 800ms st.rerun() cycle triggered by a
+      st.session_state flag set by the background thread
+
+  (e) On each re-run, each panel reads its data from session state and
+      redraws only changed elements — additive updates, not full re-renders
+
+  Chat messages on the left pane are also appended to session state
+  by the monitoring thread and appear on the same re-run cycle.
+
+================================================================================
+7.  THE FULL LIFECYCLE DAG — COMPLETE SPECIFICATION
+================================================================================
+
+The Full Lifecycle DAG (implemented in dag_viz.py) is the centerpiece
+visualization of the right pane. It is a dark-themed, layered directed
+acyclic graph that displays the complete epistemic structure of the debate
+from Proposition at the top to Verdict at the bottom. It grows node by node
+in real time as debate events fire.
+
+The visual design is based on the reference image provided: dark background
+(#1A1A2E), layered hierarchical layout, distinct node shapes and colors,
+multiple edge types with semantic color encoding.
+
+7.1  NODE TYPE SPECIFICATION
+──────────────────────────────
+
+  NODE TYPE        SHAPE           COLOR           SIZE    SEMANTIC MEANING
+  ──────────────   ─────────────   ─────────────   ─────   ──────────────────
+  Proposition      Diamond (◇)     Cyan #00BFFF    Large   The central claim
+                                                           under debate. One
+                                                           per debate (or one
+                                                           per sub-claim if
+                                                           decomposed). Displays
+                                                           the initial prior
+                                                           probability inside.
+
+  Specialist       Square (■)      Steel Blue      Medium  Each specialist agent.
+                   filled          #4682B4                 Positioned in Tier 2,
+                                                           one node per agent.
+                                                           Agent name shown as
+                                                           a label beneath the
+                                                           square.
+
+  Support          Filled          Green           Small-  Evidence that supports
+  Evidence         Circle (●)      #2ECC71         Med     the proposition.
+                                                           Branching down from
+                                                           their submitting
+                                                           Specialist node.
+
+  Attack           Filled          Red             Small-  Evidence that attacks
+  Evidence         Circle (●)      #E74C3C         Med     or challenges the
+                                                           proposition. Same
+                                                           structure as Support
+                                                           Evidence but red.
+
+  Rebuttal         Triangle (▲)    Amber           Small   A rebuttal targeting
+                   pointing up     #FFA500                 a specific evidence
+                                                           node. Connected to
+                                                           the Evidence node
+                                                           it challenges.
+
+  Bayesian         Hollow          Lavender        Small   Auto-generated after
+  Update           Circle (○)      #9B89C4                 each round by ARGUS's
+                                                           belief propagation.
+                                                           Not submitted by any
+                                                           agent. Displays the
+                                                           updated posterior
+                                                           probability inside.
+
+  Verdict          Star (★)        Gold            Large   The jury's final
+                   5-point         #FFD700                 verdict. Single node
+                                                           at the bottom of the
+                                                           DAG. Displays verdict
+                                                           label and confidence
+                                                           inside.
+
+  ARISTOTLE        Hexagon         White           Small   An ARISTOTLE
+  (intervention)   (⬡)            #FFFFFF                 orchestrator
+                                                           intervention node.
+                                                           Appears when monitor
+                                                           intervenes. Labeled
+                                                           with intervention type.
+
+7.2  EDGE TYPE SPECIFICATION
+──────────────────────────────
+
+  EDGE TYPE    COLOR           STYLE         FROM → TO            MEANING
+  ──────────   ─────────────   ───────────   ──────────────────   ────────────
+  ASSIGNED     Grey #888888    Dashed        Proposition →        Specialist
+                                             Specialist           assigned to
+                                                                  this debate
+
+  SUPPORTS     Green #2ECC71   Solid         Specialist →         Evidence
+                               arrow         Support Evidence /   supports the
+                                             Evidence →           proposition
+                                             Bayesian Update
+
+  ATTACKS      Red #E74C3C     Solid         Specialist →         Evidence
+                               arrow         Attack Evidence /    attacks the
+                                             Evidence →           proposition
+                                             Bayesian Update
+
+  REBUTS       Amber #FFA500   Solid arrow   Rebuttal →           Rebuttal
+                                             Evidence (any)       challenges
+                                                                  evidence node
+
+  REFINES      Cyan #00BCD4    Dotted        Finding →            Clarifies or
+                                             Proposition          scopes the
+                                                                  proposition
+
+  UPDATES      Lavender        Solid         Bayesian Update →    Posterior
+               #9B89C4                       Bayesian Update      carries forward
+                                             (successive rounds)  round to round
+
+  CONCLUDES    Gold #FFD700    Thick solid   Bayesian Update      Final posterior
+                                             (final round) →      collapses into
+                                             Verdict              verdict
+
+  INTERVENES   White #FFFFFF   Pulsing       ARISTOTLE node →     Orchestrator
+                               dashed        affected node        intervention
+
+7.3  TIERED LAYOUT — THE FIVE-TIER HIERARCHY
+──────────────────────────────────────────────
+
+The DAG uses a strict top-to-bottom layered layout with five tiers,
+matching the reference image's visual structure:
+
+  TIER 1 — PROPOSITION LAYER
+    Single cyan diamond node at the top center.
+    The epistemic anchor of the entire debate graph.
+    Y-position: fixed at top of canvas.
+    X-position: center.
+
+  TIER 2 — SPECIALIST LAYER
+    Blue square nodes spread evenly across Tier 2.
+    X-positions: evenly spaced across the canvas width.
+    Y-position: fixed below Tier 1.
+    Grey dashed ASSIGNED edges connect from Proposition down to each
+    Specialist with a brief draw animation when each agent is activated.
+
+  TIER 3 — EVIDENCE LAYER
+    Green and red circle nodes branch downward from their respective
+    Specialist nodes. Support evidence nodes naturally cluster toward
+    the center-bottom; attack evidence nodes spread to the outer edges.
+    This creates the characteristic diamond/rhombus shape visible in
+    the reference image — the full set of evidence nodes forms a
+    roughly diamond-shaped spread across Tier 3.
+    This tier grows continuously across all debate rounds.
+
+  TIER 4 — REBUTTAL + BAYESIAN UPDATE LAYER
+    Amber triangle nodes (Rebuttals) appear at the level of or slightly
+    below the evidence they target.
+    Lavender hollow circle nodes (Bayesian Updates) appear at the
+    center of Tier 4 after each round completes, connected to all
+    evidence nodes that contributed to that round's posterior update.
+
+  TIER 5 — VERDICT LAYER
+    Single gold star node at the bottom center.
+    Connected from the final Bayesian Update node via a thick gold
+    CONCLUDES edge.
+    Y-position: fixed at bottom of canvas.
+    X-position: center.
+
+  ROUND DIVIDERS
+    A horizontal dashed line is drawn across the full width of the
+    canvas after each round completes, labeled:
+      "Round N complete — Posterior: X.XX"
+    New nodes added in the next round appear below this line.
+    This makes the round-by-round progression visually clear even as
+    the graph grows dense.
+
+7.4  LIVE GROWTH ANIMATION
+────────────────────────────
+
+The DAG does not appear all at once. Each debate event triggers a
+corresponding visual update:
+
+  DEBATE EVENT                   DAG VISUAL UPDATE
+  ─────────────────────────────  ───────────────────────────────────────────
+  Session start                  Cyan Proposition diamond appears at Tier 1.
+                                 Initial prior displayed inside: "54%"
+
+  Specialist instantiated        Blue square appears at Tier 2 with agent
+                                 name label. Grey dashed ASSIGNED edge draws
+                                 from Proposition to this Specialist.
+
+  Support evidence submitted     Green circle appears at Tier 3 below the
+                                 submitting Specialist. Green SUPPORTS edge
+                                 draws from Specialist to circle. EVID-Q
+                                 score appears as a label on the edge.
+
+  Attack evidence submitted      Red circle appears at Tier 3. Red ATTACKS
+                                 edge draws. EVID-Q score labeled on edge.
+
+  Rebuttal filed                 Amber triangle appears at Tier 4 near the
+                                 targeted evidence. Amber REBUTS edge draws
+                                 from triangle to the challenged evidence.
+
+  Bayesian update computed       Lavender hollow circle appears at Tier 4
+                                 center. Thin colored edges draw from all
+                                 contributing evidence nodes to this circle.
+                                 Updated posterior value displayed inside.
+
+  Round complete                 Horizontal round-divider line appears across
+                                 the full canvas: "Round N — Posterior: X.XX"
+
+  ARISTOTLE intervenes           White hexagon ARISTOTLE node appears with
+                                 a white pulsing dashed edge to affected
+                                 node(s). Intervention type as text label.
+                                 Left chat pane simultaneously receives a
+                                 message from ARISTOTLE explaining the
+                                 intervention.
+
+  Jury verdict rendered          Gold star appears at Tier 5. Thick gold
+                                 CONCLUDES edge draws from final Bayesian
+                                 Update to star. Star pulses once and
+                                 settles. Verdict label and confidence %
+                                 displayed inside the star. Status bar
+                                 turns gold.
+
+7.5  INTERACTIVITY
+────────────────────
+
+  - Click any node: opens a detail panel overlaid on the right side of
+    the DAG showing full node data (evidence text, source, EVID-Q,
+    agent, round, confidence weight)
+  - Click any edge: shows edge type, weight, and argument relationship
+  - Hover any node: compact tooltip with the 3-4 most critical fields
+  - Round replay slider: scrub back to any round to see the DAG state
+    at that moment — full replay of epistemic evolution
+  - Filter by node type: toggle visibility of any node type
+    (e.g., hide all Rebuttals to focus on evidence only)
+  - Filter by agent: click a Specialist square to highlight all evidence
+    submitted by that agent across all tiers
+  - Zoom and pan: full mouse/trackpad zoom with reset-to-fit button
+  - Export: PNG, SVG, or JSON (full graph data) export with one click
+
+================================================================================
+8.  ALL VISUALIZATION SUB-PANELS
+================================================================================
+
+The following panels appear in Zone B (bottom row) and Zone C (expandable
+drawer) of the right pane. All share the dark theme (#1A1A2E background).
+
+8.1  BELIEF TRAJECTORY LINE CHART (Zone B, left)
+──────────────────────────────────────────────────
+
+Implementation: plotly.express.line with round number on X-axis and
+Bayesian posterior probability on Y-axis. A shaded confidence band
+(go.Scatter with fill='tonexty') shows the uncertainty interval around
+each posterior. Round annotations mark turning points.
+
+What it shows: The epistemic heartbeat of the debate — how belief in
+each proposition evolves as evidence is submitted and rebuttals are filed.
+Convergence is visible as the line flattens. Evidence events produce
+visible trajectory changes.
+
+Non-technical annotation: Tooltips explain each inflection in plain
+English — "This is where Dr. Osei's cohort study shifted confidence
+from 0.55 to 0.71."
+
+8.2  EVIDENCE QUALITY HEATMAP (Zone B, right)
+──────────────────────────────────────────────
+
+Implementation: plotly.express.imshow. Rows are agents; columns are
+evidence items submitted; cell color represents EVID-Q score
+(yellow=low quality, orange=medium, dark red=high quality).
+
+What it shows: At a glance, which agents are producing high-quality
+evidence and which are producing noise. Rounds producing weak evidence
+across all agents appear as entire yellow columns.
+
+Live update: Each time an agent submits evidence, a new cell appears
+in that agent's row with its EVID-Q color. Agent replacement events
+cause a new row to appear in place of the replaced agent's row.
+
+8.3  ARGUMENT FLOW SANKEY DIAGRAM (Zone C)
+──────────────────────────────────────────
+
+Implementation: go.Sankey. Flows: Proposition → Evidence → Rebuttal →
+Counter-Rebuttal → Finding → Verdict. Flow width represents cumulative
+weight in the C-DAG. Flows reaching the Verdict are gold; flows
+neutralized by rebuttals terminate early.
+
+What it shows: The genealogy of the verdict — which argument threads
+survived all challenges, which were neutralized, and which finding
+nodes have the most argumentative ancestry.
+
+8.4  AGENT INFLUENCE RADAR CHART (Zone C)
+──────────────────────────────────────────
+
+Implementation: go.Scatterpolar. Five axes: Evidence Submitted, Average
+EVID-Q, Rebuttal Success Rate, Rounds Active, Jury Influence Score.
+Each agent gets its own colored polygon trace.
+
+What it shows: The contribution profile of each agent across all debate
+dimensions. A specialist with many low-quality submissions looks very
+different from one with few but decisive high-quality submissions.
+
+8.5  CALIBRATION RELIABILITY DIAGRAM (Zone C)
+──────────────────────────────────────────────
+
+Implementation: go.Bar (confidence bins 0.0-1.0) with go.Scatter
+overlay (observed accuracy per bin from historical sessions).
+Perfect calibration diagonal drawn for reference.
+
+Why this matters: The documented anti-Bayesian confidence escalation
+problem (arXiv:2505.19184, 2025) makes calibration monitoring essential.
+When jury confidence systematically exceeds observed accuracy, the bars
+pull away from the diagonal and ARISTOTLE flags this in the left chat.
+
+8.6  DEBATE TIMELINE EVENT PLOT (Zone C)
+──────────────────────────────────────────
+
+Implementation: Horizontal Gantt-style timeline built with go.Bar.
+Each round is a band; each event is a marker colored by event type.
+ARISTOTLE interventions appear as white markers, visually distinct
+from all normal debate events.
+
+What it shows: The complete chronological narrative of the debate —
+every event in order, with timestamps, agent identifiers, event type,
+and the ARISTOTLE intervention log.
+
+================================================================================
+9.  RESEARCH GAPS — WHAT REMAINS UNSOLVED IN AGENTIC AI
+================================================================================
+
+9.1  STATIC AGENT TOPOLOGIES
+──────────────────────────────
+
+The overwhelming majority of multi-agent systems in 2025 operate with
+pre-defined, fixed organizational structures. LangChain, CrewAI, AutoGen,
+LangGraph, MetaGPT — every major framework requires the developer to
+specify the agent team before execution. The DAI 2025 conference paper
+"Orchestrating Human-AI Teams" explicitly identifies the Autonomous Manager
+Agent as an open research challenge: "task decomposition, dynamic resource
+allocation, and adaptive re-planning remains fundamentally challenging."
+
+ARISTOTLE's topology.py — which constructs the entire agent ecosystem
+dynamically from a single NL query — is a direct answer to this gap.
+
+9.2  ANTI-BAYESIAN CONFIDENCE ESCALATION
+──────────────────────────────────────────
+
+A June 2025 arXiv preprint (arXiv:2505.19184, under review) documented
+a previously undescribed failure mode: in multi-agent debates, LLM agents'
+confidence actively escalates from 72.9% at opening to 83.3% at closing
+rounds — the opposite of rational Bayesian updating. In 61.7% of observed
+debates, both sides simultaneously claimed ≥75% win probability, a
+mathematical impossibility.
+
+ARISTOTLE's Confidence Escalation Guard (in monitor.py) hides agent
+self-confidence from peers, uses external C-DAG Bayesian aggregation
+bypassing agent self-reports, and triggers calibration reset when
+escalation is detected. This directly blocks the documented failure mode.
+
+9.3  THE NL-TO-DEBATE-TOPOLOGY GAP
+────────────────────────────────────
+
+NL2Workflow (NAACL 2025) translates natural language into service
+composition workflows over fixed operator libraries. AFlow (ICLR 2025)
+automates workflow generation via Monte Carlo Tree Search over predefined
+operators. EvoAgentX (EMNLP 2025) evolves agentic workflows. All operate
+over fixed, pre-defined operator libraries.
+
+None perform open-ended debate topology construction — dynamically
+inventing an agent team from scratch with calibrated epistemic priors
+and information-theoretic stopping criteria from a natural language claim.
+This capability is absent from the literature.
+
+9.4  THE ACCESSIBILITY CHASM
+──────────────────────────────
+
+Industry data from 2025 is unambiguous:
+  - Deloitte: 80% of orgs claim mature basic automation; only 28% say
+    the same about agentic AI — a 52-point gap
+  - MindStudio 2026: only 2% of organizations deployed AI agents at scale
+  - Gartner: over 40% of agentic AI projects projected to be cancelled
+    by 2027 — not because models fail, but due to configuration complexity
+  - Konsulteer 2025: half of organizations running fewer than five
+    agentic AI projects total
+
+ARISTOTLE is the first debate AI system designed from the ground up
+for non-technical users.
+
+9.5  ADAPTIVE HETEROGENEOUS TEAM CONSTRUCTION
+───────────────────────────────────────────────
+
+The A-HMAD paper (Springer 2025) confirmed that "existing debate methods
+use homogeneous agents with simple majority voting, limiting their
+effectiveness" and proposed diverse specialized agents. However, A-HMAD
+still requires the researcher to manually define the agent heterogeneity
+schema. topology.py answers the question A-HMAD leaves open: who decides
+what heterogeneity is appropriate, and how is that decision automated?
+
+9.6  LIVE ARGUMENT GRAPH VISUALIZATION
+───────────────────────────────────────
+
+No existing debate AI system provides live, event-by-event visual
+rendering of debate progress as a structured argument DAG. ARGUS's
+existing argus-viz provides excellent post-hoc analysis. AutoGen provides
+text logs. METAL and MDebate output JSON. But the combination of
+autonomous execution with concurrent, live-updating, layered DAG
+visualization — where each argument node triggers immediate graph
+rendering — does not exist in any current system.
+
+9.7  CONVERSATIONAL ORCHESTRATION INTERFACE
+────────────────────────────────────────────
+
+Every current multi-agent framework uses either a code interface (Python
+API) or a static form-based UI for orchestration. No system provides a
+conversational chat interface where the user can interrogate the
+orchestrator, ask it to explain decisions, or request topology adjustments
+in natural language. ARISTOTLE's left chat pane is a first-of-its-kind
+conversational orchestration layer.
+
+9.8  GOVERNANCE OF THE ORCHESTRATOR ITSELF
+──────────────────────────────────────────
+
+The Springer/arXiv survey on agentic AI architecture (January 2026)
+identified a meta-governance gap: "an open problem is how to combine
+coordinated workflow automation with reliable and interpretable
+decision-making, allowing broader autonomy without increasing the risk
+of silent failure." No current orchestration system — not ServiceNow AI
+Control Tower, not AWS Bedrock multi-agent collaboration, not IBM Watsonx
+Orchestrate — provides a decision audit trail for the orchestrator layer
+itself. ARISTOTLE's decision_log.py, which writes ORCHESTRATOR_DECISION
+events to ARGUS's existing ProvenanceLedger, is a first-of-its-kind
+response to this gap.
+
+================================================================================
+10.  NOVEL CONTRIBUTIONS — ARISTOTLE vs. STATE OF THE ART
+================================================================================
+
+  CONTRIBUTION                     FRONTIER                     ARISTOTLE ADVANCE
+  ──────────────────────────────   ─────────────────────────    ─────────────────
+  Dynamic NL-to-topology           NL2Workflow (NAACL 2025)     topology.py
+  translation for adversarial      and AFlow (ICLR 2025)        constructs the
+  debate                           operate over fixed operator  adversarial agent
+                                   libraries; nobody builds     team from scratch,
+                                   agent teams from NL claims   per topic, per query
+
+  Anti-Bayesian confidence         arXiv:2505.19184 (2025)      monitor.py hides
+  drift correction                 identifies escalation as     agent self-confidence,
+                                   open failure mode; no        uses external C-DAG
+                                   existing system addresses    Bayesian aggregation,
+                                   it architecturally           triggers calibration
+                                                                reset on detection
+
+  Full Lifecycle DAG with          No existing debate system    dag_viz.py renders
+  live growth animation            renders argument DAG live    the DAG node-by-node
+                                   during execution; argus-viz  in real time across
+                                   provides excellent post-hoc  all five tiers with
+                                   analysis but not live        full interactivity
+
+  Conversational orchestration     All frameworks use code      Left chat pane: query,
+  interface                        APIs or static form UIs;     refine, monitor, and
+                                   no conversational layer      synthesize — all via
+                                   for orchestration exists     natural language
+
+  Controversy-aware automatic      No existing debate system    framing.py performs
+  prior calibration                sets priors automatically;   n=10 literature probe
+                                   all require manual input     and calibrates prior
+                                                                before debate starts
+
+  Adaptive agent replacement       A-HMAD (Springer 2025) uses  monitor.py monitors
+  mid-debate                       diverse agents but all       per-agent EVID-Q;
+                                   static once debate begins    replaces agents below
+                                                                threshold with briefed
+                                                                backup agents
+
+  ARISTOTLE as package module      External tools and wrappers  argus.aristotle is a
+  inside argus-debate-ai           require separate install,    first-class sub-module:
+                                   config, and maintenance      pip install argus-debate-ai
+                                                                includes ARISTOTLE
+
+  Governance audit trail for       No orchestrator in any       decision_log.py writes
+  orchestrator-level decisions     category provides its own    ORCHESTRATOR_DECISION
+                                   decision audit trail         to ProvenanceLedger;
+                                                                visible in Timeline panel
+
+  Plain-English "What Could        VoI Planner in ARGUS         synthesis.py maps
+  Change This Verdict" section     computes EIG scores but      highest-EIG nodes to
+                                   no system translates EIG     plain-language research
+                                   to a user-readable agenda    agenda in chat
+
+================================================================================
+11.  COMPLETE USER EXPERIENCE WALKTHROUGH
+================================================================================
+
+This walkthrough follows a non-technical user — a journalist investigating
+a scientific controversy — from first interaction to final result. No code.
+No configuration. No prior knowledge of AI systems required.
+
+11.1  OPENING ARISTOTLE
+─────────────────────────
+
+The user opens a browser. The ARGUS × ARISTOTLE Streamlit application
+loads. They see the full split-pane interface immediately:
+
+  Left pane: ARISTOTLE's chat bubble —
+    "Hello. I am ARISTOTLE. I am here to help you find the truth about
+     complex and contested claims. What would you like to know?"
+
+  Right pane: A dark canvas with a single placeholder text —
+    "Your debate visualization will appear here once you ask a question."
+
+  Status bar: "[ ] Ready — ask a question to begin"
+
+11.2  THE QUERY
+────────────────
+
+The user types in the left chat input:
+  "Is social media actually causing the mental health crisis in teenagers,
+   or is that just a moral panic?"
+
+ARISTOTLE's typing indicator (animated "...") appears for 3-4 seconds.
+Then ARISTOTLE responds in the left chat:
+
+  "I have read your question. Here is how I understand it:
+
+   You are asking whether there is a genuine causal relationship between
+   social media use and adolescent mental health deterioration — or whether
+   current public concern exceeds what the evidence actually supports.
+
+   This is a causal claim with embedded methodological skepticism.
+
+   Domain: Adolescent psychology + social epidemiology + causal inference
+   Controversy level: HIGH (0.82) — active scientific debate
+   Evidence landscape: RICH — substantial literature with methodological
+                       disputes
+
+   I scanned 14 relevant studies (2020-2025):
+     7 support a causal link
+     4 challenge it
+     3 find partial support with important moderators
+
+   Starting prior: 0.54 — a slight lean toward support based on the
+   balance of recent literature. Now I am building your debate team."
+
+11.3  THE TOPOLOGY PREVIEW
+────────────────────────────
+
+20-30 seconds later, a formatted Topology Preview Card appears in the
+chat:
+
+  DEBATE TOPOLOGY — ARISTOTLE's Proposed Plan
+  ─────────────────────────────────────────────
+  SPECIALISTS (5):
+    1. Dr. Amara Osei — Longitudinal Cohort Studies [Prior: 0.62]
+       Will focus on large cohort data linking usage patterns to outcomes
+
+    2. Prof. Sarah Chen — Meta-Analysis Methodology [Prior: 0.41]
+       Will scrutinize study designs; primary skeptic of causal claims
+       from observational data
+
+    3. Dr. James Whitfield — Neuropsychology [Prior: 0.65]
+       Will examine neurological mechanisms; argues biological pathway
+       exists
+
+    4. Dr. Leila Farahani — Media Studies, Moral Panic Theory [Prior: 0.35]
+       Will contextualize against historical tech moral panics (TV, video
+       games); primary heterodox voice
+
+    5. Prof. Marcus Trent — Causal Inference Methods [Prior: 0.50]
+       Will focus on instrumental variable approaches; neutral, methods-
+       focused
+
+  REFUTERS: 2 (HIGH intensity — controversy score 0.82 warrants
+  adversarial examination)
+
+  JURY: 5-member Validity-Weighted Jury (contested science domain
+  requires argument quality weighting per Wu et al. 2025)
+
+  ROUNDS: 5 estimated (HIGH controversy + RICH evidence density)
+
+  COST ESTIMATE: ~35,000 tokens | ~90 seconds runtime
+
+  [Launch Debate]    [Adjust This Plan]
+
+11.4  THE LIVE DEBATE — RIGHT PANE NARRATIVE
+──────────────────────────────────────────────
+
+User clicks [Launch Debate]. Status bar immediately updates to:
+  "[●] Round 1 of 5 | Posterior: 54% | Status: DEBATING | Agents: 5 active"
+
+RIGHT PANE — SECONDS 0-5:
+  The Full Lifecycle DAG comes to life. The cyan diamond Proposition node
+  appears at Tier 1, "54%" displayed inside. One by one, five blue square
+  Specialist nodes appear at Tier 2, with grey dashed ASSIGNED edges
+  drawing from the diamond to each square. Agent names appear as labels.
+
+RIGHT PANE — ROUND 1 (approx. seconds 5-25):
+  Dr. Osei submits cohort evidence: green circle appears at Tier 3 below
+  Osei's square. Green SUPPORTS edge labeled "EVID-Q: 0.81" draws in.
+  The Evidence Heatmap at the bottom-left shows a dark red cell for Osei
+  Row 1.
+
+  Prof. Chen submits a methodological critique: red circle appears. Red
+  ATTACKS edge labeled "EVID-Q: 0.44". Heatmap shows a yellow cell —
+  the user can see immediately that Chen's evidence is lower quality.
+
+  Dr. Whitfield submits neuroimaging evidence: green circle, EVID-Q: 0.79.
+  Dr. Farahani submits historical comparison: red circle, EVID-Q: 0.67.
+  Prof. Trent submits instrumental variable analysis: green, EVID-Q: 0.74.
+
+  Bayesian Update: lavender hollow circle appears at Tier 4 center.
+  Thin colored edges draw from all five evidence circles to it.
+  "0.59" appears inside the lavender circle.
+
+  Round divider line appears: "Round 1 complete — Posterior: 0.59"
+  Status bar updates: "Posterior: 59%"
+  Belief Trajectory chart: line ticks upward from 0.54 to 0.59.
+
+  LEFT PANE — ARISTOTLE sends a chat message:
+    "Round 1 complete. Posterior has moved from 0.54 to 0.59.
+     Dr. Osei's UK Millennium Cohort data and Dr. Whitfield's
+     neuroimaging submission were the strongest evidence this round.
+     Prof. Chen's methodological critique was filed but scored lower
+     on evidence quality (EVID-Q: 0.44)."
+
+RIGHT PANE — ROUND 3 (ARISTOTLE INTERVENTION):
+  A white hexagonal ARISTOTLE node appears in the DAG, connected to
+  Prof. Chen's square by a white pulsing dashed edge. The Timeline
+  panel (if expanded) shows: "ARISTOTLE INTERVENTION: Agent Replacement"
+
+  Prof. Chen's blue square dims slightly. A new blue square appears:
+  "Dr. Yuki Tanaka — Systematic Reviews [Prior: 0.42]"
+  Grey ASSIGNED edge draws from Proposition to Tanaka's new square.
+
+  LEFT PANE — ARISTOTLE sends:
+    "I have replaced Prof. Chen with Dr. Yuki Tanaka (Systematic
+     Reviews). Prof. Chen's evidence averaged EVID-Q: 0.41 across
+     two rounds — below the quality threshold. Dr. Tanaka has been
+     briefed on the debate so far and will bring systematic review
+     expertise with a similarly skeptical prior."
+
+RIGHT PANE — ROUND 5 (CONVERGENCE):
+  Final Bayesian Update circle appears: "0.71"
+  The convergence watch fires — posterior has moved less than 0.02
+  for 2 consecutive rounds.
+
+  The gold star Verdict node appears at Tier 5. A thick gold CONCLUDES
+  edge draws slowly from the final Bayesian Update down to the star.
+  The star pulses once. "71% — MODERATE SUPPORT" appears inside.
+
+  Status bar turns gold:
+    "[★] Debate Complete | Final Posterior: 71% | MODERATE EVIDENCE SUPPORTS"
+
+11.5  THE RESULT
+─────────────────
+
+LEFT PANE — ARISTOTLE delivers the complete result:
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  VERDICT: MODERATE EVIDENCE OF CAUSAL CONTRIBUTION
+  Jury Confidence: 71% | Convergence: Round 4
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  [3-5 paragraph plain-English reasoning narrative — no jargon, all
+   claims traceable to C-DAG node IDs in the provenance report]
+
+  MINORITY VIEW (29% of jury weight):
+  Dr. Farahani's moral panic argument was not dismissed — it received
+  significant jury weight. The jury's primary reason for rejecting it
+  as the majority position was the specificity of the current evidence,
+  which differs from earlier tech moral panics in the presence of
+  longitudinal physiological data.
+
+  WHAT COULD CHANGE THIS VERDICT:
+    1. A randomized controlled trial reducing social media access in a
+       large adolescent cohort (highest EIG: 0.23)
+    2. Better differentiation between passive and active social media
+       use in evidence (current studies conflate these)
+    3. Cross-cultural replication outside high-income Western countries
+
+  [Full Provenance Report] [Export as PDF] [Ask a follow-up question]
+
+================================================================================
+12.  KNOWN CHALLENGES AND MITIGATIONS
+================================================================================
+
+  CHALLENGE               SEVERITY   ROOT CAUSE               MITIGATION
+  ─────────────────────   ────────   ──────────────────────   ────────────────
+  Intent Ambiguity        Medium     Vague or multi-part      Max 2 targeted
+                                     queries don't map        clarification
+                                     cleanly to Debate Frame  questions; if
+                                                              framing confidence
+                                                              > 0.75 auto-proceeds
+
+  Anti-Bayesian           High       LLMs escalate self-      Hide agent self-
+  Confidence Escalation              confidence under         confidence from
+                                     opposition (documented,  peers; external
+                                     arXiv 2025)              C-DAG Bayesian
+                                                              aggregation only;
+                                                              calibration reset
+                                                              on detection
+
+  DAG Visual Density      Medium     Long debates with many   Per-round collapse:
+                                     agents produce dense     click to expand/
+                                     graphs                   collapse each round
+                                                              tier; node importance
+                                                              threshold filter;
+                                                              zoom and pan always
+                                                              available
+
+  Streamlit Refresh       Medium     800ms polling cycle is   st.empty() containers
+  Latency                            not true real-time       with Plotly animation
+                                     streaming                frames for smooth
+                                                              node additions;
+                                                              st.spinner for
+                                                              perceived
+                                                              responsiveness
+
+  Topology Overkill       Low-Med    Simple questions get     Complexity gate:
+                                     over-built into full     if score < 0.3,
+                                     debates                  recommend single-
+                                                              agent factual lookup;
+                                                              user must confirm
+                                                              full debate
+
+  Synthesis Hallucination High       Plain-language synthesis synthesis.py
+                                     could misrepresent       receives only
+                                     debate record            structured C-DAG
+                                                              nodes and Provenance
+                                                              Ledger records —
+                                                              never free-form
+                                                              transcripts; all
+                                                              claims must map to
+                                                              a C-DAG node ID
+
+  Compute Cost            Medium     Dynamic topology means   Pre-run estimate
+  Unpredictability                   sessions vary widely     shown in chat;
+                                                              budget cap enforced
+                                                              by monitor.py;
+                                                              per-round cost in
+                                                              status bar
+
+  Governance of           Med-High   ARISTOTLE's structural   decision_log.py
+  ARISTOTLE Itself                   decisions need to be     writes every
+                                     auditable                structural decision
+                                                              with rationale as
+                                                              ORCHESTRATOR_DECISION
+                                                              to ProvenanceLedger;
+                                                              visible in Timeline
+                                                              panel
+
+================================================================================
+13.  IMPLEMENTATION ROADMAP
+================================================================================
+
+  PHASE  NAME                        SCOPE                         DELIVERABLE
+  ─────  ─────────────────────────   ───────────────────────────   ─────────────
+  P1     argus.aristotle Module       Create argus/aristotle/       Module skeleton
+         Skeleton                     directory structure; add      with __init__.py
+                                      CLI entry point               and all module
+                                      "argus aristotle run";        files; CLI works
+                                      wire into pyproject.toml
+
+  P2     Intent & Framing Engine      Build framing.py: domain      DebateFrame JSON
+                                      classification, debate        schema + Framing
+                                      type detection, controversy   prompt template +
+                                      scoring, prior calibration    controversy scorer
+                                      via pre-debate probe          + literature probe
+
+  P3     Dynamic Topology Builder     Build topology.py: specialist TopologySpec
+                                      persona generation, refuter   schema + persona
+                                      config, jury selection,       generation + cost
+                                      round estimation, cost        estimator +
+                                      estimate                      Topology Preview
+                                                                    Card component
+
+  P4     Single-Pane Split UI         Build interface.py:           aristotle_app.py
+         Shell                        split-pane Streamlit layout,  Streamlit app +
+                                      status bar, chat interface,   split layout +
+                                      session state event queue,    event queue +
+                                      800ms refresh cycle,          st.empty() panel
+                                      dark theme CSS                containers
+
+  P5     Full Lifecycle DAG           Build dag_viz.py: all 7       FullLifecycleDAG
+                                      node types, all 8 edge        Plotly figure class
+                                      types, five-tier layout       + layout engine +
+                                      algorithm, live growth        event handler +
+                                      animation, round dividers,    round replay slider
+                                      click-to-expand, round        + export controls
+                                      replay slider, export
+
+  P6     Autonomous Execution         Build monitor.py: all 7       MonitorThread +
+         Monitor                      monitoring mechanisms,        7 intervention
+                                      ORCHESTRATOR_DECISION         handlers +
+                                      event type, agent             decision_log.py +
+                                      replacement, chat             backup_agents.py
+                                      notification system
+
+  P7     Remaining Viz Panels         Build panels.py: Belief       6 Plotly panel
+                                      Trajectory, Evidence          classes + Zone B/C
+                                      Heatmap, Sankey, Radar,       layout assembly
+                                      Calibration, Timeline,        + session state
+                                      Verdict Card                  bindings
+
+  P8     Output Synthesis Engine      Build synthesis.py:           SynthesisEngine +
+                                      verdict formulation,          grounded narrative
+                                      narrative construction,       generation + VoI-
+                                      dissent log, What Could       to-English mapper +
+                                      Change This from VoI EIG,     chat delivery +
+                                      provenance report, PDF        PDF export
+                                      export
+
+  P9     ARISTOTLE Decision Log       Build decision_log.py full    ORCHESTRATOR_
+         + Audit                      schema; query API extension   DECISION schema +
+                                      for ORCHESTRATOR_DECISION     query API endpoint
+                                      events; Timeline panel        + audit export
+                                      integration; expert audit     module
+                                      export
+
+================================================================================
+14.  CLOSING VISION
+================================================================================
+
+The landscape of agentic AI in 2025-2026 is characterized by extraordinary
+capability and extraordinary inaccessibility existing simultaneously in the
+same systems. Gartner predicts that over 40% of agentic AI projects will be
+cancelled by 2027 — not because the models fail, but because organizations
+cannot deploy and govern them at scale. Only 2% of organizations achieved
+scale with AI agents in 2025.
+
+ARGUS is already ahead of this curve in capability. ARISTOTLE — as a module
+inside argus-debate-ai — is how it gets ahead of this curve in accessibility
+and in doing so becomes a genuinely transformative tool rather than an
+impressive but narrow research instrument.
+
+The architectural decisions in this edition are not stylistic choices. Each
+addresses a documented research gap or a confirmed failure mode:
+
+  - The module placement inside argus-debate-ai means ARISTOTLE has zero
+    installation friction — it comes with the package every ARGUS user
+    already has
+
+  - The single split-pane interface means the user never loses sight of
+    the live debate while conversing with ARISTOTLE — the visualization
+    and the conversation are always simultaneously present
+
+  - The Full Lifecycle DAG makes the complete epistemic structure of the
+    debate visible in one unified picture — Proposition at the top,
+    Verdict at the bottom, every argument, challenge, and belief update
+    in between, growing in real time
+
+  - The anti-Bayesian confidence guard addresses a documented failure mode
+    that most existing debate AI systems do not even know they have
+
+  - The ORCHESTRATOR_DECISION audit trail solves the meta-governance
+    problem: the orchestrator that makes consequential decisions is itself
+    governed, logged, and auditable
+
+When a user watches the cyan diamond Proposition node appear, watches
+blue Specialist squares branch outward, watches green and red evidence
+circles populate the middle tiers, watches amber rebuttals challenge the
+strongest claims, watches lavender Bayesian Update circles accumulate the
+weight of evidence round by round — and then watches the gold star Verdict
+fill in at the bottom, pulsing once to signal that structured reasoning has
+reached a conclusion — they are watching something that has never been
+built before.
+
+That is the version of ARGUS worth building. And it begins with:
+
+  pip install argus-debate-ai
+  argus aristotle run
+
+================================================================================
+END OF DOCUMENT
+ARISTOTLE Protocol v4 — argus.aristotle module — Single-Pane Split Interface
+argus-debate-ai v4.0 | March 2026
+================================================================================
