@@ -181,6 +181,7 @@ def _register_default_providers() -> None:
     from argus.core.llm.nvidia import NvidiaLLM
     from argus.core.llm.together import TogetherLLM
     from argus.core.llm.fireworks import FireworksLLM
+    from argus.core.llm.openrouter import OpenRouterLLM
     
     # Cloud providers
     from argus.core.llm.bedrock import BedrockLLM
@@ -219,6 +220,7 @@ def _register_default_providers() -> None:
     LLMRegistry.register("nvidia", NvidiaLLM)
     LLMRegistry.register("together", TogetherLLM)
     LLMRegistry.register("fireworks", FireworksLLM)
+    LLMRegistry.register("openrouter", OpenRouterLLM)
     
     # Register cloud providers
     LLMRegistry.register("bedrock", BedrockLLM)
