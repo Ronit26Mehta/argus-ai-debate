@@ -13,7 +13,7 @@ import os
 import json
 import streamlit as st
 
-# Load .env so GROQ_API_KEY and other keys are available
+# Load .env so GOOGLE_API_KEY and other keys are available
 try:
     from dotenv import load_dotenv
     load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"), override=False)
@@ -102,7 +102,7 @@ def render_sidebar() -> dict:
         provider = st.selectbox(
             "Provider",
             options=providers,
-            index=providers.index("groq") if "groq" in providers else 0,
+            index=providers.index("gemini") if "gemini" in providers else 0,
             help="Select the LLM provider to use for the debate.",
         )
 
