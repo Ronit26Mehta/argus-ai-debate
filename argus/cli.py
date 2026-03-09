@@ -425,7 +425,45 @@ def setup_parser() -> argparse.ArgumentParser:
         default="hierarchical",
         help="Layout for argument flow (default: hierarchical)",
     )
-    
+
+    # =========================================================================
+    # ARISTOTLE command
+    # =========================================================================
+    aristotle_parser = subparsers.add_parser(
+        "aristotle",
+        help="ARISTOTLE — autonomous debate orchestration",
+    )
+    aristotle_sub = aristotle_parser.add_subparsers(dest="aristotle_command")
+
+    # argus aristotle run  →  launch Streamlit interface
+    run_parser = aristotle_sub.add_parser(
+        "run",
+        help="Launch the ARISTOTLE Streamlit interface",
+    )
+    run_parser.add_argument(
+        "--port",
+        type=int,
+        default=8501,
+        help="Streamlit server port (default: 8501)",
+    )
+
+    # argus aristotle query  →  headless single-query mode
+    query_parser = aristotle_sub.add_parser(
+        "query",
+        help="Run a single ARISTOTLE query (headless, no UI)",
+    )
+    query_parser.add_argument(
+        "question",
+        type=str,
+        help="Natural-language question to debate",
+    )
+    query_parser.add_argument(
+        "--output",
+        type=str,
+        default=None,
+        help="Output file for JSON result",
+    )
+
     return parser
 
 
@@ -1212,6 +1250,56 @@ def cmd_visualize(args: argparse.Namespace) -> int:
         return 1
 
 
+def cmd_aristotle(args: argparse.Namespace) -> int:
+    """ARISTOTLE — autonomous debate orchestration."""
+    subcmd = getattr(args, "aristotle_command", None)
+
+    if subcmd == "run":
+        # Launch the Streamlit interface
+        import subprocess
+        interface_path = Path(__file__).parent / "aristotle" / "interface.py"
+        if not interface_path.exists():
+            print("❌ ARISTOTLE interface module not found.")
+            return 1
+        port = getattr(args, "port", 8501)
+        print(f"🏛️  Launching ARISTOTLE on port {port}…")
+        proc = subprocess.run(
+            [
+                sys.executable, "-m", "streamlit", "run",
+                str(interface_path),
+                "--server.port", str(port),
+                "--server.headless", "true",
+            ],
+        )
+        return proc.returncode
+
+    elif subcmd == "query":
+        # Headless single-query mode
+        from argus.aristotle import ARISTOTLE
+        from argus.core.llm import get_llm
+
+        llm = get_llm(
+            provider=getattr(args, "provider", None),
+            model=getattr(args, "model", None),
+        )
+        agent = ARISTOTLE(llm=llm)
+        print(f"🏛️  ARISTOTLE is processing: {args.question[:80]}…")
+        result = agent.run(args.question)
+        print()
+        print(result.chat_card())
+
+        if args.output:
+            output_path = Path(args.output)
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(result.to_dict(), f, indent=2)
+            print(f"\n✅ Result saved to: {output_path}")
+        return 0
+
+    else:
+        print("Usage: argus aristotle {run|query} [options]")
+        return 1
+
+
 def main() -> int:
     """Main CLI entry point."""
     parser = setup_parser()
@@ -1237,6 +1325,7 @@ def main() -> int:
         "cache": cmd_cache,
         "compress": cmd_compress,
         "visualize": cmd_visualize,
+        "aristotle": cmd_aristotle,
     }
     
     if args.command in commands:
