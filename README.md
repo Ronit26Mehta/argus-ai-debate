@@ -6,7 +6,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/3.1.0/)
+[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/4.0.0/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type Checking: mypy](https://img.shields.io/badge/type%20checking-mypy-blue.svg)](https://mypy.readthedocs.io/)
 [![Tools: 50+](https://img.shields.io/badge/tools-50+-green.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#tool-integrations-50)
@@ -32,6 +32,7 @@
 - [Argus Terminal (TUI)](#argus-terminal-tui)
 - [Argus-Viz (Streamlit Sandbox)](#argus-viz-streamlit-sandbox)
 - [CRUX-Viz (CRUX Protocol Sandbox)](#crux-viz-crux-protocol-sandbox)
+- [ARISTOTLE Chat Interface](#aristotle-chat-interface)
 - [CRUX Protocol](#crux-protocol)
 - [Command Line Interface](#command-line-interface)
 - [Configuration](#configuration)
@@ -1899,6 +1900,67 @@ Enable EDR                   — Default On
 
 Auction Timeout (s)          — Default 30
     Maximum time for Challenger Auction bidding window
+```
+
+---
+
+## ARISTOTLE Chat Interface
+
+**ARISTOTLE** (Autonomous Reasoning Intelligence for Structured Topic-Orchestrated Logical Engagement) is a five-layer meta-orchestration module that transforms a single natural-language question into a fully autonomous, visualised, auditable multi-agent debate — all from a WhatsApp-style chat interface.
+
+### Launch
+
+```bash
+# One-command launch (after pip install)
+aristotle-chat
+
+# Or via the ARGUS CLI
+argus aristotle run
+
+# Or directly with Streamlit
+streamlit run argus/aristotle/interface.py
+```
+
+### Install Dependencies
+
+```bash
+pip install "argus-debate-ai[aristotle]"
+```
+
+### Architecture Layers
+
+| Layer | Module | Role |
+|-------|--------|------|
+| **L1** | `framing.py` | Intent Parsing & Framing Engine — classifies debate type, extracts sub-claims |
+| **L2** | `topology.py` | Dynamic Topology Builder — selects specialist agents, jury architecture, refuter intensity |
+| **L3** | `monitor.py` | Autonomous Execution Engine — drives ARGUS rounds, enforces budgets, logs decisions |
+| **L4** | `interface.py` | Single-Pane Split Streamlit UI with live DAG, belief trajectory, and evidence heatmap |
+| **L5** | `synthesis.py` | Plain-Language Output Synthesis — verdict narrative, dissent log, "What Could Change This" |
+
+### UI Layout
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│  Status Bar (full width)                                         │
+├────────────────────┬─────────────────────────────────────────────┤
+│  LEFT  (38%)       │  RIGHT (62%)                                │
+│  ARISTOTLE chat    │  Zone A: Full Lifecycle DAG (55%)           │
+│                    │  Zone B: Belief + Heatmap (35%)             │
+│  [input box]       │  Zone C: Expander (more panels)            │
+└────────────────────┴─────────────────────────────────────────────┘
+```
+
+### Programmatic Usage
+
+```python
+from argus.aristotle import ARISTOTLE
+from argus.core.llm import get_llm
+
+agent = ARISTOTLE(llm=get_llm("openai", model="gpt-4o"))
+result = agent.run("Is social media causing the mental health crisis?")
+
+print(result.verdict_narrative)
+print(result.dissent_log)
 ```
 
 ---
