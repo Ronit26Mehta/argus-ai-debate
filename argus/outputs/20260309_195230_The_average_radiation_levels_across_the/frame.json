@@ -1,0 +1,47 @@
+{
+  "id": "df-b8743a2d32ab",
+  "raw_query": "can chernobyl be  free from radiation by 2050?",
+  "primary_domain": "Environmental Science",
+  "secondary_domains": [
+    "Nuclear Physics",
+    "Public Health",
+    "Engineering"
+  ],
+  "debate_type": "predictive",
+  "controversy_score": 0.41,
+  "evidence_density": "moderate",
+  "evidence_density_score": 0.6,
+  "stance_positions": [
+    {
+      "label": "Achievable",
+      "description": "Technological advancements and natural decay will significantly reduce radiation levels, making the area safe for limited access by 2050.",
+      "estimated_support": 0.3
+    },
+    {
+      "label": "Unachievable",
+      "description": "Complete elimination of radiation is impossible due to the presence of long-lived isotopes and the scale of contamination, making the area unsafe by 2050.",
+      "estimated_support": 0.7
+    }
+  ],
+  "sub_claims": [
+    {
+      "id": "sc-4a2177463086",
+      "text": "Radiation levels in Chernobyl are decreasing over time.",
+      "is_primary": false
+    },
+    {
+      "id": "sc-8543c041ad83",
+      "text": "Current decontamination technologies are effective in reducing radiation levels.",
+      "is_primary": false
+    },
+    {
+      "id": "sc-591a24cc8379",
+      "text": "Chernobyl will be free from dangerous levels of radiation by 2050.",
+      "is_primary": true
+    }
+  ],
+  "primary_proposition": "The average radiation levels across the Chernobyl Exclusion Zone will be below internationally recognized safe limits for human habitation by the year 2050.",
+  "prior_probability": 0.52,
+  "framing_narrative": "The user is asking whether the Chernobyl Exclusion Zone can be decontaminated to safe radiation levels by 2050. This involves predicting the effectiveness of current and future decontamination efforts, as well as the natural decay of radioactive materials. The debate centers on whether complete or near-complete decontamination is realistically achievable given the scale of the disaster and the persistence of certain isotopes. Success is defined by meeting internationally recognized safety standards for human habitation.",
+  "created_at": "2026-03-09T14:18:17.958387+00:00"
+}
