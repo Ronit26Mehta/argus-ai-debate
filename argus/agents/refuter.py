@@ -333,10 +333,44 @@ Return JSON:
 
     @staticmethod
     def _strip_json(text: str) -> str:
-        """Strip markdown code fences from LLM JSON responses."""
-        # Remove ```json ... ``` or ``` ... ``` wrappers
+        """Robustly extract JSON from markdown-fenced or prefixed LLM output."""
         text = text.strip()
+
+        # 1. Complete fences:  ```json ... ```  or  ``` ... ```
         match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
         if match:
             return match.group(1).strip()
+
+        # 2. Opening fence with NO closing fence (truncated response)
+        match = re.search(r"```(?:json)?\s*([\s\S]+)", text)
+        if match:
+            candidate = match.group(1).strip()
+            # Try to repair truncated JSON
+            candidate = Refuter._try_repair_json(candidate)
+            return candidate
+
+        # 3. No fences — look for the first '{' to the last '}'
+        first = text.find("{")
+        last = text.rfind("}")
+        if first != -1 and last > first:
+            return text[first : last + 1]
+
+        # 4. No closing brace — truncated without fences
+        if first != -1:
+            return Refuter._try_repair_json(text[first:])
+
         return text
+
+    @staticmethod
+    def _try_repair_json(candidate: str) -> str:
+        """Attempt to close truncated JSON so it becomes parseable."""
+        # Count open/close braces and brackets
+        opens_b = candidate.count("{")
+        closes_b = candidate.count("}")
+        opens_sq = candidate.count("[")
+        closes_sq = candidate.count("]")
+
+        # Append missing closers
+        candidate += "]" * (opens_sq - closes_sq)
+        candidate += "}" * (opens_b - closes_b)
+        return candidate
