@@ -45,6 +45,7 @@ from argus.core.llm.perplexity import PerplexityLLM
 from argus.core.llm.nvidia import NvidiaLLM
 from argus.core.llm.together import TogetherLLM
 from argus.core.llm.fireworks import FireworksLLM
+from argus.core.llm.openrouter import OpenRouterLLM
 
 # Cloud providers
 from argus.core.llm.bedrock import BedrockLLM
@@ -95,6 +96,7 @@ __all__ = [
     "NvidiaLLM",
     "TogetherLLM",
     "FireworksLLM",
+    "OpenRouterLLM",
     # Cloud
     "BedrockLLM",
     "AzureOpenAILLM",
