@@ -1,0 +1,1168 @@
+{
+  "proposition_id": "prop_5e704c0df95d",
+  "proposition_text": "The average radiation levels across the Chernobyl Exclusion Zone will be below internationally recognized safe limits for human habitation by the year 2050.",
+  "verdict": {
+    "proposition_id": "prop_5e704c0df95d",
+    "posterior": 0.9608945682990296,
+    "label": "supported",
+    "confidence": 0.9608945682990296,
+    "reasoning": "```json\n{\n    \"verdict\": \"SUPPORTED\",\n    \"confidence\": 0.95,\n    \"key_support\": [\"Radiological remediation strategies are effective in reducing environmental radiation levels.\", \"Natural decay of Cesium-137 contributes significantly to reduced radiation.\"],\n    \"key_attack\": [\"Persistence of certain contaminants and heterogeneity in contamination levels pose challenges.\"],\n    \"reasoning\": \"The evidence strongly suggests that remediation strategies and natural decay processes, particularly of Cesium-137, will significantly reduce radiation levels in the Chernobyl Exclusion Zone. While some areas may still exhibit heterogeneous contamination and certain contaminants persist, modeling projections indicate that the average radiation levels will likely fall below internationally recognized safe limits for human habitation by 2050. The weight of evidence favors the proposition.\"\n}\n```"
+  },
+  "final_posterior": 0.9608945682990296,
+  "num_rounds": 3,
+  "num_evidence": 27,
+  "num_rebuttals": 18,
+  "graph": {
+    "nodes": [
+      {
+        "id": "prop_5e704c0df95d",
+        "text": "The average radiation levels across the Chernobyl Exclusion Zone will be below internationally recognized safe limits for human habitation by the year 2050.",
+        "type": "proposition",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": null,
+        "target_id": "",
+        "strength": 0.0,
+        "prior": 0.52,
+        "posterior": 0.9608945682990296
+      },
+      {
+        "id": "evid_27c96533604d",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Cesium-137 modeling predicting agricultural suitability in parts of the CEZ.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_0d219560b2a6",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] General statement about natural processes reducing contamination.",
+        "type": "evidence",
+        "confidence": 0.6,
+        "quality": 0.6,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_cc1213242378",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Radionuclide migration can cause localized increases in contamination.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_03f833b3375a",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Modeling projections of radiation levels based on current remediation efforts and radioactive decay rates.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_5700d003dde8",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Empirical data on natural attenuation processes within the Chernobyl Exclusion Zone.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_44ad49d1f97c",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Assessment of persistent contamination hotspots and long-lived radionuclides.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_6d4c8524bfe5",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Ecological succession in the Chernobyl Exclusion Zone is leading to reduced radionuclide bioavailability over time.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_1c3b62fd06dc",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Natural attenuation processes, including radioactive decay and vertical migration of radionuclides, are contributing to a decrease in surface contamination levels.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_7a5baab64b28",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] While some areas within the Chernobyl Exclusion Zone will remain contaminated, the overall average radiation levels are expected to decrease significantly by 2050.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_3edb7c6b780b",
+        "text": "While the model predicts agricultural suitability in *parts* of the CEZ, it doesn't guarantee that the *average* radiation levels across the *entire* zone will be below safe limits for human habitation by 2050. The model's scope might be limited to specific areas, and the overall average could still exceed safe thresholds due to persistent hotspots.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_27c96533604d",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_6857ceb21edf",
+        "text": "A general statement about natural processes reducing contamination is insufficient to prove the proposition. It doesn't quantify the rate of reduction or guarantee that it will be fast enough to meet safe limits by 2050, especially considering the initial high levels of contamination and the long half-lives of some radionuclides.",
+        "type": "rebuttal",
+        "confidence": 0.9,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_0d219560b2a6",
+        "strength": 0.9
+      },
+      {
+        "id": "rebt_fee5e6c80c10",
+        "text": "Modeling projections are only as good as the assumptions and data they are based on. These models may not accurately capture all the complex factors influencing radiation levels, such as unforeseen environmental changes, variations in radionuclide migration, or the long-term effectiveness of remediation efforts. The accuracy of the model needs to be critically evaluated.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_03f833b3375a",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_09f4bb81fc07",
+        "text": "The evidence acknowledges that some areas within the Chernobyl Exclusion Zone will remain contaminated beyond 2050. This weakens the claim that *average* levels will be below safe limits, as highly contaminated areas will skew the average, and safe limits are not universal but location dependent.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_7a5baab64b28",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_6fe4d124decd",
+        "text": "The evidence states radionuclide migration can cause localized increases in contamination. This suggests that even with a general trend of decreasing radiation, certain areas could experience increases, potentially exceeding safe limits, thus impacting the 'average' radiation level across the zone and its habitability.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_cc1213242378",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_86e8e120870c",
+        "text": "Modeling projections are inherently limited by the assumptions and data used to create them. The accuracy of these projections is dependent on a comprehensive understanding of all relevant factors influencing radiation levels, including unforeseen environmental changes, technological advancements in remediation, and the long-term behavior of radionuclides. Without details of the model's validation and sensitivity analysis, the projections should be interpreted cautiously.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_03f833b3375a",
+        "strength": 0.6
+      },
+      {
+        "id": "evid_8f1ee1696813",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Radioactive decay rate of key contaminants, specifically radiocesium (Cs-137).",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_80dd02ebc021",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Environmental transport and deposition models of radionuclides within the CEZ.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_5b75e72de704",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Long-term ecological studies on radionuclide uptake in plants and animals in the CEZ.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_251379ed58e2",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Significant reductions in radionuclide concentrations have been observed in soil and water within the Chernobyl Exclusion Zone since the accident.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_78f7d6fb2928",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Ongoing and planned remediation efforts, such as forest management and soil stabilization, contribute to lowering radiation exposure pathways.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_16d23588f933",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] While overall radiation levels are decreasing, localized areas with high contamination ('hotspots') may persist beyond 2050.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b71672e9dc0f",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Ecological succession is leading to a redistribution of radionuclides, with some areas experiencing decreased surface contamination due to vegetation uptake and soil stabilization.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3e40f5fcd485",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Natural attenuation processes, such as radioactive decay and vertical migration of radionuclides in the soil, are contributing to a reduction in radiation levels.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_61bfa4bb1816",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] While some areas within the CEZ may reach safe levels by 2050, significant heterogeneity in contamination levels persists, meaning some hotspots will remain above safe limits.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_a943e8003d42",
+        "text": "While Cesium-137 modeling predicts agricultural suitability in *parts* of the CEZ, this doesn't guarantee that the *average* radiation level across the *entire* CEZ will be below safe limits by 2050. Agricultural suitability in some areas does not equate to overall safety for human habitation across the entire zone.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_27c96533604d",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_18679c94b3c9",
+        "text": "A general statement about natural processes reducing contamination is insufficient to support the proposition. It lacks specifics regarding the rate of reduction, the final levels of contamination, and the spatial distribution of remaining contamination. 'Natural processes' is vague and doesn't guarantee the levels will be below *internationally recognized safe limits* by 2050.",
+        "type": "rebuttal",
+        "confidence": 0.9,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_0d219560b2a6",
+        "strength": 0.9
+      },
+      {
+        "id": "rebt_fc23793c6272",
+        "text": "Modeling projections of radiation levels based on current remediation efforts are only as reliable as the models themselves. The models likely rely on assumptions about the effectiveness of remediation, the long-term behavior of radionuclides, and future environmental conditions. These assumptions may not hold true, leading to inaccurate projections.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_03f833b3375a",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_644c657eb8ef",
+        "text": "While Cesium-137 modeling may predict agricultural suitability in *parts* of the CEZ, this does not guarantee that the *average* radiation levels across the *entire* Exclusion Zone will be below safe limits for human habitation by 2050. Agricultural suitability in some areas does not equate to overall safety for habitation across the whole zone.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_27c96533604d",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_d6144ceb5545",
+        "text": "A general statement about natural processes reducing contamination is insufficient to support the claim that *average* radiation levels will be *below internationally recognized safe limits* by 2050. The rate of reduction and the specific safe limits need to be quantified and compared.",
+        "type": "rebuttal",
+        "confidence": 0.9,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_0d219560b2a6",
+        "strength": 0.9
+      },
+      {
+        "id": "rebt_4de5b8770fca",
+        "text": "Modeling projections of radiation levels are inherently uncertain and depend on the accuracy of the model's parameters and assumptions. The evidence doesn't provide information about the model's validation, uncertainty quantification, or sensitivity to different input parameters. Without this information, the reliability of the projections is questionable.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_03f833b3375a",
+        "strength": 0.7
+      },
+      {
+        "id": "evid_c9693daf378e",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Some areas within the Chernobyl Exclusion Zone are projected to have radiation levels low enough for human habitation by 2050, but this is not a blanket statement for the entire zone.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_bd381aa252b9",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Modeling of cesium-137 transport and deposition suggests a significant reduction in surface contamination over time due to radioactive decay and environmental processes.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_f2e0b86a9fca",
+        "text": "[Long-term radiological contamination transport and deposition modeling in the Chernobyl Exclusion Zone.] Heterogeneity in contamination levels across the Exclusion Zone makes it difficult to provide a single average radiation level and predict when the entire zone will be safe.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_2a5a2ce6b33e",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Significant areas within the Chernobyl Exclusion Zone are projected to be safe for agriculture and forestry by 2050 due to natural decay and ongoing remediation efforts.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_57121595aca0",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Natural decay of Cesium-137 and Strontium-90, the primary long-lived radioactive contaminants, is a major factor contributing to the reduction of radiation levels in the Chernobyl Exclusion Zone.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_6d1105a5dff5",
+        "text": "[Radiological remediation strategies and their effectiveness in reducing environmental radiation levels in contaminated areas.] Heterogeneity in contamination levels across the Chernobyl Exclusion Zone means that while some areas may be safe for habitation by 2050, others will remain significantly contaminated.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_c48d9e52f7b1",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Ecological succession is leading to the redistribution and sequestration of radionuclides in biomass and soil, reducing surface contamination and air dispersal.",
+        "type": "evidence",
+        "confidence": 0.75,
+        "quality": 0.75,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_af9f2ee05060",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] Natural attenuation processes, such as radioactive decay and vertical migration of radionuclides in the soil profile, are contributing to a reduction in surface radiation levels.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b5b7cbf06a63",
+        "text": "[The impact of ecological succession and natural attenuation processes on radionuclide distribution within the Chernobyl Exclusion Zone.] While some areas will remain highly contaminated, the overall average radiation levels are projected to decrease significantly due to the combined effects of ecological succession and natural attenuation.",
+        "type": "evidence",
+        "confidence": 0.65,
+        "quality": 0.65,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_f217870ad15d",
+        "text": "The evidence acknowledges that some areas within the Chernobyl Exclusion Zone will remain highly contaminated. This weakens the claim that the *average* radiation levels will be below safe limits, as these highly contaminated areas will skew the average upwards, potentially preventing the overall average from reaching safe levels by 2050. The proposition hinges on the definition of 'average' and the size and radiation levels of these remaining contaminated zones.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_7a5baab64b28",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_351dbdce2b80",
+        "text": "While this evidence states that the overall trend is downward, the proposition concerns a specific future state (below safe limits by 2050). The evidence doesn't guarantee that the 'overall' decrease will be sufficient to bring the average below the safe threshold, especially considering the variability highlighted by attacking evidence. The word 'overall' is vague and lacks precise quantitative support for the proposition.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_b5b7cbf06a63",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_1aeae5594c2d",
+        "text": "The modeling focuses on Cesium-137 and agricultural suitability. While this is a key contaminant, the proposition refers to *average radiation levels*, implying consideration of all relevant radionuclides. Furthermore, agricultural suitability does not necessarily equate to safe levels for human habitation, which involves more stringent criteria.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_27c96533604d",
+        "strength": 0.6
+      },
+      {
+        "id": "rebt_966108eabefc",
+        "text": "The evidence acknowledges that 'some areas within the Chernobyl Exclusion Zone will remain highly contaminated' even by 2050. The proposition states that *average* radiation levels will be below safe limits. This statement implicitly concedes that the proposition might be true only in a statistical sense while significant areas remain uninhabitable. This limits the practical applicability of the claim.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_7a5baab64b28",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_b33f510afee5",
+        "text": "While the evidence states 'the overall risk may be significantly reduced,' this does not guarantee that average radiation levels will be below internationally recognized *safe limits*. 'Significantly reduced' is a vague term and does not provide a quantitative threshold that can be compared to established safety standards.",
+        "type": "rebuttal",
+        "confidence": 0.7,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_b5b7cbf06a63",
+        "strength": 0.7
+      },
+      {
+        "id": "rebt_7a59f21452c5",
+        "text": "The evidence relies on modeling of Cesium-137 transport and deposition. Models are simplifications of reality and are subject to uncertainties related to input parameters, model structure, and unforeseen events. The accuracy of the model's prediction for 2050 depends heavily on the validity of these assumptions, which may not hold true over such a long timeframe.",
+        "type": "rebuttal",
+        "confidence": 0.6,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_27c96533604d",
+        "strength": 0.6
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_c897f96a78ce",
+        "source": "evid_27c96533604d",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_73221d22e5e8",
+        "source": "evid_0d219560b2a6",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_c145649173f2",
+        "source": "evid_cc1213242378",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_56a89d70ec9d",
+        "source": "evid_03f833b3375a",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_aef34d70b95a",
+        "source": "evid_5700d003dde8",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_68af36e0025b",
+        "source": "evid_44ad49d1f97c",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_d1dbab531e50",
+        "source": "evid_6d4c8524bfe5",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_db161cd91f4e",
+        "source": "evid_1c3b62fd06dc",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_26ca1dd295df",
+        "source": "evid_7a5baab64b28",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_bb7006e64a2b",
+        "source": "rebt_3edb7c6b780b",
+        "target": "evid_27c96533604d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_5a6244bd41a2",
+        "source": "rebt_6857ceb21edf",
+        "target": "evid_0d219560b2a6",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_ce2d3cc25b25",
+        "source": "rebt_fee5e6c80c10",
+        "target": "evid_03f833b3375a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_203c4e246ddd",
+        "source": "rebt_09f4bb81fc07",
+        "target": "evid_7a5baab64b28",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_b0c084bb75c3",
+        "source": "rebt_6fe4d124decd",
+        "target": "evid_cc1213242378",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_4052d36fb31d",
+        "source": "rebt_86e8e120870c",
+        "target": "evid_03f833b3375a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_bf1bea23ca0b",
+        "source": "evid_8f1ee1696813",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_b9254184d02f",
+        "source": "evid_80dd02ebc021",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_0dbfff051d45",
+        "source": "evid_5b75e72de704",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_74c10d82a144",
+        "source": "evid_251379ed58e2",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ac65ef8f70bd",
+        "source": "evid_78f7d6fb2928",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_41096f7afa03",
+        "source": "evid_16d23588f933",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_632f595489bf",
+        "source": "evid_b71672e9dc0f",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_82fdbfb76fd7",
+        "source": "evid_3e40f5fcd485",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_6141272d915e",
+        "source": "evid_61bfa4bb1816",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_36db0c67a4e6",
+        "source": "rebt_a943e8003d42",
+        "target": "evid_27c96533604d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_e242e2b22ac2",
+        "source": "rebt_18679c94b3c9",
+        "target": "evid_0d219560b2a6",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_8fb9eafdb2f1",
+        "source": "rebt_fc23793c6272",
+        "target": "evid_03f833b3375a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_61a94bc5fa16",
+        "source": "rebt_644c657eb8ef",
+        "target": "evid_27c96533604d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_f6ffb61fd2e9",
+        "source": "rebt_d6144ceb5545",
+        "target": "evid_0d219560b2a6",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_a9a9c7205dd9",
+        "source": "rebt_4de5b8770fca",
+        "target": "evid_03f833b3375a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_b90a66357230",
+        "source": "evid_c9693daf378e",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_dbdd5d5095bd",
+        "source": "evid_bd381aa252b9",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_d0be656c1fae",
+        "source": "evid_f2e0b86a9fca",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_3334bfe8fd0a",
+        "source": "evid_2a5a2ce6b33e",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_3bce569c92f7",
+        "source": "evid_57121595aca0",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_610bda848038",
+        "source": "evid_6d1105a5dff5",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_d58c23d2c3a7",
+        "source": "evid_c48d9e52f7b1",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_753d4b1b09ae",
+        "source": "evid_af9f2ee05060",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_1c6174de7bb0",
+        "source": "evid_b5b7cbf06a63",
+        "target": "prop_5e704c0df95d",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_63ddba7bb9fa",
+        "source": "rebt_f217870ad15d",
+        "target": "evid_7a5baab64b28",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_3eb165e07f8e",
+        "source": "rebt_351dbdce2b80",
+        "target": "evid_b5b7cbf06a63",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_3af6a1f6b3e5",
+        "source": "rebt_1aeae5594c2d",
+        "target": "evid_27c96533604d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_98ab1b658032",
+        "source": "rebt_966108eabefc",
+        "target": "evid_7a5baab64b28",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_5330a1b9e10e",
+        "source": "rebt_b33f510afee5",
+        "target": "evid_b5b7cbf06a63",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_90a8bb9c5091",
+        "source": "rebt_7a59f21452c5",
+        "target": "evid_27c96533604d",
+        "edge_type": "EdgeType.REBUTS"
+      }
+    ]
+  },
+  "posteriors": [
+    0.52,
+    0.9069063065945164,
+    0.6898586931647234,
+    0.9608945682990296
+  ],
+  "converged_at": null,
+  "total_tokens_used": 37500,
+  "decisions": [
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.12. Issuing refocus directive.",
+      "round_num": 1,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:19:49.305456+00:00",
+      "metadata": {
+        "similarity": 0.11627906976744186
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.12. Issuing refocus directive.",
+      "round_num": 2,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:21:04.262827+00:00",
+      "metadata": {
+        "similarity": 0.125
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.08. Issuing refocus directive.",
+      "round_num": 3,
+      "affected_agents": [],
+      "timestamp": "2026-03-09T14:22:16.757233+00:00",
+      "metadata": {
+        "similarity": 0.08333333333333333
+      }
+    }
+  ],
+  "evidence_log": [
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_27c96533604d"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.6,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_0d219560b2a6"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.7,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_cc1213242378"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_03f833b3375a"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_5700d003dde8"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_44ad49d1f97c"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.75,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_6d4c8524bfe5"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_1c3b62fd06dc"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.65,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_7a5baab64b28"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_8f1ee1696813"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_80dd02ebc021"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.7,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_5b75e72de704"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_251379ed58e2"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.75,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_78f7d6fb2928"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_16d23588f933"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.75,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_b71672e9dc0f"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_3e40f5fcd485"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_61bfa4bb1816"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.75,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_c9693daf378e"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_bd381aa252b9"
+    },
+    {
+      "agent_id": "ag-0e09a7a352e8",
+      "agent_name": "Dr. Inessa Kovalchuk",
+      "evid_q": 0.9,
+      "round": 3,
+      "polarity": -1,
+      "node_id": "evid_f2e0b86a9fca"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.75,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_2a5a2ce6b33e"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.9,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_57121595aca0"
+    },
+    {
+      "agent_id": "ag-b853412206a0",
+      "agent_name": "Professor Kenji Tanaka",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": -1,
+      "node_id": "evid_6d1105a5dff5"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.75,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_c48d9e52f7b1"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.8,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_af9f2ee05060"
+    },
+    {
+      "agent_id": "ag-e5d23c7ad199",
+      "agent_name": "Dr. Elena Volkov",
+      "evid_q": 0.65,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_b5b7cbf06a63"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "posterior": 0.52
+    },
+    {
+      "round": 1,
+      "posterior": 0.9069063065945164
+    },
+    {
+      "round": 2,
+      "posterior": 0.6898586931647234
+    },
+    {
+      "round": 3,
+      "posterior": 0.9608945682990296
+    }
+  ],
+  "duration_seconds": 0.0
+}
