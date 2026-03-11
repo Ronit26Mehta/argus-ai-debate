@@ -20,6 +20,11 @@ import logging
 import re
 from typing import TYPE_CHECKING, Any
 
+from argus.core.json_repair import (
+    extract_json_object as _extract_json,
+    repair_json as _try_repair_json,
+)
+
 from argus.aristotle.models import (
     DebateFrame,
     DebateType,
@@ -108,21 +113,6 @@ Claim: {proposition}
   "direction_confidence": <float 0-1 — how confident the literature leans one way>
 }}
 """
-
-
-def _extract_json(text: str) -> dict[str, Any]:
-    """Robustly extract JSON from LLM output (strips markdown fences)."""
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text)
-        text = re.sub(r"\s*```$", "", text)
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        match = re.search(r"\{[\s\S]*\}", text)
-        if match:
-            return json.loads(match.group())
-        raise
 
 
 # ── Controversy scorer ─────────────────────────────────────────────────
@@ -283,12 +273,15 @@ class FramingEngine:
             prompt=f"User question:\n{query}",
             system_prompt=_FRAMING_SYSTEM_PROMPT,
             temperature=0.3,
-            max_tokens=2048,
+            max_tokens=16384,
         )
+        logger.debug("Framing raw LLM response (%d chars): %.500s",
+                     len(response.content), response.content)
         try:
             return _extract_json(response.content)
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Failed to parse framing JSON; using defaults")
+        except (json.JSONDecodeError, ValueError, TypeError) as exc:
+            logger.warning("Failed to parse framing JSON; using defaults — %s", exc)
+            logger.info("Framing raw content was: %.800s", response.content)
             return {
                 "primary_domain": "general",
                 "secondary_domains": [],
@@ -312,8 +305,10 @@ class FramingEngine:
             prompt=prompt,
             system_prompt="You are a research literature scanner.",
             temperature=0.2,
-            max_tokens=1024,
+            max_tokens=16384,
         )
+        logger.debug("Literature probe raw LLM response (%d chars): %.500s",
+                     len(response.content), response.content)
         try:
             data = _extract_json(response.content)
             return LiteratureProbe(
@@ -323,8 +318,9 @@ class FramingEngine:
                 total_scanned=int(data.get("total_scanned", 0)),
                 summaries=data.get("summaries", []),
             )
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Literature probe parse failed; using defaults")
+        except (json.JSONDecodeError, ValueError, TypeError) as exc:
+            logger.warning("Literature probe parse failed; using defaults — %s", exc)
+            logger.info("Literature probe raw content was: %.800s", response.content)
             return LiteratureProbe()
 
     @staticmethod
