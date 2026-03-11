@@ -62,7 +62,7 @@ class OpenAILLM(BaseLLM):
         model: str = "gpt-4",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         organization: Optional[str] = None,
         base_url: Optional[str] = None,
         timeout: float = 60.0,
