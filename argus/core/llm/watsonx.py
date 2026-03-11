@@ -36,7 +36,7 @@ class WatsonxLLM(BaseLLM):
         model: str = "ibm/granite-3-8b-instruct",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         project_id: Optional[str] = None,
         url: str = "https://us-south.ml.cloud.ibm.com",
         **kwargs: Any,
