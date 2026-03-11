@@ -60,7 +60,7 @@ class OllamaLLM(BaseLLM):
         model: str = "llama3.2",
         host: str = "http://localhost:11434",
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         timeout: float = 120.0,
         **kwargs: Any,
     ):
