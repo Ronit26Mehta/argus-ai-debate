@@ -31,7 +31,7 @@ class DatabricksLLM(BaseLLM):
         model: str = "databricks-dbrx-instruct",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         host: Optional[str] = None,
         **kwargs: Any,
     ):
