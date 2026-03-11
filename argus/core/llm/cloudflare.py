@@ -37,7 +37,7 @@ class CloudflareLLM(BaseLLM):
         model: str = "@cf/meta/llama-3.1-70b-instruct",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         account_id: Optional[str] = None,
         **kwargs: Any,
     ):
