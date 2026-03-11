@@ -31,7 +31,7 @@ class LlamaCppLLM(BaseLLM):
         model: str = "llama",  # Display name
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         model_path: Optional[str] = None,
         n_ctx: int = 4096,
         n_gpu_layers: int = -1,  # -1 = all layers on GPU
