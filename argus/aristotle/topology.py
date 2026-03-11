@@ -16,6 +16,11 @@ import logging
 import re
 from typing import TYPE_CHECKING, Any
 
+from argus.core.json_repair import (
+    extract_json_array as _extract_json_array,
+    repair_json as _try_repair_json,
+)
+
 from argus.aristotle.models import (
     AgentSpec,
     DebateFrame,
@@ -181,24 +186,6 @@ Output ONLY valid JSON array.
 """
 
 
-def _extract_json_array(text: str) -> list[dict[str, Any]]:
-    """Extract a JSON array from LLM output."""
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text)
-        text = re.sub(r"\s*```$", "", text)
-    try:
-        result = json.loads(text)
-        if isinstance(result, list):
-            return result
-        return [result]
-    except json.JSONDecodeError:
-        match = re.search(r"\[[\s\S]*\]", text)
-        if match:
-            return json.loads(match.group())
-        raise
-
-
 # ── Builder ────────────────────────────────────────────────────────────
 
 class TopologyBuilder:
@@ -292,12 +279,15 @@ class TopologyBuilder:
         system = _PERSONA_SYSTEM.format(count=count)
         response = self.llm.generate(
             prompt=prompt, system_prompt=system,
-            temperature=0.5, max_tokens=2048,
+            temperature=0.5, max_tokens=16384,
         )
+        logger.debug("Specialist persona raw LLM response (%d chars): %.500s",
+                     len(response.content), response.content)
         try:
             raw = _extract_json_array(response.content)
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Specialist persona parse failed; generating defaults")
+        except (json.JSONDecodeError, ValueError, TypeError) as exc:
+            logger.warning("Specialist persona parse failed; generating defaults — %s", exc)
+            logger.info("Specialist persona raw content was: %.800s", response.content)
             raw = self._default_specialists(frame, count)
 
         agents: list[AgentSpec] = []
@@ -342,12 +332,15 @@ class TopologyBuilder:
         system = _REFUTER_SYSTEM.format(count=count, intensity=intensity.value)
         response = self.llm.generate(
             prompt=prompt, system_prompt=system,
-            temperature=0.5, max_tokens=1024,
+            temperature=0.5, max_tokens=16384,
         )
+        logger.debug("Refuter persona raw LLM response (%d chars): %.500s",
+                     len(response.content), response.content)
         try:
             raw = _extract_json_array(response.content)
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Refuter persona parse failed; generating defaults")
+        except (json.JSONDecodeError, ValueError, TypeError) as exc:
+            logger.warning("Refuter persona parse failed; generating defaults — %s", exc)
+            logger.info("Refuter persona raw content was: %.800s", response.content)
             raw = self._default_refuters(frame, count, avg_prior)
 
         agents: list[AgentSpec] = []
