@@ -40,7 +40,7 @@ class TogetherLLM(BaseLLM):
         model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         **kwargs: Any,
     ):
         resolved = self.MODEL_ALIASES.get(model, model)
