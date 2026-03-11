@@ -55,7 +55,7 @@ class GeminiLLM(BaseLLM):
         model: str = "gemini-1.5-pro",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         **kwargs: Any,
     ):
         """
