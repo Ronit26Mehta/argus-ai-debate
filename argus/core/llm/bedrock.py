@@ -44,7 +44,7 @@ class BedrockLLM(BaseLLM):
         model: str = "anthropic.claude-3-5-sonnet-20241022-v2:0",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         region: str = "us-east-1",
         profile_name: Optional[str] = None,
         **kwargs: Any,
