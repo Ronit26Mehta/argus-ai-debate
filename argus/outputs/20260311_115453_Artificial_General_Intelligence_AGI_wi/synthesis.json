@@ -1,0 +1,59 @@
+{
+  "id": "sr-865d81ecc607",
+  "frame_id": "df-e2be5e31bc0d",
+  "verdict_label": "Strong Evidence Supports",
+  "jury_confidence": 0.9950986346457068,
+  "convergence_round": 1,
+  "reasoning_narrative": "The debate centered on the proposition that Artificial General Intelligence (AGI) will be achieved by the year 2047. Starting with a neutral probability",
+  "dissent_log": "While the overall consensus strongly supports the achievement of Artificial General Intelligence (AGI) by 2047, a minority view suggests this timeline may be overly optimistic. This perspective is primarily represented by Dr. Alex Morgan [evid_6638a3a158ff] and Dr. Yuki Tanaka [evid_ba2e3cd24608], who presented evidence arguing against the proposition.\n\nThis dissenting view was not dismissed because the quality of their evidence was considered high, with Dr. Morgan's evidence scoring 0.80 and Dr. Tanaka's scoring 0.85 on the EVID-Q scale.",
+  "what_could_change": [
+    "*   Gather additional expert opinions and research findings from Prof. Jordan Lee regarding"
+  ],
+  "metrics": [
+    {
+      "name": "ARCIS",
+      "score": 0.819173076923077,
+      "interpretation": "Arguments built upon each other with strong logical consistency."
+    },
+    {
+      "name": "EVID-Q",
+      "score": 0.35556923076923086,
+      "interpretation": "Evidence quality was generally poor or unreliable."
+    },
+    {
+      "name": "DIALEC",
+      "score": 0.825,
+      "interpretation": "Deep dialectical exchange with robust attack/defence cycles."
+    },
+    {
+      "name": "REBUT-F",
+      "score": 0.6000000000000001,
+      "interpretation": "Rebuttals addressed some weaknesses but missed others."
+    },
+    {
+      "name": "CONV-S",
+      "score": 1.0,
+      "interpretation": "Posterior converged quickly and stably to a clear position."
+    },
+    {
+      "name": "PROV-I",
+      "score": 0.33461538461538465,
+      "interpretation": "Significant provenance gaps \u2014 many claims lack attribution."
+    },
+    {
+      "name": "CALIB-M",
+      "score": 0.9541183615748481,
+      "interpretation": "Confidence aligned well with actual evidential support."
+    },
+    {
+      "name": "EIG-U",
+      "score": 0.8246743432668153,
+      "interpretation": "Evidence efficiently reduced uncertainty each round."
+    }
+  ],
+  "num_rounds": 1,
+  "num_evidence": 9,
+  "num_rebuttals": 3,
+  "duration_seconds": 0.0,
+  "created_at": "2026-03-11T06:24:53.252209+00:00"
+}
