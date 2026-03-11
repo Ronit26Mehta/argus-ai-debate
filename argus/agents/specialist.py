@@ -9,10 +9,16 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from typing import Optional, Any, TYPE_CHECKING
 from dataclasses import dataclass
 
 from pydantic import Field
+
+from argus.core.json_repair import (
+    extract_json_object,
+    repair_json,
+)
 
 from argus.agents.base import (
     BaseAgent,
@@ -243,38 +249,14 @@ Keep each "type" description under 30 words. Return 3 items max.
 
 {{"evidence_types":[{{"type":"brief description","polarity":"support","importance":0.8}}]}}"""
             
-            response = self.generate(prompt, max_tokens=8192)
+            response = self.generate(prompt, max_tokens=16384)
             
-            # Robust JSON extraction — handle markdown fences, truncation
-            import re
+            # Robust JSON extraction via shared repair module
             data = None
-            raw = response.strip()
-            # Strip markdown code fences
-            if raw.startswith("```"):
-                raw = re.sub(r"^```(?:json)?\s*", "", raw)
-                raw = re.sub(r"\s*```$", "", raw)
-            
-            # Attempt 1: direct parse
             try:
-                data = json.loads(raw)
-            except json.JSONDecodeError:
+                data = extract_json_object(response)
+            except (ValueError, TypeError):
                 pass
-            
-            # Attempt 2: find any JSON object in raw text
-            if data is None:
-                match = re.search(r'\{[\s\S]+', raw)
-                if match:
-                    candidate = match.group()
-                    try:
-                        data = json.loads(candidate)
-                    except json.JSONDecodeError:
-                        # Attempt 3: repair truncated JSON
-                        repaired = self._repair_truncated_json(candidate)
-                        if repaired:
-                            try:
-                                data = json.loads(repaired)
-                            except json.JSONDecodeError:
-                                pass
             
             # Normalize: accept any key containing a list of evidence items
             evidence_items = None
@@ -402,27 +384,12 @@ Return JSON:
         
         response = self.generate(prompt, max_tokens=8192)
         
-        import re
-        raw = response.strip()
-        if raw.startswith("```"):
-            raw = re.sub(r"^```(?:json)?\s*", "", raw)
-            raw = re.sub(r"\s*```$", "", raw)
-        
         try:
-            data = json.loads(raw)
+            data = extract_json_object(response)
             polarity_map = {"support": 1, "attack": -1, "neutral": 0}
             data["polarity_int"] = polarity_map.get(data.get("polarity", "neutral"), 0)
             return data
-        except json.JSONDecodeError:
-            repaired = self._repair_truncated_json(raw)
-            if repaired:
-                try:
-                    data = json.loads(repaired)
-                    polarity_map = {"support": 1, "attack": -1, "neutral": 0}
-                    data["polarity_int"] = polarity_map.get(data.get("polarity", "neutral"), 0)
-                    return data
-                except json.JSONDecodeError:
-                    pass
+        except (ValueError, TypeError):
             return {
                 "claim": response[:200],
                 "confidence": 0.5,
@@ -431,26 +398,6 @@ Return JSON:
                 "relevance": 0.5,
             }
     
-    @staticmethod
-    def _repair_truncated_json(text: str) -> str | None:
-        """Attempt to close brackets/braces on a truncated JSON string."""
-        # Trim to the last complete value (end of string, number, bool, or bracket)
-        import re
-        trimmed = re.sub(r',\s*"[^"]*$', '', text)           # trailing partial key
-        trimmed = re.sub(r',\s*"[^"]*":\s*"?[^"]*$', '', trimmed)  # trailing partial kv
-        trimmed = re.sub(r',\s*\{[^}]*$', '', trimmed)       # trailing partial object in array
-
-        # Count unmatched brackets and close them
-        opens = trimmed.count('[') - trimmed.count(']')
-        braces = trimmed.count('{') - trimmed.count('}')
-        if opens < 0 or braces < 0:
-            return None
-        repaired = trimmed + ']' * opens + '}' * braces
-        # Quick sanity: must start with { and end with }
-        if repaired.strip().startswith('{') and repaired.strip().endswith('}'):
-            return repaired
-        return None
-
     def _create_evidence(
         self,
         evaluation: dict[str, Any],
