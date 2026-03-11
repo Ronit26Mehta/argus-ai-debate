@@ -39,7 +39,7 @@ class SambanovaLLM(BaseLLM):
         model: str = "Meta-Llama-3.1-70B-Instruct",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         **kwargs: Any,
     ):
         resolved = self.MODEL_ALIASES.get(model, model)
