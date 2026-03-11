@@ -66,7 +66,7 @@ class AnthropicLLM(BaseLLM):
         model: str = "claude-3-5-sonnet-20241022",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         timeout: float = 60.0,
         max_retries: int = 3,
         **kwargs: Any,
