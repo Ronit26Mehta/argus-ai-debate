@@ -400,7 +400,7 @@ class SynthesisEngine:
                 prompt=prompt,
                 system_prompt=_NARRATIVE_SYSTEM,
                 temperature=0.3,
-                max_tokens=800,
+                max_tokens=16384,
             )
             content = response.content if hasattr(response, 'content') else str(response)
             return content.strip()
@@ -469,7 +469,7 @@ class SynthesisEngine:
                 prompt=prompt,
                 system_prompt=_NARRATIVE_SYSTEM,
                 temperature=0.3,
-                max_tokens=400,
+                max_tokens=16384,
             )
             content = response.content if hasattr(response, 'content') else str(response)
             return content.strip()
@@ -521,7 +521,7 @@ class SynthesisEngine:
                 prompt=prompt,
                 system_prompt=_NARRATIVE_SYSTEM,
                 temperature=0.4,
-                max_tokens=400,
+                max_tokens=16384,
             )
             content = response.content if hasattr(response, 'content') else str(response)
             bullets = [
