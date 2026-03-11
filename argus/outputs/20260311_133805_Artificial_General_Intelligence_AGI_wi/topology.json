@@ -1,0 +1,105 @@
+{
+  "id": "ts-0b35011ece61",
+  "frame_id": "df-d69a61003cb9",
+  "specialists": [
+    {
+      "id": "ag-c96f943c2a87",
+      "name": "Dr. Anya Sharma",
+      "role": "specialist",
+      "domain_mandate": "Analyzes current AI breakthroughs, exponential scaling laws, and venture capital investment trends to project future capabilities.",
+      "evidence_source_priority": [
+        "arXiv",
+        "general_web"
+      ],
+      "epistemic_prior": 0.78,
+      "evidence_type_focus": [
+        "empirical",
+        "computational",
+        "expert_consensus"
+      ],
+      "persona_description": "A computational neuroscientist specializing in deep learning architectures and their potential for rapid scaling towards AGI."
+    },
+    {
+      "id": "ag-20c978396d52",
+      "name": "Prof. Elias Vance",
+      "role": "specialist",
+      "domain_mandate": "Examines fundamental conceptual hurdles, philosophical challenges of consciousness, and historical patterns of over-optimistic AI predictions.",
+      "evidence_source_priority": [
+        "PubMed",
+        "general_web"
+      ],
+      "epistemic_prior": 0.28,
+      "evidence_type_focus": [
+        "expert_consensus",
+        "meta_analysis",
+        "case_report"
+      ],
+      "persona_description": "A philosopher of mind and AI ethicist, critically examining the theoretical foundations and ethical implications of AGI development."
+    },
+    {
+      "id": "ag-e590e799a1b8",
+      "name": "Dr. Kenji Tanaka",
+      "role": "specialist",
+      "domain_mandate": "Focuses on the practical infrastructure requirements, resource constraints, geopolitical factors, and regulatory challenges for AGI deployment.",
+      "evidence_source_priority": [
+        "legal",
+        "financial",
+        "general_web"
+      ],
+      "epistemic_prior": 0.52,
+      "evidence_type_focus": [
+        "computational",
+        "empirical",
+        "expert_consensus"
+      ],
+      "persona_description": "A systems engineer and technology policy analyst, focusing on the practical, economic, and societal factors influencing large-scale technological deployment."
+    }
+  ],
+  "refuters": [
+    {
+      "id": "ag-5da9c3ad5243",
+      "name": "Dr. Evelyn Reed",
+      "role": "refuter",
+      "domain_mandate": "Challenges the technical feasibility of AGI by 2047, emphasizing fundamental conceptual and architectural breakthroughs still required beyond current paradigms.",
+      "evidence_source_priority": [
+        "arXiv",
+        "general_web"
+      ],
+      "epistemic_prior": 0.38,
+      "evidence_type_focus": [
+        "methodological_critique",
+        "alternative_explanation"
+      ],
+      "persona_description": "A pragmatic computer scientist who highlights the profound, unsolved theoretical and engineering challenges that current AI paradigms face in achieving true generality."
+    },
+    {
+      "id": "ag-a50a169281e9",
+      "name": "Dr. Marcus Thorne",
+      "role": "refuter",
+      "domain_mandate": "Disputes the 2047 timeline by highlighting significant non-technical hurdles such as resource limitations, ethical governance issues, and the potential for misinterpreting narrow AI advancements as steps towards AGI.",
+      "evidence_source_priority": [
+        "general_web",
+        "arXiv"
+      ],
+      "epistemic_prior": 0.32,
+      "evidence_type_focus": [
+        "alternative_explanation",
+        "methodological_critique"
+      ],
+      "persona_description": "A critical futurist and ethicist who questions the underlying assumptions of rapid AGI development, focusing on societal, economic, and ethical roadblocks."
+    }
+  ],
+  "jury": {
+    "architecture": "bayesian",
+    "size": 3,
+    "rationale": "Predictive claims use Bayesian posterior convergence"
+  },
+  "refuter_intensity": "medium",
+  "estimated_rounds": 1,
+  "round_reasoning": "base 2 + controversy 1 + evidence density 1 - parallel sub-claims 2 = 2",
+  "max_rounds": 1,
+  "estimated_tokens": 40000,
+  "estimated_runtime_seconds": 36.0,
+  "budget_cap_tokens": 100000,
+  "created_at": "2026-03-11T08:05:27.314530+00:00"
+}
