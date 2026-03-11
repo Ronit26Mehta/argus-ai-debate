@@ -1,0 +1,424 @@
+{
+  "proposition_id": "prop_9e47e1c70e59",
+  "proposition_text": "Artificial General Intelligence (AGI) will be achieved by the year 2047.",
+  "verdict": {
+    "proposition_id": "prop_9e47e1c70e59",
+    "posterior": 0.0029138224996666006,
+    "label": "rejected",
+    "confidence": 0.9970861775003333,
+    "reasoning": "The proposition is rejected because the extensive attacking evidence strongly outweighs the supporting arguments. Key attacking points highlight fundamental conceptual and philosophical hurdles, historical patterns of over-optimistic AI predictions, and significant practical infrastructure and resource constraints. While some evidence points to current AI breakthroughs, even analyses of these trends identify fundamental limitations that make AGI by 2047 unlikely."
+  },
+  "final_posterior": 0.0029138224996666006,
+  "num_rounds": 1,
+  "num_evidence": 9,
+  "num_rebuttals": 6,
+  "graph": {
+    "nodes": [
+      {
+        "id": "prop_9e47e1c70e59",
+        "text": "Artificial General Intelligence (AGI) will be achieved by the year 2047.",
+        "type": "proposition",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": null,
+        "target_id": "",
+        "strength": 0.0,
+        "prior": 0.44,
+        "posterior": 0.0029138224996666006
+      },
+      {
+        "id": "evid_6aa50feb8368",
+        "text": "[Analyzes current AI breakthroughs, exponential scaling laws, and venture capital investment trends to project future capabilities.] Continued exponential scaling of AI model capabilities across diverse benchmarks and increasing compute efficiency.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_2227a295e056",
+        "text": "[Analyzes current AI breakthroughs, exponential scaling laws, and venture capital investment trends to project future capabilities.] Significant and increasing venture capital investment in frontier AI research and development, indicating rapid resource allocation.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3342d53c7c54",
+        "text": "[Analyzes current AI breakthroughs, exponential scaling laws, and venture capital investment trends to project future capabilities.] Identified fundamental limitations of current AI paradigms preventing true common sense, robust generalization, or self-improvement.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_058de1640fef",
+        "text": "[Examines fundamental conceptual hurdles, philosophical challenges of consciousness, and historical patterns of over-optimistic AI predictions.] Conceptual hurdles in formalizing common sense, intuition, and creativity, essential for general intelligence.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_c72f5c8d5984",
+        "text": "[Examines fundamental conceptual hurdles, philosophical challenges of consciousness, and historical patterns of over-optimistic AI predictions.] Unresolved philosophical challenges regarding consciousness and its potential necessity for true AGI.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_72386e81e67a",
+        "text": "[Examines fundamental conceptual hurdles, philosophical challenges of consciousness, and historical patterns of over-optimistic AI predictions.] Historical patterns of recurring over-optimism and missed deadlines in AI prediction timelines.",
+        "type": "evidence",
+        "confidence": 0.95,
+        "quality": 0.95,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_eba9afcd18e4",
+        "text": "[Focuses on the practical infrastructure requirements, resource constraints, geopolitical factors, and regulatory challenges for AGI deployment.] Immense energy and computational resource demands for AGI development and deployment pose significant constraints, potentially delaying achievement.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e77c67504ccb",
+        "text": "[Focuses on the practical infrastructure requirements, resource constraints, geopolitical factors, and regulatory challenges for AGI deployment.] Geopolitical competition for advanced chips and critical materials could disrupt supply chains, hindering AGI infrastructure growth.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3b31e9423d2a",
+        "text": "[Focuses on the practical infrastructure requirements, resource constraints, geopolitical factors, and regulatory challenges for AGI deployment.] Increasing regulatory scrutiny and ethical concerns about AGI safety and control may lead to development slowdowns or moratoriums.",
+        "type": "evidence",
+        "confidence": 0.7,
+        "quality": 0.7,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_f3d29881107f",
+        "text": "The assumption that current exponential scaling of AI model capabilities will continue unimpeded and directly translate to AGI by 2047 relies on an untested extrapolation. There is no guarantee that current scaling laws, which have shown impressive performance gains in specific tasks, will hold for the qualitative leap required for true general intelligence, which might involve fundamentally different architectural breakthroughs or understanding, not just more data and compute. Diminishing returns or unknown fundamental limits could be encountered before AGI is achieved.",
+        "type": "rebuttal",
+        "confidence": 0.85,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6aa50feb8368",
+        "strength": 0.85
+      },
+      {
+        "id": "rebt_4e5e0de2d0ee",
+        "text": "The achievement of Artificial General Intelligence (AGI) may not necessitate a definitive resolution to the philosophical 'hard problem' of consciousness or require AGI to possess human-like subjective experience. A purely functional definition of AGI, focused on general intelligence, adaptability, and problem-solving across diverse domains, might be achievable without addressing the deep philosophical questions of consciousness, which remain debated even for biological systems. The 'unresolved' nature of consciousness does not preclude the engineering of functional AGI.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_c72f5c8d5984",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_b620a4436082",
+        "text": "While historical patterns of over-optimism and missed deadlines in AI are a valid concern, the current era of AI development, particularly with deep learning and transformer architectures, represents a qualitative and quantitative shift in capabilities and progress rates compared to previous 'AI winters.' Extrapolating past failures without acknowledging these significant paradigm shifts and the current pace of innovation risks underestimating the potential for AGI achievement within the specified timeframe.",
+        "type": "rebuttal",
+        "confidence": 0.75,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_72386e81e67a",
+        "strength": 0.75
+      },
+      {
+        "id": "rebt_71914d955600",
+        "text": "The claim of continued exponential scaling indefinitely into the future, particularly for capabilities relevant to AGI, is an unsupported extrapolation. Historical patterns of technological growth often follow S-curves, eventually encountering fundamental limits (e.g., physical, computational, theoretical, or diminishing returns for specific metrics) that lead to plateaus or decelerations. There is no guarantee that current scaling trends for metrics like parameters or training data will translate directly or linearly to the complex and qualitative requirements of general intelligence, such as common sense reasoning, creativity, or robust understanding, without encountering qualitative bottlenecks.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_6aa50feb8368",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_2c053706d85a",
+        "text": "The premise that AGI necessarily requires 'consciousness' in the human philosophical sense is a highly debated and often unsupported assumption in the field of AI. Many prominent AI researchers define AGI functionally, as an intelligence capable of performing any intellectual task a human can, without stipulating the need for subjective experience or sentience. AGI could potentially be achieved as a purely functional computational entity without resolving the 'hard problem of consciousness,' which is a separate philosophical challenge not directly tied to operational intelligence.",
+        "type": "rebuttal",
+        "confidence": 0.8,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_c72f5c8d5984",
+        "strength": 0.8
+      },
+      {
+        "id": "rebt_0aa28265172a",
+        "text": "While historical patterns of over-optimism in AI predictions are well-documented, the current context of AI development is qualitatively different. The recent breakthroughs in deep learning, transformer architectures, and large language models represent a significant paradigm shift compared to previous AI winters or symbolic AI approaches. The unprecedented scale of data, compute, and model complexity, coupled with emergent capabilities seen in current models, suggests that drawing direct analogies from past failures without acknowledging these fundamental changes may be misleading. The nature and pace of progress today are distinct.",
+        "type": "rebuttal",
+        "confidence": 0.75,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_72386e81e67a",
+        "strength": 0.75
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_e07d41ec5f23",
+        "source": "evid_6aa50feb8368",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_f46f95893f26",
+        "source": "evid_2227a295e056",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_2cb383969b2a",
+        "source": "evid_3342d53c7c54",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_ffdccb0bac4c",
+        "source": "evid_058de1640fef",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_6eb1fbb14acc",
+        "source": "evid_c72f5c8d5984",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_f61987749471",
+        "source": "evid_72386e81e67a",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_784239814cff",
+        "source": "evid_eba9afcd18e4",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_ab64056f729f",
+        "source": "evid_e77c67504ccb",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_12bd01c6e3fb",
+        "source": "evid_3b31e9423d2a",
+        "target": "prop_9e47e1c70e59",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_3bdbec0efd6c",
+        "source": "rebt_f3d29881107f",
+        "target": "evid_6aa50feb8368",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_2221d9441cdc",
+        "source": "rebt_4e5e0de2d0ee",
+        "target": "evid_c72f5c8d5984",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_2bcf1fa28632",
+        "source": "rebt_b620a4436082",
+        "target": "evid_72386e81e67a",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_4fdb1c836ca9",
+        "source": "rebt_71914d955600",
+        "target": "evid_6aa50feb8368",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_ed3396c847c3",
+        "source": "rebt_2c053706d85a",
+        "target": "evid_c72f5c8d5984",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_f92f8b2fabe5",
+        "source": "rebt_0aa28265172a",
+        "target": "evid_72386e81e67a",
+        "edge_type": "EdgeType.REBUTS"
+      }
+    ]
+  },
+  "posteriors": [
+    0.44,
+    0.0029138224996666006
+  ],
+  "converged_at": null,
+  "total_tokens_used": 12500,
+  "decisions": [
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.00. Issuing refocus directive.",
+      "round_num": 1,
+      "affected_agents": [],
+      "timestamp": "2026-03-11T08:07:49.644743+00:00",
+      "metadata": {
+        "similarity": 0.0
+      }
+    }
+  ],
+  "evidence_log": [
+    {
+      "agent_id": "ag-c96f943c2a87",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_6aa50feb8368"
+    },
+    {
+      "agent_id": "ag-c96f943c2a87",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_2227a295e056"
+    },
+    {
+      "agent_id": "ag-c96f943c2a87",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_3342d53c7c54"
+    },
+    {
+      "agent_id": "ag-20c978396d52",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_058de1640fef"
+    },
+    {
+      "agent_id": "ag-20c978396d52",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_c72f5c8d5984"
+    },
+    {
+      "agent_id": "ag-20c978396d52",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.95,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_72386e81e67a"
+    },
+    {
+      "agent_id": "ag-e590e799a1b8",
+      "agent_name": "Dr. Kenji Tanaka",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_eba9afcd18e4"
+    },
+    {
+      "agent_id": "ag-e590e799a1b8",
+      "agent_name": "Dr. Kenji Tanaka",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_e77c67504ccb"
+    },
+    {
+      "agent_id": "ag-e590e799a1b8",
+      "agent_name": "Dr. Kenji Tanaka",
+      "evid_q": 0.7,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_3b31e9423d2a"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "posterior": 0.44
+    },
+    {
+      "round": 1,
+      "posterior": 0.0029138224996666006
+    }
+  ],
+  "duration_seconds": 0.0
+}
