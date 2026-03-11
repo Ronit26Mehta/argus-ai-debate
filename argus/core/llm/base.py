@@ -119,7 +119,7 @@ class LLMConfig(BaseModel):
     )
     
     max_tokens: int = Field(
-        default=4096,
+        default=16384,
         ge=1,
         le=128000,
         description="Maximum tokens to generate",
@@ -232,7 +232,7 @@ class BaseLLM(ABC):
         model: str,
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         **kwargs: Any,
     ):
         """
