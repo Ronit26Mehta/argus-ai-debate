@@ -42,7 +42,7 @@ class PerplexityLLM(BaseLLM):
         model: str = "llama-3.1-sonar-large-128k-online",
         api_key: Optional[str] = None,
         temperature: float = 0.2,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         **kwargs: Any,
     ):
         resolved = self.MODEL_ALIASES.get(model, model)
