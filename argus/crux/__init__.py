@@ -1,7 +1,7 @@
 """
 CRUX - Claim-Routed Uncertainty eXchange Protocol.
 
-Version 1.0
+Version 4.5.0
 
 A novel inter-agent communication protocol for debate-native, Bayesian
 multi-agent reasoning systems. CRUX treats epistemic state — beliefs,
@@ -40,7 +40,7 @@ Protocol Design:
     - Enables belief reconciliation for contradicting claims
 """
 
-__version__ = "1.0.0"
+__version__ = "4.5.0"
 __protocol_name__ = "CRUX"
 __full_name__ = "Claim-Routed Uncertainty eXchange Protocol"
 
