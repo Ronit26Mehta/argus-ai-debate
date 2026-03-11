@@ -1,0 +1,864 @@
+{
+  "proposition_id": "prop_4767b604d78e",
+  "proposition_text": "Artificial General Intelligence (AGI) will be achieved and widely recognized as such by the year 2047.",
+  "verdict": {
+    "proposition_id": "prop_4767b604d78e",
+    "posterior": 0.9942318761075395,
+    "label": "supported",
+    "confidence": 0.9942318761075395,
+    "reasoning": ""
+  },
+  "final_posterior": 0.9942318761075395,
+  "num_rounds": 3,
+  "num_evidence": 27,
+  "num_rebuttals": 2,
+  "graph": {
+    "nodes": [
+      {
+        "id": "prop_4767b604d78e",
+        "text": "Artificial General Intelligence (AGI) will be achieved and widely recognized as such by the year 2047.",
+        "type": "proposition",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": null,
+        "target_id": "",
+        "strength": 0.0,
+        "prior": 0.47,
+        "posterior": 0.9942318761075395
+      },
+      {
+        "id": "evid_58fe2fe74c4d",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Sustained exponential growth in AI training compute, adhering to established scaling laws, points towards continued capability expansion.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_a0632bc390b7",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Current AI architectures may face fundamental limits in achieving human-level reasoning and common sense, not solvable by scaling alone.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_9fdf84f412e1",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Accelerated pace of AI development and discovery of emergent abilities from scaling models suggest a faster path to AGI.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_a4171a258762",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Supporting evidence from domain literature regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_c49a575eb438",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Methodological concerns and limitations regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_f39b9a042a4e",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Corroborating findings from related studies regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_8d4cd323a834",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Accelerating AI research, compute scaling, and investment trends pointing towards earlier AGI achievement.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e55b8590a784",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Increasing consensus on AGI definitions and emerging robust evaluation metrics facilitating widespread recognition.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_d774bb5f9cdb",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Proactive regulatory efforts and growing public discourse preparing society for AGI's integration and acceptance.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "rebt_2cd8f4383eaa",
+        "text": "This evidence relies heavily on the extrapolation of current exponential growth in AI development and hardware advancements. There is no guarantee that these scaling laws will continue indefinitely, especially when transitioning from narrow AI to general intelligence. The 'low-hanging fruit' of current AI paradigms may soon be exhausted, and fundamental breakthroughs, which are inherently unpredictable and do not necessarily follow exponential trends, may be required. This constitutes a significant logical leap, ignoring potential plateaus or diminishing returns.",
+        "type": "rebuttal",
+        "confidence": 0.9,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_58fe2fe74c4d",
+        "strength": 0.9
+      },
+      {
+        "id": "rebt_e2715baf40e4",
+        "text": "While this evidence claims to support the proposition, its own description highlights 'fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.' It is an unsupported assumption that these deeply complex, often intractable challenges will be adequately resolved and lead to widespread consensus within the next 24 years. The evidence likely understates the depth of these issues or assumes a definition of AGI that may not be universally accepted or truly 'general' by 2047.",
+        "type": "rebuttal",
+        "confidence": 0.85,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": "",
+        "target_id": "evid_a4171a258762",
+        "strength": 0.85
+      },
+      {
+        "id": "evid_0e7be7e22601",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Extrapolation of current AI scaling laws and exponential compute growth suggests AGI may be achievable within the timeframe.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_3f3c6494e4c1",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Continuous advancements in specialized AI hardware and manufacturing processes provide necessary computational infrastructure for ambitious AI projects.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b4786e9d7794",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Current AI paradigms may not suffice for AGI, requiring unforeseen conceptual breakthroughs beyond mere scaling, posing a significant challenge.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_0ad631228dd7",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Lack of a universally accepted definition for \"general intelligence\" poses fundamental conceptual hurdles to AGI achievement and recognition.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_9562d099aabd",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Current AI paradigms lack common-sense reasoning, true understanding, and robust world models, questioning their path to general intelligence.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_b0e8747c3a74",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Philosophical and cognitive science challenges, such as consciousness and embodiment, remain unaddressed by current AI approaches.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_2a5c9cf01fec",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Expert consensus on AGI definitions and timelines for achievement and widespread recognition by 2047.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_dfe8bb811617",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Public acceptance metrics, economic readiness indicators, and societal adaptation to advanced AI systems by 2047.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_6219cb1fb624",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Development and adoption of robust international regulatory frameworks and ethical guidelines for AGI governance by 2047.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_934e3a1959aa",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Supporting evidence from domain literature regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_db8a18f60f27",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Methodological concerns and limitations regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_162d2e607bd6",
+        "text": "[Focuses on the current trajectory of AI development, hardware advancements, and scaling laws, assessing the feasibility of achieving AGI through technological acceleration.] Corroborating findings from related studies regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_54ee4b60e2b5",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Supporting evidence from domain literature regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_bc28c1a8d23b",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Methodological concerns and limitations regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_64606f0f27d7",
+        "text": "[Examines the fundamental conceptual, philosophical, and cognitive science challenges inherent in defining and achieving true general intelligence, questioning current AI paradigms.] Corroborating findings from related studies regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_64965cb62370",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Supporting evidence from domain literature regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_dce269a38d73",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Methodological concerns and limitations regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_afbb420cf299",
+        "text": "[Analyzes the socio-economic, regulatory, and definitional factors that will influence the recognition, acceptance, and widespread integration of AGI by 2047.] Corroborating findings from related studies regarding: Artificial General Intelligence (AGI) will be achieved and widely recognized as ",
+        "type": "evidence",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.7,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_0c5f4511e116",
+        "source": "evid_58fe2fe74c4d",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ddafb36d32de",
+        "source": "evid_a0632bc390b7",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_1f9e8b88e652",
+        "source": "evid_9fdf84f412e1",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_722a10497725",
+        "source": "evid_a4171a258762",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_f0276d3b89d9",
+        "source": "evid_c49a575eb438",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_b3706a693839",
+        "source": "evid_f39b9a042a4e",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ae63df0dc13a",
+        "source": "evid_8d4cd323a834",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_4f6667d07aef",
+        "source": "evid_e55b8590a784",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_58d051a178db",
+        "source": "evid_d774bb5f9cdb",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_1762c6148377",
+        "source": "rebt_2cd8f4383eaa",
+        "target": "evid_58fe2fe74c4d",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_d6fcfe4f697b",
+        "source": "rebt_e2715baf40e4",
+        "target": "evid_a4171a258762",
+        "edge_type": "EdgeType.REBUTS"
+      },
+      {
+        "id": "edge_88358cd06986",
+        "source": "evid_0e7be7e22601",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_82ed5c198b7a",
+        "source": "evid_3f3c6494e4c1",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_ed38fcbc68ae",
+        "source": "evid_b4786e9d7794",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_5aa183f7eda5",
+        "source": "evid_0ad631228dd7",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_98181132878c",
+        "source": "evid_9562d099aabd",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_9c5ab0606f3a",
+        "source": "evid_b0e8747c3a74",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_58f9dff4928e",
+        "source": "evid_2a5c9cf01fec",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_29a170cce64e",
+        "source": "evid_dfe8bb811617",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_37ff74c3f582",
+        "source": "evid_6219cb1fb624",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_90f3571ba15f",
+        "source": "evid_934e3a1959aa",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_4a40f9e1734d",
+        "source": "evid_db8a18f60f27",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_87a3bdb541d2",
+        "source": "evid_162d2e607bd6",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_238e429ebb0c",
+        "source": "evid_54ee4b60e2b5",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_9268ce99312d",
+        "source": "evid_bc28c1a8d23b",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_6e1807f13d85",
+        "source": "evid_64606f0f27d7",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_c39996b6a430",
+        "source": "evid_64965cb62370",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_b1fe979c90f3",
+        "source": "evid_dce269a38d73",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_fcbaf0787718",
+        "source": "evid_afbb420cf299",
+        "target": "prop_4767b604d78e",
+        "edge_type": "EdgeType.SUPPORTS"
+      }
+    ]
+  },
+  "posteriors": [
+    0.47,
+    0.9844347103598674,
+    0.9942318761075395,
+    0.9942318761075395
+  ],
+  "converged_at": null,
+  "total_tokens_used": 37500,
+  "decisions": [
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.11. Issuing refocus directive.",
+      "round_num": 1,
+      "affected_agents": [],
+      "timestamp": "2026-03-11T07:48:59.882143+00:00",
+      "metadata": {
+        "similarity": 0.1111111111111111
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.11. Issuing refocus directive.",
+      "round_num": 2,
+      "affected_agents": [],
+      "timestamp": "2026-03-11T07:50:27.212829+00:00",
+      "metadata": {
+        "similarity": 0.1111111111111111
+      }
+    },
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.11. Issuing refocus directive.",
+      "round_num": 3,
+      "affected_agents": [],
+      "timestamp": "2026-03-11T07:51:14.626043+00:00",
+      "metadata": {
+        "similarity": 0.1111111111111111
+      }
+    }
+  ],
+  "evidence_log": [
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_58fe2fe74c4d"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_a0632bc390b7"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_9fdf84f412e1"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_a4171a258762"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_c49a575eb438"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_f39b9a042a4e"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_8d4cd323a834"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_e55b8590a784"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_d774bb5f9cdb"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_0e7be7e22601"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.85,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_3f3c6494e4c1"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_b4786e9d7794"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_0ad631228dd7"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.85,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_9562d099aabd"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": -1,
+      "node_id": "evid_b0e8747c3a74"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.9,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_2a5c9cf01fec"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.85,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_dfe8bb811617"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.8,
+      "round": 2,
+      "polarity": 1,
+      "node_id": "evid_6219cb1fb624"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_934e3a1959aa"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": -1,
+      "node_id": "evid_db8a18f60f27"
+    },
+    {
+      "agent_id": "ag-e39e1be75976",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_162d2e607bd6"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_54ee4b60e2b5"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": -1,
+      "node_id": "evid_bc28c1a8d23b"
+    },
+    {
+      "agent_id": "ag-98f79a2ee2f9",
+      "agent_name": "Dr. Elias Vance",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_64606f0f27d7"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_64965cb62370"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": -1,
+      "node_id": "evid_dce269a38d73"
+    },
+    {
+      "agent_id": "ag-1ee92d5a9e71",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.5,
+      "round": 3,
+      "polarity": 1,
+      "node_id": "evid_afbb420cf299"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "posterior": 0.47
+    },
+    {
+      "round": 1,
+      "posterior": 0.9844347103598674
+    },
+    {
+      "round": 2,
+      "posterior": 0.9942318761075395
+    },
+    {
+      "round": 3,
+      "posterior": 0.9942318761075395
+    }
+  ],
+  "duration_seconds": 0.0
+}
