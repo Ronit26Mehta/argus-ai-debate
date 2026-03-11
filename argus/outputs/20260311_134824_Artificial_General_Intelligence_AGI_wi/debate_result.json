@@ -1,0 +1,310 @@
+{
+  "proposition_id": "prop_e56fff2d9e2c",
+  "proposition_text": "Artificial General Intelligence (AGI) will be successfully developed and demonstrated by the year 2047.",
+  "verdict": {
+    "proposition_id": "prop_e56fff2d9e2c",
+    "posterior": 0.01851752142270401,
+    "label": "rejected",
+    "confidence": 0.981482478577296,
+    "reasoning": ""
+  },
+  "final_posterior": 0.01851752142270401,
+  "num_rounds": 1,
+  "num_evidence": 9,
+  "num_rebuttals": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "prop_e56fff2d9e2c",
+        "text": "Artificial General Intelligence (AGI) will be successfully developed and demonstrated by the year 2047.",
+        "type": "proposition",
+        "confidence": 0.5,
+        "quality": 0.5,
+        "relevance": 0.5,
+        "polarity": 0,
+        "citations": false,
+        "source": null,
+        "target_id": "",
+        "strength": 0.0,
+        "prior": 0.47,
+        "posterior": 0.01851752142270401
+      },
+      {
+        "id": "evid_bfab270d0a78",
+        "text": "[Focuses on the accelerating pace of AI research, computational scaling laws (e.g., Moore's Law, scaling laws for LLMs), and recent breakthroughs in deep learning and foundation models as indicators of rapid progress towards AGI.] Exponential scaling laws in compute and data consistently drive rapid, predictable improvements in AI model capabilities, supporting AGI by 2047.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_c53a12bd9adb",
+        "text": "[Focuses on the accelerating pace of AI research, computational scaling laws (e.g., Moore's Law, scaling laws for LLMs), and recent breakthroughs in deep learning and foundation models as indicators of rapid progress towards AGI.] Recent breakthroughs in deep learning and foundation models demonstrate emergent, increasingly general capabilities, accelerating the timeline for AGI development.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_a374de01dba2",
+        "text": "[Focuses on the accelerating pace of AI research, computational scaling laws (e.g., Moore's Law, scaling laws for LLMs), and recent breakthroughs in deep learning and foundation models as indicators of rapid progress towards AGI.] The accelerating pace of AI research, evidenced by increasing investment, talent, and publication velocity, suggests a faster path to AGI than previously anticipated.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": 1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_ddada985d6bc",
+        "text": "[Examines the fundamental theoretical and philosophical challenges to AGI, including the symbol grounding problem, consciousness, and the limits of current computational paradigms, arguing that these represent significant, unsolved hurdles.] Symbol grounding problem remains an unsolved theoretical hurdle for true understanding, hindering AGI.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_5cd232991cfc",
+        "text": "[Examines the fundamental theoretical and philosophical challenges to AGI, including the symbol grounding problem, consciousness, and the limits of current computational paradigms, arguing that these represent significant, unsolved hurdles.] Lack of computational models for consciousness and subjective experience poses a profound barrier to AGI development.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_45598b3f16a1",
+        "text": "[Examines the fundamental theoretical and philosophical challenges to AGI, including the symbol grounding problem, consciousness, and the limits of current computational paradigms, arguing that these represent significant, unsolved hurdles.] Current computational paradigms lack causal reasoning and robust generalization necessary for AGI, indicating fundamental limitations.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_14ac82173765",
+        "text": "[Analyzes historical patterns of technological prediction, resource allocation trends in AI R&D, and the societal and ethical challenges that could impede or redirect AGI development, emphasizing practical constraints and definitional ambiguities.] Past AI predictions often failed to meet deadlines due to unforeseen complexities.",
+        "type": "evidence",
+        "confidence": 0.85,
+        "quality": 0.85,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_e5e5102c2279",
+        "text": "[Analyzes historical patterns of technological prediction, resource allocation trends in AI R&D, and the societal and ethical challenges that could impede or redirect AGI development, emphasizing practical constraints and definitional ambiguities.] AGI's ambiguous definition complicates claims of successful development and demonstration.",
+        "type": "evidence",
+        "confidence": 0.9,
+        "quality": 0.9,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      },
+      {
+        "id": "evid_071da9924ee4",
+        "text": "[Analyzes historical patterns of technological prediction, resource allocation trends in AI R&D, and the societal and ethical challenges that could impede or redirect AGI development, emphasizing practical constraints and definitional ambiguities.] Growing ethical, safety, and regulatory concerns could impede or redirect AGI development timelines.",
+        "type": "evidence",
+        "confidence": 0.8,
+        "quality": 0.8,
+        "relevance": 0.8,
+        "polarity": -1,
+        "citations": false,
+        "source": "",
+        "target_id": "",
+        "strength": 0.0
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_ea04f3092c1e",
+        "source": "evid_bfab270d0a78",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_4daae44ea3c5",
+        "source": "evid_c53a12bd9adb",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_268a25dbc5a4",
+        "source": "evid_a374de01dba2",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.SUPPORTS"
+      },
+      {
+        "id": "edge_d4bb3d8612e8",
+        "source": "evid_ddada985d6bc",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_323778704e75",
+        "source": "evid_5cd232991cfc",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_74148e41ae15",
+        "source": "evid_45598b3f16a1",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_c3b344d128a6",
+        "source": "evid_14ac82173765",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_ff61826e2218",
+        "source": "evid_e5e5102c2279",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      },
+      {
+        "id": "edge_8dc539d1879b",
+        "source": "evid_071da9924ee4",
+        "target": "prop_e56fff2d9e2c",
+        "edge_type": "EdgeType.ATTACKS"
+      }
+    ]
+  },
+  "posteriors": [
+    0.47,
+    0.01851752142270401
+  ],
+  "converged_at": null,
+  "total_tokens_used": 12500,
+  "decisions": [
+    {
+      "decision_type": "drift_correction",
+      "rationale": "Semantic similarity dropped to 0.00. Issuing refocus directive.",
+      "round_num": 1,
+      "affected_agents": [],
+      "timestamp": "2026-03-11T08:18:22.068032+00:00",
+      "metadata": {
+        "similarity": 0.0
+      }
+    }
+  ],
+  "evidence_log": [
+    {
+      "agent_id": "ag-96493f46dd2c",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_bfab270d0a78"
+    },
+    {
+      "agent_id": "ag-96493f46dd2c",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_c53a12bd9adb"
+    },
+    {
+      "agent_id": "ag-96493f46dd2c",
+      "agent_name": "Dr. Anya Sharma",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": 1,
+      "node_id": "evid_a374de01dba2"
+    },
+    {
+      "agent_id": "ag-b0994b0aafe2",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_ddada985d6bc"
+    },
+    {
+      "agent_id": "ag-b0994b0aafe2",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_5cd232991cfc"
+    },
+    {
+      "agent_id": "ag-b0994b0aafe2",
+      "agent_name": "Prof. Elias Vance",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_45598b3f16a1"
+    },
+    {
+      "agent_id": "ag-66bc9df5071f",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.85,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_14ac82173765"
+    },
+    {
+      "agent_id": "ag-66bc9df5071f",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.9,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_e5e5102c2279"
+    },
+    {
+      "agent_id": "ag-66bc9df5071f",
+      "agent_name": "Dr. Lena Petrova",
+      "evid_q": 0.8,
+      "round": 1,
+      "polarity": -1,
+      "node_id": "evid_071da9924ee4"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "posterior": 0.47
+    },
+    {
+      "round": 1,
+      "posterior": 0.01851752142270401
+    }
+  ],
+  "duration_seconds": 0.0
+}
