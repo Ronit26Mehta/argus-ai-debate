@@ -438,7 +438,7 @@ def _render_chat(container) -> None:
                             fig_belief = panels.build_belief_trajectory(posteriors)
                             fig_belief.update_layout(height=200, margin=dict(l=30, r=10, t=25, b=20))
                             st.plotly_chart(
-                                fig_belief, use_container_width=True,
+                                fig_belief, width="stretch",
                                 key=f"chat_belief_r{round_num}_{idx}",
                             )
                     with plot_cols[1]:
@@ -446,7 +446,7 @@ def _render_chat(container) -> None:
                             fig_heat = panels.build_evidence_heatmap(evidence_log)
                             fig_heat.update_layout(height=200, margin=dict(l=60, r=10, t=25, b=20))
                             st.plotly_chart(
-                                fig_heat, use_container_width=True,
+                                fig_heat, width="stretch",
                                 key=f"chat_heat_r{round_num}_{idx}",
                             )
 
@@ -572,7 +572,7 @@ def _run_debate_blocking() -> None:
                             )
                             st.plotly_chart(
                                 fig,
-                                use_container_width=True,
+                                width="stretch",
                                 key=f"live_bel_{round_num}",
                             )
                     with pcols[1]:
@@ -588,7 +588,7 @@ def _run_debate_blocking() -> None:
                             )
                             st.plotly_chart(
                                 fig,
-                                use_container_width=True,
+                                width="stretch",
                                 key=f"live_heat_{round_num}",
                             )
 
@@ -596,17 +596,17 @@ def _run_debate_blocking() -> None:
             dag_slot = _LIVE_CONTAINERS.get("dag_slot")
             if dag_slot:
                 fig = live_dag.build_figure()
-                dag_slot.plotly_chart(fig, use_container_width=True)
+                dag_slot.plotly_chart(fig, width="stretch")
 
             belief_slot = _LIVE_CONTAINERS.get("belief_slot")
             if belief_slot and len(posteriors) > 1:
                 fig = panels.build_belief_trajectory(posteriors)
-                belief_slot.plotly_chart(fig, use_container_width=True)
+                belief_slot.plotly_chart(fig, width="stretch")
 
             heat_slot = _LIVE_CONTAINERS.get("heat_slot")
             if heat_slot and evidence_log:
                 fig = panels.build_evidence_heatmap(evidence_log)
-                heat_slot.plotly_chart(fig, use_container_width=True)
+                heat_slot.plotly_chart(fig, width="stretch")
 
         except Exception:
             logger.debug("Round callback render failed", exc_info=True)
