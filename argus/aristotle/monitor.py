@@ -53,15 +53,31 @@ logger = logging.getLogger(__name__)
 
 # ── helper: simple semantic similarity via overlap ────────────────────
 
-def _jaccard_similarity(text_a: str, text_b: str) -> float:
-    """Token-level Jaccard similarity as a lightweight drift proxy."""
-    a_tokens = set(text_a.lower().split())
-    b_tokens = set(text_b.lower().split())
-    if not a_tokens or not b_tokens:
-        return 0.0
-    intersection = a_tokens & b_tokens
-    union = a_tokens | b_tokens
-    return len(intersection) / len(union)
+_DRIFT_STOPWORDS = frozenset({
+    "the", "a", "an", "is", "are", "was", "were", "be", "been", "being",
+    "have", "has", "had", "do", "does", "did", "will", "would", "could",
+    "should", "may", "might", "shall", "can", "need", "to", "of", "in",
+    "for", "on", "with", "at", "by", "from", "as", "into", "through",
+    "during", "before", "after", "between", "out", "off", "over", "under",
+    "again", "then", "once", "when", "where", "why", "how", "all", "both",
+    "each", "more", "most", "other", "some", "such", "no", "not", "only",
+    "so", "than", "too", "very", "just", "and", "but", "or", "if", "that",
+    "this", "it", "its", "about", "up",
+})
+
+
+def _proposition_coverage(proposition: str, evidence_text: str) -> float:
+    """Fraction of proposition keywords present in the evidence text.
+
+    Unlike Jaccard, this is not diluted by the size of the evidence text,
+    so it stays meaningful even when evidence is much longer than the
+    proposition.
+    """
+    prop_keywords = set(proposition.lower().split()) - _DRIFT_STOPWORDS
+    if not prop_keywords:
+        return 1.0  # nothing meaningful to drift from
+    ev_tokens = set(evidence_text.lower().split())
+    return len(prop_keywords & ev_tokens) / len(prop_keywords)
 
 
 # ── helper: compute per-agent EVID-Q average ──────────────────────────
@@ -113,7 +129,7 @@ class ExecutionMonitor:
     CONVERGENCE_ROUNDS = 3
     STAGNATION_EVID_Q_THRESHOLD = 0.4
     STAGNATION_ROUNDS = 2
-    DRIFT_SIMILARITY_THRESHOLD = 0.70
+    DRIFT_SIMILARITY_THRESHOLD = 0.30
     CONFIDENCE_CEILING_EARLY = 0.90
     CONFIDENCE_EARLY_ROUNDS = 3
     EVIDENCE_DROUGHT_THRESHOLD = 3
@@ -399,7 +415,7 @@ class ExecutionMonitor:
             ]
             if recent_evidence_texts:
                 combined = " ".join(recent_evidence_texts)
-                similarity = _jaccard_similarity(prop_text, combined)
+                similarity = _proposition_coverage(prop_text, combined)
                 if similarity < self.DRIFT_SIMILARITY_THRESHOLD:
                     decision_logger.log(
                         OrchestratorDecisionType.DRIFT_CORRECTION,
