@@ -31,7 +31,7 @@ class HuggingFaceLLM(BaseLLM):
         model: str = "meta-llama/Llama-3.1-70B-Instruct",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         endpoint_url: Optional[str] = None,
         **kwargs: Any,
     ):
