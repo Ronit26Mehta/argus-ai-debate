@@ -1,0 +1,61 @@
+{
+  "id": "sr-cfe7ceaa645e",
+  "frame_id": "df-b9829ea4907c",
+  "verdict_label": "Contested with Moderate Evidence",
+  "jury_confidence": 0.7422438687266917,
+  "convergence_round": 1,
+  "reasoning_narrative": "The debate centered on the proposition that Artificial General Intelligence (AGI) will be achieved by the year 2047. After considering various expert opinions, the final assessment indicates a 74.2% likelihood of this proposition being true, resulting in a verdict of \"Contested with Moderate Evidence.\" The discussion saw the initial belief shift from 46% to 74.2% as evidence was presented.\n\nArguments supporting the achievement of AGI by 2047 were put forth by Prof. Eleanor Vance and Dr. Anya Sharma. Prof. Vance provided strong support for the proposition [evid_da2d13d5f79f], and further contributed with additional supporting evidence [evid_377e129f65da] and [evid_39aea50ce4ee]. Dr. Sharma also offered evidence in favor of the proposition [evid_744b72344ef1] and [evid_95aa8ec5624f], suggesting that current advancements and trends make the 2047 timeline plausible.\n\nConversely, Dr. Kenji Tanaka and Dr. Anya Sharma presented arguments challenging the proposition. Dr. Tanaka provided the strongest opposing evidence [evid_4e15bd7078e1], suggesting significant hurdles or misestimations in the timeline. He further attacked the proposition with additional points [evid_d6452fae9d97] and [evid_0594c0f890bc]. Dr. Sharma, while also offering supporting evidence, contributed an argument against the proposition as well [evid_37c0dbe95436], indicating that even proponents might acknowledge certain difficulties.\n\nThe verdict of \"Contested with Moderate Evidence\" reflects the significant and credible arguments presented on both sides of the debate. While the posterior probability of 74.2% leans towards the proposition being true, the presence of strong counter-arguments, particularly from Dr. Tanaka [evid_4e15bd7078e1], means the outcome is not considered certain. The debate highlights a complex issue with experts holding differing views on the feasibility and timeline of AGI development.",
+  "dissent_log": "A minority view contends that Artificial General Intelligence (AGI) will not be achieved by the year 2047, challenging the proposition's timeline. This perspective is significantly supported by experts such as Dr. Anya Sharma, whose evidence was rated with a quality score of 0.75 [evid_37c0dbe95436]. Dr. Kenji Tanaka further contributed substantial dissenting arguments, with his evidence receiving high quality scores of 0.90 [evid_4e15bd7078e1], 0.85 [evid_d6452fae9d97], and 0.80 [evid_0594c0f890bc].\n\nDespite being a minority position, this view was not dismissed because the evidence presented by these experts was considered to be of high quality and relevance. The strong EVID-Q scores indicate that their arguments against the proposition were well-reasoned and substantial. This robust dissenting evidence contributed to the final verdict of \"Contested with Moderate Evidence,\" preventing a definitive acceptance of the 2047 timeline for AGI achievement.",
+  "what_could_change": [
+    "*   Seek out new research or data that directly supports or challenges the specific technical predictions or timelines put forth by Dr. Anya Sharma.",
+    "*   Gather additional expert analysis or empirical evidence related to the feasibility and speed of AGI development, as discussed by Dr. Kenji Tanaka.",
+    "*   Investigate further the underlying assumptions or models used by Prof. Eleanor Vance to project AGI achievement, looking for new data that might alter those foundations."
+  ],
+  "metrics": [
+    {
+      "name": "ARCIS",
+      "score": 0.74521875,
+      "interpretation": "Arguments built upon each other with strong logical consistency."
+    },
+    {
+      "name": "EVID-Q",
+      "score": 0.3145500000000001,
+      "interpretation": "Evidence quality was generally poor or unreliable."
+    },
+    {
+      "name": "DIALEC",
+      "score": 0.9183333333333332,
+      "interpretation": "Deep dialectical exchange with robust attack/defence cycles."
+    },
+    {
+      "name": "REBUT-F",
+      "score": 0.8,
+      "interpretation": "Rebuttals effectively targeted and weakened opposing evidence."
+    },
+    {
+      "name": "CONV-S",
+      "score": 1.0,
+      "interpretation": "Posterior converged quickly and stably to a clear position."
+    },
+    {
+      "name": "PROV-I",
+      "score": 0.31875,
+      "interpretation": "Significant provenance gaps \u2014 many claims lack attribution."
+    },
+    {
+      "name": "CALIB-M",
+      "score": 0.6506926424720301,
+      "interpretation": "Some over- or under-confidence detected."
+    },
+    {
+      "name": "EIG-U",
+      "score": 0.4148693763516982,
+      "interpretation": "Some redundant evidence; moderate information gain."
+    }
+  ],
+  "num_rounds": 1,
+  "num_evidence": 9,
+  "num_rebuttals": 6,
+  "duration_seconds": 0.0,
+  "created_at": "2026-03-11T10:15:51.314587+00:00"
+}
