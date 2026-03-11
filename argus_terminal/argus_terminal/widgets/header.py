@@ -88,7 +88,7 @@ class HeaderWidget(Static):
     
     def __init__(
         self,
-        version: str = "3.1.0",
+        version: str = "4.5.0",
         name: str | None = None,
         id: str | None = None,
         classes: str | None = None,
