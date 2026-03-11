@@ -34,7 +34,7 @@ class AzureOpenAILLM(BaseLLM):
         model: str = "gpt-4",
         api_key: Optional[str] = None,
         temperature: float = 0.7,
-        max_tokens: int = 4096,
+        max_tokens: int = 16384,
         azure_endpoint: Optional[str] = None,
         api_version: str = "2024-02-15-preview",
         azure_deployment: Optional[str] = None,
