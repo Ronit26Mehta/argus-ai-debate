@@ -8,6 +8,7 @@ Follows the Workflow 2 (Multi-Specialist Debate) pattern from Argus.
 from __future__ import annotations
 
 import json
+import re
 import time
 import logging
 from dataclasses import dataclass, field
@@ -95,8 +96,9 @@ class StreamingDebateEngine:
         Returns:
             Full debate result dict with all rounds data.
         """
-        from argus.cdag import CDAG, Proposition, Evidence, Rebuttal, EdgeType
-        from argus.cdag.nodes import EvidenceType
+        from argus.cdag.graph import CDAG
+        from argus.cdag.nodes import Proposition, Evidence, Rebuttal, EvidenceType
+        from argus.cdag.edges import EdgeType
         from argus.cdag.propagation import compute_posterior, compute_all_posteriors
         from argus.agents.jury import Jury, JuryConfig
         from argus.agents.refuter import Refuter
@@ -231,6 +233,54 @@ class StreamingDebateEngine:
         return result
 
     # ------------------------------------------------------------------
+    # JSON parsing helpers (consistent with Refuter._strip_json)
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _strip_json(text: str) -> str:
+        """Robustly extract JSON from markdown-fenced or prefixed LLM output."""
+        text = text.strip()
+
+        # 1. Complete fences:  ```json ... ```  or  ``` ... ```
+        match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
+        if match:
+            return match.group(1).strip()
+
+        # 2. Opening fence with NO closing fence (truncated response)
+        match = re.search(r"```(?:json)?\s*([\s\S]+)", text)
+        if match:
+            candidate = match.group(1).strip()
+            return StreamingDebateEngine._try_repair_json(candidate)
+
+        # 3. No fences — look for the first '{' to the last '}'
+        first_brace = text.find("{")
+        first_bracket = text.find("[")
+        # Pick whichever comes first (brace for object, bracket for array)
+        if first_bracket != -1 and (first_brace == -1 or first_bracket < first_brace):
+            last = text.rfind("]")
+            if last > first_bracket:
+                return text[first_bracket : last + 1]
+            return StreamingDebateEngine._try_repair_json(text[first_bracket:])
+        if first_brace != -1:
+            last = text.rfind("}")
+            if last > first_brace:
+                return text[first_brace : last + 1]
+            return StreamingDebateEngine._try_repair_json(text[first_brace:])
+
+        return text
+
+    @staticmethod
+    def _try_repair_json(candidate: str) -> str:
+        """Attempt to close truncated JSON so it becomes parseable."""
+        opens_b = candidate.count("{")
+        closes_b = candidate.count("}")
+        opens_sq = candidate.count("[")
+        closes_sq = candidate.count("]")
+        candidate += "]" * (opens_sq - closes_sq)
+        candidate += "}" * (opens_b - closes_b)
+        return candidate
+
+    # ------------------------------------------------------------------
     # Private helpers
     # ------------------------------------------------------------------
 
@@ -244,7 +294,7 @@ class StreamingDebateEngine:
     ) -> list[dict]:
         """Prompt LLM for evidence from one specialist."""
         from argus.cdag.nodes import Evidence, EvidenceType
-        from argus.cdag.edges import EdgeType
+        from argus.cdag.edges import EdgeType  # noqa: F811
 
         prompt = f"""You are a {spec.name} ({spec.persona}). {spec.instruction}
 
@@ -270,17 +320,18 @@ Only output raw JSON, no markdown fences."""
             response = self.llm.generate(prompt, temperature=0.4)
             content = response.content.strip()
 
-            # Strip markdown fences if present
-            if content.startswith("```"):
-                lines = content.split("\n")
-                content = "\n".join(
-                    l for l in lines if not l.strip().startswith("```")
-                )
-            content = content.strip()
+            # Robust JSON extraction (matches Refuter._strip_json)
+            content = self._strip_json(content)
 
             data = json.loads(content)
 
-            for item in data.get("evidence", [])[:2]:
+            # Handle LLM returning a flat list instead of {"evidence": [...]}
+            if isinstance(data, list):
+                evidence_list = data[:2]
+            else:
+                evidence_list = data.get("evidence", [])[:2]
+
+            for item in evidence_list:
                 supports = item.get("supports_proposition", True)
                 polarity = 1 if supports else -1
                 confidence = max(0.1, min(1.0, float(item.get("confidence", 0.7))))
@@ -355,11 +406,17 @@ Only output raw JSON, no markdown fences."""
             rebuttals = refuter.generate_rebuttals(graph, prop.id)
 
             for rb in rebuttals:
+                # Look up the target node text instead of leaving it blank
+                target_text = ""
+                target_node = graph.get_node(rb.target_id)
+                if target_node and hasattr(target_node, "text"):
+                    target_text = target_node.text[:200]
+
                 rebuttal_items.append({
                     "id": rb.id,
                     "text": rb.text,
                     "target_id": rb.target_id,
-                    "target_text": "",
+                    "target_text": target_text,
                     "strength": getattr(rb, "strength", 0.5),
                     "rebuttal_type": getattr(rb, "rebuttal_type", "general"),
                     "round": round_num,
