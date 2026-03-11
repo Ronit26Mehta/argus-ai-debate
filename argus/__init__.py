@@ -26,7 +26,7 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "4.0"
+__version__ = "4.5.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
