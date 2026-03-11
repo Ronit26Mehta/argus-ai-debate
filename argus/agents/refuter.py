@@ -14,6 +14,11 @@ from typing import Optional, Any, TYPE_CHECKING
 
 from pydantic import Field
 
+from argus.core.json_repair import (
+    extract_json_object,
+    repair_json,
+)
+
 from argus.agents.base import (
     BaseAgent,
     AgentConfig,
@@ -35,6 +40,7 @@ class RefuterConfig(AgentConfig):
     
     name: str = "Refuter"
     role: AgentRole = AgentRole.REFUTER
+    max_tokens: int = 8192
     
     min_rebuttal_strength: float = Field(
         default=0.4,
@@ -225,16 +231,21 @@ Return JSON:
     ]
 }}"""
         
-        response = self.generate(prompt)
+        response = self.generate(prompt, max_tokens=16384)
         
         rebuttals: list[Rebuttal] = []
         config = self.config if isinstance(self.config, RefuterConfig) else RefuterConfig()
 
         try:
-            data = json.loads(self._strip_json(response))
-            rebuttal_data = data.get("rebuttals", [])
+            data = extract_json_object(response)
+
+            rebuttal_data = data.get("rebuttals", []) if isinstance(data, dict) else data
+            if isinstance(rebuttal_data, dict):
+                rebuttal_data = [rebuttal_data]
             
             for rd in rebuttal_data[:config.max_rebuttals_per_round]:
+                if not isinstance(rd, dict):
+                    continue
                 strength = rd.get("strength", 0.5)
                 if strength < config.min_rebuttal_strength:
                     continue
@@ -258,8 +269,8 @@ Return JSON:
                 graph.add_rebuttal(rebuttal, target_id)
                 rebuttals.append(rebuttal)
                 
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Failed to parse refuter response as JSON — raw: %s", response[:200])
+        except (json.JSONDecodeError, ValueError, TypeError) as exc:
+            logger.warning("Refuter JSON parse failed (%s) — raw: %s", exc, response[:300])
         
         self.log_action("generate_rebuttals", {
             "proposition_id": proposition_id,
@@ -323,54 +334,10 @@ Return JSON:
     ]
 }}"""
         
-        response = self.generate(prompt)
+        response = self.generate(prompt, max_tokens=16384)
 
         try:
-            data = json.loads(self._strip_json(response))
+            data = extract_json_object(response)
             return data.get("contradictions", [])
-        except (json.JSONDecodeError, ValueError):
+        except (ValueError, TypeError):
             return []
-
-    @staticmethod
-    def _strip_json(text: str) -> str:
-        """Robustly extract JSON from markdown-fenced or prefixed LLM output."""
-        text = text.strip()
-
-        # 1. Complete fences:  ```json ... ```  or  ``` ... ```
-        match = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
-        if match:
-            return match.group(1).strip()
-
-        # 2. Opening fence with NO closing fence (truncated response)
-        match = re.search(r"```(?:json)?\s*([\s\S]+)", text)
-        if match:
-            candidate = match.group(1).strip()
-            # Try to repair truncated JSON
-            candidate = Refuter._try_repair_json(candidate)
-            return candidate
-
-        # 3. No fences — look for the first '{' to the last '}'
-        first = text.find("{")
-        last = text.rfind("}")
-        if first != -1 and last > first:
-            return text[first : last + 1]
-
-        # 4. No closing brace — truncated without fences
-        if first != -1:
-            return Refuter._try_repair_json(text[first:])
-
-        return text
-
-    @staticmethod
-    def _try_repair_json(candidate: str) -> str:
-        """Attempt to close truncated JSON so it becomes parseable."""
-        # Count open/close braces and brackets
-        opens_b = candidate.count("{")
-        closes_b = candidate.count("}")
-        opens_sq = candidate.count("[")
-        closes_sq = candidate.count("]")
-
-        # Append missing closers
-        candidate += "]" * (opens_sq - closes_sq)
-        candidate += "}" * (opens_b - closes_b)
-        return candidate
