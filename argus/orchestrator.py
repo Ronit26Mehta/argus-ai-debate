@@ -263,7 +263,7 @@ Return JSON:
 }}"""
         
         import json
-        response = self.llm.generate(prompt, temperature=0.3)
+        response = self.llm.generate(prompt, temperature=0.3, max_tokens=16384)
         
         try:
             data = json.loads(response.content)
