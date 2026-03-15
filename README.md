@@ -6,7 +6,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/4.5.0/)
+[![PyPI version](https://badge.fury.io/py/argus-debate-ai.svg)](https://pypi.org/project/argus-debate-ai/5.0.0/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Type Checking: mypy](https://img.shields.io/badge/type%20checking-mypy-blue.svg)](https://mypy.readthedocs.io/)
 [![Tools: 50+](https://img.shields.io/badge/tools-50+-green.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#tool-integrations-50)
@@ -39,6 +39,15 @@
 - [Architecture](#architecture)
 - [Core Components](#core-components)
 - [Algorithms](#algorithms)
+- [ARGUS Evolution Extensions (v5.0)](#argus-evolution-extensions-v50)
+  - [CHRONOS — Temporal Evidence Decay](#chronos--temporal-evidence-decay)
+  - [PHALANX — Population-Scale Simulation](#phalanx--population-scale-epistemic-simulation)
+  - [SEED — Document-to-Debate Pipeline](#seed--document-to-debate-pipeline)
+  - [MNEME — Persistent Agent Memory](#mneme--persistent-agent-memory)
+  - [FRACTAL — Hierarchical Decomposition](#fractal--hierarchical-proposition-decomposition)
+  - [MIRROR — Consequence Inference Graph](#mirror--consequence-inference-graph)
+  - [VERICHAIN — Cross-Debate Truth Network](#verichain--cross-debate-truth-network)
+  - [PULSE — Operational Intelligence Dashboard](#pulse--operational-intelligence-dashboard)
 - [API Reference](#api-reference)
 - [Examples](#examples)
 - [Testing](#testing)
@@ -96,6 +105,19 @@ PROV-O compatible ledger with hash-chain integrity:
 - Cryptographic attestations
 - Complete audit trails
 - Tamper detection
+
+### ARGUS Evolution v5.0 — Eight Novel Extensions
+
+| Extension | Innovation |
+|-----------|------------|
+| **CHRONOS** | Temporal C-DAG with PELT-based belief drift detection and causal attribution |
+| **PHALANX** | Population-scale epistemic simulation with 5 quantitative cognitive biases and Jensen-Shannon Polarisation Index |
+| **SEED** | Document-to-debate pipeline with novel DebatabilityScore (BiPolarity × Novelty × EvidenceDensity) |
+| **MNEME** | Persistent agent memory with Beta-distribution Bayesian competence and rolling Brier Score calibration |
+| **FRACTAL** | Hierarchical proposition decomposition with relationship-aware aggregation (AND/OR/Weighted/Geometric) |
+| **MIRROR** | Consequence inference graph with counterfactual sensitivity dP(consequence)/dP(verdict) |
+| **VERICHAIN** | SHA-256 hash-chained cross-debate truth registry with tamper detection and precedent injection |
+| **PULSE** | Always-on operational intelligence with z-score anomaly detection, failure taxonomy, and HTML dashboard |
 
 ---
 
@@ -221,6 +243,12 @@ pip install argus-debate-ai[cohere]   # Cohere integration
 pip install argus-debate-ai[mistral]  # Mistral integration
 pip install argus-debate-ai[groq]     # Groq LPU inference
 pip install argus-debate-ai[arxiv]    # arXiv connector
+
+# Evolution v5.0 extension extras
+pip install argus-debate-ai[evolution]         # All 8 Evolution extensions (scipy, plotly, networkx)
+pip install argus-debate-ai[verichain-pg]      # VERICHAIN PostgreSQL backend (psycopg2-binary)
+pip install argus-debate-ai[mneme-qdrant]      # MNEME Qdrant vector DB backend (qdrant-client)
+pip install argus-debate-ai[seed-web]          # SEED URL ingestion (requests, beautifulsoup4)
 ```
 
 ### System Requirements
@@ -2828,6 +2856,339 @@ calibrated_probs = calibrator.calibrate(new_logits)
 brier_score = calibrator.brier_score(labels, probs)
 ece = calibrator.expected_calibration_error(labels, probs)
 ```
+
+---
+
+## ARGUS Evolution Extensions (v5.0)
+
+Version 5.0 introduces eight production-ready extensions that dramatically expand ARGUS's capabilities. All extensions have been verified to import and run successfully, and every visualization supports dual **dark** and **light** themes.
+
+---
+
+### CHRONOS — Temporal Evidence Decay
+
+> Temporal C-DAG with exponential half-life decay and PELT-based belief drift detection.
+
+**Key Classes:** `ChronosOrchestrator`, `TemporalCDAG`, `EvidenceHalfLifeRegistry`, `BeliefDriftDetector`
+
+```python
+from argus.chronos import ChronosOrchestrator, EvidenceHalfLifeRegistry
+from argus.chronos.visualization import plot_temporal_posterior, plot_drift_timeline
+
+# Configure decay per evidence category
+registry = EvidenceHalfLifeRegistry()
+registry.register("news", half_life_days=7)
+registry.register("research_paper", half_life_days=365)
+registry.register("social_media", half_life_days=1)
+
+# Run temporal debate
+orchestrator = ChronosOrchestrator(base=rdc, half_life_registry=registry)
+result = orchestrator.debate(
+    "Interest rates will rise in Q3",
+    reference_date="2025-01-01",
+)
+
+print(f"Posterior: {result.temporal_posterior.current_value:.3f}")
+print(f"Drift events: {len(result.drift_report.inflection_points)}")
+
+# Visualise (dark or light)
+fig = plot_temporal_posterior(result.temporal_posterior, theme="dark")
+fig.show()
+fig2 = plot_drift_timeline(result.drift_report, theme="light")
+fig2.show()
+```
+
+**Algorithms:**
+- **Exponential half-life decay**: Each evidence node's weight decays as `w(t) = w₀ × 2^(−Δt/t½)`
+- **PELT change-point detection**: Pruned Exact Linear Time algorithm identifies inflection points in the posterior time series
+- **Causal Attribution**: Each drift event is traced back to specific evidence nodes that caused the shift
+
+---
+
+### PHALANX — Population-Scale Epistemic Simulation
+
+> Thousands of cognitively-biased personas debate in parallel; polarisation and consensus are measured with Jensen-Shannon divergence.
+
+**Key Classes:** `PHALANXOrchestrator`, `EpistemicPersona`, `CognitiveBiasEngine`, `EmergentConsensusDetector`
+
+```python
+from argus.phalanx import PHALANXOrchestrator, PHALANXConfig
+from argus.phalanx.visualization import plot_population_posterior, plot_bias_heatmap
+
+config = PHALANXConfig(
+    population_size=500,
+    parallel_workers=8,
+)
+orchestrator = PHALANXOrchestrator(base=rdc, config=config)
+result = orchestrator.debate("Universal Basic Income reduces poverty")
+
+print(f"Polarisation Index (JSD): {result.consensus.polarisation_index.value:.3f}")
+print(f"Bimodal: {result.consensus.is_bimodal}")
+print(f"Dissent clusters: {len(result.consensus.dissent_clusters)}")
+
+# Dual-theme visualizations
+fig = plot_population_posterior(result.population_posterior, theme="dark")
+fig2 = plot_bias_heatmap(result.population_posterior, theme="light")
+```
+
+**Cognitive Biases Modelled:**
+| Bias | Effect |
+|------|--------|
+| Confirmation | Amplifies evidence aligned with prior |
+| Anchoring | Anchors posterior near initial estimate |
+| Availability | Over-weights memorable examples |
+| Authority | Scales confidence by claimed expertise |
+| Recency | Over-weights recent evidence |
+
+---
+
+### SEED — Document-to-Debate Pipeline
+
+> End-to-end ingestion of raw documents into debate-ready bundles with ranked, scored claims.
+
+**Key Classes:** `SEEDOrchestrator`, `ClaimMiner`, `DebatabilityScorer`, `EvidencePrePopulator`
+
+```python
+from argus.seed import SEEDOrchestrator, SEEDConfig
+
+config = SEEDConfig(
+    min_debatability_score=0.4,
+    max_claims=20,
+    enable_wikidata=True,
+)
+orchestrator = SEEDOrchestrator(config=config)
+
+# Feed text, URL, or file path
+bundle = orchestrator.process("https://example.com/policy-report.pdf")
+
+print(f"Claims extracted: {bundle.num_claims}")
+for claim in bundle.top_claims(5):
+    print(f"  [{claim.debatability_score:.2f}] {claim.text[:80]}")
+```
+
+**Debatability Score Formula:**
+```
+DebatabilityScore = 0.4 × BiPolarityRatio
+                  + 0.35 × NoveltyQuotient
+                  + 0.25 × EvidenceDensity
+```
+
+---
+
+### MNEME — Persistent Agent Memory
+
+> Agents remember past debates, grow expertise over time, and self-monitor calibration quality.
+
+**Key Classes:** `MNEMEPlugin`, `KnowledgeReservoir`, `ExpertiseProfile`, `CalibrationHistory`
+
+```python
+from argus.mneme import MNEMEPlugin, MNEMEConfig
+
+plugin = MNEMEPlugin(config=MNEMEConfig(
+    backend="sqlite",          # or 'postgres', 'qdrant', 'memory'
+    db_path="./argus_memory.db",
+    decay_rate=0.01,
+))
+
+# Integrate with orchestrator
+orchestrator = rdc  # Existing RDCOrchestrator
+plugin.attach(orchestrator)
+
+# After debates, expertise profile updates automatically
+profile = plugin.expertise_profile
+for domain, competence in profile.top_domains(3):
+    print(f"  {domain}: α={competence.alpha:.1f}, β={competence.beta:.1f} "
+          f"→ P(competent)={competence.mean:.3f}")
+
+# Check calibration health
+drift = plugin.calibration_history.check_drift()
+if drift.is_drifting:
+    print(f"Calibration drift detected! Brier score: {drift.current_brier:.3f}")
+```
+
+**Supported Backends:**
+| Backend | Use Case |
+|---------|----------|
+| `memory` | Development / testing (no persistence) |
+| `sqlite` | Single-process production (default) |
+| `postgres` | Multi-process / distributed deployments |
+| `qdrant` | Native vector similarity search |
+
+---
+
+### FRACTAL — Hierarchical Proposition Decomposition
+
+> Complex propositions are decomposed into atomic sub-propositions, debated individually in parallel, and aggregated with relationship-aware Bayesian logic.
+
+**Key Classes:** `FRACTALOrchestrator`, `PropositionDecomposer`, `HierarchicalBayesianAggregator`
+
+```python
+from argus.fractal import FRACTALOrchestrator, FRACTALConfig
+from argus.fractal.visualization import plot_proposition_tree, export_tree_html
+
+config = FRACTALConfig(max_depth=3, max_children=5, parallel_workers=4)
+orchestrator = FRACTALOrchestrator(base=rdc, config=config)
+
+result = orchestrator.debate(
+    "AI will surpass human intelligence AND cause economic disruption by 2035"
+)
+
+print(f"Tree nodes: {result.proposition_tree.num_nodes}")
+print(f"Max depth: {result.max_depth}")
+print(f"Root posterior: {result.root_posterior:.3f}")
+
+# Visualize the tree
+fig = plot_proposition_tree(result.proposition_tree, theme="dark")
+fig.show()
+export_tree_html(result.proposition_tree, "tree.html", theme="light")
+```
+
+**Aggregation Strategies by Relationship Type:**
+| Relationship | Rule | Formula |
+|-------------|------|---------|
+| `NECESSARY` | AND (product) | P(parent) = ∏ P(childᵢ) |
+| `SUFFICIENT` | OR (noisy-or) | P(parent) = 1 − ∏ (1 − P(childᵢ)) |
+| `CONTRIBUTING` | Weighted Bayesian | P(parent) = Σ wᵢ × P(childᵢ) |
+| `INDEPENDENT` | Geometric mean | P(parent) = (∏ P(childᵢ))^(1/n) |
+
+---
+
+### MIRROR — Consequence Inference Graph
+
+> After verdict, two inference agents (Opportunity / Risk) project downstream consequences and compute counterfactual sensitivity.
+
+**Key Classes:** `MIRROROrchestrator`, `ConsequenceInferenceAgent`, `ConsequenceGraph`, `CounterfactualChallenger`
+
+```python
+from argus.mirror import MIRROROrchestrator
+from argus.mirror.visualization import plot_consequence_graph, export_consequence_html
+
+orchestrator = MIRROROrchestrator(base=rdc)
+result = orchestrator.debate("Ban single-use plastics globally")
+
+graph = result.consequence_graph
+print(f"Consequences inferred: {graph.num_nodes}")
+print(f"Categories: {graph.categories}")
+
+# Counterfactual: what changes if the verdict flips?
+report = result.counterfactual_report
+print(f"\nMax probability swing: {report.max_consequence_swing:.3f}")
+print(f"Most sensitive category: {report.most_sensitive_category}")
+print("\n" + report.narrative())
+
+# Visualize the consequence graph
+fig = plot_consequence_graph(graph, theme="dark")
+fig.show()
+export_consequence_html(graph, "consequences.html", theme="light")
+```
+
+**Counterfactual Sensitivity:**
+```
+dP(consequence)/dP(root) = P(C | root=TRUE) − P(C | root=FALSE)
+```
+Nodes with |sensitivity| > 0.3 are flagged as **pivotal** — consequences most reliant on the verdict being correct.
+
+---
+
+### VERICHAIN — Cross-Debate Truth Network
+
+> Persistent registry of signed verdict records forming a hash-chained truth network. Past verdicts are retrieved as epistemic precedents for new debates.
+
+**Key Classes:** `VERICHAINRegistry`, `TruthNode`, `VERICHAINRetriever`, `EpistemicPrecedentInjector`, `ChainVerifier`
+
+```python
+from argus.verichain import VERICHAINRegistry, VERICHAINRetriever, EpistemicPrecedentInjector
+from argus.verichain.integrity import ChainVerifier
+
+# Create registry (in-memory or sqlite)
+registry = VERICHAINRegistry(backend="sqlite", db_path="./truth.db")
+
+# Register verdicts after each debate
+node = registry.register_verdict(
+    proposition="Drug X reduces HbA1c by >1% in T2D",
+    verdict="supported",
+    posterior=0.78,
+    domain="clinical",
+    debate_id="debate_001",
+)
+print(f"TruthNode: {node.node_id}, hash: {node.current_hash[:16]}...")
+
+# Retrieve precedents for a new debate
+retriever = VERICHAINRetriever(nodes=registry.all_nodes)
+precedents = retriever.retrieve("antidiabetic drug effectiveness", top_k=3)
+
+# Inject precedents into new debate prior
+injector = EpistemicPrecedentInjector()
+plan = injector.plan_injection(precedents, proposition="Metformin is first-line therapy")
+print(f"Prior adjustment: {plan.prior_adjustment:+.3f}")
+print(f"Evidence texts injected: {plan.num_precedents}")
+
+# Verify chain integrity
+verifier = ChainVerifier()
+chain = verifier.verify_chain(registry.all_nodes)
+print(f"Chain valid: {chain.is_valid} ({chain.chain_length} nodes)")
+```
+
+**Authority Score Formula:**
+```
+Authority = 0.4 × |posterior − 0.5| × 2   # confidence
+          + 0.4 × min(citations / 10, 1)    # citation count
+          + 0.2 × min(versions / 5, 1)      # version history
+```
+
+---
+
+### PULSE — Operational Intelligence Dashboard
+
+> Always-on monitoring with latency histograms, token metering, z-score anomaly detection, failure taxonomy, and an auto-generated HTML dashboard.
+
+**Key Classes:** `PULSEDashboard`, `PULSEOrchestrator`, `DebateProbe`, `AnomalyDetector`, `FailureTaxonomy`
+
+```python
+from argus.pulse import PULSEOrchestrator, PULSEConfig
+from argus.pulse.visualization import (
+    plot_latency_histogram,
+    plot_token_usage,
+    plot_accuracy_trend,
+    plot_failure_taxonomy,
+)
+
+# Instrumenting an existing orchestrator
+pulse = PULSEOrchestrator(base=rdc, config=PULSEConfig(
+    export_format="html",
+    output_dir="./pulse_reports",
+    anomaly_z_threshold=2.5,
+))
+
+# Run debates normally — metrics are collected automatically
+for prop in propositions:
+    result = pulse.debate(prop)
+
+# Generate and export full report
+report = pulse.dashboard.generate_report()
+path = pulse.export_report()  # Writes HTML dashboard
+print(f"Report exported to: {path}")
+print(f"Anomalies detected: {len(report.anomalies)}")
+for rec in report.recommendations:
+    print(f"  {rec}")
+
+# Individual visualizations — dual theme
+latencies = pulse.dashboard.store.histogram("stage_full_debate_latency_ms").values
+fig = plot_latency_histogram(latencies, stage_name="Full Debate", theme="dark")
+fig.show()
+fig2 = plot_failure_taxonomy(report.failure_taxonomy.get("counts", {}), theme="light")
+fig2.show()
+```
+
+**Failure Taxonomy Categories:**
+| Category | Trigger |
+|----------|---------|
+| `LLM_TIMEOUT` | LLM call exceeds deadline |
+| `LLM_RATE_LIMIT` | HTTP 429 / rate limit errors |
+| `EVIDENCE_EMPTY` | No chunks retrieved |
+| `PROPAGATION_DIVERGENCE` | C-DAG propagation produces NaN/Inf |
+| `VERDICT_ABSTAIN` | Jury abstains from verdict |
+| `UNKNOWN` | Unclassified errors |
 
 ---
 
