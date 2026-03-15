@@ -45,13 +45,13 @@ _TOKENS_PER_AGENT_PER_ROUND = 2500  # conservative average
 # ── Specialist count scaling ───────────────────────────────────────────
 
 def _specialist_count(controversy: float) -> int:
-    if controversy < 0.3:
-        return 2
-    if controversy < 0.5:
-        return 3
-    if controversy < 0.7:
-        return 4
-    return min(int(3 + controversy * 4), 6)
+    """Scale specialist count dynamically based on controversy.
+
+    No hard upper cap — higher controversy produces more specialists.
+    Formula: base 2 + scaled by controversy.
+    """
+    count = 2 + int(controversy * 6)   # 0.0 → 2,  0.5 → 5,  1.0 → 8
+    return max(2, count)
 
 
 # ── Refuter intensity ─────────────────────────────────────────────────
@@ -65,11 +65,9 @@ def _refuter_intensity(controversy: float) -> RefuterIntensity:
 
 
 def _refuter_count(controversy: float) -> int:
-    if controversy < 0.3:
-        return 1
-    if controversy < 0.7:
-        return 2
-    return 3
+    """Scale refuter count dynamically — no hard cap."""
+    count = 1 + int(controversy * 4)   # 0.0 → 1,  0.5 → 3,  1.0 → 5
+    return max(1, count)
 
 
 # ── Jury architecture per debate type ─────────────────────────────────
@@ -106,20 +104,13 @@ _JURY_MAP: dict[DebateType, tuple[JuryArchitecture, int, str]] = {
 
 def _estimate_rounds(frame: DebateFrame) -> tuple[int, str]:
     """
-    Base rounds (2) + controversy bonus (0-3) + evidence density bonus (0-2)
-    - sub-claim adjustment.  Capped at [1, 8].
+    Base rounds (2) + controversy bonus (0-4) + evidence density bonus (0-2)
+    - sub-claim adjustment.  Capped at [1, 12] to stay dynamic.
     """
     base = 2
 
-    # controversy bonus
-    if frame.controversy_score < 0.3:
-        c_bonus = 0
-    elif frame.controversy_score < 0.5:
-        c_bonus = 1
-    elif frame.controversy_score < 0.7:
-        c_bonus = 2
-    else:
-        c_bonus = 3
+    # controversy bonus (continuous)
+    c_bonus = int(frame.controversy_score * 4)  # 0→0, 0.5→2, 1.0→4
 
     # evidence density bonus
     density_map = {"sparse": 0, "moderate": 1, "rich": 2}
@@ -131,7 +122,7 @@ def _estimate_rounds(frame: DebateFrame) -> tuple[int, str]:
     )
     sub_adj = min(parallel_subs, 2)
 
-    total = max(1, min(base + c_bonus + e_bonus - sub_adj, 8))
+    total = max(1, min(base + c_bonus + e_bonus - sub_adj, 12))
 
     reason = (
         f"base {base} + controversy {c_bonus} + evidence density {e_bonus}"
@@ -237,7 +228,7 @@ class TopologyBuilder:
         rounds, reason = _estimate_rounds(frame)
         spec.estimated_rounds = rounds
         spec.round_reasoning = reason
-        spec.max_rounds = 8
+        spec.max_rounds = 12
         spec.min_rounds = 1
 
         # 6. Cost estimation
