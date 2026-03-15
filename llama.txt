@@ -1,0 +1,7 @@
+(bitnet_venv) PS D:\> D:\llama_bin\llama-server.exe `
+>>     -m D:\models\qwen2.5-3b\qwen2.5-3b-instruct-q4_k_m.gguf `
+>>     --host 0.0.0.0 `
+>>     --port 8080 `
+>>     -c 8192 `
+>>     -n 2048 `
+>>     -t 4
