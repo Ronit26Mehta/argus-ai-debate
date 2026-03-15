@@ -1,0 +1,151 @@
+{
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+    "version": "v1.1.0",
+
+    "entity": {
+        "type": "organisation",
+        "role": "maintainer",
+        "name": "ARGUS — Agentic Research & Governance Unified System",
+        "email": "mehtaronit702@gmail.com",
+        "phone": "",
+        "description": "ARGUS is an open-source AI research organization building the world's first debate-native, multi-agent AI framework for evidence-based reasoning. Our flagship product, Argus Debate AI, eliminates hallucination through adversarial multi-agent debate, Bayesian aggregation, and full provenance tracking. We support 27+ LLM providers, 50+ tools, and publish all work under the MIT license. Our novel architecture — the Conceptual Debate Graph (C-DAG) and Evidence-Directed Debate Orchestration (EDDO) — represents original research contributions to AI reasoning, calibration, and governance. ARGUS is freely available for anyone to use, study, modify, and distribute.",
+        "webpageUrl": {
+            "url": "https://github.com/Ronit26Mehta/argus-ai-debate",
+            "wellKnown": ""
+        }
+    },
+
+    "projects": [
+        {
+            "guid": "argus-debate-ai",
+            "name": "ARGUS — Argus Debate AI",
+            "description": "A debate-native, multi-agent AI framework for evidence-based reasoning with structured argumentation, decision-theoretic planning, and full provenance tracking. ARGUS implements the Research Debate Chain (RDC) — a novel approach that structures knowledge evaluation as multi-agent debates. Instead of single-pass LLM inference, ARGUS orchestrates Moderator, Specialist, Refuter, and Jury agents that gather evidence, generate rebuttals, and render verdicts through Bayesian aggregation. Key innovations include: (1) Conceptual Debate Graph (C-DAG) — a directed graph where propositions, evidence, and rebuttals are nodes with signed edges representing support/attack relationships; (2) Evidence-Directed Debate Orchestration (EDDO) — an algorithm managing multi-round debates with convergence detection; (3) Value of Information Planning using Expected Information Gain (EIG); (4) Full PROV-O compatible provenance tracking with SHA-256 hash-chain integrity. Supports 27+ LLM providers, 50+ tools, hybrid BM25+FAISS retrieval, and ships with a TUI, Streamlit sandbox, and REST API. Available on PyPI as argus-debate-ai.",
+            "webpageUrl": {
+                "url": "https://pypi.org/project/argus-debate-ai/",
+                "wellKnown": ""
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/Ronit26Mehta/argus-ai-debate",
+                "wellKnown": ""
+            },
+            "licenses": ["spdx:MIT"],
+            "tags": [
+                "artificial-intelligence",
+                "multi-agent",
+                "llm",
+                "hallucination-reduction",
+                "bayesian",
+                "open-source",
+                "nlp",
+                "ai-safety",
+                "reasoning",
+                "developer-tools"
+            ]
+        }
+    ],
+
+    "funding": {
+        "channels": [
+            {
+                "guid": "github-sponsors",
+                "type": "payment-provider",
+                "address": "https://github.com/sponsors/Ronit26Mehta",
+                "description": "Support ARGUS directly through GitHub Sponsors. Accepts one-time and recurring monthly contributions via credit/debit card."
+            },
+            {
+                "guid": "open-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/argus-debate-ai",
+                "description": "Fund ARGUS through Open Collective — transparent, publicly visible fund management. Accepts cards, PayPal, and bank transfers globally including from India. Ideal for corporate sponsors and international grant bodies."
+            },
+            {
+                "guid": "bank-transfer",
+                "type": "bank",
+                "address": "",
+                "description": "Direct bank transfer available for institutional sponsors, grant bodies, and corporate donors. Please email support@argus-ai.dev with subject 'ARGUS Sponsorship' to receive bank details."
+            }
+        ],
+
+        "plans": [
+            {
+                "guid": "community-supporter",
+                "status": "active",
+                "name": "Community Supporter",
+                "description": "Show your appreciation for ARGUS with a one-time contribution of any amount. Helps cover hosting, CI/CD pipelines, and PyPI infrastructure costs.",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["github-sponsors", "open-collective"]
+            },
+            {
+                "guid": "infrastructure-monthly",
+                "status": "active",
+                "name": "Infrastructure Support (Monthly)",
+                "description": "Covers monthly infrastructure costs: GitHub Actions CI/CD, PyPI distribution, Docker Hub hosting, Streamlit Cloud sandbox, and API rate limits for running benchmark evaluations across FEVER, TruthfulQA, BoolQ, and ARC datasets.",
+                "amount": 150,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors", "open-collective"]
+            },
+            {
+                "guid": "developer-time-monthly",
+                "status": "active",
+                "name": "Core Developer Stipend (Monthly)",
+                "description": "Funds one core developer working part-time (20 hrs/week) on ARGUS — covering new LLM provider integrations, C-DAG improvements, EDDO convergence algorithms, documentation, and community support. This is the most impactful recurring plan.",
+                "amount": 1500,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["open-collective", "bank-transfer"]
+            },
+            {
+                "guid": "gpu-compute-grant",
+                "status": "active",
+                "name": "GPU Compute Grant (One-time)",
+                "description": "Funds a full multi-agent benchmark evaluation run across all 10 ARGUS evaluation datasets (1050+ samples each) and 5 global benchmarks (FEVER, SNLI, TruthfulQA, BoolQ, ARC) using GPU-accelerated FAISS dense retrieval and cross-encoder reranking. Results will be published openly as an arXiv paper.",
+                "amount": 5000,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["open-collective", "bank-transfer"]
+            },
+            {
+                "guid": "research-fellowship",
+                "status": "active",
+                "name": "Research Fellowship Sponsorship (Yearly)",
+                "description": "Sponsors one full-time ARGUS research fellow for one year to work on novel extensions: quantum-inspired debate aggregation, federated multi-agent debate, and publishing the C-DAG and EDDO algorithms as peer-reviewed research. Fellow will contribute all work back to the open-source repository under MIT license.",
+                "amount": 24000,
+                "currency": "USD",
+                "frequency": "yearly",
+                "channels": ["bank-transfer", "open-collective"]
+            },
+            {
+                "guid": "corporate-sponsor",
+                "status": "active",
+                "name": "Corporate Sponsor",
+                "description": "For companies using ARGUS in production or research. Includes logo placement in README and documentation, priority issue resolution, and a quarterly call with the core team. Helps sustain long-term development of the framework.",
+                "amount": 500,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["bank-transfer", "open-collective"]
+            }
+        ],
+
+        "history": [
+            {
+                "year": 2024,
+                "income": 0,
+                "expenses": 1200,
+                "taxes": 0,
+                "currency": "USD",
+                "description": "Project inception year. Expenses covered personal compute, API credits for development and testing across 27+ LLM providers, and PyPI publishing costs. No external funding received."
+            },
+            {
+                "year": 2025,
+                "income": 0,
+                "expenses": 2800,
+                "taxes": 0,
+                "currency": "USD",
+                "description": "ARGUS v4.5.0 released on PyPI. Expenses covered GPU compute for benchmark evaluations, CI/CD infrastructure, Streamlit Cloud hosting for Argus-Viz sandbox, and API costs for multi-provider testing. No external funding received. Actively seeking grants and sponsorships."
+            }
+        ]
+    }
+}
