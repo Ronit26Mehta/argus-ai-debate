@@ -79,6 +79,11 @@ def _balance_brackets(candidate: str) -> str:
     return candidate
 
 
+def _remove_trailing_commas(text: str) -> str:
+    """Remove trailing commas before closing brackets and braces."""
+    return re.sub(r',\s*([\]}])', r'\1', text)
+
+
 def repair_json(candidate: str) -> str:
     """Try increasingly aggressive repairs and return the first parseable result.
 
@@ -94,7 +99,15 @@ def repair_json(candidate: str) -> str:
     except json.JSONDecodeError:
         pass
 
-    # 1. Simple bracket balance
+    # 1. Strip trailing commas
+    candidate = _remove_trailing_commas(candidate)
+    try:
+        json.loads(candidate)
+        return candidate
+    except json.JSONDecodeError:
+        pass
+
+    # 2. Simple bracket balance
     attempt = _balance_brackets(candidate)
     try:
         json.loads(attempt)
