@@ -26,7 +26,7 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "4.5.0"
+__version__ = "5.0.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
@@ -336,6 +336,43 @@ __all__ = [
     "DebateFrame",
     "TopologySpec",
     "SynthesisResult",
+    # === ARGUS Evolution Extensions (v5.0) ===
+    # CHRONOS
+    "ChronosOrchestrator",
+    # PHALANX
+    "PHALANXOrchestrator",
+    # SEED
+    "SEEDOrchestrator",
+    # MNEME
+    "MNEMEPlugin",
+    # FRACTAL
+    "FRACTALOrchestrator",
+    # MIRROR
+    "MIRROROrchestrator",
+    # VERICHAIN
+    "VERICHAINRegistry",
+    # PULSE
+    "PULSEDashboard",
 ]
 
 
+# === ARGUS Evolution Extensions (v5.0) — Lazy Imports ===
+# These are loaded on demand to avoid hard dependency on scipy/plotly/numpy.
+
+def __getattr__(name: str):
+    """Lazy import for Evolution extensions."""
+    _lazy_imports = {
+        "ChronosOrchestrator": "argus.chronos",
+        "PHALANXOrchestrator": "argus.phalanx",
+        "SEEDOrchestrator": "argus.seed",
+        "MNEMEPlugin": "argus.mneme",
+        "FRACTALOrchestrator": "argus.fractal",
+        "MIRROROrchestrator": "argus.mirror",
+        "VERICHAINRegistry": "argus.verichain",
+        "PULSEDashboard": "argus.pulse",
+    }
+    if name in _lazy_imports:
+        import importlib
+        module = importlib.import_module(_lazy_imports[name])
+        return getattr(module, name)
+    raise AttributeError(f"module 'argus' has no attribute {name!r}")
