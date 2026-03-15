@@ -223,6 +223,11 @@ _DEFAULTS: dict[str, Any] = {
     "max_rounds": 3,        # user-configurable max rounds
     "provider": os.environ.get("ARGUS_DEFAULT_PROVIDER", os.environ.get("LLM_PROVIDER", "gemini")),
     "model": os.environ.get("ARGUS_DEFAULT_MODEL", os.environ.get("LLM_MODEL", "gemini-2.0-flash")),
+    # ── Local model (OpenAI-compatible server) settings ───────────
+    "model_source": "env",                # "env" | "local"
+    "local_server_url": "http://localhost:8080",
+    "local_model_name": "local-model",
+    "local_server_status": "",            # connection test result
 }
 
 for key, val in _DEFAULTS.items():
@@ -238,69 +243,144 @@ st.session_state["model"] = _DEFAULTS["model"]
 # Sidebar — LLM provider selection
 # ═══════════════════════════════════════════════════════════════════════
 
+def _test_local_connection(url: str) -> str:
+    """Ping a local OpenAI-compatible server and return a status string."""
+    import urllib.request
+    import urllib.error
+    test_url = url.rstrip("/") + "/v1/models"
+    try:
+        req = urllib.request.Request(test_url, method="GET")
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode())
+            models = [m.get("id", "?") for m in data.get("data", [])]
+            if models:
+                return f"✅ Connected — available models: {', '.join(models)}"
+            return "✅ Connected (no models listed)"
+    except urllib.error.URLError as exc:
+        return f"❌ Connection failed: {exc.reason}"
+    except Exception as exc:
+        return f"❌ Error: {exc}"
+
+
 def _render_sidebar() -> None:
     with st.sidebar:
         st.header("LLM Configuration")
-        try:
-            from argus.core.llm import list_providers
-            available = list_providers()
-        except Exception:
-            available = [
-                "openai", "anthropic", "gemini", "ollama", "cohere",
-                "mistral", "groq", "deepseek", "together", "openrouter",
-                "fireworks", "anyscale", "perplexity", "replicate",
-                "huggingface", "vllm", "llama_cpp", "cerebras",
-                "ai21", "aleph_alpha", "bedrock", "azure", "vertex",
-                "palm", "inflection", "writer", "sambanova", "nebius",
-            ]
 
-        # Ensure providers are in the list
-        for p in ("mistral", "openrouter", "gemini"):
-            if p not in available:
-                available.append(p)
-
-        # Force provider/model into widget state before rendering
-        target_provider = _DEFAULTS["provider"]
-        target_model = _DEFAULTS["model"]
-        if "sb_provider" not in st.session_state:
-            st.session_state["sb_provider"] = target_provider
-        if "sb_model" not in st.session_state:
-            st.session_state["sb_model"] = target_model
-
-        provider_idx = available.index(st.session_state["sb_provider"]) if st.session_state["sb_provider"] in available else 0
-
-        provider = st.selectbox(
-            "Provider",
-            available,
-            index=provider_idx,
-            key="sb_provider",
+        # ── Model source toggle ───────────────────────────────────
+        model_source = st.radio(
+            "Model Source",
+            options=["env", "local"],
+            format_func=lambda x: "🌐 Environment / Registry" if x == "env" else "🖥️ Local Server (OpenAI-Compatible)",
+            index=0 if st.session_state.get("model_source", "env") == "env" else 1,
+            key="sb_model_source",
+            help="Choose between cloud/env-based providers or a local OpenAI-compatible server (e.g. llama-server, Ollama, vLLM)",
         )
-        model = st.text_input("Model", value=st.session_state["sb_model"], key="sb_model")
-
-        st.session_state["provider"] = provider
-        st.session_state["model"] = model
+        st.session_state["model_source"] = model_source
 
         st.divider()
 
-        # Debate rounds configuration
+        if model_source == "local":
+            # ── Local server configuration ────────────────────────
+            st.subheader("🖥️ Local Server")
+
+            local_url = st.text_input(
+                "Server URL",
+                value=st.session_state.get("local_server_url", "http://localhost:8080"),
+                key="sb_local_url",
+                help="Base URL of your OpenAI-compatible server (e.g. http://localhost:8080)",
+                placeholder="http://localhost:8080",
+            )
+            st.session_state["local_server_url"] = local_url
+
+            local_model = st.text_input(
+                "Model Name",
+                value=st.session_state.get("local_model_name", "local-model"),
+                key="sb_local_model",
+                help="Display name / model ID sent to the server (e.g. qwen2.5, llama3)",
+                placeholder="qwen2.5",
+            )
+            st.session_state["local_model_name"] = local_model
+
+            # ── Test connection button ─────────────────────────────
+            if st.button("🔌 Test Connection", use_container_width=True):
+                with st.spinner("Testing connection…"):
+                    status = _test_local_connection(local_url)
+                st.session_state["local_server_status"] = status
+
+            # Show status
+            status_msg = st.session_state.get("local_server_status", "")
+            if status_msg:
+                if status_msg.startswith("✅"):
+                    st.success(status_msg)
+                else:
+                    st.error(status_msg)
+
+            st.caption(
+                "Works with **llama-server**, **Ollama**, **vLLM**, **LM Studio**, "
+                "or any server exposing an OpenAI-compatible `/v1/chat/completions` endpoint."
+            )
+
+        else:
+            # ── Environment / Registry configuration ──────────────
+            st.subheader("🌐 Provider & Model")
+            try:
+                from argus.core.llm import list_providers
+                available = list_providers()
+            except Exception:
+                available = [
+                    "openai", "anthropic", "gemini", "ollama", "cohere",
+                    "mistral", "groq", "deepseek", "together", "openrouter",
+                    "fireworks", "anyscale", "perplexity", "replicate",
+                    "huggingface", "vllm", "llama_cpp", "cerebras",
+                    "ai21", "aleph_alpha", "bedrock", "azure", "vertex",
+                    "palm", "inflection", "writer", "sambanova", "nebius",
+                ]
+
+            for p in ("mistral", "openrouter", "gemini"):
+                if p not in available:
+                    available.append(p)
+
+            target_provider = _DEFAULTS["provider"]
+            target_model = _DEFAULTS["model"]
+            if "sb_provider" not in st.session_state:
+                st.session_state["sb_provider"] = target_provider
+            if "sb_model" not in st.session_state:
+                st.session_state["sb_model"] = target_model
+
+            provider_idx = available.index(st.session_state["sb_provider"]) if st.session_state["sb_provider"] in available else 0
+
+            provider = st.selectbox(
+                "Provider",
+                available,
+                index=provider_idx,
+                key="sb_provider",
+            )
+            model = st.text_input("Model", value=st.session_state["sb_model"], key="sb_model")
+
+            st.session_state["provider"] = provider
+            st.session_state["model"] = model
+
+            st.caption(
+                "Or set via environment variables: "
+                "`ARGUS_DEFAULT_PROVIDER` / `ARGUS_DEFAULT_MODEL`."
+            )
+
+        st.divider()
+
+        # ── Debate rounds configuration (shared) ─────────────────
         st.header("Debate Settings")
         max_rounds = st.slider(
             "Max Rounds",
             min_value=1,
-            max_value=8,
+            max_value=12,
             value=st.session_state.get("max_rounds", 3),
-            help="Maximum number of debate rounds (1 = quick, 8 = thorough)",
+            help="Maximum number of debate rounds (1 = quick, 12 = thorough)",
             key="sb_max_rounds",
         )
         st.session_state["max_rounds"] = max_rounds
 
         st.divider()
-        st.caption("ARGUS × ARISTOTLE v4.0")
-        st.caption(
-            "All LLM providers supported by argus-debate-ai's registry "
-            "can be selected above, or set via environment variables "
-            "ARGUS_DEFAULT_PROVIDER / ARGUS_DEFAULT_MODEL."
-        )
+        st.caption("ARGUS × ARISTOTLE v4.5")
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -308,6 +388,19 @@ def _render_sidebar() -> None:
 # ═══════════════════════════════════════════════════════════════════════
 
 def _get_llm():
+    if st.session_state.get("model_source") == "local":
+        # ── Local OpenAI-compatible server ─────────────────────
+        from argus.core.llm.openai import OpenAILLM
+        base_url = st.session_state.get("local_server_url", "http://localhost:8080").rstrip("/")
+        model_name = st.session_state.get("local_model_name", "local-model")
+        return OpenAILLM(
+            model=model_name,
+            base_url=f"{base_url}/v1",
+            api_key="not-needed",   # local servers typically don't require a key
+            max_tokens=2048,
+            timeout=120.0,
+        )
+    # ── Environment / Registry ────────────────────────────────
     from argus.core.llm import get_llm
     return get_llm(
         provider=st.session_state["provider"],
