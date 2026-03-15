@@ -1,0 +1,78 @@
+# ============================================================================
+# ARGUS — requirements.txt
+# Generated from pyproject.toml (core + aristotle + plotting + tools)
+# Python >= 3.11
+# ============================================================================
+
+# ── Core ─────────────────────────────────────────────────────────────────────
+pydantic>=2.0,<3.0
+pydantic-settings>=2.0,<3.0
+numpy>=1.24,<3.0
+scipy>=1.10,<2.0
+networkx>=3.0,<4.0
+
+# ── LLM Providers (core) ────────────────────────────────────────────────────
+litellm>=1.40,<2.0
+openai>=1.30,<2.0
+anthropic>=0.25,<1.0
+google-generativeai>=0.5,<1.0
+
+# ── Embeddings & Retrieval ───────────────────────────────────────────────────
+sentence-transformers>=2.2,<3.0
+rank-bm25>=0.2,<1.0
+faiss-cpu>=1.7,<2.0
+
+# ── Document Processing ─────────────────────────────────────────────────────
+pymupdf>=1.23,<2.0
+beautifulsoup4>=4.12,<5.0
+lxml>=4.9,<6.0
+chardet>=5.0,<6.0
+
+# ── CLI & Utilities ─────────────────────────────────────────────────────────
+click>=8.0,<9.0
+rich>=13.0,<14.0
+python-dotenv>=1.0,<2.0
+httpx>=0.25,<1.0
+tenacity>=8.2,<9.0
+tiktoken>=0.5,<1.0
+requests>=2.31,<3.0
+textual>=0.47,<1.0
+
+# ── Visualization (plotting + aristotle) ────────────────────────────────────
+matplotlib>=3.7,<4.0
+seaborn>=0.12,<1.0
+plotly>=5.15,<6.0
+streamlit>=1.30,<2.0
+
+# ── Tools ────────────────────────────────────────────────────────────────────
+duckduckgo-search>=5.0,<6.0
+wikipedia>=1.4,<2.0
+arxiv>=2.1,<3.0
+tavily-python>=0.3,<1.0
+PyGithub>=2.1,<3.0
+youtube-transcript-api>=0.6,<1.0
+sqlalchemy>=2.0,<3.0
+pandas>=2.0,<3.0
+yfinance>=0.2,<1.0
+
+# ── OpenAPI & Context ────────────────────────────────────────────────────────
+pyyaml>=6.0,<7.0
+jsonschema>=4.20,<5.0
+redis>=5.0,<6.0
+diskcache>=5.6,<6.0
+
+# ── Optional LLM Providers (uncomment as needed) ────────────────────────────
+# ollama>=0.2,<1.0
+# llama-cpp-python>=0.2,<1.0
+# cohere>=5.0,<6.0
+# mistralai>=0.4,<1.0
+# groq>=0.4,<1.0
+# together>=1.0,<2.0
+
+# ── Dev (uncomment for development) ─────────────────────────────────────────
+# pytest>=7.4,<9.0
+# pytest-asyncio>=0.21,<1.0
+# pytest-cov>=4.1,<6.0
+# black>=23.0,<25.0
+# ruff>=0.1,<1.0
+# mypy>=1.5,<2.0
