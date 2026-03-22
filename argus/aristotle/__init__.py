@@ -24,7 +24,7 @@ Usage (Streamlit):
     $ argus aristotle run
 """
 
-__version__ = "4.5.0"
+__version__ = "5.5.0"
 
 from argus.aristotle.models import (
     DebateFrame,
