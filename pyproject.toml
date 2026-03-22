@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-debate-ai"
-version = "5.0.0"
+version = "5.5.0"
 description = "ARGUS: Production-ready multi-agent AI debate framework with RAG, Bayesian reasoning, provenance tracking, 50+ tool integrations, OpenAPI REST generation, context caching/compression, and advanced LLM orchestration for scientific discovery, fact-checking, and evidence-based decision-making"
 readme = "README.md"
 license = {text = "MIT"}
@@ -266,6 +266,13 @@ aristotle = [
     "networkx>=3.0,<4.0",
 ]
 
+# AGORA Chat Interface (Streamlit)
+agora = [
+    "streamlit>=1.30,<2.0",
+    "plotly>=5.15,<6.0",
+    "networkx>=3.0,<4.0",
+]
+
 # All features
 all = [
     "argus-debate-ai[dev]",
@@ -280,6 +287,7 @@ all = [
     "argus-debate-ai[viz]",
     "argus-debate-ai[crux-viz]",
     "argus-debate-ai[aristotle]",
+    "argus-debate-ai[agora]",
     "argus-debate-ai[context]",
     "argus-debate-ai[openapi]",
     "argus-debate-ai[evolution]",
@@ -328,10 +336,12 @@ argus-terminal = "argus_terminal.argus_terminal:main"
 argus-viz = "argus_viz:main"
 crux-viz = "crux_viz:main"
 aristotle-chat = "argus.aristotle:launch_chat"
+agora-chat = "argus.agora:launch_chat"
+argus-evo-sandbox = "argus.sandbox:launch_sandbox"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["argus*", "argus_terminal*", "argus_viz*", "crux_viz*", "argus.aristotle*"]
+include = ["argus*", "argus_terminal*", "argus_viz*", "crux_viz*", "argus.aristotle*", "argus.agora*"]
 
 [tool.setuptools.package-data]
 argus = ["py.typed", "**/*.md"]
