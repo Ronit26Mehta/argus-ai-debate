@@ -1,12 +1,17 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-outputs
+
 *.py[cod]
 *$py.class
 key.txt
 # C extensions
 *.so
 BioSage
+
+argus_benchmark
+
+argus_sandbox_runs
+
 
 # Distribution / packaging
 build/
@@ -98,3 +103,8 @@ jmlr-style-file-master.zip
 texput.log
 
 argus (3)
+prompt.txt
+
+20260314_102834_Artificial_General_Intelligence_AGI_ca
+20260314_103457_Artificial_General_Intelligence_AGI_wi
+20260315_170752_Investing_in_Cuba_is_a_good_choice_from
