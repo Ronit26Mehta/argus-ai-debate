@@ -11,7 +11,7 @@ Launch:
     streamlit run crux_viz/app.py
 """
 
-__version__ = "4.5.0"
+__version__ = "5.5.0"
 __app_name__ = "CRUX-Viz"
 
 
