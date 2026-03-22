@@ -464,6 +464,94 @@ def setup_parser() -> argparse.ArgumentParser:
         help="Output file for JSON result",
     )
 
+    # =========================================================================
+    # Sandbox command
+    # =========================================================================
+    sandbox_parser = subparsers.add_parser(
+        "sandbox",
+        help="ARGUS Sandbox — full evolution pipeline with local JSON storage",
+    )
+    sandbox_sub = sandbox_parser.add_subparsers(dest="sandbox_command")
+
+    sandbox_run = sandbox_sub.add_parser(
+        "run",
+        help="Launch the ARGUS Sandbox Streamlit interface",
+    )
+    sandbox_run.add_argument(
+        "--port",
+        type=int,
+        default=8502,
+        help="Streamlit server port (default: 8502)",
+    )
+
+    sandbox_pro = sandbox_sub.add_parser(
+        "pro",
+        help="Sandbox startup aliases",
+    )
+    sandbox_pro_sub = sandbox_pro.add_subparsers(dest="sandbox_pro_command")
+    sandbox_pro_max = sandbox_pro_sub.add_parser(
+        "max",
+        help="Launch sandbox using startup phrase equivalent: sandbox pro max",
+    )
+    sandbox_pro_max.add_argument(
+        "--port",
+        type=int,
+        default=8502,
+        help="Streamlit server port (default: 8502)",
+    )
+
+    sandbox_headless = sandbox_sub.add_parser(
+        "headless",
+        help="Run sandbox pipeline without UI and persist JSON outputs",
+    )
+    sandbox_headless.add_argument("proposition", type=str, help="Proposition to run")
+    sandbox_headless.add_argument("--prior", type=float, default=0.5, help="Prior probability")
+    sandbox_headless.add_argument(
+        "--source-text",
+        type=str,
+        default="",
+        help="Optional source text for SEED claim mining",
+    )
+    sandbox_headless.add_argument(
+        "--domain",
+        type=str,
+        default="general",
+        help="Domain tag for memory/registry",
+    )
+    sandbox_headless.add_argument(
+        "--storage-dir",
+        type=str,
+        default="./argus_sandbox_runs",
+        help="Local JSON run directory",
+    )
+    sandbox_headless.add_argument("--max-rounds", type=int, default=4)
+    sandbox_headless.add_argument("--population-size", type=int, default=120)
+    sandbox_headless.add_argument(
+        "--model-source",
+        type=str,
+        choices=["env", "local"],
+        default="env",
+        help="Use provider registry (env) or local OpenAI-compatible server (local)",
+    )
+    sandbox_headless.add_argument(
+        "--llm-provider",
+        type=str,
+        default=None,
+        help="LLM provider when model-source=env",
+    )
+    sandbox_headless.add_argument(
+        "--llm-model",
+        type=str,
+        default=None,
+        help="LLM model when model-source=env or local model name when model-source=local",
+    )
+    sandbox_headless.add_argument(
+        "--local-server-url",
+        type=str,
+        default="http://localhost:8080",
+        help="Local OpenAI-compatible server URL when model-source=local",
+    )
+
     return parser
 
 
@@ -1300,6 +1388,107 @@ def cmd_aristotle(args: argparse.Namespace) -> int:
         return 1
 
 
+def cmd_sandbox(args: argparse.Namespace) -> int:
+    """ARGUS Sandbox command handler."""
+    subcmd = getattr(args, "sandbox_command", None)
+
+    if subcmd == "run" or (subcmd == "pro" and getattr(args, "sandbox_pro_command", None) == "max"):
+        import subprocess
+        import os
+
+        interface_path = Path(__file__).parent / "sandbox" / "interface.py"
+        if not interface_path.exists():
+            print("❌ Sandbox interface module not found.")
+            return 1
+
+        port = getattr(args, "port", 8502)
+        env = os.environ.copy()
+        if getattr(args, "provider", None):
+            env["ARGUS_DEFAULT_PROVIDER"] = str(args.provider)
+        if getattr(args, "model", None):
+            env["ARGUS_DEFAULT_MODEL"] = str(args.model)
+        print(f"🧪 Launching ARGUS Sandbox on port {port}…")
+        proc = subprocess.run(
+            [
+                sys.executable,
+                "-m",
+                "streamlit",
+                "run",
+                str(interface_path),
+                "--server.port",
+                str(port),
+                "--server.headless",
+                "true",
+            ],
+            env=env,
+        )
+        return proc.returncode
+
+    if subcmd == "headless":
+        from argus.sandbox.orchestrator import ArgusSandboxRunner, SandboxConfig
+
+        llm = None
+        if args.model_source == "local":
+            from argus.core.llm.openai import OpenAILLM
+
+            base_url = args.local_server_url.rstrip("/") + "/v1"
+            model_name = args.llm_model or "local-model"
+            llm = OpenAILLM(
+                model=model_name,
+                base_url=base_url,
+                api_key="not-needed",
+                max_tokens=2048,
+                timeout=120.0,
+            )
+        else:
+            from argus.core.llm import get_llm
+
+            llm = get_llm(
+                provider=args.llm_provider or getattr(args, "provider", None),
+                model=args.llm_model or getattr(args, "model", None),
+            )
+
+        runner = ArgusSandboxRunner(
+            SandboxConfig(
+                storage_dir=args.storage_dir,
+                max_rounds=args.max_rounds,
+                population_size=args.population_size,
+            ),
+            llm=llm,
+        )
+
+        try:
+            stream = runner.run_iter(
+                proposition=args.proposition,
+                prior=args.prior,
+                source_text=args.source_text or None,
+                domain=args.domain,
+            )
+            summary = None
+            while True:
+                event = next(stream)
+                print(f"[{event.get('stage')}] {event.get('message')}")
+        except StopIteration as stop:
+            summary = stop.value
+        except Exception as exc:
+            print(f"❌ Sandbox headless run failed: {exc}")
+            return 1
+
+        if not summary:
+            print("❌ Sandbox run returned no summary.")
+            return 1
+
+        print("\n✅ Sandbox run completed")
+        print(f"   Run ID: {summary.get('run_id')}")
+        print(f"   Storage: {summary.get('paths', {}).get('root')}")
+        print(f"   Verdict: {summary.get('outputs', {}).get('verdict')}")
+        print(f"   Posterior: {summary.get('outputs', {}).get('posterior', 0.0):.3f}")
+        return 0
+
+    print("Usage: argus sandbox {run|pro max|headless} [options]")
+    return 1
+
+
 def main() -> int:
     """Main CLI entry point."""
     parser = setup_parser()
@@ -1326,6 +1515,7 @@ def main() -> int:
         "compress": cmd_compress,
         "visualize": cmd_visualize,
         "aristotle": cmd_aristotle,
+        "sandbox": cmd_sandbox,
     }
     
     if args.command in commands:
