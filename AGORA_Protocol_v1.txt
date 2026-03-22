@@ -1,0 +1,1248 @@
+================================================================================
+ARGUS × AGORA
+The Autonomous Governed Open Reasoning Assembly
+Complete Conceptual Blueprint — ARGUS Module Integration
+Bureaucratic Senate Edition · Real-Time N-Agent Deliberation · March 2026
+================================================================================
+
+Structured Governance · Zero-Config for Non-Technical Users
+AGORA as argus-debate-ai Sub-Module · argus.agora
+Ships alongside ARISTOTLE · Full ARGUS Integration · Proposition-In, Verdict-Out
+Domain-Independent · Self-Orchestrating · User-Governed Stopping
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+  1.   Executive Summary
+  2.   The Naming Philosophy — Why AGORA
+  3.   The Intellectual Lineage — MiroFish, ARISTOTLE, and the Gap
+  4.   AGORA's Fundamental Problem Statement
+  5.   The Core Architectural Idea — What Makes AGORA Different
+  6.   The Senate Generation Engine
+  7.   Agent Category Taxonomy — The Balance Mandate
+  8.   Procedural Architecture — The Formal Rules of Deliberation
+  9.   The Evidence Docket System
+  10.  Real-Time Concurrent Deliberation — How the Session Runs
+  11.  User-Governed Stopping Mechanisms
+  12.  Coalition Detection and Minority Report Engine
+  13.  The Senate Record — AGORA's Hansard
+  14.  Result Architecture — What AGORA Outputs
+  15.  The AGORA Sandbox
+  16.  Novel Contributions — What No Existing Framework Has
+  17.  How AGORA and ARISTOTLE Coexist Inside ARGUS
+  18.  Known Challenges and Mitigations
+  19.  Implementation Roadmap
+  20.  Closing Vision
+
+================================================================================
+1.   EXECUTIVE SUMMARY
+================================================================================
+
+ARGUS already contains one of the most powerful structured debate engines in
+existence. ARISTOTLE made that engine accessible to any user via a single
+natural-language prompt and a live visualization interface. Both of these
+systems, however, share a foundational limitation: the deliberation is
+sequential, topologically fixed, and orchestrated by a single autonomous
+director. The number and type of agents is preset. The rules are internal and
+invisible. The user watches, but does not govern.
+
+The real world does not work this way. The real world's highest-stakes
+reasoning happens in deliberative assemblies — senates, tribunals, committees,
+councils — where the composition of the deliberating body is itself a decision,
+where procedural rules constrain how arguments may be advanced, where evidence
+is formally submitted and formally challenged, where coalitions form and must
+be named, where the minority has a right to be documented, and where the
+governing authority (the user, in AGORA's case) controls when the session ends
+and on what terms.
+
+AGORA — the Autonomous Governed Open Reasoning Assembly — is that system.
+
+AGORA is a third ARGUS sub-module, living at argus.agora, shipped alongside
+ARISTOTLE in the argus-debate-ai package. Like ARISTOTLE, it requires only a
+single proposition to launch. Unlike ARISTOTLE — and unlike any existing
+multi-agent debate framework including MiroFish, A-HMAD, MALLM, and
+CortexDebate — it operates as a fully procedural, bureaucratically structured,
+real-time deliberative body where:
+
+  — The Senate is dynamically generated per proposition, specifically
+    calibrated to the topic's domain, controversy profile, and epistemic
+    structure. No two propositions produce the same Senate.
+
+  — N agents participate concurrently in real time, not sequentially in
+    rounds. N is not fixed. It is determined by the Senate Generation Engine
+    based on the proposition's complexity, controversy score, and the user's
+    configuration (or AGORA's auto-estimate).
+
+  — Every agent belongs to one of eight formally defined epistemic categories.
+    The Senate Balance Mandate enforces a composition algorithm ensuring no
+    single category dominates the assembly. Balance is architectural, not
+    accidental.
+
+  — Evidence is not emergent behavior. Evidence is formally submitted to a
+    docket, timestamped, indexed, cross-referenced to the submitting senator,
+    and open to challenge via a formal cross-examination protocol.
+
+  — The user holds the gavel. Stopping is not automatic. The user decides:
+    stop when all senators have submitted evidence, stop after a defined
+    elapsed time, stop when a convergence threshold is crossed, or stop
+    right now on demand. These are not the only options.
+
+  — Before the session ends, coalitions are detected, named, and surfaced.
+    The majority position is documented. The minority position produces a
+    formal Minority Report. The session produces a Senate Record —
+    a complete, navigable log of every procedural action, every evidence
+    submission, every challenge, every position change, structured like a
+    Hansard transcript.
+
+The user types a proposition. The Senate assembles. The deliberation runs live.
+The user governs the stop. The results arrive.
+
+================================================================================
+2.   THE NAMING PHILOSOPHY — WHY AGORA
+================================================================================
+
+The name AGORA is a precise intellectual alignment with the system's purpose.
+
+The Agora of ancient Athens was not merely a marketplace. It was the central
+civic space of a city-state: the site where citizens assembled to debate public
+affairs, where philosophers argued with merchants and generals, where decisions
+affecting the entire polis emerged from open, structured, contested
+deliberation. The Agora was governed by procedural norms. Speakers had to be
+citizens. Arguments had to be intelligible to the assembled body. Decisions
+required quorum. Dissent was acknowledged, not suppressed.
+
+This maps precisely to AGORA the system:
+
+  ATHENIAN AGORA                         ARGUS × AGORA MAPPING
+  ─────────────────────────────────      ────────────────────────────────────────
+  Civic space for open deliberation      Domain-independent deliberation
+  on any topic of public concern         framework — any proposition, any domain
+
+  Governed by procedural norms;          Formal procedural rules engine: floor
+  speakers must follow the rules         time, evidence submission protocol,
+  of assembly                            challenge mechanism, quorum enforcement
+
+  Diverse citizens — not a panel of      Balance Mandate: eight agent categories
+  identical experts — assembled          enforced algorithmically; composition
+  to represent the polis                 calibrated per topic
+
+  Decisions required quorum — a          AGORA Quorum Engine: minimum
+  minimum number present for a          participation thresholds before any
+  vote to be valid                       verdict can be rendered valid
+
+  Dissent was formally acknowledged      Minority Report Engine: the losing
+  — minority positions were              position is fully documented and
+  recorded and respected                 delivered alongside the majority verdict
+
+  Open to real-time intervention         User holds the gavel: stop, pause,
+  by the governing assembly              inject evidence, call a vote, at will
+
+  Produced a Boule record —             Senate Record: AGORA's Hansard, a
+  documented proceedings of             complete navigable transcript of
+  the session                            every deliberative action
+
+  Socrates argued in the Agora —        AGORA names its orchestration layer
+  philosophy was embedded in civic       the Socratic Engine: it does not
+  deliberation                           conclude, it interrogates
+
+================================================================================
+3.   THE INTELLECTUAL LINEAGE — MIROFISH, ARISTOTLE, AND THE GAP
+================================================================================
+
+To understand precisely what AGORA contributes, it is necessary to understand
+exactly where MiroFish and ARISTOTLE stop.
+
+3.1  MIROFISH — What It Does Well and Where It Ends
+─────────────────────────────────────────────────────
+
+MiroFish is a swarm-intelligence social simulation engine. It takes seed
+material — news, policy drafts, financial signals, fiction — and generates
+thousands of autonomous agents that interact on simulated social platforms
+(Twitter-like and Reddit-like environments). The emergent behavior of these
+interactions is analyzed by a dedicated ReportAgent, producing a structured
+prediction report.
+
+MiroFish's strengths are real and significant:
+
+  — Scale. It can simulate up to one million agents via the OASIS engine.
+  — Emergent narrative. Agents form coalitions, opinion leaders, herd effects
+    organically — the behavior is not scripted.
+  — Interactive. Users can inject new variables mid-simulation and interrogate
+    individual agents post-simulation.
+  — Memory. Agents retain persistent memory via Zep Cloud across simulation
+    rounds.
+
+MiroFish's fundamental limitation for AGORA's purpose is structural, not
+cosmetic. MiroFish is a prediction engine, not a deliberation engine. It
+simulates what populations will do. It does not produce structured, evidence-
+backed, accountable reasoning about what is true. Its agents interact freely,
+without procedural rules, without evidence dockets, without formal challenge
+mechanisms, without balance mandates. Two hundred agents agreeing in a
+MiroFish simulation could all be wrong for the same reason; there is no
+mechanism to ensure adversarial epistemic pressure. There is no minority
+report. There is no Senate Record. There is no formal quorum. There is no
+cross-examination.
+
+Additionally, MiroFish has no stopping mechanism controlled by the user based
+on the epistemic state of the deliberation. The user can inject variables but
+cannot formally govern the process. The session runs its course.
+
+Finally, MiroFish produces a prediction. AGORA produces a verdict — grounded
+in formal evidence, traceable to individual agent submissions, accountable via
+full provenance, and delivered with a documented record of the reasoning that
+produced it.
+
+3.2  ARISTOTLE — What It Does Well and Where It Ends
+──────────────────────────────────────────────────────
+
+ARISTOTLE is a masterful solution to a specific problem: making ARGUS's full
+analytical depth accessible via a single natural-language prompt. Its five-
+layer architecture, Full Lifecycle DAG, autonomous monitoring, and split-pane
+interface represent the state of the art in single-session debate orchestration.
+
+ARISTOTLE's structural constraints are not flaws — they are consequences of
+its purpose. ARISTOTLE is designed for depth of analysis by a fixed topology
+of specialist roles (Moderator, Specialist, Refuter, Jury). That topology is
+right for its job.
+
+But ARISTOTLE is sequential. One agent acts, then another. The debate unfolds
+in rounds. The topology is predetermined. The user observes but does not
+govern. And crucially: there is only one moderator, only one jury, a fixed
+number of specialists and refuters. The "Senate" is always the same Senate
+regardless of what is being debated.
+
+AGORA's territory is precisely where ARISTOTLE's mandate ends:
+concurrent multi-agent deliberation, dynamic topology, procedural governance,
+user-controlled stopping, coalition-aware synthesis, and formal minority rights.
+
+3.3  Other Existing Frameworks
+────────────────────────────────
+
+A-HMAD (Adaptive Heterogeneous Multi-Agent Debate): introduces heterogeneous
+agents and dynamic debate structures. Does not have procedural rules, evidence
+dockets, quorum systems, user-governed stopping, or minority report generation.
+
+MALLM: supports 144+ debate configurations. A researcher's tool. Has no
+Senate generation engine, no balance mandate, no user governance, no real-time
+interactive session model.
+
+CortexDebate: dynamic debate graphs inspired by cortical networks, optimizing
+agent interaction via a trust formula. Novel topology management, but no
+procedural rules, no evidence accountability, no session governance.
+
+FOMC Simulation (GWU 2025): simulates a specific 12-member committee with
+fixed roles. Brilliant domain-specific work, but explicitly not designed for
+domain-independence, dynamic composition, or user governance.
+
+Democratic Multi-Agent AI (Voting Council / Debate Consensus patterns):
+applies democratic voting metaphors to multi-agent systems. Nearest in spirit
+to AGORA, but lacks procedural rules, evidence dockets, coalition detection,
+Senate Record generation, and user-governed stopping.
+
+The gap is consistent across all of them: no existing framework is a
+procedurally governed, dynamically composed, evidence-accountable, user-stopped,
+minority-respecting, real-time deliberative assembly. That gap is AGORA.
+
+================================================================================
+4.   AGORA'S FUNDAMENTAL PROBLEM STATEMENT
+================================================================================
+
+When a complex proposition needs to be evaluated by a group of agents, the
+following problems remain unsolved by all existing frameworks:
+
+  PROBLEM 1 — Fixed Topology
+  The composition of the deliberating body does not change with the subject.
+  A fixed set of roles (specialist, refuter, jury) cannot represent the true
+  diversity of perspectives that a contentious proposition demands.
+
+  PROBLEM 2 — Sequential Deliberation
+  Agents act one at a time in rounds. Real deliberative bodies act
+  concurrently. The sequentiality limits the dynamism, the emergence of real
+  cross-agent pressure, and the authenticity of the deliberation.
+
+  PROBLEM 3 — No Procedural Rules
+  No existing AI debate framework imposes formal procedural constraints on
+  how arguments may be advanced. This means agents can repeat arguments
+  indefinitely, dominate the session, or fail to engage with opposing evidence.
+
+  PROBLEM 4 — Evidence as Emergent Output, Not Formal Submission
+  In all existing frameworks, evidence is produced by agents as part of their
+  reasoning. It is not formally submitted, formally indexed, or formally
+  challengeable by other agents via an explicit protocol.
+
+  PROBLEM 5 — Stopping Is Automatic, Not Governed
+  Systems stop when rounds are exhausted or convergence is detected. The user
+  who knows when enough is enough — when the proposition is practically
+  resolved, when time constraints apply, when a specific evidentiary threshold
+  has been reached — has no control over the stopping decision.
+
+  PROBLEM 6 — Majority Rules Without Minority Rights
+  All existing systems produce a winning position. None formally document the
+  losing position as a co-equal output. Real deliberative systems produce
+  majority opinions and minority reports simultaneously.
+
+  PROBLEM 7 — Coalition Dynamics Are Invisible
+  When agents are aligned, existing frameworks do not surface this alignment.
+  The user does not know that three agents are reasoning from identical
+  premises. Invisible coalitions undermine the epistemic independence that
+  makes multi-agent deliberation valuable in the first place.
+
+  PROBLEM 8 — No Session Record
+  Existing systems produce a verdict and a visualization. None produce a
+  formal, navigable record of the deliberation that led to the verdict —
+  the kind of record that would allow a researcher, a policy analyst, or an
+  auditor to understand not just what was decided but how.
+
+AGORA addresses all eight of these problems in an integrated architecture.
+
+================================================================================
+5.   THE CORE ARCHITECTURAL IDEA — WHAT MAKES AGORA DIFFERENT
+================================================================================
+
+AGORA's architecture rests on seven foundational ideas that, taken together,
+constitute something that has not existed before in multi-agent AI:
+
+  IDEA 1 — THE SENATE IS GENERATED, NOT PRESET
+  Every proposition generates its own Senate. The Senate Generation Engine
+  analyzes the proposition's domain, controversy profile, epistemic structure,
+  and required balance, then instantiates N agents with specific personas,
+  epistemic priors, and deliberative mandates.
+
+  IDEA 2 — BALANCE IS ARCHITECTURAL
+  The Balance Mandate is not a preference — it is a hard constraint on the
+  Senate composition algorithm. Eight agent categories exist. The algorithm
+  enforces minimum representation thresholds. You cannot run an AGORA session
+  where one category dominates.
+
+  IDEA 3 — DELIBERATION IS CONCURRENT, NOT SEQUENTIAL
+  Senators act in real time, in parallel. They do not wait for other senators
+  to finish. Evidence is submitted concurrently. Challenges are issued
+  concurrently. The Socratic Engine monitors the live session and intervenes
+  procedurally when the rules require it.
+
+  IDEA 4 — EVIDENCE IS FORMALLY DOCKETED
+  Every piece of evidence has a submission ID, a submitting senator, a
+  timestamp, a domain classification, a provenance chain (ARGUS-native),
+  and a challenge status. Evidence that has been challenged and defended
+  has a different weight from evidence that has not been tested.
+
+  IDEA 5 — THE USER HOLDS THE GAVEL
+  The user is the governing authority of the session. They choose among five
+  stopping triggers. They can pause the session, inject new evidence, call
+  for a procedural motion, or demand an immediate verdict at any moment.
+  The gavel is real: AGORA will not finalize without it.
+
+  IDEA 6 — COALITIONS ARE DETECTED AND NAMED
+  AGORA's Coalition Detection Engine runs continuously during the session.
+  When agent positions cluster, it names the coalition, identifies its members,
+  characterizes its shared epistemic premise, and surfaces it visually. The
+  user can see in real time which senators are reasoning together.
+
+  IDEA 7 — THE MINORITY GETS ITS OWN REPORT
+  When the session ends, two synthesis documents are produced: the Majority
+  Opinion (the primary verdict) and the Minority Report (the best articulation
+  of the losing position, produced by the senators who held it). Neither
+  document knows it lost. The Minority Report is a first-class output.
+
+================================================================================
+6.   THE SENATE GENERATION ENGINE
+================================================================================
+
+The Senate Generation Engine is AGORA's first and most foundational component.
+It runs before a single deliberating agent is instantiated. Its job is to
+answer one question: given this proposition, what Senate does it deserve?
+
+6.1  Input: The Proposition Analysis
+──────────────────────────────────────
+
+When a user submits a proposition, the Senate Generation Engine performs a
+pre-deliberation analysis using the following pipeline:
+
+  STEP 1 — DOMAIN DETECTION
+  Identify the primary domain (science, policy, economics, ethics, history,
+  technology, law, social science) and any secondary domains. Multi-domain
+  propositions require senators with cross-domain expertise.
+
+  STEP 2 — CONTROVERSY SCORING
+  Estimate the proposition's controversy profile on three axes:
+    — Empirical controversy: is the factual record genuinely contested?
+    — Normative controversy: do reasonable people disagree on values?
+    — Epistemic controversy: is the evidence itself uncertain or incomplete?
+  Each axis scores 0.0 to 1.0. The aggregate controversy vector determines
+  how many senators are needed and what balance is required.
+
+  STEP 3 — EVIDENCE LANDSCAPE ASSESSMENT
+  What kind of evidence is available? Quantitative, qualitative, historical,
+  experimental, anecdotal, legal, theoretical? This determines which agent
+  categories need domain-specific evidence-gathering configurations.
+
+  STEP 4 — STANCE SPACE MAPPING
+  What are the legitimate positions a reasonable agent could hold on this
+  proposition? This is not a binary for/against mapping. AGORA maps the full
+  stance space — including partial positions, conditional positions, and
+  abstentions — before the Senate is assembled.
+
+  STEP 5 — N CALCULATION
+  Based on the controversy vector, evidence landscape, and stance space
+  breadth, the Senate Generation Engine computes N: the number of senators.
+  Minimum N is 7. Maximum N is configurable (default 25, no hard ceiling).
+  The N calculation is transparent — it is shown to the user before the
+  session launches and can be adjusted.
+
+6.2  Output: The Senate Composition Specification
+───────────────────────────────────────────────────
+
+The Senate Generation Engine outputs a Senate Composition Specification (SCS):
+a fully specified manifest of every senator that will be instantiated, including:
+
+  — Senator ID and procedural name
+  — Epistemic category (see Section 7)
+  — Domain expertise configuration
+  — Prior position on the proposition (prior probability, not a fixed stance)
+  — Evidence-gathering mandate (what sources, what methods)
+  — Deliberative temperament (aggressive challenger vs. measured synthesizer,
+    and the full spectrum between)
+  — Floor time allocation
+  — Cross-examination authority (which senators can challenge which)
+
+The SCS is displayed to the user as a Senate Preview Card before the session
+begins, analogous to ARISTOTLE's Topology Preview Card. The user can approve,
+modify, or request regeneration.
+
+================================================================================
+7.   AGENT CATEGORY TAXONOMY — THE BALANCE MANDATE
+================================================================================
+
+AGORA defines eight agent categories. These categories are epistemic roles,
+not domain roles. A senator can be a Domain Expert and a Devil's Advocate
+simultaneously — the category describes how they reason, not what they know.
+
+  CATEGORY 1 — DOMAIN EXPERT (DE)
+  ─────────────────────────────────
+  Deep knowledge in the proposition's primary domain. Their contribution is
+  evidence quality and domain-specific context. They are the authoritative
+  voice on what the field actually knows. Every Senate must have at least
+  one DE. Multi-domain propositions must have one DE per primary domain.
+
+  CATEGORY 2 — ADVERSARIAL CHALLENGER (AC)
+  ─────────────────────────────────────────
+  Their mandate is to challenge every claim, regardless of its source. They
+  are structurally adversarial — not because they have a predetermined
+  position, but because testing the strength of claims is their procedural
+  role. Every Senate must have at least one AC.
+
+  CATEGORY 3 — SYNTHESIS AGENT (SA)
+  ────────────────────────────────────
+  Their mandate is integration. They track the full evidence landscape during
+  the session and at any point can produce a current synthesis of what has
+  been submitted. They do not advocate; they map. Every Senate must have at
+  least one SA.
+
+  CATEGORY 4 — NORMATIVE ANALYST (NA)
+  ──────────────────────────────────────
+  Their focus is on the values, ethics, and normative assumptions embedded in
+  the proposition and in the evidence submitted. They surface hidden assumptions,
+  identify when evidence is value-laden rather than neutral, and articulate what
+  the deliberation implies for different stakeholders. Required for propositions
+  with normative controversy score above 0.4.
+
+  CATEGORY 5 — HISTORICAL CONTEXTUALIST (HC)
+  ─────────────────────────────────────────────
+  Their focus is precedent: what has happened before, what was tried, what
+  worked, what failed, and how the current proposition differs from or
+  resembles prior cases. Required for propositions with historical evidence
+  in the Evidence Landscape Assessment.
+
+  CATEGORY 6 — DEVIL'S ADVOCATE (DA)
+  ─────────────────────────────────────
+  The Devil's Advocate is assigned to argue the position least represented
+  in the current deliberation. Their position is dynamic — as the balance of
+  the session shifts, their mandate shifts. If at any point a position is
+  going unrepresented, the DA's job is to represent it. There must always be
+  exactly one DA in every Senate.
+
+  CATEGORY 7 — EPISTEMIC AUDITOR (EA)
+  ──────────────────────────────────────
+  Their role is governance of the evidence itself. They monitor for logical
+  fallacies, source quality failures, confirmation bias patterns, and
+  methodological errors in evidence submissions. When they identify a problem,
+  they issue a formal Epistemic Alert — a procedural intervention that pauses
+  the deliberation until the alert is addressed. Every Senate must have at
+  least one EA.
+
+  CATEGORY 8 — CROSS-DOMAIN INTEGRATOR (CDI)
+  ─────────────────────────────────────────────
+  Required only for multi-domain propositions. Their job is to bridge between
+  domain-specific evidence streams — to identify when a finding in domain A
+  has implications for the analysis in domain B, and to ensure the session
+  does not silently fragment into parallel domain debates that never interact.
+
+THE BALANCE MANDATE:
+The Balance Mandate is a hard constraint. No single category may hold more
+than 35% of Senate seats. The Synthesis Agent and Epistemic Auditor categories
+together must hold at least 20% of seats. The Devil's Advocate is always
+exactly one agent. The Senate Generation Engine's composition algorithm
+enforces these constraints as non-negotiable before the SCS is produced.
+
+================================================================================
+8.   PROCEDURAL ARCHITECTURE — THE FORMAL RULES OF DELIBERATION
+================================================================================
+
+AGORA's most novel contribution is the Procedural Rules Engine. This component
+has no equivalent in any existing multi-agent framework. It governs how agents
+may participate in the deliberation — not just what they can say, but when
+they can say it, for how long, and under what conditions their contributions
+are valid.
+
+8.1  Session Phases
+─────────────────────
+
+Every AGORA session runs through five formal phases. The phase structure is
+not a round structure — phases can overlap and the Socratic Engine can advance
+or delay phase transitions based on the deliberation's state.
+
+  PHASE 1 — OPENING STATEMENTS
+  Each senator delivers an opening statement: their initial position on the
+  proposition, their key evidence agenda, and their deliberative intent. No
+  challenges are permitted in Phase 1. This establishes the full position
+  landscape before any contestation begins.
+
+  PHASE 2 — EVIDENCE SUBMISSION
+  The primary deliberative phase. Senators submit evidence to the docket
+  concurrently. Each evidence item must be classified by type, sourced to
+  a specific reference, and assigned a confidence score by the submitting
+  senator. The Epistemic Auditor monitors all submissions in real time.
+
+  PHASE 3 — CROSS-EXAMINATION
+  Any senator may formally challenge any evidence item in the docket. A
+  challenge must specify: what is being challenged (the claim, the source,
+  the inference, or the confidence score), and the grounds for the challenge.
+  The submitting senator has right of reply. The EA rules on the challenge
+  outcome (sustained, overruled, noted for synthesis). Phase 3 can overlap
+  with Phase 2.
+
+  PHASE 4 — DELIBERATIVE SYNTHESIS
+  The Synthesis Agent(s) produce a working synthesis of the current docket
+  state. All senators review the synthesis and may submit amendment motions —
+  formal objections to the synthesis's characterization of their position.
+  The SA is required to revise the synthesis to address sustained amendment
+  motions.
+
+  PHASE 5 — CLOSING AND VERDICT
+  Each senator submits a closing position — their final stance on the
+  proposition after the full deliberation. The Coalition Detection Engine
+  runs its final pass. The Minority Report Engine identifies the losing
+  coalition. The verdict apparatus produces both the Majority Opinion and
+  the Minority Report.
+
+8.2  Floor Time and Procedural Fairness
+─────────────────────────────────────────
+
+Every senator has an allocated floor time budget. Floor time is consumed
+when a senator submits evidence, issues a challenge, or delivers a statement.
+If a senator exhausts their floor time budget, they may request additional
+time from the Socratic Engine (the orchestrator), which grants or denies the
+request based on the deliberation's state. This prevents any senator from
+dominating the session and ensures that quiet senators cannot be silenced
+by verbose ones.
+
+8.3  Filibuster Detection
+──────────────────────────
+
+The Socratic Engine monitors for filibuster patterns: when a senator is
+submitting new contributions that are substantially redundant with prior
+submissions. When a filibuster is detected, the Socratic Engine issues a
+Procedural Notice to the senator, logs the detection in the Senate Record,
+and — if the senator continues after two notices — temporarily suspends their
+floor time allocation. This is the Epistemic Filibuster Rule, and it has no
+equivalent in any existing framework.
+
+8.4  Points of Order
+──────────────────────
+
+Any senator may raise a Point of Order at any time. A Point of Order does not
+engage with the substance of the deliberation — it raises a procedural issue.
+Examples: "The evidence submitted in Item DE-14 does not meet the sourcing
+standard." "The current synthesis in Phase 4 misrepresents my position in
+Submission AC-07." The Socratic Engine reviews all Points of Order and rules
+within one deliberation cycle. The ruling is logged in the Senate Record.
+
+8.5  Quorum Requirements
+──────────────────────────
+
+A minimum participation threshold must be met for any verdict to be valid.
+The Quorum Engine calculates the required quorum as a function of N (Senate
+size) and the proposition's controversy score. If quorum is not met when the
+session stops, AGORA does not produce a verdict. Instead it produces a
+Quorum Failure Report, documenting which senators failed to participate
+sufficiently and recommending a Senate reconvening with different composition
+or configuration.
+
+================================================================================
+9.   THE EVIDENCE DOCKET SYSTEM
+================================================================================
+
+The Evidence Docket is AGORA's formal record of all evidence submitted during
+a session. It is not a log — it is a structured, queryable, fully referenced
+database of epistemic claims. Its architecture extends ARGUS's native
+provenance ledger with procedural metadata that no existing framework tracks.
+
+9.1  Evidence Submission Protocol
+────────────────────────────────────
+
+When a senator submits evidence to the docket, the submission must include:
+
+  — EVIDENCE ID: auto-assigned sequential identifier with senator prefix
+    (e.g., DE-07: the seventh submission by a Domain Expert)
+  — CLAIM TEXT: the proposition the evidence is offered to support or attack
+  — POLARITY: SUPPORTS / ATTACKS / QUALIFIES (not just binary)
+  — SOURCE REFERENCE: the specific source, with type classification
+    (primary research, secondary analysis, historical record, statistical
+    dataset, expert testimony, legal precedent, etc.)
+  — CONFIDENCE SCORE: the submitting senator's assessed confidence, 0.0-1.0
+  — EVIDENCE TYPE: Quantitative / Qualitative / Historical / Theoretical /
+    Anecdotal / Legal / Experimental
+  — RELATIONSHIP TO PRIOR SUBMISSIONS: does this evidence corroborate,
+    contradict, or extend any previously submitted item?
+
+All submissions are timestamped and hash-signed by ARGUS's native provenance
+system, making the docket a tamper-evident ledger.
+
+9.2  Evidence Weight Calculation
+──────────────────────────────────
+
+Evidence items do not all carry equal weight. AGORA calculates a Dynamic
+Evidence Weight (DEW) for each docket item based on:
+
+  — Source quality (ARGUS EVID-Q metric, inherited from the core system)
+  — Challenge status: unchallenged evidence carries its original weight;
+    challenged-and-sustained evidence is downweighted; challenged-and-
+    overruled evidence is upgraded; challenged-and-noted evidence carries
+    original weight with a flag
+  — Cross-corroboration: evidence corroborated by independent submissions
+    from other senators receives a corroboration multiplier
+  — Submission timing: evidence submitted early and surviving the full
+    cross-examination phase is weighted more heavily than evidence submitted
+    late in Phase 2, which has had less time to be tested
+
+9.3  Evidence Challenge Protocol
+──────────────────────────────────
+
+Any senator may challenge any docket item in Phase 3. The challenge protocol
+is strictly structured:
+
+  — CHALLENGE TARGET: the specific evidence item (by ID)
+  — CHALLENGE TYPE: Claim Challenge (the assertion is wrong), Source
+    Challenge (the source is unreliable or misrepresented), Inference
+    Challenge (the claimed relationship between evidence and proposition is
+    invalid), or Confidence Challenge (the confidence score is inflated)
+  — CHALLENGE ARGUMENT: the substantive basis for the challenge
+  — SUPPORTING COUNTER-EVIDENCE (optional): a new docket item that supports
+    the challenge
+
+The submitting senator has one right of reply to each challenge. After the
+reply, the Epistemic Auditor rules on the challenge outcome. Their ruling is
+final and is logged in the Senate Record.
+
+================================================================================
+10.  REAL-TIME CONCURRENT DELIBERATION — HOW THE SESSION RUNS
+================================================================================
+
+AGORA's deliberation is concurrent, not sequential. Understanding exactly
+how this works requires understanding the Socratic Engine — AGORA's
+orchestration layer.
+
+10.1  The Socratic Engine
+───────────────────────────
+
+Named for the philosopher who taught by questioning rather than declaring,
+the Socratic Engine is AGORA's orchestrator. Unlike ARISTOTLE's ORCHESTRATOR
+(which directs agents in sequence), the Socratic Engine manages a live
+concurrent deliberation. Its responsibilities are:
+
+  — PHASE MANAGEMENT: advancing the session through its five phases based
+    on the deliberation's state, not on a timer
+  — FLOOR TIME ENFORCEMENT: tracking all senators' floor time consumption
+    and managing requests for additional time
+  — FILIBUSTER DETECTION: running the Epistemic Filibuster Rule
+  — POINT OF ORDER ADJUDICATION: receiving and ruling on procedural motions
+  — QUORUM MONITORING: tracking participation levels against the quorum
+    threshold continuously
+  — COALITION ALERTING: receiving signals from the Coalition Detection Engine
+    and deciding when to surface them to the user interface
+  — SENATE RECORD WRITING: every Socratic Engine action is a formal entry
+    in the Senate Record with a SOCRATIC_ACTION event type
+
+10.2  Concurrent Agent Execution
+──────────────────────────────────
+
+All senators operate in parallel threads during the deliberation. They have
+access to the full docket in real time — every submission by every other
+senator is visible as soon as it is submitted. This means senators can
+respond to each other's evidence without waiting for a round to end, creating
+genuine concurrent deliberation dynamics.
+
+The concurrency is bounded by the Procedural Rules Engine. Senators cannot
+submit evidence faster than their floor time budget allows. They cannot
+challenge the same item simultaneously (challenges are queued). They cannot
+speak during Phase 1 (Opening Statements) except in the order determined
+by the Senate Generation Engine (the order is randomized but shown in the
+Senate Preview Card).
+
+10.3  Live Session State
+──────────────────────────
+
+During the session, AGORA maintains and exposes a live Session State object
+containing:
+
+  — Current phase
+  — Senators active / inactive / floor-time-exhausted
+  — Docket: all submitted evidence items with current DEW scores
+  — Active challenges and their status
+  — Current coalition clustering (live, updates every cycle)
+  — Quorum status
+  — Socratic Engine's current action
+  — Session clock (elapsed time, senator floor time remaining)
+
+The user interface (see Section 15 on the AGORA Sandbox) renders this State
+as a live, navigable Senate Floor visualization.
+
+================================================================================
+11.  USER-GOVERNED STOPPING MECHANISMS
+================================================================================
+
+AGORA's stopping mechanism is the single feature that most dramatically
+separates it from every existing multi-agent framework. The user holds the
+gavel, and the gavel is not metaphorical.
+
+11.1  The Five Stopping Triggers
+──────────────────────────────────
+
+  TRIGGER 1 — FULL EVIDENCE SUBMISSION
+  The session stops automatically when every senator has submitted at least
+  their minimum required evidence load (configurable, default: 3 items per
+  senator). This is the "everyone has had their say" stop.
+  User can toggle this on or off before the session begins.
+
+  TRIGGER 2 — TIME BOUNDARY
+  The user sets a maximum session duration before the session begins.
+  When the clock runs out, the Socratic Engine initiates the closing sequence.
+  Phase 4 (Deliberative Synthesis) and Phase 5 (Closing and Verdict) are
+  run in accelerated mode if the time boundary is reached before they begin.
+  User can extend the time boundary mid-session.
+
+  TRIGGER 3 — CONVERGENCE THRESHOLD
+  The Socratic Engine monitors the posterior distribution of senator positions
+  in real time. When the posterior variance falls below a configurable
+  threshold, it signals that the Senate has substantially converged. If this
+  trigger is active, the session moves to closing sequence automatically.
+  The convergence threshold defaults to 0.15 posterior standard deviation.
+
+  TRIGGER 4 — USER DEMAND
+  At any moment, the user can press the Gavel button in the interface.
+  AGORA immediately initiates the closing sequence from wherever the session
+  currently is. If the session is in Phase 2, the synthesis and verdict
+  apparatus run on whatever evidence has been submitted so far.
+
+  TRIGGER 5 — QUORUM FAILURE
+  If the Quorum Engine determines that quorum cannot be reached (because
+  too many senators have exhausted their floor time without meeting minimum
+  participation requirements), the session terminates with a Quorum Failure
+  Report rather than a verdict.
+
+11.2  Graceful Termination
+────────────────────────────
+
+Regardless of which trigger fires, AGORA's closing sequence is always:
+
+  1. Socratic Engine issues a Closing Notice to all senators
+  2. Each senator submits their Closing Position (final stance, 0.0-1.0)
+     within a bounded time window
+  3. Coalition Detection Engine runs its final analysis
+  4. Synthesis Agent produces the Final Synthesis document
+  5. Minority Report Engine identifies the minority coalition
+  6. Verdict apparatus produces Majority Opinion and Minority Report
+  7. Senate Record is finalized and sealed (hash-signed)
+  8. Results are delivered to the user
+
+================================================================================
+12.  COALITION DETECTION AND MINORITY REPORT ENGINE
+================================================================================
+
+12.1  The Coalition Detection Engine
+───────────────────────────────────────
+
+The Coalition Detection Engine (CDE) is a continuous analysis layer that
+monitors senator positions and reasoning patterns throughout the session.
+It is unique to AGORA — no existing framework performs this analysis.
+
+The CDE works by maintaining a Position Similarity Matrix (PSM): a live
+N×N matrix where each cell represents the cosine similarity between two
+senators' current position vectors. A position vector is not just a stance
+score — it is a multi-dimensional embedding of the senator's current
+evidence portfolio, challenge history, and expressed confidence distribution.
+
+When a cluster of senators exceeds a similarity threshold (default: 0.75
+cosine similarity), the CDE:
+
+  1. Names the coalition (a generated descriptor, e.g., "Empirical
+     Skeptics Coalition" or "Precautionary Principle Bloc")
+  2. Identifies the coalition's defining shared premise
+  3. Calculates the coalition's epistemic independence score —
+     a measure of how much the coalition's members are reasoning
+     from independent evidence vs. from a shared evidence base
+  4. Surfaces the coalition in the user interface and logs it in the
+     Senate Record
+
+A low Epistemic Independence Score is a warning signal. It means the
+coalition's apparent strength may be an artifact of shared evidence rather
+than independent convergence — the multi-agent epistemic benefit is
+being lost. The Socratic Engine can respond by activating the Devil's
+Advocate to specifically challenge the coalition's shared premise.
+
+12.2  The Minority Report Engine
+──────────────────────────────────
+
+When the session concludes, the Minority Report Engine identifies the senator
+or coalition of senators whose final position diverges most substantially
+from the majority verdict. These senators are the minority.
+
+The Minority Report is then produced — not as a summary of why the minority
+lost, but as the strongest possible statement of the minority's position,
+written in the same format as the Majority Opinion. The Minority Report
+includes:
+
+  — The minority's core claim
+  — The evidence they submitted that supports it
+  — Their challenges that were sustained against majority evidence
+  — Their characterization of why the majority position is insufficient
+  — The specific conditions under which the minority believes the verdict
+    would reverse (the "What Would Change This" component, inherited
+    and extended from ARGUS's VoI EIG apparatus)
+
+The Minority Report is a first-class output. It is displayed alongside the
+Majority Opinion and is included in the full Senate Record.
+
+================================================================================
+13.  THE SENATE RECORD — AGORA'S HANSARD
+================================================================================
+
+The Senate Record is AGORA's complete procedural document — the equivalent of
+a parliamentary Hansard. Every action in every session is logged here in
+structured, navigable form. The Senate Record is the primary audit artifact.
+
+The Senate Record contains the following entry types:
+
+  SENATOR_STATEMENT     — Opening and closing statements
+  EVIDENCE_SUBMISSION   — Every docket submission with full metadata
+  CHALLENGE_ISSUED      — Every challenge filed
+  CHALLENGE_REPLY       — Every submitting senator's reply
+  EA_RULING             — Every Epistemic Auditor ruling on a challenge
+  POINT_OF_ORDER        — Every Point of Order raised
+  SOCRATIC_ACTION       — Every Socratic Engine intervention
+  FLOOR_TIME_EVENT      — Grants, denials, and exhaustions of floor time
+  COALITION_DETECTED    — Every CDE coalition identification event
+  PHASE_TRANSITION      — Every phase advance with the triggering condition
+  QUORUM_UPDATE         — Quorum status changes
+  STOPPING_TRIGGER      — Which trigger fired and when
+  FINAL_POSITIONS       — All senators' closing position scores
+  MAJORITY_OPINION      — The final Majority Opinion document
+  MINORITY_REPORT       — The final Minority Report document
+  RECORD_SEALED         — The hash-chain seal of the completed Record
+
+The Senate Record is exported as a structured JSON document, a human-readable
+formatted text document (the Hansard format), and optionally as a PDF.
+All three formats are generated at session end. The record is a valid PROV-O
+compatible audit artifact, extending ARGUS's native provenance system.
+
+================================================================================
+14.  RESULT ARCHITECTURE — WHAT AGORA OUTPUTS
+================================================================================
+
+At the end of every session, AGORA produces a structured Result Set with
+the following components:
+
+  1. MAJORITY OPINION
+     The primary verdict: proposition label (SUPPORTED / CHALLENGED /
+     INDETERMINATE / QUALIFIED), posterior probability, confidence interval,
+     narrative explanation written in plain language, key supporting evidence
+     summary, and the identity and category of the senators who comprise the
+     majority coalition.
+
+  2. MINORITY REPORT
+     The full minority position document as described in Section 12.2.
+
+  3. COALITION MAP
+     A visual and structured representation of all coalitions detected during
+     the session, their membership, their defining shared premises, and their
+     epistemic independence scores.
+
+  4. EVIDENCE DOCKET SUMMARY
+     All submitted evidence items with final DEW scores, challenge outcomes,
+     and cross-corroboration relationships. Organized by polarity and by
+     submitting senator category.
+
+  5. POSITION TRAJECTORY MAP
+     For each senator, a time-series plot showing how their position evolved
+     from Opening Statement to Closing Position. This reveals which senators
+     changed their minds, when, and in response to which docket events.
+
+  6. SENATOR PERFORMANCE SCORECARD
+     Each senator's floor time consumption, evidence submission count,
+     challenges issued, challenges received, challenges sustained and
+     overruled, Point of Order record, and a calculated Epistemic Contribution
+     Score (ECS) — a novel metric unique to AGORA measuring the total
+     epistemic value added by each senator to the final verdict.
+
+  7. WHAT WOULD CHANGE THIS
+     Extended from ARGUS's VoI EIG apparatus: a specific, actionable statement
+     of what new evidence, what new analytical framework, or what different
+     Senate composition would be most likely to change the verdict.
+
+  8. SENATE RECORD
+     The complete Hansard document as described in Section 13.
+
+  9. QUORUM CERTIFICATE OR QUORUM FAILURE REPORT
+     Formal documentation of whether quorum was met and the participation
+     profile of the Senate.
+
+================================================================================
+15.  THE AGORA SANDBOX
+================================================================================
+
+AGORA ships with its own Streamlit sandbox: AGORA-Viz. This is AGORA's
+equivalent of ARISTOTLE's single-pane split interface.
+
+AGORA-Viz is a three-panel interface:
+
+  LEFT PANEL — THE SENATE FLOOR
+  The user's interaction pane. Contains:
+    — Proposition input (where the session begins)
+    — Senate Preview Card (composition review before launch)
+    — Session control: Start, Pause, Resume, Gavel (stop)
+    — Stopping trigger configuration
+    — Live session clock and quorum meter
+    — User injection interface: add a new evidence item as an
+      external submission (labeled as USER_EVIDENCE in the docket)
+    — Coalition alerts (surfaced by the CDE)
+    — Result delivery (at session end)
+
+  CENTER PANEL — THE SENATE CHAMBER
+  The live visualization of the deliberation. Contains:
+    — Senate Seating Chart: N senators represented as nodes, colored by
+      category, with real-time position scores as node size or brightness
+    — Evidence Docket Stream: a live feed of evidence submissions,
+      challenges, and EA rulings as they occur
+    — Coalition Visualization: overlays on the seating chart showing
+      detected coalitions as colored groupings, updating in real time
+    — Phase Indicator: showing current phase and progress
+
+  RIGHT PANEL — THE ANALYTICS PANE
+  Deeper analysis and record access. Contains:
+    — Position Trajectory Map (live, updating per senator)
+    — Evidence DEW Distribution: histogram of current evidence weights
+    — Floor Time Monitor: bar chart of remaining floor time per senator
+    — Senate Record Navigator: browse the complete Record in real time
+    — Post-session: full Result Set display with all nine components
+
+AGORA-Viz is launched via:
+
+  argus agora run
+
+Like ARISTOTLE, it requires only the proposition to begin.
+
+================================================================================
+16.  NOVEL CONTRIBUTIONS — WHAT NO EXISTING FRAMEWORK HAS
+================================================================================
+
+AGORA's innovations are documented here in direct comparison with the
+landscape established in Section 3.
+
+  INNOVATION 1 — DYNAMIC SENATE GENERATION PER PROPOSITION
+  MiroFish generates agents with personalities from seed material.
+  ARISTOTLE generates a fixed-topology team. AGORA generates a
+  topically-calibrated deliberative body for each specific proposition,
+  with composition that responds to the proposition's domain, controversy
+  profile, and epistemic structure. No existing framework does this.
+
+  INNOVATION 2 — THE BALANCE MANDATE
+  No existing framework enforces categorical balance in agent composition.
+  AGORA's Balance Mandate is a hard constraint ensuring epistemic diversity
+  is architectural, not accidental.
+
+  INNOVATION 3 — A PROCEDURAL RULES ENGINE FOR AI DELIBERATION
+  Floor time, filibuster detection, Points of Order, quorum enforcement,
+  challenge protocols, right of reply — these are formal procedural
+  constraints on how agents may participate. No existing multi-agent
+  framework has procedural rules. AGORA is the first.
+
+  INNOVATION 4 — THE EVIDENCE DOCKET WITH FORMAL CHALLENGE PROTOCOL
+  AGORA treats evidence as a formal submission subject to a structured
+  challenge and reply mechanism with EA adjudication. Evidence is not
+  emergent — it is accountable. No existing framework does this.
+
+  INNOVATION 5 — USER-GOVERNED STOPPING WITH FIVE TRIGGER TYPES
+  No existing framework gives the user formal control over session
+  stopping with multiple trigger types. The gavel is a genuine
+  epistemic governance instrument, not a UI element.
+
+  INNOVATION 6 — COALITION DETECTION ENGINE WITH EPISTEMIC INDEPENDENCE SCORING
+  No existing framework detects, names, and evaluates agent coalitions in
+  real time. The Epistemic Independence Score is a novel metric that measures
+  whether coalition strength reflects genuine convergence or shared evidence
+  — a distinction critical to the validity of multi-agent deliberation.
+
+  INNOVATION 7 — THE MINORITY REPORT AS FIRST-CLASS OUTPUT
+  No existing framework produces a formal Minority Report alongside its
+  primary verdict. AGORA treats the minority position with the same
+  documentation rigor as the majority position.
+
+  INNOVATION 8 — THE SENATE RECORD (HANSARD FORMAT)
+  No existing framework produces a complete procedural record of the
+  deliberation in a navigable, formally structured format. AGORA's Senate
+  Record is an audit instrument, a research artifact, and a governance
+  document simultaneously.
+
+  INNOVATION 9 — THE EPISTEMIC CONTRIBUTION SCORE (ECS)
+  A new metric for measuring each agent's actual epistemic contribution to
+  the final verdict — combining evidence quality, challenge success rate,
+  floor time efficiency, and position trajectory. Not available anywhere else.
+
+  INNOVATION 10 — CONCURRENT DELIBERATION WITH PROCEDURAL BOUNDS
+  All existing debate AI frameworks are sequential. AGORA's senators act
+  in parallel, in real time, within formal procedural constraints. This is
+  the closest existing AI system comes to replicating the dynamics of a
+  real deliberative assembly.
+
+  INNOVATION 11 — THE POSITION TRAJECTORY MAP
+  AGORA tracks how each senator's position evolves across the full session
+  and delivers this as a time-series output. Understanding not just what was
+  decided but what changed minds — and what changed them — is unique to AGORA.
+
+  INNOVATION 12 — QUORUM AS AN EPISTEMIC VALIDITY CRITERION
+  If quorum is not met, the verdict is not delivered. A Quorum Failure Report
+  is produced instead, with recommendations for reconvening. No existing
+  framework treats participation thresholds as validity conditions.
+
+================================================================================
+17.  HOW AGORA AND ARISTOTLE COEXIST INSIDE ARGUS
+================================================================================
+
+AGORA and ARISTOTLE are complementary, not competing. They address different
+needs and share the ARGUS infrastructure without conflict.
+
+  ARISTOTLE                              AGORA
+  ─────────────────────────────────      ────────────────────────────────────────
+  Purpose: Deep structured analysis      Purpose: Structured concurrent
+  of a proposition by a specialist       deliberation by a dynamically
+  team with full C-DAG visualization     composed Senate with formal procedure
+
+  Topology: Fixed (Moderator,            Topology: Dynamic, per-proposition,
+  Specialist, Refuter, Jury)             category-balanced, N-variable
+
+  Operation: Sequential rounds           Operation: Concurrent real-time
+                                         deliberation
+
+  Orchestration: ARISTOTLE               Orchestration: Socratic Engine
+  ORCHESTRATOR                           (procedural governor)
+
+  User role: Observer with              User role: Governor (holds the gavel,
+  approval gates                         controls stopping, can inject evidence)
+
+  Output: Verdict + Narrative +          Output: Majority Opinion + Minority
+  C-DAG + Visualization panels           Report + Coalition Map + Position
+                                         Trajectory + Senate Record + ECS
+
+  Interface: Single split-pane           Interface: Three-panel AGORA-Viz
+  ARISTOTLE interface                    Senate Floor + Chamber + Analytics
+
+  Best for: When you need one            Best for: When you need structured
+  rigorous, deep analysis and a          multi-perspective deliberation with
+  clear narrative verdict                formal procedure and governance
+
+Both are launched with a single proposition:
+  argus aristotle run  →  ARISTOTLE session
+  argus agora run      →  AGORA session
+
+Both live at their respective sub-modules inside the argus-debate-ai package:
+  argus.aristotle
+  argus.agora
+
+Both share ARGUS's native C-DAG, provenance ledger, EVID-Q, EIG, and all
+core infrastructure. Neither duplicates the other's architecture.
+
+================================================================================
+18.  KNOWN CHALLENGES AND MITIGATIONS
+================================================================================
+
+  CHALLENGE 1 — CONCURRENCY COST
+  Running N agents concurrently multiplies token cost relative to sequential
+  systems. For a Senate of 15, concurrent operation could represent 15× the
+  per-round cost of ARISTOTLE.
+
+  MITIGATION: Token budget controls are built into the Senate Generation
+  Engine's N calculation. The default N is calibrated to a cost-reasonable
+  range. Users can set explicit token budgets. The PULSE cost monitor (ARGUS
+  v5.0) is extended to track AGORA session costs in real time.
+
+  CHALLENGE 2 — PROCEDURAL RULE INJECTION INTO LLM AGENTS
+  Imposing procedural rules (floor time, challenge protocols, Point of Order
+  format) on LLM agents requires careful prompt engineering. Agents may not
+  naturally comply with procedural constraints.
+
+  MITIGATION: Each senator's system prompt includes explicit procedural
+  instructions appropriate to their category. The Socratic Engine monitors
+  procedural compliance and can re-issue instructions mid-session. The
+  Procedural Rules Engine acts as a filter between agent outputs and docket
+  submissions, enforcing structural requirements before any submission is
+  accepted.
+
+  CHALLENGE 3 — COALITION DETECTION FALSE POSITIVES
+  Two senators may appear positionally similar without actually forming a
+  meaningful epistemic coalition — they could simply be converging on the
+  correct answer.
+
+  MITIGATION: The Epistemic Independence Score distinguishes genuine
+  convergence (independent evidence streams reaching the same conclusion)
+  from coalition formation (shared evidence base producing similar positions).
+  CDE only flags coalitions when similarity is high AND independence is low.
+
+  CHALLENGE 4 — QUORUM FAILURE IN SHORT SESSIONS
+  If a user activates Trigger 4 (Gavel) very early in the session, quorum
+  may not be achievable.
+
+  MITIGATION: The Quorum Engine provides a real-time quorum probability
+  estimate. If the user attempts to stop the session before quorum is
+  achievable, a Quorum Warning is displayed asking them to confirm. They can
+  override the warning, but the resulting document will be marked as a
+  Sub-Quorum Advisory rather than a full verdict.
+
+  CHALLENGE 5 — SENATE RECORD SIZE FOR LARGE SENATES
+  A Senate of 25 senators over a full session can produce an enormous Senate
+  Record.
+
+  MITIGATION: The Hansard format is structured and navigable — users can
+  filter by entry type, by senator, by phase, or by evidence item. A Summary
+  Record (key entries only) is generated alongside the full Record. The full
+  Record is archived and accessible on demand rather than loaded by default.
+
+================================================================================
+19.  IMPLEMENTATION ROADMAP
+================================================================================
+
+  PHASE  NAME                        SCOPE                         DELIVERABLE
+  ─────  ─────────────────────────   ───────────────────────────   ─────────────
+  G1     argus.agora Module           Create argus/agora/           Module skeleton
+         Skeleton                     directory structure; add      with __init__.py
+                                      CLI entry point               and entry points;
+                                      "argus agora run";            CLI works
+                                      wire into pyproject.toml
+
+  G2     Senate Generation Engine     Build senate_gen.py:          SenateSpec schema
+                                      domain detection,             + controversy
+                                      controversy scoring,          scorer + evidence
+                                      stance space mapping,         landscape mapper
+                                      N calculation, SCS            + SCS JSON output
+                                      output, Senate Preview        + Preview Card
+                                      Card component                component
+
+  G3     Procedural Rules Engine      Build procedures.py:          PhaseManager +
+                                      five-phase management,        FloorTimeEngine +
+                                      floor time system,            FilibusterDetector
+                                      filibuster detection,         + PointOfOrder
+                                      Points of Order,              handler + Quorum
+                                      quorum enforcement            Engine
+
+  G4     Evidence Docket System       Build docket.py:              EvidenceDocket
+                                      submission protocol,          schema + DEW
+                                      DEW calculation,              calculator +
+                                      challenge protocol,           ChallengeHandler
+                                      EA adjudication, provenance   + EA interface +
+                                      integration                   ARGUS ledger wire
+
+  G5     Socratic Engine              Build socratic.py:            SocraticEngine
+         (Concurrent Orchestrator)    concurrent agent              class + phase
+                                      coordination, phase           transition logic
+                                      management, procedural        + intervention
+                                      intervention logic,           handlers +
+                                      real-time Senate Record       Record writer
+                                      writing
+
+  G6     Coalition Detection Engine   Build coalitions.py:          PSM computation
+                                      Position Similarity           + CDE class +
+                                      Matrix, clustering,           Coalition schema
+                                      coalition naming,             + Epistemic
+                                      Epistemic Independence        Independence
+                                      Score calculation             Score metric
+
+  G7     Minority Report Engine       Build minority.py:            MinorityReport
+                                      minority identification,      generator +
+                                      full report generation,       What Would
+                                      What Would Change This        Change This
+                                      VoI extension                 extended module
+
+  G8     Senate Record System         Build record.py:              SenateRecord
+                                      all entry types, Hansard      schema + Hansard
+                                      format generation,            formatter +
+                                      hash-chain sealing,           PDF exporter +
+                                      JSON and PDF export,          Summary Record
+                                      Summary Record                generator
+
+  G9     Result Architecture          Build results.py:             ResultSet schema
+                                      all nine output               + Position
+                                      components, Position          Trajectory +
+                                      Trajectory Map,               ECS calculator +
+                                      Senator Performance           Scorecard +
+                                      Scorecard, ECS metric,        Quorum Certificate
+                                      Quorum Certificate/
+                                      Failure Report
+
+  G10    AGORA-Viz Sandbox            Build agora_app.py:           agora_app.py
+                                      three-panel Streamlit         Streamlit app +
+                                      interface, Senate Floor,      Senate Chamber
+                                      Senate Chamber                visualization +
+                                      visualization, Analytics      Analytics pane +
+                                      pane, live session state      live State binding
+                                      binding, all control UI
+
+================================================================================
+20.  CLOSING VISION
+================================================================================
+
+ARGUS began as the most architecturally sophisticated multi-agent debate
+framework in existence. ARISTOTLE gave it a face — accessible, elegant,
+autonomous. AGORA gives it a parliament.
+
+What AGORA builds is something that has existed in human civilization for
+thousands of years and has never existed in AI: a formal deliberative
+assembly. Not a swarm. Not a panel. Not a sequential chain of agents with
+fixed roles. A Senate — dynamically constituted, procedurally governed,
+evidence-accountable, minority-respecting, and user-governed.
+
+The landscape of multi-agent AI in 2026 is rich with frameworks that make
+agents talk to each other. None of them make agents deliberate with each other.
+The difference is not semantic. Deliberation has rules. Deliberation has
+accountability. Deliberation has a record. Deliberation respects dissent.
+Deliberation produces not just a winner but an understanding of why the winner
+won and why the loser still has a case worth reading.
+
+MiroFish showed that thousands of agents interacting freely can surface
+emergent social patterns. AGORA does not compete with MiroFish on that ground.
+AGORA asks a different question: when the proposition is complex, the stakes
+are high, the evidence is contested, and the user needs not just a prediction
+but an accountable, governed, formally documented verdict — what system
+produces that?
+
+The answer is a Senate. And AGORA builds it from a single line:
+
+  argus agora run
+
+Type the proposition. Approve the Senate. Hold the gavel. The assembly is
+in session.
+
+================================================================================
+END OF DOCUMENT
+AGORA Protocol v1 — argus.agora module — Bureaucratic Senate Edition
+argus-debate-ai | March 2026
+================================================================================
