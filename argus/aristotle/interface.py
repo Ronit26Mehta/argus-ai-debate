@@ -969,7 +969,7 @@ def _launch_debate() -> None:
 # ═══════════════════════════════════════════════════════════════════════
 
 def _save_debate_results() -> None:
-    """Persist plots, JSON data and transcript to argus/outputs/<ts>_<topic>/."""
+    """Persist plots, JSON data and transcript to argus_result/<ts>_<topic>_aristotle/."""
     frame: DebateFrame | None = st.session_state.get("frame")
     synthesis: SynthesisResult | None = st.session_state.get("synthesis")
     debate_result = st.session_state.get("debate_result")
@@ -981,9 +981,9 @@ def _save_debate_results() -> None:
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     topic_raw = (frame.primary_proposition or frame.raw_query or "debate")[:40]
     topic_slug = re.sub(r'[^\w\s-]', '', topic_raw).strip().replace(' ', '_')
-    folder_name = f"{ts}_{topic_slug}"
+    folder_name = f"{ts}_{topic_slug}_aristotle"
 
-    output_dir = Path("argus") / "outputs" / folder_name
+    output_dir = Path("argus_result") / folder_name
     output_dir.mkdir(parents=True, exist_ok=True)
     plots_dir = output_dir / "plots"
     plots_dir.mkdir(exist_ok=True)
