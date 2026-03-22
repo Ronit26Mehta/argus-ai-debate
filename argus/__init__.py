@@ -26,7 +26,7 @@ Architecture:
     6. Agent Orchestration - Moderator, Specialists, Refuter, Jury
 """
 
-__version__ = "5.0.0"
+__version__ = "5.5.0"
 __author__ = "ARGUS Team"
 __license__ = "MIT"
 
@@ -353,6 +353,9 @@ __all__ = [
     "VERICHAINRegistry",
     # PULSE
     "PULSEDashboard",
+    # SANDBOX
+    "ArgusSandboxRunner",
+    "SandboxConfig",
 ]
 
 
@@ -370,6 +373,8 @@ def __getattr__(name: str):
         "MIRROROrchestrator": "argus.mirror",
         "VERICHAINRegistry": "argus.verichain",
         "PULSEDashboard": "argus.pulse",
+        "ArgusSandboxRunner": "argus.sandbox",
+        "SandboxConfig": "argus.sandbox",
     }
     if name in _lazy_imports:
         import importlib
