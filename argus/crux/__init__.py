@@ -40,7 +40,7 @@ Protocol Design:
     - Enables belief reconciliation for contradicting claims
 """
 
-__version__ = "4.5.0"
+__version__ = "5.5.0"
 __protocol_name__ = "CRUX"
 __full_name__ = "Claim-Routed Uncertainty eXchange Protocol"
 
