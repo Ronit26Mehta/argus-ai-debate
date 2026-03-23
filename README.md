@@ -12,6 +12,26 @@
 [![Tools: 50+](https://img.shields.io/badge/tools-50+-green.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#tool-integrations-50)
 [![LLM Providers: 27+](https://img.shields.io/badge/LLM%20providers-27+-purple.svg)](https://github.com/Ronit26Mehta/argus-ai-debate#llm-providers-27)
 
+
+# Demo For Argus:
+
+1. general Argus CDAG Demo :
+   
+[CDAG.webm](https://github.com/user-attachments/assets/e6155c68-988a-44c6-a56e-69f3dc4d5c44)
+
+2. Arsitotle Sandbox Demo :
+   
+[Aristotle (2).webm](https://github.com/user-attachments/assets/699cb772-2d38-413b-94f5-6f3abfe4ac44)
+
+3. Agora Sandbox Demo:
+
+[Agora_Demo (1).webm](https://github.com/user-attachments/assets/2e98605c-8092-4aba-94ac-5b9d54d2f484)
+
+
+
+
+
+
 ---
 
 ## Table of Contents
