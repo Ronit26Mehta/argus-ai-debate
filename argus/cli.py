@@ -465,6 +465,44 @@ def setup_parser() -> argparse.ArgumentParser:
     )
 
     # =========================================================================
+    # HANNIBAL command
+    # =========================================================================
+    hannibal_parser = subparsers.add_parser(
+        "hannibal",
+        help="HANNIBAL — adversarial epistemic warfare protocol",
+    )
+    hannibal_sub = hannibal_parser.add_subparsers(dest="hannibal_command")
+
+    # argus hannibal run  →  launch Streamlit War Room
+    hannibal_run = hannibal_sub.add_parser(
+        "run",
+        help="Launch the HANNIBAL War Room Streamlit interface",
+    )
+    hannibal_run.add_argument(
+        "--port",
+        type=int,
+        default=8503,
+        help="Streamlit server port (default: 8503)",
+    )
+
+    # argus hannibal query  →  headless single-query mode
+    hannibal_query = hannibal_sub.add_parser(
+        "query",
+        help="Run a single HANNIBAL campaign (headless, no UI)",
+    )
+    hannibal_query.add_argument(
+        "proposition",
+        type=str,
+        help="Proposition to battle over",
+    )
+    hannibal_query.add_argument(
+        "--output",
+        type=str,
+        default=None,
+        help="Output file for JSON result",
+    )
+
+    # =========================================================================
     # Sandbox command
     # =========================================================================
     sandbox_parser = subparsers.add_parser(
@@ -1388,6 +1426,61 @@ def cmd_aristotle(args: argparse.Namespace) -> int:
         return 1
 
 
+def cmd_hannibal(args: argparse.Namespace) -> int:
+    """HANNIBAL — adversarial epistemic warfare protocol."""
+    subcmd = getattr(args, "hannibal_command", None)
+
+    if subcmd == "run":
+        import subprocess
+        import os
+        interface_path = Path(__file__).parent / "hannibal" / "hannibal_app.py"
+        if not interface_path.exists():
+            print("❌ HANNIBAL War Room interface not found.")
+            return 1
+        port = getattr(args, "port", 8503)
+        env = os.environ.copy()
+        if getattr(args, "provider", None):
+            env["ARGUS_DEFAULT_PROVIDER"] = str(args.provider)
+        if getattr(args, "model", None):
+            env["ARGUS_DEFAULT_MODEL"] = str(args.model)
+        print(f"⚔️  Launching HANNIBAL War Room on port {port}…")
+        proc = subprocess.run(
+            [
+                sys.executable, "-m", "streamlit", "run",
+                str(interface_path),
+                "--server.port", str(port),
+                "--server.headless", "true",
+            ],
+            env=env,
+        )
+        return proc.returncode
+
+    elif subcmd == "query":
+        from argus.hannibal import HANNIBAL
+        from argus.core.llm import get_llm
+
+        llm = get_llm(
+            provider=getattr(args, "provider", None),
+            model=getattr(args, "model", None),
+        )
+        campaign = HANNIBAL(llm=llm)
+        print(f"⚔️  HANNIBAL campaign: {args.proposition[:80]}…")
+        result = campaign.run(args.proposition)
+        print()
+        print(result.chat_card())
+
+        if args.output:
+            output_path = Path(args.output)
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(result.to_dict(), f, indent=2, default=str)
+            print(f"\n✅ Result saved to: {output_path}")
+        return 0
+
+    else:
+        print("Usage: argus hannibal {run|query} [options]")
+        return 1
+
+
 def cmd_sandbox(args: argparse.Namespace) -> int:
     """ARGUS Sandbox command handler."""
     subcmd = getattr(args, "sandbox_command", None)
@@ -1515,6 +1608,7 @@ def main() -> int:
         "compress": cmd_compress,
         "visualize": cmd_visualize,
         "aristotle": cmd_aristotle,
+        "hannibal": cmd_hannibal,
         "sandbox": cmd_sandbox,
     }
     
