@@ -1,0 +1,1776 @@
+================================================================================
+ARGUS × HANNIBAL
+Hierarchical Adversarial Network for Nested Intelligence Battles and Logic
+The Battlefield Epistemic Protocol — Adversarial War-Front Agent Architecture
+Complete Conceptual Blueprint — ARGUS Module Integration
+Tournament Tree Edition · Bipolar-to-Multipolar Front Scaling · April 2026
+================================================================================
+
+Proposition-In, Verdict-Out · Combat-Native Reasoning · Zero-Config Launch
+HANNIBAL as argus-debate-ai Sub-Module · argus.hannibal
+Ships alongside ARISTOTLE and AGORA · Full ARGUS Integration
+Domain-Independent · Self-Deploying Forces · Tournament-Tree Data Structure
+Bipolar to Multipolar Front Scaling · Combined DAG + Tournament Tree Visualization
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+  1.   Executive Summary
+  2.   The Naming Philosophy — Why HANNIBAL, Why Hannibal Barca
+  3.   The Intellectual Lineage — ARISTOTLE, AGORA, and the Battlefield Gap
+  4.   The Fundamental Problem Statement
+  5.   The Core Architectural Idea — Senate vs. Battlefield
+  6.   The Proposition Depth Analyzer — Bipolar to Multipolar Scaling
+  7.   Force Architecture — Armies, Fronts, and Military Roles
+  8.   The Tournament Tree — Data Structure Specification
+  9.   Battle Protocol — Skirmish, Engagement, Theatre, Campaign
+ 10.   Victory Conditions and Posterior Propagation
+ 11.   The CANNAE Engine — Multipolar Encirclement Logic
+ 12.   The War Room Visualization — DAG + Tournament Tree
+ 13.   The Field Marshal System — Verdict Authority
+ 14.   Result Architecture — What HANNIBAL Outputs
+ 15.   The HANNIBAL Sandbox — Battlefield Visualization Interface
+ 16.   Novel Contributions — What No Existing Framework Has
+ 17.   How HANNIBAL, ARISTOTLE, and AGORA Coexist Inside ARGUS
+ 18.   Known Challenges and Mitigations
+ 19.   Implementation Roadmap
+ 20.   Closing Vision
+
+================================================================================
+1.   EXECUTIVE SUMMARY
+================================================================================
+
+ARGUS contains two deliberative protocols for multi-agent reasoning. ARISTOTLE
+orchestrates a sequential specialist team through structured rounds of evidence
+and rebuttal, delivering a deeply analyzed verdict from a fixed topology.
+AGORA convenes a dynamically composed Senate where N senators deliberate
+concurrently under formal procedural rules — a parliament of agents. Both are
+fundamentally inspired by the ideal of the deliberative assembly: a room where
+reasoned argument converges on truth through dialogue.
+
+But there is a different model of adversarial reasoning — one that is older,
+starker, and in many ways more honest about the nature of contested truth.
+That model is the battle. Not metaphorically. Structurally.
+
+HANNIBAL — the Hierarchical Adversarial Network for Nested Intelligence Battles
+and Logic — is the third ARGUS deliberative protocol. It does not convene a
+Senate. It deploys armies.
+
+When a proposition enters HANNIBAL, it is not assigned to a panel of debaters.
+It is analyzed for its epistemic depth and polarity structure. Based on that
+analysis, HANNIBAL generates two or more Forces — organized armies of agents —
+and deploys them against each other on structured War Fronts. Each Force
+fights to win: to make its position the dominant verdict through superior
+evidence, stronger logic, and more decisive argument. The battle is not a
+metaphor for debate. It IS the debate, re-architected as organized combat.
+
+The core data structure that governs this combat is the Tournament Tree —
+a hierarchical bracket that makes the path from individual agent clashes all
+the way to the final campaign verdict both computationally tractable and
+visually legible. Every clash, at every level, produces a winner whose
+position propagates upward through the bracket until a single dominant
+position emerges at the root: the Campaign Verdict.
+
+The Proposition Depth Analyzer determines how many fronts are opened.
+Simple propositions → Bipolar: two forces, one front. Complex, multi-
+dimensional propositions → Multipolar: three or more forces, multiple
+simultaneous fronts, each front its own tournament sub-tree. The multipolar
+case is governed by HANNIBAL's CANNAE Engine — named for Hannibal Barca's
+greatest battle, where encirclement of the enemy from multiple angles
+produced a decisive result that simple frontal assault could never achieve.
+
+Alongside the existing C-DAG visualization that ARGUS already provides for
+argument structure, HANNIBAL introduces a second simultaneous visualization:
+the Tournament Tree display — a live, updating bracket that shows every
+skirmish, engagement, and theatre result as the battle unfolds. The user
+sees both: the epistemic structure (C-DAG) and the battle structure
+(Tournament Tree), rendered in the same interface, updating in real time.
+
+HANNIBAL is launched with a single proposition:
+
+  argus hannibal run
+
+The Forces are generated. The fronts are drawn. The battle begins.
+
+================================================================================
+2.   THE NAMING PHILOSOPHY — WHY HANNIBAL, WHY HANNIBAL BARCA
+================================================================================
+
+The name HANNIBAL is chosen with specific intellectual and historical
+precision. This is not branding. It is a thesis about the nature of
+adversarial reasoning.
+
+Hannibal Barca (247–183 BC) of Carthage is universally recognized as one
+of the greatest military commanders in history. Napoleon Bonaparte, Julius
+Caesar, and the Duke of Wellington each independently named him the supreme
+military genius of antiquity. But Hannibal's greatness was not in his
+individual victories — it was in the architectural novelty of how he
+engineered conflict itself.
+
+  THE BATTLE OF CANNAE (216 BC)
+  ──────────────────────────────
+  At Cannae, Hannibal faced a Roman army that outnumbered his forces roughly
+  two to one. His response was not a stronger frontal assault. It was a
+  structural innovation: the double envelopment. He arranged his forces into
+  a convex line, deliberately allowing the center to yield under pressure —
+  then drove his flanks around the Roman advance until the entire Roman force
+  was surrounded on all sides simultaneously. Seventy thousand Romans died.
+  It remains the most studied encirclement in military history.
+
+  This maps precisely to HANNIBAL the protocol:
+
+  BATTLE OF CANNAE                         HANNIBAL PROTOCOL MAPPING
+  ─────────────────────────────────────    ────────────────────────────────────────
+  Deliberate multipolar encirclement       CANNAE Engine: multipolar front scaling
+  rather than simple frontal assault       when proposition depth warrants it;
+                                           a proposition is attacked from multiple
+                                           epistemic angles simultaneously
+
+  Convex center that yields to draw        Bipolar baseline that scales to
+  the enemy deep before envelopment        multipolar when analysis detects
+                                           multiple genuine epistemic factions
+
+  Forces organized by function and         Military Role Architecture: Vanguard,
+  position, not random deployment          Flanking, Intelligence, Reserve, and
+                                           Field Marshal agents assigned by
+                                           tactical function
+
+  Tournament of engagements resolving      Tournament Tree: every clash at every
+  to a single decisive campaign            level propagates a winner upward to
+  outcome                                  the Campaign Verdict at the root
+
+  Hannibal crossed the Alps with war       Proposition Depth Analyzer: the unusual
+  elephants — the unexpected approach      path to a verdict is sometimes the
+  that conventional tactics would never    one no fixed topology could predict
+
+  The genius was architectural, not        HANNIBAL's novelty is structural: the
+  improvisational — the plan was fully     Tournament Tree is pre-specified from
+  designed before battle was joined        the Proposition Analysis, then executed
+
+  HANNIBAL AND THE ARGUS INTELLECTUAL LINEAGE
+  ─────────────────────────────────────────────
+  ARGUS was named for the hundred-eyed giant of Greek mythology — seeing
+  everything simultaneously. ARISTOTLE was named for the philosopher who
+  gave logic its first formal structure. AGORA was named for the civic
+  assembly of Athens. HANNIBAL closes the loop: if ARGUS sees, ARISTOTLE
+  reasons, and AGORA deliberates — HANNIBAL decides through combat. The
+  Senate votes. The battlefield determines.
+
+  This is not celebration of war. It is recognition that some propositions
+  are not resolved by consensus. They are resolved by the dominance of one
+  epistemic position over another in direct adversarial confrontation —
+  and that confrontation benefits from being organized, hierarchical,
+  and structured as clearly as Cannae itself.
+
+  Hannibal was never defeated in open battle. He lost only when Scipio
+  Africanus refused to fight him on his terms and changed the rules.
+  HANNIBAL the protocol builds in that safeguard: the Field Marshal
+  system can call an Armistice and redirect to ARISTOTLE or AGORA
+  if the battle reveals the proposition is not suited to binary combat.
+
+================================================================================
+3.   THE INTELLECTUAL LINEAGE — ARISTOTLE, AGORA, AND THE BATTLEFIELD GAP
+================================================================================
+
+3.1  ARISTOTLE — What It Does and Where It Stops
+──────────────────────────────────────────────────
+
+ARISTOTLE is a masterwork of orchestrated sequential debate. Its five-layer
+architecture — Framing, Topology, Execution, Visualization, Synthesis —
+transforms any natural-language question into a fully autonomous, visualized,
+auditable debate with a clear verdict. Its Full Lifecycle DAG is the definitive
+visualization of multi-agent argument structure.
+
+ARISTOTLE's structural constraint: it is a fixed team engaging a proposition
+as a shared project. Agents do not fight each other — they collectively
+investigate the proposition from different angles. The Moderator orchestrates.
+The Specialists gather. The Refuters challenge. The Jury decides. This is
+collaborative analytical work dressed in adversarial language. The "refuter"
+does not want to destroy the proposition — they test it. The jury does not
+choose a winner — they aggregate evidence. It is, at its core, a structured
+research process, not a battle.
+
+For many propositions, this is exactly right. A proposition about drug
+efficacy or historical causation benefits from a collaborative investigative
+team. But some propositions are genuinely zero-sum: either this policy works
+or it does not. Either this cause is real or it is not. Either this claim
+can be defended or it collapses under adversarial pressure. For these
+propositions, the collaborative research model is the wrong architecture.
+What is needed is a genuine fight — where the correct position wins because
+it was stronger, not because the jury aggregated everyone's weighted opinion.
+
+3.2  AGORA — What It Does and Where It Stops
+──────────────────────────────────────────────
+
+AGORA is the procedural parliament of multi-agent AI. Its Balance Mandate,
+Evidence Docket, Socratic Engine, and Minority Report Engine create the most
+formally governed deliberative assembly in the existing framework landscape.
+Its Senate Generation Engine ensures that no proposition ever faces the same
+Senate twice, and that balance is architectural.
+
+AGORA's structural constraint: it is still a deliberative assembly. Senators
+argue, challenge, and submit evidence — but they all operate within a single
+chamber under shared procedural rules. There are no armies. There are no
+fronts. There is no battlefield. Coalition formation happens organically and
+is detected and surfaced — but it is not the primary organizing principle.
+The Senate's goal is convergence on a verdict through deliberation. Even the
+minority report is produced after the fact, as documentation, not as a force
+that fought to win.
+
+AGORA produces a governed, accountable deliberation. HANNIBAL produces a
+governed, accountable battle. These are genuinely different things.
+
+3.3  The Existing Multi-Agent Debate (MAD) Landscape
+──────────────────────────────────────────────────────
+
+Survey of the 2025-2026 MAD literature reveals the following consistent
+pattern: existing adversarial frameworks (Div-MAD, A-HMAD, iMAD, DMAD)
+all use one of two paradigms —
+
+  PARADIGM 1 — COLLABORATIVE: Agents share information and converge.
+  PARADIGM 2 — ADVERSARIAL: Agents are assigned opposing roles and argue.
+
+Neither paradigm has:
+  — An organized military Force structure for agent deployment
+  — A Tournament Tree as the primary organizing data structure
+  — A Proposition Depth Analyzer that scales fronts from bipolar to multipolar
+  — A CANNAE-style multipolar encirclement mechanism
+  — A hierarchical battle resolution system (Skirmish → Engagement →
+    Theatre → Campaign) with winner propagation at each level
+  — Military tactical roles (Vanguard, Flanking, Intelligence, Reserve)
+  — A dedicated Tournament Tree visualization alongside the C-DAG
+  — Force-level posterior tracking alongside node-level belief propagation
+  — A War Room interface showing battlefield state in real time
+
+The gap is consistent and documented. The battlefield protocol does not exist.
+
+3.4  Confirmed Research Gap
+─────────────────────────────
+
+Wu et al. (Nov 2025) established that:
+  — "Productive initial chaos" (genuine initial disagreement) improves
+    post-debate outcomes
+  — Argument validity weighting outperforms simple majority
+  — Diversity without extreme positions produces the best results
+
+HANNIBAL operationalizes all three findings:
+  — Forces are initialized with maximally opposing priors (productive chaos)
+  — Battle resolution uses evidence quality (EVID-Q) not agent count
+  — Force composition uses a heterogeneous deployment algorithm ensuring
+    diverse but competent agents on each side
+
+No existing framework does all three simultaneously within a tournament
+bracket architecture. HANNIBAL is the first.
+
+================================================================================
+4.   THE FUNDAMENTAL PROBLEM STATEMENT
+================================================================================
+
+The existing ARGUS deliberative protocols — ARISTOTLE and AGORA — share a
+foundational organizational metaphor: the assembly. Agents gather in a room
+(real or virtual) and reason together toward a verdict. This is the right
+model for propositions that are investigative in nature — where truth emerges
+from collaborative evidence accumulation and qualified synthesis.
+
+But several classes of propositions are not investigative in nature.
+They are genuinely zero-sum competitive claims:
+
+  "Policy X is better than Policy Y at achieving outcome Z"
+  "The evidence for Hypothesis A is stronger than the evidence for Hypothesis B"
+  "Interpretation P of this event is more defensible than Interpretation Q"
+  "The risk of action R outweighs its benefits"
+
+For these propositions, the assembly metaphor produces a structural problem:
+collaborative deliberation is biased toward compromise and synthesis. If the
+correct answer is that one side is decisively right and the other is decisively
+wrong, a Senate or a specialist team will tend to produce a hedged, qualified,
+"both sides have merit" verdict — because their architecture rewards convergence.
+
+HANNIBAL exists to solve this problem:
+
+  PROBLEM 1 — ASSEMBLY METAPHOR BIAS TOWARD COMPROMISE
+  The deliberative assembly — Senate, specialist team, jury — structurally
+  rewards convergence. For zero-sum propositions, convergence is wrong.
+  HANNIBAL's battle architecture structurally rewards the dominance of the
+  stronger epistemic position, not the synthesis of all positions.
+
+  PROBLEM 2 — NO HIERARCHICAL BATTLE RESOLUTION STRUCTURE
+  Existing adversarial MAD frameworks treat all argument clashes as
+  equivalent. A claim challenged by a counter-claim is one "round."
+  HANNIBAL introduces hierarchical resolution: Skirmishes resolve to
+  Engagements, Engagements resolve to Theatre results, Theatres resolve
+  to Campaign Verdicts. The resolution structure is explicit, transparent,
+  and traceable at every level.
+
+  PROBLEM 3 — BIPOLAR ONLY, NO MULTIPOLAR FRONT SCALING
+  All existing adversarial frameworks are binary: FOR vs. AGAINST.
+  Real propositions often have more than two legitimate positions —
+  position A, position B, and a qualified position C that is neither.
+  HANNIBAL's Proposition Depth Analyzer detects this and opens a third
+  (or fourth) front. The multipolar battle is structurally different from
+  a bipolar debate, and no existing framework handles it.
+
+  PROBLEM 4 — NO TOURNAMENT TREE DATA STRUCTURE
+  Existing frameworks have no hierarchical structure for aggregating
+  individual argument clashes into a progressively resolved bracket.
+  The tournament tree is the natural structure for this — borrowed from
+  competitive tournaments where individual match results propagate through
+  a bracket to a champion. No existing MAD framework uses it.
+
+  PROBLEM 5 — NO BATTLEFIELD VISUALIZATION
+  The C-DAG shows argument structure. The Timeline shows temporal
+  progression. Neither shows what a battlefield looks like: which forces
+  occupy which fronts, how the tournament bracket is resolving, where
+  the fighting is heaviest. HANNIBAL's War Room visualization fills this gap.
+
+  PROBLEM 6 — NO FORCE-LEVEL POSTERIOR TRACKING
+  Bayesian belief propagation in ARGUS operates at the node level within the
+  C-DAG. HANNIBAL introduces Force-level posterior tracking: at any moment,
+  the overall epistemic strength of each Force — the army-level posterior —
+  is computed from its constituent evidence victories and defeats. This is
+  a higher-order belief metric that no existing framework exposes.
+
+  PROBLEM 7 — NO TACTICAL ROLE ARCHITECTURE FOR AGENT DEPLOYMENT
+  Existing frameworks assign agents to functional roles (specialist, refuter,
+  jury). These roles describe what the agent does epistemically. HANNIBAL
+  assigns agents to tactical roles (Vanguard, Flanking, Intelligence, Reserve,
+  Field Marshal). These describe the agent's position in the battle structure
+  and their relationship to the enemy force — an entirely different organizing
+  principle that enables coordination patterns impossible in role-only systems.
+
+HANNIBAL addresses all seven problems in an integrated architecture.
+
+================================================================================
+5.   THE CORE ARCHITECTURAL IDEA — SENATE vs. BATTLEFIELD
+================================================================================
+
+The central conceptual shift in HANNIBAL can be expressed in one sentence:
+Instead of agents reasoning toward a shared verdict, HANNIBAL deploys agents
+as opposing forces fighting for a verdict.
+
+This shift has seven architectural consequences:
+
+  CONSEQUENCE 1 — AGENTS BELONG TO FORCES, NOT TO A SHARED CHAMBER
+  Every agent in a HANNIBAL session is assigned to exactly one Force.
+  The Proposition Force (PF) is composed of agents whose mandate is to
+  demonstrate the proposition is TRUE. The Opposition Force (OF) is composed
+  of agents whose mandate is to demonstrate the proposition is FALSE.
+  In multipolar sessions, additional Faction Forces (FF) hold distinct
+  qualified positions. Agents do not observe from a neutral position —
+  they fight from a committed one.
+
+  CONSEQUENCE 2 — EVIDENCE IS MUNITION, NOT TESTIMONY
+  In ARISTOTLE and AGORA, evidence is submitted by an agent who has
+  researched the topic and now informs the group. In HANNIBAL, evidence
+  is deployed by an agent whose Force needs it to win a specific Skirmish.
+  The same evidence quality metrics (EVID-Q, source quality, confidence)
+  apply — but the strategic context is different. Evidence selection is
+  tactical, not just epistemic.
+
+  CONSEQUENCE 3 — COMBAT, NOT DIALOGUE
+  When a Vanguard agent of the Proposition Force submits a claim, a
+  corresponding Flanking agent of the Opposition Force does not "challenge"
+  it in the manner of AGORA's Evidence Challenge Protocol. They engage it
+  in direct combat: Skirmish initiated, round of direct exchange, Skirmish
+  winner determined by relative epistemic strength (EVID-Q × logical
+  coherence × confidence). This is not dialogue. It is structured combat
+  with a winner and a loser.
+
+  CONSEQUENCE 4 — THE TOURNAMENT TREE IS THE CAMPAIGN MAP
+  All combat is organized through the Tournament Tree. Before the battle
+  begins, the Tree is pre-specified: how many Theatres, how many Engagements
+  per Theatre, how many Skirmishes per Engagement, which agent types fight
+  which, and in what order. The battle executes the tree. As Skirmishes
+  resolve, their results propagate upward to Engagements. As Engagements
+  resolve, their results propagate to Theatres. As Theatres resolve, the
+  Campaign Verdict emerges at the root.
+
+  CONSEQUENCE 5 — FORCE COMMANDERS DIRECT TACTICAL DECISIONS
+  Each Force has a Commander agent whose role is not to submit evidence but
+  to direct which Skirmishes to prioritize, which Intelligence reports to
+  act on, when to deploy Reserve agents, and how to allocate the Force's
+  evidence-gathering resources across the active Engagements. This is a
+  meta-tactical layer above individual agent behavior that has no equivalent
+  in any existing MAD framework.
+
+  CONSEQUENCE 6 — THE PROPOSITION DEPTH DETERMINES THE BATTLE TOPOLOGY
+  Simple propositions → one Theatre, bipolar (PF vs. OF), one tournament
+  bracket resolving from multiple Engagements to one Campaign Verdict.
+  Complex propositions → multiple Theatres, multipolar (PF vs. OF vs. FF-1
+  vs. FF-2...), separate tournament sub-trees per Theatre, aggregated into
+  the campaign via the CANNAE Engine. The battle topology is derived from
+  the proposition, not pre-set.
+
+  CONSEQUENCE 7 — THE WINNER OF THE CAMPAIGN IS THE VERDICT
+  There is no Jury that aggregates all evidence and renders a balanced verdict.
+  The Force that wins the Campaign — by winning more Theatres, by winning
+  the decisive Engagements, by having the superior posterior at the root of
+  the Tournament Tree — IS the verdict. Their position is adopted as the
+  Campaign Conclusion. The losing Force's strongest surviving arguments are
+  documented in the Campaign Minority Record (see Section 14), but the verdict
+  belongs to the winner. This is structurally different from any existing system.
+
+================================================================================
+6.   THE PROPOSITION DEPTH ANALYZER — BIPOLAR TO MULTIPOLAR SCALING
+================================================================================
+
+The Proposition Depth Analyzer (PDA) is HANNIBAL's opening module. It
+runs before any Force is deployed. Its job: determine how many fronts
+this proposition deserves.
+
+6.1  Input: The Proposition
+─────────────────────────────
+
+Any natural-language proposition submitted to HANNIBAL is processed through
+five analytical steps:
+
+  STEP 1 — POLARITY STRUCTURE DETECTION
+  Does the proposition have a natural binary structure (TRUE / FALSE) or
+  does it have multiple legitimate non-binary positions?
+
+    Binary example:
+    "The 2008 financial crisis was primarily caused by subprime mortgage risk"
+    → Two defensible positions: YES or NO. Bipolar structure.
+
+    Multi-position example:
+    "Artificial intelligence will be net beneficial for employment"
+    → Defensible positions: YES / NO / DEPENDS ON SECTOR / DEPENDS ON TIMEFRAME
+    → Multiple legitimate non-collapsible positions. Multipolar structure.
+
+  STEP 2 — EPISTEMIC DEPTH SCORING
+  Rate the proposition on three axes, each 0.0 to 1.0:
+    — FACTUAL DEPTH: How much primary empirical evidence exists?
+    — NORMATIVE DEPTH: How much of the dispute is about values vs. facts?
+    — INFERENTIAL DEPTH: How long is the logical chain from evidence to claim?
+
+  The aggregate Depth Score determines Tournament Tree height:
+    Depth < 0.35  → Tree Height 2 (Skirmish → Campaign) — Quick Battle
+    Depth 0.35-0.65 → Tree Height 3 (Skirmish → Engagement → Campaign)
+    Depth 0.65-0.85 → Tree Height 4 (Skirmish → Engagement → Theatre → Campaign)
+    Depth > 0.85   → Tree Height 5 (Skirmish → Engagement → Theatre →
+                                     Campaign Theatre → Grand Campaign)
+
+  STEP 3 — FRONT COUNT DETERMINATION
+  Combining Polarity Structure with Epistemic Depth:
+
+    Bipolar, any depth: 2 Forces, 1 set of Fronts
+    Tripolar (3 positions), low depth: 3 Forces, round-robin tournament
+    Tripolar, high depth: 3 Forces, 3 bilateral Fronts (each pair fights)
+    Quadrupolar+: CANNAE Engine activated (see Section 11)
+
+  STEP 4 — THEATRE SPECIFICATION
+  For multi-front battles, each distinct epistemic dimension of the
+  proposition becomes a Theatre. A Theatre is a topically bounded battle
+  space where specific sub-arguments of the proposition are contested.
+
+    Example — Proposition: "Universal Basic Income would reduce poverty"
+    Theatre 1 — Economic efficacy: Does UBI reduce poverty in economic models?
+    Theatre 2 — Behavioral effects: Does UBI affect work incentives?
+    Theatre 3 — Fiscal sustainability: Can governments afford UBI?
+    Theatre 4 — Empirical precedent: What pilot programs show
+
+  STEP 5 — FORCE SIZE CALIBRATION
+  Each Force is sized based on the battle topology:
+    Minimum Force size: 3 agents (1 Vanguard, 1 Flanking, 1 Commander)
+    Typical Force size: 5-7 agents
+    Maximum Force size (high depth, multipolar): 12 agents
+    Total agent count is the sum of all Force sizes across all Fronts
+
+6.2  Output: The Battle Map
+────────────────────────────
+
+The PDA outputs a Battle Map: a complete specification of the upcoming
+campaign, including:
+  — Number of Forces and their designations (PF, OF, FF-1...FF-n)
+  — Number of Theatres and their topical scope
+  — Tournament Tree structure (height, width, node count)
+  — Force size per Theatre
+  — Estimated Skirmish count and campaign duration
+  — Front polarity mapping (which Forces fight on which Fronts)
+  — CANNAE Engine activation flag (YES/NO for multipolar encirclement)
+
+The Battle Map is shown to the user as a pre-battle briefing before any
+agent is deployed. The user may approve, modify, or request reanalysis.
+
+================================================================================
+7.   FORCE ARCHITECTURE — ARMIES, FRONTS, AND MILITARY ROLES
+================================================================================
+
+7.1  Force Types
+─────────────────
+
+  PROPOSITION FORCE (PF)
+  The army fighting to demonstrate the proposition is TRUE or defensible.
+  All PF agents are mandated to find, evaluate, and deploy evidence that
+  supports the proposition. They initiate Skirmishes from a position of
+  advocacy — the strongest possible case FOR.
+
+  OPPOSITION FORCE (OF)
+  The army fighting to demonstrate the proposition is FALSE or indefensible.
+  All OF agents are mandated to find, evaluate, and deploy evidence that
+  challenges the proposition. Their goal is to destroy PF's evidence base
+  and establish an alternative.
+
+  FACTION FORCE (FF-n)  [Multipolar only]
+  Each FF holds a qualified or alternative position that is neither full
+  support nor full opposition. FF agents fight to establish their specific
+  qualified verdict as the dominant outcome. In the multipolar tournament,
+  FF forces fight both PF and OF — and each other — across the configured
+  Front structure.
+
+7.2  Military Role Taxonomy
+─────────────────────────────
+
+Every agent in every Force occupies exactly one of five tactical roles.
+These roles are assigned by the Force Deployment Engine based on the
+Battle Map and the agent's epistemic configuration.
+
+  ROLE 1 — COMMANDER (C)
+  ─────────────────────────
+  One Commander per Force. The Commander does not submit evidence. They
+  direct the Force's tactical decisions across the battle:
+    — Which Skirmishes to prioritize
+    — When to deploy Reserve agents
+    — How to respond to Intelligence reports
+    — Whether to request a Tactical Redirect (if a Theatre is being lost)
+    — When to invoke the Armistice Protocol
+  The Commander corresponds to ARISTOTLE's ORCHESTRATOR within a single
+  Force. They have access to the full Battle Map and all Intelligence
+  reports. Their directives are issued to their Force agents as structured
+  tactical orders that constrain evidence-gathering focus.
+
+  ROLE 2 — VANGUARD (V)
+  ────────────────────────
+  Two to four Vanguard agents per Force. These are the primary evidence
+  submitters — the frontline fighters. Each Vanguard is assigned to a
+  specific Theatre and is responsible for initiating Skirmishes in that
+  Theatre with the strongest available evidence for their Force's position.
+  Vanguard agents correspond functionally to ARISTOTLE's Specialists, but
+  they are goal-directed toward victory, not toward balance.
+
+  VANGUARD CONFIGURATION:
+    — Domain expertise: per-Theatre specialization
+    — Evidence source priority: calibrated to Theatre topic
+    — Prior: set to maximum commitment to Force position (0.85-0.95 for PF;
+      0.05-0.15 for OF) — ensuring "productive initial chaos" per Wu et al.
+    — Evidence type mandate: empirical, statistical, or theoretical per domain
+
+  ROLE 3 — FLANKING AGENT (F)
+  ──────────────────────────────
+  One to two Flanking agents per Force. Where Vanguard agents submit evidence
+  to support their Force's position, Flanking agents specialize in attacking
+  the enemy Force's evidence. They monitor the opponent's Skirmish submissions
+  in real time and their primary mandate is counter-evidence: finding
+  specific refutation evidence to defeat what the enemy Vanguard submitted.
+  They also look for logical vulnerabilities in enemy evidence chains.
+  Flanking agents correspond to ARGUS's Refuter role, but are Force-specific
+  and adversarially directed — they serve the Commander, not a neutral mandate.
+
+  ROLE 4 — INTELLIGENCE OFFICER (IO)
+  ─────────────────────────────────────
+  One Intelligence Officer per Force. The IO does not submit evidence to
+  Skirmishes. They monitor the overall battle state and report to the Commander:
+    — Current Battle Map status (which Skirmishes/Engagements are winning)
+    — Enemy Force's evidence quality distribution (EVID-Q landscape)
+    — Detected patterns in enemy argument chains (logical vulnerabilities)
+    — Current Force Posterior (army-level belief strength)
+    — Epistemic Independence Score of both Forces' evidence bases
+    — Recommendations for tactical redirection
+  The IO is HANNIBAL's equivalent of AGORA's Epistemic Auditor, but is Force-
+  specific and operates within a military command hierarchy.
+
+  ROLE 5 — RESERVE AGENT (R)
+  ─────────────────────────────
+  Zero to two Reserve agents per Force. Reserves are not deployed at the
+  start of a campaign. They are held back by the Commander and deployed
+  under specific conditions:
+    — A Vanguard agent is losing its assigned Skirmish decisively
+    — A new Theatre opens unexpectedly (Multipolar only)
+    — An Intelligence report reveals an uncontested enemy evidence line
+    — Budget allows additional deployment without exceeding token cap
+  Reserve agents are pre-briefed on their Force's position and the battle
+  state up to deployment. They can be any combination of Vanguard or
+  Flanking specialization. They are HANNIBAL's novel contribution to
+  agent architecture — no existing framework has a reserve deployment
+  mechanism controlled by a tactical commander.
+
+7.3  Force Deployment Algorithm
+─────────────────────────────────
+
+The Force Deployment Engine (part of the HANNIBAL Orchestration Layer)
+assembles each Force from the Battle Map specification:
+
+  STEP 1: Assign one Commander per Force (LLM configuration: neutral goal-
+          directed meta-reasoning; access to full Battle Map)
+  STEP 2: Assign Vanguard agents — one per Theatre, additional by Force size
+  STEP 3: Assign Flanking agents — one per Force, two for high-depth battles
+  STEP 4: Assign one IO per Force
+  STEP 5: Assign Reserve agents based on remaining Force size budget
+  STEP 6: Configure each agent's persona, epistemic prior, domain mandate,
+          evidence source priority, and Skirmish assignment per Battle Map
+  STEP 7: Brief all agents on the campaign: proposition, Force designation,
+          role mandate, tactical rules, victory conditions
+
+================================================================================
+8.   THE TOURNAMENT TREE — DATA STRUCTURE SPECIFICATION
+================================================================================
+
+The Tournament Tree is the defining structural innovation of HANNIBAL. It is
+a hierarchical rooted tree — the same data structure used in sports tournament
+brackets — where nodes represent combat events and edges represent result
+propagation. The root is the Campaign Verdict. Every leaf is an individual
+Skirmish between agents from opposing Forces.
+
+8.1  Node Types
+─────────────────
+
+  SKIRMISH NODE (leaf)
+  ──────────────────────
+  A Skirmish is the atomic unit of HANNIBAL combat. It is a direct, bounded
+  confrontation between one agent from one Force and one agent from an
+  opposing Force. Each Skirmish:
+    — Has a specific topical scope (the sub-claim being contested)
+    — Is fought over 1-3 exchange rounds (submission, counter, reply)
+    — Produces a winner determined by the Skirmish Adjudicator
+    — Has a Confidence Score (how decisive the result was)
+    — Is recorded in the Campaign Log with full evidence provenance
+
+  Node attributes: Skirmish_ID, Force_A_agent, Force_B_agent, Topic_scope,
+  Evidence_A (list), Evidence_B (list), Winner_Force, Confidence, Round_count,
+  EVID-Q_A, EVID-Q_B, Posterior_shift
+
+  ENGAGEMENT NODE (internal, height 1 from leaf)
+  ─────────────────────────────────────────────────
+  An Engagement aggregates the results of 2-4 Skirmishes on a shared
+  sub-topic. The Engagement winner is the Force that won the majority of
+  its constituent Skirmishes, weighted by each Skirmish's Confidence Score.
+
+  Engagement winner formula:
+    Engagement_score(Force) = Σ (Skirmish_won × Confidence_score) over
+                               all Skirmishes where Force won
+
+  Node attributes: Engagement_ID, Theatre_ID, Child_skirmishes (list),
+  Topic_cluster, Winner_Force, Margin (score difference), Participating_agents
+
+  THEATRE NODE (internal, height 2 from leaf, only in height 4-5 trees)
+  ────────────────────────────────────────────────────────────────────────
+  A Theatre aggregates 2-5 Engagements on a shared major dimension of the
+  proposition (e.g., "Economic Efficacy Theatre" in the UBI example).
+  The Theatre winner is the Force that won the majority of its constituent
+  Engagements, again weighted by Engagement Margins.
+
+  Node attributes: Theatre_ID, Topical_scope, Child_engagements (list),
+  Winner_Force, Theatre_Margin, Active_forces (list)
+
+  CAMPAIGN THEATRE NODE (internal, height 3 from leaf, height 5 trees only)
+  ───────────────────────────────────────────────────────────────────────────
+  Aggregates multiple Theatres for Grand Campaign resolution.
+  Used only when Proposition Depth Score > 0.85.
+
+  CAMPAIGN ROOT (root)
+  ──────────────────────
+  The root of the Tournament Tree. Receives results from all Theatre nodes
+  (or directly from Engagement nodes in shorter trees). The Campaign Root
+  node holds the Campaign Verdict: the Force whose position dominates the
+  root is the winner of the campaign. Their position becomes the verdict.
+
+  In bipolar campaigns: one Force wins the root.
+  In multipolar campaigns: the CANNAE Engine aggregates Theatre results
+  across all Force pairs to determine which position dominates the root.
+
+8.2  Edge Types
+─────────────────
+
+  SKIRMISH → ENGAGEMENT: Result propagation edge. Color-coded by winner:
+    PF wins: Green edge
+    OF wins: Red edge
+    FF-n wins: Distinct color per faction (blue, orange, purple...)
+    Draw: White dashed edge (rare; triggers Tie-Breaking Protocol)
+
+  ENGAGEMENT → THEATRE: Margin propagation edge. Width proportional to
+    Engagement Margin (stronger win = wider edge, visually indicating
+    which Theatre results are most decisive).
+
+  THEATRE → CAMPAIGN ROOT: Campaign result edge. Final color represents
+    the dominant Force. CANNAE aggregation shown as converging edges from
+    all Theatres.
+
+8.3  Tree Construction Algorithm
+───────────────────────────────────
+
+Before the battle begins, the Tournament Tree is pre-constructed from the
+Battle Map:
+
+  INPUT: Battle Map (forces, theatres, depth score, front structure)
+  OUTPUT: Full Tournament Tree (empty — all nodes created, no winners yet)
+
+  ALGORITHM:
+    1. Create Campaign Root node
+    2. For each Theatre: create Theatre node, attach to Campaign Root
+    3. For each Theatre, create N_engagements Engagement nodes:
+         N_engagements = ceil(Depth_score × 3) + 1 (min 2, max 5)
+    4. For each Engagement, create N_skirmishes Skirmish nodes:
+         N_skirmishes = 2 + (1 if High_controversy else 0) (typically 2-3)
+    5. For each Skirmish, assign Force_A_agent and Force_B_agent from
+       deployed agents based on Theatre expertise and role compatibility
+    6. Total Skirmish count = product of above; displayed in Battle Map preview
+
+  The empty Tournament Tree is shown in the War Room visualization before
+  the first Skirmish fires. All nodes are grey (unresolved). As battles
+  complete, nodes fill with winner colors.
+
+8.4  Tie-Breaking Protocol
+────────────────────────────
+
+When a Skirmish or Engagement ends in a draw (Confidence Score < 0.1,
+margin < 0.05), the Tie-Breaking Protocol fires:
+
+  SKIRMISH TIE: A Reserve agent from each Force submits one additional
+    evidence item. The Skirmish Adjudicator re-evaluates. If still tied,
+    the Skirmish is marked CONTESTED and propagates to its parent Engagement
+    as a half-win for each Force (0.5 to each side's margin score).
+
+  ENGAGEMENT TIE: The Field Marshal (see Section 13) is invoked. The
+    Field Marshal reviews the full evidence record of the tied Engagement
+    and renders a binding tie-breaking ruling. The ruling is logged in
+    the Campaign Log with full provenance.
+
+================================================================================
+9.   BATTLE PROTOCOL — SKIRMISH, ENGAGEMENT, THEATRE, CAMPAIGN
+================================================================================
+
+9.1  Skirmish Protocol (The Atomic Battle)
+──────────────────────────────────────────
+
+A Skirmish is the most fundamental battle in HANNIBAL. It runs as follows:
+
+  PHASE S1 — SKIRMISH SCOPE DECLARATION
+  The Skirmish Adjudicator (a lightweight sub-module) declares the specific
+  sub-claim that this Skirmish will contest, derived from the Engagement
+  topic and the Skirmish node's assignment in the Tournament Tree.
+  Both agents (Force_A_agent and Force_B_agent) receive the scope declaration
+  and are constrained to submit evidence relevant to that specific scope.
+
+  PHASE S2 — INITIAL DEPLOYMENT (ROUND 1)
+  Force_A_agent submits its Opening Salvo: 1-3 evidence items directly
+  bearing on the declared scope, each with EVID-Q score, source citation,
+  confidence rating, and polarity declaration (SUPPORTS or ATTACKS the
+  proposition as a whole — not just the Skirmish scope).
+  Force_B_agent submits its counter-salvo simultaneously or within one
+  exchange cycle (concurrent deployment for speed; sequential for auditability).
+
+  PHASE S3 — COUNTEROFFENSIVE (ROUND 2)
+  Each agent reviews the opposing salvo and deploys counter-evidence:
+    — Direct refutation evidence (same scope, opposite polarity)
+    — Source quality challenge (targeting opponent's source reliability)
+    — Logical chain challenge (targeting opponent's inference path)
+    — Corroborating additional evidence (extending own salvo strength)
+  Agents cannot re-submit previously deployed evidence. All new submissions.
+
+  PHASE S4 — FINAL STRIKE (ROUND 3, optional, high-depth only)
+  If Depth Score > 0.65, a third exchange round fires. Agents deploy
+  their single most decisive piece of evidence — the "final strike"
+  that represents their Force's strongest argument on this scope.
+  This forces prioritization: agents must identify their most valuable
+  remaining evidence, not just submit anything available.
+
+  PHASE S5 — SKIRMISH ADJUDICATION
+  The Skirmish Adjudicator evaluates the full evidence record and
+  declares a Skirmish winner using the Epistemic Combat Score:
+
+    ECS(Force) = Σ (EVID_Q_i × Confidence_i × Relevance_i × Polarity_strength_i)
+                   over all evidence submitted by Force in this Skirmish
+
+    Modifiers:
+      Source uniqueness bonus: +0.1 per non-overlapping source
+      Challenge sustained:     −0.15 per challenge accepted against own evidence
+      Challenge overruled:     +0.10 per challenge successfully defended
+      Logical coherence:       × coherence_factor (0.7-1.0 per chain analysis)
+
+    Winner = Force with higher ECS
+    Confidence Score = |ECS_A − ECS_B| / max(ECS_A, ECS_B)
+
+  The Skirmish node in the Tournament Tree is filled: winner color,
+  Confidence Score, and a summary of the decisive evidence items.
+  Result propagates to parent Engagement node.
+
+9.2  Engagement Protocol
+──────────────────────────
+
+An Engagement runs all its constituent Skirmishes. These can run:
+  — SEQUENTIALLY: Each Skirmish fires in order. Later Skirmishes can
+    build on earlier ones (agents can reference prior Skirmish results).
+    Slower but creates richer argument continuity.
+  — CONCURRENTLY: All Skirmishes in an Engagement fire simultaneously.
+    Faster but independent — agents don't see each other's parallel battles.
+
+Default: Concurrent for bipolar, Sequential for multipolar (each Front
+benefits from seeing how adjacent Fronts are resolving before deploying).
+
+When all Skirmishes in an Engagement complete, the Engagement Adjudicator
+computes the Engagement result:
+  Engagement_margin(Force) = Σ (Skirmish_confidence × [1 if Force won, 0 if not])
+
+The Engagement node is filled: winner color and margin. Result propagates up.
+
+9.3  Theatre Protocol
+───────────────────────
+
+When all Engagements in a Theatre complete, the Theatre Adjudicator computes:
+  Theatre_score(Force) = Σ (Engagement_margin × Engagement_weight) per Force
+    where Engagement_weight is set at pre-battle based on epistemic importance
+    of that sub-topic within the Theatre's total scope.
+
+The Theatre node is filled: winner and Theatre Score. In multipolar battles,
+the Theatre result shows the winning faction per Theatre, not just binary
+winner/loser.
+
+9.4  Campaign Resolution
+──────────────────────────
+
+When all Theatres complete, the Campaign Root resolves:
+
+  BIPOLAR RESOLUTION:
+    Winning Force = Force with higher total Theatre Score
+    If tied: Field Marshal invoked (Section 13)
+    Campaign Verdict = Winning Force's position
+
+  MULTIPOLAR RESOLUTION (CANNAE Engine):
+    See Section 11 for full CANNAE Engine specification.
+    Short form: Theatre results across all Force-pair combinations are
+    aggregated into a pairwise dominance matrix. The Force that is
+    "dominated" by no other Force becomes the Campaign Winner.
+    If no clear dominant Force exists, CANNAE produces an Encirclement
+    Report identifying the most strongly supported qualified verdict.
+
+================================================================================
+10.  VICTORY CONDITIONS AND POSTERIOR PROPAGATION
+================================================================================
+
+10.1  Skirmish Victory Condition
+───────────────────────────────────
+
+A Force wins a Skirmish if its ECS exceeds the opposing Force's ECS
+by more than the Confidence Threshold (default 0.05). Below this threshold,
+the Skirmish is a draw and the Tie-Breaking Protocol fires.
+
+10.2  Force Posterior — The Army-Level Belief Metric
+──────────────────────────────────────────────────────
+
+HANNIBAL introduces the Force Posterior — a real-time aggregate belief score
+for each Force, tracked throughout the campaign. Unlike the node-level
+Bayesian posterior in ARGUS's C-DAG (which tracks belief at individual
+proposition and evidence nodes), the Force Posterior tracks the overall
+epistemic strength of each Force's position at the campaign level.
+
+Force Posterior = σ(log-odds(Force_Prior) + Σ Skirmish_ECS_deltas)
+
+Where:
+  Force_Prior = 0.85 for PF (initial strong commitment to proposition)
+                0.15 for OF (initial strong opposition)
+                Configured per Faction for FF forces
+  Skirmish_ECS_delta = positive for Skirmish wins, negative for losses,
+                        scaled by Confidence Score
+
+The Force Posterior updates after every completed Skirmish and is displayed
+in the War Room visualization as a live gauge for each Force. It is the
+army-level analog of ARGUS's node-level posterior.
+
+10.3  Posterior Propagation Through the Tree
+──────────────────────────────────────────────
+
+Winner propagation in the Tournament Tree follows a two-track system:
+
+  TRACK 1 — CATEGORICAL PROPAGATION (Battle Map winner/loser)
+    Each node propagates its categorical winner (PF / OF / FF-n) upward.
+    This determines which Force is declared the Campaign Victor.
+
+  TRACK 2 — STRENGTH PROPAGATION (Confidence × Margin)
+    Each node propagates its result strength (Confidence Score × Margin)
+    upward. This produces a Campaign Strength Score for the winner —
+    measuring not just that a Force won, but how decisively.
+
+  TRACK 2 INTERPRETATION:
+    Campaign Strength < 0.25: Contested Victory — barely won; Armistice
+                               Protocol recommended
+    Campaign Strength 0.25-0.50: Narrow Victory — won, but meaningful
+                                  resistance; minority record is significant
+    Campaign Strength 0.50-0.75: Clear Victory — decisive across most Theatres
+    Campaign Strength > 0.75: Decisive Victory — dominant; opposing Force
+                               comprehensively defeated
+
+10.4  Armistice Protocol
+──────────────────────────
+
+If Campaign Strength < 0.20 after all Theatres complete, the Armistice
+Protocol fires before a verdict is declared. The Field Marshal reviews the
+full Campaign record and chooses one of three outcomes:
+
+  OPTION A — NARROW VERDICT: Declare the winner with a Contested flag.
+    The Campaign Verdict is issued but explicitly marked as requiring
+    further investigation. The "What Would Change This" section is elevated
+    to the primary output.
+
+  OPTION B — REDIRECT TO AGORA: The proposition is too close-fought for
+    a battle verdict. Transfer to AGORA for procedural Senate deliberation.
+    The full HANNIBAL Campaign record is handed to AGORA as pre-submitted
+    evidence in the Evidence Docket.
+
+  OPTION C — REDIRECT TO ARISTOTLE: The proposition warrants deep analytical
+    investigation rather than adversarial combat. Transfer to ARISTOTLE.
+    The Force evidence records are provided as pre-loaded retrieval context.
+
+The Armistice Protocol is HANNIBAL's acknowledgment that not every
+proposition is suited to resolution by combat — and that the right
+protocol is the one that matches the proposition's epistemic nature.
+
+================================================================================
+11.  THE CANNAE ENGINE — MULTIPOLAR ENCIRCLEMENT LOGIC
+================================================================================
+
+Named for Hannibal Barca's signature encirclement tactic at the Battle of
+Cannae (216 BC), the CANNAE Engine is activated when the Proposition Depth
+Analyzer detects three or more legitimate epistemic positions on a proposition.
+
+11.1  The Problem CANNAE Solves
+─────────────────────────────────
+
+In a bipolar tournament, the winner is clear: whichever Force wins more
+Theatres. In a multipolar tournament, it is possible for:
+  — Force A to defeat Force B on Theatre 1
+  — Force B to defeat Force C on Theatre 2
+  — Force C to defeat Force A on Theatre 3
+
+This creates a non-transitive cycle — the multi-agent equivalent of the
+voting paradox (Condorcet's paradox). No Force dominates. Naive majority
+aggregation produces a false winner.
+
+CANNAE resolves this by shifting from winner-takes-all to encirclement
+scoring — identifying not which Force "won" but which Force was never
+comprehensively defeated across any Front.
+
+11.2  CANNAE Algorithm
+────────────────────────
+
+  INPUT: Theatre results for all Force-pair combinations
+  OUTPUT: Dominant Force or Encirclement Report
+
+  STEP 1 — PAIRWISE DOMINANCE MATRIX
+  For every pair of Forces (A, B), compute:
+    Dominance(A→B) = sum of Theatre Margins where A beat B / total Theatres
+                     where A and B were paired
+  Result: an N×N matrix where entry [i,j] = A_i's pairwise dominance over A_j
+
+  STEP 2 — CONDORCET WINNER CHECK
+  A Condorcet Winner is a Force that beats every other Force in pairwise
+  comparison (Dominance > 0.5 against all others). If found: declare
+  Campaign Victory for the Condorcet Winner.
+
+  STEP 3 — BORDA AGGREGATION (if no Condorcet Winner)
+  If no Condorcet Winner exists (cycle detected), apply Borda Count:
+    For each Force, sum its pairwise dominance scores against all others.
+    Force with highest Borda Score is declared the Encirclement Winner.
+    Campaign Verdict = Encirclement Winner's position.
+    Encirclement Report documents the cycle and explains why the Borda
+    winner was selected despite the cycle.
+
+  STEP 4 — ENCIRCLEMENT NARRATIVE
+  The CANNAE Engine produces an Encirclement Narrative: a plain-language
+  explanation of which Force dominated which others, where the non-
+  transitive cycle arose (if it did), and why the declared winner holds
+  the dominant epistemic position despite not winning every bilateral contest.
+  This maps directly to Hannibal's Cannae: victory did not come from winning
+  every frontal engagement, but from the architecture of encirclement.
+
+11.3  Multipolar Tournament Tree Structure
+────────────────────────────────────────────
+
+In multipolar campaigns, each pair of Forces that share a Theatre generates
+its own bilateral sub-tree. All bilateral sub-trees feed into the CANNAE
+Engine's pairwise dominance computation.
+
+  Example: 3 Forces (PF, OF, FF-1), 2 Theatres
+  Theatre 1: PF vs OF bilateral sub-tree
+  Theatre 2: PF vs FF-1 bilateral sub-tree
+  Theatre 3: OF vs FF-1 bilateral sub-tree (if all three fight here)
+  CANNAE aggregates all three → Encirclement verdict
+
+The War Room visualization shows all bilateral sub-trees simultaneously
+in a bracketed multi-panel layout, with the CANNAE aggregation result
+displayed in the center connecting all sub-trees to the Campaign Root.
+
+================================================================================
+12.  THE WAR ROOM VISUALIZATION — DAG + TOURNAMENT TREE
+================================================================================
+
+HANNIBAL introduces a dual visualization system — the first in the ARGUS
+ecosystem to render two simultaneous but complementary views of the same
+debate: the epistemic structure (inherited C-DAG) and the battle structure
+(new Tournament Tree visualization).
+
+12.1  The War Room Layout
+───────────────────────────
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │  ARGUS × HANNIBAL — WAR ROOM           [Battle Status Bar]             │
+  │  ──────────────────────────────────────────────────────────────────    │
+  │                                                                        │
+  │  ┌────────────────────┐  ┌──────────────────────────────────────────┐ │
+  │  │   LEFT PANE (38%)  │  │   RIGHT PANE (62%)                       │ │
+  │  │   COMMAND CHAT     │  │                                          │ │
+  │  │                    │  │  ┌──────────────────────────────────┐   │ │
+  │  │  Proposition       │  │  │  TOURNAMENT TREE — BRACKET VIEW  │   │ │
+  │  │  input / Battle    │  │  │  (top, 50% of right pane)        │   │ │
+  │  │  Map preview /     │  │  │                                  │   │ │
+  │  │  Command updates   │  │  │  [Campaign Root ★]               │   │ │
+  │  │  / Final verdict   │  │  │      ├── [Theatre 1 ○]           │   │ │
+  │  │                    │  │  │      │    ├── [Eng 1-A ■]         │   │ │
+  │  │  [FORCE POSTERIOR  │  │  │      │    │    ├── [Ski 1-A-i ●]  │   │ │
+  │  │   GAUGES]          │  │  │      │    │    └── [Ski 1-A-ii ●] │   │ │
+  │  │  PF: ████░░ 67%    │  │  │      │    └── [Eng 1-B ■]         │   │ │
+  │  │  OF: ███░░░ 43%    │  │  │      │         ├── [Ski 1-B-i ●]  │   │ │
+  │  │                    │  │  │      └── [Theatre 2 ○]            │   │ │
+  │  │  [Intervention     │  │  │           └── ...                 │   │ │
+  │  │   log]             │  │  └──────────────────────────────────┘   │ │
+  │  │                    │  │                                          │ │
+  │  │  [Launch Battle]   │  │  ┌──────────────────────────────────┐   │ │
+  │  │  [User input ___]  │  │  │  C-DAG — ARGUMENT STRUCTURE VIEW │   │ │
+  │  │  [Send →]          │  │  │  (bottom, 50% of right pane)     │   │ │
+  │  │                    │  │  │  [Existing ARGUS Full DAG]        │   │ │
+  │  │                    │  │  │  Proposition → Evidence nodes    │   │ │
+  │  │                    │  │  │  Color-coded by Force (PF=green, │   │ │
+  │  │                    │  │  │  OF=red, FF=blue)                 │   │ │
+  │  └────────────────────┘  └──────────────────────────────────────┘ │
+  │                                                                        │
+  │  [Expandable Analytics Drawer: Force Posterior Timeline | Skirmish     │
+  │   Evidence Heatmap | Engagement Margin Chart | CANNAE Matrix]          │
+  └────────────────────────────────────────────────────────────────────────┘
+
+12.2  Tournament Tree Visual Specification
+────────────────────────────────────────────
+
+NODE STYLING:
+  Node type         Shape           Color (unresolved) Color (PF win) Color (OF win)
+  ────────────────  ──────────────  ────────────────── ────────────── ──────────────
+  Campaign Root     Large Star ★    Grey #555555        Emerald        Crimson
+  Campaign Theatre  Hexagon ⬡       Grey                Emerald        Crimson
+  Theatre           Pentagon        Grey                Green          Red
+  Engagement        Square ■        Grey                #2ECC71        #E74C3C
+  Skirmish          Circle ●        Grey                #27AE60        #C0392B
+
+  Confidence Score represented as circle FILL LEVEL: fully filled = high
+  confidence, partially filled = close result, hollow with cross = draw.
+
+  FF Force wins use faction-specific colors: FF-1=#3498DB, FF-2=#E67E22, etc.
+
+LIVE GROWTH:
+  The Tournament Tree is displayed in full structure before battle begins —
+  all nodes grey (unresolved). As each Skirmish completes, its node fills
+  with the winner color. As each Engagement completes, its node fills.
+  The tree "fills in" from leaves to root in real time, exactly like a sports
+  tournament bracket where results arrive and update the bracket.
+
+BRACKET LAYOUT ENGINE:
+  — Horizontal bracket layout (left to right: Skirmishes → Engagements →
+    Theatres → Campaign Root) for trees of height 3-4
+  — Vertical layout (top to bottom) for height-2 "Quick Battle" trees
+  — Radial layout for multipolar CANNAE trees (Forces arranged on periphery,
+    bilateral sub-trees arranged radially, CANNAE matrix at center)
+  — All layouts implemented as Plotly go.Figure with custom edge traces
+
+INTERACTIVITY:
+  — Click any resolved Skirmish node: opens side panel showing full evidence
+    record for both agents, ECS scores, decisive evidence items
+  — Click any Force node label: highlights all Skirmishes that Force participated
+    in, coloring wins and losses
+  — Hover any edge: shows result strength (margin, confidence)
+  — Bracket replay: scrub through the campaign chronologically
+  — Export: full bracket as PNG, SVG, or JSON
+
+12.3  C-DAG Integration
+─────────────────────────
+
+The C-DAG (bottom half of right pane) is ARGUS's existing Full Lifecycle DAG,
+rendered with one HANNIBAL-specific modification: all evidence nodes are
+color-coded by the Force that submitted them.
+
+  PF evidence: Green nodes (SUPPORTS polarity) — inherited ARGUS color
+  OF evidence: Red nodes (ATTACKS polarity) — inherited ARGUS color
+  FF evidence: Blue / orange nodes per Faction
+
+The C-DAG grows alongside the Tournament Tree — both update in real time as
+Skirmishes fire. A user can cross-reference: clicking a Skirmish node in
+the Tournament Tree highlights the corresponding evidence nodes in the C-DAG.
+Clicking an evidence node in the C-DAG highlights the Skirmish it was
+deployed in within the Tournament Tree.
+
+This dual-view cross-reference is unique to HANNIBAL. No existing framework
+provides both an argument structure view and a battle structure view of the
+same debate, linked bidirectionally.
+
+12.4  Additional Analytics Panels (Expandable Drawer)
+───────────────────────────────────────────────────────
+
+  PANEL 1 — FORCE POSTERIOR TIMELINE
+  Line chart: Force Posterior for each Force over time (Skirmish count on
+  X-axis). Shows how the overall battle momentum shifted. A Force Posterior
+  that trends upward consistently indicates building momentum. Sharp drops
+  indicate decisive Skirmish losses.
+
+  PANEL 2 — SKIRMISH EVIDENCE HEATMAP
+  Grid: rows = Skirmishes, columns = evidence items submitted in that
+  Skirmish. Cell color = EVID-Q score. Heatmap shows which Skirmishes were
+  evidence-rich vs. evidence-poor, and which evidence was most decisive.
+
+  PANEL 3 — ENGAGEMENT MARGIN CHART
+  Bar chart: each Engagement on X-axis, Margin (winning Force's advantage)
+  on Y-axis, colored by winning Force. Shows which Engagements were close
+  (low margin) vs. decisive (high margin). Close Engagements are the ones
+  where the campaign outcome was most uncertain.
+
+  PANEL 4 — CANNAE DOMINANCE MATRIX (Multipolar only)
+  N×N grid where entry [i,j] is the pairwise dominance of Force_i over
+  Force_j. Color gradient from red (Force_i dominated) to green (Force_i
+  dominant). The Condorcet Winner (if one exists) shows green in all
+  non-self cells. Non-transitive cycles are shown as mixed red-green rows.
+
+================================================================================
+13.  THE FIELD MARSHAL SYSTEM — VERDICT AUTHORITY
+================================================================================
+
+Every campaign has a Field Marshal — a dedicated verdict authority agent
+that operates outside all Forces and is not a member of any army.
+
+13.1  The Field Marshal's Role
+────────────────────────────────
+
+The Field Marshal is not a jury that aggregates evidence. They are an
+authority who resolves specific protocol edge cases that the Tournament Tree's
+automatic adjudication cannot resolve unambiguously:
+
+  FIELD MARSHAL JURISDICTION:
+    — Tie-breaking Protocol at Skirmish and Engagement level
+    — Armistice Protocol trigger and option selection
+    — Force Posterior conflict (both Forces show Posterior > 0.5 simultaneously —
+      the anti-Bayesian confidence escalation problem documented by Wu et al.)
+    — Challenge disputes (when an agent submits a formal Evidence Objection
+      claiming opponent evidence is misrepresented or from an invalid source)
+    — Campaign verdict narration and plain-language synthesis
+
+  THE FIELD MARSHAL DOES NOT:
+    — Submit evidence to any Skirmish
+    — Issue directives to any Force Commander
+    — Override automatic Adjudicator results that are clear (Confidence > 0.15)
+    — Bias the campaign toward any Force's position
+
+13.2  Field Marshal Configuration
+────────────────────────────────────
+
+The Field Marshal is an LLM agent configured with:
+  — Full access to the Campaign Log at all times
+  — Neutral system prompt: goal-directed toward accurate verdict, not victory
+  — ARGUS's full C-DAG and ProvenanceLedger access
+  — Authority to invoke Armistice Protocol
+  — Authority to redirect to ARISTOTLE or AGORA
+  — Authority to declare a Contested Verdict with required caveats
+
+13.3  Anti-Escalation Protocol
+────────────────────────────────
+
+HANNIBAL implements Wu et al.'s documented confidence escalation mitigation:
+  — Agent self-confidence scores are HIDDEN from opposing Force agents
+    (agents can see their own Force Posterior but not the enemy's)
+  — The Field Marshal monitors Force Posterior for simultaneous > 0.85
+    in both PF and OF (mathematically impossible — signals escalation)
+  — When detected, Field Marshal issues a Calibration Reset: all agents
+    receive updated Force Posteriors based on the objective ECS computations,
+    not their own self-assessment, and are instructed to re-calibrate
+
+================================================================================
+14.  RESULT ARCHITECTURE — WHAT HANNIBAL OUTPUTS
+================================================================================
+
+At the end of every campaign, HANNIBAL produces a Campaign Result Set:
+
+  1. CAMPAIGN VERDICT
+     The primary output. Includes:
+     — Verdict position (the winning Force's proposition: SUPPORTED,
+       CHALLENGED, QUALIFIED, or ENCIRCLEMENT CONCLUSION for CANNAE results)
+     — Campaign Strength Score (0.0-1.0)
+     — Campaign Strength label: Contested / Narrow / Clear / Decisive
+     — Winning Force designation and its position description
+     — Plain-language verdict narrative
+
+  2. BATTLE MAP SUMMARY
+     The completed Tournament Tree with all nodes filled:
+     — Skirmish-by-Skirmish results with winning Force and Confidence
+     — Engagement margins
+     — Theatre scores
+     — CANNAE matrix (multipolar only)
+     — Decisive Skirmish Identification: the 1-3 Skirmishes whose outcomes
+       most determined the campaign result (highest margin Skirmishes in
+       decisive Engagements)
+
+  3. CAMPAIGN MINORITY RECORD
+     The losing Force's strongest surviving arguments — the evidence they
+     submitted that was not conclusively defeated, the challenges they
+     raised that were sustained, and the conditions under which their
+     position would have prevailed. Equivalent to AGORA's Minority Report
+     but structured as a military after-action intelligence assessment.
+
+  4. FORCE PERFORMANCE SCORECARD
+     For each Force: Skirmishes won/lost, Engagement wins, Evidence
+     submitted count, Average EVID-Q, Flanking attack success rate,
+     Reserve deployment count, Commander intervention count, and a
+     Battle Efficiency Score (BES) — a novel metric measuring how much
+     epistemic value each Force generated per evidence item deployed.
+
+  5. DECISIVE EVIDENCE RECORD
+     The 5-10 most impactful evidence items from the entire campaign,
+     ranked by their contribution to the final Campaign Verdict. Each
+     item includes: source citation, EVID-Q score, the Skirmish it was
+     deployed in, and whether it won or lost that Skirmish.
+
+  6. ENCIRCLEMENT REPORT (CANNAE campaigns only)
+     Full CANNAE pairwise dominance matrix, Condorcet analysis,
+     Borda aggregation result, and Encirclement Narrative.
+
+  7. WHAT WOULD CHANGE THIS VERDICT
+     Derived from ARGUS's VoI EIG apparatus: the specific evidence,
+     analytical framework, or Front configuration that would be most
+     likely to reverse the campaign outcome. Expressed as a concrete
+     research agenda in plain language.
+
+  8. ARMISTICE RECORD (if fired)
+     Documents whether the Armistice Protocol fired, which option was
+     selected, and if redirection to ARISTOTLE or AGORA occurred.
+
+  9. CAMPAIGN LOG — HANNIBAL'S FIELD MANUAL
+     Complete record of every event in the campaign:
+       FORCE_DEPLOYED, SKIRMISH_INITIATED, EVIDENCE_SUBMITTED,
+       SKIRMISH_ADJUDICATED, ENGAGEMENT_RESOLVED, THEATRE_DECIDED,
+       RESERVE_DEPLOYED, COMMANDER_DIRECTIVE, FIELD_MARSHAL_RULING,
+       FORCE_POSTERIOR_UPDATE, CANNAE_COMPUTATION, CAMPAIGN_RESOLVED,
+       ARMISTICE_TRIGGERED, LOG_SEALED
+
+     Exported as structured JSON, formatted text (Field Manual format),
+     and optional PDF. Hash-chain sealed by ARGUS's ProvenanceLedger.
+     PROV-O compatible.
+
+================================================================================
+15.  THE HANNIBAL SANDBOX — BATTLEFIELD VISUALIZATION INTERFACE
+================================================================================
+
+HANNIBAL ships with its own Streamlit sandbox: HANNIBAL-Viz, the War Room.
+Launched via:
+
+  argus hannibal run
+
+The War Room is a three-panel interface optimized for the battlefield metaphor:
+
+  LEFT PANEL — THE COMMAND INTERFACE
+    — Proposition input (where the campaign begins)
+    — Battle Map Preview (review before launch)
+    — Force Posterior Gauges (live updating, one per Force)
+    — Command chat: user can query the system in natural language during
+      the campaign and receive real-time status ("Which Theatre is PF losing?"
+      "What was the strongest OF evidence in Theatre 2?")
+    — Commander Log: live feed of Commander directives issued during the
+      campaign (what tactical decisions are being made)
+    — Field Marshal Log: all Field Marshal actions
+    — Campaign verdict and result set (post-campaign)
+
+  CENTER PANEL — THE BATTLE VISUALIZATION
+    — Tournament Tree (top half): full bracket view, live-updating
+    — C-DAG (bottom half): ARGUS argument structure, Force-color-coded
+    — Battle Status Bar across full width: current phase, active Skirmishes,
+      Force Posteriors, campaign progress
+
+  RIGHT PANEL — THE ANALYTICS SUITE
+    — Force Posterior Timeline (line chart)
+    — Skirmish Evidence Heatmap
+    — Engagement Margin Chart
+    — CANNAE Dominance Matrix (multipolar campaigns)
+    — Campaign Log Navigator (browse full Field Manual in real time)
+    — Post-campaign: full Result Set display with all nine components
+
+USER INTERACTIONS DURING BATTLE:
+  — The user cannot directly intervene in Skirmishes (battles run autonomously)
+  — The user CAN inject a "Strategic Intelligence" item: a user-provided
+    evidence or observation that is submitted to a Force Commander as an
+    external intelligence report. The Commander may or may not act on it.
+  — The user CAN call an Emergency Field Marshal Review at any time, which
+    pauses the current Skirmish, invokes the Field Marshal, and produces
+    an interim Campaign Status Report
+  — The user CAN halt the campaign at any time via a Ceasefire button,
+    which triggers the Armistice Protocol options (Narrow Verdict,
+    Redirect to AGORA, or Redirect to ARISTOTLE)
+
+================================================================================
+16.  NOVEL CONTRIBUTIONS — WHAT NO EXISTING FRAMEWORK HAS
+================================================================================
+
+  INNOVATION 1 — TOURNAMENT TREE AS PRIMARY DATA STRUCTURE
+  No multi-agent AI debate framework uses a tournament bracket as its core
+  organizing data structure. The tournament tree makes the hierarchical
+  resolution of the campaign — from individual agent clashes to the final
+  verdict — computationally tractable and visually immediate. It is
+  borrowed from competitive tournament design (sports, logic olympiads)
+  and applied to epistemic combat for the first time.
+
+  INNOVATION 2 — FORCE ARCHITECTURE: AGENTS AS ARMIES
+  All existing MAD frameworks assign agents to functional roles. HANNIBAL
+  assigns agents to Forces — organized armies with Commanders, Vanguard,
+  Flanking, Intelligence, and Reserve agents coordinated through a
+  military command hierarchy. This is a fundamentally different organizing
+  principle that enables tactical coordination patterns impossible in
+  role-only architectures.
+
+  INNOVATION 3 — PROPOSITION DEPTH ANALYZER WITH BIPOLAR-TO-MULTIPOLAR SCALING
+  No existing framework scales its adversarial structure based on the
+  detected epistemic depth and polarity structure of the proposition.
+  HANNIBAL's PDA determines whether a proposition deserves two armies or
+  five, one front or four — and builds the Tournament Tree accordingly.
+  The battle topology is derived, not preset.
+
+  INNOVATION 4 — THE CANNAE ENGINE: MULTIPOLAR ENCIRCLEMENT RESOLUTION
+  The Condorcet paradox problem in multipolar adversarial AI has not been
+  previously addressed in the MAD literature. HANNIBAL's CANNAE Engine
+  applies pairwise dominance matrices and Borda aggregation to resolve
+  non-transitive cycles in multipolar tournament brackets, producing an
+  Encirclement Verdict even when no Force wins every bilateral encounter.
+
+  INNOVATION 5 — RESERVE AGENT DEPLOYMENT MECHANISM
+  No existing multi-agent framework holds agents in reserve for tactical
+  deployment by a Commander during the session. HANNIBAL's Reserve system
+  gives Force Commanders a genuine tactical decision: when to deploy
+  reserve strength and where. This creates dynamic, responsive Force
+  behavior that static role assignment cannot achieve.
+
+  INNOVATION 6 — FORCE POSTERIOR: ARMY-LEVEL BELIEF TRACKING
+  ARGUS's C-DAG tracks Bayesian belief at the node level. HANNIBAL
+  introduces a higher-order metric — the Force Posterior — which tracks
+  the overall epistemic strength of each Force's position at the campaign
+  level, updated after every Skirmish. This is a novel contribution to the
+  belief propagation architecture of multi-agent debate systems.
+
+  INNOVATION 7 — DUAL VISUALIZATION: TOURNAMENT TREE + C-DAG SIMULTANEOUSLY
+  HANNIBAL is the first multi-agent debate framework to provide two
+  simultaneous complementary visualizations of the same debate:
+  the argument structure (C-DAG, inherited from ARGUS) and the battle
+  structure (Tournament Tree, new). Both views update in real time.
+  Bidirectional cross-reference links the two visualizations.
+
+  INNOVATION 8 — COMMANDER DIRECTIVE SYSTEM
+  Each Force has a Commander agent whose sole function is tactical direction —
+  not evidence submission. The Commander issues directives based on
+  Intelligence Officer reports and Campaign state. This is a genuine
+  meta-tactical layer above individual agent behavior. No existing MAD
+  framework has a dedicated tactical director role.
+
+  INNOVATION 9 — THE ARMISTICE PROTOCOL WITH PROTOCOL REDIRECTION
+  HANNIBAL is the first adversarial framework with a structured self-
+  de-escalation mechanism. When the Armistice Protocol fires, the campaign
+  can formally redirect to ARISTOTLE (for deep collaborative analysis) or
+  AGORA (for deliberative governance). The battle's evidence record is
+  transferred to the receiving protocol as pre-loaded context. This
+  makes HANNIBAL one part of a larger protocol ecosystem rather than a
+  standalone system — a genuine multi-protocol handoff.
+
+  INNOVATION 10 — BATTLE EFFICIENCY SCORE (BES)
+  A new Force-level performance metric measuring epistemic value per
+  evidence item deployed. A Force that wins with minimal evidence (high
+  BES) is demonstrating a qualitatively different kind of argumentative
+  strength than one that wins through volume. BES is unique to HANNIBAL
+  and not available in any existing framework.
+
+  INNOVATION 11 — STRATEGIC INTELLIGENCE INJECTION
+  The user can submit external evidence or observations as Strategic
+  Intelligence to Force Commanders during the campaign. Unlike AGORA's
+  user evidence injection (which goes directly into the Docket), HANNIBAL's
+  Strategic Intelligence is mediated through the Commander — who decides
+  whether and how to act on it. This preserves the battle's integrity
+  while allowing user participation.
+
+  INNOVATION 12 — THE FIELD MANUAL (CAMPAIGN LOG FORMAT)
+  HANNIBAL produces a campaign record in Field Manual format — a structured,
+  military-report-style document that reads as a complete after-action
+  review of the campaign. No existing framework produces a post-hoc
+  campaign analysis document in this format.
+
+================================================================================
+17.  HOW HANNIBAL, ARISTOTLE, AND AGORA COEXIST INSIDE ARGUS
+================================================================================
+
+All three protocols live as sub-modules of argus-debate-ai. They share the
+ARGUS core (C-DAG, ProvenanceLedger, VoI Planner, HybridRetriever, evaluation
+metrics) without conflict. Each occupies a distinct role in the protocol
+ecosystem:
+
+  ARISTOTLE                    AGORA                         HANNIBAL
+  ──────────────────────────   ───────────────────────────   ───────────────────────────
+  Purpose: Deep collaborative  Purpose: Procedurally          Purpose: Adversarial combat
+  analysis by specialist team  governed multi-stakeholder     by organized Forces to
+  with autonomous orchestration deliberative senate            determine decisive winner
+
+  Best for: Investigative       Best for: Complex governance   Best for: Zero-sum
+  propositions where truth      and policy propositions        propositions where one
+  emerges from evidence         where multiple legitimate      position must dominate
+  accumulation                  perspectives need formal       — and can dominate
+                                representation
+
+  Structure: Fixed agent team   Structure: Dynamic senate,     Structure: Military Forces,
+  (Specialist, Refuter, Jury)  N agents, eight categories,    Commanders, tactical roles,
+  — sequential rounds           concurrent deliberation        Tournament Tree, Theatres
+
+  Orchestration: ARISTOTLE      Orchestration: Socratic        Orchestration: Force
+  five-layer engine             Engine + Balance Mandate       Deployment Engine +
+                                + Evidence Docket              Tournament Tree + CANNAE
+
+  Stopping: Convergence-        Stopping: User holds gavel,    Stopping: Tournament Tree
+  detected or budget            five trigger types             resolves naturally or
+                                                               Armistice Protocol fires
+
+  Output: Verdict + Narrative   Output: Majority Opinion +     Output: Campaign Verdict +
+  + C-DAG + Evidence Map +      Minority Report + Coalition    Tournament Tree + Campaign
+  What Could Change This        Map + Senate Record            Minority Record + Field Manual
+
+  Interface: Split-pane         Interface: Three-panel         Interface: Three-panel
+  ARISTOTLE chat + DAG          AGORA Senate Floor +           War Room: Command +
+                                Chamber + Analytics            Battlefield + Analytics
+
+  Best use case: "What does     Best use case: "What should    Best use case: "Which side
+  the evidence say about X?"   policy on X look like,         is right about X — and
+                                given all stakeholders?"        what does the battle prove?"
+
+  Launched via:                 Launched via:                  Launched via:
+  argus aristotle run           argus agora run                argus hannibal run
+
+PROTOCOL HANDOFF MECHANISM (Unique to HANNIBAL):
+  HANNIBAL is the only ARGUS protocol that can redirect mid-campaign to
+  another protocol. The Armistice Protocol carries the full evidence record
+  to ARISTOTLE or AGORA. The receiving protocol uses this as pre-loaded context,
+  enabling a seamless multi-protocol workflow: battle for a decisive result,
+  but if the battle proves inconclusive, deliberate instead. This is the
+  first inter-protocol handoff in the ARGUS ecosystem.
+
+================================================================================
+18.  KNOWN CHALLENGES AND MITIGATIONS
+================================================================================
+
+  CHALLENGE 1 — FORCE PRIOR COMMITMENT BIAS
+  Agents with high Force prior commitment (0.85-0.95) may select evidence
+  that confirms their Force's position rather than the most accurate evidence.
+  Advocacy bias is an inherent feature of the battle architecture.
+
+  MITIGATION: The IO (Intelligence Officer) monitors each Force's evidence
+  portfolio for source overlap with the opposing Force's evidence base.
+  High overlap signals that both Forces are drawing from the same pool —
+  the IO alerts the Commander to seek independent sources. EVID-Q source
+  quality scoring penalizes low-credibility advocacy sources. The Field
+  Marshal reviews all evidence submitted and can flag a Force for a
+  Epistemic Integrity Review if bias patterns are detected.
+
+  CHALLENGE 2 — TOURNAMENT TREE PRESPECIFICATION VS. EMERGENT ARGUMENT DYNAMICS
+  Arguments don't naturally organize into brackets. A Skirmish that was
+  supposed to contest sub-claim X may produce evidence relevant to sub-claim Y.
+  The tree structure may not match the natural flow of argumentation.
+
+  MITIGATION: Dynamic Skirmish Re-scoping is allowed: an agent can petition
+  the Skirmish Adjudicator to re-scope a Skirmish if the opposing Force's
+  evidence has shifted the contested terrain. The petition is logged and
+  the Adjudicator rules within one exchange cycle. If re-scoping is granted,
+  the Tournament Tree's node scope is updated and the change is shown in
+  the War Room. This maintains structural integrity while allowing organic
+  argument development.
+
+  CHALLENGE 3 — CONCURRENCY COST (SAME AS AGORA)
+  Running N agents per Force across M Forces is expensive. A bipolar campaign
+  with 2 Forces of 6 agents each = 12 concurrent agents.
+
+  MITIGATION: Force size is calibrated by the PDA to the proposition's
+  depth score and the available token budget. Quick Battle topology (height 2)
+  uses minimum Force sizes. The Battle Status Bar shows running token cost.
+  Budget overflow triggers Combat Compression: Skirmishes are truncated to
+  1 exchange round and Reserve deployment is suspended.
+
+  CHALLENGE 4 — MULTIPOLAR TOURNAMENT BALANCE (CANNAE ASSUMPTION)
+  The CANNAE Engine assumes all bilateral pairings are valid epistemic
+  contests. If one Force is structurally weak (poorly calibrated prior,
+  low-quality agents), it biases the pairwise matrix.
+
+  MITIGATION: Force quality is assessed by the Force Deployment Engine
+  before the campaign begins. If a Force's projected competence (based on
+  agent configuration) is significantly below the median, the PDA recommends
+  a bipolar structure instead. In post-campaign analysis, the CANNAE matrix
+  explicitly flags Force pairs where one Force won with consistently high
+  Confidence Scores (indicating dominant quality rather than genuine contest).
+
+  CHALLENGE 5 — COMMANDER DIRECTIVE QUALITY
+  If the Commander agent produces poor tactical directives (misallocating
+  Reserve agents, ignoring IO reports, directing attention to lost Theatres),
+  the Force's performance suffers not from weak evidence but from bad command.
+
+  MITIGATION: The IO monitors the Commander's directive-outcome correlation.
+  If two consecutive Commander directives produce worse Skirmish outcomes
+  than a random allocation would have, the IO issues a Commander Efficiency
+  Warning. After a third warning, the Field Marshal can override Commander
+  directives with optimal allocation recommendations from the ARGUS VoI
+  Planner (which functions as a neutral tactical advisor).
+
+  CHALLENGE 6 — BATTLE VISUALIZATION DENSITY
+  Deep campaigns (height 5, multipolar, many Skirmishes) produce extremely
+  dense Tournament Trees that are difficult to navigate.
+
+  MITIGATION: Collapsible sub-trees: click any Theatre node to collapse
+  all its children and show only the Theatre result. Zoom and pan on all
+  tree views. Highlight mode: select a Force to highlight only its nodes.
+  Quick Summary View: a simplified flat bracket showing only Engagement and
+  Theatre results (hiding individual Skirmish nodes) for high-density campaigns.
+
+================================================================================
+19.  IMPLEMENTATION ROADMAP
+================================================================================
+
+  PHASE  NAME                        SCOPE                         DELIVERABLE
+  ─────  ─────────────────────────   ───────────────────────────   ─────────────
+  H1     argus.hannibal Module        Create argus/hannibal/        Module skeleton
+         Skeleton                     directory structure;          with __init__.py
+                                      CLI entry point               and all module
+                                      "argus hannibal run";         files; CLI works
+                                      wire into pyproject.toml
+
+  H2     Proposition Depth Analyzer   Build pda.py: polarity        PropositionDepth
+                                      structure detection,          schema + polarity
+                                      depth scoring (factual,       scorer + front count
+                                      normative, inferential),      determination +
+                                      front count determination,    Battle Map JSON
+                                      theatre specification,        output + Battle Map
+                                      force size calibration,       Preview Card
+                                      Battle Map output
+
+  H3     Tournament Tree Engine       Build tournament.py:          TournamentTree
+                                      tree construction from        class + node types
+                                      Battle Map, all node          + edge types +
+                                      types, edge types,            pre-construction
+                                      Skirmish/Engagement/          algorithm + result
+                                      Theatre adjudication,         propagation +
+                                      result propagation,           Tie-Breaking
+                                      Tie-Breaking Protocol,        Protocol handler
+                                      Campaign Root resolution
+
+  H4     Force Deployment Engine      Build forces.py: Force        ForceSpec schema
+                                      type definitions,             + DeploymentEngine
+                                      military role taxonomy,       class + Commander
+                                      agent configuration per       persona + Vanguard
+                                      role, Force Deployment        / Flanking / IO /
+                                      Algorithm, Commander          Reserve configs
+                                      directive system,
+                                      Reserve mechanism
+
+  H5     Battle Protocol Engine       Build battle.py: Skirmish     SkirmishProtocol
+                                      Protocol (phases S1-S5),      class + Engagement-
+                                      ECS computation, Force        Protocol +
+                                      Posterior tracking,           Theatre Protocol +
+                                      Engagement/Theatre            ECS calculator +
+                                      adjudication, Victory         Force Posterior
+                                      Conditions, Posterior         tracker
+                                      Propagation
+
+  H6     CANNAE Engine                Build cannae.py:              CANNAEEngine class
+                                      multipolar front support,     + pairwise dominance
+                                      pairwise dominance matrix,    matrix + Condorcet
+                                      Condorcet Winner check,       checker + Borda
+                                      Borda aggregation,            aggregator +
+                                      Encirclement Narrative        Encirclement
+                                      generator                     Narrative generator
+
+  H7     Field Marshal System         Build field_marshal.py:       FieldMarshal class
+                                      Field Marshal agent config,   + Armistice
+                                      Tie-Breaking Protocol,        Protocol handler
+                                      Armistice Protocol (all       + Anti-Escalation
+                                      3 options), Anti-Escalation   monitor +
+                                      Protocol, protocol            protocol redirect
+                                      redirection to ARISTOTLE      mechanism to
+                                      or AGORA                      ARISTOTLE/AGORA
+
+  H8     War Room Visualization       Build war_room.py:            TournamentTree
+                                      Tournament Tree Plotly        Plotly figure class
+                                      figure, all node and          + bracket layout
+                                      edge types, three layout      engine (horizontal/
+                                      engines (horizontal,          vertical/radial)
+                                      vertical, radial for          + CANNAE matrix
+                                      CANNAE), live growth          visualization +
+                                      animation, bidirectional      C-DAG integration
+                                      C-DAG cross-reference         + cross-reference
+                                                                    linker
+
+  H9     Analytics Panels + War       Build hannibal_app.py:        hannibal_app.py
+         Room Interface               three-panel War Room          Streamlit app +
+                                      Streamlit interface,          Force Posterior
+                                      Force Posterior gauges,       gauges + analytics
+                                      Commander Log, Strategic      panels + Strategic
+                                      Intelligence injection,       Intelligence UI +
+                                      Ceasefire button, all         Campaign Result
+                                      analytics panels,             Set display
+                                      Campaign Result Set
+                                      display
+
+  H10    Result Architecture +        Build results.py:             ResultSet schema
+         Campaign Log                 all nine output               + Field Manual
+                                      components, Battle            formatter + BES
+                                      Efficiency Score (BES),       calculator +
+                                      CANNAE report,                Force Performance
+                                      Campaign Log (Field           Scorecard +
+                                      Manual format), hash-         Campaign Log
+                                      chain sealing, JSON,          generator
+                                      text, PDF export
+
+================================================================================
+20.  CLOSING VISION
+================================================================================
+
+ARISTOTLE gave ARGUS depth. AGORA gave ARGUS governance. HANNIBAL gives
+ARGUS something neither could provide: a protocol where truth is not
+merely investigated or deliberated — it is fought for.
+
+This is not a philosophical concession. It is a recognition of what the
+evidence shows. Wu et al. (2025) confirmed that productive initial chaos —
+genuine, committed disagreement — produces better post-debate outcomes than
+polite exploration of all sides. The Forces in HANNIBAL begin with maximally
+committed priors precisely because the battle, to be productive, must be
+real. The Proposition Force genuinely believes the proposition. The Opposition
+Force genuinely believes against it. Neither is playing a role. Both are
+fighting to win — and the one that wins does so because it had better
+evidence, stronger logic, and more decisive arguments. Not because a jury
+decided to average everyone's opinion.
+
+Hannibal Barca never lost a battle he could fight on his own terms. His
+innovation was not harder fighting — it was smarter structure: the
+encirclement that made the stronger army's frontal strength irrelevant by
+creating multiple simultaneous fronts that it could not address at once.
+The CANNAE Engine does the same thing to complex multipolar propositions:
+it does not pretend a complicated truth can be captured in a simple FOR/AGAINST
+verdict. It deploys multiple Forces, opens multiple Fronts, and identifies
+the epistemic position that dominates across all of them — even if it does
+not win every bilateral encounter.
+
+The ARGUS ecosystem now contains three protocols for three different kinds
+of truth-seeking:
+
+  When you need to understand a proposition: ARISTOTLE.
+  When you need governance and deliberation: AGORA.
+  When you need to know which side wins the fight: HANNIBAL.
+
+Type the proposition. Review the Battle Map. Watch the Tournament Tree fill
+from leaves to root. When the Campaign Root node lights up, you will know
+not just what the truth is — but how hard it was to win.
+
+  argus hannibal run
+
+The armies are deployed. The tournament bracket is set. The battle begins.
+
+And at Cannae, the encirclement is already closing.
+
+================================================================================
+APPENDIX A: PACKAGE STRUCTURE
+================================================================================
+
+  argus/
+  ├── aristotle/             (existing — ARGUS v4.0)
+  ├── agora/                 (existing — ARGUS v5.0)
+  └── hannibal/              ← NEW SUB-MODULE (this protocol)
+      ├── __init__.py
+      ├── pda.py             (Proposition Depth Analyzer)
+      ├── tournament.py      (Tournament Tree Engine)
+      ├── forces.py          (Force Deployment Engine)
+      ├── battle.py          (Battle Protocol Engine — Skirmish/Engagement/Theatre)
+      ├── cannae.py          (CANNAE Multipolar Engine)
+      ├── field_marshal.py   (Field Marshal + Armistice Protocol)
+      ├── war_room.py        (War Room Visualization — Tournament Tree Plotly)
+      ├── results.py         (Campaign Result Architecture)
+      ├── hannibal_app.py    (War Room Streamlit Interface)
+      └── personas/
+          ├── commander_bank.py   (Commander persona templates)
+          ├── vanguard_bank.py    (Vanguard domain configurations)
+          └── flanking_bank.py    (Flanking specialist configurations)
+
+================================================================================
+APPENDIX B: KEY FORMULAS
+================================================================================
+
+EPISTEMIC COMBAT SCORE (ECS):
+  ECS(Force, Skirmish) = Σ_i (EVID_Q_i × Confidence_i × Relevance_i ×
+                               Polarity_strength_i × LogCoherence_factor)
+  Modifiers: +0.1 source uniqueness, −0.15 sustained challenge,
+             +0.10 defended challenge
+
+FORCE POSTERIOR:
+  FP(Force) = σ(logit(Force_Prior) + Σ_s ECS_delta_s)
+  where ECS_delta_s = +Confidence_s if Force won Skirmish s, -Confidence_s if lost
+
+ENGAGEMENT MARGIN:
+  EM(Force) = Σ_s (Confidence_s × [1 if Force won Skirmish s else 0])
+  EngagementWinner = argmax_Force EM(Force)
+
+CANNAE DOMINANCE:
+  D(Force_i → Force_j) = Σ_t margin_t(i beats j) / |Theatres where i and j paired|
+
+BATTLE EFFICIENCY SCORE (BES):
+  BES(Force) = (Skirmishes_Won × Avg_Confidence_Won) / Total_Evidence_Items_Deployed
+
+PROPOSITION DEPTH SCORE:
+  PDS = 0.4 × FactualDepth + 0.35 × NormativeDepth + 0.25 × InferentialDepth
+
+================================================================================
+APPENDIX C: HANNIBAL INTEGRATION WITH ARGUS v5.0 EXTENSIONS
+================================================================================
+
+HANNIBAL integrates natively with ARGUS's eight v5.0 extensions:
+
+  CHRONOS: Force evidence items carry temporal decay weights. Long-standing
+    evidence in the Opposition Force's docket may be less decisive than recent
+    Proposition Force evidence. ChronosOrchestrator wraps individual Skirmishes.
+
+  PHALANX: Each Force's agents can be drawn from a population of cognitively
+    diverse personas (PHALANX personas with calibrated biases). This ensures
+    that the Proposition Force is not homogeneously optimistic and the
+    Opposition Force is not homogeneously pessimistic.
+
+  SEED: A proposition detected as complex by SEED's Debatability Score can
+    be automatically routed to HANNIBAL for battle-style resolution when
+    BiPolarity Ratio is high. SEED's claim mining populates initial Skirmish
+    scope declarations.
+
+  MNEME: Force agents with domain expertise accumulated from prior HANNIBAL
+    campaigns have higher baseline competence and better-calibrated priors.
+    MNEME tracks agent performance history across campaigns.
+
+  FRACTAL: Deeply decomposed propositions (FRACTAL sub-propositions) can
+    each become separate Theatres in a HANNIBAL campaign, with FRACTAL's
+    aggregation strategies (AND/OR/Weighted) mapping to Theatre-level result
+    aggregation methods.
+
+  MIRROR: Post-campaign, MIRROR's Consequence Inference Graph runs from the
+    Campaign Verdict to map downstream consequences. The counterfactual
+    sensitivity is framed in HANNIBAL terms: "What would the consequences
+    have been if the Opposition Force had won?"
+
+  VERICHAIN: Campaign Verdicts are registered in VERICHAIN's cross-campaign
+    truth registry. Prior battle verdicts on related propositions are retrieved
+    as epistemic precedents and injected into Force priors at campaign start.
+
+  PULSE: All HANNIBAL campaign metrics (Skirmish duration, ECS values, Force
+    Posterior trajectory, token costs) feed into PULSE's operational dashboard.
+    Anomaly detection identifies unusual campaign patterns (e.g., Force
+    Posterior collapse indicating one Force is decisively outclassed).
+
+================================================================================
+END OF DOCUMENT
+HANNIBAL Protocol v1 — argus.hannibal module — Battlefield Epistemic Protocol
+argus-debate-ai | April 2026
+Named after Hannibal Barca, Carthaginian General (247–183 BC)
+Greatest military strategist of antiquity — master of the encirclement
+"He who knows how to conquer must also know how to use his victory."
+================================================================================
