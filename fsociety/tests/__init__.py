@@ -1,0 +1,1 @@
+"""fsociety test suite."""
