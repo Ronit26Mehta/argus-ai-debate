@@ -12,6 +12,10 @@ argus_benchmark
 
 argus_sandbox_runs
 
+tmp
+fsociety_reports
+informaticaPaper
+
 
 # Distribution / packaging
 build/
