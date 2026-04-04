@@ -1,0 +1,1312 @@
+
+██████████████████████████████████████████████████████████████████████████████████████
+██                                                                                  ██
+██    ███████╗███████╗ ██████╗  ██████╗██╗███████╗████████╗██╗   ██╗              ██
+██    ██╔════╝██╔════╝██╔═══██╗██╔════╝██║██╔════╝╚══██╔══╝╚██╗ ██╔╝              ██
+██    █████╗  ███████╗██║   ██║██║     ██║█████╗     ██║    ╚████╔╝               ██
+██    ██╔══╝  ╚════██║██║   ██║██║     ██║██╔══╝     ██║     ╚██╔╝                ██
+██    ██║     ███████║╚██████╔╝╚██████╗██║███████╗   ██║      ██║                 ██
+██    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚══════╝   ╚═╝      ╚═╝                ██
+██                                                                                  ██
+██    "Hello, friend. Hello, friend? That's lame.                                  ██
+██     Maybe I'll come up with something better. I'm still deciding."              ██
+██                                                                                  ██
+██    A Multi-Agent VAPT Intelligence Terminal                                     ██
+██    Powered by ARGUS — Research Debate Chain Engine                              ██
+██                                                                                  ██
+██    Blueprint v1.0 — Architecture · Agents · Ingestion · RDC · Visualizations   ██
+██    Classification: INTERNAL DESIGN DOCUMENT                                     ██
+██                                                                                  ██
+██████████████████████████████████████████████████████████████████████████████████████
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 0 — THE FOUNDING IDEA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  fsociety is not a vulnerability scanner. It is an adversarial intelligence system.
+
+  Where ARGUS is a debate framework for general knowledge — fsociety takes that exact
+  engine and focuses it entirely on the domain of Vulnerability Assessment and
+  Penetration Testing (VAPT). Every component from ARGUS — the Research Debate Chain
+  (RDC), the Conceptual Debate Graph (C-DAG), Bayesian verdicts, provenance tracking,
+  and full visualization — is repurposed for one question:
+
+        "How broken is this system, and what would it take to bring it down?"
+
+  fsociety is named after the hacktivist collective from Mr. Robot. It operates
+  exactly like that group: multiple independent personas with different skills,
+  perspectives, and risk tolerances — arguing, challenging, escalating, and ultimately
+  converging on the truth of a system's security posture.
+
+  The user is the operator. The terminal is the command bridge. The agents debate.
+  The output is a structured intelligence dossier: a PDF report, DAG lifecycle maps,
+  exploit chain graphs, severity heat maps, and compliance gap analysis — all saved to
+  disk in an organized directory structure.
+
+  fsociety does not replace human security researchers. It gives them a second brain
+  that never sleeps, never skips a finding, and never stops arguing until the truth
+  is found.
+
+  RELATIONSHIP TO ARGUS:
+  ─────────────────────
+  fsociety is a domain-specific product built ON TOP OF the ARGUS library.
+  It imports and extends:
+    — RDCOrchestrator         (debate lifecycle management)
+    — ConceptualDebateGraph   (C-DAG, now called the Vulnerability Knowledge Graph)
+    — HybridRetriever         (BM25 + FAISS, now over code embeddings)
+    — VoIPlanner              (evidence value planning)
+    — ProvenanceLedger        (full audit trail of all findings)
+    — MNEME                   (persistent agent memory across sessions)
+    — VERICHAIN               (cross-session finding registry with hash chains)
+    — PULSE                   (operational dashboard)
+
+  fsociety adds on top:
+    — Security-specific agent personas (the Mr. Robot cast)
+    — Code ingestion + embedding pipeline (SAST)
+    — Web crawler + API surface scanner (DAST)
+    — CVE / NVD / MITRE ATT&CK live correlation
+    — VAPT-specific plot suite (12 visualization types)
+    — Structured PDF report generator
+    — Disk-based output directory manager
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — PRODUCT IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  NAME:         fsociety
+  FULL FORM:    Federated Security Operations & Cyber Intelligence Engine Through Yield
+  TAGLINE:      "Hello, friend."
+  MANIFESTO:    "We are fsociety. We are finally free."
+  TYPE:         Terminal-native multi-agent VAPT intelligence platform
+  FOUNDATION:   ARGUS (Agentic Research & Governance Unified System) v5.0+
+  INTERFACE:    TUI — Terminal User Interface (Textual framework, Python)
+  PROMPT:       fsociety ❯
+  AESTHETIC:    Phosphor green on black. Dense. Monospace. No chrome. Pure signal.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — TERMINAL INTERFACE DESIGN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  2.1  DESIGN INSPIRATION
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  Three reference points for the terminal's design:
+
+    (a) Claude Code     — command-first, artifact-generating, streaming, agent-driven
+    (b) Mr. Robot TUI   — dark, phosphor-green, dense, every character means something
+    (c) Metasploit MSF  — module-style thinking, domain-specific prompt, session mgmt
+
+  The terminal is built with Python's Textual framework as the primary renderer,
+  with Rich as a fallback for environments where Textual cannot initialize. The TUI
+  runs fully in-terminal — no browser, no Electron, no web server. It is a hacker's
+  tool for a hacker's terminal.
+
+
+  2.2  TERMINAL LAYOUT
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  ┌──────────────────────────────────────────────────────────────────────────────────┐
+  │  fsociety v1.0     target: github.com/org/repo     session: f5oc-4a2b-9c1d      │
+  │  ─────────────────────────────────────────────────────────────────────────────  │
+  │                                                                                  │
+  │  ┌──────────────────┐  ┌───────────────────────────────┐  ┌──────────────────┐  │
+  │  │  AGENT PANEL     │  │   DEBATE STREAM  (CENTER)     │  │   STATUS PANEL   │  │
+  │  │                  │  │                               │  │                  │  │
+  │  │ [●] ELLIOT       │  │ [ELLIOT] Scanning surface...  │  │ Agents:    8/13  │  │
+  │  │     Recon        │  │ [ELLIOT] Found 3 endpoints    │  │ Debates:   5     │  │
+  │  │                  │  │   with raw SQL concat         │  │ Findings:  17    │  │
+  │  │ [●] MR.ROBOT     │  │                               │  │                  │  │
+  │  │     Exploit      │  │ [MR.ROBOT] Escalating.        │  │ Severity:        │  │
+  │  │                  │  │ CVE-2023-32315 matches.       │  │  CRIT  ███   3   │  │
+  │  │ [●] DARLENE      │  │ Auth bypass in /api/admin     │  │  HIGH  ████  7   │  │
+  │  │     Auth/Logic   │  │ + SQL = full RCE in 2 steps   │  │  MED   ██    5   │  │
+  │  │                  │  │                               │  │  LOW   █     2   │  │
+  │  │ [●] WHITEROSE    │  │ [DARLENE] Condition: only if  │  │                  │  │
+  │  │     Intel/Jury   │  │ session token isn't rotated.  │  │ DAG:  Building   │  │
+  │  │                  │  │ Checked: it isn't.            │  │ PDF:  Queued     │  │
+  │  │ [○] ROMERO       │  │                               │  │ Dir:  ./reports/ │  │
+  │  │     Malware      │  │ [WHITEROSE] CVSS 9.8.         │  │                  │  │
+  │  │                  │  │ Posterior: 0.94. CONFIRMED.   │  │ Time: 00:04:32   │  │
+  │  │ [○] MOBLEY       │  │                               │  │                  │  │
+  │  │     Network      │  └───────────────────────────────┘  └──────────────────┘  │
+  │  │                  │                                                            │
+  │  │ [○] TRENTON      │                                                            │
+  │  │     Persistence  │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] TYRELL       │                                                            │
+  │  │     Insider Thr. │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] ANGELA       │                                                            │
+  │  │     Phishing     │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] DOM          │                                                            │
+  │  │     Blue Team    │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] LEON         │                                                            │
+  │  │     Remediation  │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] IRVING       │                                                            │
+  │  │     Orchestrator │                                                            │
+  │  │                  │                                                            │
+  │  │ [○] CISCO        │                                                            │
+  │  │     OSINT        │                                                            │
+  │  └──────────────────┘                                                            │
+  │                                                                                  │
+  │  ─────────────────────────────────────────────────────────────────────────────  │
+  │  fsociety ❯  _                                                                   │
+  └──────────────────────────────────────────────────────────────────────────────────┘
+
+  Panel descriptions:
+    LEFT   — Agent Panel: shows all 13 personas with live status (active/standby/done)
+    CENTER — Debate Stream: live scrolling output of agent dialogue and findings
+    RIGHT  — Status Panel: running totals, severity breakdown, output status
+
+
+  2.3  COMMAND SYNTAX
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  fsociety uses a verb-flag command style. Tab autocomplete is available on all commands.
+
+    — Scan a local codebase:
+      fsociety ❯  scan --path /home/user/myapp/
+
+    — Scan a GitHub repository:
+      fsociety ❯  scan --repo https://github.com/org/vulnerable-app
+
+    — Scan a live web target:
+      fsociety ❯  scan --url https://target.com
+
+    — Full hybrid scan (static + dynamic):
+      fsociety ❯  scan --repo https://github.com/org/app --url https://app.prod.com
+
+    — Choose specific agents only:
+      fsociety ❯  scan --repo <url> --agents elliot,darlene,whiterose
+
+    — Set scan depth:
+      fsociety ❯  scan --repo <url> --depth deep     (full git history + deps)
+      fsociety ❯  scan --repo <url> --depth surface  (fast, top-level only)
+
+    — Run a manual debate on a specific hypothesis:
+      fsociety ❯  debate "Is the admin panel accessible without authentication?"
+
+    — Generate report for current session:
+      fsociety ❯  report --format pdf
+      fsociety ❯  report --format all    (PDF + all plots + JSON)
+
+    — View live DAG:
+      fsociety ❯  dag show
+      fsociety ❯  dag export --format png
+
+    — Session management:
+      fsociety ❯  sessions list
+      fsociety ❯  sessions load <session-id>
+      fsociety ❯  sessions compare <id1> <id2>  (diff two scans of same target)
+
+    — Agent management:
+      fsociety ❯  agents status
+      fsociety ❯  agents config elliot --verbosity high
+
+    — Help:
+      fsociety ❯  help
+      fsociety ❯  help scan
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — THE THIRTEEN AGENTS (The Full Mr. Robot Cast)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  The agents are not just themed wrappers around the same logic. Each one has a
+  distinct system prompt, a distinct evidence-seeking strategy, and a distinct role
+  in the RDC debate lifecycle. They are organized into three tiers:
+
+  TIER 1 — CORE (always active in every scan):
+    Elliot, Mr. Robot, Darlene, Whiterose, Irving
+
+  TIER 2 — SPECIALIST (activated based on target type and depth setting):
+    Romero, Mobley, Trenton, Tyrell, Angela, Dom
+
+  TIER 3 — OUTPUT (activated after debate verdicts are rendered):
+    Leon, Cisco (OSINT enrichment), Price (executive summary)
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 1 — ELLIOT ALDERSON
+  Role in RDC:    Lead Specialist / Proposition Generator
+  VAPT Domain:    Reconnaissance & Attack Surface Mapping
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Elliot is the first agent to touch any target. He is paranoid, methodical, and
+  obsessive about completeness. He does not stop until he has mapped every exposed
+  surface. He is the one who says: "I know what you are. Now let me count the ways."
+
+  What he does:
+    — Walks the entire ingested codebase and catalogs it: file types, line counts,
+      frameworks detected, third-party dependencies, configuration files, secrets
+    — Runs the initial attack surface enumeration: all API endpoints, database calls,
+      file I/O operations, user input handling, authentication touchpoints
+    — Parses dependency manifests (package.json, requirements.txt, pom.xml, go.mod,
+      Gemfile, Cargo.toml) and flags known-vulnerable library versions
+    — Inspects git history metadata for exposed credentials, debug flags left behind,
+      recently deleted files that reveal architectural secrets
+    — Generates initial proposition list: "This target may be vulnerable to X"
+      with a prior probability based on surface signal density
+    — Populates the Vulnerability Knowledge Graph (VKG) — fsociety's name for
+      ARGUS's C-DAG — with initial vulnerability nodes and attack surface edges
+
+  Outputs:
+    — Full attack surface map (ASM)
+    — Dependency inventory with CVE pre-check flags
+    — Recon proposition list (the input to the RDC debate)
+    — Surface confidence scores per finding category
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 2 — MR. ROBOT (Edward Alderson)
+  Role in RDC:    Escalation Refuter / Exploit Chain Builder
+  VAPT Domain:    Exploit Synthesis, Severity Escalation, Worst-Case Modeling
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Mr. Robot is the voice that says "you're not thinking big enough." He takes Elliot's
+  conservative, evidence-first propositions and attacks them — not to disprove them,
+  but to make them worse. He chains vulnerabilities. He builds the adversary's playbook.
+  He is the one who says: "Elliot found a door. I found the blueprint of the whole building."
+
+  What he does:
+    — Reads every Elliot proposition and immediately asks: can this be chained?
+    — Builds multi-step exploit chains: "If finding A + finding B + misconfiguration C,
+      the attacker achieves full RCE / privilege escalation / data exfiltration"
+    — Assigns contextual exploitability scores that augment raw CVSS with real-world
+      factors: authentication requirement, access complexity, blast radius, patch lag
+    — Challenges Elliot's severity estimates upward when chaining changes the picture
+    — Generates conceptual proof-of-concept (PoC) attack narratives: a step-by-step
+      description of how a skilled attacker would execute the exploit chain
+    — Adds REBUTS and ATTACKS edges to the VKG wherever he escalates a finding
+
+  Outputs:
+    — Exploit chain graphs (multi-node attack paths in the VKG)
+    — Escalated severity assessments with full reasoning traces
+    — Adversary playbook narratives (step-by-step attack descriptions)
+    — Blast radius analysis per critical finding
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 3 — DARLENE ALDERSON
+  Role in RDC:    Specialist / Nuance Injector / Human Vector Analyst
+  VAPT Domain:    Business Logic Flaws, Auth Bypass, Social Engineering Surface
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Darlene finds the things that automated scanners miss. She thinks about the user,
+  the developer who made shortcuts, the admin who didn't change defaults, the API
+  that makes perfect sense to the builder and is completely exploitable to anyone
+  who reads it differently. She has few rules. She has even fewer limits.
+
+  What she does:
+    — Analyzes authentication flows for logic flaws: session fixation, JWT weaknesses
+      (algorithm confusion, weak secrets, missing expiry), OAuth misconfiguration,
+      password reset flaws, multi-factor authentication bypasses
+    — Hunts for broken access control (IDOR): does user A's token grant access to
+      user B's data? Does a regular user role have admin-level API access if they
+      know the right endpoint?
+    — Flags hardcoded credentials, API keys, passwords, and secrets in source code,
+      configuration files, .env files, Docker compose files, and CI/CD pipelines
+    — Models social engineering surfaces: what data is exposed publicly that would
+      help a phishing attacker? What email patterns, org charts, or employee names
+      leak from the codebase or commit history?
+    — Adds precondition trees to Mr. Robot's exploit chains: "This works but ONLY
+      if these conditions are true" — making severity assessments more precise
+
+  Outputs:
+    — Authentication and authorization flaw map
+    — Broken access control inventory with precondition trees
+    — Hardcoded secrets and credential exposure report
+    — Social engineering surface summary
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 4 — WHITEROSE (Zhang / Zhi Zhang)
+  Role in RDC:    Jury / Moderator / Intelligence Oracle
+  VAPT Domain:    Threat Intelligence, CVE Correlation, Bayesian Verdict, Compliance
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Whiterose operates on a longer timescale than everyone else. She is not interested
+  in individual vulnerabilities. She is interested in what they mean in the context
+  of the entire threat landscape. She correlates. She maps. She renders verdicts.
+  She is the one who says: "What you have found is not a bug. It is a door. And I
+  know exactly who is already standing behind it."
+
+  What she does:
+    — Cross-references all findings against NVD, MITRE ATT&CK framework, OWASP Top 10,
+      ExploitDB, OSV (Open Source Vulnerabilities), and vendor security advisories
+    — Maps findings to CWE classifications and compliance framework requirements:
+      PCI-DSS, SOC 2 Type II, ISO 27001, NIST CSF, HIPAA, GDPR Article 32
+    — Assigns threat actor profiles: "This combination of exposed endpoint + unpatched
+      library + weak authentication matches the TTPs of known APT groups"
+    — Runs Bayesian aggregation across all agent inputs (Elliot's prior + Mr. Robot's
+      exploit chain confidence + Darlene's preconditions) to compute a final posterior
+      probability that a finding is real, exploitable, and critical
+    — Acts as the final verdict authority: she decides which findings enter the report
+      and at what priority tier (P0 Critical / P1 High / P2 Medium / P3 Low)
+    — Manages the VERICHAIN cross-session registry: if this vulnerability was seen in
+      a previous scan of the same or a related target, she flags it as recurring
+
+  Outputs:
+    — CVE mapping table with CVSS scores, patch availability, and patch lag
+    — MITRE ATT&CK technique mapping (Tactics, Techniques, Sub-techniques)
+    — Compliance gap matrix per framework
+    — Threat actor correlation report
+    — Final Bayesian verdict per finding with posterior probability and CI
+    — P0-P3 prioritized finding register
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 5 — IRVING
+  Role in RDC:    Master Orchestrator / DAG Lifecycle Manager
+  VAPT Domain:    Session Coordination, Agent Scheduling, Debate Lifecycle
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Irving is the fixer. Calm, methodical, efficient. He never panics. He knows where
+  everyone is at all times, and he makes sure the operation runs on schedule. In the
+  show he is the Dark Army's operational coordinator. In fsociety the tool, he is
+  the orchestration layer that wraps the ARGUS RDCOrchestrator and manages the full
+  DAG lifecycle.
+
+  What he does:
+    — Manages the RDC session lifecycle: start, round progression, stopping criteria
+    — Schedules agents based on target type: which agents activate, in what order,
+      with what context window, at what point in the debate
+    — Monitors agent health: detects stalled agents, retries failed tool calls,
+      reroutes debate flow if an agent produces low-confidence outputs
+    — Manages the VKG update cycle: after each debate round, Irving ensures all
+      new nodes and edges are committed to the graph with correct provenance
+    — Decides when the debate has converged (posterior stability threshold met)
+      vs. when more rounds are needed
+    — Feeds the PULSE operational dashboard with live metrics
+
+  Outputs:
+    — Session manifest (full debate log with timing and agent assignments)
+    — DAG lifecycle events log
+    — Agent performance metrics per session
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 6 — ROMERO (Leslie Romero)
+  Role in RDC:    Specialist (Deep Technical)
+  VAPT Domain:    Malware Patterns, Binary Analysis, Legacy Vulnerability Research
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Romero is the oldest member. He started as a phone phreaker. He has seen every
+  trick in every decade. He knows that the most dangerous vulnerabilities are the
+  ones that have been there since 1998 and nobody thought to look. He is world-wise
+  and deeply suspicious of anything that looks too clean.
+
+  What he does:
+    — Scans for legacy vulnerability patterns: buffer overflows, format string bugs,
+      use-after-free, integer overflows in C/C++ codebases
+    — Identifies malware-adjacent code patterns: process injection, DLL hijacking
+      paths, registry manipulation, suspicious file write operations
+    — Analyzes compiled artifacts if present in the repo (binaries, obfuscated JS,
+      minified bundles) using pattern matching against known malware signatures
+    — Flags dangerously outdated cryptographic implementations: MD5, SHA1 for
+      security purposes, DES, RC4, ECB mode AES, custom crypto implementations
+    — Examines shell scripts, Makefiles, CI/CD pipeline scripts for command injection
+      and dangerous eval/exec usage
+
+  Outputs:
+    — Legacy vulnerability inventory with decade-of-origin annotations
+    — Cryptographic weakness report
+    — CI/CD pipeline security assessment
+    — Binary/obfuscated artifact flags (manual review required tags)
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 7 — MOBLEY (Sunil Markesh)
+  Role in RDC:    Specialist (Infrastructure)
+  VAPT Domain:    Network Infrastructure, Lateral Movement, DNS & Cloud Misconfigs
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Mobley is paranoid — correctly. He knows the FBI is watching. He knows the Dark Army
+  is watching. He sees network topology as a chess board and thinks three moves ahead
+  about what an attacker inside the network could reach from any given foothold.
+
+  What he does:
+    — Analyzes network configuration files: firewall rules, VPC configs, security groups,
+      Kubernetes network policies, Nginx/Apache configs, load balancer rules
+    — Maps lateral movement paths: if an attacker compromises service A, what can they
+      reach from there? What internal APIs, databases, and microservices are reachable?
+    — Flags cloud misconfigurations: public S3 buckets, overly permissive IAM roles,
+      exposed Kubernetes API servers, unencrypted storage volumes, public RDS instances
+    — Checks DNS configuration for zone transfer vulnerabilities, dangling subdomains,
+      subdomain takeover risks
+    — Examines container configurations for privilege escalation: privileged containers,
+      host path mounts, capabilities that shouldn't be granted, insecure base images
+
+  Outputs:
+    — Lateral movement graph (from any given entry point, what is reachable)
+    — Cloud misconfiguration inventory
+    — Container/Kubernetes security assessment
+    — Network topology risk map
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 8 — TRENTON (Shama Biswas)
+  Role in RDC:    Specialist (Long-Game / Persistence)
+  VAPT Domain:    Persistence Mechanisms, APT Pattern Matching, Long-Term Risk
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Trenton thinks in months, not minutes. She is quiet, brilliant, and methodical.
+  She came from a family that trusted the system and was betrayed by it — so she
+  trusts nothing and verifies everything. She is the one who asks: not "can you
+  break in?" but "once you are in, how long could you stay without anyone noticing?"
+
+  What he does:
+    — Identifies persistence mechanism vectors: cron jobs, systemd services, startup
+      scripts, registry run keys (if Windows targets), webhook registrations, cloud
+      Lambda triggers that could be modified by an attacker
+    — Looks for insufficient logging and monitoring: are security events being logged?
+      Is there rate limiting on login attempts? Are anomalous API call patterns detectable?
+    — Analyzes backup and recovery configurations for attacker persistence: can a
+      backdoor survive a rollback? Are backups themselves writable by application users?
+    — Models APT-style dwell time scenarios: "An attacker with these credentials and
+      this network access could remain undetected for X days given the current logging"
+    — Flags detection evasion opportunities: slow-and-low attack viability, log
+      tampering possibilities, monitoring blind spots
+
+  Outputs:
+    — Persistence vector inventory
+    — Dwell time estimate per attack scenario
+    — Logging and monitoring gap analysis
+    — Detection evasion risk assessment
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 9 — TYRELL WELLICK
+  Role in RDC:    Specialist (Insider Threat / Corporate Attack Surface)
+  VAPT Domain:    Privilege Escalation, Insider Threat, Corporate Systems Integration
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Tyrell is the insider. He is charming, corporate, and utterly without limits when
+  he decides he wants something. He knows how enterprises work from the inside — the
+  politics, the overprivileged accounts, the IT shortcuts taken by VPs who think
+  the rules don't apply to them. He is the one who asks: "What would someone with
+  legitimate access but illegitimate intentions be able to do?"
+
+  What he does:
+    — Models insider threat scenarios: what can a developer, ops engineer, or admin
+      do with their normal access level that they shouldn't be able to do?
+    — Audits privilege models: RBAC configurations, OAuth scopes, service account
+      permissions, database user privileges — looking for over-provisioning
+    — Checks for uncontrolled admin interfaces: internal dashboards exposed without
+      auth, admin APIs with weaker security than user-facing APIs, developer tools
+      left active in production (debugger endpoints, Swagger UIs, phpMyAdmin)
+    — Examines supply chain risks: what third-party services does this app trust?
+      Could any of those trust relationships be abused?
+    — Analyzes multi-tenancy isolation: in SaaS products, can tenant A access
+      tenant B's data through any known or discovered path?
+
+  Outputs:
+    — Insider threat scenario register with access level requirements
+    — Privilege over-provisioning report
+    — Admin interface exposure inventory
+    — Supply chain trust relationship map
+    — Multi-tenancy isolation test results
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 10 — ANGELA MOSS
+  Role in RDC:    Specialist (Human & Social Layer)
+  VAPT Domain:    Phishing Surface, Credential Exposure, Social Engineering Vectors
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Angela spent years being manipulated by people who knew more than she did. That
+  experience made her understand manipulation better than anyone. She is not a
+  technical hacker. She is a people hacker. She knows that the most dangerous
+  vector in any system is the human who has the keys and doesn't know it.
+
+  What she does:
+    — Maps phishing attack surfaces: what publicly available information about
+      employees (from the codebase, git commits, docs, package.json author fields)
+      would enable a targeted spear-phishing campaign?
+    — Analyzes the application for credential harvesting facilitation: are there
+      login flows with no CSRF protection? Are password reset links long-lived?
+      Is there an account enumeration vulnerability via error message differences?
+    — Checks email configuration: SPF, DKIM, DMARC records (if scannable) for
+      spoofing risk assessment
+    — Examines exposed PII in the codebase: does this app store or process personal
+      data in a way that creates regulatory exposure (GDPR, CCPA)?
+    — Models vishing and social engineering scenarios based on the organizational
+      context derived from the repository metadata and documentation
+
+  Outputs:
+    — Phishing attack surface profile
+    — Credential harvesting vulnerability map
+    — PII exposure and regulatory risk inventory
+    — Social engineering scenario register
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 11 — DOM DIPIERRO (Dominique DiPierro)
+  Role in RDC:    Adversarial Checker / Blue Team Voice
+  VAPT Domain:    Defensive Posture Analysis, Detection Capability, Incident Response
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Dom is the FBI agent who almost caught fsociety. She is precise, relentless, and
+  thinks like an attacker because she has studied attackers her entire career. In
+  fsociety the tool, she represents the blue team perspective — she is the agent
+  who asks: "If I were defending this, would I catch what these other agents just found?"
+
+  What she does:
+    — Reviews all findings from the red team agents and assesses: is this attack
+      detectable with the current logging and monitoring infrastructure?
+    — Evaluates the application's security controls: WAF rules, rate limiting, input
+      validation, output encoding, security headers (HSTS, CSP, X-Frame-Options)
+    — Checks for incident response readiness signals in the codebase: are there
+      audit logs? Is there a security contact? Are there breach notification hooks?
+    — Produces detection evasion difficulty ratings for each red team finding:
+      HIGH (attacker can operate silently), MEDIUM (noisy but probably not monitored),
+      LOW (this would trigger alerts)
+    — Challenges Mr. Robot's worst-case scenarios: "This exploit chain is technically
+      correct but would generate 47 log lines and trigger WAF rules at step 2"
+    — Adds REFINES edges to the VKG where her defensive analysis modifies severity
+
+  Outputs:
+    — Security control inventory
+    — Detection capability assessment per finding
+    — Evasion difficulty ratings
+    — Blue team recommendations (controls to add, monitoring to improve)
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 12 — LEON
+  Role in RDC:    Post-Verdict Output Agent
+  VAPT Domain:    Remediation Planning, Patch Prioritization, Developer Guidance
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Leon is calm. Leon is practical. Leon watches Seinfeld and kills people without
+  emotion when required. In fsociety the tool, he kills vulnerabilities without
+  emotion. He takes the debate's verdicts and converts them into a precise,
+  prioritized plan of action. He does not theorize. He makes lists.
+
+  What he does:
+    — Takes Whiterose's P0-P3 verdict register and converts each finding into a
+      concrete remediation task with specific implementation guidance
+    — Prioritizes tasks using a composite score: exploitability × impact × effort to fix
+    — Tags each task with an effort estimate: Quick Fix (hours), Sprint (days),
+      Architecture Change (weeks/months)
+    — Checks for available patches, CVE-specific vendor advisories, and library
+      upgrade paths for each dependency-related finding
+    — Writes the remediation roadmap section of the PDF report in plain language
+      suitable for both developers and non-technical stakeholders
+
+  Outputs:
+    — Prioritized remediation roadmap (sorted by composite risk × effort score)
+    — Patch availability table with links to advisories
+    — Developer-facing fix guidance per finding
+    — Executive-facing remediation summary (plain language)
+
+
+  ──────────────────────────────────────────────────────────────────────────────────
+  AGENT 13 — CISCO (Francis Shaw)
+  Role in RDC:    OSINT Enrichment Agent
+  VAPT Domain:    External Intelligence Gathering, Dark Web Signals, Breach Data
+  ──────────────────────────────────────────────────────────────────────────────────
+
+  Cisco is the liaison. He moves between worlds — fsociety and the Dark Army. He
+  knows where information flows and how to tap it. He is the agent who looks
+  outside the target itself for signals that illuminate what is happening inside.
+
+  What he does:
+    — Performs OSINT enrichment on the target: searches for the organization and
+      known domains in publicly available breach databases and paste sites
+    — Checks whether any identified credentials from the target appear in known
+      leaked credential dumps (HaveIBeenPwned API and similar sources)
+    — Monitors public bug bounty program history for the target (HackerOne, Bugcrowd)
+      to understand what has already been reported and fixed (and what patterns repeat)
+    — Enriches CVE findings with real-world exploitation evidence: "This CVE has
+      active public PoC code on GitHub" vs. "This CVE is theoretical only"
+    — Checks paste sites, GitHub secret scanning results, and public Shodan/Censys
+      data for the target's internet-exposed infrastructure
+
+  Outputs:
+    — Breach and credential exposure intelligence report
+    — CVE exploitation evidence enrichment
+    — Bug bounty program history summary
+    — Internet-exposed asset inventory (Shodan/Censys data)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — THE INGESTION ENGINE (Code → Embeddings → Agent Context)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  4.1  THE THREE INGESTION MODES
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  MODE A — STATIC (local path or GitHub repo)
+    Source: local filesystem directory or cloned GitHub/GitLab repository URL
+    Process:
+      1. If GitHub URL: clone the repo to a temp directory (depth-configurable)
+      2. Recursively walk all files; filter by supported extension whitelist
+      3. Supported file types: .py, .js, .ts, .jsx, .tsx, .go, .java, .php, .rb,
+         .c, .cpp, .cs, .rs, .kt, .swift, .yaml, .yml, .json, .env, .toml,
+         .dockerfile, .tf, .hcl, .xml, .sql, .sh, .bash, .ps1, .md, .html
+      4. Parse dependency manifests separately for known-CVE library detection
+      5. Extract git log metadata (commit hashes, author emails, commit messages,
+         file change frequency) for temporal attack surface analysis
+      6. Chunk → Embed → Index (see 4.2, 4.3, 4.4)
+
+  MODE B — DYNAMIC (live URL or API target)
+    Source: a live web application or API base URL
+    Process:
+      1. Spider crawls all reachable HTML pages (depth-limited, polite crawling)
+      2. Auto-discovers API specs: OpenAPI/Swagger JSON at /swagger.json, /openapi.json,
+         /api-docs; GraphQL introspection at /graphql; WADL at common paths
+      3. Captures all HTTP requests/responses: headers, cookies, status codes,
+         error messages, redirects
+      4. Extracts all JavaScript bundles and source maps if available; runs
+         regex and semantic patterns over JS for secrets, endpoints, auth tokens
+      5. Maps all HTML forms, input fields, and AJAX endpoints as injection surfaces
+      6. Chunk → Embed → Index (see 4.2, 4.3, 4.4)
+
+  MODE C — HYBRID (repo + URL)
+    Both Mode A and Mode B run in parallel. The vector indexes are merged into a
+    single joint knowledge base with a source field distinguishing static vs. dynamic
+    chunks. This is the highest-fidelity mode: Elliot gets both the code that was
+    written AND the runtime behavior of what is deployed.
+
+
+  4.2  CHUNKING STRATEGY (Two-Level Architecture)
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  fsociety uses a parent-child chunking architecture adapted from ARGUS's hybrid
+  retrieval system, tuned for code:
+
+  PARENT CHUNKS (context-preserving, 800-1500 tokens):
+    — One chunk per function, class method, or logical code block
+    — Carry rich metadata: filename, line_start, line_end, language, framework,
+      function_name, class_name, last_modified_date, commit_author
+    — Used by agents when they need full context to reason about exploitability
+    — The "evidence units" that get attached as nodes in the VKG
+
+  CHILD CHUNKS (precision-search, 100-300 tokens):
+    — Finer-grained sub-units: individual statements, SQL queries, API calls,
+      variable assignments
+    — Used for semantic search: "find all places where user input touches a database query"
+    — Cross-referenced to parent for context expansion during agent reasoning
+
+  This means: when Elliot searches for "unvalidated user input concatenated with SQL",
+  he finds the exact child chunk (3 lines), then expands to the parent chunk (full
+  function) to understand whether there is any upstream validation he missed.
+  This precision + context architecture prevents both false positives and false negatives.
+
+
+  4.3  EMBEDDING MODELS
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  Three embedding strategies, selectable based on performance vs. latency tradeoff:
+
+  OPTION A — Code-Specialized (highest quality for VAPT):
+    Model: microsoft/codebert-base or microsoft/unixcoder-base
+    Advantage: trained specifically on code, understands semantic meaning of
+               variable names, function signatures, and code patterns
+    Use when: full deep scan, GitHub repo analysis
+
+  OPTION B — General Semantic (good quality, wider coverage):
+    Model: sentence-transformers/all-mpnet-base-v2
+    Advantage: covers natural language docs, configs, comments, and markdown
+    Use when: hybrid scans that include documentation and API specs
+
+  OPTION C — Local LLM Embeddings (offline mode, privacy-sensitive targets):
+    Model: nomic-embed-text via Ollama
+    Advantage: fully local, no data leaves the machine
+    Use when: scanning proprietary codebases that cannot touch external APIs
+
+  The vector store is FAISS (fast, local, no server required) for default deployments,
+  ChromaDB for installations that want persistence and filtering across sessions.
+
+
+  4.4  INGESTION PIPELINE FLOW (Step by Step)
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  When the user runs: fsociety ❯ scan --repo https://github.com/org/app
+
+  Step 1  PARSE
+    Terminal parses command: target type = GitHub repo, extract URL
+    Session ID generated: timestamp + random hex (e.g. f5oc-4a2b-9c1d-timestamp)
+    Output directory created: ./fsociety_reports/<target_name>/<session_id>/
+
+  Step 2  FETCH
+    Git clone to temp dir (shallow by default, --depth deep for full history)
+    Progress bar shown: "Fetching: [████████░░] 80% — cloning..."
+
+  Step 3  CHUNK
+    AST-aware code parser splits each file into parent and child chunks
+    Each chunk tagged with full metadata
+    Progress: "Chunking: [███░░░░░░░] 30% — src/api/users.py"
+
+  Step 4  EMBED
+    Embedding model converts each chunk to a dense vector
+    Progress: "Embedding: [█████░░░░░] 50% — 1240/2480 chunks"
+
+  Step 5  INDEX
+    Vectors loaded into FAISS (or ChromaDB) with metadata attached
+    BM25 sparse index also built over the raw text for hybrid retrieval
+    Progress: "Indexing: [██████████] 100% — Ready"
+
+  Step 6  DEPENDENCY SCAN
+    Manifest files parsed; each dependency version checked against local CVE
+    snapshot or live NVD API (if network is available)
+    Fast, separate from the embedding pipeline
+
+  Step 7  HANDOFF
+    Indexed context + dependency findings + git metadata handed to Irving
+    Irving initializes the RDC session and schedules agents
+    Center panel becomes active: debate stream begins
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — THE RDC DEBATE LIFECYCLE (How Agents Reason Together)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  The RDC in fsociety runs the same algorithmic protocol as ARGUS (EDDO — Evidence-
+  Directed Debate Orchestration) but with security-specific stopping criteria,
+  evidence types, and verdict labels.
+
+  5.1  DEBATE ROUNDS
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  Each vulnerability proposition goes through up to 6 debate rounds.
+  Irving manages the round lifecycle. Rounds run in parallel across propositions.
+
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 1 — SURFACE SCAN (Elliot)                                               │
+  │  Elliot generates propositions from the indexed codebase. For each proposition  │
+  │  he assigns a prior probability based on evidence density and pattern matching. │
+  │  Example: "Endpoint /api/users may be vulnerable to SQL injection. Prior: 0.68" │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 2 — ESCALATION (Mr. Robot + Specialist Agents)                          │
+  │  Mr. Robot challenges each proposition for exploit chain potential.             │
+  │  Romero, Mobley, Trenton activate for findings in their domains.               │
+  │  Posterior updated upward if chaining confirmed, downward if mitigations found. │
+  │  Example: "SQL injection chains with session auth bypass. Posterior: 0.82"      │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 3 — CONDITION INJECTION (Darlene + Tyrell + Angela)                     │
+  │  Preconditions, insider vectors, and social surface are mapped onto each chain. │
+  │  Some findings escalate further. Others get downgraded by strong mitigations.  │
+  │  Example: "Auth bypass only works in v2.1.0. v2.1.1 patched it. Posterior: 0.61"│
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 4 — OSINT ENRICHMENT (Cisco)                                            │
+  │  External intelligence is layered onto findings. If a CVE has active public    │
+  │  PoC code, posterior increases. If the vulnerability was already reported on    │
+  │  a bug bounty program and patched, it may be closed.                           │
+  │  Example: "CVE-2023-XXXX has weaponized PoC on GitHub. Posterior: 0.91"        │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 5 — BLUE TEAM CHALLENGE (Dom)                                           │
+  │  Dom evaluates detectability and existing controls. She may reduce severity     │
+  │  labels when a finding is technically real but practically undetectable only   │
+  │  in environments without the target's existing defenses.                       │
+  │  Example: "WAF rule blocks this payload pattern. Evasion difficulty: LOW"      │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  ROUND 6 — FINAL VERDICT (Whiterose)                                           │
+  │  Whiterose runs Bayesian aggregation across all prior rounds. She maps to CVE, │
+  │  CWE, ATT&CK, and compliance frameworks. She renders the final verdict label:  │
+  │  CONFIRMED (P0-P3) / PROBABLE / UNCONFIRMED / FALSE POSITIVE                  │
+  │  All findings with CONFIRMED or PROBABLE status enter the final report.        │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │  POST-DEBATE — REMEDIATION (Leon)                                              │
+  │  Leon takes the verdict register and produces the remediation roadmap.         │
+  │  This feeds directly into the PDF report generation pipeline.                 │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+
+
+  5.2  THE VULNERABILITY KNOWLEDGE GRAPH (VKG)
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  The VKG is fsociety's name for ARGUS's C-DAG, specialized for VAPT.
+
+  NODE TYPES:
+    — Vulnerability          : A specific finding with severity, location, agent source
+    — ExploitChain           : A multi-step attack path linking 2+ vulnerabilities
+    — AttackSurface          : An exposed interface or entry point
+    — Mitigation             : An existing control that reduces a vulnerability's impact
+    — ThreatActor            : A threat group or APT whose TTPs match the target's profile
+    — CVERecord              : A linked CVE with CVSS score and patch metadata
+    — ComplianceRequirement  : A regulatory requirement that a finding violates
+
+  EDGE TYPES:
+    — ENABLES           : Vulnerability A enables attack on Vulnerability B
+    — MITIGATED_BY      : Vulnerability is partially or fully mitigated by a control
+    — MAPPED_TO         : Finding maps to a CVE or CWE
+    — VIOLATES          : Finding violates a compliance requirement
+    — ATTRIBUTED_TO     : Attack pattern attributed to a threat actor
+    — CHAINS_WITH       : Two vulnerabilities combine in an exploit chain
+    — DETECTED_BY       : Finding would be detected by a specific control
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6 — OUTPUT SYSTEM (Plots, PDFs, Directory Structure)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  6.1  DIRECTORY STRUCTURE
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  All outputs are saved to disk. If the directory does not exist, fsociety creates it.
+  Directories are named by target and session ID for traceability.
+
+  ./fsociety_reports/
+  └── <target_name>/                       (sanitized from URL or repo name)
+      └── <session_id>/                    (e.g. f5oc-4a2b-9c1d-20250326-143200)
+          ├── report/
+          │   ├── fsociety_report.pdf          (final PDF report)
+          │   ├── findings_register.json       (machine-readable all findings)
+          │   ├── executive_summary.md         (plain-language for non-technical)
+          │   └── remediation_roadmap.md       (Leon's output)
+          ├── graphs/
+          │   ├── vulnerability_knowledge_graph.png    (full VKG visualization)
+          │   ├── exploit_chain_graph.png              (Mr. Robot's chains)
+          │   ├── dag_lifecycle.png                    (RDC rounds over time)
+          │   ├── attack_surface_map.png               (Elliot's ASM)
+          │   ├── lateral_movement_graph.png           (Mobley's network map)
+          │   └── severity_timeline.png                (posteriors over rounds)
+          ├── heatmaps/
+          │   ├── severity_heatmap.png                 (file × severity grid)
+          │   ├── cwe_distribution.png                 (CWE categories bar chart)
+          │   ├── compliance_gap_matrix.png            (framework × finding heatmap)
+          │   └── attack_surface_density.png           (code region risk density)
+          ├── tables/
+          │   ├── cve_mapping_table.png                (CVE × CVSS × patch status)
+          │   ├── mitre_attack_mapping.png             (tactics × techniques matrix)
+          │   └── agent_debate_transcript.txt          (full RDC debate log)
+          ├── raw/
+          │   ├── embeddings_index/                    (FAISS / ChromaDB files)
+          │   ├── scan_metadata.json                   (target, timestamps, config)
+          │   └── agent_outputs/                       (per-agent JSON outputs)
+          └── session_manifest.json                    (Irving's full session log)
+
+
+  6.2  THE TWELVE VISUALIZATIONS
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  VIZ 1 — VULNERABILITY KNOWLEDGE GRAPH (VKG)
+    Type: Force-directed graph (NetworkX + Matplotlib or Pyvis for interactive HTML)
+    What it shows: The full VKG — all vulnerability nodes, CVE nodes, exploit chain
+    nodes, and their relationships. Node color = severity (red=critical, orange=high).
+    Edge color = edge type (red=ENABLES, blue=MAPPED_TO, grey=MITIGATED_BY).
+    Why it matters: Shows how vulnerabilities relate and chain — the attack landscape,
+    not just a list.
+
+  VIZ 2 — DAG LIFECYCLE PLOT
+    Type: Directed Acyclic Graph with temporal axis
+    What it shows: The RDC debate lifecycle for the session — each agent's activation,
+    each debate round's outcomes, posterior probability evolution per finding,
+    convergence points, and the final verdict nodes.
+    Why it matters: Provides full auditability of how conclusions were reached.
+    This is the ARGUS C-DAG adapted to show VAPT-specific debate structure.
+
+  VIZ 3 — EXPLOIT CHAIN GRAPH
+    Type: Layered directed graph (one graph per confirmed exploit chain)
+    What it shows: Mr. Robot's multi-step attack paths. Each node is a vulnerability
+    or condition. Each edge shows the enabling relationship. Terminal nodes show the
+    impact (RCE / Data Exfiltration / Privilege Escalation / Denial of Service).
+    Why it matters: Executives and developers can see how isolated findings combine
+    into catastrophic attack paths.
+
+  VIZ 4 — ATTACK SURFACE MAP
+    Type: Treemap or sunburst chart
+    What it shows: Elliot's attack surface by category — API endpoints, file I/O,
+    database calls, authentication touchpoints, third-party integrations, user input
+    handling — sized by finding count, colored by max severity in each category.
+    Why it matters: Shows where the highest risk surface area is concentrated.
+
+  VIZ 5 — SEVERITY HEATMAP (File × Severity Grid)
+    Type: 2D heatmap
+    What it shows: X-axis = source files (grouped by directory), Y-axis = severity
+    tier (P0-P3). Cell color intensity = finding count in that cell.
+    Why it matters: A developer can immediately see which files and directories
+    contain the most critical issues — guiding where to focus remediation first.
+
+  VIZ 6 — BAYESIAN POSTERIOR EVOLUTION CHART
+    Type: Multi-line time series
+    What it shows: For each top-10 finding, a line showing how its posterior
+    probability changed across the 6 debate rounds as agents added evidence.
+    Why it matters: Demonstrates the rigor of the analysis — findings that start
+    uncertain and converge to high confidence vs. those that were ruled out.
+
+  VIZ 7 — CWE DISTRIBUTION BAR CHART
+    Type: Horizontal bar chart
+    What it shows: All confirmed findings grouped by CWE category (e.g. CWE-89
+    SQL Injection, CWE-79 XSS, CWE-287 Authentication), sorted by count.
+    Why it matters: Shows the vulnerability class landscape — useful for identifying
+    systemic patterns (e.g. "this codebase has a systemic injection problem").
+
+  VIZ 8 — COMPLIANCE GAP MATRIX
+    Type: Heatmap matrix
+    What it shows: Rows = compliance requirements (PCI-DSS 6.2, SOC2 CC6.1, etc.),
+    Columns = finding categories. Cell = number of violations. Color = severity.
+    Why it matters: Directly translates technical findings into regulatory exposure
+    — immediately useful for legal, compliance, and audit teams.
+
+  VIZ 9 — MITRE ATT&CK NAVIGATOR MATRIX
+    Type: MITRE ATT&CK Navigator-style grid
+    What it shows: Which ATT&CK tactics and techniques are represented by confirmed
+    findings. Cells are colored by confidence (posterior probability).
+    Why it matters: Security operations and threat intelligence teams immediately
+    understand the threat profile using their native framework.
+
+  VIZ 10 — LATERAL MOVEMENT GRAPH
+    Type: Network topology graph (Mobley's output)
+    What it shows: From each identified entry point, what internal services, databases,
+    and infrastructure are reachable in N hops. Color = hop count from entry.
+    Why it matters: Shows the blast radius of a successful initial compromise.
+
+  VIZ 11 — AGENT DEBATE CONTRIBUTION CHART
+    Type: Stacked bar chart or chord diagram
+    What it shows: For each confirmed finding, which agents contributed evidence,
+    and how much each agent's input shifted the posterior probability.
+    Why it matters: Provides interpretability — you can see exactly why a finding
+    was confirmed and which agent drove the conclusion.
+
+  VIZ 12 — REMEDIATION EFFORT × RISK SCATTER PLOT
+    Type: 2D scatter plot (Leon's output)
+    What it shows: X-axis = estimated remediation effort (Quick Fix to Arch Change),
+    Y-axis = risk score (posterior × impact). Each dot = one finding.
+    Quadrants: Top-left = Quick Wins (high risk, low effort — fix these first).
+    Why it matters: Prioritization made visual. Immediate operational clarity.
+
+
+  6.3  THE PDF REPORT STRUCTURE
+  ────────────────────────────────────────────────────────────────────────────────────
+
+  The PDF report is generated after all agents complete their outputs.
+  It is structured for two audiences: technical teams and executive stakeholders.
+
+  COVER PAGE
+    — fsociety logo and branding
+    — Target name, scan date, session ID
+    — Scan mode (static / dynamic / hybrid)
+    — Agent configuration used
+    — Report version and classification
+
+  SECTION 1 — EXECUTIVE SUMMARY
+    — Plain language: what was scanned, what was found, what is the business risk
+    — Top 3 critical findings described in non-technical terms
+    — Overall risk rating (Critical / High / Medium / Low / Informational)
+    — Key remediation recommendations (top 5, plain language)
+    — Compliance impact summary
+
+  SECTION 2 — ATTACK SURFACE OVERVIEW
+    — Elliot's attack surface map (embedded as VIZ 4)
+    — Dependency inventory with CVE counts
+    — Technology stack identified
+
+  SECTION 3 — FINDINGS REGISTER (Full)
+    — Every CONFIRMED and PROBABLE finding, sorted by severity
+    — Each finding entry includes:
+        Finding ID, Title, Severity (P0-P3), CWE, CVE (if applicable),
+        CVSS Score, MITRE ATT&CK Technique, Location in code/app,
+        Posterior Probability, Agent Debate Summary, Evidence Trail,
+        Exploit Scenario (Mr. Robot's narrative), Remediation Guidance (Leon)
+
+  SECTION 4 — EXPLOIT CHAIN ANALYSIS
+    — All confirmed exploit chains with VIZ 3 graphs embedded
+    — Step-by-step attack narrative per chain
+    — Blast radius assessment
+
+  SECTION 5 — THREAT INTELLIGENCE PROFILE
+    — CVE mapping table (VIZ embedded)
+    — MITRE ATT&CK mapping (VIZ 9 embedded)
+    — Threat actor profile correlations (Whiterose's analysis)
+    — Breach and OSINT intelligence (Cisco's report)
+
+  SECTION 6 — COMPLIANCE GAP ANALYSIS
+    — Compliance gap matrix (VIZ 8 embedded)
+    — Per-framework detailed findings mapping
+
+  SECTION 7 — REMEDIATION ROADMAP
+    — Effort × Risk scatter plot (VIZ 12 embedded)
+    — Prioritized remediation task list (Leon's roadmap)
+    — Quick Wins (P0-P1, Quick Fix effort) highlighted
+    — Estimated total remediation effort summary
+
+  SECTION 8 — METHODOLOGY & APPENDICES
+    — Description of each agent and their role
+    — Bayesian posterior evolution chart (VIZ 6 embedded)
+    — DAG lifecycle plot (VIZ 2 embedded)
+    — Full debate transcript (condensed)
+    — Raw findings JSON reference
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7 — SYSTEM ARCHITECTURE OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │                         fsociety — System Architecture                          │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─────────────┐     ┌─────────────────────────────────────────────────────────┐
+  │   USER TUI   │────▶│               COMMAND PARSER (Irving layer)             │
+  │  (Textual)   │     └──────────────────────────┬──────────────────────────────┘
+  └─────────────┘                                 │
+                                                  ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │                         INGESTION ENGINE                                        │
+  │   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   │
+  │   │  Fetcher  │──▶│  Chunker │──▶│ Embedder │──▶│ FAISS /  │──▶│  BM25   │   │
+  │   │(git/http) │   │(AST-aware│   │(CodeBERT/│   │ChromaDB  │   │ Index   │   │
+  │   └──────────┘   └──────────┘   │ mpnet)   │   │          │   │         │   │
+  │                                  └──────────┘   └──────────┘   └──────────┘   │
+  │   ┌─────────────────────────────────────────────────────────────────────────┐  │
+  │   │  Dependency Scanner (NVD API / local CVE snapshot)                      │  │
+  │   └─────────────────────────────────────────────────────────────────────────┘  │
+  └──────────────────────────────────────┬──────────────────────────────────────────┘
+                                         │
+                                         ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │                    ARGUS RDC ENGINE  (Irving as orchestrator)                   │
+  │                                                                                 │
+  │   ┌─────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐        │
+  │   │ ELLIOT  │  │MR. ROBOT │  │ DARLENE  │  │WHITEROSE │  │ ROMERO   │        │
+  │   │  Recon  │  │ Exploit  │  │  Logic   │  │  Jury +  │  │ Malware  │        │
+  │   │  +ASM   │  │  Chain   │  │  Auth    │  │  Intel   │  │  Legacy  │        │
+  │   └────┬────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘        │
+  │        │             │              │              │              │              │
+  │   ┌────▼─────────────▼──────────────▼──────────────▼──────────────▼──────────┐ │
+  │   │              VULNERABILITY KNOWLEDGE GRAPH (VKG)                          │ │
+  │   │         (ARGUS C-DAG extended with VAPT node/edge types)                  │ │
+  │   └─────────────────────────────────────────────────────────────────────────┘ │
+  │                                                                                 │
+  │   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+  │   │  MOBLEY  │  │ TRENTON  │  │  TYRELL  │  │  ANGELA  │  │   DOM    │       │
+  │   │ Network  │  │Persistence│  │ Insider  │  │ Phishing │  │ BluTeam  │       │
+  │   └──────────┘  └──────────┘  └──────────┘  └──────────┘  └──────────┘       │
+  │                                                                                 │
+  │   ┌──────────────────────────────────────────────────────────────────────────┐ │
+  │   │  ARGUS MODULES: MNEME (memory) · VERICHAIN (registry) · PULSE (dash)    │ │
+  │   └──────────────────────────────────────────────────────────────────────────┘ │
+  └──────────────────────────────────────┬──────────────────────────────────────────┘
+                                         │
+                                         ▼
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │                     OUTPUT GENERATION ENGINE                                    │
+  │                                                                                 │
+  │   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+  │   │  LEON    │  │  CISCO   │  │ 12 PLOTS │  │   PDF    │  │  OUTPUT  │       │
+  │   │Remediat. │  │  OSINT   │  │Generator │  │ Builder  │  │   DIR    │       │
+  │   └──────────┘  └──────────┘  └──────────┘  └──────────┘  └──────────┘       │
+  └─────────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 8 — ARGUS EXTENSION MAPPING (Which ARGUS Modules fsociety Uses)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ARGUS MODULE      HOW fsociety USES IT
+  ──────────────    ────────────────────────────────────────────────────────────────
+  RDCOrchestrator   Core debate lifecycle. Irving wraps and extends this.
+                    Stopping criteria are VAPT-specific: posterior > 0.85 for any
+                    P0 finding triggers immediate escalation regardless of round count.
+
+  C-DAG             Becomes the VKG. New node and edge types added for VAPT.
+                    Node types: Vulnerability, ExploitChain, AttackSurface, etc.
+
+  HybridRetriever   Used by all agents for context-retrieval from the embedded
+                    codebase. BM25 for keyword-exact search (function names, CVE IDs),
+                    FAISS for semantic search (patterns, concepts, code smells).
+
+  VoIPlanner        Used by Irving to prioritize which propositions get deeper
+                    investigation. High-EIG propositions (those where more debate
+                    rounds would most reduce uncertainty) are prioritized.
+
+  ProvenanceLedger  Every finding is ledgered with full provenance: which agent
+                    proposed it, which agent escalated it, which evidence chunks
+                    supported it, which round it was confirmed in.
+
+  MNEME             Agent memory across sessions. If Elliot has seen this codebase
+                    before (previous session), he recalls what patterns were found
+                    and applies them as higher-prior propositions in the new session.
+
+  VERICHAIN         Cross-session vulnerability registry. If CVE-2023-XXXX was
+                    confirmed in a previous scan, Whiterose flags it as a recurring
+                    finding in subsequent scans of the same or related targets.
+
+  CHRONOS           Temporal analysis of the codebase: files with high change
+                    frequency in the last 30 git commits get higher recon priority
+                    (newly introduced code is more likely to carry vulnerabilities).
+
+  SEED              Document-to-debate pipeline: security documentation, threat
+                    models, and architecture diagrams found in the repo are parsed
+                    by SEED and converted into debate propositions automatically.
+
+  FRACTAL           For large codebases: hierarchical decomposition of the target
+                    into subsystems (auth layer, API layer, DB layer, etc.) with
+                    separate sub-debates per subsystem that aggregate to a whole.
+
+  PULSE             Operational dashboard showing live agent health, finding rates,
+                    debate convergence velocity, and system resource usage.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 9 — DIFFERENTIATORS (Why fsociety Is Different from Every VAPT Tool)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EXISTING TOOLS: Semgrep, Snyk, SonarQube, Burp Suite, OWASP ZAP, Nuclei,
+                  Trivy, Checkov, Bandit, CodeQL
+
+  WHAT THEY DO:   Pattern matching, signature-based scanning, rule-based analysis.
+                  They tell you WHAT is there. They do not reason about WHY it matters
+                  or HOW bad it really is in context.
+
+  WHAT fsociety DOES DIFFERENTLY:
+
+  1. ADVERSARIAL REASONING — Not pattern matching, but multi-agent debate.
+     Finding X is not just flagged. It is proposed, challenged, escalated,
+     conditioned, enriched with external intel, and given a Bayesian posterior.
+     False positives are argued out. True positives are argued to their worst case.
+
+  2. EXPLOIT CHAIN SYNTHESIS — No other automated tool builds multi-step chains.
+     Mr. Robot connects the dots between individual findings to show compound risk.
+     This is the difference between "there's a SQL injection" and "SQL injection +
+     session bypass + unrotated credentials = full database exfiltration in 3 steps."
+
+  3. MULTI-PERSPECTIVE COVERAGE — 13 agents covering red team, blue team, insider,
+     OSINT, network, persistence, social engineering, and business logic simultaneously.
+     No single tool covers all of these domains.
+
+  4. PROVENANCE AND AUDITABILITY — Every finding is fully traceable. You know which
+     agent found it, what evidence supported it, what counter-arguments were raised,
+     and how confidence evolved across debate rounds. This is audit-ready.
+
+  5. COMPLIANCE-NATIVE — Findings are automatically mapped to compliance frameworks.
+     fsociety speaks the language of auditors, not just security engineers.
+
+  6. MEMORY AND CONTINUITY — MNEME and VERICHAIN mean fsociety learns about a target
+     over time. A second scan of the same codebase benefits from the first scan's
+     context. Recurring vulnerabilities are flagged as systemic, not just repeated.
+
+  7. TERMINAL-NATIVE, ZERO-UI OVERHEAD — Runs entirely in the terminal. No browser,
+     no server, no GUI. The operator stays in their environment. The output goes
+     to disk in a structured, programmatically-accessible format.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 10 — DEVELOPMENT ROADMAP (Phased Build Plan)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  PHASE 0 — FOUNDATION (Weeks 1-2)
+    — Fork and extend ARGUS v5.0 as the debate backend
+    — Define VKG schema: node types, edge types, metadata fields
+    — Build the output directory manager (auto-create, session-based)
+    — Write Irving's orchestration wrapper for VAPT-specific RDC lifecycle
+
+  PHASE 1 — INGESTION ENGINE (Weeks 3-4)
+    — Build the code chunker (AST-aware, language-specific parsers)
+    — Integrate CodeBERT and mpnet embeddings with the FAISS/ChromaDB index
+    — Build the dependency manifest parser with NVD CVE lookup
+    — Build the static Git history analyzer (Elliot's temporal input)
+
+  PHASE 2 — CORE AGENTS (Weeks 5-8)
+    — Implement Elliot: recon, ASM generation, proposition creation
+    — Implement Mr. Robot: exploit chain synthesis, severity escalation
+    — Implement Darlene: auth/logic flaw analysis, secrets detection
+    — Implement Whiterose: CVE correlation, Bayesian aggregation, verdict rendering
+    — Wire all four into the RDC debate lifecycle via Irving
+    — End of Phase 2 milestone: full TIER 1 debate working end-to-end
+
+  PHASE 3 — SPECIALIST AGENTS (Weeks 9-11)
+    — Implement Romero, Mobley, Trenton, Tyrell, Angela, Dom
+    — Integrate OSINT enrichment via Cisco (HaveIBeenPwned API, Shodan)
+    — Implement Leon's remediation roadmap generator
+
+  PHASE 4 — OUTPUT SYSTEM (Weeks 12-14)
+    — Build all 12 visualizations (NetworkX, Matplotlib, Seaborn, Plotly)
+    — Build the PDF report generator (ReportLab or WeasyPrint)
+    — Build the disk output manager with full directory structure
+    — Test output quality and visual fidelity
+
+  PHASE 5 — TUI POLISH (Weeks 15-16)
+    — Build the full Textual TUI with three-panel layout
+    — Streaming output from agent debate to center panel
+    — Tab autocomplete on all commands
+    — Session management commands (list, load, compare)
+
+  PHASE 6 — ARGUS EXTENSION INTEGRATION (Weeks 17-18)
+    — Integrate MNEME (cross-session agent memory)
+    — Integrate VERICHAIN (vulnerability registry across scans)
+    — Integrate CHRONOS (temporal attack surface analysis)
+    — Integrate FRACTAL (hierarchical decomposition for large codebases)
+
+  PHASE 7 — TESTING & HARDENING (Weeks 19-20)
+    — Benchmark against DVWA, Juice Shop, VulnHub targets
+    — Compare findings against known CVEs in test repos
+    — Performance testing: large codebase (1M+ lines) scan time benchmarks
+    — Red-team the output: validate exploit chains against actual test environments
+
+  PHASE 8 — RELEASE (Week 21)
+    — PyPI package: pip install fsociety-vapt
+    — GitHub repo with documentation
+    — Example target scan walkthroughs in README
+    — "Hello, friend." — the terminal is live.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 11 — ETHICAL BOUNDARIES AND RESPONSIBLE USE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  fsociety is a research and defensive security tool. It is designed for:
+    — Security researchers with authorized access to targets
+    — Red teams performing contracted penetration tests
+    — Developers auditing their own codebases
+    — Security engineers performing architecture risk assessment
+    — Bug bounty hunters working within defined program scopes
+
+  fsociety does NOT:
+    — Execute active exploits against live systems
+    — Send payloads to any endpoint without explicit --active-test flag
+      and user confirmation
+    — Access any target that the user has not provided authorization for
+    — Store scan results anywhere except the user's local disk
+
+  The --active-test flag is deliberately restricted and requires confirmation:
+    fsociety ❯ scan --url https://target.com --active-test
+    WARNING: Active testing will send probing requests to the target.
+    Confirm you have written authorization to test this target? [y/N]:
+
+  All other modes are entirely passive — they analyze code and architecture
+  without touching any live system beyond standard HTTP crawling.
+
+  "We are fsociety. We are finally free."
+  — But with that freedom comes the responsibility to use this knowledge
+    to build better, safer systems. Not to tear them down without cause.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF BLUEPRINT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Document: fsociety_VAPT_BLUEPRINT.txt
+  Version:  1.0
+  Author:   Designed for Ronit Mehta — ARGUS Creator
+  Based on: ARGUS v5.0 README + VAPT domain architecture research
+  Date:     March 2026
+
+  "Hello, friend."
+
