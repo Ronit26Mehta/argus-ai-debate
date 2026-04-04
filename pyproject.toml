@@ -273,6 +273,13 @@ agora = [
     "networkx>=3.0,<4.0",
 ]
 
+# HANNIBAL War Room Interface (Streamlit)
+hannibal = [
+    "streamlit>=1.30,<2.0",
+    "plotly>=5.15,<6.0",
+    "networkx>=3.0,<4.0",
+]
+
 # All features
 all = [
     "argus-debate-ai[dev]",
@@ -288,6 +295,7 @@ all = [
     "argus-debate-ai[crux-viz]",
     "argus-debate-ai[aristotle]",
     "argus-debate-ai[agora]",
+    "argus-debate-ai[hannibal]",
     "argus-debate-ai[context]",
     "argus-debate-ai[openapi]",
     "argus-debate-ai[evolution]",
@@ -337,11 +345,13 @@ argus-viz = "argus_viz:main"
 crux-viz = "crux_viz:main"
 aristotle-chat = "argus.aristotle:launch_chat"
 agora-chat = "argus.agora:launch_chat"
+hannibal-war-room = "argus.hannibal:HANNIBAL.launch_chat"
 argus-evo-sandbox = "argus.sandbox:launch_sandbox"
+fsociety = "fsociety.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["argus*", "argus_terminal*", "argus_viz*", "crux_viz*", "argus.aristotle*", "argus.agora*"]
+include = ["argus*", "argus_terminal*", "argus_viz*", "crux_viz*", "argus.aristotle*", "argus.agora*", "argus.hannibal*", "fsociety*"]
 
 [tool.setuptools.package-data]
 argus = ["py.typed", "**/*.md"]
