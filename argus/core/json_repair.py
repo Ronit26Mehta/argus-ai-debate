@@ -72,12 +72,78 @@ def _fix_unescaped_quotes(text: str) -> str:
     return "".join(out)
 
 
-def _balance_brackets(candidate: str) -> str:
-    """Append missing ``]`` and ``}`` to balance brackets."""
-    candidate += "]" * max(0, candidate.count("[") - candidate.count("]"))
-    candidate += "}" * max(0, candidate.count("{") - candidate.count("}"))
-    return candidate
+def _close_truncated_string(text: str) -> str:
+    """Close a truncated JSON string value.
 
+    Local LLMs frequently truncate output mid-value, producing e.g.:
+        [{"claim": "A study by McKinsey found that AI could poten
+    This cannot be fixed by bracket-balancing alone — the string must
+    be closed first.
+
+    Strategy: count unescaped quotes; if odd → the last string was
+    never closed → append ``"`` before bracket-balancing.
+    Also strip any trailing partial UTF-8 sequences.
+    """
+    # Strip trailing whitespace
+    text = text.rstrip()
+
+    # Count unescaped quotes
+    in_escape = False
+    quote_count = 0
+    for ch in text:
+        if in_escape:
+            in_escape = False
+            continue
+        if ch == "\\":
+            in_escape = True
+            continue
+        if ch == '"':
+            quote_count += 1
+
+    # Odd quote count → truncated inside a string
+    if quote_count % 2 == 1:
+        # Strip trailing partial word/bytes for cleaner close
+        text = re.sub(r'[^\s"}\]]{0,30}$', '', text).rstrip()
+        text += '…"'  # Close the truncated string with ellipsis
+
+    return text
+
+
+def _balance_brackets(candidate: str) -> str:
+    """Append missing ']' and '}' to balance brackets."""
+    stack = []
+    in_string = False
+    in_escape = False
+    
+    for ch in candidate:
+        if in_escape:
+            in_escape = False
+            continue
+        if ch == '\\':
+            in_escape = True
+            continue
+            
+        if ch == '"':
+            in_string = not in_string
+            continue
+            
+        if not in_string:
+            if ch == '[':
+                stack.append(']')
+            elif ch == '{':
+                stack.append('}')
+            elif ch in (']', '}'):
+                if stack and stack[-1] == ch:
+                    stack.pop()
+                elif stack:
+                    # Malformed, but just ignore popped out-of-order for simplicity
+                    pass
+                    
+    # Append the unclosed brackets in reverse
+    for close_ch in reversed(stack):
+        candidate += close_ch
+        
+    return candidate
 
 def _remove_trailing_commas(text: str) -> str:
     """Remove trailing commas before closing brackets and braces."""
@@ -88,6 +154,7 @@ def repair_json(candidate: str) -> str:
     """Try increasingly aggressive repairs and return the first parseable result.
 
     Order:
+      0. Close truncated strings.
       1. Balance brackets only.
       2. Fix unescaped inner quotes, then balance.
       3. Walk backwards to the last cleanly-closed element, then balance.
@@ -99,7 +166,8 @@ def repair_json(candidate: str) -> str:
     except json.JSONDecodeError:
         pass
 
-    # 1. Strip trailing commas
+    # 0. Close truncated strings + strip trailing commas
+    candidate = _close_truncated_string(candidate)
     candidate = _remove_trailing_commas(candidate)
     try:
         json.loads(candidate)
@@ -107,7 +175,7 @@ def repair_json(candidate: str) -> str:
     except json.JSONDecodeError:
         pass
 
-    # 2. Simple bracket balance
+    # 1. Simple bracket balance
     attempt = _balance_brackets(candidate)
     try:
         json.loads(attempt)
