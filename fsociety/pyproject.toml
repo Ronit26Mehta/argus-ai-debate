@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsociety-vapt"
+version = "1.0.0"
+description = "fsociety: Multi-Agent VAPT Intelligence Terminal — adversarial security reasoning powered by ARGUS debate engine"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Ronit Mehta", email = "mehtaronit702@gmail.com"},
+]
+
+keywords = [
+    "vapt", "vulnerability-assessment", "penetration-testing",
+    "multi-agent", "security", "cybersecurity", "exploit-chain",
+    "cve", "mitre-attack", "owasp", "debate", "ai", "llm",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Environment :: Console",
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "argus-debate-ai>=5.5.0",
+    "openai>=1.30,<2.0",
+    "pydantic>=2.0,<3.0",
+    "pydantic-settings>=2.0,<3.0",
+    "networkx>=3.0,<4.0",
+    "numpy>=1.24,<3.0",
+    "faiss-cpu>=1.7,<2.0",
+    "rich>=13.0,<14.0",
+    "textual>=0.47,<1.0",
+    "click>=8.0,<9.0",
+    "httpx>=0.25,<1.0",
+    "python-dotenv>=1.0,<2.0",
+    "gitpython>=3.1,<4.0",
+    "matplotlib>=3.7,<4.0",
+    "rank-bm25>=0.2,<1.0",
+    "sentence-transformers>=2.2,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4,<9.0",
+    "pytest-cov>=4.1,<6.0",
+    "black>=23.0,<25.0",
+    "ruff>=0.1,<1.0",
+]
+pdf = [
+    "weasyprint>=60.0,<62.0",
+]
+viz = [
+    "plotly>=5.15,<6.0",
+    "seaborn>=0.12,<1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ronit26Mehta/fsociety-vapt"
+Repository = "https://github.com/Ronit26Mehta/fsociety-vapt"
+Issues = "https://github.com/Ronit26Mehta/fsociety-vapt/issues"
+
+[project.scripts]
+fsociety = "fsociety.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fsociety*"]
+
+[tool.setuptools.package-data]
+fsociety = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
